@@ -1,0 +1,57 @@
+{
+  "timestamp_utc": "2026-09-02T23:30:55Z",
+  "mode": "RESEARCH_OBSERVATION_ONLY",
+  "ecosystem": "Robinhood Chain",
+  "regime_status": "ACTIVE_AND_STRENGTHENING",
+  "ecosystem_evidence": {
+    "dex_volume_24h_usd": 1440000000,
+    "dex_volume_weekly_change_pct": 96.05,
+    "stablecoin_mcap_usd": 832660000,
+    "stablecoin_7d_change_pct": 11.0,
+    "tvl_usd": 762040000,
+    "tvl_24h_change_pct": 5.37,
+    "chain_fees_24h_usd": 3750000,
+    "net_inflows_24h_usd": -40480000,
+    "interpretation": "Speculative turnover remains exceptional and is not explained by passive net inflows alone. Negative 24h net inflows alongside rising DEX volume indicate unusually high capital velocity/recycling rather than simple new-money inflow."
+  },
+  "primary_candidate": {
+    "asset": "PONS",
+    "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+    "observed_price_usd": 0.4927,
+    "liquidity_usd": 5100000,
+    "price_change_6h_pct": 26.8,
+    "price_change_24h_pct": 11.7,
+    "dex_volume_24h_usd": 6200000,
+    "unique_traders_24h": 1348,
+    "paper_entry_usd": 0.405417251064,
+    "frozen_scale_threshold_usd": 0.44595897617,
+    "performance_from_paper_entry_pct": 21.53,
+    "scale_threshold_crossed": true,
+    "liquidity_vs_signal": "INCREASED_FROM_APPROX_4.7M_TO_5.1M",
+    "structural_gate": "PROVISIONAL_PASS",
+    "structural_evidence": "CertiK currently reports no honeypot, no mintable function, no blacklist/whitelist, no modifiable tax, no sell restriction, no proxy, renounced owner privilege, and 0% buy/sell tax; major-holder ratio 13.92% excluding exchanges and locked addresses.",
+    "leadership_evidence": "Pons launchpad handled $370.2M on Sep 1, about 59% of Robinhood Chain launchpad volume, and PONS remained the chain's leading asset by market value and recent trading activity in contemporaneous reporting.",
+    "attention_quality": "No evidence found of a new paid DexScreener boost campaign for PONS; prior tracking showed one launch-week paid profile and no boosts.",
+    "unresolved": [
+      "Selective-wallet convergence and funding independence among major wallets are still not independently verified.",
+      "Holder-count sources disagree because indexers update at different times; direction appears positive but exact acceleration should not be treated as precise.",
+      "The regime still contains heavy bot/arbitrage/recycled-volume components, so DEX volume is not equivalent to net capital inflow."
+    ]
+  },
+  "leadership_rotation": {
+    "cashcat": "Structurally clean on DexScreener and +19.97% over 24h at observation time, but current market cap (~$265M) and turnover remain below PONS leadership (~$348M).",
+    "artificial_inu": "Narratively strong due AI/NVDA stock-token composability, but DexScreener still shows one Go+ security issue; hard gate remains uncleared.",
+    "chump": "Emerging high-activity watch candidate with ~$36M market cap, ~$1.0M liquidity and no Go+/Quick Intel issues, but it currently carries a 500-unit DexScreener boost and lacks enough organic/persistent evidence to qualify.",
+    "jinqian": "Rejected: one Go+ plus two Quick Intel issues and a >50% six-hour reversal despite extreme volume.",
+    "nudes": "Rejected: one Go+ issue and only ~$440K liquidity despite strong momentum.",
+    "robloxians": "Rejected: one Go+ issue, only ~$206K liquidity and paid boost activity despite extreme short-window gains."
+  },
+  "why_it_matters_now": "This is the first meaningful post-entry forward-test milestone: PONS has crossed the previously frozen +10% scale-confirmation price while Robinhood Chain's speculative regime remains exceptionally strong and liquidity has not deteriorated. This observation records the event without changing the original paper rules or recommending/executing a trade.",
+  "sources": [
+    "https://defillama.com/chain/robinhood-chain",
+    "https://defillama.com/dexs/chain/robinhood-chain",
+    "https://dexscreener.com/robinhood/0x39dbed3a2bd333467115de45665cc57f813c4571",
+    "https://skynet.certik.com/tools/token-scan/robinhood/0x39dbed3a2bd333467115de45665cc57f813c4571",
+    "https://cryptorank.io/news/feed/66b20-pons-volume-record-robinhood-chain-launchpad"
+  ]
+}
