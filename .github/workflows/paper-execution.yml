@@ -3,60 +3,17 @@ name: Crypto paper execution
 on:
   workflow_dispatch:
     inputs:
-      ecosystem:
-        description: Ecosystem or chain
+      signal_file:
+        description: Path to a committed signal JSON
         required: true
-        default: Robinhood Chain
+        default: signals/current.json
         type: string
-      asset:
-        description: Asset symbol/name
-        required: true
-        default: PONS
-        type: string
-      contract:
-        description: Token contract/address
-        required: true
-        default: 0x39dBED3a2bd333467115dE45665cC57F813C4571
-        type: string
-      venue:
-        description: Venue/pool used for the paper fill
-        required: true
-        default: primary DEX pool
-        type: string
-      observed_price_usd:
-        description: Observed USD price at signal/execution time
-        required: true
-        default: "0"
-        type: string
-      liquidity_usd:
-        description: Executable pool liquidity in USD
-        required: true
-        default: "4800000"
-        type: string
-      structural_gate:
-        description: Must be PASS for simulated execution
-        required: true
-        default: PASS
-        type: choice
-        options:
-          - PASS
-          - UNVERIFIED
-          - FAIL
-      paper_allocation_usd:
-        description: Requested hypothetical allocation
-        required: true
-        default: "100"
-        type: string
-      max_slippage_pct:
-        description: Maximum modeled slippage percent
-        required: true
-        default: "1.0"
-        type: string
-      thesis:
-        description: Frozen research rationale
-        required: true
-        default: Qualified ecosystem leadership candidate
-        type: string
+  push:
+    branches: [main]
+    paths:
+      - signals/**.json
+      - paper_executor.py
+      - .github/workflows/paper-execution.yml
 
 permissions:
   contents: read
@@ -69,22 +26,32 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Resolve signal file
+        id: signal
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            signal="${{ inputs.signal_file }}"
+          else
+            signal="$(git diff-tree --no-commit-id --name-only -r "$GITHUB_SHA" | grep '^signals/.*\.json$' | tail -n 1)"
+          fi
+          if [ -z "$signal" ] || [ ! -f "$signal" ]; then
+            echo "No committed signal JSON found; nothing to execute."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "signal=$signal" >> "$GITHUB_OUTPUT"
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Build deterministic paper execution record
+        if: steps.signal.outputs.skip != 'true'
         id: paper
         env:
-          ECOSYSTEM: ${{ inputs.ecosystem }}
-          ASSET: ${{ inputs.asset }}
-          CONTRACT: ${{ inputs.contract }}
-          VENUE: ${{ inputs.venue }}
-          OBSERVED_PRICE_USD: ${{ inputs.observed_price_usd }}
-          LIQUIDITY_USD: ${{ inputs.liquidity_usd }}
-          STRUCTURAL_GATE: ${{ inputs.structural_gate }}
-          PAPER_ALLOCATION_USD: ${{ inputs.paper_allocation_usd }}
-          MAX_SLIPPAGE_PCT: ${{ inputs.max_slippage_pct }}
-          THESIS: ${{ inputs.thesis }}
+          SIGNAL_FILE: ${{ steps.signal.outputs.signal }}
         run: python3 paper_executor.py
 
       - name: Create immutable paper execution issue
+        if: steps.signal.outputs.skip != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           ASSET: ${{ steps.paper.outputs.asset }}
