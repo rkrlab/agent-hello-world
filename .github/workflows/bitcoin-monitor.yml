@@ -10,6 +10,11 @@ on:
         type: boolean
   schedule:
     - cron: "17 */6 * * *"
+  push:
+    branches: [main]
+    paths:
+      - agent.py
+      - .github/workflows/bitcoin-monitor.yml
 
 permissions:
   contents: read
@@ -26,7 +31,7 @@ jobs:
         id: bitcoin
         env:
           BTC_ALERT_ABOVE_USD: ${{ vars.BTC_ALERT_ABOVE_USD || '150000' }}
-          FORCE_ALERT: ${{ github.event_name == 'workflow_dispatch' && inputs.force_alert || 'false' }}
+          FORCE_ALERT: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.force_alert) }}
         run: python3 agent.py
 
       - name: Check for an existing alert
