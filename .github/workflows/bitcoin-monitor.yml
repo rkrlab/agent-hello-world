@@ -1,0 +1,55 @@
+name: Bitcoin price monitor
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_alert:
+        description: Force a test alert
+        required: true
+        default: true
+        type: boolean
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-bitcoin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Check Bitcoin price
+        id: bitcoin
+        env:
+          BTC_ALERT_ABOVE_USD: ${{ vars.BTC_ALERT_ABOVE_USD || '150000' }}
+          FORCE_ALERT: ${{ github.event_name == 'workflow_dispatch' && inputs.force_alert || 'false' }}
+        run: python3 agent.py
+
+      - name: Check for an existing alert
+        if: steps.bitcoin.outputs.should_alert == 'true'
+        id: existing
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          count="$(gh issue list --state open --search 'Bitcoin price alert in:title' --json number --jq 'length')"
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+
+      - name: Create GitHub issue alert
+        if: steps.bitcoin.outputs.should_alert == 'true' && steps.existing.outputs.count == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PRICE: ${{ steps.bitcoin.outputs.price }}
+          THRESHOLD: ${{ steps.bitcoin.outputs.threshold }}
+          FORCED: ${{ steps.bitcoin.outputs.forced }}
+        run: |
+          gh issue create \
+            --title "Bitcoin price alert" \
+            --body "Bitcoin is currently **\$${PRICE} USD**.
+
+          Configured threshold: **\$${THRESHOLD} USD**
+          Forced test alert: **${FORCED}**
+          Workflow run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
