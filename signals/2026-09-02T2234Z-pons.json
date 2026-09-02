@@ -1,0 +1,21 @@
+{
+  "signal_timestamp_utc": "2026-09-02T22:34:00Z",
+  "ecosystem": "Robinhood Chain",
+  "asset": "PONS",
+  "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+  "venue": "Uniswap v3 PONS/WETH 0x10CC6BD38112cAc182db90B6a71d8Bb5939526bA",
+  "observed_price_usd": 0.4054,
+  "liquidity_usd": 4700000,
+  "structural_gate": "PASS",
+  "paper_allocation_usd": 100,
+  "max_slippage_pct": 1.0,
+  "max_liquidity_share_pct": 0.10,
+  "thesis": "Robinhood Chain speculative regime is active and PONS is a qualified leadership candidate with direct launchpad/activity capture; forward test only.",
+  "research_evidence": {
+    "regime": "Robinhood Chain DEX and speculative launch activity accelerated sharply relative to other major ecosystems.",
+    "leadership": "PONS emerged as a leadership candidate while earlier CASHCAT leadership weakened.",
+    "narrative": "PONS is the native token of a major Robinhood Chain launchpad and its economic narrative is tied directly to launch activity.",
+    "structural": "Provisional structural checks previously passed; signal is paper-only and should be invalidated if later checks fail.",
+    "market_snapshot": "DEX Screener snapshot around signal time showed PONS near $0.4054 and approximately $4.7M pool liquidity."
+  }
+}
