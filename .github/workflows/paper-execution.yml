@@ -1,0 +1,124 @@
+name: Crypto paper execution
+
+on:
+  workflow_dispatch:
+    inputs:
+      ecosystem:
+        description: Ecosystem or chain
+        required: true
+        default: Robinhood Chain
+        type: string
+      asset:
+        description: Asset symbol/name
+        required: true
+        default: PONS
+        type: string
+      contract:
+        description: Token contract/address
+        required: true
+        default: 0x39dBED3a2bd333467115dE45665cC57F813C4571
+        type: string
+      venue:
+        description: Venue/pool used for the paper fill
+        required: true
+        default: primary DEX pool
+        type: string
+      observed_price_usd:
+        description: Observed USD price at signal/execution time
+        required: true
+        default: "0"
+        type: string
+      liquidity_usd:
+        description: Executable pool liquidity in USD
+        required: true
+        default: "4800000"
+        type: string
+      structural_gate:
+        description: Must be PASS for simulated execution
+        required: true
+        default: PASS
+        type: choice
+        options:
+          - PASS
+          - UNVERIFIED
+          - FAIL
+      paper_allocation_usd:
+        description: Requested hypothetical allocation
+        required: true
+        default: "100"
+        type: string
+      max_slippage_pct:
+        description: Maximum modeled slippage percent
+        required: true
+        default: "1.0"
+        type: string
+      thesis:
+        description: Frozen research rationale
+        required: true
+        default: Qualified ecosystem leadership candidate
+        type: string
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  paper-execute:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build deterministic paper execution record
+        id: paper
+        env:
+          ECOSYSTEM: ${{ inputs.ecosystem }}
+          ASSET: ${{ inputs.asset }}
+          CONTRACT: ${{ inputs.contract }}
+          VENUE: ${{ inputs.venue }}
+          OBSERVED_PRICE_USD: ${{ inputs.observed_price_usd }}
+          LIQUIDITY_USD: ${{ inputs.liquidity_usd }}
+          STRUCTURAL_GATE: ${{ inputs.structural_gate }}
+          PAPER_ALLOCATION_USD: ${{ inputs.paper_allocation_usd }}
+          MAX_SLIPPAGE_PCT: ${{ inputs.max_slippage_pct }}
+          THESIS: ${{ inputs.thesis }}
+        run: python3 paper_executor.py
+
+      - name: Create immutable paper execution issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ASSET: ${{ steps.paper.outputs.asset }}
+          EXECUTABLE: ${{ steps.paper.outputs.executable }}
+          FILL: ${{ steps.paper.outputs.fill }}
+          ALLOCATION: ${{ steps.paper.outputs.allocation }}
+          RECORD: ${{ steps.paper.outputs.record }}
+        run: |
+          if [ "$EXECUTABLE" = "true" ]; then
+            status="EXECUTED"
+          else
+            status="REJECTED"
+          fi
+
+          cat > /tmp/body.md <<EOF
+          ## Paper execution: ${status}
+
+          This is a **simulation only**. No wallet, exchange, DEX, or real funds were accessed.
+
+          - Asset: **${ASSET}**
+          - Simulated fill: **\$${FILL}**
+          - Allowed paper allocation: **\$${ALLOCATION}**
+          - Result: **${status}**
+          - Workflow run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}
+
+          ### Frozen execution record
+
+          \`\`\`json
+          ${RECORD}
+          \`\`\`
+
+          Future evaluation should apply the frozen rules in this record without retroactive changes.
+          EOF
+
+          gh issue create \
+            --title "Paper execution ${status}: ${ASSET}" \
+            --body-file /tmp/body.md
