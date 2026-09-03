@@ -1,0 +1,57 @@
+{
+  "timestamp_utc": "2026-09-03T08:30:36Z",
+  "type": "research_observation",
+  "execution_trigger": false,
+  "ecosystem": "Robinhood Chain",
+  "status": "REGIME_ACTIVE_QUALITY_DOWNGRADED",
+  "meaningful_update": "DEX activity reached a new record, but breadth and wash-excluded data weaken the interpretation that all headline volume is organic discretionary demand.",
+  "regime_evidence": {
+    "dune_reported_dex_volume_24h_usd": 1890000000,
+    "defillama_dex_volume_24h_usd": 1404000000,
+    "defillama_weekly_change_pct": 96.81,
+    "stablecoin_mcap_usd": 868330000,
+    "stablecoin_change_7d_pct": 15.77,
+    "tvl_usd": 786170000,
+    "net_inflows_24h_usd": -67740000,
+    "pons_tokens_issued_yesterday": 24010,
+    "long_xyz_tokens_issued_yesterday": 2740,
+    "pons_fees_24h_usd": 5950000
+  },
+  "quality_checks": {
+    "hoodfi_dex_volume_vs_trailing_7d": 1.61,
+    "hoodfi_active_wallets_vs_trailing_7d": 0.98,
+    "hoodfi_fresh_wallets_vs_trailing_7d": 1.07,
+    "hoodfi_transactions_vs_trailing_7d": 0.97,
+    "hoodfi_token_launches_vs_trailing_7d": 0.46,
+    "hoodfi_raw_volume_24h_usd": 1730000000,
+    "hoodfi_wash_excluded_volume_24h_usd": 1010000000,
+    "interpretation": "Volume is accelerating much faster than wallet/transaction breadth. Roughly 42% of HoodFi's raw volume is removed by its wash filter, so headline DEX volume should be discounted rather than treated as fully organic."
+  },
+  "leadership": {
+    "pons": "Launchpad leadership remains dominant: 24,010 token launches vs 2,740 for long.xyz; Pons fees reached $5.95M/24h.",
+    "stock_paired_subregime": "Long.xyz stock-anchored memes are a real composability sub-regime, but availability of commercial volume-bot services means volume/trader-count evidence needs additional independence checks.",
+    "pons_token": "Still structurally qualified from prior work, but no new execution signal is created in this observation."
+  },
+  "candidate_checks": [
+    {
+      "asset": "MOO",
+      "contract": "0xD9dB30BB0D2b8d2eae3826A1372117E058791e18",
+      "status": "REJECTED_STRUCTURAL",
+      "reason": "Strong activity and stock-pair narrative, but current contract tooling reports an unverified proxy implementation; hard gate not cleared."
+    },
+    {
+      "asset": "BONER",
+      "contract": "0x98096d17e191b3da1d5f99a6d7b3584351b11e18",
+      "status": "REJECTED_FOR_NOW",
+      "reason": "Stock-float-squeeze narrative is clearly spreading and liquidity is material, but current run did not independently clear ownership/mint/LP/deployer/linked-wallet gates; 24h price was also down materially despite high turnover."
+    }
+  ],
+  "sources": [
+    "https://defillama.com/chain/robinhood-chain",
+    "https://defillama.com/protocol/pons",
+    "https://hoodfi.io/chain",
+    "https://www.odaily.com.cn/en/newsflash/515008",
+    "https://dexscreener.com/robinhood/0x98096d17e191b3da1d5f99a6d7b3584351b11e18",
+    "https://brokertools.info/token/0xD9dB30BB0D2b8d2eae3826A1372117E058791e18?tab=contract"
+  ]
+}
