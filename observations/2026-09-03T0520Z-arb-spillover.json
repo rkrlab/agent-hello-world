@@ -1,0 +1,49 @@
+{
+  "timestamp_utc": "2026-09-03T05:20:59Z",
+  "type": "regime_spillover_alert",
+  "source_regime": "Robinhood Chain",
+  "candidate_asset": "ARB",
+  "candidate_contract_ethereum": "0x912CE59144191C1204E64559FE8253a0e49E6548",
+  "status": "QUALIFIED_RESEARCH_ALERT_NOT_EXECUTION_SIGNAL",
+  "thesis": "Robinhood Chain speculative activity is now producing a measurable upstream revenue stream for the Arbitrum ecosystem under the Arbitrum Expansion Program, and ARB has begun repricing on that causal link with high liquid-market participation.",
+  "regime_evidence": {
+    "robinhood_dex_volume_24h_usd": 1412000000,
+    "robinhood_dex_volume_7d_usd": 8389000000,
+    "robinhood_weekly_dex_change_pct": 96.81,
+    "robinhood_stablecoins_usd": 868280000,
+    "robinhood_stablecoin_change_7d_pct": 15.77,
+    "robinhood_chain_fees_24h_usd": 4450000,
+    "robinhood_app_fees_24h_usd": 19120000,
+    "robinhood_net_inflows_24h_usd": -67740000,
+    "interpretation": "High turnover and fee production alongside negative net inflows continues to favor a capital-velocity/speculation interpretation rather than simple deposit growth."
+  },
+  "arb_evidence": {
+    "price_usd": 0.1296,
+    "price_change_24h_pct": 14.4,
+    "price_change_7d_pct": 43.0,
+    "market_cap_usd": 866978832,
+    "trading_volume_24h_usd": 401585151,
+    "volume_change_vs_prior_day_pct": 14.2,
+    "robinhood_aep_mechanism": "10% of Robinhood Chain net protocol revenue returns to the Arbitrum ecosystem; 8% to ArbitrumDAO treasury and 2% to the Developer Guild.",
+    "july_aep_license_fees_usd": 360000,
+    "july_share_of_arbitrumdao_income_pct": 35
+  },
+  "leadership_interpretation": "This is a new upstream spillover leader rather than a replacement for PONS/CASHCAT/AI inside Robinhood Chain. It is a more liquid expression of the same regime and therefore should be tracked separately from microcap/native leadership rotation.",
+  "wallet_quality": "No selective-wallet convergence was established in this run. For ARB, broad multi-exchange liquidity reduces microcap wallet-structure risk but does not substitute for wallet-flow confirmation.",
+  "structural_gate": {
+    "result": "PASS_WITH_MARKET_RISK",
+    "notes": [
+      "Established, widely traded governance token with deep multi-exchange liquidity.",
+      "No microcap-style LP/deployer/honeypot gate concerns surfaced.",
+      "Upcoming unlock on 2026-09-16 releases 92.65M ARB (0.93% of total supply), a material supply-overhang risk but not a structural failure."
+    ]
+  },
+  "major_uncertainties": [
+    "ARB move also overlaps a broader DeFi/rollup rotation and leverage expansion, so not all price response can be attributed to Robinhood Chain.",
+    "Robinhood Chain activity may be temporarily amplified by subsidized gas and meme-launchpad activity.",
+    "The durability of AEP revenue after the current speculative regime cools remains unproven.",
+    "No selective-wallet convergence was verified for ARB."
+  ],
+  "execution": "NONE",
+  "preservation_note": "Stored outside signals/ so this observation cannot trigger paper execution."
+}
