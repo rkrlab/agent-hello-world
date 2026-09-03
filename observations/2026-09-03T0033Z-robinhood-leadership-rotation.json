@@ -1,0 +1,92 @@
+{
+  "timestamp_utc": "2026-09-03T00:33:41Z",
+  "type": "RESEARCH_OBSERVATION",
+  "execution_trigger": false,
+  "ecosystem": "Robinhood Chain",
+  "regime_status": "ACTIVE",
+  "alert_reason": "Leadership has compressed into a three-way race and Artificial Inu (AI) has become a material challenger, while the prior PONS confirmation spike has partially retraced. The ecosystem regime itself remains unusually strong relative to major peers.",
+  "ecosystem_evidence": {
+    "dex_volume_24h_usd": 1669000000,
+    "dex_volume_7d_usd": 8195000000,
+    "dex_weekly_change_pct": 96.05,
+    "stablecoin_mcap_usd": 832660000,
+    "stablecoin_7d_change_pct": 11.0,
+    "bridge_aggregator_volume_24h_usd": 15920000,
+    "bridge_aggregator_weekly_change_pct": 26.07,
+    "chain_fees_24h_usd": 3750000,
+    "app_fees_24h_usd": 16980000,
+    "net_inflows_24h_usd": -40480000,
+    "interpretation": "Turnover, fees, stablecoin base and cross-chain transfer activity remain elevated, but negative net inflows show that capital velocity/recycling is still a large part of the regime rather than simple one-way deposit growth."
+  },
+  "leadership": {
+    "PONS": {
+      "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+      "status": "INCUMBENT_LEADER_WEAKENING",
+      "snapshot_price_usd": 0.4123,
+      "snapshot_market_cap_usd": 291410000,
+      "snapshot_liquidity_usd": 4780000,
+      "snapshot_volume_24h_usd": 6170000,
+      "holders": 36949,
+      "note": "Still backed by launchpad economics; Pons protocol fees are approximately $4.73M/24h. Price is only modestly above the frozen $0.405417 paper fill after having previously crossed the +10% confirmation level."
+    },
+    "AI": {
+      "contract": "0x2E8c31162b855A2ffa90F6F8634643Ad6F111e18",
+      "status": "MATERIAL_ROTATION_CHALLENGER_STRUCTURAL_UNRESOLVED",
+      "primary_pool": "AI/NVDA on Bankr",
+      "snapshot_price_usd": 0.2673,
+      "snapshot_market_cap_usd": 267310000,
+      "snapshot_primary_pool_liquidity_usd": 26002069.86,
+      "snapshot_primary_pool_volume_24h_usd": 9880000,
+      "snapshot_24h_change_pct": 54.84,
+      "holders": 34900,
+      "security": {
+        "geckoterminal_score": 72.38,
+        "contract_verified": true,
+        "proxy_found_on_primary_pool": false,
+        "community_suspicious_reports": 0,
+        "robindex_score": 40,
+        "robindex_top10_ex_lp_pct": 18.1,
+        "robindex_bundlers_pct": 0,
+        "robindex_snipers": 0,
+        "bitget_wallet_reported_risks": 0,
+        "decision": "UNRESOLVED",
+        "reason": "Independent scanners disagree materially on overall safety/quality and historical Go+ concern has not been conclusively reconciled. Do not qualify for paper execution yet."
+      },
+      "narrative": "AI is paired directly with Robinhood's tokenized NVDA and converts speculative meme activity into stock-token trading/liquidity, making it highly native to Robinhood Chain's differentiated product narrative."
+    },
+    "CASHCAT": {
+      "contract": "0x020bfC650A365f8BB26819deAAbF3E21291018b4",
+      "status": "FORMER_LEADER_REASSERTING",
+      "snapshot_price_usd": 0.2687,
+      "snapshot_market_cap_usd": 265570000,
+      "snapshot_liquidity_usd": 5500000,
+      "snapshot_volume_24h_usd": 10490000,
+      "snapshot_24h_change_pct": 24.14,
+      "holders": 104500,
+      "geckoterminal_security_score": 94,
+      "note": "CASHCAT has materially re-strengthened and has the broadest holder base of the three, but its economic link to launchpad/stock-token activity is weaker than PONS or AI."
+    }
+  },
+  "other_ecosystems": {
+    "Solana": {"dex_weekly_change_pct": -24.04, "status": "NO_REGIME_ALERT"},
+    "Base": {"dex_weekly_change_pct": -26.39, "status": "NO_REGIME_ALERT"},
+    "BSC": {"dex_weekly_change_pct": -25.50, "status": "NO_REGIME_ALERT"},
+    "Arbitrum": {"dex_weekly_change_pct": -44.82, "status": "NO_REGIME_ALERT"},
+    "Monad": {"dex_weekly_change_pct": -36.84, "status": "NO_REGIME_ALERT"},
+    "Avalanche": {"dex_weekly_change_pct": -42.20, "status": "NO_REGIME_ALERT"},
+    "Sui": {"dex_weekly_change_pct": -59.56, "status": "NO_REGIME_ALERT"},
+    "Sonic": {"dex_weekly_change_pct": 96.34, "dex_volume_24h_usd": 1090000, "stablecoin_7d_change_pct": 60.41, "status": "WATCH_ONLY_LOW_BASE", "reason": "Positive percentage acceleration is from a very small base and appears tied to the Bundle Transactions upgrade; current DEX volume remains under ~$1M in another live tracker and does not yet show broad discretionary speculative migration."}
+  },
+  "forward_test_implication": "Do not alter the PONS frozen rules. Record that the initial +10% confirmation was not persistent: PONS retraced toward the original simulated fill while AI and CASHCAT strengthened. This is evidence that leadership rotation may matter more than static first-leader selection.",
+  "sources": [
+    "https://defillama.com/dexs/chains",
+    "https://defillama.com/chain/robinhood-chain",
+    "https://defillama.com/bridge-aggregators/chain/robinhood-chain",
+    "https://defillama.com/fees",
+    "https://www.geckoterminal.com/robinhood/pools/0xcbdfea90430a30ee4469c9902e120a77e7c7e4711d5643671c1d1957f2f1ce27",
+    "https://www.geckoterminal.com/robinhood/pools/0xA70fc67C9F69da90B63a0e4C05D229954574E313",
+    "https://birdscan.io/token/0x39dBED3a2bd333467115dE45665cC57F813C4571",
+    "https://www.robindex.pro/robinhood/tokens/0x2e8c31162b855a2ffa90f6f8634643ad6f111e18",
+    "https://defillama.com/chain/sonic"
+  ]
+}
