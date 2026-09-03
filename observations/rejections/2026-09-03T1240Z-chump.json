@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "2026-09-03T12:40:51Z",
+  "type": "hard_gate_rejection",
+  "mode": "RESEARCH_ONLY_NO_EXECUTION",
+  "ecosystem": "Robinhood Chain",
+  "asset": "CHUMP / Chump Coin",
+  "contract": "0x0e0d2c89a5a019fe1cf762e5e33187631dacc21b",
+  "market_snapshot": {
+    "source": "CoinGecko Robinhood Chain Meme category",
+    "price_usd_approx": 0.03513,
+    "market_cap_usd_approx": 35163507,
+    "volume_24h_usd_approx": 7240220,
+    "change_24h_pct_approx": 16.3,
+    "change_7d_pct_approx": 125.8
+  },
+  "structural_gate": "FAIL",
+  "rejection_reasons": [
+    "Bubblemaps-linked reporting identifies more than 75 fresh wallets with no prior activity and closely similar funding patterns.",
+    "Those wallets reportedly acquired roughly 80% of CHUMP supply, creating extreme effective linked-wallet concentration regardless of how the token may look across nominal holder addresses.",
+    "The wallets were reportedly funded through Relay in a correlated pattern and purchased in succession within minutes before a roughly 66x price increase.",
+    "A later wallet group reportedly sold through Uniswap in a pattern interpreted as an attempt to obscure funding provenance.",
+    "These observations directly fail the framework's linked-wallet, correlated-funding, supply-concentration, suspicious-transfer and manipulation gates."
+  ],
+  "why_preserve": "CHUMP is a prospective negative-control case: it currently ranks among the larger Robinhood-native meme assets and shows strong recent price performance, but the framework rejects it before the forward outcome is known because structural wallet evidence fails. Later performance must not be used to rewrite this rationale.",
+  "execution": "NONE"
+}
