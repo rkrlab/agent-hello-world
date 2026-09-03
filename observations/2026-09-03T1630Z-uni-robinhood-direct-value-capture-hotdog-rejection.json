@@ -1,0 +1,104 @@
+{
+  "timestamp_utc": "2026-09-03T16:30:45Z",
+  "type": "qualified_infrastructure_spillover_and_negative_control",
+  "mode": "RESEARCH_ONLY_NO_EXECUTION",
+  "ecosystem": "Robinhood Chain",
+  "regime_status": "ACTIVE_BUT_ORGANIC_QUALITY_WEAKENING",
+  "ecosystem_regime": {
+    "raw_dex_volume_24h_usd": 1379000000,
+    "raw_dex_volume_7d_usd": 8389000000,
+    "raw_weekly_change_pct": 96.81,
+    "normalized_volume_24h_usd": 68490000,
+    "normalized_weekly_change_pct": -31.28,
+    "stablecoins_usd": 868220000,
+    "stablecoin_change_7d_pct": 15.76,
+    "net_inflows_24h_usd": -67840000,
+    "bridge_volume_24h_usd_snapshot": 18880000,
+    "interpretation": "Robinhood Chain remains the dominant emerging speculative venue by raw spot turnover, but the raw-vs-normalized divergence and negative net inflows require heavy discounting of headline activity as evidence of broad new discretionary-wallet migration."
+  },
+  "alert": {
+    "asset": "Uniswap",
+    "symbol": "UNI",
+    "contract_ethereum": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+    "classification": "QUALIFIED_INFRASTRUCTURE_SPILLOVER_RESEARCH_ALERT",
+    "thesis": "Robinhood Chain speculative turnover is creating unusually large fee flow for Uniswap, and unlike the previously downgraded ARB spillover thesis, Uniswap has an activated protocol-fee mechanism that converts collected fees into UNI burn rather than merely accruing value to a DAO treasury.",
+    "value_capture": {
+      "uniswap_total_fees_24h_usd": 10700000,
+      "robinhood_chain_fee_contribution_24h_usd": 9240000,
+      "uniswap_total_fees_7d_usd": 42790000,
+      "robinhood_chain_fee_contribution_7d_usd": 32980000,
+      "uniswap_holder_protocol_revenue_24h_usd": 535291,
+      "uniswap_holder_protocol_revenue_7d_usd": 3310000,
+      "uniswap_holder_protocol_revenue_30d_usd": 9450000,
+      "mechanism": "Since December 2025, activated Uniswap protocol fees are used to burn UNI. Robinhood v2/v3/v4 fee collection and burn were enabled through Uniswap governance. Holder/protocol-revenue totals are protocol-wide, not a Robinhood-only burn figure."
+    },
+    "market_snapshot": {
+      "price_usd_approx": 5.71,
+      "circulating_market_cap_usd_approx": 3557000000,
+      "weekly_price_change_pct_approx": 29.9,
+      "monthly_price_change_pct_approx": 46.6,
+      "token_liquidity_usd_recent_snapshot": 57990000,
+      "global_volume_24h_usd_recent_snapshot": 1070000000
+    },
+    "wallet_quality": {
+      "supportive": "Nansen-labelled whale wallets reportedly increased UNI holdings from 3.20M to 3.46M on September 2, a gain of 257,777 UNI, the tracked whale cohort expanded from 8 to 9 wallets, fresh wallets received about $2.91M of UNI, and exchange balances fell by 351,274 UNI.",
+      "mixed": "The same reporting showed the whale cohort as modest net DEX sellers and derivatives exposure was reduced while remaining net long.",
+      "independence_limit": "Funding relationships and independence among the tracked large wallets were not independently traced in this run, so this is moderate accumulation evidence rather than confirmed selective-wallet convergence."
+    },
+    "narrative_attention": "Attention is broad and independently corroborated across official Uniswap documentation/governance, DefiLlama protocol data, and multiple market/news sources rather than depending on concentrated influencer promotion.",
+    "liquidity_executability": "PASS. UNI is a multi-billion-dollar, broadly traded asset with roughly $1B/day recent global volume and tens of millions of dollars of measured on-chain token liquidity, so microcap-style executable-liquidity risk is not the limiting factor.",
+    "structural_gate": {
+      "result": "PASS_WITH_GOVERNANCE_SUPPLY_AND_REGIME_QUALITY_CAVEATS",
+      "passes": [
+        "Canonical long-lived UNI contract documented by Uniswap.",
+        "No microcap deployer, honeypot, LP-removal or sniper-dominance structure is relevant to the canonical token.",
+        "High multi-venue liquidity and sellability.",
+        "Direct activated protocol-fee-to-UNI-burn value-capture mechanism."
+      ],
+      "caveats": [
+        "UNI governance retains authority to mint up to 2% of total supply annually; official documentation says this authority has not been exercised to date.",
+        "Current top-holder concentration was not freshly reconstructed in this run, and treasury/exchange addresses complicate simple concentration ratios.",
+        "The underlying Robinhood fee source is economically real but may not be durable because headline Robinhood activity is heavily contaminated by high-frequency, incentive-driven and potentially wash-like turnover."
+      ]
+    },
+    "major_uncertainties": [
+      "Robinhood normalized DEX volume is falling while raw volume rises sharply, so persistence of current Uniswap fee generation is uncertain.",
+      "The wallet accumulation evidence is supportive but not independently verified for funding-source independence or historical selectivity.",
+      "UNI has already rerated materially over the last week and month, so this is a regime-spillover/value-capture alert rather than an assertion that price discovery is early."
+    ],
+    "why_it_matters_now": "Robinhood Chain currently contributes the large majority of Uniswap's measured 24-hour and 7-day fees, while Uniswap's activated fee switch turns protocol fees into UNI burn. That makes UNI a cleaner direct value-capture beneficiary of the Robinhood speculative regime than ARB, whose Robinhood economics accrue to the Arbitrum DAO rather than directly to token holders."
+  },
+  "negative_control": {
+    "asset": "hotdog",
+    "symbol": "HOTDOG",
+    "contract": "0x1c1daef0300551adbfbe403e7d567b6c5aff566f",
+    "status": "HARD_REJECT",
+    "observed": {
+      "market_cap_usd_approx": 5300000,
+      "volume_24h_usd_approx": 9600000,
+      "liquidity_usd_approx": 325000,
+      "holders_approx": 3584,
+      "reported_price_change_24h_pct_approx": 4332
+    },
+    "rejection_reasons": [
+      "The hottest same-symbol token is explicitly marked unverified by a major wallet/market interface.",
+      "Executable liquidity is only about $325K versus roughly $5.3M market cap despite enormous turnover.",
+      "Multiple distinct HOTDOG/Costco Hotdog tokens with different contracts are simultaneously circulating, creating material identity and narrative-confusion risk.",
+      "The combination of extreme first-day appreciation, volume exceeding market cap, thin liquidity and unresolved contract identity fails the framework before any opportunity score is considered."
+    ],
+    "why_preserve": "This is a prospective negative control: later performance can be compared against a rejection made before the outcome was known."
+  },
+  "cross_ecosystem_screen": {
+    "solana": "Large absolute DEX activity but weekly DEX volume still contracting; no emerging acceleration.",
+    "bsc": "Large absolute DEX activity but weekly DEX volume contracting and stablecoins roughly flat/down.",
+    "base": "DEX volume contracting materially week over week.",
+    "monad": "Spot DEX volume contracting despite modest stablecoin growth; no broad speculative migration signal.",
+    "arbitrum": "DEX volume and net inflows both weak; no chain-level regime signal.",
+    "hyperliquid_l1": "DEX and perp activity contracting week over week.",
+    "x_layer": "Recent volume spike failed persistence and stablecoins/TVL weakened.",
+    "canton": "Positive DEX growth remains too small and heavily incentive-distorted; token incentives materially exceed app-fee generation."
+  },
+  "alert_result": "NEW_QUALIFIED_INFRASTRUCTURE_SPILLOVER_ALERT_UNI_PLUS_HOTDOG_HARD_REJECTION",
+  "execution": "NONE",
+  "paper_execution": "NONE"
+}
