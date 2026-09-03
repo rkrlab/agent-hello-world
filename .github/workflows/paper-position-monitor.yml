@@ -1,0 +1,91 @@
+name: Paper position monitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "7 * * * *"
+  push:
+    branches: [main]
+    paths:
+      - position_monitor.py
+      - positions/**
+      - .github/workflows/paper-position-monitor.yml
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Evaluate frozen paper position
+        id: monitor
+        env:
+          POSITION_FILE: positions/pons.json
+        run: python3 position_monitor.py
+
+      - name: Decide whether to post an update
+        id: decision
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ steps.monitor.outputs.issue_number }}
+          STATE: ${{ steps.monitor.outputs.state }}
+        run: |
+          comments="$(gh api "repos/${GITHUB_REPOSITORY}/issues/${ISSUE}/comments" --paginate --jq '.[].body' 2>/dev/null || true)"
+          state_marker="<!-- paper-monitor-state:${STATE} -->"
+          day_marker="<!-- paper-monitor-day:$(date -u +%F) -->"
+          post=false
+          reason=""
+
+          if ! printf '%s\n' "$comments" | grep -Fq "$state_marker"; then
+            post=true
+            reason="state-change"
+          elif ! printf '%s\n' "$comments" | grep -Fq "$day_marker"; then
+            post=true
+            reason="daily-heartbeat"
+          fi
+
+          echo "post=$post" >> "$GITHUB_OUTPUT"
+          echo "reason=$reason" >> "$GITHUB_OUTPUT"
+          echo "state_marker=$state_marker" >> "$GITHUB_OUTPUT"
+          echo "day_marker=$day_marker" >> "$GITHUB_OUTPUT"
+
+      - name: Comment on paper trade issue
+        if: steps.decision.outputs.post == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ steps.monitor.outputs.issue_number }}
+          ASSET: ${{ steps.monitor.outputs.asset }}
+          STATE: ${{ steps.monitor.outputs.state }}
+          PRICE: ${{ steps.monitor.outputs.price }}
+          RETURN_PCT: ${{ steps.monitor.outputs.return_pct }}
+          LIQUIDITY: ${{ steps.monitor.outputs.liquidity }}
+          RECORD: ${{ steps.monitor.outputs.record }}
+          REASON: ${{ steps.decision.outputs.reason }}
+          STATE_MARKER: ${{ steps.decision.outputs.state_marker }}
+          DAY_MARKER: ${{ steps.decision.outputs.day_marker }}
+        run: |
+          cat > /tmp/comment.md <<EOF
+          ${STATE_MARKER}
+          ${DAY_MARKER}
+          ## Paper monitor: ${STATE}
+
+          - Asset: **${ASSET}**
+          - Current price: **\$${PRICE}**
+          - Return from frozen simulated fill: **${RETURN_PCT}%**
+          - Current pool liquidity: **\$${LIQUIDITY}**
+          - Update reason: **${REASON}**
+          - Mode: **PAPER ONLY**
+
+          \`\`\`json
+          ${RECORD}
+          \`\`\`
+
+          This evaluation used the frozen thresholds from the original paper execution; no rules were changed after the fact.
+          EOF
+
+          gh issue comment "$ISSUE" --body-file /tmp/comment.md
