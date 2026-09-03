@@ -1,0 +1,118 @@
+{
+  "timestamp_utc": "2026-09-03T02:33:46Z",
+  "type": "RESEARCH_OBSERVATION",
+  "execution_trigger": false,
+  "ecosystem": "Robinhood Chain",
+  "regime_status": "ACTIVE",
+  "alert_reason": "PONS decisively reasserted leadership and printed a fresh high after the prior run showed weakening, while INDEX emerged as a fast-growing ecosystem-native composability candidate but remains unqualified because promotion and structural/wallet-quality checks are not fully cleared.",
+  "ecosystem_evidence": {
+    "defillama_dex_volume_24h_usd": 1392000000,
+    "defillama_dex_volume_7d_usd": 8356000000,
+    "dex_weekly_change_pct": 96.06,
+    "stablecoin_mcap_usd": 832740000,
+    "stablecoin_7d_change_pct": 11.01,
+    "chain_fees_24h_usd": 3750000,
+    "app_fees_24h_usd": 18210000,
+    "net_inflows_24h_usd": -28000000,
+    "bridged_tvl_usd": 2707000000,
+    "interpretation": "Robinhood Chain remains the standout large-chain spot speculation regime. Stablecoins, fees and turnover remain elevated while net inflows are negative, reinforcing that capital velocity/recycling is a major component rather than simple one-way deposits."
+  },
+  "leadership": {
+    "PONS": {
+      "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+      "status": "REASSERTED_LEADER_FRESH_HIGH",
+      "snapshot_price_usd": 0.513,
+      "snapshot_24h_high_usd": 0.5316,
+      "snapshot_market_cap_usd": 365280000,
+      "snapshot_primary_pool_liquidity_usd": 5500000,
+      "snapshot_primary_pool_volume_24h_usd": 26050000,
+      "holders": 63800,
+      "security_score": 94,
+      "contract_verified": true,
+      "honeypot": false,
+      "proxy_found": false,
+      "burned_supply_tokens": 293310000,
+      "paper_reference": {
+        "frozen_fill_usd": 0.405417251064,
+        "frozen_scale_confirmation_usd": 0.44595897617,
+        "pct_above_fill": 26.54,
+        "pct_above_scale_confirmation": 15.03,
+        "intraday_high_pct_above_fill": 31.12
+      },
+      "uncertainty": "Selective historically successful-wallet convergence and wallet funding independence remain unverified; do not upgrade confidence on that dimension."
+    },
+    "CASHCAT": {
+      "contract": "0x020bfC650A365f8BB26819deAAbF3E21291018b4",
+      "status": "STRONG_SECONDARY_LEADER",
+      "snapshot_price_usd": 0.2899,
+      "snapshot_24h_change_pct": 28.28,
+      "snapshot_market_cap_usd": 286530000,
+      "snapshot_primary_pool_liquidity_usd": 2700000,
+      "snapshot_primary_pool_volume_24h_usd": 33340000,
+      "holders": 104900,
+      "security_score": 94,
+      "note": "Very strong activity and broad holder base, but weaker direct economic/composability linkage to Robinhood Chain's differentiated launchpad/tokenized-stock activity than PONS or AI."
+    },
+    "AI": {
+      "contract": "0x2E8c31162b855A2ffa90F6F8634643Ad6F111e18",
+      "status": "ROTATION_CHALLENGER_STALLED_STRUCTURAL_UNRESOLVED",
+      "snapshot_price_usd": 0.2663,
+      "snapshot_market_cap_usd": 266280000,
+      "snapshot_primary_pool_liquidity_usd": 25700000,
+      "snapshot_primary_pool_volume_24h_usd": 5510000,
+      "holders": 35200,
+      "security_score": 72,
+      "buy_transactions_24h": 3666,
+      "sell_transactions_24h": 7101,
+      "decision": "NOT_QUALIFIED",
+      "reason": "Relative momentum has weakened versus PONS/CASHCAT and structural scanner disagreement remains unresolved."
+    },
+    "INDEX": {
+      "name": "The Index",
+      "contract": "0x56910D4409F3a0C78C64DD8D0545FF0705389870",
+      "status": "EMERGING_WATCH_NOT_QUALIFIED",
+      "snapshot_price_usd": 0.05601,
+      "snapshot_24h_change_pct": 132.76,
+      "snapshot_24h_high_usd": 0.06036,
+      "snapshot_market_cap_usd": 54920000,
+      "snapshot_primary_pool_liquidity_usd": 1200000,
+      "snapshot_primary_pool_volume_24h_usd": 5700000,
+      "holders": 21700,
+      "security_score": 94,
+      "contract_verified": true,
+      "honeypot": false,
+      "proxy_found": false,
+      "top10_concentration_pct_reported": 14.78,
+      "reported_snipers_pct": 0,
+      "reported_bundlers_pct": 0,
+      "narrative": "A 3% trading fee is used to buy a basket of tokenized stocks on Robinhood Chain and distribute them to holders, making INDEX directly composable with the chain's tokenized-securities thesis.",
+      "promotion_and_structure_flags": [
+        "500 DexScreener boosts reported by a tracker, contaminating the organic-attention signal",
+        "8 top-holder wallets flagged suspicious by an independent scanner snapshot",
+        "LP burn/control, mint authority and transfer-tax details are not fully independently cleared",
+        "Recent Biconomy spot listing on 2026-08-31 is an external attention catalyst"
+      ],
+      "decision": "NOT_QUALIFIED"
+    }
+  },
+  "flow_classification": "Predominantly discretionary speculation on Robinhood Chain rather than airdrop/points/yield farming. Pons launchpad volume, active wallets and protocol fees remain direct evidence. INDEX's individual surge is partly contaminated by paid promotion and a recent listing, so it is not treated as purely organic.",
+  "other_ecosystems": {
+    "Solana": {"dex_weekly_change_pct": -22.94, "status": "NO_REGIME_ALERT"},
+    "Base": {"dex_weekly_change_pct": -34.09, "status": "NO_REGIME_ALERT"},
+    "BSC": {"dex_weekly_change_pct": -25.50, "status": "NO_REGIME_ALERT"},
+    "Monad": {"dex_weekly_change_pct": -36.84, "status": "NO_REGIME_ALERT"},
+    "Avalanche": {"dex_weekly_change_pct": -42.20, "status": "NO_REGIME_ALERT"},
+    "Sui": {"dex_weekly_change_pct": -61.51, "status": "NO_REGIME_ALERT"},
+    "Sonic": {"dex_weekly_change_pct": -33.81, "status": "WATCH_INVALIDATED", "reason": "Spot DEX acceleration did not persist; stablecoin/perps growth is not translating into broad spot speculative migration."}
+  },
+  "forward_test_implication": "The prior 00:33 UTC observation that PONS's +10% confirmation had not persisted reversed within roughly two hours: PONS moved decisively back above confirmation and set a fresh high. This argues for measuring confirmation persistence over multiple observations while also tracking relative leadership momentum rather than treating a single retracement as a regime failure. INDEX shows a new tokenized-stock composability subtheme but hard gates correctly prevent promotion-driven momentum from becoming a qualified signal prematurely.",
+  "sources": [
+    "https://defillama.com/chain/robinhood-chain",
+    "https://defillama.com/dexs/chains",
+    "https://www.geckoterminal.com/robinhood/pools/0x10cc6bd38112cac182db90b6a71d8bb5939526ba",
+    "https://www.geckoterminal.com/robinhood/pools/0xa70fc67c9f69da90b63a0e4c05d229954574e313",
+    "https://www.geckoterminal.com/robinhood/pools/0xcbdfea90430a30ee4469c9902e120a77e7c7e4711d5643671c1d1957f2f1ce27",
+    "https://www.geckoterminal.com/robinhood/pools/0x498a5c9f0a6ce82fc4c989f1e256273a04f36ee8",
+    "https://robinscan.io/token/0x56910D4409F3a0C78C64DD8D0545FF0705389870"
+  ]
+}
