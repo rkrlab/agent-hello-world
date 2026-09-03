@@ -1,0 +1,88 @@
+{
+  "timestamp_utc": "2026-09-03T06:23:56Z",
+  "type": "research_observation",
+  "execution_trigger": false,
+  "regime": {
+    "ecosystem": "Robinhood Chain",
+    "status": "ACTIVE",
+    "evidence": {
+      "dex_volume_24h_usd": 1421000000,
+      "dex_volume_7d_usd": 7778000000,
+      "dex_weekly_change_pct": 96.05,
+      "stablecoin_mcap_usd": 832690000,
+      "stablecoin_7d_change_pct": 11.01,
+      "chain_fees_24h_usd": 3750000,
+      "app_fees_24h_usd": 16980000,
+      "net_inflows_24h_usd": -40480000
+    },
+    "interpretation": "Robinhood remains the dominant speculative-velocity outlier: DEX activity is accelerating while broad-market DEX activity and most major competing chains are contracting. Negative net inflows alongside very high turnover remains consistent with capital recycling/high velocity rather than simple passive inflows."
+  },
+  "leadership": {
+    "PONS": {
+      "status": "native_leader",
+      "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+      "canonical_reference": "DefiLlama",
+      "price_usd_approx": 0.50,
+      "market_cap_usd_approx": 354840000,
+      "token_volume_24h_usd_approx": 134220000,
+      "structural_gate": "PASS",
+      "notes": "CertiK reports no honeypot, mint, blacklist, whitelist, anti-whale, modifiable tax, sell-all restriction, proxy, hidden owner, transfer pause/cooldown or ownership-regain backdoor; major-holder ratio 13.92% excluding exchanges/locked addresses."
+    },
+    "CASHCAT": {
+      "status": "rotation_challenger_not_qualified",
+      "contract": "0x020bfC650A365f8BB26819deAAbF3E21291018b4",
+      "market_cap_usd_approx": 272300000,
+      "primary_pool_volume_24h_usd_approx": 31360000,
+      "primary_pool_liquidity_usd_approx": 2700000,
+      "holders_approx": 105000,
+      "structural_gate": "NOT_FULLY_CLEARED",
+      "notes": "Current GeckoTerminal primary pool scores 94/100 with broad participation, but the research set has unresolved CertiK attention items/whitelist semantics and recent short-liquidation effects; do not promote to qualified signal until independently resolved."
+    },
+    "AI": {
+      "status": "rotation_challenger_blocked",
+      "contract": "0x2E8c31162b855A2ffa90F6F8634643Ad6F111e18",
+      "market_cap_usd_approx": 248900000,
+      "main_pool_liquidity_usd_approx": 24100000,
+      "main_pool_volume_24h_usd_approx": 5560000,
+      "holders_approx": 35100,
+      "structural_gate": "UNCLEARED",
+      "notes": "Strong chain-native NVDA composability remains, but security score remains 72 and sell activity exceeds buys in the primary pool."
+    },
+    "INDEX": {
+      "status": "emerging_challenger_blocked",
+      "contract": "0x56910D4409F3a0C78C64DD8D0545FF0705389870",
+      "market_cap_usd_approx": 52240000,
+      "primary_pool_volume_24h_usd_approx": 5230000,
+      "primary_pool_liquidity_usd_approx": 1100000,
+      "holders_approx": 21600,
+      "structural_gate": "UNCLEARED",
+      "notes": "Current primary pool scores 94/100 and price/holder participation is strong, but prior 500 DexScreener boosts and suspicious-holder flags prevent classifying attention/wallet structure as organic and independent."
+    }
+  },
+  "arb_spillover_revision": {
+    "asset": "ARB",
+    "contract": "0x912CE59144191C1204E64559FE8253a0e49E6548",
+    "previous_status": "qualified_regime_spillover_research_alert",
+    "new_status": "DOWNGRADED_TO_NARRATIVE_GOVERNANCE_WATCH",
+    "reason": "Robinhood Chain revenue does accrue to the Arbitrum DAO treasury, but ARB itself has no direct protocol cash flow. DefiLlama token rights shows fee switch off, no buybacks, no dividends, no burns, and zero token-holder net income. Therefore the Robinhood revenue link is governance/treasury value rather than direct holder cash-flow capture.",
+    "evidence": {
+      "q3_robinhood_chain_fee_share_to_treasury_usd_approx": 820940,
+      "arb_token_holder_net_income_usd": 0,
+      "fee_switch": "OFF",
+      "buybacks": "NONE",
+      "dividends": "NONE",
+      "burns": "NONE"
+    },
+    "forward_test_implication": "Do not treat ARB as a revenue-share token in future scoring. Any ARB response to Robinhood Chain should be scored as narrative/governance/treasury spillover and discounted for leverage and unlock risk."
+  },
+  "alternative_regimes": {
+    "Sonic": "REJECTED: high percentage growth is from very small absolute DEX scale and net-flow evidence is inconsistent/stale across snapshots.",
+    "Canton": "REJECTED: token incentives exceed chain fees and dwarf app economics, making activity incentive-distorted.",
+    "Monad": "REJECTED: DEX volume -36.84% weekly and net inflows negative.",
+    "Base": "REJECTED: DEX volume -34.09% weekly and stablecoins slightly down.",
+    "Solana": "REJECTED_AS_NEW_REGIME: remains largest absolute DEX market but weekly DEX volume is down in the freshest chain snapshot used for comparison.",
+    "Arbitrum": "REJECTED_AS_NATIVE_REGIME: DEX -44.82% weekly and stablecoins roughly flat/down despite ARB token narrative strength."
+  },
+  "alert_reason": "Material model correction: the prior ARB spillover alert overstated direct economic value accrual. Robinhood Chain remains active, but no new native asset clears all hard structural and wallet-independence gates in this observation.",
+  "no_trade_instruction": true
+}
