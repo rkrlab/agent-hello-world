@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-09-03T10:20:15Z",
+  "type": "leadership_persistence_alert",
+  "mode": "RESEARCH_ONLY_NO_EXECUTION",
+  "ecosystem": "Robinhood Chain",
+  "candidate": {
+    "asset": "PONS",
+    "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+    "structural_gate": "PASS_PROVISIONAL",
+    "market_snapshot": {
+      "canonical_source": "DexScreener primary PONS/WETH pair",
+      "price_usd": 0.5374,
+      "market_cap_usd": 382600000,
+      "liquidity_usd": 5600000,
+      "primary_pair_volume_24h_usd": 8200000,
+      "change_24h_pct": 38.46,
+      "go_plus": "no issues",
+      "quick_intel": "no issues",
+      "dexscreener_boosts": 0
+    },
+    "forward_test_context": {
+      "frozen_paper_fill_usd": 0.405417251064,
+      "frozen_confirmation_price_usd": 0.44595897617,
+      "price_vs_frozen_fill_pct_approx": 32.6,
+      "price_vs_confirmation_pct_approx": 20.5
+    }
+  },
+  "ecosystem_regime": {
+    "defillama_dex_volume_24h_usd": 1396000000,
+    "defillama_dex_volume_7d_usd": 8389000000,
+    "defillama_weekly_change_pct": 96.81,
+    "dune_reported_dex_record_24h_usd": 1890000000,
+    "stablecoins_usd": 868220000,
+    "stablecoin_change_7d_pct": 15.76,
+    "tvl_usd": 795990000,
+    "tvl_change_24h_pct": 6.10,
+    "net_inflows_24h_usd": -67740000,
+    "chain_fees_24h_usd": 4450000,
+    "app_fees_24h_usd": 19120000,
+    "interpretation": "Speculative regime remains active, but negative net inflows plus extreme turnover imply high capital velocity/recycling rather than equivalent fresh discretionary inflow. Headline volume and maker counts are discounted because wash-volume filters and commercial volume bots can manufacture volume and fresh-wallet breadth."
+  },
+  "leadership_rotation": {
+    "PONS": {"price_usd": 0.5374, "market_cap_usd": 382600000, "liquidity_usd": 5600000, "change_24h_pct": 38.46, "status": "leader"},
+    "CASHCAT": {"price_usd": 0.2503, "market_cap_usd": 247300000, "liquidity_usd": 5200000, "change_24h_pct": -11.41, "status": "lost relative leadership; contract scanners clean but historical bundler/sniper evidence unresolved"},
+    "AI": {"price_usd": 0.2819, "market_cap_usd": 281900000, "liquidity_usd": 6200000, "change_24h_pct": 19.87, "status": "strong challenger but structural gate fails due unresolved Go+ issue / unverified direct deploy"}
+  },
+  "wallet_quality": {
+    "positive": "Previously identified selective wallet 0x7e3...a3ad realized a large CASHCAT gain and rotated substantial capital into PONS.",
+    "limitation": "No independent multi-wallet selective-success convergence was established in this run. Fresh-wallet/trader breadth is discounted because commercial bots explicitly advertise fresh unlinked wallets and randomized swaps.",
+    "opposing_signal": "Loracle reportedly holds large leveraged shorts in both PONS and CASHCAT; no verified historical edge was established, so this is treated as risk evidence rather than a weighted smart-wallet signal."
+  },
+  "catalysts_and_attention": {
+    "PONS": "Binance Alpha listing is a material external catalyst for the latest breakout, so the move is not treated as purely organic Robinhood ecosystem leadership. DexScreener shows no current paid boosts; historical tracking found only a standard launch profile rather than ongoing boosts.",
+    "ecosystem": "Pons launchpad token issuance and fee generation remain dominant, while tokenized-stock paired meme markets continue to reinforce Robinhood Chain's ecosystem-specific speculative narrative."
+  },
+  "rejections": [
+    {
+      "asset": "ToePix",
+      "contract": "0x992615dd6b0678568490628bb5aa61c43c10f331",
+      "reason": "Despite ~15.8x wallet acceleration and a crowd classification on a Dune screen, liquidity is very thin and attention is heavily concentrated in explicit promotional/influencer posts; fails organic-attention/executability threshold."
+    },
+    {
+      "ecosystem": "Canton",
+      "reason": "DEX acceleration remains materially incentive-distorted: daily token incentives exceed chain fees while app fees are tiny."
+    },
+    {
+      "ecosystem": "Native Core",
+      "reason": "Large one-day volume acceleration is institutional/RWA liquidity routing infrastructure rather than broad discretionary speculative migration."
+    },
+    {
+      "ecosystem": "Provenance",
+      "reason": "Stablecoin supply and user breadth contradict a speculative migration despite isolated DEX volume."
+    }
+  ],
+  "why_signal_matters_now": "PONS has widened its lead over CASHCAT and AI across multiple successive observations, with higher price and liquidity than the original frozen paper reference. This is the first sustained resolution of the recent intra-Robinhood leadership uncertainty, although external Binance Alpha attention reduces the purity of the signal. No new asset is promoted to execution status.",
+  "uncertainties": [
+    "No fresh deployer/funding-relationship map for PONS major holders was completed in this run.",
+    "Cross-source market data remain dispersed; DexScreener primary pool is frozen here as canonical for forward comparison.",
+    "Headline DEX volume and unique wallet statistics are manipulable and should not be interpreted one-for-one as organic speculative demand.",
+    "Binance Alpha listing materially contributes to PONS attention and price acceleration."
+  ]
+}
