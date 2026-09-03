@@ -1,0 +1,18 @@
+{
+  "issue_number": 2,
+  "ecosystem": "Robinhood Chain",
+  "asset": "PONS",
+  "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+  "pair_address": "0x10CC6BD38112cAc182db90B6a71d8Bb5939526bA",
+  "entry_fill_usd": 0.405417251064,
+  "paper_allocation_usd": 100.0,
+  "entry_liquidity_usd": 4700000.0,
+  "scale_price_usd": 0.44595897617,
+  "stop_price_usd": 0.304062938298,
+  "take_profit_1_usd": 0.810834502128,
+  "take_profit_2_usd": 1.62166900426,
+  "structural_gate": "PASS",
+  "source_signal_timestamp": "2026-09-02T22:34:00Z",
+  "source_issue": 2,
+  "mode": "PAPER_ONLY"
+}
