@@ -1,0 +1,85 @@
+{
+  "timestamp_utc": "2026-09-03T14:29:01Z",
+  "type": "leadership_rotation_with_structural_block",
+  "mode": "RESEARCH_ONLY_NO_EXECUTION",
+  "ecosystem": "Robinhood Chain",
+  "regime_status": "ACTIVE_BUT_QUALITY_DOWNGRADED",
+  "ecosystem_regime": {
+    "defillama_raw_dex_volume_24h_usd": 1379000000,
+    "defillama_raw_dex_volume_7d_usd": 8389000000,
+    "defillama_raw_weekly_change_pct": 96.81,
+    "defillama_normalized_volume_24h_usd": 64800000,
+    "defillama_normalized_weekly_change_pct": -23.35,
+    "stablecoins_usd": 868220000,
+    "stablecoin_change_7d_pct": 15.76,
+    "net_inflows_24h_usd": -67840000,
+    "interpretation": "Robinhood remains the dominant raw spot-speculation venue, but the large raw-vs-normalized volume divergence, negative net inflows, known volume-bot availability, gas subsidies and exchange trading incentives require substantial discounting of headline activity as evidence of new discretionary wallets."
+  },
+  "cross_ecosystem_screen": {
+    "solana": "~$2.2B 24h DEX volume but -22.27% weekly; no emerging acceleration",
+    "base": "$730.18M 24h DEX volume, -31.40% weekly, stablecoins -1.12% weekly",
+    "bsc": "$1.133B 24h DEX volume, -23.68% weekly, stablecoins -0.20% weekly",
+    "monad": "$127.64M 24h DEX volume, -38.05% weekly despite +1.89% stablecoins",
+    "arbitrum": "$104.14M 24h DEX volume, -40.98% weekly and -$102.05M 24h inflows",
+    "x_layer": "$12.9M 24h DEX volume and +114% weekly, but stablecoins -9.41%, only ~$797 chain fees and ~$19K 24h inflows; insufficient scale/quality",
+    "sonic": "$0.85M 24h DEX volume, -33.82% weekly; too small and contracting",
+    "canton": "$7.67M 24h DEX volume, +11.92% weekly, but $2.38M/day token incentives exceed $1.69M chain fees and app fees are only ~$2.4K; incentive-distorted",
+    "native_core": "Native Core CLOB is producing tens of millions in professional/order-book volume but is a protocol venue rather than evidence of a broad discretionary ecosystem migration."
+  },
+  "leadership_rotation": {
+    "PONS": {
+      "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+      "status": "remains native leader; no fresh qualification event in this run",
+      "price_usd_snapshot_approx": 0.5466
+    },
+    "CASHCAT": {
+      "contract": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+      "primary_pool": "0xa70fc67c9f69da90b63a0e4c05d229954574e313",
+      "price_usd_snapshot": 0.2687,
+      "market_cap_usd_snapshot": 265570000,
+      "primary_pool_volume_24h_usd": 10490000,
+      "primary_pool_liquidity_usd": 5530000,
+      "holders_snapshot": 104500,
+      "primary_pool_buys_24h": 6703,
+      "primary_pool_sells_24h": 6122,
+      "gt_security_score": 94,
+      "rotation_status": "NARROWLY_RETAKES_CHALLENGER_2_FROM_AI",
+      "catalyst_contamination": "OKX opened CASHCAT/USDT perpetuals with up to 20x leverage at 03:30 UTC today and OKX built-in DEX support for Robinhood Chain tokens, so some acceleration is distribution/leverage driven rather than pure endogenous wallet migration."
+    },
+    "AI": {
+      "contract": "0x2e8c31162b855a2ffa90f6f8634643ad6f111e18",
+      "primary_pool": "0xcbdfea90430a30ee4469c9902e120a77e7c7e4711d5643671c1d1957f2f1ce27",
+      "price_usd_snapshot": 0.2644,
+      "market_cap_usd_snapshot": 262200000,
+      "primary_pool_volume_24h_usd": 3610000,
+      "primary_pool_liquidity_usd": 26270000,
+      "holders_snapshot": 36400,
+      "primary_pool_buys_24h": 1808,
+      "primary_pool_sells_24h": 3408,
+      "gt_security_score": 72,
+      "status": "slips narrowly behind CASHCAT by market cap; remains structurally uncleared"
+    }
+  },
+  "cashcat_wallet_quality": {
+    "positive": "Holder breadth is large and current primary-pool buy/sell counts are balanced-to-positive rather than a one-sided first-minute burst.",
+    "negative": "A previously identified selective successful wallet (0x7e3...) sold its CASHCAT position completely after a large realized gain and rotated substantial capital into PONS; this does not support selective-wallet convergence into the current CASHCAT rebound.",
+    "historical_cluster_risk": "Bubblemaps-linked reporting found a cluster of newly created wallets buying about $2.7M of CASHCAT shortly before the August 6 Robinhood listing announcement, with clustered funding patterns. Ownership was not established, but this remains unresolved correlated-wallet evidence."
+  },
+  "cashcat_structural_gate": {
+    "result": "BLOCKED_DO_NOT_SURFACE_AS_QUALIFIED_CANDIDATE",
+    "passes_observed": [
+      "Current GeckoTerminal primary-pool scan shows no honeypot indication and no proxy, with GT score ~94/100.",
+      "Cached Genesis Sentinel simulation showed buy, sell and transfer paths working; deployer balance 0 and dev cluster below 0.01%.",
+      "Holder concentration in the cached scanner was moderate rather than catastrophic."
+    ],
+    "blocking_uncertainties": [
+      "LP custody evidence is contradictory. CASHCAT/Noxa descriptions claim liquidity is permanently locked/burned, but a cached Genesis Sentinel scan classified approximately 100% of the affected Uniswap V3 position value as held by a plain wallet rather than a recognized locker/burn address. Because V3 position control determines withdrawability, the hard LP-control gate cannot be marked passed without a fresh ownership trace.",
+      "Historical pre-listing fresh-wallet clustering/funding relationships remain unresolved; current ownership and whether those wallets exited were not established in this run.",
+      "Earlier automated screening reported a 9.7% bundler rate and 64 snipers. This does not establish present bot domination, but it prevents declaring the launch/wallet structure clean without a current trace.",
+      "Primary-pool liquidity of roughly $5.5M is only about 2% of market cap; executable depth remains modest relative to valuation."
+    ]
+  },
+  "why_signal_matters_now": "Leadership beneath PONS has rotated again: CASHCAT has narrowly re-overtaken AI by market cap while showing a broad holder base and a strong price rebound. But the move coincides with new OKX distribution/leverage and still fails the framework's requirement for a clean, reconciled structural gate. This is a useful test of the rule that leadership momentum cannot override LP-control and linked-wallet uncertainty.",
+  "alert_result": "ROTATION_OBSERVATION_ONLY_NO_QUALIFIED_ASSET_ALERT",
+  "execution": "NONE"
+}
