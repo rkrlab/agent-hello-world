@@ -1,0 +1,83 @@
+{
+  "timestamp_utc": "2026-09-03T19:36:33Z",
+  "type": "leadership_crowding_transition_and_prior_alert_confirmation",
+  "mode": "RESEARCH_ONLY_NO_EXECUTION",
+  "ecosystem": "Robinhood Chain",
+  "regime_status": "ACTIVE_BUT_HEADLINE_VOLUME_QUALITY_REMAINS_WEAK",
+  "ecosystem_regime": {
+    "raw_dex_volume_24h_usd_chain_page": 1379000000,
+    "raw_dex_volume_24h_rankings_snapshot_usd": 1553000000,
+    "raw_weekly_change_pct": 96.81,
+    "normalized_volume_24h_usd": 64800000,
+    "normalized_weekly_change_pct": -23.35,
+    "stablecoins_usd": 868220000,
+    "stablecoin_change_7d_pct": 15.76,
+    "net_inflows_24h_usd": -67840000,
+    "interpretation": "Robinhood remains the dominant emerging spot-speculation venue, but normalized volume is still contracting and remains only a small fraction of headline volume. No improvement in organic-breadth confidence is recorded."
+  },
+  "material_update": {
+    "asset": "Pons",
+    "symbol": "PONS",
+    "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+    "classification": "QUALIFIED_LEADER_BUT_ATTENTION_NOW_CROWDED",
+    "market_snapshot": {
+      "price_usd": 0.6076,
+      "market_cap_usd": 432651000,
+      "volume_24h_usd": 131630000,
+      "price_change_24h_pct": 49.8,
+      "price_change_7d_pct": 381.5,
+      "new_all_time_high_usd": 0.6074,
+      "ath_timestamp_context": "CoinGecko showed the ATH approximately 21 minutes before the scan."
+    },
+    "attention_change": "PONS and Pons crossed from crypto-native/niche attention into broad independent crypto-media coverage during this scan. CoinDesk published a fresh feature on Pons as a top fee generator, while CoinGecko aggregated multiple independent reports around the Binance Alpha listing and record fees. This is positive confirmation of narrative reach but now becomes a crowding/late-attention penalty rather than an opportunity-score boost.",
+    "wallet_quality": "No new independently funded selective-wallet convergence was established. Wallet-quality score is unchanged and must not be upgraded merely because price and media attention accelerated.",
+    "structural_gate": "UNCHANGED_PASS_FROM_PRIOR_RECORDS; no new structural failure identified in this scan.",
+    "major_uncertainties": [
+      "Headline Robinhood turnover remains heavily divergent from normalized volume.",
+      "The latest PONS move is increasingly attributable to exchange distribution, protocol-fee publicity, and broad media attention rather than discovery by new selective wallets.",
+      "Broad crypto risk-on conditions are now a stronger confounder: Bitcoin moved back above $80,000 and Robinhood shares surged sharply during the same session."
+    ],
+    "why_it_matters_now": "The leader remains PONS, but the signal has changed phase. Continued price strength after prior qualification is forward confirmation; however, the framework should stop awarding additional points for attention because the asset is now broadly visible and increasingly crowded. This is a state transition, not a new entry-quality alert."
+  },
+  "prior_alert_follow_up": {
+    "asset": "Uniswap",
+    "symbol": "UNI",
+    "contract_ethereum": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+    "prior_alert_timestamp_utc": "2026-09-03T16:30:45Z",
+    "prior_alert_price_usd_approx": 5.71,
+    "current_price_usd": 6.23,
+    "approx_change_since_alert_pct": 9.1,
+    "current_24h_volume_usd": 917257000,
+    "uniswap_fees_24h_usd": 10590000,
+    "robinhood_chain_fee_contribution_24h_usd": 9420000,
+    "robinhood_share_of_uniswap_fees_pct_approx": 88.95,
+    "uniswap_holder_revenue_24h_usd": 509574,
+    "robinhood_holder_revenue_24h_usd": 355433,
+    "status": "PRIOR_ALERT_CONFIRMING_NOT_NEW_ALERT",
+    "interpretation": "UNI has appreciated about 9% from the frozen 16:30 UTC alert snapshot while Robinhood still supplies nearly 89% of Uniswap 24-hour fees. The causal value-capture thesis remains intact, but this does not constitute a second qualification event."
+  },
+  "leadership": {
+    "pons_market_cap_usd": 432651000,
+    "cashcat_market_cap_usd": 293421492,
+    "cashcat_volume_24h_usd": 58271545,
+    "ai_market_cap_usd": 268727000,
+    "ordering": ["PONS", "CASHCAT", "AI"],
+    "rotation_result": "NO_NEW_ROTATION; CASHCAT remains ahead of AI while PONS widened its lead. CASHCAT volume was down about 34.7% day over day, so its challenger rebound is not broadening into volume leadership."
+  },
+  "cross_ecosystem_screen": {
+    "solana": "DEX volume remains large but weekly change is -22.27%; stablecoins +0.12% and no emerging acceleration.",
+    "bsc": "DEX weekly change -23.68%; stablecoins -0.20%.",
+    "base": "DEX weekly change -31.40%; stablecoins -1.13%.",
+    "arbitrum": "DEX weekly change -40.98% and 24h net inflows -$102.05M.",
+    "monad": "Spot DEX weekly change -38.05%; perps +16.89% but insufficient breadth for a regime call.",
+    "hyperliquid_l1": "Spot DEX -36.69% and perps -34.81% weekly.",
+    "avalanche": "Spot DEX -40.90%; perps +89.50% but only about $33.6M/day, insufficient for broad speculative migration.",
+    "x_layer": "DEX +114% weekly but only about $17.5M/day, stablecoins -9.41%, negligible fees and near-flat inflows; rejected for insufficient scale/persistence.",
+    "sonic": "Stablecoins +20.72% and perps +91.18% weekly, but perps are below $1M/day and spot DEX volume is also below $1M/day; insufficient scale.",
+    "ton": "Perps +84.48% weekly but only about $1.9M/day while spot DEX is contracting; insufficient scale.",
+    "conclusion": "No second ecosystem crossed the meaningful speculative-regime threshold."
+  },
+  "alert_result": "MATERIAL_STATE_UPDATE_PONS_CROWDED_ATTENTION_AND_UNI_FORWARD_CONFIRMATION_NO_NEW_ASSET",
+  "execution": "NONE",
+  "paper_execution": "NONE"
+}
