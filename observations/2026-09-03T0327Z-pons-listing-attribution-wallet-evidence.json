@@ -1,0 +1,108 @@
+{
+  "timestamp_utc": "2026-09-03T03:27:03Z",
+  "type": "RESEARCH_OBSERVATION",
+  "execution_trigger": false,
+  "ecosystem": "Robinhood Chain",
+  "regime_status": "ACTIVE_STRENGTHENING",
+  "alert_reason": "Robinhood Chain's speculative regime strengthened further, but PONS's latest ATH is now partly attributable to a Binance Alpha listing rather than purely organic continuation. A concrete selective successful-wallet rotation from CASHCAT into PONS adds modest wallet-quality support, while current vendor price snapshots diverge sharply and no new candidate clears all hard gates.",
+  "ecosystem_evidence": {
+    "defillama_tvl_usd": 783090000,
+    "stablecoin_mcap_usd": 868280000,
+    "stablecoin_7d_change_pct": 15.77,
+    "chain_fees_24h_usd": 4450000,
+    "chain_revenue_24h_usd": 4010000,
+    "app_fees_24h_usd": 19120000,
+    "app_revenue_24h_usd": 4320000,
+    "dex_volume_24h_usd": 1405000000,
+    "dex_volume_7d_usd": 8381000000,
+    "dex_weekly_change_pct": 96.65,
+    "net_inflows_24h_usd": -67740000,
+    "bridged_tvl_usd": 2707000000,
+    "bridge_activity": {
+      "robinhood_chain_bridge_24h_usd": 18880000,
+      "robinhood_chain_bridge_change_vs_previous_day_pct": 243,
+      "bridge_aggregator_24h_usd": 15920000,
+      "bridge_aggregator_weekly_change_pct": 26.07
+    },
+    "interpretation": "Spot turnover and stablecoin growth remain exceptional while net inflows are increasingly negative and bridge activity is strongly two-way. This continues to fit a high-velocity discretionary speculation regime more than a simple one-way deposit wave. Activity is not primarily airdrop/points driven, but Robinhood's temporary gas subsidy is a material persistence caveat."
+  },
+  "leadership": {
+    "PONS": {
+      "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+      "status": "LEADER_EXTERNAL_CATALYST_POST_LISTING_VOLATILITY",
+      "external_catalyst": "Binance Wallet added PONS to Binance Alpha on 2026-09-02; contemporary reporting attributed a fresh ATH near $0.52 and a brief market-cap expansion above $500M to the listing catalyst.",
+      "live_price_source_disagreement": {
+        "coinmarketcap_usd": 0.384,
+        "birdscan_usd": 0.4123,
+        "stonkscan_usd": 0.4924,
+        "interpretation": "Fresh vendor snapshots are too divergent to treat any one figure as a definitive current mark without a preselected canonical source. The range indicates extreme post-listing volatility and/or source-timing differences."
+      },
+      "liquidity_source_range_usd": [4780000, 5100000],
+      "selective_wallet_evidence": {
+        "wallet": "0x7e3...a3ad",
+        "cashcat_history": "Onchain reporting says this wallet bought $106.5K of CASHCAT and later sold all for $672.6K, realizing about $566K profit.",
+        "pons_rotation": "The same wallet then deployed about $113.7K into 10.2M PONS, sold 1.1M for $117.1K, and still held 9.1M PONS at the article's snapshot.",
+        "confidence_effect": "Positive but limited. This is one selective successful wallet, not independent-wallet convergence, and most of the marked PONS gain was unrealized at the time of reporting."
+      },
+      "attention_quality": {
+        "dexscreener_paid_promotion": "PONS reportedly bought one standard DexScreener profile at launch and no subsequent boosts or ads; many copycats paid for promotion.",
+        "external_listing_contamination": "The Binance Alpha listing is now a major non-organic attention catalyst and should be separated from ecosystem-native demand when evaluating persistence."
+      },
+      "structure": {
+        "hard_gate_status": "PASS_WITH_UNRESOLVED_CONCENTRATION_NORMALIZATION",
+        "note": "No new honeypot/sellability/mint/tax failure was found in this run, but raw holder-concentration snapshots differ depending on whether LP/burn/locked addresses are excluded. Selective-wallet funding independence remains unverified."
+      },
+      "decision": "KEEP_EXISTING_FORWARD_TEST; DO_NOT_CREATE_NEW_EXECUTION_SIGNAL"
+    }
+  },
+  "candidate_filter_results": {
+    "UP": {
+      "decision": "REJECT",
+      "reason": "Activity is heavily incentive/emissions driven: protocol incentives dwarf fee/revenue generation, only a small fraction of supply circulates, and dilution/concentration risk is high."
+    },
+    "NET": {
+      "decision": "REJECT",
+      "reason": "Executable liquidity is too thin relative to valuation and older holder data show extreme concentration; structure/supply data remain inconsistent."
+    },
+    "DELTA": {
+      "decision": "REJECT",
+      "reason": "Momentum is fading and structural verification is incomplete; independent automated checks previously flagged entrapment/quality concerns despite some otherwise clean fields."
+    },
+    "SPACEHOOD": {
+      "contract": "0xFe7E19CbCe2f896C6C528BC355bAF5a768291E18",
+      "decision": "REJECT",
+      "reason": "The tokenized-SpaceX composability narrative is interesting, but it has retraced sharply from its recent peak, liquidity/holder evidence is weaker, and tokenomics documentation is insufficient."
+    },
+    "AI": {
+      "contract": "0x2E8c31162b855A2ffa90F6F8634643Ad6F111e18",
+      "decision": "NOT_QUALIFIED",
+      "reason": "Narrative/composability remains strong but the previously unresolved scanner/structural disagreement is not cleared."
+    },
+    "INDEX": {
+      "contract": "0x56910D4409F3a0C78C64DD8D0545FF0705389870",
+      "decision": "NOT_QUALIFIED",
+      "reason": "Strong tokenized-stock composability, but paid-promotion contamination and unresolved wallet/LP/mint/tax checks remain blockers."
+    }
+  },
+  "other_ecosystems": {
+    "global_dex_weekly_change_pct": -21.04,
+    "Solana": {"dex_weekly_change_pct": -22.94, "status": "NO_REGIME_ALERT"},
+    "Ethereum": {"dex_weekly_change_pct": -14.59, "status": "NO_REGIME_ALERT"},
+    "Hyperliquid_L1": {"spot_dex_weekly_change_pct": -33.82, "status": "NO_REGIME_ALERT"},
+    "Polygon": {"dex_weekly_change_pct": -3.73, "status": "NO_REGIME_ALERT"},
+    "Sonic": {"status": "WATCH_ONLY", "reason": "Stablecoin/inflow/perps growth is not yet matched by persistent broad spot DEX migration."},
+    "Canton": {"status": "REJECT_INCENTIVE_DRIVEN", "reason": "DEX growth is positive but token incentives dwarf organic app fee/revenue generation."}
+  },
+  "regime_persistence_risk": "Robinhood currently subsidizes gas for users through roughly late September 2026. That is not an airdrop/points campaign, but it can inflate transaction counts and capital velocity; the regime should be re-tested after the subsidy ends.",
+  "forward_test_implication": "This run materially changes causal attribution without changing the frozen PONS execution record. PONS's latest high cannot be treated as purely endogenous ecosystem leadership because Binance Alpha supplied a strong external catalyst. At the same time, one demonstrably successful wallet rotating from CASHCAT into PONS is the first concrete selective-wallet evidence supporting the thesis. Future mark-to-market evaluation should use a predeclared canonical market-data source so divergent vendor snapshots cannot be cherry-picked after the fact.",
+  "sources": [
+    "https://defillama.com/chain/robinhood-chain",
+    "https://defillama.com/dexs/chains",
+    "https://defillama.com/bridges/Robinhood%20Chain",
+    "https://www.binance.com/en/support/announcement",
+    "https://news.bitcoin.com/crypto-trader-turns-220k-into-millions-on-robinhood-chain-meme-coins/",
+    "https://dxt.tools/robinhood-chain/promotion-analysis",
+    "https://coinmarketcap.com/currencies/pons/",
+    "https://birdscan.io/token/0x39dBED3a2bd333467115dE45665cC57F813C4571"
+  ]
+}
