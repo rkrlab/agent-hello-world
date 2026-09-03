@@ -1,0 +1,11 @@
+{
+  "timestamp_utc": "2026-09-03T10:20:15Z",
+  "type": "candidate_catalyst_observation",
+  "mode": "RESEARCH_ONLY_NO_EXECUTION",
+  "asset": "PONS",
+  "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+  "event": "Multiple September 2 reports state PONS has been listed on Robinhood, while the trading-opening time had not yet been disclosed in those reports.",
+  "source_quality_note": "This was reported by Gate News and Binance News citing Odaily; no direct Robinhood announcement was located in this run, so the listing is treated as reported/announced rather than independently confirmed live trading.",
+  "interpretation": "If live trading becomes directly confirmed, this is a major distribution/access catalyst for the incumbent Robinhood Chain leader. It also lowers the purity of subsequent price persistence as an endogenous ecosystem-flow signal, because centralized/main-app access can independently expand demand.",
+  "execution": "none"
+}
