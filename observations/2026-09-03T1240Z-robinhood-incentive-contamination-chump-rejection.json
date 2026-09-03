@@ -1,0 +1,78 @@
+{
+  "timestamp_utc": "2026-09-03T12:40:51Z",
+  "type": "regime_quality_and_structural_rejection_alert",
+  "mode": "RESEARCH_ONLY_NO_EXECUTION",
+  "ecosystem": "Robinhood Chain",
+  "regime_status": "ACTIVE_BUT_QUALITY_DOWNGRADED",
+  "ecosystem_regime": {
+    "defillama_raw_dex_volume_24h_usd": 1379000000,
+    "defillama_raw_dex_volume_7d_usd": 8389000000,
+    "defillama_raw_weekly_change_pct": 96.81,
+    "defillama_normalized_volume_24h_usd": 64800000,
+    "defillama_normalized_volume_7d_usd": 440090000,
+    "defillama_normalized_weekly_change_pct": -23.35,
+    "normalized_active_liquidity_usd": 92920000,
+    "stablecoins_usd": 868220000,
+    "stablecoin_change_7d_pct": 15.76,
+    "tvl_usd": 801810000,
+    "tvl_change_24h_pct": 6.88,
+    "net_inflows_24h_usd": -67840000,
+    "chain_fees_24h_usd": 4450000,
+    "app_fees_24h_usd": 19120000,
+    "interpretation": "Robinhood remains the dominant speculative venue by raw turnover, but normalized DEX volume is falling while raw DEX volume is rising sharply. The divergence, negative net inflows, previously observed wash-volume filtering, and newly active exchange trading incentives mean raw volume/trader counts should be materially discounted as evidence of discretionary capital migration."
+  },
+  "new_incentive_contamination": {
+    "gate_alpha_hot_token_competition": {
+      "announced_utc": "2026-09-03T07:37:00Z",
+      "event_window_utc": "2026-09-03T10:00:00Z to 2026-09-08T08:00:00Z",
+      "scope": "All Robinhood Chain tokens in Gate Alpha",
+      "reward_pool": "20,000 USDT equivalent; includes rewards tied to reaching cumulative trading-volume thresholds",
+      "framework_treatment": "DISCOUNT Gate Alpha volume/user growth during the event because activity is directly rewarded. This is the exact incentive contamination the framework is designed to reject rather than count as discretionary speculation."
+    },
+    "gate_alpha_distribution": "Gate Alpha also added eight Robinhood Chain tokens today: ROBLOXIANS, SEMI, HOTDOG, $1, DOGGIE, STRATTON, BUN and DINO. This broadens access but does not establish organic demand.",
+    "okx_cashcat_perpetual": "OKX opened CASHCAT/USDT perpetual futures at 03:30 UTC with leverage up to 20x. This broadens distribution and may amplify CASHCAT price/volume, but derivative-driven activity is not treated as equivalent to organic spot accumulation."
+  },
+  "leadership_snapshot": {
+    "PONS": {
+      "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+      "price_usd": 0.5392,
+      "market_cap_usd": 384253111,
+      "volume_24h_usd": 141709469,
+      "change_24h_pct": 51.4,
+      "change_7d_pct": 335.7,
+      "all_time_high_usd": 0.5478,
+      "status": "leader; structurally cleaner than peers but latest rerating is substantially distribution/listing-catalyst driven",
+      "structural_gate": "PASS_PROVISIONAL",
+      "wallet_quality": "No new independent multi-wallet selective-success convergence established in this run."
+    },
+    "AI": {
+      "market_cap_usd_approx": 290751130,
+      "volume_24h_usd_approx": 40930088,
+      "status": "now clearly ahead of CASHCAT by market cap, but prior unresolved security issue keeps structural gate uncleared"
+    },
+    "CASHCAT": {
+      "market_cap_usd_approx": 259417081,
+      "volume_24h_usd_approx": 58967950,
+      "status": "third in current native leadership by market cap; OKX perpetual listing is a new external catalyst, but prior wallet-structure concerns remain unresolved"
+    }
+  },
+  "new_hard_gate_rejection": {
+    "asset": "CHUMP / Chump Coin",
+    "contract": "0x0e0d2c89a5a019fe1cf762e5e33187631dacc21b",
+    "market_cap_usd_approx": 35163507,
+    "volume_24h_usd_approx": 7240220,
+    "change_24h_pct_approx": 16.3,
+    "change_7d_pct_approx": 125.8,
+    "structural_gate": "FAIL",
+    "reason": "Bubblemaps-linked reporting indicates more than 75 fresh wallets with similar funding and no prior activity acquired roughly 80% of CHUMP supply in closely timed purchases; related wallets were reportedly funded through Relay and later attempted to obscure funding provenance through another wallet group selling via Uniswap. This directly fails linked-wallet, correlated-funding, supply-concentration, suspicious-transfer and manipulation gates."
+  },
+  "cross_ecosystem_result": "No second ecosystem clears the same regime threshold. Solana, Base, BSC and Monad remain negative on weekly spot DEX growth in the current comparison set; Sonic is too small and contracting; Canton remains incentive-distorted; X Layer's raw DEX acceleration is contradicted by declining stablecoins/TVL and weak fee/inflow evidence.",
+  "why_signal_matters_now": "The experiment has a fresh falsifiable quality-control event: Robinhood's headline activity is being amplified by explicit exchange incentives at the same time normalized DEX volume is declining. CHUMP simultaneously demonstrates why correlated funding and wallet-linkage gates are necessary even for a top-performing token. PONS remains leader, but there is no new qualified asset alert from this run.",
+  "uncertainties": [
+    "Normalized-volume methodology captures a narrower quality-adjusted subset and should not be interpreted as a perfect measure of organic speculation.",
+    "No fresh full funding graph was completed for PONS, AI or CASHCAT this run.",
+    "Exchange listings and promotions can create genuine new discretionary demand as well as incentivized churn; only the explicitly rewarded component is rejected outright.",
+    "CHUMP controller identity remains unknown; the rejection is based on wallet-linkage/funding-pattern evidence rather than attribution to a named actor."
+  ],
+  "execution": "NONE"
+}
