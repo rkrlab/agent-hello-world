@@ -1,0 +1,47 @@
+{
+  "timestamp_utc": "2026-09-04T18:27:20Z",
+  "checkpoint_for": "observations/2026-09-04T1732Z-privacy-sector-zec-leadership-broadening.json",
+  "checkpoint_horizon": "+1h_approx",
+  "status": "REGIME_PERSISTS_NO_NEW_ALERT",
+  "leadership": {
+    "leader": "ZEC",
+    "rotation": "NONE",
+    "notes": "ZEC remains the privacy-sector leader. XMR participation strengthened during the hour, while DASH gave back part of its earlier spike; this is sector breadth, not a leadership replacement."
+  },
+  "market_snapshot": {
+    "zec": {
+      "price_usd_approx": 997.31,
+      "change_24h_pct_approx": 20.16,
+      "interpretation": "Still near the session's $1,000 area after the earlier breakout; no persistence failure and no new qualification event."
+    },
+    "xmr": {
+      "price_usd_recent_range": "551-562",
+      "change_24h_pct_recent_range": "8.2%-9.4%",
+      "volume_24h_usd_approx": 205000000,
+      "interpretation": "Participation broadened, but no XMR-specific catalyst or abnormal volume acceleration was found; current move is still best treated as privacy-sector halo plus broad risk-on beta."
+    },
+    "dash": {
+      "price_usd_approx": 46.57,
+      "change_24h_pct_approx": 10.6,
+      "interpretation": "Below the earlier intraday acceleration; remains a high-beta privacy follower rather than a new leader."
+    }
+  },
+  "ecosystem_scan": {
+    "robinhood_chain": "Still the dominant on-chain speculative regime at roughly $1.82B 24h DEX volume and +98.3% weekly, but 24h inflows remain negative (~$67M) and gas subsidy/automation concentration continue to warrant quality discounts.",
+    "x_layer": "Weekly DEX growth remains high (+69.8%) but absolute 24h DEX volume is only ~$19.3M, stablecoins are down ~9.3% weekly, and net inflows are essentially flat/negative; does not clear scale/quality threshold.",
+    "avalanche": "Perp volume is accelerating (+72.9% weekly), but spot DEX volume is down ~43.4% weekly; no broad discretionary spot migration threshold.",
+    "solana": "Spot DEX volume remains down ~22.3% weekly; no displacement of Robinhood or privacy-sector leadership."
+  },
+  "threshold_decision": "NO_NEW_ALERT",
+  "why_no_alert": "The prior privacy-regime alert is confirming rather than changing state. XMR breadth improved, but without a distinct catalyst, abnormal volume growth, or independent high-quality flow evidence. No other ecosystem or asset crossed the combined WHERE + WHY + structural-gate threshold during this checkpoint.",
+  "sources": [
+    "https://defillama.com/chain/robinhood-chain",
+    "https://defillama.com/chain/x-layer",
+    "https://defillama.com/chain/avalanche",
+    "https://defillama.com/chain/solana",
+    "https://coincheckup.com/coins/zcash/historical-data",
+    "https://www.bybit.eu/es-EU/price/monero/",
+    "https://coinmarketcap.com/id/currencies/dash/dash/usd/",
+    "https://coinmarketcap.com/top-stories/6a9a6dc17b7655596150b77b/"
+  ]
+}
