@@ -1,0 +1,102 @@
+{
+  "timestamp_utc": "2026-09-04T17:32:37Z",
+  "mode": "RESEARCH_OBSERVATION_ONLY",
+  "regime": "Privacy coins",
+  "regime_status": "QUALIFIED_BROADENING_WITH_ZEC_LEADERSHIP",
+  "where_capital_is_migrating": {
+    "sector_evidence": "Privacy assets became the strongest crypto sub-sector in the September 4 session: ZEC and DASH materially outperformed the broad market while XMR participated, indicating breadth rather than a single-token print.",
+    "zec_market_evidence": {
+      "intraday_range_observed_usd": "approximately 808 to 1023",
+      "monthly_gain_pct_approx": 94,
+      "spot_volume_24h_usd_approx": 1200000000,
+      "futures_open_interest_usd_approx": 2300000000,
+      "short_liquidations_usd_24h_approx": 34500000
+    },
+    "regulated_flow": {
+      "vehicle": "Grayscale Zcash ETF (ZCSH)",
+      "listing_date": "2026-08-25",
+      "net_inflows_since_listing_usd_at_least": 34400000,
+      "aum_usd_as_of_2026_09_03": 414705020,
+      "zec_held_as_of_2026_09_03": 428613.5287
+    },
+    "network_commitment": {
+      "shielded_zec": 4860000,
+      "shielded_share_pct": 28.8,
+      "shielded_net_inflow_7d_zec": 58505,
+      "hashrate_change": "rose from roughly 25 GSol/s in late August to briefly above 30 GSol/s",
+      "interpretation": "ETF subscriptions, net movement into shielded pools and added mining hash are economically distinct forms of commitment; none is an airdrop/points/quest mechanic."
+    }
+  },
+  "why_capital_appears_speculative": {
+    "qualified_drivers": [
+      "new regulated brokerage access through the first U.S.-listed ZEC-specific ETP",
+      "post-Ironwood security rehabilitation and independently verifiable supply accounting",
+      "renewed privacy narrative with real shielded-pool inflows",
+      "risk-on crypto tape and short-covering acceleration"
+    ],
+    "incentive_discount": "No material airdrop, points, quest or yield-farming program was found explaining ZEC demand. ETF inflows and mining hash require capital commitment rather than reward farming.",
+    "late_stage_discount": "The move is already very extended: ZEC has roughly doubled in a month and short liquidations are contributing to current velocity, so regime qualification is stronger than prospective asymmetry."
+  },
+  "leadership_rotation": {
+    "leader": "ZEC",
+    "leader_address": "N/A - native Zcash L1 asset, not a token contract",
+    "evidence": "ZEC is the clear privacy-sector flagship by current market value, regulated access and one-month relative strength. DASH's roughly 19-23% intraday surge and ~30% weekly move show beta broadening, while XMR's participation is smaller but confirms the move is not solely ZEC-specific.",
+    "secondary_asset": "DASH",
+    "secondary_status": "CATCH_UP_BETA_NOT_LEADERSHIP_REPLACEMENT",
+    "xmr_status": "BREADTH_CONFIRMATION_NOT_LEADERSHIP"
+  },
+  "wallet_quality": {
+    "status": "PARTIALLY_OBSERVABLE",
+    "positive_proxies": [
+      "ZCSH has received at least $34.4M of net subscriptions since launch.",
+      "Cypherpunk Technologies separately reported 323,394.38 ZEC as of Aug. 11, 2026, providing an independent institutional accumulation channel.",
+      "Mining hashpower increased as a separate economic actor class committed capital to the network."
+    ],
+    "limitation": "Zcash privacy makes selective-wallet convergence and funding independence intrinsically difficult to verify on shielded balances. ETF and corporate-treasury flows are therefore used as capital-quality proxies, not as replacements for wallet-level proof.",
+    "concentration_risk": "ZCSH plus Cypherpunk together represent roughly 4.4% of circulating ZEC based on latest disclosed balances; this is meaningful institutional sponsorship but also creates identifiable concentration/distribution risk."
+  },
+  "narrative_and_attention": {
+    "quality": "BROAD_INDEPENDENT",
+    "evidence": "The move is being covered independently by The Block, CoinDesk and multiple market-data outlets, while Grayscale's own fund data independently verifies the regulated-access catalyst. No single influencer campaign explains the attention.",
+    "inverse_signal_risk": "Attention is now mainstream and the $1,000 breakout is a highly salient round-number event, increasing crowding and reflexive momentum risk."
+  },
+  "liquidity_and_executability": {
+    "result": "PASS",
+    "evidence": "ZEC is a large-cap native asset with roughly $1B+ daily spot turnover during the signal window, broad exchange availability and a listed U.S. ETP. This is categorically different from thin new-token liquidity.",
+    "caveat": "Volatility is extreme and derivatives open interest/short liquidations can produce rapid reversals even though nominal liquidity is ample."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_PROTOCOL_CAVEAT",
+    "sellability_honeypot": "PASS - native L1 coin; no smart-contract honeypot mechanism.",
+    "mint_freeze_permissions": "PASS - issuance follows Zcash consensus with a 21M hard cap rather than an ERC-style privileged mint/freeze key.",
+    "lp_control": "NOT_APPLICABLE_TO_NATIVE_ASSET; execution occurs across centralized and decentralized venues rather than a single creator-controlled LP.",
+    "supply_integrity": "PASS_WITH_HISTORY - an Orchard proof-circuit vulnerability disclosed in May/June could theoretically have enabled undetectable counterfeit ZEC. Emergency remediation was followed by Ironwood NU6.3 on July 28. Ironwood sealed Orchard, added a turnstile, and current migration tracking reports the expected supply fully accounted for at the tracked block.",
+    "concentration": "CAVEAT - large disclosed ETF and corporate treasury holdings create concentration risk, but no deployer/creator wallet can unilaterally remove liquidity or mint supply.",
+    "wash_bot_risk": "No evidence found that the core ETF/shielded-pool/mining evidence is primarily wash-trading or bot-generated; derivatives short covering is explicitly discounted."
+  },
+  "major_uncertainties": [
+    "Shielded transfers prevent normal selective-wallet cohort analysis.",
+    "The regime is already mature enough that confirmation does not imply favorable entry asymmetry.",
+    "A material fraction of the latest price acceleration is a short squeeze rather than fresh unlevered accumulation.",
+    "The Orchard vulnerability is fixed and supply is being independently reconciled, but its existence remains a non-trivial historical protocol-risk mark.",
+    "ETF flow data for Sep. 3-4 may be incomplete, so the stated $34.4M cumulative net inflow is a floor rather than a final current total."
+  ],
+  "why_signal_matters_now": "This is the first scan in this research series where a non-Robinhood speculative regime crosses the threshold with multiple independent capital channels: regulated ETF subscriptions, shielded-pool net inflow, mining-hash commitment and sector-level price breadth. ZEC is the leader, while DASH and XMR show the narrative is broadening. The alert is a regime/leadership finding only and is not a recommendation to buy, hold or sell ZEC.",
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://www.theblock.co/news/markets/2026-09-04-zcash-tops-1000-etf-inflows-ramp-up-miners-pile-in-413580",
+    "https://www.thezcashetf.com/",
+    "https://zecstats.org/shielded-percentage",
+    "https://www.zecmetrics.io/",
+    "https://ironwood.zodl.com/",
+    "https://z.cash/upgrade/nu6-3/",
+    "https://www.coindesk.com/markets/2026/09/04/bitcoin-clears-usd81-000-as-privacy-coins-lead-a-broad-crypto-rally",
+    "https://www.sec.gov/Archives/edgar/data/1509745/000110465926060662/cyph-20260331x10q.htm"
+  ]
+}
