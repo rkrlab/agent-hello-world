@@ -1,0 +1,89 @@
+{
+  "timestamp_utc": "2026-09-05T00:20:49Z",
+  "mode": "RESEARCH_OBSERVATION_ONLY",
+  "regime": "Privacy coins",
+  "regime_status": "QUALIFIED_WITH_MARGINAL_LEADERSHIP_ROTATION_TO_DASH",
+  "candidate": {
+    "asset": "DASH",
+    "address": "N/A - native Dash L1 asset, not a token contract",
+    "role": "high-beta marginal-flow leader inside an existing ZEC-anchored privacy regime"
+  },
+  "ecosystem_regime_evidence": {
+    "privacy_category_market_cap_usd_approx": 27600000000,
+    "privacy_category_24h_change_pct_approx": 5.5,
+    "privacy_category_24h_volume_usd_approx": 1500000000,
+    "interpretation": "Privacy remains a broad sector move rather than a one-token print. ZEC continues to anchor the regime, while DASH has become the fastest large-cap expression of the theme."
+  },
+  "why_flows_appear_speculative": {
+    "dash_price_usd_observed": "approximately 55-63 across current feeds",
+    "dash_24h_gain_pct_observed": "approximately 19-35 depending snapshot time",
+    "dash_7d_gain_pct_approx": 44,
+    "dash_24h_volume_usd_observed": "approximately 322M-447M",
+    "dash_volume_change_vs_prior_day_pct_approx": 212,
+    "dash_market_cap_usd_approx": "approximately 705M-805M",
+    "volume_to_market_cap_ratio": "roughly 45-55% over 24h",
+    "interpretation": "Turnover is abnormal relative to capitalization and has accelerated much faster than ZEC's current daily percentage move, consistent with profit/capital rotation into a smaller privacy beta rather than passive long-term allocation alone.",
+    "incentive_discount": "No material airdrop, points, quest, or yield-farming program was found explaining the move. The identifiable drivers are privacy-sector rotation, a recently shipped privacy upgrade, DashCon-related attention, technical breakout behavior, and some short-covering/momentum activity."
+  },
+  "leadership_rotation": {
+    "structural_regime_anchor": "ZEC",
+    "marginal_speculative_leader": "DASH",
+    "zec_current_context": "ZEC remains the dominant privacy asset by market cap, regulated ETF flows, shielded-pool capital and institutional sponsorship, but current 24h price acceleration has cooled to single digits in the latest CoinGecko snapshot.",
+    "dash_rotation_evidence": "DASH is now among the strongest top-100 gainers, with current turnover approaching roughly half of market capitalization and daily percentage performance several times ZEC's latest move. This is a rotation in marginal speculative velocity, not a claim that DASH has replaced ZEC as the sector's fundamental anchor."
+  },
+  "wallet_quality": {
+    "status": "UNCONFIRMED_AT_SELECTIVE_WALLET_LEVEL",
+    "evidence": "Public sources did not establish a cohort of historically selective, independently funded DASH wallets converging on the move.",
+    "weighting": "LOW_TO_MODERATE",
+    "reason": "The signal qualifies primarily through sector breadth, abnormal volume/capital velocity, independent product catalysts and executable market depth, not smart-wallet proof."
+  },
+  "narrative_and_news": {
+    "quality": "BROAD_WITH_MOMENTUM_CONTAMINATION",
+    "product_catalysts": [
+      "Dash announced shielded transactions live on the Evolution mainnet on 2026-08-04, using Orchard-style zero-knowledge privacy.",
+      "DashCon 2026 occurred on 2026-09-03, adding a fresh product/community attention catalyst.",
+      "Dash documentation confirms the optional shielded pool is live in the current protocol version."
+    ],
+    "social_risk": "The move is now attracting breakout/FOMO commentary, so late-stage influencer amplification is treated as a crowding risk rather than confirmation. No single influencer was identified as the primary source of the sector move."
+  },
+  "liquidity_and_executability": {
+    "result": "PASS",
+    "evidence": "DASH trades across Binance, Coinbase, Kraken and many other venues. CoinGecko showed hundreds of millions of dollars of rolling 24h volume with visible two-sided depth across multiple exchanges.",
+    "caveat": "Turnover is exceptionally high relative to market cap, which raises reflexive volatility and reversal risk even though nominal exit liquidity is materially better than new-token microcaps."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_NATIVE_PROTOCOL_CAVEATS",
+    "sellability_honeypot": "PASS - native L1 coin; no token-contract honeypot mechanism.",
+    "dangerous_contract_permissions": "NOT_APPLICABLE - no ERC-style deployer contract controls the native DASH supply.",
+    "mint_freeze_authority": "PASS_WITH_EMISSION_CAVEAT - supply is issued according to protocol rules rather than a privileged creator mint/freeze key; Dash also has protocol treasury emissions governed by the network.",
+    "lp_ownership_control": "NOT_APPLICABLE_TO_NATIVE_ASSET - liquidity is distributed across centralized and decentralized venues rather than controlled by a single launch LP.",
+    "creator_deployer_dumping": "NOT_APPLICABLE in the launch-token sense; DASH is a long-lived native network asset.",
+    "supply_concentration": "CAVEAT - masternode collateral and exchange custody can create holder concentration, and current public-source review did not fully map beneficial ownership across large holdings.",
+    "wash_bot_sniper_risk": "No evidence found that the core cross-exchange turnover is primarily wash trading, but momentum/short-covering activity is explicitly discounted.",
+    "executability": "PASS"
+  },
+  "major_uncertainties": [
+    "Selective-wallet convergence and funding independence are not established.",
+    "A portion of the move is likely short covering and momentum chasing rather than fresh unlevered accumulation.",
+    "DASH's shielded upgrade is real, but current usage growth attributable specifically to shielded transfers is not yet quantified well enough to separate product adoption from narrative trading.",
+    "Current feeds differ materially within the hour on DASH price and 24h percentage because the move is fast; the alert is about relative capital velocity and rotation, not a precise tick.",
+    "ZEC may retake marginal leadership quickly if ETF-driven flows accelerate again."
+  ],
+  "why_signal_matters_now": "The previous privacy alert classified DASH as catch-up beta while ZEC was the sole clear leader. DASH has now crossed a second-stage threshold: turnover has exploded relative to its own capitalization, its current daily percentage move materially exceeds ZEC, and it has an independent recently shipped privacy-product catalyst. This is the first observable leadership rotation inside the qualified privacy regime. ZEC remains the fundamental anchor; DASH is the current marginal speculative-flow leader.",
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://www.coingecko.com/en/coins/dash",
+    "https://www.coingecko.com/en/coins/zcash",
+    "https://www.coingecko.com/en/categories/privacy-coins",
+    "https://www.dash.org/blog/",
+    "https://docs.dash.org/projects/platform/en/latest/docs/explanations/shielded-pool.html",
+    "https://www.dash.org/blog/were-announcing-our-first-official-conference-since-2019-dashcon-2026/",
+    "https://ambcrypto.com/dash-crypto-jumps-17-as-privacy-coin-rally-spreads-beyond-zcash/"
+  ]
+}
