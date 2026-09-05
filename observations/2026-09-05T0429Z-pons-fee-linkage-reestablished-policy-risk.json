@@ -1,0 +1,100 @@
+{
+  "timestamp_utc": "2026-09-05T04:29:00Z",
+  "type": "framework_correction_and_leadership_confirmation",
+  "research_only": true,
+  "trade_recommendation": false,
+  "trade_executed": false,
+  "ecosystem": "Robinhood Chain",
+  "candidate": {
+    "name": "Pons",
+    "symbol": "PONS",
+    "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+    "status": "native speculative leader; no leadership rotation",
+    "approx_price_usd": 0.74,
+    "approx_market_cap_usd": 527000000,
+    "approx_total_24h_volume_usd": 166700000,
+    "approx_main_pool_liquidity_usd": 5730000,
+    "approx_holders": 73400,
+    "top_10_holder_ratio_range_excluding_known_pool_locked_addresses": "8.4%-11% depending scanner methodology",
+    "recent_ath_usd": 0.7391
+  },
+  "ecosystem_regime_evidence": {
+    "robinhood_chain_dex_volume_24h_usd": 1824000000,
+    "robinhood_chain_dex_volume_wow_pct": 98.27,
+    "robinhood_chain_stablecoins_usd": 921550000,
+    "robinhood_chain_stablecoins_7d_pct": 26.94,
+    "robinhood_chain_net_inflows_24h_usd": -65920000,
+    "global_dex_volume_wow_pct": -19.12,
+    "interpretation": "Robinhood remains the clearest chain-level spot-DEX relative acceleration regime, but raw volume/user metrics retain large bot, correlated-wallet, arbitrage, subsidy and account-abstraction discounts from prior observations. Negative net inflow prevents treating turnover as simple new-capital inflow."
+  },
+  "why_flows_appear_speculative": "Pons activity is dominated by token launches and trading rather than yield farming. Nearly 25,000 tokens were launched on September 2 and Pons reported roughly $544M daily trading volume while generating roughly $5.95M-$6.33M of total user-paid fees. This is discretionary speculative turnover, though prior full-chain work showed poor median token outcomes and high HFT/bot concentration, so launch counts and raw volume are heavily discounted.",
+  "new_material_correction": {
+    "prior_state": "At 2026-09-05T02:27Z the model downgraded the PONS value-capture relationship because the PONS token predates the current launchpad contracts and the factory/router contracts do not directly reference PONS; chain-level contract linkage alone did not prove common control or mechanical fee capture.",
+    "current_state": "The economic linkage is now materially supported by a different on-chain path: launchpad fee collectors -> identified buyback/burn executor wallets -> open-market PONS purchases -> burn address. Direct factory-to-token reference is not required for this path.",
+    "official_policy": "Pons documentation states that 80% of the protocol's retained fee share is currently used for a manual buyback executed through an automated TWAP, with purchased PONS sent to the burn address; 20% funds infrastructure/team operations. The documentation explicitly says the 80% allocation is NOT immutable yet.",
+    "onchain_support": "A public Dune cash-flow query identifies v1 and v2 collector addresses and multiple PONS buyback/burn wallets, excludes PONS transfers themselves, and traces non-PONS USD value reaching the burn executors. It reports weekly cash reaching these wallets of about $767.4K for the week of Aug 24, $384.4K Aug 17, $660.4K Aug 10, and $627.8K Aug 3, and states the result reconciles to roughly 75%-86% of v1+v2 protocol revenue, consistent with the advertised 80% routing.",
+    "correct_interpretation": "Restore PONS fee-capture evidence from 'unverified off-chain assertion' to 'on-chain-observed current economic policy.' Do NOT upgrade it to immutable smart-contract entitlement: the team can change the 80% policy and the token does not confer a legal claim on revenue."
+  },
+  "leadership_rotation": {
+    "result": "no rotation",
+    "detail": "PONS remains the Robinhood-native leader and has reaccelerated near a fresh ATH after the 02:27 UTC quality correction. CASHCAT/AI and event-driven stock memes have not displaced it."
+  },
+  "wallet_quality": {
+    "result": "moderate-low; no new selective-wallet convergence",
+    "detail": "Uniswap Labs' previously disclosed strategic PONS purchase remains high-quality external validation, but purchase size, price, wallet and funding route remain undisclosed and it is not counted as an independently verified smart-wallet cohort. No new cluster of historically selective, independently funded wallets was established in this run."
+  },
+  "narrative_news": {
+    "result": "broad independent coverage, not single-influencer-led",
+    "detail": "The strategic Uniswap/Pons relationship, record Pons fees and PONS leadership are covered across multiple independent outlets. The Uniswap Labs purchase was already frozen in the 2026-09-04T00:37Z observation and is not treated as a new catalyst in this record."
+  },
+  "liquidity_executability": {
+    "result": "pass with depth caveat",
+    "detail": "The canonical PONS/WETH Uniswap V3 pool currently shows roughly $5.7M liquidity and about $10.4M 24h volume; PONS also trades through additional Robinhood pools and centralized venues, with roughly $166M-$172M total 24h turnover. DEX depth remains small relative to a roughly $500M+ market cap, so large-exit slippage remains a material risk."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "sellability_honeypot": "pass: sellability observed; CertiK reports no honeypot and no sell-all restriction; 0% transfer taxes",
+    "contract_permissions": "pass: no mint function, blacklist/whitelist, hidden owner, proxy, privileged balance modification, modifiable tax, self-destruct or withdrawal function reported; ownership privilege reported renounced",
+    "deployer": "deployer balance reported 0% by an independent scanner; no evidenced connected-wallet cluster linked to deployer in that scan",
+    "holder_concentration": "pass: top-10 non-pool/known-holder estimates are approximately 8.4%-11%, far below the concentration levels rejected for typical launchpad microcaps",
+    "lp_control": "core launch liquidity passes on documented architecture with a verification caveat. The official Pons API identifies PONS as launched through the documented legacy factory 0x0c37a24F5D23A486FA692d1500881d698B1F77a4; official docs map legacy launches to locker 0x31ca5E101941A93A7DD6d0497928700625CF54B5 and state launch LP positions are locked. A separate Genesis Sentinel snapshot flags at least one wallet-held V3 position, but it also failed to discover the core pool in that snapshot; permissionless third-party LP positions can be withdrawable without making the launcher's locked core position withdrawable. Token-specific legacy position-NFT ownership was not freshly re-derived in this run, so this remains a caveat rather than ignored evidence.",
+    "wash_bot_risk": "ecosystem-level risk remains high; prior full-chain work found HFT/correlated-wallet activity. PONS-specific spot trading shows balanced buy/sell flow and broad holder count but is not assumed wash-free.",
+    "creator_deployer_dumping": "no fresh deployer dumping evidence found; deployer balance reported zero",
+    "insufficient_executable_liquidity": "does not fail due to broad venue access and aggregate turnover, but DEX liquidity/market-cap ratio remains thin"
+  },
+  "major_uncertainties": [
+    "The 80% protocol-fee buyback policy is explicitly mutable and therefore discretionary rather than immutable token entitlement.",
+    "Pons total fees are not the same as protocol revenue; creator fee shares must be excluded before estimating buyback capital.",
+    "The exact current Uniswap Labs PONS position and wallet remain undisclosed.",
+    "Robinhood Chain raw activity remains contaminated by bots, arbitrage, correlated wallets and gas subsidies.",
+    "The core legacy LP lock is strongly supported by factory/locker mapping but the exact PONS position-NFT owner was not independently re-read from current chain state in this run.",
+    "PONS is already highly crowded after a multi-hundred-percent weekly move; this record measures predictive framework evidence, not entry asymmetry."
+  ],
+  "why_signal_matters_now": "This corrects an overly severe downgrade made two hours earlier. The absence of a direct PONS reference in launchpad factory/router contracts does not negate the current economic linkage because fee value is routed through collector and buyback wallets. That linkage is now supported by official policy plus traceable on-chain cash flows, while preserving the key caveat that the policy is mutable. The result raises confidence in PONS as Robinhood's current fee-capture/speculative leader without relaxing structural gates or treating platform volume as automatically organic.",
+  "other_ecosystems_checked": {
+    "privacy": "DASH remains the marginal speculative-velocity leader while ZEC remains the fundamental/regime anchor; persistence only, no new rotation threshold.",
+    "x_layer": "TVL and DEX activity accelerated, but current OKX bonus/yield/RWA incentive campaigns materially contaminate the signal; rejected as a discretionary-speculation regime alert.",
+    "solana_bsc_base_arbitrum_monad_avalanche_sui": "No new spot-DEX regime displacement; most remain negative week-over-week. Avalanche perp growth is positive but lacks corresponding spot confirmation."
+  },
+  "sources": [
+    "https://docs.ponsfamily.com/",
+    "https://dune.com/queries/8431824",
+    "https://www.coindesk.com/tech/2026/09/03/a-memecoin-making-app-becomes-crypto-s-top-fee-generators-as-robinhood-chain-activity-explodes",
+    "https://www.geckoterminal.com/robinhood/pools/0x10cc6bd38112cac182db90b6a71d8bb5939526ba",
+    "https://skynet.certik.com/tools/token-scan/robinhood/0x39dbed3a2bd333467115de45665cc57f813c4571",
+    "https://gspotsol.fun/",
+    "https://www.ethtokenlaunch.com/pons-liquidity-locker/",
+    "https://stonkscan.io/token/0x39dBED3a2bd333467115dE45665cC57F813C4571",
+    "https://sentinel.genesispad.app/token/robinhood/0x39dbed3a2bd333467115de45665cc57f813c4571"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null,
+    "leadership_retained_or_lost": null,
+    "fee_policy_changed": null,
+    "structural_concerns_realized": null
+  }
+}
