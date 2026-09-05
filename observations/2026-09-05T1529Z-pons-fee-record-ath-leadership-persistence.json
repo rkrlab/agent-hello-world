@@ -1,0 +1,123 @@
+{
+  "timestamp_utc": "2026-09-05T15:29:00Z",
+  "type": "native_leadership_persistence_and_fee_scale_threshold",
+  "research_only": true,
+  "trade_recommendation": false,
+  "trade_executed": false,
+  "ecosystem": "Robinhood Chain",
+  "candidate": {
+    "name": "Pons",
+    "symbol": "PONS",
+    "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+    "status": "Robinhood-native speculative leader; leadership strengthened rather than rotated",
+    "approx_price_usd": 0.931,
+    "approx_market_cap_usd": 662437000,
+    "approx_24h_token_volume_usd": 201825000,
+    "ath_usd": 0.9514,
+    "ath_date": "2026-09-05",
+    "approx_24h_change_pct": 23.1,
+    "approx_7d_change_pct": 340.2,
+    "reported_total_supply_after_burn": 712105000
+  },
+  "ecosystem_regime_evidence": {
+    "robinhood_chain_dex_volume_24h_usd": "1.75B-1.82B depending dashboard refresh",
+    "robinhood_chain_dex_weekly_change_pct": 98.27,
+    "robinhood_chain_stablecoins_usd": 921550000,
+    "robinhood_chain_stablecoins_7d_pct": 26.94,
+    "robinhood_chain_inflows_24h_usd": -65920000,
+    "global_dex_volume_24h_usd": 9698000000,
+    "global_dex_weekly_change_pct": -19.1,
+    "global_stablecoin_weekly_change_pct": 0.41,
+    "interpretation": "Robinhood remains the clearest relative speculative-activity outlier. DEX volume is growing approximately +98% weekly while global DEX activity is shrinking ~19%; Robinhood stablecoins are growing ~27% weekly versus ~0.4% globally. Negative rolling net inflows and known gas subsidies/HFT contamination prevent equating turnover with fresh discretionary capital dollar-for-dollar."
+  },
+  "pons_protocol_threshold": {
+    "fees_24h_usd": 9010000,
+    "fees_7d_usd": 39970000,
+    "revenue_24h_usd": 1840000,
+    "revenue_7d_usd": 7730000,
+    "dex_volume_24h_usd": 153880000,
+    "dex_volume_7d_usd": 720440000,
+    "cumulative_fees_usd": 72180000,
+    "cumulative_protocol_revenue_usd": 15340000,
+    "cumulative_token_holder_buyback_burn_usd": 3800000,
+    "prior_publicized_fee_record_usd": 5950000,
+    "threshold_interpretation": "Pons' current ~$9.01M rolling 24h user fees are roughly 51% above the ~$5.95M record publicized two days earlier. This is a meaningful scale/persistence confirmation rather than a one-day launch spike. DefiLlama methodology states roughly 80% of V1 protocol revenue is used for PONS buyback/burn; this remains policy-dependent rather than immutable."
+  },
+  "why_flows_appear_speculative": "The dominant activity is rapid token creation and trading through Pons plus Robinhood DEX trading, not a yield-farming/points program. Gas subsidies and bot/HFT behavior still contaminate raw chain activity, so the signal is weighted toward persistent paid fees, rising stablecoin stock, price/holder persistence and cross-asset wallet rotation rather than address counts alone.",
+  "leadership_rotation": {
+    "result": "PONS leadership strengthened; no handoff to a new native asset",
+    "evidence": [
+      "PONS set a fresh ATH near $0.9514 on Sep 5 and remained within roughly 2% of it at capture.",
+      "PONS is up roughly 340% over 7d while protocol fees accelerated to a new ~$9.01M rolling-24h level.",
+      "A tracked wallet reportedly sold 2.725M CASHCAT for roughly $790K and redeployed about $684K into 1.003M PONS, direct evidence of marginal capital rotation from the earlier CASHCAT leader toward PONS.",
+      "A separate wallet previously turned $106.5K of CASHCAT into $672.6K and then accumulated 10.2M PONS for $113.7K, retaining 9.1M PONS at the cited checkpoint, demonstrating at least one repeat-winning Robinhood wallet converging on PONS."
+    ]
+  },
+  "wallet_quality": {
+    "result": "moderate, not high",
+    "positive": "At least one wallet shows back-to-back profitable CASHCAT then PONS selection, and a separate whale has explicitly rotated capital out of CASHCAT into PONS.",
+    "discounts": "Historical selectivity beyond the observed Robinhood trades, funding-source independence and relationships between these wallets remain unresolved. Very early winning wallets that are already distributing are not counted as fresh bullish convergence. Fresh wallets without track record receive low weight."
+  },
+  "holder_and_activity_persistence": {
+    "fresh_third_party_snapshot_holders": 76900,
+    "fresh_snapshot_top10_pct": 8,
+    "fresh_snapshot_24h_buyers": 3244,
+    "fresh_snapshot_24h_sellers": 2920,
+    "fresh_snapshot_net_buyer_events": 14500,
+    "third_party_assessment": "medium-confidence organic activity",
+    "attention_discount": "The same tracker flags a paid/promoted listing, so social attention is not treated as fully organic."
+  },
+  "narrative_news": {
+    "result": "broad independent attention with paid-promotion contamination",
+    "evidence": "CoinGecko, DefiLlama, CoinDesk, Binance Alpha coverage/listing and Uniswap Labs' disclosed PONS purchase provide independent attention beyond a single influencer. Paid promotion exists and is explicitly discounted."
+  },
+  "liquidity_executability": {
+    "result": "PASS_WITH_DEPTH_CAVEAT",
+    "detail": "PONS is aggregated across 18 exchanges and 125 markets by CoinGecko. Current 24h turnover is about $202M. Gate's active PONS/USDT market showed meaningful but not institutional-scale two-sided depth; multiple CEX and Robinhood DEX venues reduce single-pool dependence. Aggregate liquidity remains thin relative to a ~$662M market cap, so large exits could move price materially."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_UNCHANGED_CAVEATS_FROM_PRIOR_VERIFICATION",
+    "detail": "No new hard-gate failure was identified in this run. Prior work found no actionable honeypot/sell-restriction/blacklist/hidden-owner evidence and treated the core launch liquidity as locked. This run did not independently re-prove every permission or LP-NFT ownership detail. A stale third-party scanner has produced a conflicting mint/issuance flag and burn-address-inflated concentration figures; live mint authority remains an unresolved scanner discrepancy rather than established fact. The token-specific core LP ownership proof and mutable protocol buyback allocation remain caveats. The alert is leadership/fee-scale confirmation for an already-qualified asset, not a structural upgrade."
+  },
+  "rejected_or_non_alerted": {
+    "other_robinhood_microcaps": "No new Robinhood microcap cleared persistence, wallet-quality, concentration, LP and executable-liquidity gates strongly enough to displace PONS.",
+    "privacy": "No new ZEC/DASH leadership rotation threshold was established in this run.",
+    "native_core": "Native's new on-chain CLOB venue shows rising execution volume but lacks a sufficiently evidenced discretionary-speculation regime and a structurally qualified candidate asset; not alerted.",
+    "avalanche_near_zklighter": "Recent isolated activity was insufficient: weekly spot-DEX trends remained negative or stablecoin/flow confirmation was absent."
+  },
+  "major_uncertainties": [
+    "Robinhood Wallet gas subsidies remain a material demand distortion until their scheduled expiry later in September.",
+    "Negative 24h net inflows mean high turnover is not equivalent to fresh net capital entering the chain.",
+    "Bot/HFT/account-abstraction and linked-wallet activity can inflate transaction and user counts.",
+    "PONS buyback allocation is policy-dependent and can be changed rather than an immutable token right.",
+    "Selective-wallet funding independence is not fully mapped.",
+    "Third-party token scanners disagree on a mint/issuance flag; this run did not independently resolve bytecode-level live mint authority.",
+    "Current executable depth is much smaller than headline market capitalization and turnover.",
+    "Paid promotion contaminates part of social-attention evidence."
+  ],
+  "why_signal_matters_now": "This is the first post-$5.95M fee checkpoint where Pons' rolling daily fees have expanded to about $9.01M while PONS simultaneously set a fresh ATH, holder breadth remained large, and direct wallet-level rotation from CASHCAT into PONS appeared. The conjunction strengthens PONS's leadership persistence and the thesis that protocol activity is feeding token demand, without claiming that raw Robinhood activity is fully organic or that a new asset has rotated into leadership.",
+  "sources": [
+    "https://defillama.com/protocol/pons",
+    "https://defillama.com/chain/robinhood-chain",
+    "https://defillama.com/dexs/chain/robinhood-chain",
+    "https://defillama.com/",
+    "https://www.coingecko.com/en/coins/pons",
+    "https://www.coindesk.com/tech/2026/09/03/a-memecoin-making-app-becomes-crypto-s-top-fee-generators-as-robinhood-chain-activity-explodes",
+    "https://www.thedefiant.io/news/defi/uniswap-labs-bought-pons-token-for-long-term-alignment",
+    "https://news.bitcoin.com/crypto-news/wallet-cashcat-pons-robinhood-chain-4-7-million-profit/",
+    "https://www.0xcoral.com/t/robinhood/0x39dbed3a2bd333467115de45665cc57f813c4571"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null,
+    "pons_retains_native_leadership": null,
+    "pons_fee_scale_persists": null,
+    "holder_growth_persists": null,
+    "cashcat_to_pons_rotation_persists": null,
+    "structural_concerns_realized": null,
+    "robinhood_activity_persists_after_subsidy_expiry": null
+  }
+}
