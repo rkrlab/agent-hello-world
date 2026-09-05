@@ -1,0 +1,106 @@
+{
+  "timestamp_utc": "2026-09-05T08:16:00Z",
+  "type": "regime_scale_and_infrastructure_value_capture_confirmation",
+  "research_only": true,
+  "trade_recommendation": false,
+  "trade_executed": false,
+  "ecosystem": "Robinhood Chain",
+  "candidate": {
+    "name": "Uniswap",
+    "symbol": "UNI",
+    "contract_ethereum": "0x1f9840a85d5aF5bf1d1762F925BDADdC4201F984",
+    "status": "infrastructure/value-capture leader; confirmation rather than new native-token rotation",
+    "approx_price_usd": "6.2-6.25",
+    "approx_market_cap_usd": "3.86B-3.94B",
+    "approx_24h_volume_usd": "0.90B-1.03B"
+  },
+  "native_speculative_leader": {
+    "name": "Pons",
+    "symbol": "PONS",
+    "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+    "approx_price_usd": 0.7445,
+    "approx_market_cap_usd": 530400000,
+    "approx_24h_volume_usd": 212900000,
+    "reported_24h_volume_change_pct": 76.6,
+    "reported_24h_price_change_pct": 30.1,
+    "status": "retains Robinhood-native leadership; near recent ATH"
+  },
+  "ecosystem_regime_evidence": {
+    "sep_4_full_day_dex_volume_usd": ">3000000000",
+    "source_basis": "Dune-reported full-day September 4 volume cited by Odaily; Uniswap v2/v3/v4 represented the vast majority",
+    "prior_frozen_2026_09_05_0429_rolling_24h_dex_volume_usd": 1824000000,
+    "comparison_caveat": "The >$3B figure is a completed UTC-day figure whereas the $1.824B baseline was a rolling 24-hour snapshot, so the apparent ~65% increase is directionally useful but not an exact like-for-like growth rate.",
+    "prior_stablecoins_usd": 921550000,
+    "prior_stablecoins_7d_pct": 26.94,
+    "prior_net_inflows_24h_usd": -65920000,
+    "interpretation": "Robinhood remains the dominant chain-level speculative-activity acceleration regime, but raw volume/user metrics continue to receive bot, HFT, account-abstraction, linked-wallet and gas-subsidy discounts. Negative net inflows from the prior snapshot prevent treating turnover as equivalent to fresh capital inflow."
+  },
+  "value_capture_threshold": {
+    "event_date": "2026-09-04",
+    "uni_burn_value_usd": 1150000,
+    "uni_burn_tokens": 184000,
+    "milestone": "first recorded daily UNI burn value above $1 million; second-largest daily burn by token count in the cited dataset",
+    "prior_value_record": "approximately $590,000 on 2026-08-21",
+    "interpretation": "The new record is close to twice the prior value record and confirms that the Robinhood/Uniswap trading surge is converting into observable UNI burn/value-capture mechanics rather than remaining only headline chain volume. The exact portion of the September 4 burn attributable to Robinhood was not independently decomposed in this run, and burn timing can differ from same-day fee accrual."
+  },
+  "why_flows_appear_speculative": "Robinhood activity remains heavily concentrated in token launches, stock-paired memes and fast-turnover trading rather than yield farming. That supports a discretionary-speculation classification, but Robinhood Wallet gas subsidies and known volume-bot/HFT behavior materially contaminate raw volume and address counts. The alert therefore relies on the record fee-to-burn conversion as confirmation, not raw activity alone.",
+  "leadership_rotation": {
+    "result": "no native-token rotation; infrastructure confirmation",
+    "detail": "PONS remains the clear Robinhood-native leader. CASHCAT has weakened to roughly $236.6M market cap and about -8.7% over 24 hours while PONS is roughly $530M market cap, +30% over 24 hours and near its recent ATH. UNI remains the structurally cleaner infrastructure/value-capture leader across whichever Robinhood-native tokens rotate beneath it."
+  },
+  "wallet_quality": {
+    "result": "no upgrade",
+    "detail": "No new cohort of historically selective, independently funded UNI or PONS wallets was established in this scan. Existing wallet-quality discounts and correlated-wallet concerns remain in force; the new threshold is economic value capture rather than smart-wallet convergence."
+  },
+  "narrative_news": {
+    "result": "broad independent confirmation",
+    "detail": "The >$3B Robinhood DEX day and >$1M UNI daily burn were reported independently from the earlier PONS/UNI catalyst cycle. Influencer-driven SHRUB activity was explicitly rejected as a candidate because the move was tied to a concentrated social catalyst and had not cleared structural/persistence gates."
+  },
+  "liquidity_executability": {
+    "uni": "PASS: multi-billion-dollar market capitalization, broad CEX/DEX access and roughly $0.9B-$1.0B daily turnover make UNI executable at ordinary research-scale sizes.",
+    "pons": "PASS_WITH_DEPTH_CAVEAT from prior structural work: broad venues and high aggregate turnover, but DEX depth remains thin relative to approximately $530M market cap."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "candidate": "UNI",
+    "detail": "No new adverse contract, mint/freeze, LP-control, deployer or sellability evidence emerged in this scan. The prior UNI structural pass remains unchanged. The principal caveats are governance/policy dilution risk and the quality of the underlying Robinhood activity, not a newly discovered token-level structural defect. This was not a fresh bytecode audit.",
+    "ecosystem_activity_quality": "NOT CLEAN: gas subsidies, HFT/arbitrage, volume bots, correlated wallets and account abstraction remain material contamination risks and prevent raw chain activity from receiving full weight."
+  },
+  "rejected_or_non_alerted": {
+    "SHRUB": "Rejected as an influencer-concentrated social move with insufficient structural/persistence verification despite a large 24-hour price increase.",
+    "LIT": "Not alerted: Lighter/LIT has strong price momentum but evidence of wash-trading and historical airdrop/incentive contamination prevents a clean discretionary-regime signal.",
+    "privacy": "ZEC and DASH remain strong and persistent, but the prior privacy regime/leadership alerts remain valid; no new internal rotation threshold crossed in this scan.",
+    "other_chains": "No major alternative chain demonstrated a cleaner spot-DEX migration signal strong enough to displace Robinhood in this run."
+  },
+  "major_uncertainties": [
+    "September 4 >$3B DEX volume is a completed-day figure while the previous $1.824B baseline was a rolling 24-hour snapshot.",
+    "Robinhood Wallet gas subsidies remain active and are expected to expire later in September, creating a natural experiment for activity quality.",
+    "The exact fraction of the September 4 UNI burn attributable to Robinhood was not independently decomposed in this run.",
+    "Burn execution can reflect previously accrued protocol fees rather than only same-day fees.",
+    "No new selective-wallet independence/funding analysis cleared a higher confidence threshold.",
+    "Robinhood's earlier sequencer halt remains a liveness/executability tail risk.",
+    "PONS remains highly momentum-driven and crowded despite structural improvements; this record is not an entry signal."
+  ],
+  "why_signal_matters_now": "Two scale thresholds crossed together: Robinhood recorded its first >$3B DEX-volume day while UNI recorded its first >$1M daily burn value. This materially strengthens the thesis that Robinhood's speculative turnover is large enough to create observable infrastructure-level value capture, while PONS still retains native leadership. It is a confirmation of regime scale and UNI infrastructure leadership, not a recommendation to trade and not evidence that raw Robinhood activity is fully organic.",
+  "sources": [
+    "https://www.odaily.news/en/newsflash/515684",
+    "https://en.bloomingbit.io/feed/news/119797",
+    "https://www.theblock.co/news/defi/2026-07-18-uni-burn-poised-to-grow-as-uniswap-governance-votes-on-v4-fees-and-robinhood-chain-expansion-408836",
+    "https://www.coingecko.com/en/coins/pons",
+    "https://www.coingecko.com/en/coins/cash-cat",
+    "https://www.coingecko.com/en/coins/uniswap",
+    "https://crypto.news/robinhood-chain-flipped-solana-revenue-gas-subsidy-expires/",
+    "https://decrypt.co/377463/crypto-meme-coin-stock-pairs-robinhood"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null,
+    "pons_retains_native_leadership": null,
+    "uni_burn_rate_persists": null,
+    "robinhood_volume_persists_after_subsidy_expiry": null,
+    "structural_concerns_realized": null
+  }
+}
