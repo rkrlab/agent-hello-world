@@ -1,0 +1,87 @@
+{
+  "timestamp_utc": "2026-09-05T02:27:25Z",
+  "mode": "RESEARCH_OBSERVATION_ONLY",
+  "signal_type": "REGIME_QUALITY_AND_LEADERSHIP_THESIS_CORRECTION",
+  "ecosystem": "Robinhood Chain",
+  "candidate_context": {
+    "asset": "PONS",
+    "contract": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+    "role": "current Robinhood-native price/attention leader; platform-value-capture linkage downgraded to unverified"
+  },
+  "ecosystem_regime_evidence": {
+    "dex_volume_24h_usd_approx": 1824000000,
+    "dex_weekly_change_pct_approx": 98.27,
+    "global_dex_weekly_change_pct_approx": -19.12,
+    "stablecoin_weekly_change_pct_approx": 26.94,
+    "bridge_aggregator_weekly_change_pct_approx": 60.15,
+    "weekly_active_addresses_dune_approx": 7210000,
+    "weekly_active_address_change_pct_dune_approx": 534.83,
+    "interpretation": "Robinhood Chain remains the strongest relative spot-DEX regime. Address counts are not treated as unique humans because account abstraction, automation and correlated wallets materially contaminate naive wallet breadth."
+  },
+  "pons_full_chain_audit": {
+    "period": "2026-08-03 through 2026-09-03",
+    "tokens_created": 207893,
+    "graduated_to_uniswap": 3228,
+    "graduation_rate_pct": 1.55,
+    "median_graduated_initial_uniswap_liquidity_usd_approx": 9000,
+    "pons_curve_activity_growth_11d_multiple_approx": 55,
+    "new_token_creation_growth_approx_multiple": 17,
+    "sep3_first_time_pons_wallets": 35008,
+    "sep3_total_pons_trading_wallets": 69598,
+    "wallets_finishing_negative_pct": 66.8,
+    "median_graduated_coin_change_from_first_hour_open_pct_approx": -85,
+    "graduated_coins_above_first_hour_open_fraction": "fewer than 1 in 10",
+    "median_real_holders_per_graduated_coin": 74,
+    "median_top10_supply_share_pct_approx": 80,
+    "high_frequency_wallets_gt_1000_trades_approx": 1000,
+    "high_frequency_share_of_activity": "greater than 25%",
+    "linked_hf_cluster": "Nine high-frequency wallets showed sufficiently similar strategy/funding behavior that Bitquery assessed them as looking like one owner.",
+    "interpretation": "Fresh speculative participation is real, but factory-level breadth is economically low quality for the median participant. Raw launch count, first-minute buyers and graduation should receive less weight; persistence, independent wallet diversity, holder dispersion and executable liquidity deserve more."
+  },
+  "why_flows_appear_speculative": {
+    "evidence": "Pons curve trading expanded roughly 55x in 11 days, token creation roughly 17x, and 35,008 of 69,598 Sep 3 Pons-trading wallets had not previously traded a Pons coin.",
+    "incentive_discount": "Robinhood gas subsidies remain an activity contaminant and expire later in September. The full-chain audit nevertheless shows substantial real speculative token turnover; it does not establish that each wallet is an independent human."
+  },
+  "leadership_correction": {
+    "current_status": "PONS remains the largest observed Robinhood-native speculative leader by price/attention scale in this scan, but the fundamental platform-token linkage is downgraded.",
+    "onchain_linkage_finding": "Bitquery reports that the PONS token was deployed before the Pons launchpad, is not referenced by the launchpad factory/router/fee contracts, and the chain data alone cannot establish that the same team controls both. Therefore any claim that launchpad fees mechanically create PONS token value capture is treated as externally asserted rather than on-chain proven.",
+    "current_market_context": "CoinGecko snapshot around $0.662, approximately -4.5% over 24h, about $164M daily volume and about $472M market cap.",
+    "interpretation": "This does not prove the PONS token is unrelated to the platform and is not a structural-contract failure. It does reduce confidence in a fee-capture/fundamental leadership thesis until independently verified."
+  },
+  "wallet_quality": {
+    "result": "MIXED_AND_HIGHLY_CONTAMINATED_AT_FACTORY_LEVEL",
+    "evidence": "High-frequency programs account for more than one quarter of activity in the audit and a nine-wallet cluster appears economically linked. Median users performed poorly. Selective historically successful independent-wallet convergence remains more valuable than raw wallet count."
+  },
+  "liquidity_and_executability": {
+    "regime": "PASS at chain/major-leader level",
+    "new_launches": "GENERALLY_FAIL_OR_REQUIRE_CASE_BY_CASE_REVIEW",
+    "evidence": "The median graduated token was seeded with only about $9K to Uniswap, making headline market caps and turnover poor proxies for executable exit depth."
+  },
+  "structural_gate": {
+    "new_candidate_surfaced": false,
+    "pons_result": "NOT_RE-CERTIFIED_THIS_RUN; PLATFORM_VALUE-CAPTURE LINKAGE UNVERIFIED",
+    "factory_token_result": "NO GENERAL PASS; token-by-token holder concentration, funding linkage, permissions, LP control and executable liquidity remain mandatory hard gates.",
+    "note": "The audit's median concentration statistics apply to graduated Pons coins generally and are not asserted as PONS-token concentration statistics."
+  },
+  "major_uncertainties": [
+    "Active-address and wallet counts cannot be equated with unique humans because of account abstraction, automation and linked-wallet clusters.",
+    "The chain cannot establish the organizational relationship between the PONS token and Pons launchpad; off-chain evidence could strengthen or weaken that relationship.",
+    "Gas subsidies and automated arbitrage continue to inflate some Robinhood activity metrics.",
+    "The Bitquery audit covers through September 3 and is a cohort/outcome study, not a real-time structural audit of every current token."
+  ],
+  "why_signal_matters_now": "The Robinhood speculative regime remains real, but the full-chain audit reveals a sharply winner-take-most distribution: fresh wallets and massive activity coexist with poor median outcomes, thin graduation liquidity, concentrated holders and heavy high-frequency participation. This validates the framework's hard rejection gates and persistence weighting, and it requires downgrading any PONS leadership thesis that depended on unverified mechanical launchpad-fee capture.",
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://bitquery.io/investigations/pons-launchpad",
+    "https://defillama.com/chain/robinhood-chain",
+    "https://defillama.com/bridge-aggregators/chain/robinhood-chain",
+    "https://dune.com/blockchains/robinhood",
+    "https://www.coingecko.com/en/coins/pons"
+  ]
+}
