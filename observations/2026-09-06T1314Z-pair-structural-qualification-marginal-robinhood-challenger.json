@@ -1,0 +1,99 @@
+{
+  "timestamp_utc": "2026-09-06T13:14:48Z",
+  "ecosystem": "Robinhood Chain",
+  "candidate": {
+    "name": "PAIR",
+    "symbol": "PAIR",
+    "contract": "0x6b1d42927b1a84ec28fa88d4fc6fa7af404966be"
+  },
+  "alert_type": "structural qualification plus marginal launchpad-platform leadership",
+  "prospective_only": true,
+  "no_trade_or_recommendation": true,
+  "regime_evidence": {
+    "robinhood_chain_tvl_usd": 908650000,
+    "robinhood_chain_stablecoin_mcap_usd": 964560000,
+    "robinhood_chain_stablecoin_change_7d_pct": 25.35,
+    "robinhood_chain_dex_volume_24h_usd": 1368000000,
+    "robinhood_chain_dex_volume_7d_usd": 10424000000,
+    "robinhood_chain_dex_volume_weekly_change_pct": 95.26,
+    "robinhood_chain_inflows_24h_usd": -47800000,
+    "interpretation": "Robinhood Chain remains the strongest discretionary speculative-capital regime. Negative 24h net inflow alongside extreme turnover implies high capital velocity/recycling rather than simple passive deposit growth."
+  },
+  "candidate_snapshot": {
+    "price_usd_approx": 0.03591,
+    "market_cap_usd_approx": 32803839,
+    "volume_24h_usd_approx": 37793395,
+    "price_change_24h_pct_approx": 184.6,
+    "price_change_7d_pct_approx": 533.1,
+    "note": "Market feeds vary materially intraday; values frozen from CoinGecko discovery snapshot."
+  },
+  "platform_acceleration": {
+    "aug_31_cumulative_volume_usd": 26000000,
+    "aug_31_projects_launched_gt": 1200,
+    "sep_06_cumulative_volume_usd_approx": 100000000,
+    "sep_06_projects_launched_gt": 2000,
+    "sep_06_creator_rewards_usd_gt": 600000,
+    "sep_06_pair_burn_value_usd_gt": 3000000,
+    "interpretation": "Reported cumulative platform volume rose from $26m on Aug 31 to nearly $100m by Sep 6 while launched projects rose from >1,200 to >2,000. This is platform-level acceleration, not only token-price momentum."
+  },
+  "why_flows_appear_speculative": "The move is occurring inside Robinhood Chain's existing high-velocity trading regime and is tied to PAIR's stock-token composability, platform usage and fee-funded PAIR buyback/burn. It is not primarily an airdrop/points/quest event. However, PAIR also runs builder/spotlight programs and newer fee-policy modes can distribute value to holders, so incentive contamination is non-zero and is discounted.",
+  "leadership": {
+    "PONS": "remains the dominant native Robinhood speculative flagship by market cap and turnover",
+    "UNI": "remains the cleaner broad infrastructure/value-capture leader",
+    "ARB": "remains the Robinhood/Arbitrum stack narrative-velocity expression",
+    "PAIR": "newly qualifies as an emerging launchpad/platform-token challenger and current marginal acceleration leader in the stock-token composability niche; this is not a PONS displacement"
+  },
+  "wallet_quality": {
+    "rating": "low-to-moderate",
+    "evidence": "One social/on-chain tracker reports a wallet with a 70% win rate and positive PAIR PnL, but this is not independently sufficient for smart-wallet convergence.",
+    "discounts": [
+      "No independently validated cohort of historically selective wallets",
+      "Funding relationships and beneficial-owner independence are unresolved",
+      "Do not count influencer amplification as wallet-quality confirmation"
+    ]
+  },
+  "narrative_and_composability": "PAIR launches fixed-supply tokens directly against one to five canonical Robinhood Stock Tokens using Uniswap v4. The protocol token itself launched through the platform and was paired to SPY. This gives PAIR ecosystem-specific composability with tokenized equities rather than a generic meme-launchpad narrative.",
+  "liquidity_and_executability": {
+    "result": "PASS_WITH_DEPTH_CAVEAT",
+    "evidence": "PAIR has active Robinhood Chain Uniswap markets plus centralized-exchange access and tens of millions of reported 24h turnover. Liquidity has expanded materially from the Sep 2 checkpoint, but remains small relative to larger leaders and market-feed estimates differ."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "resolved_since_prior_rejection": [
+      "Canonical PAIR contract confirmed",
+      "PAIR protocol token confirmed as launched through PAIR itself and paired to SPY",
+      "Platform documentation states fixed 1,000,000,000-token supply for launch tokens",
+      "Canonical Uniswap v4 launch positions are created atomically and permanently locked in PairV4Locker",
+      "Optional developer allocation is a paid market purchase rather than free creator mint/allocation",
+      "Launch protection does not restrict sells and automatically expires for current Launch V2 tokens"
+    ],
+    "remaining_caveats": [
+      "Launchpad factory is an upgradeable proxy, creating protocol/governance admin risk",
+      "Older Sep 2 holder snapshot showed ~20% top-10 concentration; current beneficial ownership and linked-wallet relationships remain unresolved",
+      "No complete independent reconstruction of deployer-associated wallets or creator dumping in this run",
+      "Wash trading, bots and account-abstraction amplification cannot be fully excluded",
+      "Current Launch V2 mechanics are stronger evidence for new launches than for every historical launch generation; PAIR itself launched Aug 29 and its fixed-supply/permanent-lock structure is supported by contemporaneous launch disclosures"
+    ]
+  },
+  "major_uncertainties": [
+    "Current holder count and holder-growth series are inconsistent across third-party indexers",
+    "The >$3m burn and nearly $100m cumulative platform-volume figures originate from PAIR's reported statistics as relayed by Binance/ChainCatcher and should be independently reconciled on-chain",
+    "One-wallet selective-buyer evidence is insufficient to establish independent smart-wallet convergence",
+    "PAIR price has already moved sharply before this timestamp; no credit should be assigned for pre-alert gains"
+  ],
+  "why_signal_matters_now": "PAIR was previously rejected because token-specific structural and liquidity evidence was not strong enough. Primary documentation plus launch disclosures now resolve the fixed-supply and permanent-lock architecture sufficiently to pass the hard gate with caveats, while platform usage and burn value have accelerated and token turnover is abnormal. This creates a clean prospective test of whether structurally qualified platform-token challengers can persist after a large initial move within a proven ecosystem regime.",
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://defillama.com/chain/robinhood-chain",
+    "https://www.coingecko.com/en/coins/pair",
+    "https://pair.fund/docs",
+    "https://www.globenewswire.com/news-release/2026/08/31/3353221/0/en/pair-launches-the-first-multipool-rwa-launchpad-on-robinhood-chain-pairing-new-tokens-with-baskets-of-tokenized-stocks-partners-with-aws-to-scale-its-infrastructure.html",
+    "https://www.binance.com/en/square/post/09-06-2026-pair-reports-nearly-100-million-in-trading-volume-and-teases-major-update-363710956908036"
+  ]
+}
