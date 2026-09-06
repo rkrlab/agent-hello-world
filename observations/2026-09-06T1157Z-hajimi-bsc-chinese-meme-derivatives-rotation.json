@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "observation_time_utc": "2026-09-06T11:57:37Z",
+  "alert_type": "asset_level_speculative_rotation_structural_pass",
+  "ecosystem": "BNB Chain / Chinese-meme sub-ecosystem",
+  "asset": {
+    "name": "Hajimi",
+    "symbol": "HAJIMI",
+    "native_display_symbol": "哈基米",
+    "chain": "BNB Chain",
+    "contract": "0x82Ec31D69b3c289E541b50E30681FD1ACAd24444"
+  },
+  "threshold_result": "PASS_MEANINGFUL_SUBREGIME_ROTATION",
+  "where_capital_is_migrating": {
+    "classification": "Asset/sub-sector rotation, NOT a clean BNB Chain-wide regime change",
+    "details": [
+      "Robinhood Chain remains the strongest chain-wide discretionary-speculation destination in this research series.",
+      "BNB Chain aggregate readings are mixed rather than cleanly accelerating: DefiLlama snapshots disagree on weekly DEX direction and stablecoin supply is roughly flat/slightly down, while GeckoTerminal shows very large absolute BNB Chain turnover but changing day-over-day snapshots.",
+      "Within BNB Chain, Four.meme/Chinese-meme activity is visibly among the trending categories and HAJIMI has become the dominant marginal-velocity expression after a new Binance derivatives catalyst."
+    ]
+  },
+  "why_flows_appear_speculative": {
+    "classification": "DISCRETIONARY_EVENT_DRIVEN_WITH_PROMOTION_RISK",
+    "details": [
+      "Binance Futures launched HAJIMIUSDT at 07:15 UTC on September 6 with up to 3x leverage, USDT settlement and four-hour funding; this is a market-access/leverage catalyst, not an airdrop, quest, points program or yield-farming incentive.",
+      "HAJIMI existed for roughly ten months before today's move and had a long-lived Chinese internet-meme/community narrative, reducing the probability that the entire narrative was invented for today's listing.",
+      "The sudden listing itself creates concentrated promotional/copy-trading reflexivity and receives a large attention-quality discount."
+    ]
+  },
+  "market_snapshot": {
+    "price_range_usd_across_current_feeds": "$0.07-$0.08",
+    "coinmarketcap_price_usd": 0.0722,
+    "coinmarketcap_market_cap_usd": 72200000,
+    "coinmarketcap_volume_24h_usd": 73790000,
+    "coinmarketcap_volume_to_market_cap_pct": 103.11,
+    "coinmarketcap_change_24h_pct": 294.44,
+    "coinmarketcap_intraday_high_usd": 0.08819,
+    "coinmarketcap_ath_date": "2026-09-06",
+    "geckoterminal_snapshot_price_usd": 0.08209,
+    "geckoterminal_market_cap_usd": 81970000,
+    "geckoterminal_primary_pool_liquidity_usd": 3300000,
+    "geckoterminal_primary_pool_volume_24h_usd": 28800000,
+    "geckoterminal_primary_pool_txns_24h": 51520,
+    "geckoterminal_holders": 64907,
+    "geckoterminal_net_buys_usd": 878700,
+    "interpretation": "Feeds are diverging because the market is moving rapidly, but all current sources agree on an approximately fourfold 24-hour repricing and abnormal turnover. Aggregate 24-hour volume is approximately equal to market capitalization on CoinMarketCap; the largest reported DEX pool alone shows tens of millions in turnover against several million dollars of liquidity."
+  },
+  "leadership_rotation": {
+    "result": "MARGINAL_VELOCITY_LEADERSHIP_WITHIN_BSC_CHINESE_MEMES",
+    "details": [
+      "Binance Life remains the much larger established Chinese-meme flagship by market capitalization (roughly $0.5B+ in current feeds).",
+      "HAJIMI is the marginal-flow leader: roughly +300% to +400% in 24 hours across live feeds versus much smaller moves in the established flagship, with a fresh Binance Futures market and a new intraday/CMC all-time high.",
+      "This is therefore a leadership-rotation signal in marginal speculative velocity, not a claim that HAJIMI has become the largest Chinese-meme asset."
+    ]
+  },
+  "wallet_quality": {
+    "result": "LOW_TO_MODERATE; NO SELECTIVE_WALLET CREDIT",
+    "details": [
+      "No independently validated cohort of historically selective, high-hit-rate wallets was established in this run.",
+      "The apparently dominant 0x73D8...4946Db address is widely associated with Binance Wallet/Alpha custody and appears across many Binance Alpha assets; it is not treated as one whale conviction wallet.",
+      "CertiK reports major-holder concentration of about 12% after excluding exchanges and locked addresses; individual non-pool holders in its top-ten table are around 1% each after the custody address and AMM pool.",
+      "Funding independence among the smaller top holders was not fully mapped, so holder diversity does not receive a high score."
+    ]
+  },
+  "narrative_and_attention": {
+    "result": "BROAD_PREEXISTING_CULTURAL_NARRATIVE_PLUS_SUDDEN_LISTING_AMPLIFICATION",
+    "details": [
+      "HAJIMI is a community-takeover Chinese cat meme derived from a long-running internet/music meme and was already listed on Binance Alpha and multiple exchanges before today's event.",
+      "The new Binance Futures listing is independently verifiable and materially expands leveraged access.",
+      "Today's attention is highly event-concentrated, so influencer/listing amplification is treated as a reversal risk rather than additional independent confirmation."
+    ]
+  },
+  "liquidity_executability": {
+    "result": "PASS_WITH_SLIPPAGE_AND_LEVERAGE_CAVEATS",
+    "details": [
+      "GeckoTerminal shows about $3.3M liquidity in the principal HAJIMI/WBNB pool and approximately $28.8M of 24-hour DEX turnover in that pool; additional PancakeSwap/Uniswap pools and centralized venues exist.",
+      "Binance Futures adds a large derivatives-access channel but does not replace spot liquidity and can amplify liquidation cascades.",
+      "Liquidity is meaningful for a ~$70M-$80M meme token but still small relative to capitalization and current turnover, so executable size can degrade quickly in a reversal."
+    ]
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_DATA_SOURCE_CAVEAT",
+    "sellability_honeypot": "PASS: Honeypot.is reports low honeypot risk, zero buy/sell tax and 8,869/8,869 recently analyzed holders able to sell; CertiK independently reports no honeypot and no sell-all restriction.",
+    "permissions": "PASS: CertiK reports no callable mint, blacklist/whitelist, modifiable tax, proxy, hidden owner, self-destruct, privileged balance modification, withdrawal function, transfer pause/cooldown or ownership-regain backdoor; ownership is reported renounced.",
+    "supply_concentration": "PASS_WITH_CUSTODY_INTERPRETATION: raw top-10 concentration is ~65%, but ~53%-54% is held at 0x73D8...4946Db, an address historically tracked as Binance Wallet/Alpha aggregate custody. CertiK's major-holder ratio excluding exchanges/locked addresses is ~12%.",
+    "lp_control": "PASS_FOR_MAIN_V2_POOL_WITH_SCANNER_SEMANTICS_CAVEAT: CertiK displays 'LP Locked Ratio 0%', but Honeypot.is reports 59,397 LP tokens at the 0x...dEaD address, effectively 100% of the LP-token balance it reports for the principal PancakeSwap V2 market, with only tiny residual LP balances elsewhere. This is interpreted as burned LP rather than withdrawable creator-controlled LP. Multiple newer concentrated-liquidity pools have separate position-control mechanics and are not assumed locked.",
+    "deployer_behavior": "No privileged owner remains. A full funding-graph reconstruction of the original deployer and all top holders was not available in this run; no current evidence of deployer dumping was identified in the sources reviewed.",
+    "wash_bot_sniper": "No evidence strong enough to classify the present cross-venue move as primarily wash trading was found, but the listing-driven volume spike and copy-trading availability imply elevated bot/arbitrage activity and are explicitly discounted.",
+    "hard_failures_found": []
+  },
+  "major_uncertainties": [
+    "This alert is discovered after a roughly 4x repricing, not before the catalyst; it must be scored prospectively from 11:57 UTC rather than credited with the earlier move.",
+    "BNB Chain as a whole does not currently pass a clean discretionary-capital-migration test; this is a sub-ecosystem/asset-level rotation.",
+    "No selective-wallet convergence was established.",
+    "Funding relationships among smaller top holders were not fully reconstructed.",
+    "Current market-data feeds diverge materially because of the speed of the move.",
+    "Binance derivatives listing can create both continuation and sharp liquidation-driven reversal; it does not imply a Binance spot listing.",
+    "BNB Chain activity has recent incentive contamination from exchange/wallet trading campaigns; HAJIMI's specific futures catalyst is not itself an airdrop or volume-reward program, but the broader ecosystem is not treated as clean."
+  ],
+  "why_signal_matters_now": "HAJIMI has moved from a long-lived but relatively small BSC Chinese-meme asset into a high-velocity, derivatives-accessible leader with aggregate daily turnover near market capitalization, a fresh intraday high, roughly 65K holders and a contract/spot structure that clears the principal honeypot, mint, owner, concentration and core-V2-LP gates. This is the first BSC Chinese-meme candidate in the current scan to combine a new platform catalyst with enough persistence/liquidity and structural evidence to cross the notification threshold. It is intentionally classified as an asset/sub-sector rotation rather than evidence that discretionary capital has migrated to BNB Chain broadly.",
+  "sources": [
+    "https://www.binance.com/en/support/announcement/detail/ca3196e008da448da107d397bae0b4b0",
+    "https://coinmarketcap.com/currencies/hajimi/",
+    "https://www.geckoterminal.com/bsc/pools",
+    "https://skynet.certik.com/tools/token-scan/bsc/0x82ec31d69b3c289e541b50e30681fd1acad24444",
+    "https://honeypot.is/?address=0x82Ec31D69b3c289E541b50E30681FD1ACAd24444",
+    "https://cryptorank.io/price/hakimi/holders",
+    "https://defillama.com/dexs/chain/bsc",
+    "https://defillama.com/chain/bsc"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_action": "NONE",
+  "paper_trade": false,
+  "research_only": true
+}
