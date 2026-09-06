@@ -1,0 +1,34 @@
+{
+  "observation": "observations/2026-09-06T1314Z-pair-structural-qualification-marginal-robinhood-challenger.json",
+  "observation_timestamp_utc": "2026-09-06T13:14:48Z",
+  "outcome_window": "+1h",
+  "measured_timestamp_utc": "2026-09-06T14:20:51Z",
+  "candidate": {
+    "name": "PAIR",
+    "symbol": "PAIR",
+    "contract": "0x6b1d42927b1a84ec28fa88d4fc6fa7af404966be"
+  },
+  "alert_price_usd": 0.03591,
+  "measured_price_usd": 0.02990,
+  "return_from_alert_pct": -16.74,
+  "market_cap_usd_approx": 27314000,
+  "volume_24h_usd_approx": 30693000,
+  "price_change_24h_pct": 90.0,
+  "price_change_7d_pct": 519.5,
+  "intraday_ath_usd": 0.05203,
+  "drawdown_from_intraday_ath_pct_approx": -42.5,
+  "liquidity_notes": {
+    "coingecko_markets_tracked": 30,
+    "primary_pair": "PAIR/USDG on Uniswap V4 (Robinhood)",
+    "primary_pair_volume_24h_usd_approx": 8337000,
+    "plus_2pct_depth_usd_approx": 20417,
+    "minus_2pct_depth_usd_approx": 20356,
+    "new_derivatives_access": "Gate Futures launched PAIR perpetuals at 11:00 UTC with 1x-10x leverage plus bot and copy trading. This listing predated the 13:14 UTC alert and therefore is contextual evidence only, not a post-alert catalyst."
+  },
+  "interpretation": "PAIR failed to sustain the alert-time price over the first ~1 hour and is materially below the same-day ATH. This is an adverse early persistence result. The still-extreme 24h/7d gains and elevated turnover mean the broader PAIR sub-regime is not invalidated, but no positive leadership upgrade is warranted from this outcome alone.",
+  "prospective_scoring_note": "Do not retroactively credit the Gate Futures listing as a post-alert catalyst because it launched before the original observation timestamp.",
+  "sources": [
+    "https://www.coingecko.com/en/coins/pair",
+    "https://www.gate.com/id/announcements/article/101572"
+  ]
+}
