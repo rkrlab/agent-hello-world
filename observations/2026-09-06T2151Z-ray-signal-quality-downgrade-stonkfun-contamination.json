@@ -1,0 +1,61 @@
+{
+  "timestamp_utc": "2026-09-06T21:51:44Z",
+  "type": "signal_quality_downgrade",
+  "ecosystem": "Solana",
+  "candidate_asset": "RAY",
+  "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+  "prior_observation": "observations/2026-09-06T1552Z-solana-rwa-raydium-value-capture-rotation.json",
+  "summary": "RAY remains structurally qualified and retains direct fee-linked buyback value capture, but the incremental price/volume acceleration now appears materially contaminated by StonkFun launchpad speculation, token rewards and coordinated ecosystem promotion. Do not count the later RAY rally as clean confirmation of the earlier RWA-capital thesis.",
+  "regime_evidence": {
+    "solana_dex_volume_24h_usd": 1915000000,
+    "solana_dex_volume_7d_usd": 13935000000,
+    "solana_dex_weekly_change_pct": -24.19,
+    "solana_stablecoins_usd": 16365000000,
+    "solana_stablecoins_7d_change_pct": 3.53,
+    "solana_inflows_24h_usd": 18830000,
+    "interpretation": "Solana has strong RWA/stablecoin capital quality, but broad DEX activity is still down sharply week-over-week. The current speculative acceleration is localized rather than a chain-wide volume regime expansion."
+  },
+  "ray_evidence": {
+    "current_price_reference_usd": 1.32,
+    "price_change_24h_reference_pct": 53.53,
+    "raydium_dex_volume_24h_reference_usd": 110910000,
+    "raydium_holder_revenue_24h_reference_usd": 57732,
+    "raydium_protocol_incentives_24h_usd": 0,
+    "value_capture": "12% of Raydium swap fees are allocated to open-market RAY buybacks. This remains a valid value-capture channel independent of the quality of the underlying trading flow."
+  },
+  "contamination_evidence": {
+    "stonkfun_stonk_buyback_usd": 1000000,
+    "stonkfun_holder_rewards_usd": 7500000,
+    "stonkfun_reported_total_revenue_usd": 1870000,
+    "stonk_market_cap_intraday_reference_usd": 140000000,
+    "stonk_24h_gain_reference_pct": 449,
+    "zcat_mechanism": "ZCAT distributes bridged ZEC rewards to holders from a transaction-tax mechanism.",
+    "promotion": "StonkFun/STONK received amplification from Raydium, the official Solana account and Solana co-founder Anatoly Yakovenko; ZCAT also received concentrated KOL attention.",
+    "interpretation": "The subsidy/reward pool is large relative to reported platform revenue, and the fastest Solana microcap activity is being supported by explicit token rewards and concentrated ecosystem promotion. This is exactly the activity the framework is supposed to discount."
+  },
+  "leadership_result": {
+    "ray": "No rejection. RAY remains the qualified Solana infrastructure/value-capture expression, but its latest momentum receives a quality discount.",
+    "stonk": "Rejected as a clean discretionary-flow leader because of explicit rewards/subsidies and concentrated promotion.",
+    "zcat": "Rejected as a clean leader because holder returns are directly subsidized with ZEC rewards, plus concentrated-holder/profit-taking and influencer-promotion risk.",
+    "chain": "No Solana-wide speculative leadership upgrade. Robinhood Chain still has the cleaner broad DEX acceleration regime."
+  },
+  "wallet_quality": "No new independently validated selective-wallet cohort for RAY. The notable ZCAT winner is a top-four holder that has already sold 36.6% of its position, so it is not counted as independent smart-wallet convergence.",
+  "structural_gate": {
+    "result": "PASS_WITH_EXISTING_CAVEATS",
+    "notes": "RAY's token-level structural assessment is unchanged from the prior observation. The downgrade is about the quality and persistence of the incremental flow, not a newly discovered contract failure."
+  },
+  "major_uncertainties": [
+    "How much of the incremental Raydium volume is directly attributable to StonkFun/LaunchLab pairs versus independent RWA and ordinary spot activity.",
+    "Whether incentive-driven StonkFun activity persists after reward distributions normalize.",
+    "Whether Solana's RWA/stablecoin growth later broadens into sustained secondary trading independent of meme-launchpad subsidies."
+  ],
+  "why_signal_matters_now": "RAY has continued rising after the earlier RWA/value-capture alert, but newly isolated evidence shows that the marginal speculative burst is materially driven by subsidized launchpad activity. Freezing this downgrade prevents the framework from falsely treating a later price rally as validation of the cleaner RWA thesis and creates a prospective test of whether the RWA/value-capture layer persists after incentive-heavy meme flow fades.",
+  "outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_or_paper_trade_created": false
+}
