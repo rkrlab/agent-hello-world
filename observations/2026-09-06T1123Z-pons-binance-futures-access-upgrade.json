@@ -12,9 +12,12 @@
     "robinhood_chain_dex_volume_7d_change_pct": 95.26,
     "robinhood_chain_stablecoin_supply_usd": 964560000,
     "robinhood_chain_stablecoin_supply_7d_change_pct": 25.35,
+    "robinhood_chain_bridge_aggregator_volume_24h_usd": 17420000,
+    "robinhood_chain_bridge_aggregator_volume_30d_usd": 230140000,
+    "robinhood_chain_bridge_aggregator_weekly_change_pct": 126,
     "robinhood_chain_net_inflows_24h_usd": -47800000,
     "global_dex_volume_7d_change_pct": -5.02,
-    "interpretation": "Robinhood remains the clearest relative speculative-capital destination. Stablecoin growth and DEX growth are unusually strong versus global conditions, while negative net inflows imply high capital velocity/recycling rather than simple passive deposits. Raw address/transaction counts remain discounted for gas subsidies, HFT, arbitrage, bots, account abstraction, and linked-wallet effects."
+    "interpretation": "Robinhood remains the clearest relative speculative-capital destination. Stablecoin, DEX, and bridge-aggregator growth are unusually strong versus global conditions, while negative net inflows imply high capital velocity/recycling rather than simple passive deposits. Raw address/transaction counts remain discounted for gas subsidies, HFT, arbitrage, bots, account abstraction, and linked-wallet effects."
   },
   "new_catalyst": {
     "event": "Binance Futures launched PONSUSDT perpetual",
@@ -72,10 +75,11 @@
     "privacy": "ZEC/DASH remain active but data feeds disagree materially on current relative velocity and no sufficiently clean new independent catalyst/leadership handoff was established this run."
   },
   "sources": [
-    "https://www.binance.com/en/support/announcement/detail/36069d1756be4f64a9b6d0a0a6cc723f",
-    "https://defillama.com/chain/Robinhood%20Chain",
+    "https://www.binance.com/en/support/announcement/detail/ca3196e008da448da107d397bae0b4b0",
+    "https://defillama.com/chain/robinhood-chain",
+    "https://defillama.com/bridge-aggregators/chain/robinhood-chain",
     "https://defillama.com/",
-    "https://skynet.certik.com/tools/token-scan/arb/0x39dBED3a2bd333467115dE45665cC57F813C4571"
+    "https://skynet.certik.com/tools/token-scan/robinhood/0x39dbed3a2bd333467115de45665cc57f813c4571"
   ],
   "prospective_outcomes": {
     "+1h": null,
