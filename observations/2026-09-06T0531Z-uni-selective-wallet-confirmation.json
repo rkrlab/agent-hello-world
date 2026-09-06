@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "observation_time_utc": "2026-09-06T05:31:30Z",
+  "evidence_event_time_utc": "2026-09-06T00:41:00Z",
+  "evidence_timing_note": "The Arthur Hayes transaction was reported on-chain before this scan and therefore is not backdated as a signal. This observation starts at discovery time (05:31 UTC) for forward-outcome scoring.",
+  "alert_type": "wallet_quality_confirmation",
+  "ecosystem": "Robinhood Chain / Uniswap infrastructure spillover",
+  "asset": {
+    "name": "Uniswap",
+    "symbol": "UNI",
+    "chain": "Ethereum",
+    "contract": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
+  },
+  "threshold_result": "PASS_MEANINGFUL_EVIDENCE_UPGRADE",
+  "regime_evidence": [
+    "Robinhood Chain remains the dominant emerging discretionary-speculation venue in this research series, with recent record daily DEX volume above $3B and record chain fees of $6.04M/day.",
+    "Uniswap handled as much as 98% of Robinhood Chain DEX activity on the record-volume day.",
+    "UNI burn value reached a record $1.15M on September 4; approximately 150,000 of 184,000 UNI burned that day were attributed to Robinhood Chain activity."
+  ],
+  "why_flows_appear_speculative": "Robinhood Chain activity is dominated by launchpad/memecoin/trading-terminal flow rather than an airdrop, points, quest, or yield-farming program. Gas subsidies and bot/HFT/account-abstraction effects remain material contamination discounts.",
+  "leadership_state": {
+    "native_speculative_leader": "PONS",
+    "infrastructure_value_capture_leader": "UNI",
+    "marginal_stack_narrative_velocity_leader": "ARB",
+    "rotation_change": "No leadership handoff. This observation upgrades UNI's wallet-quality confirmation rather than replacing PONS or ARB in their respective roles."
+  },
+  "wallet_quality_evidence": [
+    "A wallet previously linked to Arthur Hayes acquired 244,406 UNI for about $1.73M through Flowdesk OTC at roughly $7.06/UNI. The purchase was reported by Lookonchain and on-chain analyst Yu Jin.",
+    "This was repeat UNI buying by the same identified operator: a smaller 28,670 UNI purchase (~$244K) was reported in November 2025.",
+    "Separately, Nansen-labelled whale wallets increased UNI holdings from 3.20M to 3.46M on September 2 (+257,777 UNI, about $1.62M), while the cohort expanded from eight wallets to nine.",
+    "Fresh wallets separately took in about $2.91M of UNI and exchange balances declined by about 351,274 UNI in the same early-September window."
+  ],
+  "wallet_quality_assessment": "MODERATE_TO_HIGH_CONFIRMATION. The Hayes/Flowdesk transaction and Nansen cohort are independent evidence channels and the Hayes wallet shows repeat discretionary UNI buying. However, a statistically validated historical hit rate for Hayes specifically on altcoins is not established here, and funding/beneficial-ownership independence among all Nansen-labelled wallets has not been fully traced. Wintermute inventory movements are not counted as directional smart-money evidence because a market-maker wallet can reflect liquidity provision rather than conviction.",
+  "social_attention_risk": "Arthur Hayes is a high-profile market figure, so disclosure itself can generate copy-trading and influencer-like reflexivity. The positive feature is that the OTC acquisition preceded public reporting; subsequent social amplification is treated as a risk rather than additional confirmation.",
+  "narrative_fit": "UNI has direct, observable token-value linkage to Uniswap protocol fees through market-acquired UNI burns. Robinhood Chain has recently become the dominant source of those burns, making UNI a cleaner infrastructure expression of continued speculative turnover than attempting to select every launchpad microcap winner.",
+  "liquidity_executability": "PASS. UNI is a large-cap, broadly listed asset with deep centralized and decentralized liquidity and high daily turnover; executable liquidity is not the binding structural risk.",
+  "structural_gate": {
+    "result": "PASS_WITH_GOVERNANCE_DILUTION_CAVEAT",
+    "details": [
+      "Canonical Ethereum UNI contract confirmed by Uniswap documentation.",
+      "No active inflation is currently occurring.",
+      "Governance retains authority to mint up to 2% of total supply annually and has not exercised that authority to date.",
+      "Team/investor/advisor vesting concluded in September 2025.",
+      "UNI holders do not have a pro-rata revenue claim; value accrual is mediated through the burn mechanism and governance policy."
+    ]
+  },
+  "major_uncertainties": [
+    "Robinhood Chain volume remains partially contaminated by gas subsidies, HFT/arbitrage, bots, correlated wallets, and account abstraction.",
+    "Robinhood-specific activity is highly concentrated in Uniswap, creating single-chain/single-venue dependence for the recent burn acceleration.",
+    "Hayes is a single identifiable discretionary operator, not by himself a statistically sufficient smart-wallet cohort.",
+    "Exact funding relationships and beneficial-ownership independence among Nansen-labelled whale wallets remain unresolved.",
+    "Price has already repriced sharply, so this is confirmation of regime quality rather than an early asymmetry signal."
+  ],
+  "why_signal_matters_now": "The framework previously had strong usage/value-capture evidence for UNI but only moderate wallet evidence. A repeat discretionary purchase by an identified high-profile operator, layered on a separate Nansen whale cohort, fresh-wallet accumulation, falling exchange balances, and record Robinhood-driven UNI burns, crosses the threshold for a wallet-quality confirmation alert. It strengthens the UNI infrastructure thesis without relaxing structural gates or claiming a new leadership handoff.",
+  "sources": [
+    "https://cryptobriefing.com/arthur-hayes-buys-uni-tokens/",
+    "https://www.kucoin.com/news/flash/arthur-hayes-buys-244-406-uni-for-1-73m-in-quiet-otc-deal",
+    "https://beincrypto.com/altcoins-crypto-whales-buying-september-2026/",
+    "https://developers.uniswap.org/docs/ecosystem/governance/uni",
+    "https://news.bitcoin.com/crypto-news/robinhood-chain-3b-dex-volume-uniswap-uni-burn-1m/",
+    "https://crypto.news/robinhood-chain-daily-fees-hit-record-6-million-dollar/"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_action": "NONE",
+  "paper_trade": false
+}
