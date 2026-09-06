@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-09-06T04:10:47Z",
+  "alert_type": "infrastructure_speculative_leadership_rotation",
+  "ecosystem": "Robinhood Chain / Arbitrum stack spillover",
+  "candidate_asset": {
+    "symbol": "ARB",
+    "contract": "0x912CE59144191C1204E64559FE8253a0e49E6548"
+  },
+  "status": "QUALIFIED_RESEARCH_ALERT_NOT_EXECUTION_SIGNAL",
+  "threshold_reason": "ARB has accelerated far beyond its Sep-3 spillover checkpoint while Robinhood Chain remains the strongest relative speculative-capital regime. The move is now large enough to classify ARB as the marginal speculative infrastructure/narrative leader, while preserving the prior correction that ARB does not receive automatic token-holder cash flow from Robinhood Chain.",
+  "current_market_evidence": {
+    "arb_price_usd_approx": 0.1998,
+    "arb_price_change_24h_pct_approx": 51.9,
+    "arb_price_change_7d_pct_approx": 127.3,
+    "arb_volume_24h_usd_approx": 852000000,
+    "arb_volume_change_vs_prior_day_pct_approx": 278.3,
+    "arb_market_cap_usd_approx": 1340000000,
+    "arb_volume_to_market_cap_pct_approx": 63,
+    "prior_sep3_checkpoint_price_usd_approx": 0.1296,
+    "prior_sep3_checkpoint_volume_24h_usd_approx": 401600000
+  },
+  "ecosystem_regime_evidence": {
+    "robinhood_stablecoins_usd_approx": 965000000,
+    "robinhood_stablecoin_7d_growth_pct_approx": 25.4,
+    "robinhood_dex_volume_24h_usd_approx": 1360000000,
+    "robinhood_dex_volume_7d_usd_approx": 10420000000,
+    "robinhood_dex_7d_growth_pct_approx": 95.3,
+    "robinhood_net_inflows_24h_usd_approx": -47800000,
+    "global_dex_7d_growth_pct_approx": -14.3,
+    "interpretation": "Robinhood remains a large positive outlier versus contracting global DEX activity. Rising stablecoin supply alongside negative net inflows and huge turnover is consistent with high capital velocity/recycling rather than simple passive deposits."
+  },
+  "why_flows_appear_speculative": "The ARB repricing is occurring alongside Robinhood Chain's crypto-native trading regime rather than native Arbitrum One usage growth. Arbitrum One spot DEX volume is down about 17% week-over-week and stablecoins are roughly flat, so the ARB move is best classified as discretionary narrative/infrastructure spillover tied to Robinhood Chain and the Arbitrum Expansion Program, amplified by momentum and likely derivatives/short-covering, not a new Arbitrum yield-farming or points regime.",
+  "leadership_rotation": "PONS remains Robinhood Chain's native speculative leader. UNI remains the cleaner infrastructure/value-capture leader because Uniswap protocol fees can translate into UNI buyback/burn economics. ARB has overtaken UNI in marginal speculative price/volume velocity among infrastructure/stack beneficiaries, so this is a speculative infrastructure leadership rotation rather than a replacement of PONS or UNI's cleaner cash-flow linkage.",
+  "token_rights_correction": "Preserve the Sep-3 correction: under the Robinhood Chain / Arbitrum Expansion Program, 10% of net protocol revenue is allocated to the Arbitrum ecosystem (8% ArbitrumDAO treasury, 2% Developer Guild). There is no automatic ARB-holder dividend, buyback, burn or fee distribution. Robinhood-related value accrual to ARB is therefore governance/treasury/narrative-mediated rather than direct holder cash flow.",
+  "wallet_quality": "NO_UPGRADE. No credible cohort of historically selective, independently funded wallets converging on ARB was established in this run. Broad exchange liquidity lowers microcap execution risk but does not substitute for wallet-quality confirmation.",
+  "narrative_news": "Attention is broad across independent crypto-market publications rather than traceable to one influencer, and multiple outlets are explicitly framing ARB as a Robinhood Chain/Arbitrum-stack beneficiary. Some coverage overstates direct ARB revenue capture; those claims are treated only as evidence of the market narrative, not token-rights fact.",
+  "liquidity_executability": "PASS. ARB is broadly traded with roughly $0.8B-$0.85B of 24-hour turnover and deep multi-venue availability. This does not have the creator-controlled LP or tiny-pool execution profile of a new launch token.",
+  "structural_gate": {
+    "result": "PASS_WITH_GOVERNANCE_UPGRADE_AND_UNLOCK_CAVEATS",
+    "notes": [
+      "Canonical ARB contract is verified and implemented behind a TransparentUpgradeableProxy, so governance/admin upgrade authority is an explicit trust surface.",
+      "No microcap-style honeypot, creator LP-removal, or insufficient broad-market sellability failure surfaced.",
+      "Next scheduled unlock is Sep 16, 2026: 92.65M ARB, about 0.93% of total supply, allocated to investors and team/advisors.",
+      "Beneficial ownership/concentration was not fully decomposed in this run; do not infer clean distribution from holder count alone."
+    ]
+  },
+  "rejected_or_not_alerted": [
+    {
+      "asset": "PAIR",
+      "contract": "0x6b1d42927b1a84ec28fa88d4fc6fa7af404966be",
+      "reason": "PAIR is a genuinely emerging Robinhood-native protocol/launchpad token with roughly +325% 24h, +1,650% 7d, ~$30M turnover against ~$31M market cap, fixed-supply/locked-liquidity claims and a real stock-token multipool catalyst. It is NOT surfaced as qualified because executable depth is shallow relative to turnover, CoinGecko flags anomaly pricing/volume on major pools, no selective-wallet cohort is verified, holder/funding independence is unresolved, and the token-specific LP lock/deployer behavior was not independently traced on-chain in this run. High opportunity score cannot override these hard-gate uncertainties."
+    },
+    {
+      "ecosystem": "Arbitrum One",
+      "reason": "Not a qualifying native ecosystem regime: spot DEX volume is down about 17% week-over-week and stablecoin growth is roughly 1%. ARB's move is spillover/narrative-led rather than evidence that discretionary capital is migrating onto Arbitrum One itself."
+    }
+  ],
+  "major_uncertainties": [
+    "ARB's move is highly reflexive and may be amplified by leverage/short covering rather than spot accumulation.",
+    "No selective-wallet convergence was verified.",
+    "Robinhood Chain gas subsidies and HFT/bot activity still contaminate raw activity metrics.",
+    "ArbitrumDAO treasury revenue does not mechanically create ARB demand.",
+    "Sep-16 token unlock creates a near-term supply-overhang risk.",
+    "Supply concentration and proxy-admin governance risk remain material structural caveats."
+  ],
+  "why_signal_matters_now": "The market is no longer merely recognizing Robinhood Chain's activity; it is aggressively repricing an upstream stack beneficiary even while Arbitrum One's own usage metrics remain weak. That divergence is the hallmark of a new narrative/relative-velocity leadership layer. It is prospectively testable: if Robinhood's regime persists, ARB should continue to show abnormal relative turnover/attention; if the narrative disconnect from direct token rights dominates, ARB should mean-revert despite chain-level strength.",
+  "sources": [
+    "https://www.coingecko.com/en/coins/arbitrum",
+    "https://arbiscan.io/token/0x912CE59144191C1204E64559FE8253a0e49E6548",
+    "https://defillama.com/chain/Robinhood",
+    "https://defillama.com/chain/Arbitrum",
+    "https://www.coingecko.com/en/coins/uniswap"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_action": "none"
+}
