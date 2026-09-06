@@ -1,0 +1,83 @@
+{
+  "timestamp_utc": "2026-09-06T18:42:54Z",
+  "ecosystem": "Hyperliquid L1",
+  "candidate_asset": "HYPE",
+  "contract_or_address": null,
+  "signal_type": "institutional-flow + value-capture + price-discovery confirmation",
+  "threshold_crossed": true,
+  "ecosystem_regime_evidence": {
+    "stablecoin_mcap_usd": 7012000000,
+    "stablecoin_7d_change_pct": 2.10,
+    "defi_tvl_usd": 1536000000,
+    "defi_tvl_24h_change_pct": 2.15,
+    "bridged_tvl_usd": 9638000000,
+    "perp_volume_24h_usd": 2551000000,
+    "perp_volume_7d_usd": 48377000000,
+    "open_interest_usd": 14121000000,
+    "app_fees_24h_usd": 3520000,
+    "app_revenue_24h_usd": 985374,
+    "incentives_30d_usd": 0,
+    "comment": "Spot/perp activity is not accelerating week-over-week, so this is not classified as a fresh transaction-volume migration. The upgrade comes from regulated capital inflows, identifiable treasury accumulation, direct fee-linked HYPE buybacks/burns, and price discovery despite a large nominal unlock overhang."
+  },
+  "why_flows_appear_speculative": "The current HYPE bid is tied to regulated ETF demand, large spot/staking purchases, protocol-funded buybacks and price discovery rather than airdrops, points, quests or liquidity-mining incentives. DefiLlama reports zero token incentives over 24h/7d/30d/1y for Hyperliquid.",
+  "leadership_rotation_evidence": "HYPE reached a new all-time high around $89-$90 while other previously tracked speculative leaders are no longer showing a cleaner combination of institutional access, direct value capture and selective large-account accumulation. This is classified as a new cross-ecosystem capital-quality leader rather than a Robinhood-native leadership replacement.",
+  "wallet_and_identifiable_capital_evidence": {
+    "hype_etf_net_inflows_since_launch_usd": 356580000,
+    "hype_etf_net_assets_usd": 480860000,
+    "reported_13f_holders_usd": 74900000,
+    "bitwise_bhyp_sep4_purchase_usd": 10500000,
+    "hype_strategies_sep3_purchase_hype": 710000,
+    "comment": "ETF holdings include institutions such as UBS, BMO, Jane Street and Brevan Howard; 13F positions can include client capital and hedges, so they are identifiable financial-capital evidence rather than pure directional smart-wallet evidence. Separate large spot/staking buyers are supportive but beneficial-ownership independence is not fully proven."
+  },
+  "value_capture": {
+    "holders_revenue_24h_usd": 866464,
+    "holders_revenue_7d_usd": 13060000,
+    "holders_revenue_30d_usd": 55350000,
+    "cumulative_holders_revenue_usd": 1242000000,
+    "mechanism": "DefiLlama methodology reports 99% of Hyperliquid perp fees and 99% of spot fees after Aug. 30, 2025 going to the Assistance Fund for HYPE purchases; successful HIP-1 deployment-auction HYPE is permanently burned."
+  },
+  "market_confirmation": {
+    "price_usd": 88.06,
+    "all_time_high_usd": 89.60,
+    "market_cap_usd": 19588000000,
+    "token_volume_24h_usd": 1313000000,
+    "dex_share_of_token_volume_pct": 77.19
+  },
+  "liquidity_executability": "PASS. HYPE has approximately $1.31B in 24h token turnover with most measured token volume on DEX venues, plus regulated ETF access and deep native Hyperliquid markets.",
+  "structural_gate": {
+    "result": "PASS WITH MATERIAL SUPPLY-UNLOCK AND VALIDATOR-CONCENTRATION CAVEATS",
+    "reasons": [
+      "HYPE is the native network token rather than a microcap contract with creator-controlled LP or honeypot mechanics.",
+      "A nominal 9.92M HYPE contributor tranche is claimable on Sep. 6; historical realized claims have been far smaller than the calendar ceiling, but the overhang remains real.",
+      "Hyperliquid's validator set has expanded materially, but Foundation-run validators were reported around 49.3% of staked HYPE in mid-2026, leaving governance/consensus concentration as a material trust surface.",
+      "Large unlocked-but-not-circulating supply and future vesting remain dilution risks."
+    ]
+  },
+  "major_uncertainties": [
+    "Current 24h/7d perp and spot volumes are below their prior-week comparison, so the signal is not broad usage acceleration.",
+    "ETF 13F holdings are quarter-end disclosures and may be hedged or client-driven; only more recent fund flows are near-real-time.",
+    "The actual Sep. 6 contributor claim amount and any subsequent exchange deposits/sales must be observed rather than inferred from the nominal unlock calendar.",
+    "Foundation validator stake concentration and closed-source/client-diversity concerns remain material network risks.",
+    "Some reported whale purchases come from public wallet-labeling/social-flow sources whose beneficial-ownership independence cannot be fully proven."
+  ],
+  "why_signal_matters_now": "HYPE is entering fresh price discovery while regulated funds and identifiable treasuries are absorbing supply and protocol fees mechanically create HYPE buy pressure. The combination is unusually high quality under the framework because it joins external financial-capital inflow with direct token value capture and no current incentive subsidy, despite a major nominal unlock occurring today. This is a prospective test from the observation timestamp, not credit for the preceding rally.",
+  "comparison_to_existing_leaders": "Robinhood Chain remains the dominant spot/speculative ecosystem and PONS remains its native speculative leader; UNI remains the cleaner Robinhood infrastructure/value-capture expression. HYPE is newly classified as the strongest cross-ecosystem institutional/fee-capture confirmation signal in this scan, not as a replacement for those chain-specific roles.",
+  "sources": [
+    "DefiLlama Hyperliquid protocol and Hyperliquid L1 chain dashboards, accessed 2026-09-06",
+    "The Block, 2026-09-05: UBS, Jane Street among firms with combined $75M in Hyperliquid ETF holdings",
+    "Crypto.news, 2026-09-06: Bitwise HYPE ETF adds $10.5M after four-day pause",
+    "DefiLlama Hyperliquid Strategies digital-asset-treasury tracker, accessed 2026-09-06",
+    "Tokenomist / unlock reporting accessed 2026-09-06",
+    "Hyperliquid governance/validator reporting accessed 2026-09-06"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_recommendation": false,
+  "trade_executed": false,
+  "paper_trade_created": false
+}
