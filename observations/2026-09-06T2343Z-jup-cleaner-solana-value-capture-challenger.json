@@ -1,0 +1,98 @@
+{
+  "timestamp_utc": "2026-09-06T23:43:22Z",
+  "type": "qualified_emerging_leader",
+  "ecosystem": "Solana",
+  "candidate_asset": "JUP",
+  "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+  "prior_context": [
+    "observations/2026-09-06T1552Z-solana-rwa-raydium-value-capture-rotation.json",
+    "observations/2026-09-06T2151Z-ray-signal-quality-downgrade-stonkfun-contamination.json"
+  ],
+  "summary": "JUP crosses the framework threshold as a second structurally qualified Solana RWA/value-capture expression and the cleaner current marginal-flow challenger after RAY's latest momentum was downgraded for StonkFun incentive/promotion contamination. This is not a Solana-wide speculative regime takeover from Robinhood Chain and not a claim that JUP has displaced Raydium as the primary tokenized-equity AMM venue.",
+  "regime_evidence": {
+    "solana_tvl_usd": 5925000000,
+    "solana_stablecoins_usd": 16365000000,
+    "solana_stablecoins_7d_change_pct": 3.53,
+    "solana_rwa_active_mcap_usd": 2447000000,
+    "solana_dex_volume_24h_usd": 1915000000,
+    "solana_dex_volume_7d_usd": 13935000000,
+    "solana_dex_weekly_change_pct": -24.19,
+    "solana_inflows_24h_usd": 18830000,
+    "solana_rwa_30d_net_growth_reference_usd": 348000000,
+    "interpretation": "The high-quality capital layer remains strong: stablecoin balances are growing, positive inflows persist, and Solana led tracked distributed-RWA net growth over the latest 30-day period. Broad DEX volume remains down sharply week-over-week, so this is a localized leadership/value-capture signal rather than a chain-wide speculative-regime upgrade."
+  },
+  "rwa_usage_evidence": {
+    "solana_q2_tokenized_equity_dex_volume_reference_usd": 5800000000,
+    "jupiter_lend_xstocks_deposits_reference_usd": 20000000,
+    "jupiter_role": "Jupiter routes tokenized-equity trades and Jupiter Lend accepts xStocks such as AAPLx and other tokenized equities as collateral, linking JUP's protocol economics to actual secondary trading and collateral utilization rather than issuance/AUM alone.",
+    "incentive_discount": "Some Jupiter Lend xStocks pools have offered xPoints and reward APY, so collateral growth is not treated as fully organic. The secondary-trading/routing evidence is weighted more heavily."
+  },
+  "candidate_metrics": {
+    "price_reference_usd": 0.2666,
+    "price_change_24h_reference_pct": 20.87,
+    "market_cap_reference_usd": 884221872,
+    "volume_24h_reference_usd": 189572212,
+    "volume_to_market_cap_ratio": 0.2144,
+    "day_high_reference_usd": 0.2823,
+    "day_low_reference_usd": 0.2185,
+    "monthly_average_daily_volume_reference_usd": 40420000,
+    "volume_vs_monthly_average_multiple_approx": 4.69,
+    "persistence": "JUP remained near $0.267 late in the UTC day after the earlier impulse rather than immediately reverting toward the ~$0.22 prior-day area."
+  },
+  "value_capture": {
+    "jupiter_fees_24h_usd": 570974,
+    "jupiter_fees_7d_usd": 4380000,
+    "jupiter_fees_30d_usd": 18470000,
+    "jupiter_revenue_24h_usd": 182183,
+    "jupiter_revenue_7d_usd": 1830000,
+    "jupiter_revenue_30d_usd": 6250000,
+    "holders_revenue_30d_usd": 3120000,
+    "mechanism": "Approximately 50% of onchain protocol revenue is routed to open-market JUP purchases through the Litterbox Trust. Purchased tokens are held by the strategic reserve rather than automatically burned or paid pro rata to holders, so this is durable market-demand value capture but weaker than an immutable burn or direct fee distribution.",
+    "litterbox_total_jup_reference": 165637498,
+    "september_litterbox_additions_reference_jup": 1013044,
+    "latest_daily_litterbox_addition_reference_jup": 143572,
+    "recent_revenue_peak": "Jupiter generated about $822,000 of protocol revenue on 2026-08-30, its strongest day in roughly seven months, implying about $411,000 of buyback-directed revenue at the 50% allocation."
+  },
+  "flow_and_wallet_quality": {
+    "large_trader_flow": "A September 6 flow snapshot reported whale buying around 75x normal pace with roughly $335,000 net buying in one hour while derivatives funding remained neutral, suggesting spot/low-leverage demand rather than a purely perp-driven squeeze.",
+    "assessment": "LOW_TO_MODERATE. The flow evidence is useful but the individual buyers were not independently identified and their funding relationships/history were not reconstructed. No selective-smart-wallet convergence credit is awarded.",
+    "programmatic_buyer": "Litterbox is a protocol-controlled programmatic buyer and is counted as value-capture evidence, not smart-wallet evidence."
+  },
+  "attention_and_narrative": {
+    "organic": "Independent coverage now connects Jupiter to Solana's tokenized-equity routing, collateral usage, recovering protocol revenue and persistent buybacks.",
+    "promotion_discount": "The immediate repricing was amplified by a widely shared tokenomics/fundamentals thread and broader Solana-vs-Robinhood fee debate. Concentrated social amplification is therefore discounted rather than scored as independent organic confirmation.",
+    "narrative_fit": "Jupiter is a full-stack Solana trading/lending interface through which tokenized equities are routed and used as collateral; the narrative directly matches the ecosystem's RWA-capital signal rather than being a generic meme association."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_TREASURY_GOVERNANCE_CAVEATS",
+    "sellability_honeypot": "PASS; established, deeply traded asset with major CEX and DEX execution.",
+    "mint_authority": "REVOKED",
+    "freeze_authority": "REVOKED",
+    "metadata": "Mutable via team cold multisig; this is a governance/control surface but does not grant mint/freeze authority.",
+    "concentration": "Raw holder concentration is high because community/team cold wallets and protocol-controlled accounts hold large non-circulating/reserve balances. CertiK reports top-20 supply concentration around 72.6%; this is not treated as 72.6% anonymous whale ownership, but it remains a material governance/future-distribution overhang.",
+    "liquidity": "Executable liquidity is substantial across major centralized exchanges and Solana routing venues; current aggregate 24h turnover is roughly $190M. DEX LP concentration alone is therefore not treated as a microcap-style rug surface.",
+    "emissions": "The February 2026 net-zero-emissions decision postponed Jupuary, suspended normal team release pressure and committed balance-sheet purchases to absorb relevant team/Mercurial selling. This materially improves dilution risk, but future DAO decisions can change reserve usage.",
+    "hard_gate_failures_found": []
+  },
+  "leadership_result": {
+    "ray": "Still the stronger direct AMM/tokenized-equity venue and structurally qualified, but its latest speculative acceleration is quality-discounted because of reward-heavy StonkFun/LaunchLab activity and concentrated promotion.",
+    "jup": "New qualified cleaner marginal-flow challenger: lower headline beta than RAY but much larger aggregate token turnover, direct protocol-funded repeat buying, spot-heavy whale-flow evidence, and direct tokenized-equity routing/collateral integration.",
+    "solana": "No chain-wide speculative leadership upgrade. Robinhood Chain remains the cleaner broad DEX-acceleration regime; Solana's edge is the higher-quality RWA/stablecoin/collateral layer."
+  },
+  "major_uncertainties": [
+    "The September 6 whale-flow evidence is aggregate and does not establish historically selective, independently funded wallets.",
+    "Litterbox purchases are held rather than automatically burned; future governance could alter disposition of reserve tokens.",
+    "Raw JUP concentration remains high in known project-controlled wallets, creating governance and future-distribution risk even with mint/freeze authorities revoked.",
+    "Some xStocks collateral adoption is supported by xPoints/reward APY and must be discounted versus purely discretionary usage.",
+    "Solana's seven-day DEX volume is still down about 24%, so current JUP strength may remain token-specific rather than broaden into a chain-wide speculative regime."
+  ],
+  "why_signal_matters_now": "This is a prospective test after the move, not credit for the move from roughly $0.22 to $0.267. JUP now combines persistent price/volume confirmation, repeat protocol-funded market purchases, spot-heavy large-trader demand, a substantially improved emission profile, and direct integration with Solana's highest-quality RWA signal. It provides a cleaner Solana value-capture comparison against RAY precisely when RAY's marginal meme-launchpad flow is contaminated by incentives.",
+  "outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_or_paper_trade_created": false
+}
