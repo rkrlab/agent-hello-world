@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "observed_at_utc": "2026-09-06T15:52:55Z",
+  "alert_type": "ecosystem_regime_and_infrastructure_leadership",
+  "status": "prospective_alert",
+  "ecosystem": "Solana",
+  "candidate": {
+    "name": "Raydium",
+    "symbol": "RAY",
+    "chain": "Solana",
+    "canonical_mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+    "role": "RWA/trading infrastructure value-capture candidate",
+    "leadership_classification": "emerging Solana infrastructure leader; not a claim that Solana has replaced Robinhood Chain as the dominant speculative regime"
+  },
+  "why_threshold_crossed_now": [
+    "The newly added RWA regime signal shows Solana leading tracked 30-day net distributed-RWA flows at approximately $348M, lifting distributed RWA value to about $4.23B (+11.13% over 30 days) and holder addresses to about 398,644 (+17.63%).",
+    "Solana also leads current tokenized-stock DeFi utilization at about $79.1M deposited, including material use in trading and lending/collateral rather than issuance/AUM alone.",
+    "Solana DEX volume recovered to about $1.96B over 24h on Sept. 6, retaking the daily lead over BNB Chain and Robinhood Chain, while Solana stablecoin supply reached about $16.37B, +3.54% over seven days.",
+    "Raydium is the leading Solana venue for tokenized-equity spot trading. Solana tokenized-equity DEX volume was about $5.8B in Q2 2026 (+114% QoQ); Raydium reported about $1.63B of xStocks volume in Q2 and had crossed $3B cumulative tokenized-equity volume by late June.",
+    "Raydium has direct, auditable token value capture: 12% of swap fees route to open-market RAY buybacks. The protocol reported that buybacks had accumulated more than 30% of circulating RAY by Aug. 31. This passes the value-capture gate in a way that SOL itself does not directly pass for the tokenized-equity activity.",
+    "RAY price/turnover accelerated sharply on Sept. 6. Current market feeds are asynchronous, but CoinMarketCap's RAY/USDT page showed about $1.15 and +38.5% over 24h, while another current market snapshot showed roughly $83M 24h turnover versus about $309M market cap. Earlier CoinGecko-derived snapshots during the same day were lower, so exact intraday price is treated as uncertain rather than normalized after the fact."
+  ],
+  "rwa_signal": {
+    "net_growth": {
+      "solana_30d_net_distributed_rwa_flow_usd": 348000000,
+      "solana_distributed_rwa_value_usd": 4230000000,
+      "solana_30d_rwa_value_change_pct": 11.13,
+      "solana_rwa_holder_addresses": 398644,
+      "solana_30d_holder_change_pct": 17.63
+    },
+    "tokenized_equity_utilization": {
+      "solana_tokenized_stock_defi_deposits_usd": 79100000,
+      "global_tokenized_stock_defi_deposits_usd": 192600000,
+      "kamino_lend_tokenized_stock_deposits_usd": 41700000,
+      "use_cases": [
+        "secondary DEX trading/liquidity",
+        "lending supply",
+        "collateral utilization"
+      ],
+      "important_distinction": "These figures measure productive DeFi deposits/utilization, not total tokenized-equity issuance. They do not by themselves measure borrowing demand or fee revenue."
+    },
+    "secondary_trading": {
+      "solana_q2_2026_tokenized_equity_dex_volume_usd": 5800000000,
+      "solana_q2_qoq_growth_pct": 114,
+      "raydium_q2_2026_xstocks_volume_usd": 1630000000,
+      "raydium_cumulative_tokenized_equity_volume_by_2026_06_27_usd": 3000000000
+    },
+    "treasury_mmfs": "Solana's distributed RWA base includes products from BlackRock, Franklin Templeton, VanEck, Circle, Ondo and WisdomTree. The $348M flow metric is net distributed-RWA value growth, not secondary trading volume.",
+    "stablecoin_settlement": {
+      "solana_stablecoin_supply_usd": 16366000000,
+      "solana_stablecoin_7d_change_pct": 3.54
+    }
+  },
+  "speculative_regime_context": {
+    "solana_24h_dex_volume_usd": 1960000000,
+    "assessment": "Solana's daily DEX activity has recovered strongly, but the RWA evidence is deliberately weighted more heavily than raw transactions/gas/wallet counts. The RWA inflows are identifiable financial capital and are not primarily an airdrop/points/quest signal.",
+    "contamination_discount": "Some of today's RAY momentum may include broader DeFi/DEX rotation and launchpad/meme catalysts. Those are not counted as RWA confirmation."
+  },
+  "leadership_rotation": {
+    "prior_state": "Robinhood Chain remained the clearest speculative-capital destination, with PONS as native speculative leader and UNI as cleaner Robinhood-related infrastructure/value-capture leader.",
+    "new_state": "Solana now has a separate high-quality financial-capital migration signal. Within Solana, RAY is the clearest crypto-token expression found because Raydium is a major tokenized-equity trading venue and protocol trading fees mechanically fund RAY buybacks.",
+    "not_claimed": [
+      "Solana has not conclusively displaced Robinhood Chain as the dominant speculative regime.",
+      "RAY has not displaced PONS or UNI within Robinhood Chain.",
+      "RWA AUM alone is not being treated as token demand."
+    ]
+  },
+  "wallet_quality": {
+    "selective_wallet_convergence": "not established",
+    "credit": "none",
+    "holder_diversity": "RAY has roughly 200K holders in current market snapshots, but raw holder count is not treated as smart-wallet evidence.",
+    "protocol_accumulation": "The buyback wallet is known and auditable; this is protocol fee-driven accumulation, not independent smart-wallet convergence."
+  },
+  "value_capture": {
+    "result": "PASS",
+    "mechanism": "12% of Raydium swap fees are used to buy RAY on the open market; bought RAY is held at a disclosed protocol address.",
+    "buyback_wallet": "DdHDoz94o2WJmD9myRobHCwtx1bESpHTd4SSPe6VEZaz",
+    "caveat": "Buybacks are held, not automatically burned, and governance/protocol custody therefore remains a dependency."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_MATERIAL_TREASURY_AND_PROTOCOL_CUSTODY_CAVEATS",
+    "sellability": "PASS - established, broadly traded token with multiple CEX/DEX venues",
+    "honeypot_transfer_controls": "PASS - current scans/documentation show mint authority disabled, freeze authority disabled, and no material transfer-control extension",
+    "mint_authority": "disabled",
+    "freeze_authority": "disabled",
+    "max_supply": 555000000,
+    "known_emissions": "approximately 1.9M RAY/year from the pre-minted mining reserve; not new minting",
+    "vesting": "team/community/seed vesting concluded in February 2024",
+    "holder_concentration": "Raw concentration is high, but the largest owner 8pFhUqCU7Fkxfg2DLytRDf7a9oK4XGtN92PrYwtVQc6G is publicly disclosed as the Raydium Protocol Treasury / non-circulating supply custodian. The separate DdHDoz... buyback wallet is also publicly disclosed. This converts an apparent anonymous-whale hard failure into a known protocol-custody/supply-overhang risk rather than an unexplained linked-wallet cluster.",
+    "treasury_owner": "8pFhUqCU7Fkxfg2DLytRDf7a9oK4XGtN92PrYwtVQc6G",
+    "liquidity": "PASS for practical executability due to broad centralized and decentralized market access; individual pool lock ratios are not used as the sole liquidity-security test for this established protocol token",
+    "wash_bot_risk": "not proven absent; not awarded positive credit",
+    "major_caveat": "A large share of total supply remains in protocol-controlled/non-circulating treasury and reserve addresses. Although publicly identified and fixed-supply, this is a governance/custody/supply-overhang risk and must be monitored."
+  },
+  "narrative_and_news": {
+    "organic_basis": [
+      "Solana leads 30-day RWA net flows",
+      "Solana leads tokenized-equity DeFi deposits",
+      "Raydium is a primary tokenized-equity secondary-trading venue",
+      "RAY buybacks are directly funded from trading fees"
+    ],
+    "influencer_risk": "No influencer campaign is counted as positive evidence. Any sudden social amplification around today's RAY breakout is treated as reflexivity risk rather than confirmation."
+  },
+  "major_uncertainties": [
+    "Current RAY price feeds are materially asynchronous during today's fast move; the prospective checkpoint therefore records the observed range/source discrepancy rather than choosing a hindsight-clean price.",
+    "The $348M RWA net-flow figure is asset-value/distribution growth, not trading volume and can include price/value changes as well as subscriptions, redemptions and transfers.",
+    "Tokenized-stock DeFi TVL measures deposits, not necessarily utilization intensity, borrowing demand or fee production.",
+    "Raydium's tokenized-equity historical volume is strong, but a fresh venue-level daily tokenized-equity volume breakdown was not available in this run.",
+    "No historically selective independent-wallet cohort was established for RAY.",
+    "Protocol-held buybacks are not burned and the large protocol treasury remains a governance/custody dependency."
+  ],
+  "why_signal_matters": "This is the first alert generated after adding RWA capital migration as a higher-quality regime input. Solana is now showing identifiable financial capital growth in RWAs, tokenized-equity trading/collateral use, rising stablecoin settlement balances and renewed DEX leadership simultaneously. RAY clears the value-capture gate because a fixed share of Raydium trading fees purchases RAY, including fees from tokenized-equity pools. The alert therefore tests whether financial-capital migration plus direct protocol value capture is a more durable predictor than raw chain activity or meme-volume leadership alone.",
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_action": "none",
+  "paper_trade": "none"
+}
