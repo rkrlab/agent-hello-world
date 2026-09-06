@@ -1,0 +1,89 @@
+{
+  "timestamp": "2026-09-06T11:23:33Z",
+  "ecosystem": "Robinhood Chain",
+  "candidate": {
+    "symbol": "PONS",
+    "address": "0x39dBED3a2bd333467115dE45665cC57F813C4571"
+  },
+  "signal_type": "leadership-confirmation-access-liquidity-regime-upgrade",
+  "ecosystem_regime": {
+    "robinhood_chain_dex_volume_24h_usd": 1368000000,
+    "robinhood_chain_dex_volume_7d_usd": 10424000000,
+    "robinhood_chain_dex_volume_7d_change_pct": 95.26,
+    "robinhood_chain_stablecoin_supply_usd": 964560000,
+    "robinhood_chain_stablecoin_supply_7d_change_pct": 25.35,
+    "robinhood_chain_net_inflows_24h_usd": -47800000,
+    "global_dex_volume_7d_change_pct": -5.02,
+    "interpretation": "Robinhood remains the clearest relative speculative-capital destination. Stablecoin growth and DEX growth are unusually strong versus global conditions, while negative net inflows imply high capital velocity/recycling rather than simple passive deposits. Raw address/transaction counts remain discounted for gas subsidies, HFT, arbitrage, bots, account abstraction, and linked-wallet effects."
+  },
+  "new_catalyst": {
+    "event": "Binance Futures launched PONSUSDT perpetual",
+    "announcement_time_utc": "2026-09-06T05:55:00Z",
+    "launch_time_utc": "2026-09-06T06:45:00Z",
+    "max_leverage": "20x",
+    "settlement": "USDT",
+    "funding_interval_hours": 4,
+    "minimum_notional_usdt": 5,
+    "notes": "24/7 trading; Multi-Assets Mode supported; copy trading expected within 24h. Binance explicitly states that a futures listing does not imply a spot listing."
+  },
+  "why_flows_appear_speculative": "The Robinhood regime is primarily trading/launchpad/meme and tokenized-equity speculation rather than an airdrop, points, quest, or yield-farming program. PONS futures access adds a new leveraged long/short and liquidation-reflexivity channel. The signal is discounted for Robinhood gas subsidies and bot/HFT contamination.",
+  "leadership_rotation": {
+    "result": "No handoff",
+    "classification": "PONS remains Robinhood Chain's native speculative leader. The new Binance derivatives venue reinforces access and executability rather than identifying a new leader.",
+    "market_snapshot_time_utc": "2026-09-06T10:15:00Z",
+    "price_usd": 0.938212,
+    "market_cap_usd": 668220000,
+    "volume_24h_usd": 203800000,
+    "change_24h_pct": 42.56,
+    "intraday_high_usd": 0.971034,
+    "distance_from_high_pct_approx": -3.38
+  },
+  "wallet_quality": {
+    "result": "Unchanged; no new independently validated selective-wallet cohort",
+    "holders_approx": 76900,
+    "top_10_holder_share_pct_approx": 8,
+    "buyers_24h_approx": 3244,
+    "sellers_24h_approx": 2920,
+    "net_buyer_events_approx": 14500,
+    "quality_note": "Independent tracker labels activity medium-confidence organic, but also flags a paid/promoted listing. Promotional attention is therefore discounted and is not treated as wallet-quality confirmation."
+  },
+  "liquidity_executability": {
+    "result": "PASS with spot-depth caveat",
+    "interpretation": "Binance perpetual access materially expands price discovery, hedging and leverage. It improves market access but does not replace the need for adequate spot liquidity or prove spot-LP safety."
+  },
+  "structural_gate": {
+    "result": "PASS WITH LP-CONTROL CAVEAT",
+    "contract_permissions": "CertiK reports no honeypot, callable mint, blacklist/whitelist, modifiable tax, hidden owner, proxy, self-destruct, privileged balance modification, transfer pause/cooldown, or sell-all restriction; ownership is reported renounced.",
+    "source_level_supply": "Source inspection identifies a fixed-supply ERC-20 with minting only in the constructor and no callable mint. Gross minted supply is 1B; circulating/burn-adjusted figures differ across providers.",
+    "unresolved": "Fresh direct proof of ownership/locking for the core legacy launch LP position was not re-established in this run. Prior evidence maps the launch mechanism to a locker, but this dimension remains a caveat and receives no structural-score upgrade."
+  },
+  "major_uncertainties": [
+    "Futures access can amplify leverage, short squeezes, and liquidation cascades in both directions.",
+    "Binance states that the perpetual listing does not imply a future spot listing.",
+    "Open interest and funding persistence after launch were not yet established at this checkpoint.",
+    "No new selective-wallet cohort was independently validated in this run.",
+    "Paid promotion remains an attention-quality discount.",
+    "Core spot LP ownership/locking was not freshly proven in this run.",
+    "Circulating/burn-adjusted supply conventions differ across market-data providers."
+  ],
+  "why_signal_matters_now": "PONS was already the native leader; Binance perpetual access creates a qualitatively new market-access and reflexivity layer while price remains close to its recent high several hours after launch. This is a leadership-quality confirmation, not a new-token alert or trade recommendation.",
+  "rejected_or_discounted_alternatives": {
+    "BNB_Chain": "Numerically accelerating DEX activity, but current speculative acceleration is materially contaminated by explicit Stonks Szn, bStocks sprint, and other trading rewards; stablecoin supply is not accelerating in parallel. No BNB-chain candidate is surfaced from that regime in this run.",
+    "privacy": "ZEC/DASH remain active but data feeds disagree materially on current relative velocity and no sufficiently clean new independent catalyst/leadership handoff was established this run."
+  },
+  "sources": [
+    "https://www.binance.com/en/support/announcement/detail/36069d1756be4f64a9b6d0a0a6cc723f",
+    "https://defillama.com/chain/Robinhood%20Chain",
+    "https://defillama.com/",
+    "https://skynet.certik.com/tools/token-scan/arb/0x39dBED3a2bd333467115dE45665cC57F813C4571"
+  ],
+  "prospective_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "research_only": true,
+  "trade_recommendation": false
+}
