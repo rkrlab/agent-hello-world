@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "observed_at_utc": "2026-09-06T16:20:29Z",
+  "alert_type": "ecosystem_regime_quality_upgrade",
+  "status": "prospective_alert",
+  "ecosystem": "Robinhood Chain",
+  "candidate": {
+    "name": "Uniswap",
+    "symbol": "UNI",
+    "canonical_ethereum_contract": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+    "role": "RWA-linked trading infrastructure and fee-burn value-capture leader",
+    "leadership_classification": "UNI is the clearest infrastructure/value-capture expression of Robinhood Chain's tokenized-asset growth; PONS remains the native speculative-token leader. This is a regime-quality upgrade, not a PONS-to-UNI leadership handoff."
+  },
+  "why_threshold_crossed_now": [
+    "The newly added RWA-capital methodology reveals that Robinhood Chain's growth is not only meme/launchpad turnover: RWA.xyz now reports distributed asset value of $171.85M, +494.62% over 30 days, with RWA 30-day transfer volume of $10.52B, +545.12%.",
+    "RWA holder count reached 1,097,944 (+178.10% over 30 days), while stablecoin market cap reached $951.09M (+62.57%) and 30-day stablecoin transfer volume $50.01B (+114.36%). These identifiable financial-capital metrics receive more weight than raw transactions, gas, or wallet counts.",
+    "This is not issuance/AUM alone: tokenized stocks are actively traded through Uniswap on Robinhood Chain. Recent venue data showed approximately $130M in a single day of stock-token trading, more than $1B cumulative by mid-August, and roughly 99% of Robinhood tokenized-stock DEX liquidity on Uniswap, split approximately 73% v4 and 26% v3 at that checkpoint.",
+    "Current Token Terminal-derived reporting shows $192.6M of tokenized-stock value deployed across DeFi, with Uniswap v4 at $59.1M and v3 at $20.9M. Robinhood-issued stocks account for about $73.1M of category deposits. These are productive liquidity/deposit figures, not simply minted notional.",
+    "Robinhood Chain remains an abnormal speculative regime in parallel: DefiLlama currently shows $1.368B 24h DEX volume, $10.424B over seven days (+95.26% week-over-week), stablecoin market cap $964.58M (+25.36% over seven days), and $908.65M TVL (+5.51% over 24h), despite negative $47.8M 24h net inflow. This supports high capital velocity rather than passive balance growth alone.",
+    "UNI passes the value-capture gate because Uniswap protocol fees are converted into permanently burned UNI. Robinhood Chain's v2/v3 fee expansion and v4 fee-controller activation were approved/executed in July 2026; Robinhood activity subsequently contributed roughly 150,000 of the 184,000 UNI burned on Sept. 4, worth about $1.15M total that day.",
+    "UNI is approximately $7.00 at the checkpoint, +10.2% over 24h and +34.4% over seven days, with a roughly $4.36B market cap and broad access across 145 exchanges / 332 markets. Price/market confirmation is supportive but receives less weight than RWA utilization and value capture."
+  ],
+  "rwa_signal": {
+    "source_date": "2026-09-06",
+    "distributed_asset_value_usd": 171850000,
+    "distributed_asset_30d_change_pct": 494.62,
+    "rwa_holders": 1097944,
+    "rwa_holders_30d_change_pct": 178.10,
+    "rwa_30d_transfer_volume_usd": 10520000000,
+    "rwa_transfer_30d_change_pct": 545.12,
+    "rwa_count": 195,
+    "stablecoin_market_cap_rwa_xyz_usd": 951090000,
+    "stablecoin_market_cap_30d_change_pct": 62.57,
+    "stablecoin_holders": 255040,
+    "stablecoin_holders_30d_change_pct": 367.86,
+    "stablecoin_30d_transfer_volume_usd": 50010000000,
+    "stablecoin_transfer_30d_change_pct": 114.36,
+    "metric_definition_note": "RWA transfer volume is not treated as secondary trading volume. Separate Uniswap/tokenized-stock trading data is required to establish real secondary use. RWA.xyz distributed asset value also differs from DefiLlama's current $251.53M RWA Active MCap; the discrepancy is preserved rather than reconciled by assumption."
+  },
+  "secondary_trading_and_utilization": {
+    "uniswap_robinhood_stock_token_single_day_volume_checkpoint_usd": 130000000,
+    "uniswap_robinhood_stock_token_cumulative_volume_checkpoint_usd": 1000000000,
+    "uniswap_share_of_robinhood_stock_token_dex_liquidity_pct_checkpoint": 99,
+    "uniswap_v4_share_pct_checkpoint": 73,
+    "uniswap_v3_share_pct_checkpoint": 26,
+    "global_tokenized_stock_defi_deposits_usd": 192600000,
+    "uniswap_v4_tokenized_stock_deposits_usd": 59100000,
+    "uniswap_v3_tokenized_stock_deposits_usd": 20900000,
+    "robinhood_issued_stock_defi_deposits_usd": 73100000,
+    "utilization_note": "Uniswap deposits are primarily liquidity-pool inventory and therefore represent deployed trading liquidity. Other category deposits can represent lending/collateral. The $73.1M figure is issuer-level Robinhood stock exposure across DeFi and is not assumed to equal chain-level Robinhood Chain TVL."
+  },
+  "speculative_regime_context": {
+    "defillama_tvl_usd": 908650000,
+    "defillama_tvl_24h_change_pct": 5.51,
+    "defillama_stablecoin_market_cap_usd": 964580000,
+    "defillama_stablecoin_7d_change_pct": 25.36,
+    "defillama_rwa_active_market_cap_usd": 251530000,
+    "defillama_dex_24h_volume_usd": 1368000000,
+    "defillama_dex_7d_volume_usd": 10424000000,
+    "defillama_dex_weekly_change_pct": 95.26,
+    "defillama_24h_net_inflows_usd": -47800000,
+    "assessment": "Robinhood Chain remains the strongest broad speculative-velocity regime, but the RWA/stablecoin evidence upgrades its quality because identifiable financial assets and settlement balances are expanding alongside speculation.",
+    "contamination_discount": "Gas subsidies, bots/HFT/arbitrage, account abstraction, launchpad incentives and memecoin recycling remain discounts. The RWA signal reduces reliance on those noisy metrics but does not eliminate contamination."
+  },
+  "leadership_rotation": {
+    "native_speculation": "PONS remains the native speculative leader; no qualified handoff is declared.",
+    "infrastructure_value_capture": "UNI is upgraded as the clearest RWA-linked infrastructure/value-capture leader because Uniswap dominates Robinhood tokenized-stock liquidity and approved protocol fees route trading economics into UNI burn.",
+    "prior_competitors": "ARB remains a higher-beta Robinhood/Arbitrum narrative expression but its value capture is less direct. PAIR remains an emerging Robinhood platform challenger but has materially shallower executable liquidity and has retraced sharply from today's ATH.",
+    "new_handoff": false
+  },
+  "wallet_quality": {
+    "new_selective_wallet_convergence_this_run": "none",
+    "credit_this_run": "none",
+    "prior_state": "Earlier prospective research had identified a Hayes-linked repeat UNI acquisition plus a separate Nansen-labelled whale/fresh-wallet accumulation cohort. That prior evidence is retained but not double-counted as a new trigger in this observation.",
+    "independence_caveat": "Full beneficial-ownership and funding independence across all prior labelled wallets remains unresolved."
+  },
+  "value_capture": {
+    "result": "PASS",
+    "mechanism": "Uniswap protocol fees are collected into onchain fee infrastructure and exchanged for UNI that is permanently burned. Robinhood Chain fee activation includes v2/v3 and selected v4 fee-controller coverage.",
+    "september_4_2026_burn_uni": 184000,
+    "september_4_2026_burn_value_usd": 1150000,
+    "september_4_robinhood_attributed_uni": 150000,
+    "important_caveat": "Not every Uniswap v4 pool is necessarily subject to protocol fees; v4 fee activation applies selected pool families/policies. Therefore tokenized-stock TVL and volume should not be multiplied mechanically by a universal fee rate. UNI holders have no pro-rata revenue claim; value accrual is mediated through supply burn."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_GOVERNANCE_DILUTION_CAVEAT",
+    "sellability": "PASS - broad global liquidity across 145 exchanges and 332 markets at the checkpoint",
+    "honeypot_or_transfer_restriction": "PASS - established ERC-20 with canonical Ethereum contract and no token-level sell restriction",
+    "canonical_contract": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+    "active_inflation": "none",
+    "governance_mint_authority": "Governance can mint up to 2% of total supply annually but has not exercised this authority to date.",
+    "vesting": "Team, investor and advisor vesting concluded in September 2025.",
+    "liquidity": "PASS for practical executability; this is not dependent on one creator-controlled LP.",
+    "major_caveat": "Governance controls fee parameters and retains limited dilution authority; token value capture is policy-mediated rather than a legally enforceable revenue claim."
+  },
+  "narrative_and_news": {
+    "organic_basis": [
+      "RWA.xyz shows exceptional 30-day growth in Robinhood distributed assets and transfer activity",
+      "stablecoin balances and settlement transfer volume are simultaneously expanding",
+      "stock tokens have demonstrated substantial real secondary DEX trading rather than issuance alone",
+      "Uniswap dominates Robinhood stock-token DEX liquidity and has direct fee-to-UNI-burn economics"
+    ],
+    "influencer_risk": "No new influencer promotion is counted as positive evidence. Current UNI social momentum following the burn record is treated as reflexivity risk rather than an independent confirmation signal.",
+    "regulatory_risk": "Robinhood stock tokens are economic-exposure instruments rather than direct shareholder claims and are unavailable to U.S. users. AMC's CEO has publicly challenged the products and threatened regulatory/legal escalation, creating a material policy risk to the RWA growth path."
+  },
+  "major_uncertainties": [
+    "RWA.xyz distributed asset value ($171.85M) and DefiLlama RWA Active MCap ($251.53M) use different definitions; neither is silently substituted for the other.",
+    "RWA transfer volume is not secondary market volume. The alert relies separately on tokenized-stock DEX trading and DeFi deployment data to establish use.",
+    "Robinhood-issued stock DeFi deposits of about $73.1M are issuer-level across DeFi, not proven to be entirely resident on Robinhood Chain.",
+    "Only selected v4 pool families are subject to current protocol fees, so the exact fraction of tokenized-stock trading that creates UNI burn requires pool-level attribution.",
+    "Gas subsidies and speculative meme/stock-pair trading can still inflate Robinhood activity despite the higher-quality RWA evidence.",
+    "Robinhood stock tokens face legal/regulatory and issuer-acceptance risk and do not confer direct shareholder rights.",
+    "No new independent historically selective wallet cohort was established this run."
+  ],
+  "why_signal_matters": "The new RWA filter changes the quality assessment of the same Robinhood regime. What previously looked primarily like exceptional meme/launchpad velocity now also shows explosive growth in identifiable tokenized financial assets, stablecoin settlement balances and real stock-token secondary trading. Uniswap is the dominant liquidity venue for that activity and its approved protocol fee system converts a portion of trading economics into permanent UNI burn. The prospective test from this timestamp is whether RWA-backed financial-capital migration makes Robinhood's regime and UNI's relative leadership more persistent than raw transaction/memecoin activity would predict.",
+  "sources": [
+    "https://app.rwa.xyz/networks/robinhood",
+    "https://defillama.com/chain/robinhood-chain",
+    "https://gov.uniswap.org/t/temp-check-protocol-fee-expansion-robinhood-chain/26168",
+    "https://developers.uniswap.org/docs/ecosystem/governance/uni",
+    "https://www.coingecko.com/en/coins/uniswap"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_action": "none",
+  "paper_trade": "none"
+}
