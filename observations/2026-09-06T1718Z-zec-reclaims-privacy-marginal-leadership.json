@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "observed_at_utc": "2026-09-06T17:18:01Z",
+  "alert_type": "leadership_rotation_confirmation",
+  "status": "prospective_alert",
+  "ecosystem": "Privacy coins / Zcash",
+  "candidate": {
+    "name": "Zcash",
+    "symbol": "ZEC",
+    "contract_or_address": null,
+    "asset_type": "native Zcash network coin; no token contract address",
+    "role": "privacy-regime structural anchor and reclaimed marginal-flow leader",
+    "leadership_classification": "ZEC has reasserted marginal leadership over DASH after DASH previously became the higher-beta privacy rotation leader. This is a re-concentration of leadership in the original structural anchor, not a new ecosystem discovery."
+  },
+  "why_threshold_crossed_now": [
+    "ZEC accelerated again on September 6, trading near $1,165-$1,180 in current feeds after reaching an intraday high near $1,220, roughly +14% to +17% over 24 hours. DASH remained strong but was generally around $68-$73 and only low-to-mid single-digit positive in comparable later snapshots, indicating marginal momentum rotated back toward ZEC.",
+    "The reacceleration is backed by identifiable institutional capital rather than price alone: Grayscale's Zcash ETF (ZCSH) reported 444,608.1064 ZEC held as of September 4, versus roughly 387,849 ZEC around launch, an increase of about 56,759 ZEC or 14.6% in native-asset holdings. ZCSH AUM was $463.23M as of September 4.",
+    "Network privacy utilization remains unusually strong: current ZecStats data show roughly 4.87M ZEC, 28.8% of issued supply, in shielded pools, versus 23.4% a year earlier, with average daily transactions around 11,492 and roughly 56% shielded.",
+    "This combination matters because the prior privacy rotation had broadened into DASH as the higher-beta follower. ZEC is now simultaneously the structural/fundamental anchor and the strongest current marginal price-flow expression, which is a meaningful leadership change within the regime."
+  ],
+  "ecosystem_regime_evidence": {
+    "classification": "qualified privacy-asset speculative regime",
+    "evidence": [
+      "Privacy coins remain a broad active sector rather than a single-token isolated move; recent independent market coverage continues to identify ZEC as the spark for DASH and broader privacy-coin follow-through.",
+      "ZEC has crossed into top-tier crypto market-cap territory during the current run while maintaining billion-dollar-scale spot turnover and substantially larger derivatives turnover.",
+      "Institutional access through the NYSE Arca-listed ZCSH vehicle is translating into higher native ZEC holdings, which is higher-quality capital evidence than social attention or raw wallet counts.",
+      "Shielded-pool balances and shielded transaction share continue to grow, providing network-use evidence distinct from exchange speculation."
+    ],
+    "incentive_contamination": "No airdrop, points, quest, liquidity-mining or yield-farming program appears to explain the core ZEC move. However, leverage and short liquidations are materially amplifying price action and are explicitly discounted."
+  },
+  "why_flows_appear_speculative": {
+    "assessment": "The marginal move is clearly speculative in market expression but is not purely incentive-manufactured. It combines a privacy-sector narrative, ETF-access catalyst, spot buying and substantial derivatives reflexivity.",
+    "leverage_discount": "Current reporting shows roughly $2.7B of ZEC futures open interest and approximately $7.7B of 24-hour futures turnover versus roughly $0.75B spot in one snapshot. Short liquidations have contributed materially to the move, so the full price acceleration is not treated as organic accumulation."
+  },
+  "leadership_rotation": {
+    "previous_state": "ZEC was the privacy regime's structural/fundamental anchor while DASH became the higher-beta marginal-flow leader.",
+    "current_state": "ZEC has reclaimed marginal leadership while retaining the stronger structural/institutional evidence stack.",
+    "dash_checkpoint": "DASH remained strong near roughly $68-$73 with about $0.4-$0.46B daily volume in later September 6 feeds, but its incremental percentage momentum had cooled relative to ZEC's renewed double-digit daily acceleration.",
+    "new_handoff": true,
+    "direction": "DASH marginal leadership -> ZEC marginal leadership"
+  },
+  "wallet_quality": {
+    "selective_wallet_convergence": "not scoreable at high confidence because Zcash privacy obscures beneficial ownership and funding relationships inside shielded pools",
+    "institutional_capital_proxy": "ZCSH native ZEC holdings increased materially after ETF listing; this is counted as identifiable financial-capital accumulation, not as a selective-wallet cohort.",
+    "credit": "moderate for institutional accumulation; no independent smart-wallet convergence credit",
+    "important_limit": "28.8% of issued ZEC is shielded, making wallet-independence and funding-link analysis intrinsically incomplete by design."
+  },
+  "network_usage": {
+    "shielded_zec": 4870000,
+    "shielded_share_of_issued_supply_pct": 28.8,
+    "shielded_share_one_year_ago_pct": 23.4,
+    "average_daily_transactions": 11492,
+    "shielded_daily_transactions": 6488,
+    "shielded_transaction_share_pct": 56,
+    "assessment": "Privacy utilization is persistent and rising rather than merely narrative-driven."
+  },
+  "institutional_access": {
+    "vehicle": "Grayscale Zcash ETF",
+    "ticker": "ZCSH",
+    "listing_market": "NYSE Arca",
+    "listing_date": "2026-08-25",
+    "as_of": "2026-09-04",
+    "aum_usd": 463232740,
+    "total_zec_in_fund": 444608.1064,
+    "approx_launch_zec_checkpoint": 387849,
+    "approx_native_zec_growth_since_launch": 56759.1064,
+    "approx_native_zec_growth_pct_since_launch": 14.6,
+    "note": "Native ZEC holdings are used rather than AUM growth alone so price appreciation is not mistaken for new financial capital."
+  },
+  "liquidity_and_executability": {
+    "result": "PASS",
+    "spot_turnover": "roughly $0.75B-$1.4B in current/recent 24-hour data depending on source and timestamp",
+    "derivatives_turnover": "roughly $7.7B 24-hour futures volume in a current September 6 snapshot",
+    "market_access": "deep centralized-exchange liquidity plus a U.S.-listed exchange-traded product",
+    "caveat": "High futures/spot ratio increases liquidation reflexivity and makes headline turnover less reliable as evidence of durable spot demand."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_PRIVACY_OPACITY_AND_REGULATORY_CAVEATS",
+    "sellability": "PASS - broad major-market liquidity",
+    "honeypot_or_transfer_restriction": "NOT APPLICABLE as a token-contract risk; ZEC is the native coin of the Zcash network",
+    "mint_freeze_admin_permissions": "No creator-controlled ERC-20/SPL-style mint, freeze, blacklist, tax or proxy-admin surface; issuance follows protocol monetary rules.",
+    "lp_control": "No single creator-controlled token LP is required for practical sellability; market liquidity is distributed across major venues.",
+    "supply": "Protocol maximum supply is 21M ZEC.",
+    "holder_concentration": "Cannot be fully resolved because shielded balances deliberately hide beneficial ownership and internal transfers.",
+    "creator_dumping_and_linked_wallets": "No token deployer/creator wallet structure analogous to launchpad microcaps; privacy architecture prevents complete funding-link analysis among shielded users.",
+    "major_caveats": [
+      "Privacy opacity prevents full concentration and wallet-independence analysis.",
+      "Privacy-coin regulatory and exchange-access risk remains material.",
+      "Current leverage is extreme enough that liquidation cascades can dominate short-horizon price action."
+    ]
+  },
+  "narrative_and_news": {
+    "organic_basis": [
+      "NYSE-listed ZCSH institutional access",
+      "measurably higher native ZEC held by the ETF",
+      "growing shielded-pool share and shielded transaction usage",
+      "renewed broad privacy-sector attention with ZEC again outperforming the prior follower leader DASH"
+    ],
+    "influencer_risk": "No concentrated influencer campaign is counted as positive evidence. Broad privacy-coin coverage is treated as narrative confirmation, while copy-trading/social amplification after the price breakout is discounted.",
+    "catalyst_quality": "ETF/native-asset accumulation and persistent network privacy use are higher-quality catalysts than a pure technical breakout, but the current marginal move is heavily amplified by derivatives positioning."
+  },
+  "major_uncertainties": [
+    "Price feeds are asynchronous and differ materially during the current high-volatility session; the alert preserves a range rather than selecting the highest print.",
+    "A substantial fraction of the latest acceleration is short-squeeze/derivatives driven; persistence after leverage normalizes is unproven.",
+    "Shielded-pool privacy makes beneficial-holder concentration and funding independence intrinsically unobservable for a large fraction of supply.",
+    "ETF holdings are identifiable institutional capital but do not prove that all buyers are long-horizon discretionary allocators.",
+    "Privacy-coin regulation and venue availability can change the executable market structure quickly.",
+    "The move to approximately $1,165-$1,220 occurred before this observation timestamp; no predictive credit is claimed for that preceding move."
+  ],
+  "why_signal_matters": "The privacy regime had previously broadened from ZEC into DASH, with ZEC retaining the strongest fundamentals while DASH captured the marginal speculative dollar. ZEC has now retaken marginal momentum while its ETF is visibly accumulating native coins and privacy utilization remains elevated. That re-concentration is a stronger leadership signal than a follower-only beta chase. The prospective test begins at this timestamp: if ZEC sustains relative leadership after the current short-squeeze component fades, it supports the framework's preference for structural/institutional confirmation; if it rapidly mean-reverts back behind DASH, this alert should score poorly rather than being rationalized later.",
+  "sources": [
+    "https://www.thezcashetf.com/",
+    "https://zecstats.com/",
+    "https://coindoo.com/zcash-price-jumps-what-could-disrupt-rally/",
+    "https://www.okx.com/en-us/price/dash-dash",
+    "https://coinmarketcap.com/top-stories/6a9cae1898f4795d490fba3c/"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_action": "none",
+  "paper_trade": "none"
+}
