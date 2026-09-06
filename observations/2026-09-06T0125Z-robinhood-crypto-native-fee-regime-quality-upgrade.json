@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-09-06T01:25:28Z",
+  "alert_type": "ecosystem_regime_quality_upgrade",
+  "ecosystem": "Robinhood Chain",
+  "candidate_assets": [
+    {
+      "symbol": "PONS",
+      "address": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+      "role": "native speculative leader; no new leadership rotation"
+    },
+    {
+      "symbol": "UNI",
+      "address": "0x1f9840a85d5aF5bf1d1762F925BDADdC4201F984",
+      "role": "infrastructure/value-capture leader; no new leadership rotation"
+    }
+  ],
+  "threshold_reason": "Fresh evidence materially improves confidence that Robinhood Chain activity is discretionary crypto-native speculation rather than primarily Robinhood retail distribution or yield/points farming, while the network set a new daily fee/revenue record.",
+  "ecosystem_regime_evidence": {
+    "daily_fees_usd": 6040000,
+    "daily_revenue_usd": 5440000,
+    "seven_day_revenue_usd": 20330000,
+    "daily_dex_volume_usd": 1710000000,
+    "seven_day_dex_volume_usd": 9950000000,
+    "seven_day_dex_growth_pct": 105,
+    "tvl_usd_approx": 757000000,
+    "tvl_30d_growth_pct_approx": 90,
+    "stablecoin_supply_usd_approx": 868000000,
+    "stablecoin_7d_growth_pct_approx": 15.8,
+    "stablecoin_7d_change_usd_approx": 118000000,
+    "uniswap_share_of_chain_volume_pct_approx": 77,
+    "robinhood_share_of_uniswap_cross_chain_volume_pct": ">50",
+    "robinhood_first_party_app_share_of_transactions_pct_approx": "1-2"
+  },
+  "why_flows_appear_speculative": "CoinDesk Research attributes almost all current activity to crypto-native trading terminals, Uniswap, launchpads and stock-meme/tokenized-equity trading, with Robinhood's own in-app swap path only about 1-2% of transactions. Trading-terminal volume rose from under $20M weekly at end-June to over $1.2B in the latest week. This is stronger evidence of discretionary speculation than raw address counts. Gas subsidies and automated/HFT activity remain discounts.",
+  "leadership_rotation": "No new rotation. PONS remains the native launchpad/speculative leader and UNI remains the infrastructure/value-capture leader. This alert upgrades ecosystem-regime confidence, not token leadership.",
+  "wallet_quality": "No new selective-wallet convergence established in this run. Raw address/user counts remain discounted because account abstraction, bots and correlated funding can overstate independent participation.",
+  "narrative_news": "Robinhood Chain is capturing a majority of Uniswap v4 hook-pool swaps across chains and more than half of all Uniswap volume while launchpads and stock-meme pools drive programmable hook usage. The network's first-party retail funnel remains largely unused, so current activity is not yet explained by Robinhood's tens of millions of brokerage customers.",
+  "liquidity_executability": "Ecosystem liquidity remains sufficient at the chain level: roughly $757M TVL, ~$868M stablecoins, ~$1.71B daily DEX volume. Individual microcaps still require token-specific executable-liquidity checks and structural gates.",
+  "structural_gate_result": "No new microcap surfaced. PONS structural status remains provisional/pass-with-caveats from prior observations; UNI remains pass-with-governance/value-capture caveats. No failed structural gate was overridden.",
+  "major_uncertainties": [
+    "Robinhood Wallet gas subsidies are still a material activity-quality discount.",
+    "Bot/HFT/arbitrage and account-abstraction activity can inflate transaction and address metrics.",
+    "Uniswap and launchpad concentration means a venue-specific reversal could reduce chain activity quickly.",
+    "PONS token-specific LP/permission caveats remain unresolved from prior observations.",
+    "CoinDesk's app-user attribution is research-derived and should be rechecked as first-party routing changes."
+  ],
+  "why_signal_matters_now": "The regime has progressed from high DEX turnover to record chain-level fee/revenue generation while independent research shows the activity is overwhelmingly crypto-native even before Robinhood's brokerage distribution funnel is meaningfully activated. That materially strengthens the classification of Robinhood Chain as the current destination for discretionary speculative capital without requiring a new microcap candidate.",
+  "rejected_or_not_alerted": [
+    {
+      "asset": "DUSK",
+      "reason": "Privacy-laggard rotation is visible, but there is no new coin-specific catalyst and top-10 addresses reportedly hold ~81% of supply (including exchanges/protocol wallets), so it does not clear the structural/independence threshold for alerting."
+    },
+    {
+      "ecosystem": "X Layer / other incentive-heavy chains",
+      "reason": "Activity materially associated with explicit liquidity/yield/bonus incentives remains discounted or rejected as discretionary speculative migration."
+    }
+  ],
+  "sources": [
+    "https://www.coindesk.com/research/robinhood-chain-a-distribution-moat-the-market-is-already-pricing",
+    "https://crypto.news/robinhood-chain-daily-fees-hit-record-6-million-dollar/",
+    "https://www.coingecko.com/en/coins/pons",
+    "https://coinmarketcap.com/cmc-ai/dusk/price-analysis/",
+    "https://www.coinlore.com/es/coin/dusk-network/richlist"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_action": "none"
+}
