@@ -1,0 +1,94 @@
+{
+  "timestamp_utc": "2026-09-07T09:46:00Z",
+  "run_type": "regime_scan_no_alert",
+  "alert": false,
+  "summary": "No new candidate cleared the full threshold. BNB Chain showed the clearest incremental capital-flow improvement versus Robinhood Chain, but the most obvious infrastructure token (CAKE) failed the hard mint-authority gate. TAO showed a fresh decentralized-AI rotation with price/volume confirmation, but current governance/root privilege evidence is too centralized/unresolved to pass the structural gate. Existing ZEC, HYPE, JUP, RAY, PONS and UNI signals remain previously alerted states rather than new threshold crossings.",
+  "regime_observations": {
+    "bnb_chain": {
+      "status": "improving_watch",
+      "evidence": [
+        "24h net inflow approximately +$28.22M while Robinhood Chain posted approximately -$18.04M; Robinhood also had approximately -$21.07M on Sep 5.",
+        "BNB Chain 7d DEX volume approximately $8.254B, +20.99% week over week.",
+        "DexPaprika snapshot Sep 7 01:43 UTC: approximately $1.96B 24h BNB Chain DEX volume; PancakeSwap V2 ~$969.7M and V3 ~$764.4M.",
+        "RWA holders exceeded ~1.2M as of Aug 27, +529% over 30d; 30d RWA transfer volume ~$29.88B; distributed tokenized asset value ~$5.79B.",
+        "PancakeSwap had ~37.3% of bStocks volume and >$3B cumulative tokenized-stock trading in 2026, confirming secondary usage rather than issuance only."
+      ],
+      "sources": [
+        "https://www.insigtx.com/en/news/data-weekend-capital-flows-diverge-across-major-public-884611/",
+        "https://dexpaprika.com/bsc",
+        "https://bsc.news/news/bnb-chain-rwa-holders-1-2-million",
+        "https://bsc.news/news/pancakeswap-bstocks-bnb-chain-volume"
+      ]
+    },
+    "robinhood_chain": {
+      "status": "still_high_activity_but_flow_quality_softened",
+      "evidence": [
+        "7d DEX volume remains approximately $10.424B, +95.26% WoW, but consecutive net outflows weaken the incremental-capital-flow signal.",
+        "Existing native leadership signal (PONS) remains prior state; no independently new structural/leadership threshold was established this run."
+      ]
+    },
+    "bittensor": {
+      "status": "fresh_theme_rotation_but_no_qualifying_asset",
+      "evidence": [
+        "TAO traded roughly $263-$271 during the scan, around +11% to +14% over 24h, with reported 24h turnover expanding into roughly $350M-$440M range.",
+        "TAO volume acceleration followed Robinhood Chain distribution/bridge narrative and current v454 runtime attention; subnet tokens were reported moving broadly in the same direction, indicating theme-level rather than isolated price action.",
+        "Bittensor remains emission-driven: current protocol documentation describes ~0.5 TAO/block (~3,600/day) after the Dec 2025 halving, with TAO routed across subnets and protocol-owned alpha purchases."
+      ],
+      "sources": [
+        "https://www.bybit.com/en/price/bittensor/",
+        "https://web.mobee.com/en/mobee-academy/market-update/market-update-hari-ini",
+        "https://www.bittensor.com/docs/concepts/emissions",
+        "https://subtensor.com/reference/versions"
+      ]
+    }
+  },
+  "candidate_checks": {
+    "CAKE": {
+      "contract": "0x0e09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+      "opportunity_evidence": [
+        "CAKE rose sharply with persistence across Sep 6-7 while PancakeSwap dominated BNB Chain DEX volume.",
+        "PancakeSwap has sustained net CAKE deflation; July marked 35 consecutive months of net supply reduction and the Sep 1 weekly update reported ~580k CAKE net deflation/burn activity.",
+        "Protocol usage and fee-linked burns provide genuine value-capture evidence."
+      ],
+      "hard_gate": "FAIL",
+      "reason": "The CAKE token contract retains owner-controlled minting. Verified source describes mint(address,uint256) as onlyOwner; mainnet owner is MasterChef, and the token contract itself has no enforced hard cap. CertiK also flags mintability and non-renounced ownership. Under the framework, disciplined historical emissions and governance promises cannot override a dangerous mint-authority structural gate.",
+      "sources": [
+        "https://github.com/pancakeswap/cake-token",
+        "https://skynet.certik.com/tools/token-scan/bsc/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82",
+        "https://blog.pancakeswap.finance/articles/july-cake-burn-report",
+        "https://www.cryptowisser.com/news/pancakeswap-burns-104m-in-cake-extending-weekly-deflation/"
+      ]
+    },
+    "TAO": {
+      "asset_type": "native Bittensor coin",
+      "opportunity_evidence": [
+        "Fresh price and turnover acceleration with broad decentralized-AI/subnet participation.",
+        "Robinhood Chain distribution narrative provides an ecosystem-specific catalyst rather than a pure influencer-only spike.",
+        "Fixed 21M maximum-supply schedule and protocol staking/subnet demand create real utility/value-capture linkage."
+      ],
+      "hard_gate": "UNRESOLVED_FAIL_FOR_ALERTING",
+      "reason": "Current v454 governance/root privileges are too centralized or insufficiently independently resolved for this framework. Bittensor documentation confirms sudo/root-controlled privileged operations; a current runtime review reports a single sudo key controlling runtime upgrades/admin operations. Until privilege distribution and upgrade control are independently verified as acceptably decentralized, TAO cannot clear the dangerous-permissions gate.",
+      "sources": [
+        "https://www.bittensor.com/docs/internals/mainnet-clone",
+        "https://www.bittensor.com/docs/hyperparameters/max-regs-per-block",
+        "https://ownyourmind.ai/projects/bittensor/",
+        "https://subtensor.com/reference/versions"
+      ]
+    }
+  },
+  "existing_signal_status": {
+    "ZEC": "continued strength but no new independent threshold event beyond previously alerted privacy-leadership reclaim",
+    "HYPE": "institutional ETF accumulation/value-capture thesis persists; no materially new threshold beyond prior alert",
+    "JUP": "prior Solana cleaner-value-capture challenger remains active; persistence alone is not logged as a new alert",
+    "RAY": "prior RWA/value-capture thesis remains contaminated by reward-heavy launchpad activity",
+    "PONS": "still the established Robinhood native speculative leader; no new leadership handoff established",
+    "UNI": "Robinhood RWA infrastructure/value-capture thesis remains prior state"
+  },
+  "outcome_checkpoints": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  }
+}
