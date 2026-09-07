@@ -1,0 +1,79 @@
+{
+  "timestamp_utc": "2026-09-07T10:16:31Z",
+  "type": "signal_quality_downgrade",
+  "ecosystem": "Solana",
+  "candidate_asset": "JUP",
+  "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+  "prior_observation": "observations/2026-09-06T2343Z-jup-cleaner-solana-value-capture-challenger.json",
+  "summary": "JUP remains structurally qualified and retains real protocol-funded value capture, but the prior classification of JUP as a materially cleaner marginal-flow challenger to RAY is downgraded. New attribution shows the same StonkFun/STONK burst that contaminated RAY also routed substantial speculative activity through Jupiter, raising Jupiter revenue and Litterbox buybacks. This does not invalidate Jupiter's underlying RWA/composability thesis; it invalidates treating the latest JUP acceleration as clean confirmation of that thesis.",
+  "new_attribution_evidence": {
+    "the_block": "On 2026-09-06 The Block reported STONK up more than 250% to roughly $140M market cap after StonkFun integrated with Raydium LaunchLab, explicitly noting that trading continues through Raydium and other aggregators and that both RAY and JUP rallied during the event.",
+    "coinmarketcap_followup": "A 2026-09-07 CoinMarketCap AI synthesis attributed JUP's roughly 21% intraday surge partly to StonkFun/STONK volume routed through Jupiter and noted that the net 24h move had faded to roughly 4.3% after the intraday spike.",
+    "stonkfun_incentives": "StonkFun reported more than $7.5M of holder rewards while contemporaneous reported cumulative platform revenue was about $1.87M. The upstream activity therefore remains heavily incentive-contaminated under this framework, even though later Sunday revenue accelerated sharply.",
+    "mechanism": "LaunchLab custom-pair launches graduate into Raydium liquidity and can be routed through aggregators including Jupiter. Higher launch/trading volume can therefore lift Jupiter fees and mechanically increase JUP Litterbox purchases without proving independent discretionary demand for Jupiter's RWA use cases."
+  },
+  "current_jupiter_metrics": {
+    "defillama_price_reference_usd": 0.25,
+    "market_cap_reference_usd": 835520000,
+    "token_volume_24h_usd": 177650000,
+    "aggregator_volume_24h_usd": 432630000,
+    "fees_24h_usd": 284221,
+    "revenue_24h_usd": 84225,
+    "holders_revenue_24h_usd": 42045,
+    "incentives_24h_usd": 0,
+    "incentives_7d_usd": 0,
+    "interpretation": "Jupiter itself is not running a protocol incentive program in DefiLlama's accounting and its fee-to-buyback value capture remains real. The contamination is upstream flow quality: rewarded/speculative StonkFun activity can still generate genuine Jupiter revenue and buybacks."
+  },
+  "solana_regime": {
+    "stablecoins_usd": 16420000000,
+    "stablecoins_7d_change_pct": 5.04,
+    "rwa_active_mcap_usd": 2451000000,
+    "dex_volume_24h_usd": 1915000000,
+    "dex_volume_7d_usd": 13935000000,
+    "dex_weekly_change_pct": -24.19,
+    "inflows_24h_usd": -5310000,
+    "assessment": "High-quality stablecoin/RWA balances remain strong, but broad spot DEX activity is still contracting week-over-week and current net inflow is slightly negative. Solana therefore still lacks a clean chain-wide discretionary-speculation confirmation."
+  },
+  "rwa_framework_update": {
+    "tokenized_stocks_distributed_value_usd": 2880000000,
+    "distributed_value_30d_change_pct": 10.49,
+    "monthly_transfer_volume_usd": 15470000000,
+    "monthly_transfer_volume_change_pct": -40.77,
+    "monthly_active_addresses": 616475,
+    "monthly_active_addresses_change_pct": -58.13,
+    "holders": 2780000,
+    "holders_30d_change_pct": 163.01,
+    "interpretation": "Tokenized-stock issuance/value and holder counts are expanding while transfer volume and active addresses are contracting. This is exactly why issuance/AUM cannot be treated as equivalent to discretionary secondary-market or collateral utilization. Chain-level RWA scores must continue to require usage evidence."
+  },
+  "leadership_result": {
+    "jup": "DOWNGRADED from 'cleaner marginal-flow challenger' to 'structurally qualified value-capture asset with contaminated latest marginal-flow confirmation.'",
+    "ray": "Remains structurally qualified but its latest acceleration is already discounted for the same StonkFun/LaunchLab event.",
+    "solana": "No chain-wide speculative leadership upgrade.",
+    "robinhood_chain": "Still has the strongest broad DEX acceleration at roughly +95% week-over-week and +27.8% stablecoin growth, though 24h net inflow is negative, so capital velocity remains unusually high rather than one-way accumulation.",
+    "bsc": "Improving watchlist regime: roughly +21% weekly DEX volume and +$28.1M 24h inflow with $4.71B RWA active market cap, but stablecoins are slightly down week-over-week and no newly examined crypto token has enough clean price/flow confirmation to cross threshold this run."
+  },
+  "wallet_quality": "UNCHANGED_LOW_TO_MODERATE. No newly validated cohort of historically selective, independently funded JUP accumulators was established. Protocol Litterbox purchases remain value-capture evidence, not smart-wallet evidence.",
+  "structural_gate": {
+    "result": "PASS_WITH_TREASURY_GOVERNANCE_CAVEATS_UNCHANGED",
+    "mint_authority": "REVOKED",
+    "freeze_authority": "REVOKED",
+    "liquidity": "Substantial across major CEX/DEX venues; current 24h token turnover remains about $178M.",
+    "hard_gate_failures_found": [],
+    "note": "This is a flow-quality downgrade, not a contract/security rejection."
+  },
+  "major_uncertainties": [
+    "Public sources do not isolate the exact percentage of Jupiter aggregator volume or protocol revenue attributable to STONK/StonkFun.",
+    "StonkFun revenue accelerated sharply on September 6, so the rewards-to-revenue contamination ratio is dynamic rather than fixed.",
+    "Jupiter's RWA routing and xStocks collateral use remain genuine but their current incremental contribution to fees cannot yet be separated cleanly from launchpad-driven trading.",
+    "Current global tokenized-stock transfer-volume contraction may conceal chain-specific pockets of increasing secondary activity."
+  ],
+  "why_signal_matters_now": "The previous observation explicitly used JUP's relative cleanliness versus RAY as the reason to promote it. Newly surfaced contemporaneous attribution directly weakens that premise, so preserving the downgrade now prevents hindsight from later counting a StonkFun-driven JUP rally as validation of the RWA/value-capture framework. The underlying JUP structural and value-capture thesis remains intact but requires persistence after the StonkFun burst normalizes.",
+  "sources": [
+    "DefiLlama Jupiter and Solana dashboards, accessed 2026-09-07",
+    "The Block, 'STONK surges 250% to $140 million market cap as stock-paired Solana launchpad StonkFun pulls volume to Raydium and Jupiter,' published 2026-09-06",
+    "CoinMarketCap AI, 'Jupiter (JUP) Surges 21% on StonkFun Mania and Buybacks,' published 2026-09-07 09:04 UTC",
+    "RWA.xyz tokenized stocks dashboard, data as of 2026-09-06",
+    "KuCoin/TechFlow summary of StonkFun rewards and revenue, published 2026-09-06"
+  ],
+  "trade_or_paper_trade_created": false
+}
