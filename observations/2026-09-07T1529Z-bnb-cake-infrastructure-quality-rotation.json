@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-09-07T15:29:41Z",
+  "signal_type": "ecosystem_quality_rotation",
+  "status": "threshold_crossed",
+  "ecosystem": "BNB Chain",
+  "candidate": {
+    "symbol": "CAKE",
+    "name": "PancakeSwap",
+    "chain": "BNB Smart Chain",
+    "contract": "0x0e09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82"
+  },
+  "thesis": "BNB Chain's improving capital-flow regime is broadening beyond the directly incentivized bStocks-meme cohort into PancakeSwap/CAKE, whose current protocol activity has direct fee-funded buyback-and-burn value capture and no recorded PancakeSwap protocol incentives over the latest seven days. This is a quality rotation, not a claim that all BNB activity is organic.",
+  "ecosystem_regime": {
+    "bsc_dex_volume_24h_usd": 1555000000,
+    "bsc_dex_volume_7d_usd": 8254000000,
+    "bsc_dex_volume_7d_change_pct": 20.99,
+    "bsc_net_inflow_24h_usd": 28110000,
+    "bsc_reported_weekly_net_inflow_usd": 142380000,
+    "bsc_stablecoin_mcap_usd": 13304000000,
+    "bsc_stablecoin_7d_change_pct": -0.63,
+    "bsc_rwa_active_mcap_usd": 4710000000,
+    "bsc_active_addresses_24h": 1960000,
+    "bsc_new_addresses_24h": 366804,
+    "bsc_transactions_24h": 19130000,
+    "interpretation": "DEX activity and net inflows are accelerating, but stablecoin balances are not yet confirming broad settlement-capital accumulation. The $4M BNB Stonks Szn campaign contaminates the bStocks-paired meme cohort and is excluded from clean-flow evidence."
+  },
+  "candidate_evidence": {
+    "cake_price_usd_snapshot": 2.26,
+    "cake_change_24h_pct_snapshot": 4.1,
+    "cake_change_7d_pct": 22.7,
+    "cake_change_30d_pct": 59.0,
+    "cake_market_cap_usd": 723172000,
+    "cake_fdv_usd": 749545000,
+    "cake_market_cap_to_fdv": 0.96,
+    "cake_volume_24h_usd": 90196000,
+    "pancakeswap_tvl_usd": 2340000000,
+    "pancakeswap_bsc_tvl_usd": 2266000000,
+    "pancakeswap_dex_volume_24h_usd": 1242000000,
+    "pancakeswap_bsc_dex_volume_24h_usd": 1176000000,
+    "pancakeswap_dex_volume_7d_usd": 7098000000,
+    "pancakeswap_bsc_dex_volume_7d_usd": 6192000000,
+    "pancakeswap_holder_revenue_24h_usd": 243326,
+    "pancakeswap_holder_revenue_7d_usd": 1240000,
+    "pancakeswap_holder_revenue_30d_usd": 4000000,
+    "pancakeswap_protocol_incentives_7d_usd": 0,
+    "recent_net_supply_reduction": "PancakeSwap reported a 427,000 CAKE weekly net burn on Sep 1; July was the 35th consecutive month of net supply reduction.",
+    "interpretation": "PancakeSwap accounts for most BSC spot DEX volume and converts a defined portion of AMM fees into open-market CAKE buyback-and-burn. CAKE price and turnover have persisted after the Sep 6 breakout rather than immediately reversing."
+  },
+  "rwa_signal": {
+    "secondary_trading": "Tokenized-stock trading on PancakeSwap is genuinely large: recent cross-venue data attributes about $5.5B of 90-day tokenized-stock DEX volume to PancakeSwap.",
+    "value_capture_caveat": "Do not treat the entire tokenized-stock volume as CAKE burn revenue. PancakeSwap advertises key tokenized-stock routes/products, including bStocks, with zero trading fees. RWA usage therefore strengthens ecosystem/product adoption but does not map one-for-one into CAKE buybacks.",
+    "bsc_rwa_composition_caveat": "BSC's $4.71B active RWA market cap is mixed: Circle USYC was down about 5.08% over seven days while Ondo Global Markets was up about 5.55%."
+  },
+  "why_flows_appear_speculative": "CAKE's abnormal turnover and multi-week price acceleration coincide with BSC DEX growth and positive chain inflows. PancakeSwap itself records no protocol incentives over the latest seven days, so the CAKE/protocol layer is cleaner than the explicitly rewarded BNB Stonks Szn meme sector. Some late-August third-party Syrup Pool/trading promotions remain a contamination caveat.",
+  "leadership_rotation": "Within BNB Chain, CAKE is the first infrastructure/value-capture asset in the current rotation to clear the opportunity threshold after the meme leaders were rejected for incentive or structural contamination. This is a quality rotation away from MARSCOIN-style bStocks memes, not proof that memes have stopped leading raw returns.",
+  "wallet_quality": {
+    "grade": "low_to_moderate",
+    "selective_wallet_convergence_credit": 0,
+    "notes": "Some recent analyses report net exchange withdrawals and multiple accumulating wallets, but historical selectivity, funding independence and beneficial-owner independence were not established. No smart-wallet upgrade is awarded."
+  },
+  "social_news": {
+    "assessment": "broad_protocol_attention",
+    "notes": "Attention is supported by independent coverage of CAKE's high-volume breakout, PancakeSwap's 200M-user milestone and tokenized-stock market share. No single influencer is being credited as causal leadership evidence."
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "notes": "CAKE has roughly $90M of 24-hour token turnover across more than 100 exchanges and hundreds of markets, with about two-thirds of measured volume decentralized in the current DefiLlama snapshot. This is not a microcap LP-controlled liquidity setup."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_MATERIAL_ADMIN_MINT_CAVEAT",
+    "honeypot_sellability": "PASS",
+    "liquidity_removal_risk": "PASS_FOR_TOKEN_LEVEL_SCREEN",
+    "team_unlock_overhang": "No conventional team vesting cliff identified; CAKE was fair-launched and current dilution is emission/governance driven.",
+    "mint_authority": "MATERIAL CAVEAT: CAKE's token contract has an onlyOwner mint function and no immutable hard cap in bytecode. The token owner is MasterChef. Current on-chain contract documentation shows MasterChef owned by MigrationHelper, whose owner is PancakeSwap's 0xeCc9...aa9E Safe/multisig address. MasterChef exposes privileged reward-multiplier/allocation controls. The widely cited 400M maximum is a governance ceiling, not an immutable token-contract cap.",
+    "admin_context": "The controlling 0xeCc9...aa9E address has been publicly identified as a PancakeSwap 3-of-6 multisig and asset-recovery address. The privilege is therefore transparent and multisig-controlled rather than a hidden deployer EOA, but it remains a real governance risk.",
+    "supply_behavior": "Despite the mint authority, realized supply has been net deflationary for 35 consecutive months through July 2026; a Sep 1 weekly report showed another 427k net CAKE reduction.",
+    "concentration": "No reliable current beneficial-owner concentration dataset was established in this run; large known protocol/exchange contracts complicate raw holder ranking. This uncertainty is retained rather than inferred away."
+  },
+  "major_uncertainties": [
+    "How much of BSC's +20.99% DEX growth is indirectly stimulated by the $4M BNB Stonks Szn campaign even outside the eligible meme tokens.",
+    "How much of PancakeSwap's tokenized-stock volume is zero-fee routed flow versus fee-bearing AMM flow that contributes to CAKE buybacks.",
+    "No validated cohort of historically selective independent CAKE accumulators was identified.",
+    "The 400M CAKE ceiling is governance-defined rather than immutable in the token contract, and privileged emission controls remain active behind a protocol multisig.",
+    "BSC stablecoin balances are down 0.63% over seven days, so the chain's positive inflows and DEX acceleration do not yet have full settlement-balance confirmation."
+  ],
+  "why_signal_matters_now": "The prior BNB scan correctly rejected the hottest meme names because their holding and volume signals were directly subsidized. CAKE now provides a cleaner test: the same chain is receiving net capital and growing DEX activity, while its dominant DEX converts real fee activity into recurring token buyback-and-burn and CAKE has maintained abnormal price/volume persistence. The RWA layer adds product-quality evidence but is deliberately not counted as direct token value capture where trading is zero-fee.",
+  "prospective_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_action": "none",
+  "sources": [
+    "https://defillama.com/chain/bsc",
+    "https://defillama.com/protocol/pancakeswap?events=false&holdersRevenue=true&tvl=false",
+    "https://www.coingecko.com/en/coins/pancakeswap",
+    "https://docs.pancakeswap.finance/products/pancakeswap-exchange/pancakeswap-pools",
+    "https://blog.pancakeswap.finance/articles/mid-year-recap-2026",
+    "https://blog.pancakeswap.finance/articles/kitchen-report-july-2026",
+    "https://github.com/pancakeswap/cake-token",
+    "https://smarts.md/bnb/0x73feaa1ee314f8c655e354234017be2193c9e24e",
+    "https://safeharbor.securityalliance.org/database/pancakeswap"
+  ]
+}
