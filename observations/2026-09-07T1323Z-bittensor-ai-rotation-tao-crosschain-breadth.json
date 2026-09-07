@@ -1,0 +1,133 @@
+{
+  "timestamp_utc": "2026-09-07T13:23:00Z",
+  "framework_version": "crypto-regime-research-with-rwa-capital-signal",
+  "alert_type": "new_regime_and_leadership_confirmation",
+  "ecosystem": "Bittensor / decentralized AI",
+  "candidate": {
+    "symbol": "TAO",
+    "name": "Bittensor",
+    "native_asset": true,
+    "robinhood_chain_canonical_cct_address": "0xf3081494B87e8D5fb7960f066E931D1D0e6E3d67",
+    "robinhood_chain_cct_pool_type": "Burn/Mint",
+    "native_supply_cap": 21000000
+  },
+  "why_threshold_crossed_now": [
+    "CoinGecko's Bittensor Subnets category reached roughly $1.22B and was up about 14.1% over 24h, showing breadth rather than a TAO-only spike.",
+    "TAO was roughly $266-$271, up about 13.8%-14.4% over 24h, with roughly $466M-$493M 24h volume; CoinGecko historical data shows current-day volume more than doubled versus Sep 6's ~$167M.",
+    "Large subnets with identifiable commercial activity participated: Lium SN51 was about +13.5% with ~$109.6M market cap and ~$2.18M volume; Chutes SN64 was about +12% with ~$117M market cap.",
+    "Chainlink's official CCIP directory confirms canonical TAO is now listed on Bittensor EVM, Base and Robinhood Chain, and the Robinhood-Bittensor mainnet CCIP lane is operational. This gives the AI ecosystem a new route into the highest-velocity speculative chain currently being tracked.",
+    "The wider AI category was also positive, roughly +4.5% over 24h in one current CoinGecko snapshot, while Bittensor subnets substantially outperformed it."
+  ],
+  "where_capital_is_migrating": {
+    "primary": "Bittensor and its subnet economy",
+    "secondary": "broader AI infrastructure tokens",
+    "evidence": [
+      "Bittensor Subnets category +~14.1% 24h.",
+      "TAO +~14% 24h with ~$466M-$493M turnover.",
+      "Lium and Chutes both +~12%-14%, indicating internal ecosystem breadth.",
+      "Canonical TAO cross-chain availability on Robinhood Chain is verified by Chainlink rather than inferred from same-symbol community tokens."
+    ]
+  },
+  "why_flows_appear_speculative": {
+    "classification": "discretionary narrative rotation with real utility backdrop, not a new farming campaign",
+    "positive_evidence": [
+      "TAO has no TGE airdrop history, no premine, no ICO, and no current launch incentive campaign driving this move.",
+      "Price and volume acceleration is occurring across TAO and multiple subnets, while the broader crypto market is comparatively flatter.",
+      "The new Robinhood Chain distribution path and decentralized-AI narrative provide concrete catalysts."
+    ],
+    "discounts": [
+      "Bittensor still emits roughly 3,600 TAO/day after its first halving; underlying subnet economics remain materially emission-supported.",
+      "Independent estimates put externally verified subnet revenue around $28M-$35M annualized across 24 subnets, materially below network-wide token emissions at current TAO prices.",
+      "Therefore this is lower-quality economic confirmation than HYPE/UNI-style direct fee capture even though the current trading rotation itself is not being paid for by a new points/airdrop program."
+    ]
+  },
+  "leadership_rank": [
+    {
+      "rank": 1,
+      "asset": "TAO",
+      "reason": "deepest executable liquidity, strongest ecosystem-wide reserve/staking role, broad price-volume confirmation, and canonical cross-chain expansion"
+    },
+    {
+      "rank": 2,
+      "asset": "Lium SN51 alpha",
+      "reason": "~+13.5% 24h and strongest reported external subnet revenue ($8M-$10M annualized) with customer-funded alpha acquisition/burn; not surfaced as a standalone alert because liquidity and wallet concentration are insufficiently audited"
+    },
+    {
+      "rank": 3,
+      "asset": "Chutes SN64 alpha",
+      "reason": "~+12% 24h, ~$117M market cap and identifiable commercial AI usage; not surfaced because onchain executable liquidity and holder-independence evidence remain too thin"
+    }
+  ],
+  "value_capture": {
+    "result": "PASS_WITH_MAJOR_ECONOMIC_CAVEAT",
+    "evidence": [
+      "TAO is the network-wide reserve, settlement and staking asset for subnet markets.",
+      "Bittensor's Root Reborn design gives root-staked TAO claims on subnet alpha dividend baskets; official Bittensor material reported roughly 936 TAO/day of root dividend flow at a July checkpoint.",
+      "Native transaction/EVM fees reduce or recycle TAO issuance, while subnet activity creates demand for TAO-backed liquidity pools.",
+      "Some commercially active subnets use external customer revenue to buy/burn their alpha tokens, strengthening the underlying ecosystem but not creating a direct pro-rata cash claim for unstaked TAO."
+    ],
+    "caveat": "A large part of network economics remains inflationary rather than customer-funded. TAO value capture is productive staking/reserve demand, not a direct immutable revenue distribution to every liquid token holder."
+  },
+  "wallet_quality": {
+    "score": "no_upgrade",
+    "notes": [
+      "No independently funded cohort of historically selective TAO wallets was verified in this run.",
+      "Small reported exchange-outflow anecdotes were not given smart-money credit.",
+      "TaoWeave's previously disclosed H1 sale of 3,959 TAO is a modest treasury-supply overhang and is retained as a negative caveat rather than treated as current marginal distribution."
+    ]
+  },
+  "social_and_news": {
+    "classification": "broad ecosystem attention, not single-influencer driven",
+    "evidence": [
+      "CoinGecko shows category-wide Bittensor subnet breadth and multiple subnet leaders.",
+      "Independent current market coverage is discussing TAO together with ICP/AI-infrastructure rotation rather than a single KOL promotion.",
+      "No sudden concentrated influencer campaign was identified as the dominant cause of the move."
+    ]
+  },
+  "liquidity_and_executability": {
+    "global_tao": "PASS",
+    "evidence": "roughly $466M-$493M 24h global token turnover and broad centralized-exchange availability",
+    "robinhood_chain_cct": "THIN_LOCAL_LIQUIDITY",
+    "local_evidence": "one indexed Robinhood Chain snapshot showed about $189K liquidity against about $3.14M 24h local volume and only a few hundred holders; this local representation should not be mistaken for globally deep TAO liquidity"
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CROSS_CHAIN_AND_INFLATION_CAVEATS",
+    "positive": [
+      "TAO was fair launched with no premine, ICO, insider allocation, vesting or scheduled unlocks.",
+      "Native supply is capped at 21M and current issuance is protocol-defined at about 3,600 TAO/day.",
+      "No creator-controlled LP, honeypot, freeze authority or microcap deployer rug surface exists for native TAO.",
+      "Blockworks transparency filing reports no project-controlled treasury allocation available for market-maker or exchange token loans."
+    ],
+    "caveats": [
+      "Canonical TAO on Robinhood Chain is a Chainlink CCT burn/mint representation, so its mint authority is intentionally delegated to the CCIP token-pool mechanism rather than being absent.",
+      "Cross-chain users inherit CCIP/token-pool security risk.",
+      "Ongoing emissions are meaningful dilution even though there are no discretionary team unlocks.",
+      "Selective-wallet independence and native holder concentration were not fully reconstructed in this run."
+    ]
+  },
+  "major_uncertainties": [
+    "How much of the move is persistent AI-capital rotation versus a one-day narrative burst.",
+    "Whether Robinhood Chain availability produces durable TAO holders/liquidity; local CCT liquidity is still thin.",
+    "Whether external customer revenue across subnets can grow fast enough relative to TAO emissions to improve economic quality.",
+    "Whether subnet breadth persists after TAO momentum cools rather than simply reflecting reflexive TAO-backed AMM repricing."
+  ],
+  "why_signal_matters_now": "This is the first newly qualified non-meme ecosystem rotation in the current scan where the flagship and economically active subnets are accelerating together. It creates a prospective test of whether real commercial AI activity plus new cross-chain distribution can sustain speculative leadership even when the underlying token economy is still materially emission-supported.",
+  "sources": [
+    "https://www.coingecko.com/en/categories/bittensor-subnets",
+    "https://www.coingecko.com/en/categories/artificial-intelligence",
+    "https://docs.chain.link/ccip/directory/mainnet/token/TAO",
+    "https://ccip.chain.link/status",
+    "https://www.bittensor.com/releases/v441-upgrade",
+    "https://blockworks.com/token-transparency/filing/bittensor",
+    "https://www.tao.media/subconnect-announces-first-bittensor-revenue-index/"
+  ],
+  "prospective_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_created": false,
+  "paper_trade_created": false
+}
