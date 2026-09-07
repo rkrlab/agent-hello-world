@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-09-07T17:18:26Z",
+  "signal_type": "structural_gate_correction",
+  "status": "previous_candidate_rejected",
+  "ecosystem": "BNB Chain",
+  "candidate": {
+    "symbol": "CAKE",
+    "name": "PancakeSwap",
+    "chain": "BNB Smart Chain",
+    "contract": "0x0e09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82"
+  },
+  "correction": {
+    "prior_alert": "observations/2026-09-07T1529Z-bnb-cake-infrastructure-quality-rotation.json",
+    "prior_consistent_scan": "observations/2026-09-07T0946Z-bnb-flow-rotation-cake-tao-gate-no-alert.json",
+    "reason": "The 15:29 UTC alert incorrectly treated active owner-controlled mint authority as a material caveat rather than a hard rejection. That conflicts with the research framework, which explicitly requires dangerous permissions and mint authority to be structural rejection gates that cannot be overridden by opportunity score, protocol quality, price persistence, governance history or observed deflation."
+  },
+  "structural_gate": {
+    "result": "FAIL",
+    "failed_gate": "dangerous mint/admin authority",
+    "evidence": [
+      "PancakeSwap's official cake-token repository documents mint(address,uint256) as onlyOwner.",
+      "The official repository states the mainnet CAKE token owner is MasterChef.",
+      "The official repository states there is no hard cap enforced by the token contract; supply is bounded by MasterChef's emission behavior rather than immutable token bytecode.",
+      "MasterChef is Ownable and retains privileged emission/allocation controls.",
+      "Current on-chain contract documentation for MigrationHelper shows its owner as PancakeSwap's 0xeCc90D54B10Add1aB746AbE7e83AbE178B72aa9E Safe/multisig, confirming that privileged governance control remains active rather than cryptographically eliminated."
+    ],
+    "policy_not_structural_guarantee": [
+      "The governance-approved 400M CAKE maximum-supply policy is not an immutable cap in the CAKE token contract.",
+      "CAKE's multi-year realized net-deflation record is favorable behavior but does not remove the mint privilege."
+    ],
+    "requalification_condition": "CAKE should remain outside the alertable candidate set unless the mint/admin authority is eliminated or cryptographically constrained in a way that satisfies the framework's hard structural gate."
+  },
+  "regime_status": {
+    "bnb_chain": "The BNB Chain regime evidence remains separately valid: improving DEX activity and positive recent net inflow are still worth tracking, while stablecoin confirmation is incomplete and the BNB Stonks Szn campaign continues to contaminate the hottest meme cohort.",
+    "candidate_effect": "CAKE is removed from the qualified-candidate set; the BNB ecosystem thesis is not itself rejected. No replacement BNB asset crossed all structural and discretionary-flow thresholds in this run."
+  },
+  "wallet_quality": {
+    "selective_wallet_convergence_credit": 0,
+    "notes": "No independently funded cohort of historically selective CAKE accumulators was established. This factor is moot for alert qualification after the hard structural failure."
+  },
+  "leadership_rotation": "CAKE may remain the dominant BNB infrastructure/value-capture token by usage and economics, but under this framework it cannot be surfaced as a qualified candidate while the mint/admin hard gate fails. Raw or economic leadership does not supersede structural rejection.",
+  "liquidity_executability": "Deep market liquidity and sellability remain favorable, but they do not cure the mint-authority failure.",
+  "major_uncertainties": [
+    "Whether future PancakeSwap governance changes will remove or cryptographically constrain the CAKE mint privilege.",
+    "How much of BNB Chain's recent DEX acceleration is indirectly stimulated by the BNB Stonks Szn rewards campaign.",
+    "Whether BNB Chain stablecoin balances begin confirming the positive flow/DEX trend after the current snapshot.",
+    "No replacement BNB asset has yet cleared both the clean-discretionary-flow test and all structural gates."
+  ],
+  "why_signal_matters_now": "This correction protects the predictive experiment from methodology leakage. A protocol can have strong usage, real fee-funded buybacks, deep liquidity, persistent price strength and favorable historical supply behavior and still fail if a hard structural permission remains. The framework explicitly says a high opportunity score cannot override a failed structural gate, so the prior CAKE promotion must be reversed rather than softened into a caveat.",
+  "prospective_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_action": "none",
+  "sources": [
+    "https://github.com/pancakeswap/cake-token",
+    "https://github.com/pancakeswap/pancake-farm/blob/master/contracts/MasterChef.sol",
+    "https://smarts.md/bnb/0x6e85689f5a9d27ef99a2744223bb8dc9feac88d8",
+    "https://blog.pancakeswap.finance/articles/cake-tokenomics-3-0"
+  ]
+}
