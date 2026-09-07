@@ -1,0 +1,103 @@
+{
+  "timestamp_utc": "2026-09-07T18:36:00Z",
+  "framework_version": "crypto-regime-research-with-rwa-capital-signal",
+  "alert_type": "signal_quality_downgrade",
+  "ecosystem": "Bittensor / Solana-StonkFun cross-ecosystem",
+  "candidate": {
+    "symbol": "TAO",
+    "name": "Bittensor",
+    "native_asset": true,
+    "robinhood_chain_canonical_cct_address": "0xf3081494B87e8D5fb7960f066E931D1D0e6E3d67"
+  },
+  "prior_observation": "observations/2026-09-07T1323Z-bittensor-ai-rotation-tao-crosschain-breadth.json",
+  "correction": {
+    "previous_claim": "The 13:23 UTC observation classified the move as discretionary AI/infrastructure rotation and stated that no current launch incentive campaign was driving it.",
+    "new_assessment": "That attribution is no longer defensible. Contemporaneous reporting now attributes a material portion of TAO's marginal demand to StonkFun opening TAO-paired Solana memecoins, led by Buttensor, whose transfer mechanism buys TAO for holders. StonkFun itself has recently distributed about $7.5M in ecosystem-holder rewards against roughly $1.87M in reported cumulative revenue, so the new cross-ecosystem flow is materially incentive/reflexivity contaminated.",
+    "impact": "TAO remains structurally qualified and the Bittensor AI thesis is not revoked, but the latest price/volume acceleration can no longer be treated as clean independent confirmation of discretionary decentralized-AI capital migration."
+  },
+  "current_market_confirmation": {
+    "tao_price_usd": 267.34,
+    "tao_change_24h_pct": 13.27,
+    "tao_volume_24h_usd": 488640000,
+    "tao_24h_high_usd": 276.61,
+    "price_snapshot_time_utc": "2026-09-07T18:04:50Z",
+    "interpretation": "Price and turnover remain persistent versus the earlier alert, so this is a quality downgrade rather than a momentum failure."
+  },
+  "ecosystem_breadth": {
+    "bittensor_subnets_market_cap_usd": 1170000000,
+    "bittensor_subnets_change_24h_pct": 4.7,
+    "lium_sn51_change_24h_pct": 8.4,
+    "lium_sn51_volume_24h_usd": 1952000,
+    "chutes_sn64_change_24h_pct": 6.0,
+    "chutes_sn64_volume_24h_usd": 1093000,
+    "interpretation": "Subnet breadth persists, but it has cooled materially from the roughly 14% category-wide acceleration seen at the earlier checkpoint while TAO itself remains near +13%. Marginal leadership has therefore narrowed toward TAO and the new cross-chain meme demand rather than broadening further across subnets."
+  },
+  "why_flows_appear_speculative": {
+    "classification": "mixed: legitimate AI/protocol catalysts plus material reflexive and incentive-contaminated Solana meme demand",
+    "clean_components": [
+      "TAO remains the native reserve/staking asset of Bittensor and has real protocol and subnet utility.",
+      "Canonical TAO cross-chain distribution and broader decentralized-AI attention remain genuine catalysts.",
+      "Several commercially active subnets remain positive, so the entire move is not reducible to one meme token."
+    ],
+    "contaminated_components": [
+      "StonkFun opened TAO-paired memecoins and current reporting specifically identifies Buttensor as a major driver of fresh TAO demand.",
+      "Buttensor's transfer economics mechanically buy TAO for holders, creating reflexive token demand rather than an independent discretionary spot signal.",
+      "StonkFun recently distributed about $7.5M in rewards to ecosystem holders despite only about $1.87M in reported cumulative revenue, making its activity materially subsidy-contaminated under this framework."
+    ]
+  },
+  "leadership": {
+    "current": "TAO remains the price/turnover leader, but the evidentiary quality of that leadership is downgraded.",
+    "subnet_status": "Lium SN51 and Chutes SN64 remain useful breadth indicators but do not independently cross the standalone alert threshold because liquidity, concentration and wallet-independence evidence remain insufficient.",
+    "buttensor_status": "Rejected as a candidate for this framework because the StonkFun/Buttensor mechanism is explicitly reflexive and embedded in an incentive-heavy launchpad ecosystem; no high opportunity score can compensate for failing the clean-flow test."
+  },
+  "buttensor": {
+    "symbol": "BUTT",
+    "solana_mint": "2pouN3by7twkiZGy5aEKYUpf78ALDpKRTNu2WsQkpkqt",
+    "status": "REJECT_CLEAN_FLOW_GATE"
+  },
+  "wallet_quality": {
+    "score": "no_upgrade",
+    "notes": [
+      "No independently funded cohort of historically selective TAO accumulators was established.",
+      "The new StonkFun/Buttensor flow is mechanism-driven and cannot be counted as smart-wallet convergence."
+    ]
+  },
+  "liquidity_and_executability": {
+    "tao_global": "PASS",
+    "evidence": "About $488.6M of 24-hour global turnover at the current snapshot and broad centralized-exchange availability.",
+    "buttensor": "NOT_EVALUATED_FOR_PROMOTION",
+    "reason": "Fails the clean-flow/incentive screen before a standalone structural promotion analysis is warranted."
+  },
+  "structural_gate": {
+    "tao_result": "PASS_WITH_EXISTING_CROSS_CHAIN_AND_INFLATION_CAVEATS",
+    "change_from_prior": "none",
+    "notes": [
+      "The new evidence changes flow attribution, not native TAO's contract/supply structure.",
+      "TAO's ongoing protocol emissions remain meaningful dilution.",
+      "Canonical cross-chain TAO representations retain bridge/token-pool risk."
+    ]
+  },
+  "major_uncertainties": [
+    "The fraction of TAO spot and derivatives turnover attributable to StonkFun-related demand cannot yet be cleanly decomposed.",
+    "Whether Bittensor subnet breadth persists after TAO-paired meme activity fades.",
+    "Whether TAO remains relatively strong once the reflexive Buttensor demand loop normalizes.",
+    "Whether external customer revenue across subnets can continue growing relative to network emissions."
+  ],
+  "why_signal_matters_now": "The prior Bittensor alert explicitly treated the move as a relatively clean decentralized-AI rotation. New contemporaneous attribution shows that a meaningful marginal-demand channel is instead tied to an incentive-heavy Solana launchpad and a reflexive meme mechanic. Preserving this correction prevents later price persistence from being misread as validation of the original causal thesis.",
+  "sources": [
+    "https://www.tronweekly.com/tao-surges-277-as-buttensor-drives-bittensor/",
+    "https://www.lbank.com/support/articles/2096871319969726464",
+    "https://www.kucoin.com/news/flash/stonk-completes-1m-stonk-token-buyback-and-distributes-7-5m-in-rewards",
+    "https://www.bybit.eu/sv-EU/price/bittensor/",
+    "https://www.coingecko.com/en/categories/bittensor-subnets"
+  ],
+  "prospective_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_created": false,
+  "paper_trade_created": false
+}
