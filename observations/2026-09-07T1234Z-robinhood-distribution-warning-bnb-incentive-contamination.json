@@ -1,0 +1,76 @@
+{
+  "timestamp_utc": "2026-09-07T12:34:00Z",
+  "run_type": "regime_change_alert",
+  "alert": true,
+  "alert_type": "regime_quality_downgrade_no_new_asset",
+  "summary": "Robinhood Chain remains the highest-velocity speculative venue, but the capital-quality signal has weakened enough to trigger a distribution/extraction warning: weekly net outflow reached about $306.19M, the largest among tracked chains, while repeated daily outflows continued and both PONS and PAIR were off recent highs. BNB Chain is absorbing marginal flow, but the current bStocks-paired meme expansion is materially contaminated by the official $4M BNB Stonks Szn incentive program, so it does not qualify as a clean discretionary-speculation replacement regime. No new asset clears all structural and value-capture gates.",
+  "robinhood_chain": {
+    "status": "downgraded_from_accumulation_to_high_velocity_distribution_watch",
+    "evidence": [
+      "DefiLlama-derived reports show Robinhood Chain weekly net outflow of approximately $306.19M, largest among major chains.",
+      "Latest 24h net flow remains negative at approximately -$18.04M; Sep 5 also showed approximately -$21.07M.",
+      "Despite outflows, 7d DEX volume remains approximately $10.424B, +95.26% WoW, and stablecoin market cap approximately $989.7M, +27.75% over 7d, indicating extreme capital velocity rather than a simple collapse.",
+      "RWA.xyz still shows strong 30d Robinhood financial-asset growth: distributed RWA value approximately $171.85M (+494.62%), RWA transfer volume approximately $10.86B (+558.52%), and stablecoin market cap approximately $960.09M (+64.52%).",
+      "PONS remains the native leader but traded roughly 10-18% below the prior day on fresh snapshots after its Sep 6 ATH; PAIR traded roughly 44% lower over 24h and about 59% below its Sep 6 ATH, weakening secondary-leadership persistence."
+    ],
+    "interpretation": "The chain still has genuine RWA/stablecoin growth and exceptional turnover, so this is not a regime failure. The new warning is that bridge/cross-chain flow is now strongly negative while leaders are correcting: evidence is consistent with profit extraction / recycling of capital after a high-velocity speculative burst. Future scans should require renewed net inflows or persistent stablecoin/RWA utilization before treating further DEX acceleration as fresh discretionary capital.",
+    "existing_leader": {
+      "asset": "PONS",
+      "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+      "structural_gate": "PASS_PREVIOUSLY_WITH_EXISTING_CAVEATS",
+      "leadership_status": "still_native_leader_but_momentum_softened",
+      "new_trade_signal": false
+    }
+  },
+  "bnb_chain": {
+    "status": "marginal_flow_rotation_but_incentive_contaminated",
+    "evidence": [
+      "BNB Chain 24h net inflow approximately +$28.22M versus Robinhood Chain approximately -$18.04M.",
+      "BNB Chain 7d DEX volume approximately $8.254B, +20.99% WoW.",
+      "Stablecoin market cap is approximately $13.305B but -0.62% over 7d, so the inflow signal is not confirmed by broad stablecoin-balance growth.",
+      "BNB Chain launched the official $4M 'BNB Stonks Szn' campaign on Sep 4. Week 1 allocates $400K based on a HODLer Index; top bStocks-paired meme communities unlock BNB airdrops, directly rewarding holding size/duration and penalizing selling.",
+      "Because the campaign explicitly targets the same bStocks-paired meme sector now showing broadening activity, current MARSCOIN-led expansion cannot be treated as clean discretionary speculation."
+    ],
+    "candidate_rejection": {
+      "asset": "MARSCOIN",
+      "contract": "0xfe189e97832da1573e4e4ff034f4ffc3a15c7777",
+      "market_snapshot": "approximately $163M-$192M market cap/FDV with roughly $1.9M onchain liquidity and about $27M-$150M reported 24h turnover depending venue aggregation",
+      "structural_gate": "FAIL",
+      "reasons": [
+        "GoPlus-derived risk coverage reports liquidity is not locked, creating removable-liquidity risk.",
+        "Liquidity is only around 0.8%-1.2% of market cap on current snapshots, weak relative to headline turnover.",
+        "A top holder was reported around 32.7% of supply in a current holder snapshot; the largest individual holder is also reported to be crypto KOL Bonk Guy, creating concentration and influencer-dependence concerns.",
+        "The bStocks-paired narrative is directly eligible for the $4M BNB Stonks Szn incentive campaign, so holder/volume persistence is contaminated by explicit rewards."
+      ],
+      "new_trade_signal": false
+    }
+  },
+  "other_ecosystems": {
+    "solana": "Stablecoins remain strong (~$16.42B, +5.04% 7d) but 7d DEX volume remains -24.19%; RAY/JUP acceleration remains partly contaminated by StonkFun rewards. No new clean threshold.",
+    "arbitrum": "Strong weekly/24h inflow evidence is not accompanied by spot-Dex acceleration (7d DEX volume about -17.07%) and ARB still lacks direct holder value capture; no qualifying leadership signal.",
+    "hyperliquid": "Existing HYPE institutional-flow and buyback/burn signal persists; no materially new threshold beyond prior alert.",
+    "privacy": "ZEC remains the structural/marginal privacy leader after reclaiming leadership from DASH; no materially new threshold in this run.",
+    "bittensor": "TAO theme acceleration remains structurally unresolved due privileged governance/root controls; no alert."
+  },
+  "sources": [
+    "https://defillama.com/chain/robinhood-chain",
+    "https://app.rwa.xyz/networks/robinhood",
+    "https://www.insigtx.com/en/news/market/crypto/",
+    "https://www.binance.com/en-TR/square/post/09-07-2026-bnb-chain-sees-28-22-million-net-inflow-as-robinhood-chain-posts-outflows-363969044447727",
+    "https://defillama.com/chain/bsc",
+    "https://www.aicoin.com/en/news-flash/3064646",
+    "https://dexpaprika.com/bsc/token/0xfe189e97832da1573e4e4ff034f4ffc3a15c7777",
+    "https://coinmarketcap.com/currencies/marscoin-meme-bsc/",
+    "https://koinlens.com/coins/marscoin-4",
+    "https://www.coingecko.com/en/coins/pair",
+    "https://www.bybit.id/en-IDN/price/pons/"
+  ],
+  "outcome_checkpoints": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_or_paper_trade_created": false
+}
