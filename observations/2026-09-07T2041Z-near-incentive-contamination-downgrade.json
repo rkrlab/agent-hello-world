@@ -1,0 +1,121 @@
+{
+  "timestamp_utc": "2026-09-07T20:41:00Z",
+  "framework_version": "crypto-regime-research-with-rwa-capital-signal",
+  "alert_type": "signal_quality_downgrade",
+  "ecosystem": "NEAR / NEAR Intents",
+  "candidate": {
+    "symbol": "NEAR",
+    "name": "NEAR Protocol",
+    "asset_type": "native network asset",
+    "contract_or_address": null
+  },
+  "prior_observation": {
+    "path": "observations/2026-09-07T1955Z-near-privacy-intents-value-capture-broadening.json",
+    "prior_classification": "qualified second-order privacy infrastructure/value-capture leader"
+  },
+  "new_classification": "WATCH_ONLY_FLOW_QUALITY_CONTAMINATED",
+  "correction": "The prior alert treated the current Intents/NEAR acceleration as substantially clean because DefiLlama reports zero protocol incentives. That was incomplete. NEAR itself runs NEAR@3.33, a milestone incentive program tied to Confidential Intents. Drop 1 is triggered by a Confidential Intents TVL milestone and eligibility explicitly requires maintaining a qualifying confidential balance and executing a confidential swap; current reporting says additional activity/referrals can improve allocation. Those are the same usage/TVL variables used as evidence in the prior alert, so the marginal acceleration cannot currently be classified as clean discretionary speculation.",
+  "ecosystem_regime_evidence": {
+    "near_chain_current": {
+      "tvl_usd": 126180000,
+      "stablecoin_market_cap_usd": 104160000,
+      "stablecoin_change_7d_pct": -8.95,
+      "dex_volume_24h_usd": 29680000,
+      "dex_volume_7d_usd": 157580000,
+      "dex_weekly_change_pct": 12.67,
+      "inflows_24h_usd": 2070000,
+      "active_addresses_24h": 74288,
+      "new_addresses_24h": 11910,
+      "transactions_24h": 674162,
+      "near_price_usd": 2.43
+    },
+    "near_intents_parent_protocol": {
+      "dex_volume_24h_usd": 118660000,
+      "dex_volume_7d_usd": 791730000,
+      "dex_volume_30d_usd": 2998000000,
+      "revenue_24h_usd": 29372,
+      "revenue_7d_usd": 314267,
+      "holders_revenue_24h_usd": 28813,
+      "holders_revenue_7d_usd": 308905,
+      "defillama_reported_protocol_incentives_24h_usd": 0,
+      "defillama_reported_protocol_incentives_7d_usd": 0
+    },
+    "interpretation": "Real fee-bearing Intents usage and buyback-linked revenue remain present, but current marginal TVL/swap/user growth is not clean enough to attribute to discretionary privacy speculation because a separate milestone-reward program directly rewards the relevant behaviors. Falling NEAR stablecoin balances further weakens broad capital-migration confirmation."
+  },
+  "incentive_contamination": {
+    "program": "NEAR@3.33",
+    "official_description": "Milestone Incentive Program",
+    "drop_1_pool_milestone_tokens": 333333,
+    "reported_snapshot_trigger_confidential_intents_tvl_usd": 70000000,
+    "reported_eligibility": [
+      "Maintain more than $100 in a confidential balance in a supported asset.",
+      "Complete at least one confidential swap.",
+      "Current reporting says additional activity/referrals can improve allocation/rank."
+    ],
+    "why_framework_discounts_it": "The program explicitly rewards sustained balances, swaps, activity and TVL growth, so unique-user, wallet, volume and TVL acceleration around the approaching snapshot may be farming/positioning rather than discretionary speculation. DefiLlama's zero-incentive field does not capture this separate milestone program."
+  },
+  "leadership_rotation": {
+    "status": "NEAR removed from the qualified second-order leader set pending post-incentive persistence.",
+    "privacy_regime": "ZEC/privacy leadership is not invalidated by this correction; only the evidence that NEAR is a clean second-order beneficiary is downgraded.",
+    "requalification_test": "Require Intents volume, captured revenue, distinct-user activity and NEAR relative strength to persist after the $70M milestone/snapshot effect is resolved or otherwise demonstrate that the incremental activity is independent of NEAR@3.33 farming."
+  },
+  "wallet_quality": {
+    "selective_wallet_convergence": "not established",
+    "change_from_prior": "none",
+    "assessment": "No independent cohort of historically selective wallets offsets the flow-quality downgrade."
+  },
+  "narrative_and_news": {
+    "positive": [
+      "NEAR Intents still has genuine cross-chain usage and captured revenue that is used for open-market NEAR buybacks.",
+      "Rhea and Zashi privacy/ZEC integrations remain real product/composability evidence."
+    ],
+    "negative": [
+      "NEAR@3.33 is now close enough to its Drop 1 TVL trigger that farming/positioning can materially contaminate current usage growth.",
+      "Current NEAR stablecoin market cap is down about 9% over seven days, inconsistent with a clean broad settlement-capital migration signal."
+    ]
+  },
+  "liquidity_and_executability": {
+    "result": "PASS",
+    "assessment": "Native NEAR remains highly liquid; this downgrade is not an executability failure."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_EXISTING_INFLATION_AND_CONSENSUS_CAVEATS",
+    "change_from_prior": "none",
+    "assessment": "No new honeypot, mint/freeze, LP-control or sellability failure was identified. This is a flow-quality rejection, not a contract-structure rejection."
+  },
+  "cross_ecosystem_scan_notes": {
+    "ethereum": "No threshold: approximately $86.37M 24h inflow, but stablecoins only +0.20% over seven days, DEX volume -16.34% week over week and perps -14.69% week over week. No Ethereum-mainnet asset was promoted.",
+    "solana": "No clean new threshold: stablecoins remain strong, but DEX volume is -24.19% week over week and recent launchpad activity remains StonkFun-contaminated.",
+    "bsc": "Regime activity remains elevated with DEX volume +20.99% week over week and positive inflows, but stablecoins are slightly negative and the hottest meme cohort remains BNB Stonks Szn-incentivized; CAKE remains structurally rejected under the mint/admin gate.",
+    "robinhood_chain": "Still high velocity with stablecoins +27.76% over seven days and DEX volume +69.44%, but 24h net inflow remains negative, so distribution-watch status persists.",
+    "hyperliquid": "HYPE remains a high-quality existing candidate, but spot DEX volume is -21.85% week over week and perps -20.37%, so no reacceleration/buy threshold crossed in this run."
+  },
+  "major_uncertainties": [
+    "How much current Confidential Intents TVL and swap activity is incentive positioning versus independent privacy demand.",
+    "Whether the milestone program's effect is localized to Confidential Intents while broader cross-chain Intents volume remains organic.",
+    "Whether NEAR Intents revenue and NEAR price strength persist after the Drop 1 snapshot/milestone dynamics fade.",
+    "Whether ZEC-related Rhea and Zashi flows remain independently strong after the incentive window."
+  ],
+  "why_signal_matters_now": "This prevents the framework from treating a protocol dashboard's zero-incentive field as proof that all ecosystem activity is organic. The separate NEAR@3.33 program directly rewards the same balance/swap/TVL behaviors used in the prior signal. Keeping NEAR qualified without this correction would contaminate prospective backtesting. NEAR can requalify if the same usage and value-capture persist after the milestone incentive effect is removed.",
+  "sources": [
+    "https://www.near.org/blog/milestone-incentive-program",
+    "https://www.coingabbar.com/en/crypto-currency-news/near-protocol-news-airdrop-trigger-nears-as-price-jumps",
+    "https://defillama.com/chain/near",
+    "https://defillama.com/protocol/near-protocol",
+    "https://defillama.com/protocol/rhea-finance",
+    "https://defillama.com/chain/ethereum",
+    "https://defillama.com/chain/solana",
+    "https://defillama.com/chain/bsc",
+    "https://defillama.com/chain/robinhood-chain",
+    "https://defillama.com/chain/hyperliquid-l1"
+  ],
+  "prospective_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_created": false,
+  "paper_trade_created": false
+}
