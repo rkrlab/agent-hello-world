@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "observed_at_utc": "2026-09-08T04:21:48Z",
+  "signal_type": "ecosystem_regime_confirmation",
+  "ecosystem": "Avalanche",
+  "candidate": {
+    "symbol": "AVAX",
+    "name": "Avalanche",
+    "asset_type": "native_network_token",
+    "native_contract_address": null,
+    "wrapped_avax_c_chain": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7"
+  },
+  "status": "QUALIFIED_RESEARCH_ALERT",
+  "trade_recommendation": false,
+  "execution_requested": false,
+  "thesis": "Avalanche has moved from background RWA/institutional adoption into an abnormal on-chain spot-activity acceleration. AVAX itself, rather than a low-liquidity ecosystem token, is currently the cleanest executable expression of the move. The signal is qualified on ecosystem breadth, relative DEX acceleration, AVAX-specific on-chain turnover, positive net inflow, price persistence and structural safety, while product incentives and weak stablecoin acceleration are explicitly discounted.",
+  "ecosystem_regime_evidence": {
+    "defillama_tvl_usd": 511470000,
+    "stablecoin_mcap_usd": 1358000000,
+    "stablecoin_change_7d_pct": 0.58,
+    "rwa_active_mcap_usd": 884510000,
+    "dex_volume_24h_usd": 234040000,
+    "dex_volume_7d_usd": 852580000,
+    "dex_weekly_change_pct": 51.25,
+    "perps_volume_24h_usd": 28080000,
+    "perps_weekly_change_pct": 7.87,
+    "net_inflows_24h_usd": 4280000,
+    "active_addresses_24h": 298722,
+    "new_addresses_24h": 5992,
+    "transactions_24h": 1510000,
+    "token_incentives_24h_usd": 0,
+    "relative_context": "Avalanche DEX volume is +51.25% WoW while aggregate DeFi DEX volume is only about +3.14% WoW. The latest 24h volume is about 27.5% of the entire 7d total, roughly 1.9x the trailing-week daily average, indicating a recent acceleration rather than merely a high static base."
+  },
+  "candidate_evidence": {
+    "price_usd": 7.95,
+    "price_change_24h_pct": 3.87,
+    "market_cap_usd": 3435000000,
+    "fdv_usd": 3687000000,
+    "volume_24h_usd": 283020000,
+    "cex_volume_24h_usd": 146770000,
+    "dex_volume_24h_usd": 150600000,
+    "persistence": "Independent Sept. 7 reporting placed AVAX roughly +8.6% to +9.5% over seven days and about +20% to +22% over 30 days, with daily volume above its 30-day average."
+  },
+  "flow_quality": {
+    "classification": "MOSTLY_DISCRETIONARY_WITH_MATERIAL_INCENTIVE_DISCOUNT",
+    "positive": [
+      "The chain-level DEX acceleration is far above the market-wide weekly change.",
+      "AVAX itself accounts for unusually large decentralized turnover, with DEX volume roughly comparable to its CEX volume in the current DefiLlama token snapshot.",
+      "Net chain inflows are positive and RWA value is substantial, while the hottest tracked spot pools are predominantly WAVAX against USDC/WETH/BTC rather than a single microcap launch token."
+    ],
+    "discounts": [
+      "Ethena Pay launched on Avalanche with AVAX cashback, yield tiers and referral-linked ENA requirements; user/balance activity attributable to that product cannot be treated as clean discretionary speculation.",
+      "Stablecoin market cap is only +0.58% over seven days, so broad settlement-capital migration is not yet confirmed.",
+      "Hanwha's token-securities platform supports Avalanche and Hyperledger Besu and may use permissioned infrastructure; it is a credible institutional narrative catalyst but should not be mapped one-for-one into public C-Chain AVAX demand."
+    ]
+  },
+  "leadership_rotation": {
+    "leader": "AVAX",
+    "evidence": "Current Avalanche DEX activity is heavily concentrated in WAVAX pairs across Pharaoh, Blackhole, Uniswap and LFJ. AVAX price and turnover are rising with the ecosystem rather than lagging it.",
+    "challengers": [
+      {
+        "symbol": "PHAR",
+        "status": "NOT_QUALIFIED",
+        "reason": "Pharaoh has strong protocol economics and TVL/fee growth, but its official architecture includes a dedicated Minter and vote-lock/emission incentive system. Available holder/concentration data are inconsistent across legacy/current token contracts, and token liquidity is much smaller than AVAX. Structural independence and supply-control gates are therefore not positively cleared."
+      },
+      {
+        "symbol": "P33",
+        "status": "REJECTED_FOR_SIGNAL_PURPOSES",
+        "reason": "Liquid-staking/reward-linked token whose activity is mechanically tied to Pharaoh incentives; insufficient independent liquidity and organic-flow evidence."
+      }
+    ]
+  },
+  "wallet_quality": {
+    "selective_wallet_convergence": false,
+    "weight": "NONE",
+    "notes": "No independently funded cohort of historically selective AVAX accumulators was established in this run. A previously reported large exchange withdrawal is not enough to earn smart-wallet credit and is not used to qualify the alert."
+  },
+  "narrative_news": {
+    "primary": [
+      "Hanwha Investment & Securities reportedly completed a token-securities platform supporting Avalanche and Hyperledger Besu as South Korea advances tokenization regulation.",
+      "Ethena launched Ethena Pay on Avalanche; this is a genuine distribution/product catalyst but its cashback/yield/referral mechanics are incentive-contaminated and therefore discounted.",
+      "Avalanche recently passed 100 million cumulative unique addresses, providing longer-horizon adoption context rather than a standalone speculative trigger."
+    ],
+    "attention_quality": "Broad enough to be multi-source and tied to verifiable product/institutional developments; no single influencer campaign is given causal weight."
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "evidence": "AVAX has roughly $283M 24h token volume in the current DefiLlama snapshot, including about $151M DEX volume and $147M CEX volume. Major Avalanche spot pools pair WAVAX with USDC, WETH and BTC and have multi-million-dollar pool liquidity in recent snapshots."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_PROTOCOL_INFLATION_CAVEAT",
+    "sellability_honeypot": "PASS_NATIVE_ASSET",
+    "dangerous_contract_permissions": "PASS_NOT_APPLICABLE_TO_NATIVE_AVAX",
+    "mint_freeze_authority": "PASS_PROTOCOL_DEFINED",
+    "liquidity_removal_risk": "PASS_DISTRIBUTED_MAJOR_MARKETS",
+    "supply_concentration": "NO_HARD_REJECTION_ESTABLISHED",
+    "wash_bot_domination": "NO_HARD_REJECTION_ESTABLISHED_AT_NATIVE_ASSET_LEVEL",
+    "supply_notes": "Avalanche documentation states AVAX is hard-capped at 720M. Validator rewards are protocol-minted according to network rules while transaction fees are burned. AVAX remains inflationary while below the cap; this is a dilution caveat, not an arbitrary admin mint key."
+  },
+  "major_uncertainties": [
+    "The exact source of the newest DEX burst cannot be decomposed wallet-by-wallet with the available public snapshots.",
+    "Stablecoin growth is modest relative to DEX growth, so the move may be high-velocity rotation rather than durable capital settlement.",
+    "Ethena Pay incentives contaminate some incremental Avalanche usage and should be excluded from organic-user inference.",
+    "AVAX remains near a widely watched long-term technical resistance zone around $8.05-$8.06; persistence beyond the current burst is not yet proven.",
+    "No selective-wallet convergence signal was established."
+  ],
+  "why_now": "This is the first current scan in which Avalanche combines >50% WoW DEX growth, a latest-day run rate roughly double the trailing-week daily average, positive chain inflows, substantial RWA activity, nearly balanced AVAX DEX/CEX turnover, and multi-day AVAX price persistence. That combination crosses the research-alert threshold even after discounting Ethena Pay incentives and withholding smart-wallet credit.",
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://defillama.com/chain/avalanche",
+    "https://defillama.com/token/AVAX",
+    "https://support.avax.network/en/articles/6912428-tokenomics-faq",
+    "https://build.avax.network/docs/primary-network/avax-token",
+    "https://dexpaprika.com/avalanche",
+    "https://finance.yahoo.com/markets/crypto/articles/ethena-launches-neobank-app-avalanche-181127603.html",
+    "https://usethebitcoin.com/news/hanwha-avalanche-token-securities-platform/",
+    "https://docs.phar.gg/pages/contract-addresses"
+  ]
+}
