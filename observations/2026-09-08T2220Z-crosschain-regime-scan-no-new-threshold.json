@@ -1,0 +1,127 @@
+{
+  "timestamp_utc": "2026-09-08T22:20:15Z",
+  "type": "RESEARCH_SCAN_NO_ALERT",
+  "execution_trigger": false,
+  "notification": false,
+  "summary": "No new ecosystem/candidate crosses the framework's meaningful alert threshold. Robinhood Chain remains the strongest headline speculative-velocity regime but local leadership is fragmenting into very young, thin-liquidity launches; BSC headline acceleration is newly contaminated by explicit trading competitions and volume-ranked buyback incentives; Avalanche has not repaired its Pharaoh concentration problem; Sui is constructive but still lacks selective-wallet convergence and emerging-asset breadth; Hyperliquid, Solana and Monad do not provide a clean new acceleration signal. UNI remains the prior qualified cross-chain leadership observation but has not achieved the desired price/volume confirmation.",
+  "ecosystems": {
+    "Robinhood_Chain": {
+      "dex_volume_24h_usd": 1914000000,
+      "dex_volume_7d_usd": 10403000000,
+      "dex_weekly_change_pct": 50.24,
+      "stablecoin_mcap_usd": 1001000000,
+      "stablecoin_7d_change_pct": 25.66,
+      "net_inflows_24h_usd": -22420000,
+      "bridge_volume_last_completed_day_usd": 43390000,
+      "bridge_volume_7_completed_days_usd": 422420000,
+      "assessment": "WATCH / NO NEW ALERT",
+      "reason": "Chain-level velocity remains high, but net flow is negative and established local leaders lost substantial daily volume. A like-for-like seven-token leader set fell about 50% in daily volume while liquidity rose, consistent with rotation/attention fragmentation rather than a fresh broad accumulation wave. More than 20 new pools appeared in 24h, and most top movers were younger than one day, so persistence is not established.",
+      "emerging_assets": {
+        "CME": {
+          "status": "REJECT_FOR_NOW",
+          "narrative": "Commodity-exchange platform token with a proposed fee-linked buyback/liquidity mechanism.",
+          "evidence": "Multiple CME pools showed multi-million-dollar turnover within roughly 13 hours, but liquidity was highly uneven and one heavily traded pool displayed only about $17k of liquidity with a GeckoTerminal security score around 66/100. Other pools were also young and thin.",
+          "hard_gate_reason": "Insufficient persistence and insufficient/fragmented executable liquidity; structural review is not strong enough to override the launch-phase risk."
+        },
+        "O1BOT_GAGE_KERF_MARLIN_500_MAXI_LAPTOP_RSTR_STBL": {
+          "status": "WATCH_ONLY",
+          "reason": "Large percentage moves and millions of dollars of turnover, but most are hours to a few days old with low six-figure or sub-$100k displayed liquidity. Raw launch popularity is explicitly not treated as profitability evidence."
+        }
+      }
+    },
+    "BSC": {
+      "dex_volume_24h_usd": 1404000000,
+      "dex_volume_7d_usd": 8986000000,
+      "dex_weekly_change_pct": 36.77,
+      "stablecoin_mcap_usd": 13293000000,
+      "stablecoin_7d_change_pct": -0.70,
+      "net_inflows_24h_usd": 10450000,
+      "active_addresses_24h": 1840000,
+      "new_addresses_24h": 350566,
+      "transactions_24h": 18820000,
+      "assessment": "REJECT_CLEAN_REGIME_ATTRIBUTION",
+      "reason": "Headline DEX acceleration is not confirmed by stablecoin growth and is being directly distorted by incentives. Ave, BNB Chain and Four.meme launched a bStocks trading competition with a combined 150,000 USDT prize pool. Separately, Four.meme's BNC4 campaign beginning September 9 uses 100% of daily BNC4 product revenue to buy/burn the eligible community meme token ranked first by daily BNC4-pair volume. That makes volume itself financially rewarded and creates a strong reflexive leaderboard-gaming incentive."
+    },
+    "Avalanche": {
+      "dex_volume_24h_usd": 210130000,
+      "dex_volume_7d_usd": 858740000,
+      "dex_weekly_change_pct": 52.34,
+      "stablecoin_mcap_usd": 1358000000,
+      "stablecoin_7d_change_pct": 0.59,
+      "net_inflows_24h_usd": 5030000,
+      "assessment": "WATCH_ONLY",
+      "reason": "The September 8 flow-quality downgrade remains in force: stablecoin growth is modest and the DEX acceleration has not broadened sufficiently beyond Pharaoh to establish discretionary-wallet migration rather than concentrated professional/incentive-supported routing."
+    },
+    "Sui": {
+      "dex_volume_24h_usd": 57110000,
+      "dex_volume_7d_usd": 294590000,
+      "dex_weekly_change_pct": 18.17,
+      "stablecoin_mcap_usd": 446980000,
+      "stablecoin_7d_change_pct": 5.20,
+      "net_inflows_24h_usd": 209600,
+      "active_addresses_24h": 144502,
+      "new_addresses_24h": 56769,
+      "transactions_24h": 22760000,
+      "assessment": "CONSTRUCTIVE_WATCH",
+      "reason": "Spot volume and stablecoins are both rising, and SUI token turnover was reported roughly 79% above its 30-day average with positive weekly/monthly persistence. However, DEX activity remains concentrated in SUI/USDC/USDT and majors; DEEP and other ecosystem assets have not shown enough independent holder/wallet/volume breadth, and no selective-wallet convergence was established in this run."
+    },
+    "Hyperliquid": {
+      "dex_volume_24h_usd": 218490000,
+      "dex_volume_7d_usd": 2030000000,
+      "dex_weekly_change_pct": -24.67,
+      "perps_volume_24h_usd": 4983000000,
+      "perps_volume_7d_usd": 45416000000,
+      "perps_weekly_change_pct": -18.51,
+      "stablecoin_mcap_usd": 7071000000,
+      "stablecoin_7d_change_pct": 3.63,
+      "assessment": "NO_REACCELERATION",
+      "reason": "HYPE's pullback from the September 6-7 high appears more consistent with profit-taking than a fundamental break, but the ecosystem's spot and perpetual volumes are still contracting week-over-week. The September 6 HYPE observation therefore remains an existing thesis, not a fresh regime-crossing event."
+    },
+    "Solana": {
+      "dex_volume_24h_usd": 2525000000,
+      "dex_volume_7d_usd": 15644000000,
+      "dex_weekly_change_pct": -7.16,
+      "stablecoin_mcap_usd": 16379000000,
+      "stablecoin_7d_change_pct": 4.76,
+      "net_inflows_24h_usd": 5050000,
+      "assessment": "NO_NEW_REGIME_ALERT",
+      "reason": "Stablecoin growth is constructive, but DEX volume is not accelerating. One reported whale accumulated about 285,500 SOL over roughly three weeks, but one wallet is insufficient for selective-wallet convergence or a new ecosystem leadership call."
+    },
+    "Monad": {
+      "stablecoin_mcap_usd": 743000000,
+      "stablecoin_7d_change_pct": -1.05,
+      "dex_weekly_change_pct": 2.36,
+      "perps_weekly_change_pct": 96.83,
+      "net_inflows_24h_usd": 13150000,
+      "assessment": "REJECT_CLEAN_FLOW_ATTRIBUTION",
+      "reason": "Perpetual volume acceleration is dominated by venues running explicit points/reward programs. Perpl's Purple Summer campaign distributes MON and mPoints, and Drake launched a four-week $100k MON incentive campaign plus points. The current growth therefore fails the discretionary-speculation attribution test."
+    }
+  },
+  "prior_leader_checkpoint": {
+    "asset": "UNI",
+    "canonical_contract": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+    "prior_alert_timestamp_utc": "2026-09-08T13:18:11Z",
+    "prior_alert_price_usd": 7.06,
+    "current_price_usd_approx": 6.97,
+    "current_24h_high_usd_approx": 7.19,
+    "current_24h_low_usd_approx": 6.75,
+    "current_24h_volume_usd_approx": 601300000,
+    "assessment": "NO_NEW_CONFIRMATION",
+    "reason": "UNI remains a qualified cross-chain value-capture leader, but current price remains below the previously defined ~$7.15-$7.30 reclaim/hold confirmation zone and has not produced a clean new price-volume breakout."
+  },
+  "structural_gate_summary": "No new candidate with both sufficient persistence and executable liquidity completed all hard structural gates in this run. Launch-phase Robinhood candidates are intentionally withheld despite extreme percentage gains. BSC and Monad are rejected at the ecosystem flow-attribution stage before asset ranking because incentives materially contaminate the observed acceleration.",
+  "alert_decision": "NO_ALERT",
+  "forward_evaluation_note": "This no-alert scan is retained prospectively so later analysis can test whether the framework's refusal to chase incentive-contaminated or launch-phase activity improved outcomes versus raw volume/popularity signals.",
+  "sources": [
+    "https://defillama.com/chain/robinhood-chain",
+    "https://defillama.com/chain/BSC",
+    "https://defillama.com/chain/Avalanche",
+    "https://defillama.com/chain/Sui",
+    "https://defillama.com/chain/Hyperliquid",
+    "https://defillama.com/chain/Solana",
+    "https://defillama.com/chain/Monad",
+    "https://www.geckoterminal.com/robinhood-chain/pools",
+    "https://four.meme/",
+    "https://perpl.xyz/"
+  ]
+}
