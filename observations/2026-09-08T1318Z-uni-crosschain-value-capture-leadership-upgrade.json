@@ -1,0 +1,167 @@
+{
+  "timestamp_utc": "2026-09-08T13:18:11Z",
+  "type": "RESEARCH_OBSERVATION",
+  "execution_trigger": false,
+  "ecosystem": "Cross-chain DEX / Robinhood Chain spillover",
+  "regime_status": "QUALIFIED_LEADERSHIP_UPGRADE_NOT_ENTRY_SIGNAL",
+  "candidate": {
+    "asset": "UNI",
+    "network": "Ethereum ERC-20",
+    "contract": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+    "snapshot_price_usd": 7.06,
+    "snapshot_market_cap_usd": 4402000000,
+    "snapshot_fdv_usd": 6290000000,
+    "snapshot_token_volume_24h_usd": 586490000,
+    "snapshot_token_dex_volume_24h_usd": 302130000,
+    "token_dex_share_pct": 51.52,
+    "price_change_7d_pct": 25.1,
+    "price_change_30d_pct": 79.4
+  },
+  "alert_reason": "UNI crosses a prospective research threshold as the clearest cross-chain value-capture beneficiary of the Robinhood-led speculative regime: protocol usage is broad, fee-funded UNI burn has accelerated to a >$250M annualized seven-day pace, price persistence remains strong, and accumulation evidence has broadened beyond a single wallet. This is a leadership/value-capture upgrade, not a buy or execution signal; the prior desired price/volume entry confirmation has not been satisfied.",
+  "where_capital_is_migrating": {
+    "Robinhood_Chain": {
+      "dex_volume_24h_usd": 1520000000,
+      "dex_volume_7d_usd": 10403000000,
+      "dex_weekly_change_pct": 50.24,
+      "stablecoin_mcap_usd": 1001000000,
+      "stablecoin_7d_change_pct": 25.66,
+      "net_inflows_24h_usd": -22420000,
+      "interpretation": "Still the strongest raw discretionary-velocity regime, but negative net inflows keep it on distribution/velocity watch rather than clean one-way accumulation."
+    },
+    "Ethereum": {
+      "stablecoin_7d_change_pct": 0.05,
+      "dex_weekly_change_pct": -14.47,
+      "net_inflows_24h_usd": 54880000,
+      "interpretation": "High-quality capital base and positive inflow, but not an emerging speculative spot regime. UNI's signal is protocol-level and cross-chain rather than an Ethereum-mainnet regime call."
+    },
+    "Solana": {
+      "stablecoin_7d_change_pct_approx": 4.75,
+      "dex_weekly_change_pct_approx": -11.47,
+      "status": "NO_NEW_REGIME_ALERT"
+    },
+    "BSC": {
+      "stablecoin_7d_change_pct_approx": -0.62,
+      "dex_weekly_change_pct_approx": 32.17,
+      "status": "WATCH; activity acceleration lacks stablecoin confirmation and CAKE remains structurally rejected"
+    },
+    "Avalanche": {
+      "stablecoin_7d_change_pct": 0.57,
+      "dex_weekly_change_pct": 52.34,
+      "status": "WATCH; headline acceleration remains heavily concentrated in Pharaoh and has not yet re-established broad discretionary-flow quality"
+    },
+    "Sui": {
+      "stablecoin_7d_change_pct_approx": 5.2,
+      "dex_weekly_change_pct_approx": 18.17,
+      "status": "WATCH_ONLY"
+    },
+    "Hyperliquid": {
+      "stablecoin_7d_change_pct_approx": 3.62,
+      "dex_weekly_change_pct_approx": -24.67,
+      "perps_weekly_change_pct_approx": -18.51,
+      "status": "NO_REACCELERATION"
+    },
+    "Monad": {
+      "status": "REJECT_CLEAN_FLOW_ATTRIBUTION",
+      "reason": "Recent stablecoin/perp growth is materially contaminated by Pendle/AUSD yield incentives and points/airdrop speculation."
+    }
+  },
+  "ecosystem_regime_evidence": {
+    "uniswap_tvl_usd": 3636000000,
+    "uniswap_active_addresses_24h": 472333,
+    "uniswap_transactions_24h": 6620000,
+    "uniswap_dex_volume_24h_usd": 2309000000,
+    "uniswap_dex_volume_7d_usd": 17047000000,
+    "uniswap_dex_volume_24h_by_chain_usd": {
+      "Robinhood Chain": 1116000000,
+      "Ethereum": 607490000,
+      "Base": 173930000,
+      "BSC": 170140000,
+      "Arbitrum": 106250000
+    },
+    "uniswap_fees_24h_usd": 6890000,
+    "uniswap_fees_7d_usd": 67090000,
+    "uniswap_fees_30d_usd": 152430000,
+    "holder_revenue_24h_usd": 629423,
+    "holder_revenue_7d_usd": 5100000,
+    "holder_revenue_30d_usd": 12210000,
+    "holder_revenue_24h_robinhood_usd": 419159,
+    "holder_revenue_7d_robinhood_usd": 3720000,
+    "interpretation": "Robinhood supplies the marginal acceleration, but UNI captures value across multiple chains. About 48% of current Uniswap 24h DEX volume and roughly two-thirds of 24h holder revenue are Robinhood-linked, while Ethereum/Base/BSC/Arbitrum provide independent protocol breadth."
+  },
+  "why_flows_appear_speculative": {
+    "classification": "QUALIFIED_WITH_ROBINHOOD_SUBSIDY_CAVEAT",
+    "evidence": [
+      "Robinhood Chain DEX volume remains +50.24% week-over-week while its stablecoin base is +25.66%, showing high speculative turnover and capital availability.",
+      "Uniswap's fee switch converts qualifying protocol fees into UNI purchases/burns, so trading activity has a direct token supply-sink mechanism rather than only a narrative association.",
+      "The seven-day annualized UNI burn run rate was reported by founder Hayden Adams at approximately $263M on September 8, up from roughly $200M only days earlier.",
+      "Uniswap activity is cross-chain and broad enough that the signal is not dependent on one microcap pool or one launchpad asset."
+    ],
+    "discounts": [
+      "Robinhood currently subsidizes gas in its wallet through late September, so some chain activity is economically subsidized and must not be treated as fully organic.",
+      "Robinhood Chain has negative 24h net inflow, indicating recycling/distribution as well as fresh capital.",
+      "Pons/launchpad activity contributes materially to Robinhood turnover and may include reflexive speculative mechanics."
+    ]
+  },
+  "leadership_rotation": {
+    "classification": "BROADENING_FROM_CHAIN_NATIVE_SPECULATION_TO_CROSS_CHAIN_VALUE_CAPTURE",
+    "evidence": "The Robinhood speculative regime remains active, but current data increasingly favor UNI as the liquid cross-chain asset monetizing the regime rather than assuming an early Robinhood-native flagship remains the enduring leader. UNI is +25.1% over 7d and +79.4% over 30d while protocol holder revenue has accelerated sharply.",
+    "entry_signal": false,
+    "entry_signal_note": "This research upgrade does not satisfy the previously discussed price/volume confirmation for a trade-like setup; current UNI is about $7.06 and has not cleanly reclaimed the prior ~$7.15-$7.30 confirmation zone with demonstrated volume reacceleration."
+  },
+  "wallet_quality": {
+    "score": "MODERATE_IMPROVING_NOT_FULL_CONVERGENCE",
+    "evidence": [
+      "Nansen-labelled whale holdings increased from 3.20M to 3.46M UNI on September 2 (+257,777 UNI), and the cohort grew from eight to nine wallets.",
+      "Fresh wallets reportedly received $2.91M of UNI while exchange balances fell by 351,274 UNI in the same early-September window.",
+      "An Etherscan-labelled Arthur Hayes wallet accumulated about 284,100 UNI (~$2.01M) over two consecutive days, including a second purchase after the first, providing repeat-buy evidence."
+    ],
+    "independence_check": "Do not double-count the Nansen cohort and the Hayes wallet as proven independent selective-wallet convergence. Their timing differs and Hayes' accumulation occurred later, but the available public evidence is insufficient to prove funding independence or exclude cohort overlap. Hayes' public promotion also reduces the informational value of his buying relative to a quiet selective wallet.",
+    "selective_wallet_bonus": "PARTIAL_ONLY"
+  },
+  "narrative_news": {
+    "quality": "HIGH_ON_MECHANISM_MODERATE_ON_SOCIAL_INDEPENDENCE",
+    "evidence": [
+      "Fee-funded UNI burn is an observable value-capture mechanism and has accelerated with Robinhood-driven protocol usage.",
+      "Multiple independent outlets and on-chain-data reports are discussing burn acceleration and whale accumulation.",
+      "The narrative fits a broader tokenized-asset / high-velocity onchain trading catalyst because Uniswap is the dominant settlement venue for much of Robinhood Chain's spot activity."
+    ],
+    "promotion_risk": "Hayden Adams and Arthur Hayes are both high-profile voices. Their posts can amplify attention, so social attention receives less weight than on-chain volume, burn, and wallet-balance evidence."
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "evidence": "UNI has ~$586.49M of 24h token turnover, ~$302.13M on DEXs (51.52% of total), ~$4.40B circulating market cap, and Uniswap itself has ~$3.64B TVL. Executable liquidity is far above microcap-screen thresholds."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_GOVERNANCE_INFLATION_AND_TREASURY_CONCENTRATION_CAVEATS",
+    "sellability_honeypot": "PASS; mature ERC-20 with deep centralized and decentralized liquidity.",
+    "mint_authority": "Governance can mint up to 2% of total supply annually; official Uniswap documentation states there is no active inflation and governance has not exercised this authority to date. This is rate-limited governance authority, not an uncapped deployer/owner mint key, so it is treated as a caveat rather than a hard rejection.",
+    "freeze_blacklist": "No freeze/blacklist mechanism identified in the canonical UNI token documentation/contract surface reviewed for this observation.",
+    "lp_control": "No single creator-controlled LP is required for UNI sellability; liquidity is distributed across major venues.",
+    "concentration": "Uniswap's tracked treasury is ~$1.882B and largely consists of UNI, creating meaningful governance/treasury concentration. This is transparent governance-controlled inventory and remains a risk factor rather than a deployer-rug equivalent.",
+    "creator_dumping_wash_sniper": "No evidence found in this run sufficient to trigger a hard rejection for creator dumping, wash trading, bundled wallets, or sniper domination in UNI itself."
+  },
+  "major_uncertainties": [
+    "How durable Robinhood Chain turnover remains after subsidized gas ends in late September.",
+    "How much of the burn run rate survives a normalization from the current unusually high seven-day trading window.",
+    "Whether negative Robinhood net inflows precede a broader regime fade despite high stablecoin balances and velocity.",
+    "Whether whale accumulation persists and broadens to independently funded historically selective wallets.",
+    "Whether governance ever uses its 2% annual mint authority, which would offset part of the burn thesis.",
+    "The large governance-controlled UNI treasury remains a supply/decision concentration risk."
+  ],
+  "why_signal_matters_now": "The research threshold is crossed because value capture is accelerating faster than in prior scans while UNI price persistence and accumulation evidence have both survived. This is specifically a leadership-quality upgrade: the framework is identifying a liquid infrastructure asset that monetizes speculative migration across chains rather than simply chasing the first local flagship. It is not a recommendation or execution trigger.",
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://defillama.com/protocol/uniswap",
+    "https://defillama.com/chain/robinhood-chain",
+    "https://developers.uniswap.org/docs/ecosystem/governance/uni",
+    "https://news.bitcoin.com/crypto-news/uniswap-uni-burn-rate-250-million-hayden-adams/",
+    "https://beincrypto.com/arthur-hayes-uni-buying-two-days/",
+    "https://beincrypto.com/altcoins-crypto-whales-buying-september-2026/"
+  ]
+}
