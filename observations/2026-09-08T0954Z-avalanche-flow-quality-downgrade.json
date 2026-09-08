@@ -1,0 +1,98 @@
+{
+  "timestamp_utc": "2026-09-08T09:54:02Z",
+  "type": "research_observation",
+  "execution_trigger": false,
+  "previous_alert": {
+    "timestamp_utc": "2026-09-08T04:21:00Z",
+    "ecosystem": "Avalanche",
+    "asset": "AVAX",
+    "previous_status": "QUALIFIED_SPECULATIVE_ACCELERATION",
+    "repository_file_found": false,
+    "note": "The prior alert exists in the conversation record; no matching repository observation was found through the connected GitHub search, so this correction is preserved prospectively without fabricating a prior commit."
+  },
+  "correction": {
+    "new_status": "WATCH_FLOW_QUALITY",
+    "hard_structural_rejection": false,
+    "reason": "Fresh decomposition shows that the abnormal Avalanche DEX acceleration is overwhelmingly concentrated in Pharaoh Exchange and especially AVAX/stablecoin routing, while stablecoin growth and net inflows remain modest. This weakens the inference that broad discretionary speculative capital is migrating into the ecosystem."
+  },
+  "ecosystem_evidence": {
+    "avalanche": {
+      "dex_volume_24h_usd": 246170000,
+      "dex_volume_7d_usd": 858740000,
+      "dex_weekly_change_pct": 52.34,
+      "stablecoin_mcap_usd": 1358000000,
+      "stablecoin_7d_change_pct": 0.57,
+      "net_inflows_24h_usd": 5030000,
+      "active_addresses_24h": 298722,
+      "new_addresses_24h": 5992,
+      "transactions_24h": 1510000
+    },
+    "pharaoh_exchange": {
+      "dex_volume_24h_usd": 206540000,
+      "dex_volume_7d_usd": 714780000,
+      "share_of_avalanche_dex_volume_24h_pct": 83.9,
+      "share_of_avalanche_dex_volume_7d_pct": 83.2,
+      "active_addresses_24h": 927,
+      "transactions_24h": 38564,
+      "transactions_per_active_address_24h_approx": 41.6,
+      "protocol_incentives_24h_usd": 33488.82,
+      "protocol_incentives_7d_usd": 214558.04,
+      "holder_revenue_24h_usd": 152182.84,
+      "note": "Pharaoh is an incentive-engine AMM. Its Boost documentation explicitly describes LP/voter rewards intended to increase demand, TVL and volume across Avalanche. Current incentive spend is not accelerating nearly as fast as volume, so incentives alone do not prove wash trading; they do make the flow less clean as a discretionary-speculation signal."
+    },
+    "dominant_pool": {
+      "pair": "WAVAX/USDC",
+      "venue": "Pharaoh V3",
+      "pool_address": "0xf01449C0bA930B6e2CaCA3DEF3CCBd7a3E589534",
+      "wavax_contract": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+      "usdc_contract": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+      "volume_24h_usd": 69030000,
+      "liquidity_usd": 2520000,
+      "volume_to_liquidity_24h_multiple": 27.4,
+      "share_of_dexpaprika_tracked_avalanche_volume_pct": 79.2
+    }
+  },
+  "asset": {
+    "symbol": "AVAX",
+    "native_asset": true,
+    "wavax_contract": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+    "price_usd_approx": 8.07,
+    "price_change_24h_pct": 1.5,
+    "price_change_7d_pct": 10.0,
+    "token_volume_24h_usd_approx": 397681000,
+    "structural_gate": "PASS",
+    "wallet_quality": "NO_SELECTIVE_WALLET_CONVERGENCE_ESTABLISHED",
+    "interpretation": "Price persistence remains constructive and AVAX itself is not structurally rejected. The downgrade is about causal attribution of ecosystem flow, not token sellability or contract safety."
+  },
+  "flow_quality_assessment": {
+    "broad_discretionary_speculation": "NOT_YET_CONFIRMED",
+    "incentive_contamination": "MATERIAL_BUT_NOT_PROVEN_PRIMARY_CAUSE",
+    "bot_arbitrage_routing_risk": "ELEVATED",
+    "why": "Roughly 84% of chain DEX volume is coming from one incentive-engine DEX with fewer than one thousand active addresses and more than forty transactions per active address per day. A single WAVAX/USDC pool dominates independent DEX tracking and turns over roughly 27x its displayed liquidity daily. That is compatible with professional routing/arbitrage and concentrated high-velocity flow, not the broad wallet migration required by the research framework."
+  },
+  "cross_ecosystem_check": {
+    "Robinhood Chain": "Still the strongest raw speculative-velocity outlier: DEX +50.24% weekly and stablecoins +25.66%, but 24h net inflows remain negative at about -$22.4m, so flow quality remains mixed.",
+    "Ethereum": "No emerging speculative regime: DEX -11.71% weekly and stablecoins essentially flat despite +$46.9m 24h inflows.",
+    "Solana": "Stablecoins +4.75% weekly, but DEX volume -11.47% weekly; no clean fresh regime acceleration.",
+    "BSC": "DEX +32.17% weekly but stablecoins -0.63%; prior incentive/structural concerns still block a clean leader.",
+    "Sui": "DEX +18.17% and stablecoins +5.21% weekly, constructive but below threshold and without a newly cleared leader.",
+    "NEAR": "DEX +72.87% weekly but stablecoins -8.93% and the NEAR@3.33 milestone/airdrop program contaminates marginal usage.",
+    "Hyperliquid": "Stablecoins +3.62%, but spot DEX -24.67% and perps -18.51% weekly; no new acceleration signal.",
+    "Arbitrum": "Strong +$39.8m 24h inflow, but DEX -10.5% weekly; no native speculative-regime confirmation."
+  },
+  "forward_tests": [
+    "Require Avalanche DEX breadth to improve beyond Pharaoh: rising volume across multiple venues/pairs and a materially larger unique-trader cohort.",
+    "Require stablecoin growth and/or sustained bridge inflows to strengthen beyond the current approximately +0.6% weekly stablecoin growth and +$5m daily inflow.",
+    "Require AVAX price/volume persistence after the current high-velocity WAVAX/USDC burst cools.",
+    "Do not promote PHAR or another Avalanche ecosystem token without independent hard-gate clearance and wallet-independence evidence."
+  ],
+  "sources": [
+    "https://defillama.com/chain/avalanche",
+    "https://defillama.com/protocol/pharaoh-exchange",
+    "https://dexpaprika.com/avalanche",
+    "https://docs.pharaoh.exchange/pages/boost",
+    "https://www.coingecko.com/en/coins/avalanche"
+  ],
+  "alert_reason": "Material methodology correction: Avalanche's headline DEX acceleration survives numerically but no longer clears the framework's clean-flow attribution threshold once venue concentration, user concentration and incentive-supported routing are decomposed.",
+  "no_trade_instruction": true
+}
