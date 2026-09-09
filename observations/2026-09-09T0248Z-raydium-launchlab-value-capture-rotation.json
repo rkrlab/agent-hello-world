@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-09-09T02:48:43Z",
+  "alert_type": "QUALIFIED_LEADERSHIP_CONFIRMATION",
+  "ecosystem": "Solana / Raydium LaunchLab / StonkFun",
+  "candidate": {
+    "name": "Raydium",
+    "symbol": "RAY",
+    "network": "Solana",
+    "address": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+    "reference_price_usd": 1.17,
+    "reference_price_source": "https://defillama.com/token/RAY"
+  },
+  "regime_evidence": {
+    "solana_stablecoin_mcap_usd": 16379000000,
+    "solana_stablecoin_change_7d_pct": 4.76,
+    "solana_dex_volume_24h_usd": 2525000000,
+    "solana_dex_volume_7d_usd": 15644000000,
+    "solana_dex_volume_weekly_change_pct": -7.16,
+    "raydium_dex_volume_24h_usd": 307820000,
+    "raydium_dex_volume_7d_usd": 1409000000,
+    "raydium_fees_24h_usd": 1610000,
+    "raydium_fees_7d_usd": 6630000,
+    "raydium_holder_revenue_24h_usd": 200401,
+    "raydium_holder_revenue_7d_usd": 811817,
+    "raydium_current_day_share_of_solana_dex_pct": 12.19,
+    "raydium_7d_share_of_solana_dex_pct": 9.01,
+    "raydium_current_day_share_vs_7d_share_ratio": 1.35,
+    "raydium_24h_volume_vs_7d_daily_average_ratio": 1.53,
+    "raydium_24h_fees_vs_7d_daily_average_ratio": 1.70,
+    "raydium_24h_holder_revenue_vs_7d_daily_average_ratio": 1.73
+  },
+  "why_flows_appear_speculative": "The activity is centered on LaunchLab's expansion to arbitrary base-token pairs and StonkFun's stock/commodity-paired token launches. Raydium reports zero protocol token incentives in DefiLlama for the measured period, and StonkFun's reported economics are transaction-fee based rather than points/quest rewards. The flow therefore looks primarily like discretionary trading around a new product/narrative rather than reward farming, although launchpad mechanics can still create short-lived churn.",
+  "leadership_rotation": "Solana as a whole is not in a broad DEX acceleration regime: 7d DEX volume is down 7.16%. The notable change is within the chain. Raydium's current-day share of Solana DEX volume is about 12.2% versus about 9.0% over the trailing 7d, while its 24h fees and holder revenue are running about 1.7x their trailing-7d daily averages. This is evidence of a sub-ecosystem rotation toward LaunchLab/Raydium value capture rather than a broad Solana beta move.",
+  "wallet_quality": {
+    "rating": "NEUTRAL_TO_MODERATE",
+    "evidence": "No independently funded, historically selective RAY accumulation cluster was verified in this scan. A Lookonchain-tracked early STONK trader had an exceptional realized/unrealized outcome but had already sold most of the original STONK position, so that wallet is not treated as clean RAY confirmation. No wallet-convergence bonus applied."
+  },
+  "narrative_news": "StonkFun integrated with Raydium LaunchLab after LaunchLab expanded to support arbitrary token pairs. Independent coverage reported strong activity in stock/commodity-paired launches, with RAY and JUP reacting alongside STONK. StonkFun continues to generate material fee revenue, supporting the interpretation that the catalyst is producing real transaction demand rather than only social attention.",
+  "liquidity_executability": {
+    "result": "PASS",
+    "token_liquidity_usd": 36010000,
+    "token_volume_24h_usd": 75330000,
+    "notes": "RAY has substantial on-chain liquidity and both CEX and DEX turnover; this is materially different from a thin launchpad microcap."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_EMISSION_CAVEAT",
+    "sellability": "PASS",
+    "mint_authority": "DISABLED",
+    "max_supply_ray": 555000000,
+    "circulating_supply_ray": 269540000,
+    "team_seed_vesting": "Completed 2024-02-21 per Raydium docs",
+    "mining_reserve_ray": 188700000,
+    "current_emissions_ray_per_year_approx": 1900000,
+    "buyback": "12% of Raydium trading fees are used to buy back RAY; flows are publicly auditable on-chain.",
+    "major_caveat": "A large mining reserve remains outside circulating supply, although current emissions are slow and mint authority is revoked."
+  },
+  "rejected_or_discounted_neighbors": [
+    {
+      "asset_or_ecosystem": "STONK",
+      "reason": "Narrative/attention leader with strong volume and persistence, but not promoted to a candidate in this alert because this scan did not complete the same structural authority/concentration/funding-independence checks required for a fresh launchpad token."
+    },
+    {
+      "asset_or_ecosystem": "BNB Chain BNC4-linked memes",
+      "reason": "Discounted because the newly launched BNC4 daily buyback competition explicitly rewards the top-volume eligible meme token, creating a direct incentive to manufacture volume and increasing wash-trading contamination risk."
+    },
+    {
+      "asset_or_ecosystem": "Robinhood Chain hot tokens",
+      "reason": "No new threshold: chain-level 7d metrics remain elevated, but recurring hot-token volume has cooled sharply and net flows remain negative, while scam/copycat risk is high."
+    },
+    {
+      "asset_or_ecosystem": "Hyperliquid / HYPE",
+      "reason": "Prior leadership confirmation remains intact but no additional threshold beyond the previous alert was identified in this scan; spot/perp turnover remains below prior-week pace."
+    }
+  ],
+  "major_uncertainties": [
+    "Raydium's current acceleration may be a short StonkFun/LaunchLab pulse rather than a durable multi-week regime.",
+    "Solana chain-wide DEX volume is still down week over week, so this is a concentrated leadership rotation rather than broad ecosystem expansion.",
+    "No independent selective-wallet convergence for RAY was verified.",
+    "Launchpad activity can contain bots/snipers and reflexive churn even without formal points or airdrops.",
+    "The RAY mining reserve is large relative to circulating supply even though annual emissions are currently modest and mint authority is disabled."
+  ],
+  "why_signal_matters_now": "Raydium is gaining current-day DEX share inside a Solana market whose aggregate weekly DEX activity is falling, while fees and token-holder value capture are accelerating materially faster than their trailing-week averages. That combination is the framework's preferred form of leadership rotation: activity concentrates into an infrastructure asset that directly monetizes the new speculative product rather than merely following the first flagship token.",
+  "recommendation": "NONE_RESEARCH_ONLY",
+  "outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://defillama.com/chain/solana",
+    "https://defillama.com/protocol/raydium?revenue=true&volume=true",
+    "https://defillama.com/token/RAY",
+    "https://defillama.com/protocol/stonkfun",
+    "https://docs.raydium.io/ray",
+    "https://docs.raydium.io/ray/ray-buybacks",
+    "https://www.theblock.co/news/defi/2026-09-06-stonk-surges-250-to-140-million-market-cap-as-stock-paired-solana-launchpad-stonkfun-pulls-volume-to-raydium-and-jupiter-413621",
+    "https://www.chaincatcher.com/en/article/2288007"
+  ]
+}
