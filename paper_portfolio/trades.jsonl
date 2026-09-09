@@ -1,0 +1,1 @@
+{"trade_id":"INIT-20260909-1514Z","timestamp_utc":"2026-09-09T15:14:00Z","action":"INITIALIZE","asset":"USD/BTC/ETH/SOL/SUI/BNB","gross_usd":10000.0,"transaction_cost_usd":0.0,"cash_after_usd":4000.0,"note":"Opening inventory supplied by user. Not a framework-generated trade; establishes the prospective paper-trading baseline."}
