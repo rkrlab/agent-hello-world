@@ -1,0 +1,130 @@
+{
+  "timestamp_utc": "2026-09-09T01:49:56Z",
+  "type": "RESEARCH_OBSERVATION",
+  "execution_trigger": false,
+  "ecosystem": "Hyperliquid L1 / onchain perpetuals",
+  "regime_status": "QUALIFIED_LEADERSHIP_CONFIRMATION_WITH_VOLUME_DIVERGENCE",
+  "candidate": {
+    "asset": "HYPE",
+    "network": "Hyperliquid L1 native asset",
+    "contract": null,
+    "snapshot_price_usd": 84.43,
+    "snapshot_market_cap_usd": 18773000000,
+    "snapshot_fdv_usd": 80624000000,
+    "all_time_high_usd": 89.60,
+    "all_time_high_date": "2026-09-06"
+  },
+  "alert_reason": "HYPE crosses a prospective leadership-confirmation threshold because Hyperliquid open interest has risen to approximately $14.694B, effectively back at the pre-October-2025 peak, while the composition of that OI has rotated back toward core crypto perpetuals whose fees are materially more accretive to HYPE buybacks than HIP-3 builder markets. This resolves part of the prior scan's concern that activity growth was occurring in lower-value-capture HIP-3 venues. It is not a trade recommendation or execution signal.",
+  "comparison_to_prior_scan": {
+    "prior_timestamp_utc": "2026-09-08T13:18:11Z",
+    "prior_status": "NO_REACCELERATION",
+    "prior_evidence": {
+      "stablecoin_7d_change_pct_approx": 3.62,
+      "dex_weekly_change_pct_approx": -24.67,
+      "perps_weekly_change_pct_approx": -18.51
+    },
+    "new_information": "Spot/perp turnover remains below the prior week, but open interest has continued to climb and the mix has shifted toward core crypto perps. The framework therefore treats this as capital-stock and value-capture confirmation, not a broad transaction-velocity acceleration."
+  },
+  "ecosystem_regime_evidence": {
+    "hyperliquid_l1_tvl_usd": 1461000000,
+    "stablecoin_mcap_usd": 7071000000,
+    "stablecoin_7d_change_pct": 3.63,
+    "app_fees_24h_usd": 4280000,
+    "app_revenue_24h_usd": 1550000,
+    "spot_dex_volume_24h_usd": 218490000,
+    "spot_dex_volume_7d_usd": 2030000000,
+    "spot_dex_weekly_change_pct": -24.67,
+    "perps_volume_24h_usd": 4983000000,
+    "perps_volume_7d_usd": 45416000000,
+    "perps_weekly_change_pct": -18.51,
+    "active_addresses_24h": 14220,
+    "new_addresses_24h": 1990,
+    "transactions_24h": 373366,
+    "open_interest_usd": 14694000000,
+    "global_onchain_perp_open_interest_usd": 23793000000,
+    "hyperliquid_share_of_tracked_oi_pct_approx": 61.76,
+    "interpretation": "Velocity is not reaccelerating week-over-week, but capital committed to positions is. Rising OI concurrent with positive stablecoin growth and persistent HYPE price is a higher-quality persistence signal than a one-day volume spike."
+  },
+  "why_flows_appear_speculative": {
+    "classification": "QUALIFIED_DIRECTIONAL_SPECULATION_NOT_POINTS_LED",
+    "evidence": [
+      "Hyperliquid open interest is approximately $14.694B, the largest among tracked decentralized derivatives venues and effectively back to the pre-crash high-water mark.",
+      "The Block reports total OI rose by about $3.57B over the past month while HIP-3 OI fell by roughly $119M, reducing HIP-3 share from about 34% to 25% and implying that the marginal OI increase came from core markets rather than builder-market farming.",
+      "Core crypto perpetuals route close to 97% of their fees into HYPE buybacks, so the composition shift improves token value capture relative to HIP-3 markets where builders can retain up to half the fees.",
+      "Hyperliquid L1 stablecoin market cap is up about 3.63% over seven days, supplying a growing collateral base rather than showing capital flight."
+    ],
+    "discounts": [
+      "Perps trading volume remains about 18.5% lower week-over-week and spot DEX volume about 24.7% lower, so this is not a clean turnover-acceleration regime.",
+      "Some Hyperliquid ecosystem products still run rewards or points programs; the qualification rests on core-market OI composition, not those incentivized programs.",
+      "Leverage can make OI unstable and can unwind rapidly in liquidation cascades."
+    ]
+  },
+  "leadership_rotation": {
+    "classification": "CORE_PERPS_REASSERTION_INSIDE_HYPERLIQUID",
+    "evidence": "Earlier 2026 OI growth was increasingly carried by HIP-3 builder markets. Over the latest month that trend reversed: total OI rose while HIP-3 OI declined and its share fell to about 25%. That shifts leadership back toward Hyperliquid's core crypto-perp engine, which is economically more favorable to HYPE because a much larger share of fees funds token buybacks.",
+    "relative_market_position": "Hyperliquid holds roughly 61.8% of DefiLlama-tracked decentralized perpetual open interest, versus about $2.46B for second-place Aster. Aster's current activity also remains materially reward/incentive contaminated, so it does not displace Hyperliquid under this framework."
+  },
+  "wallet_quality": {
+    "score": "MODERATE_REPEAT_ACCUMULATION_BUT_LIMITED_INDEPENDENCE",
+    "evidence": [
+      "Wallet 0x6436 accumulated roughly 387,952 HYPE during Aug. 25-27, another 243,713 HYPE on Aug. 30, and another 141,442 HYPE on Sep. 1, showing repeat spot accumulation rather than one transaction.",
+      "Hyperliquid Strategies' treasury reported adding 710,000 HYPE on Sep. 3 after smaller additions on Aug. 20 and Aug. 27, reaching about 30.07M HYPE; this is persistent demand but is not counted as a selective smart-wallet signal because the entity is explicitly a HYPE treasury vehicle.",
+      "A separate whale opened a 134,930 HYPE 4x long near $81.64 in late August, but leveraged positioning is lower-quality evidence than spot accumulation."
+    ],
+    "independence_check": "Public data are insufficient to prove that the repeated whale accumulation, treasury accumulation, and leveraged whale are independently funded. No selective-wallet convergence bonus is awarded beyond moderate repeat-buy evidence.",
+    "selective_wallet_bonus": "PARTIAL_ONLY"
+  },
+  "narrative_news": {
+    "quality": "HIGH_ON_PRODUCT_AND_DISTRIBUTION_CATALYSTS",
+    "evidence": [
+      "Coinbase began routing Base App users to Hyperliquid in mid-August, creating a new retail distribution funnel.",
+      "A reported U.S. regulatory/onshoring discussion involving the CFTC is a potential access catalyst, though it remains politically and regulatorily uncertain.",
+      "The most important current development is economic rather than social: OI is rotating toward core markets that send a larger share of fees to HYPE buybacks."
+    ],
+    "promotion_risk": "No single influencer promotion is required to explain the current signal. The framework assigns more weight to OI composition, protocol economics, and collateral growth than to social commentary."
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "evidence": "HYPE is a large-cap native asset with approximately $18.77B circulating market cap; Hyperliquid itself carries roughly $14.694B of open interest and billions of dollars of daily perp turnover. CoinGecko reports the HYPE/USDC market on Hyperliquid alone trading tens of millions of dollars per day. Executability is well above the framework's minimum-liquidity threshold."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_MAJOR_DILUTION_AND_UNLOCK_CAVEAT",
+    "sellability_honeypot": "PASS; HYPE is the native Hyperliquid asset rather than a newly deployed token contract, and it trades in deep order-book markets.",
+    "dangerous_contract_permissions": "Not applicable in the same form as an ERC-20/SPL microcap; no token-contract honeypot/freeze mechanism is the basis of sellability.",
+    "max_supply": 1000000000,
+    "unlocked_supply_pct_tokenomist": 22.24,
+    "core_contributor_allocation_pct": 23.80,
+    "future_emissions_community_rewards_pct": 38.89,
+    "next_scheduled_unlock": "2026-10-06 core-contributor allocation event per Tokenomist",
+    "concentration_and_unlock_risk": "HIGH_CAVEAT. The large locked supply and contributor allocation create substantial future dilution/overhang. This does not fail today's structural gate because the schedule is disclosed and the asset has deep liquidity, but it materially caps confidence.",
+    "recent_staking_withdrawal_risk": "A late-August monitoring report showed roughly 2.566M HYPE from large stakers queued to return to spot over the following six days, much of it linked to protocol contracts, Trade.xyz, stakedHYPE/Kinetiq and Hyperliquid Labs. This is supply-pressure risk and is not treated as proven dumping.",
+    "creator_dumping_wash_sniper": "No evidence found in this run sufficient to trigger a hard rejection for creator dumping, wash trading, bundled-wallet control, or sniper domination of HYPE itself."
+  },
+  "major_uncertainties": [
+    "Weekly perps and spot turnover are still contracting, creating a divergence between rising open interest and falling transaction velocity.",
+    "High leverage means the record OI can reverse abruptly in a liquidation cascade; the October 2025 precedent is material.",
+    "Only about 22% of max supply is shown as unlocked by Tokenomist, leaving a substantial long-run dilution overhang, with a core-contributor unlock scheduled for Oct. 6.",
+    "Public wallet data do not establish independent selective-wallet convergence.",
+    "The regulatory/onshoring catalyst is uncertain and should not be counted as completed policy.",
+    "The durable effect of Coinbase/Base routing on user quality and net new capital is not yet separately quantified."
+  ],
+  "why_signal_matters_now": "The previous scan rejected Hyperliquid as a new regime because both spot and perp turnover were contracting. The new evidence changes the quality of that assessment: capital stock has climbed to a near-record $14.694B of OI, the incremental OI is increasingly in core crypto perps rather than HIP-3 builder markets, and those core markets have substantially stronger HYPE buyback linkage. That is a meaningful leadership/value-capture confirmation even though it is not a fresh high-velocity ecosystem migration signal.",
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://defillama.com/chain/hyperliquid-l1",
+    "https://defillama.com/open-interest",
+    "https://www.theblock.co/news/ecosystems/2026-09-08-hyperliquid-open-interest-climbs-14-3-billion-hype-hits-all-time-high-413855",
+    "https://www.coingecko.com/en/coins/hyperliquid",
+    "https://lookonchain.com/feeds/70943",
+    "https://lookonchain.com/feeds/70680",
+    "https://defillama.com/digital-asset-treasury/PURR",
+    "https://tokenomist.ai/hyperliquid/updates",
+    "https://www.asterdex.com/en/rewards"
+  ]
+}
