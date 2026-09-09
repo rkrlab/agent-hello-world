@@ -1,0 +1,33 @@
+{
+  "snapshot_type": "INITIAL",
+  "timestamp_utc": "2026-09-09T15:14:00Z",
+  "nav_usd": 10000.0,
+  "cash_usd": 4000.0,
+  "market_marks": {
+    "BTC": {"price_usd": 79058.64, "quantity": 0.025297677774, "value_usd": 2000.0},
+    "ETH": {"price_usd": 2503.86, "quantity": 0.798766704209, "value_usd": 2000.0},
+    "SOL": {"price_usd": 103.38, "quantity": 9.673050880248, "value_usd": 1000.0},
+    "SUI": {"price_usd": 0.8116, "quantity": 616.067028092657, "value_usd": 500.0},
+    "BNB": {"price_usd": 743.30, "quantity": 0.672675904749, "value_usd": 500.0}
+  },
+  "source": {
+    "provider": "CoinGecko",
+    "method": "USD volume-weighted spot mark retrieved at portfolio initialization",
+    "urls": {
+      "BTC": "https://www.coingecko.com/en/coins/bitcoin",
+      "ETH": "https://www.coingecko.com/en/coins/ethereum",
+      "SOL": "https://www.coingecko.com/en/coins/solana",
+      "SUI": "https://www.coingecko.com/en/coins/sui",
+      "BNB": "https://www.coingecko.com/en/coins/bnb"
+    }
+  },
+  "forward_fields": {
+    "first_framework_trade": null,
+    "active_nav_after_1d": null,
+    "benchmark_nav_after_1d": null,
+    "active_nav_after_7d": null,
+    "benchmark_nav_after_7d": null,
+    "active_nav_after_30d": null,
+    "benchmark_nav_after_30d": null
+  }
+}
