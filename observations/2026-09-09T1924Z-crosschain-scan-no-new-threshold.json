@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "observed_at_utc": "2026-09-09T19:24:54Z",
+  "classification": "NO_NEW_THRESHOLD_EXISTING_LEADERSHIP_PERSISTS",
+  "notification": false,
+  "prospective_only": true,
+  "trade_recommendation": null,
+  "summary": "No new ecosystem or asset crossed the framework's notification threshold since the 15:40 UTC scan. Existing STONK/Raydium, HYPE/Hyperliquid and PONS/Robinhood Chain leadership remains the relevant prior state. Sui is the clearest watch candidate because weekly DEX volume and stablecoin supply are accelerating, but attribution, wallet-quality and token-structure evidence are still insufficient for an alert. BNB Chain, Avalanche and several perp venues remain materially incentive- or concentration-contaminated.",
+  "existing_signal_status": {
+    "stonk_solana": {
+      "status": "LEADERSHIP_PERSISTS_NO_NEW_ALERT",
+      "evidence": "The independently funded STONK whale purchase reported earlier today was followed by a new ATH around $0.2234. This is forward validation of the already-alerted 10:20 UTC signal rather than a new rotation event. Broad Solana DEX volume is roughly flat-to-down week-on-week while stablecoin supply is up about 5%, so the prior Raydium/LaunchLab sub-ecosystem interpretation remains more precise than a blanket Solana regime call."
+    },
+    "hype_hyperliquid": {
+      "status": "QUALIFIED_LEADERSHIP_PERSISTS_NO_UPGRADE",
+      "evidence": "HYPE remains near $86.5-$86.7 and close to the recent high, while Hyperliquid stablecoin supply is up about 2.3% over seven days. However, spot DEX volume is down about 21% week-on-week and perps volume down about 12%, so there is no fresh velocity breakout beyond the prior capital-stock/OI thesis."
+    },
+    "pons_robinhood_chain": {
+      "status": "COUNTER_ROTATION_PERSISTS_NO_NEW_LEADER",
+      "evidence": "Robinhood Chain still shows about $1.81B 24h DEX volume, +38.3% weekly DEX growth and +23.4% seven-day stablecoin growth. No new independently verified selective-wallet convergence or structurally cleaner challenger displaced PONS. Existing subsidy and concentration caveats remain relevant."
+    }
+  },
+  "watch_and_rejections": {
+    "sui_deepbook": {
+      "result": "WATCH_ONLY_NOT_THRESHOLD",
+      "ecosystem_evidence": "Sui DEX volume is about $50M/day with +44.9% weekly growth and stablecoin supply about $454M with +13.2% seven-day growth. DeepBook processes about $13.3M/day against $84.8M over seven days, with no reported protocol incentives and direct DEEP token-holder value capture via burns/vault economics.",
+      "why_not_alert": "The current Sui daily DEX run-rate is only modestly above its trailing-week average, stablecoin-transfer activity is structurally gasless and therefore must be discounted as a discretionary-speculation signal, DEEP lacks verified selective-wallet convergence/holder-acceleration evidence, and a September 14 insider unlock remains an overhang."
+    },
+    "sui_bluefin": {
+      "result": "REJECT_ASSET_LEVEL_QUALITY",
+      "evidence": "Bluefin Spot volume is running above its seven-day daily average, but BLUE has no direct token-holder revenue, a market cap of only roughly $5.6M, and an upcoming September 11 unlock of about 24.2M BLUE equal to roughly 7.3% of market cap, primarily to private investors and insiders. Historical distribution also included points/airdrop programs."
+    },
+    "bnb_chain": {
+      "result": "REJECT_ATTRIBUTION_INCENTIVE_CONTAMINATION",
+      "evidence": "BNB Chain DEX volume remains up about 36.8% week-on-week, but stablecoin supply is down roughly 0.7% and the Four.meme BNC4 campaign explicitly rewards volume competition with buybacks, undermining clean discretionary-flow attribution."
+    },
+    "avalanche": {
+      "result": "REJECT_BREADTH_AND_FLOW_QUALITY",
+      "evidence": "Avalanche DEX volume remains up about 73% week-on-week, but stablecoins are slightly down, net inflow is negative, and activity remains highly concentrated in Pharaoh, whose ve(3,3) emissions/gauge design introduces incentive contamination."
+    },
+    "new_perp_venues": {
+      "result": "REJECT_INCENTIVE_CONTAMINATION",
+      "evidence": "Several fast-growing perp venues outside Hyperliquid are explicitly running farming, points or rewards programs; headline volume acceleration is therefore discounted until organic post-incentive persistence appears."
+    }
+  },
+  "methodology_notes": [
+    "Existing signals are not re-alerted solely because they subsequently trade higher.",
+    "Sui stablecoin-transfer transaction counts are discounted because supported stablecoin transfers are protocol-level gasless at $0.00 fees.",
+    "A high opportunity score cannot override token unlock, concentration, incentive-attribution or executability concerns.",
+    "No paper trade or trade recommendation is created by this research-only scan."
+  ],
+  "sources": [
+    "https://defillama.com/chain/solana",
+    "https://defillama.com/chain/robinhood-chain",
+    "https://defillama.com/chain/hyperliquid-l1",
+    "https://defillama.com/chain/sui",
+    "https://defillama.com/protocol/deepbook",
+    "https://defillama.com/protocol/bluefin",
+    "https://defillama.com/chain/bsc",
+    "https://defillama.com/chain/avalanche",
+    "https://www.sui.io/blog/sui-launches-gasless-stablecoin-transfers",
+    "https://app.tokenomics.com/tokenomics/deepbook/unlocks",
+    "https://app.tokenomics.com/tokenomics/bluefin/unlocks",
+    "https://news.bitcoin.com/crypto-news/stonk-whale-dip-buy-record-high-stonkfun-solana/"
+  ]
+}
