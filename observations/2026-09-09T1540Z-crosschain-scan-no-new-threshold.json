@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "observed_at_utc": "2026-09-09T15:40:33Z",
+  "classification": "NO_NEW_THRESHOLD_EXISTING_LEADERSHIP_PERSISTS",
+  "notification": false,
+  "prospective_only": true,
+  "trade_recommendation": null,
+  "summary": "No new ecosystem or asset crossed the framework's notification threshold in this scan. Existing STONK/Raydium, HYPE/Hyperliquid, and PONS/Robinhood Chain leadership signals remain broadly intact, but none gained enough new independent evidence to justify a fresh alert. BNB Chain acceleration is materially incentive-contaminated; Avalanche, Sui, Monad, Base, and newborn Robinhood tokens fail either breadth, attribution, persistence, structural-validation, or executability requirements.",
+  "existing_signal_status": {
+    "stonk_solana": {
+      "status": "FORWARD_VALIDATION_NO_NEW_THRESHOLD",
+      "evidence": "STONK subsequently traded to a reported ATH around $0.2234 after the 10:20 UTC asset-level alert. The separately funded whale purchase around $0.19 and continued Raydium activity validate persistence, but this is follow-through on an already-alerted signal rather than a new leadership rotation.",
+      "contract": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx"
+    },
+    "ray_raydium": {
+      "status": "SUB_ECOSYSTEM_LEADERSHIP_PERSISTS",
+      "evidence": "Raydium AMM 24h DEX volume was about $350.63M versus $1.588B over seven days, roughly 1.55x the trailing-week daily average. Fees and holder revenue were running at similar relative acceleration while broad Solana spot DEX activity was roughly flat/down week-on-week and Solana stablecoins were up about 5% over seven days. This still favors a Raydium-specific rotation over a blanket Solana regime.",
+      "structural_change": "none"
+    },
+    "hype_hyperliquid": {
+      "status": "QUALIFIED_LEADERSHIP_PERSISTS_WALLET_TAPE_MIXED",
+      "evidence": "Hyperliquid open interest remained around $14.69B and HYPE around the mid-$80s near its recent high. A reported wallet accumulated about $16.79M of HYPE over ten days, but Galaxy and another whale reportedly deposited roughly $27.78M combined to exchanges. The mixed wallet tape prevents an upgrade while price/OI persistence prevents a downgrade.",
+      "structural_change": "none"
+    },
+    "pons_robinhood_chain": {
+      "status": "COUNTER_ROTATION_LEADERSHIP_PERSISTS_NO_UPGRADE",
+      "evidence": "Robinhood Chain DEX volume remained around $1.81B/24h with about +38.3% weekly growth and stablecoins about +23.4% over seven days, but the overlapping hot-token cohort was approximately flat in volume while transactions declined. PONS traded around $0.75-$0.79 with roughly 88K holders and about $7.7M liquidity in its main PONS/WETH pool. No fresh independent selective-wallet convergence was established.",
+      "structural_update": "The largest nominal PONS holder is the dead/burn address at roughly 301M tokens, so prior raw top-holder concentration materially overstated human-whale concentration. One separate analyzer estimates ex-pool human top-10 concentration near 8.4%. Exact ownership/lock state of the primary LP NFT remains unresolved because one scanner's wallet-held/unlocked flag conflicts with multiple Pons technical/launch references describing factory-locked Uniswap V3 liquidity. This discrepancy must be resolved before any future structural upgrade."
+    }
+  },
+  "rejections_and_watch": {
+    "bnb_chain_fourmeme": {
+      "result": "REJECT_ATTRIBUTION_INCENTIVE_CONTAMINATION",
+      "evidence": "BNB Chain DEX volume was up about 36.8% week-on-week, but the Four.meme BNC4 campaign began Sep 9 and routes daily BNC4 revenue into buying/burning the eligible meme token with the highest daily BNC4-pair volume. That directly rewards volume competition and can encourage manufactured turnover, so the chain-level spike cannot be cleanly attributed to discretionary speculation."
+    },
+    "robinhood_newborn_tokens": {
+      "result": "REJECT_NO_STRUCTURAL_OR_PERSISTENCE_CONFIRMATION",
+      "evidence": "A newborn token such as ASHIBA showed a very large short-duration percentage move, but holder data/structural validation were insufficient and other high-buyer newborns in the same venue had already collapsed by more than 90%. Raw buyers and first-hours price action therefore remain non-qualifying."
+    },
+    "avalanche": {
+      "result": "NO_QUALITY_PASS",
+      "evidence": "Avalanche DEX volume was up about 73% week-on-week, but stablecoins were slightly down, net flow was negative, and activity remained heavily concentrated in Pharaoh V3/WAVAX-USDC. Breadth and fresh-capital confirmation remain inadequate."
+    },
+    "sui": {
+      "result": "WATCH_ONLY",
+      "evidence": "Sui showed roughly +45% weekly DEX growth and +13% seven-day stablecoin growth, but absolute DEX scale remained around $45-$53M/day, the current daily run rate was only about 1.16x its trailing-week daily average, and no clean new asset-level leadership/wallet convergence passed the framework."
+    },
+    "monad": {
+      "result": "NO_CLEAN_THRESHOLD",
+      "evidence": "A reported one-day spot-volume spike did not translate into robust seven-day acceleration, stablecoins were roughly flat, venue coverage is inconsistent across data providers, and perp growth lacks sufficiently clean incentive attribution and asset-level structural confirmation."
+    },
+    "base": {
+      "result": "NO_REGIME_CHANGE",
+      "evidence": "Spot DEX and stablecoin metrics were broadly flat and did not show abnormal speculative acceleration."
+    }
+  },
+  "methodology_notes": [
+    "Existing alerts are not re-alerted solely because price subsequently moved in the predicted direction.",
+    "No exact +1h STONK checkpoint is backfilled from a non-exact observation; forward-outcome fields remain untouched unless a valid checkpoint can be established without hindsight interpolation.",
+    "BNB/Four.meme headline volume is discounted because the BNC4 program explicitly ties buybacks to ranking by daily volume.",
+    "PONS raw holder concentration is normalized for the burn address, but conflicting LP-lock evidence is kept unresolved rather than forced into a pass or fail."
+  ],
+  "sources": [
+    "https://defillama.com/chain/Solana",
+    "https://defillama.com/protocol/raydium",
+    "https://defillama.com/chain/Robinhood-Chain",
+    "https://defillama.com/chain/BSC",
+    "https://defillama.com/chain/Avalanche",
+    "https://defillama.com/chain/Sui",
+    "https://defillama.com/chain/Base",
+    "https://defillama.com/chain/Monad",
+    "https://defillama.com/protocol/hyperliquid",
+    "https://www.geckoterminal.com/robinhood-chain/pools/0x10CC6BD38112cAc182db90B6a71d8Bb5939526bA",
+    "https://www.bitcoin.com/news/whale-buys-1-76m-stonk-after-withdrawing-sol-from-binance/",
+    "https://www.chaincatcher.com/en/article/2230214"
+  ]
+}
