@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "observed_at_utc": "2026-09-09T10:20:55Z",
+  "classification": "QUALIFIED_ASSET_LEADERSHIP_UPGRADE_WITH_WALLET_CONVERGENCE",
+  "ecosystem": "Solana / Raydium LaunchLab / StonkFun",
+  "candidate": {
+    "name": "StonkFun",
+    "ticker": "STONK",
+    "chain": "Solana",
+    "contract": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+    "primary_pool": "7a8xxAJBELDo6P9dikSYctdw6ce8F4mWr3ahcAD8Ao49"
+  },
+  "signal_summary": "STONK upgrades from an unverified beneficiary of the Raydium/StonkFun rotation to a qualified asset-level leader. The upgrade is driven by persistent near-ATH price/holder growth, multiple liquid trading venues, a fresh large externally-funded buy after an earlier highly successful selective wallet retained exposure, and structural checks that now largely pass.",
+  "ecosystem_regime_evidence": {
+    "context": "The prior regime alert identified a Solana sub-ecosystem rotation into Raydium/LaunchLab rather than broad Solana DEX acceleration.",
+    "launchlab_catalyst": "StonkFun became the first major integration using Raydium LaunchLab custom quote assets, routing stock/RWA-paired speculative launches into Raydium liquidity and Jupiter routing.",
+    "incentive_assessment": "The observed activity is primarily fee-paying speculative trading around meme/RWA pairs and platform token value capture; no airdrop/points/quest requirement was found driving STONK trading itself.",
+    "contamination_note": "Launchpad activity is inherently bot/reflexive and should not be treated as broad retained-user adoption."
+  },
+  "asset_leadership_evidence": {
+    "holder_growth": "Approximately 30,000 holders were reported during the Sep 7 surge; current GeckoTerminal shows about 35.3K, roughly +18% in about two days.",
+    "price_persistence": "Current sources cluster around roughly $0.18-$0.20, near the Sep 6/9 high zone around $0.21, despite a sharp intervening pullback.",
+    "liquidity": "Primary STONK/SPYx Raydium pool shows about $1.7M liquidity; additional STONK/SOL venues on Orca/Meteora show multi-million-dollar liquidity in aggregate.",
+    "volume": "Current token-level sources report roughly $69M-$84M 24h turnover; the primary Raydium SPYx pool alone shows about $3.2M 24h volume, with larger turnover on SOL venues.",
+    "value_capture": "StonkFun fee revenue is used to buy and burn STONK; Bitquery documents recurring STONK burns signed by the platform wallet, and supply has declined materially from the original 1B.",
+    "composability": "STONK is both the platform token and an increasingly used quote/reserve asset for StonkFun-linked pools, with activity routed through Raydium/Jupiter and secondary SOL pools."
+  },
+  "wallet_quality_evidence": {
+    "selective_wallet_1": "A wallet reported by Lookonchain bought 44.43M STONK for about $19.7K, sold 34.62M for about $411K, and retained about 9.8M after an approximately 82x realized/unrealized outcome; the same wallet also captured ZCAT exceptionally early.",
+    "selective_wallet_2": "On Sep 9, a different whale withdrew 16,976 SOL (~$1.76M) from Binance and bought 9.32M STONK at an average around $0.19.",
+    "independence": "The second wallet is externally funded from Binance and is distinct from the earlier selective wallet in public reporting; no evidence was found that the two share a funding cluster, but independence is not cryptographically proven.",
+    "quality_limit": "The new $1.76M buyer does not yet have a demonstrated successful STONK outcome, so this is convergence evidence rather than a full smart-wallet-quality bonus."
+  },
+  "narrative_and_attention": {
+    "fit": "Meme speculation plus tokenized equities/RWA liquidity is directly tied to StonkFun's product design rather than a generic meme label.",
+    "distribution": "Fresh exchange listings include HTX (Sep 8) and SuperEx spot trading beginning Sep 9 03:00 UTC, alongside broader independent coverage from The Block and on-chain analytics outlets.",
+    "promotion_risk": "Solana ecosystem figures and crypto call channels have promoted the theme; this is treated as a risk discount, not positive wallet evidence."
+  },
+  "structural_gates": {
+    "sellability_honeypot": "PASS - active sells observed; automated scanners report no honeypot and zero buy/sell tax.",
+    "mint_freeze": "PASS - mint and freeze authorities revoked/null.",
+    "deployer_privileges": "PASS_WITH_METADATA_CAVEAT - no conventional mint/freeze/blacklist privileges found; metadata authority remains active according to one scanner.",
+    "supply_allocation": "PASS_WITH_MONITORING - Bitquery-derived launch analysis says the original 1B supply was placed into two one-sided Raydium liquidity positions (950M + 50M), with no confirmed separate team/investor allocation; burns have reduced supply.",
+    "holder_concentration": "PASS_WITH_CAVEAT - SolFoundry reports top 10 human holders at 17.1% after excluding LP/burn addresses. Another third-party classifier labels a much larger insider share, likely including protocol/LP relationships; this discrepancy remains a material monitoring item.",
+    "lp_control": "PASS_WITH_CAVEAT - StonkFun's architecture uses locked/Burn & Earn liquidity, and later LaunchLab graduations lock the whole LP position; the original STONK direct CLMM pool predates LaunchLab, so exact current lock ownership of every secondary pool is not independently verified.",
+    "wash_sniper_bot": "PASS_WITH_CAVEAT - no evidence found that STONK turnover is primarily wash trading, but launchpad traffic is bot-heavy by nature and volume is therefore discounted.",
+    "executable_liquidity": "PASS - multiple pools provide several million dollars of observable liquidity and active two-sided trading."
+  },
+  "major_uncertainties": [
+    "Conflicting intraday price/liquidity feeds during extreme volatility.",
+    "Holder-cluster classification disagreement across third-party analytics.",
+    "Exact ownership/lock state of every legacy and secondary liquidity position is not fully decomposed.",
+    "The new large buyer may be momentum-following rather than a historically selective wallet.",
+    "Influencer/ecosystem promotion may amplify attention and eventual distribution risk.",
+    "Launchpad revenue may decay rapidly if the current RWA-meme novelty fades."
+  ],
+  "why_now": "The prior Raydium alert treated STONK as structurally unverified. Since then, holder persistence, fresh large-wallet accumulation from an independent external funding source, continued near-high price behavior, broader liquidity, new listings, and additional structural verification together cross the asset-level confirmation threshold.",
+  "trade_recommendation": null,
+  "prospective_only": true,
+  "forward_outcomes": {
+    "plus_1h": null,
+    "plus_6h": null,
+    "plus_24h": null,
+    "plus_3d": null,
+    "plus_7d": null
+  },
+  "sources": [
+    "https://www.geckoterminal.com/solana/pools/7a8xxAJBELDo6P9dikSYctdw6ce8F4mWr3ahcAD8Ao49",
+    "https://docs.bitquery.io/docs/blockchain/Solana/stonkfun-api/",
+    "https://www.kucoin.com/news/flash/chaincatcher-whale-captures-zcat-and-stonk-for-3-78m-profit",
+    "https://www.odaily.news/en/newsflash/516531",
+    "https://solfoundry.io/rug-check/6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+    "https://www.theblock.co/news/defi/2026-09-06-stonk-surges-250-to-140-million-market-cap-as-stock-paired-solana-launchpad-stonkfun-pulls-volume-to-raydium-and-jupiter-413621",
+    "https://support.superex.com/hc/en-001/articles/62051574583577-SuperEx-to-List-STONK-STONK-Spot-Trading-and-Simultaneously-Support-STONK-as-Index-Futures-Margin"
+  ]
+}
