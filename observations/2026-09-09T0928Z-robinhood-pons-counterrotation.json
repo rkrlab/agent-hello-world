@@ -1,0 +1,93 @@
+{
+  "observed_at_utc": "2026-09-09T09:28:13Z",
+  "ecosystem": "Robinhood Chain",
+  "candidate": {
+    "name": "PONS",
+    "ticker": "PONS",
+    "contract": "0x39dbed3a2bd333467115de45665cc57f813c4571"
+  },
+  "classification": "QUALIFIED_COUNTER_ROTATION_CONCENTRATED_VALUE_CAPTURE_LEADER",
+  "trade_recommendation": false,
+  "summary": "Robinhood Chain has reasserted speculative throughput after a short-lived apparent rotation toward Solana. PONS remains the clearest value-capture leader, but participation breadth is not confirming: chain activity is being driven more by capital velocity and fee intensity than by accelerating unique users.",
+  "ecosystem_regime_evidence": {
+    "robinhood_chain_dex_24h_usd": 1817000000,
+    "robinhood_chain_dex_7d_usd": 10757000000,
+    "robinhood_chain_dex_weekly_change_pct": 38.30,
+    "robinhood_chain_stablecoins_usd": 1028000000,
+    "robinhood_chain_stablecoins_7d_change_pct": 23.42,
+    "robinhood_chain_inflows_24h_usd": 1480000,
+    "recent_context": "On September 7, observed wallet/bridge flow had favored Solana (+$18.8M) while Robinhood Chain showed -$47.8M, so the current DEX/stablecoin strength is treated as a counter-rotation rather than uninterrupted leadership.",
+    "breadth_caveat": "Robinhood Chain daily active accounts averaged about 396k in the prior week and were lower than the previous week even while fee intensity and DEX activity surged. This fails a broad-user-growth confirmation and indicates concentrated velocity rather than broad adoption."
+  },
+  "candidate_evidence": {
+    "price_24h_change_pct": 15.4,
+    "price_7d_change_pct": 105.9,
+    "market_cap_usd_approx": 569000000,
+    "token_volume_24h_usd_range": [142000000, 179000000],
+    "pons_protocol_fees_24h_usd": 8710000,
+    "pons_protocol_fees_7d_usd": 58850000,
+    "pons_holder_revenue_24h_usd": 1300000,
+    "pons_holder_revenue_7d_usd": 5020000,
+    "pons_dex_volume_24h_usd": 129250000,
+    "pons_dex_volume_7d_usd": 1011000000,
+    "value_capture": "Approximately 80% of protocol revenue is used to buy back and burn PONS; more than 28% of maximum supply has reportedly been burned.",
+    "interpretation": "PONS token turnover remains very high and protocol DEX volume is not independently accelerating versus its 7-day daily average, but token-holder revenue is running substantially above its trailing-week daily average. The alert is therefore based on persistent leadership/value capture, not a fresh raw-volume breakout."
+  },
+  "leadership_rotation": {
+    "signal": "PONS remains the dominant economic beneficiary of Robinhood Chain's launchpad-driven speculative activity after a temporary flow rotation toward Solana.",
+    "catalysts": [
+      "Pons drove Robinhood Chain fee records in early September.",
+      "Uniswap Labs reportedly made a strategic investment/token purchase in PONS around September 4.",
+      "Pons launch activity continues to dominate launchpad fee generation relative to peers."
+    ]
+  },
+  "wallet_quality": {
+    "positive": "One whale that reduced UNI exposure added roughly 402,000 PONS and reportedly held about 3.63M PONS afterward.",
+    "negative": "No independently funded multi-wallet selective-wallet convergence was established in this run.",
+    "influencer_risk": "A prominent KOL ('Bonk Guy') reportedly holds about 10.9M PONS with an extremely large unrealized ROI. This is treated as concentrated influencer/distribution risk, not as smart-money confirmation."
+  },
+  "liquidity_executability": {
+    "result": "PASS_WITH_CAVEATS",
+    "evidence": "PONS trades across multiple Robinhood Chain pools with substantial aggregate turnover; top pools show six-figure 2% depth and tens of millions of dollars of daily volume, although executable depth is far smaller than headline token volume.",
+    "caveat": "High turnover relative to depth means meaningful orders can still incur material slippage during volatility."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CONCENTRATION_AND_ROUTING_CAVEATS",
+    "positive_checks": [
+      "No honeypot behavior detected by CertiK.",
+      "No mintable function detected.",
+      "No blacklist/whitelist or anti-whale controls detected.",
+      "Token tax cannot be modified by privileged roles according to the reviewed audit data.",
+      "No proxy/self-destruct/hidden-owner condition detected."
+    ],
+    "caveats": [
+      "Robinscan reported top-5 holder concentration around 35.1% and top-10 around 39.5%; some large holders may be burn/pool/exchange addresses, but the concentration was not fully decomposed in this run.",
+      "Recent reports around Pons-launched tokens show some third-party frontends can route users into non-canonical/high-tax pools. That does not establish an admin-rights failure for PONS itself, but it is an ecosystem execution-quality risk.",
+      "No independent correlated-funding analysis across the largest accumulating wallets was completed."
+    ]
+  },
+  "major_uncertainties": [
+    "Robinhood Chain user breadth is not expanding with volume; active accounts recently declined while fees per active account exploded.",
+    "PONS is already up roughly 20x over 30 days and is not an early-discovery asset.",
+    "Pons protocol DEX volume is below its trailing 7-day daily average even as token-holder revenue remains elevated.",
+    "Influencer concentration creates potential distribution risk.",
+    "Holder concentration has not been fully normalized for burn, pool, exchange, and treasury addresses."
+  ],
+  "why_signal_matters_now": "The framework previously observed capital rotating from Robinhood Chain toward Solana. Current Robinhood Chain DEX and stablecoin data show the ecosystem has reasserted throughput, while PONS retains price persistence and value-capture leadership. This is a meaningful counter-rotation confirmation, but it is concentrated rather than broad and should not be interpreted as an entry signal.",
+  "sources": [
+    "DefiLlama Robinhood Chain",
+    "DefiLlama Pons",
+    "CoinGecko PONS",
+    "The Block Robinhood Chain/Pons coverage dated 2026-09-08",
+    "CertiK PONS security profile",
+    "Robinscan PONS holder analytics",
+    "Lookonchain wallet/KOL observations"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  }
+}
