@@ -1,0 +1,64 @@
+{
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "initialized_at_utc": "2026-09-09T15:14:00Z",
+  "base_currency": "USD",
+  "starting_nav_usd": 10000.0,
+  "current_cash_usd": 4000.0,
+  "realized_pnl_usd": 0.0,
+  "positions": {
+    "BTC": {
+      "quantity": 0.025297677774,
+      "average_cost_usd": 79058.64,
+      "starting_value_usd": 2000.0,
+      "initial_weight": 0.20,
+      "price_source": "CoinGecko BTC/USD volume-weighted spot"
+    },
+    "ETH": {
+      "quantity": 0.798766704209,
+      "average_cost_usd": 2503.86,
+      "starting_value_usd": 2000.0,
+      "initial_weight": 0.20,
+      "price_source": "CoinGecko ETH/USD volume-weighted spot"
+    },
+    "SOL": {
+      "quantity": 9.673050880248,
+      "average_cost_usd": 103.38,
+      "starting_value_usd": 1000.0,
+      "initial_weight": 0.10,
+      "price_source": "CoinGecko SOL/USD volume-weighted spot"
+    },
+    "SUI": {
+      "quantity": 616.067028092657,
+      "average_cost_usd": 0.8116,
+      "starting_value_usd": 500.0,
+      "initial_weight": 0.05,
+      "price_source": "CoinGecko SUI/USD volume-weighted spot"
+    },
+    "BNB": {
+      "quantity": 0.672675904749,
+      "average_cost_usd": 743.30,
+      "starting_value_usd": 500.0,
+      "initial_weight": 0.05,
+      "price_source": "CoinGecko BNB/USD volume-weighted spot"
+    }
+  },
+  "last_trade_id": null,
+  "trade_count": 0,
+  "benchmark": {
+    "type": "passive_hold_opening_allocation",
+    "starting_nav_usd": 10000.0,
+    "cash_usd": 4000.0,
+    "quantities": {
+      "BTC": 0.025297677774,
+      "ETH": 0.798766704209,
+      "SOL": 9.673050880248,
+      "SUI": 616.067028092657,
+      "BNB": 0.672675904749
+    }
+  },
+  "notes": [
+    "Opening positions are user-specified inventory, not framework-generated buys.",
+    "Opening inventory carries no simulated transaction cost.",
+    "Future paper trades must be timestamped and logged prospectively."
+  ]
+}
