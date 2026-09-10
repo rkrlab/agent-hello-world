@@ -1,0 +1,124 @@
+{
+  "timestamp_utc": "2026-09-10T13:25:21Z",
+  "type": "RESEARCH_OBSERVATION",
+  "execution_trigger": false,
+  "ecosystem": "Hyperliquid L1 / onchain perpetuals",
+  "regime_status": "QUALIFIED_WALLET_CONVERGENCE_UPGRADE_WITH_CAPITAL_STOCK_PERSISTENCE",
+  "candidate": {
+    "asset": "HYPE",
+    "network": "Hyperliquid L1 native asset",
+    "contract": null,
+    "snapshot_price_usd": 84.02,
+    "snapshot_market_cap_usd": 18693000000,
+    "snapshot_fdv_usd": 80279000000,
+    "all_time_high_usd": 89.60,
+    "all_time_high_date": "2026-09-06"
+  },
+  "alert_reason": "The prior 2026-09-09 HYPE observation explicitly withheld an independent selective-wallet-convergence bonus. A new repeat accumulator, 0x8e48, bought another 116,400 HYPE (~$9.91M) and has now accumulated 1.89M HYPE (~$159M) over eight months through Galaxy Digital, staking all of it. This is distinct from 0x6436's multi-venue accumulation and 0x3305's ten-day repeat-buy sequence. Combined with near-record Hyperliquid open interest and persistent fee generation, this is a meaningful wallet-quality upgrade. It is not a trade recommendation or execution signal.",
+  "comparison_to_prior_hype_alert": {
+    "prior_timestamp_utc": "2026-09-09T01:49:56Z",
+    "prior_status": "QUALIFIED_LEADERSHIP_CONFIRMATION_WITH_VOLUME_DIVERGENCE",
+    "prior_wallet_quality": "MODERATE_REPEAT_ACCUMULATION_BUT_LIMITED_INDEPENDENCE",
+    "prior_limitation": "Public wallet data did not establish independent selective-wallet convergence.",
+    "new_information": "0x8e48 provides a second clearly distinct repeat-accumulation path with an eight-month history and Galaxy Digital sourcing, while 0x6436 accumulated through Hyperliquid/OKX/Bybit/Gate and 0x3305 accumulated across ten consecutive days. Beneficial-owner independence cannot be proven, so the convergence score remains below maximum."
+  },
+  "ecosystem_regime_evidence": {
+    "hyperliquid_open_interest_usd": 14698000000,
+    "perps_volume_24h_usd": 8080000000,
+    "perps_volume_7d_usd": 45350000000,
+    "stablecoin_mcap_usd": 7003000000,
+    "stablecoin_7d_change_pct": 3.15,
+    "spot_dex_volume_24h_usd": 299260000,
+    "spot_dex_volume_7d_usd": 1953000000,
+    "spot_dex_weekly_change_pct": -16.35,
+    "active_addresses_24h": 17560,
+    "new_addresses_24h": 4187,
+    "transactions_24h": 448340,
+    "interpretation": "This remains a capital-stock/persistence regime rather than a broad spot-volume acceleration. Open interest is near record levels and Hyperliquid remains the dominant perp-OI venue while stablecoin collateral is still growing; weekly spot/perp turnover remains below the prior week."
+  },
+  "why_flows_appear_speculative": {
+    "classification": "QUALIFIED_DIRECTIONAL_SPECULATION_NOT_POINTS_LED",
+    "evidence": [
+      "Hyperliquid L1 carries ~$14.7B of perp open interest, far above other onchain perp chains.",
+      "The current 24h perp-volume run rate is above the trailing-seven-day daily average even though the full week remains lower than the prior week, consistent with persistence/recent pickup rather than a clean new weekly breakout.",
+      "The whale evidence is spot accumulation followed by staking, not a points/quest farming loop.",
+      "The prior regime evidence showed OI rotating from HIP-3 builder markets back toward core markets whose economics are more directly linked to HYPE buybacks."
+    ],
+    "discounts": [
+      "Weekly spot and perp volumes are still contracting versus the prior week.",
+      "Leverage can make OI unstable and subject to liquidation cascades.",
+      "Some Hyperliquid ecosystem products use builder rewards or referral economics; this alert does not rely on those programs."
+    ]
+  },
+  "leadership_rotation": {
+    "classification": "HYPE_CORE_PERPS_LEADERSHIP_PERSISTS",
+    "evidence": "HYPE remains within roughly 6% of its Sep. 6 ATH while Hyperliquid carries ~$14.7B of perp OI. No newly scanned chain/asset displaced this combination of capital stock, direct protocol value-capture linkage and repeat whale accumulation. BSC has faster spot-volume acceleration but its leading BNC4/4Stock activity is directly volume-incentivized; Solana's StonkFun remains strong but was already alerted earlier today; Sui/Avalanche 24h DEX run rates are below their trailing-week averages; Monad's spot run rate is also below its trailing-week average."
+  },
+  "wallet_quality": {
+    "score": "MEDIUM_HIGH_REPEAT_ACCUMULATION_WITH_PARTIAL_INDEPENDENCE_EVIDENCE",
+    "new_wallet": {
+      "address": "0x8e48",
+      "latest_buy_hype": 116400,
+      "latest_buy_value_usd": 9910000,
+      "eight_month_accumulation_hype": 1890000,
+      "eight_month_value_usd_approx": 159000000,
+      "sourcing": "Galaxy Digital",
+      "post_purchase_behavior": "all accumulated HYPE reported staked"
+    },
+    "other_wallets": [
+      "0x6436: multiple large accumulation rounds across Hyperliquid, OKX, Bybit and Gate; later total reported at ~3.24M HYPE, all staked.",
+      "0x3305: reported purchase of 194,210 HYPE (~$16.79M) across ten consecutive days."
+    ],
+    "independence_check": "Addresses and acquisition paths are distinct: 0x8e48 is repeatedly sourced through Galaxy Digital, while 0x6436 used multiple exchange/Hyperliquid venues. This reduces—but does not eliminate—the risk that apparent convergence is one funding cluster or common beneficial owner. Funding details for 0x3305 remain insufficient.",
+    "historical_skill_check": "These wallets demonstrate persistence and capital commitment, but this scan does not establish broad cross-asset historical hit rates. They are therefore not awarded the framework's maximum historically-successful-wallet weight."
+  },
+  "narrative_news": {
+    "quality": "HIGH_PROTOCOL_ECONOMICS_LOW_INFLUENCER_DEPENDENCE",
+    "evidence": [
+      "Core-perp OI remains the economically important part of the Hyperliquid regime because core-market fee routing is more accretive to HYPE buybacks than builder-market activity.",
+      "Today's incremental signal is onchain accumulation and staking, not a new influencer campaign."
+    ],
+    "promotion_risk": "No concentrated influencer promotion is required to explain the observed capital stock or repeat whale purchases."
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "evidence": "DefiLlama shows HYPE around $18.7B market cap, ~$1.2B 24h token volume and Hyperliquid itself at ~$14.7B perp OI. The asset is deeply executable relative to the framework's minimum-liquidity threshold."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_MAJOR_DILUTION_AND_UNLOCK_CAVEAT",
+    "sellability_honeypot": "PASS; HYPE is a native Hyperliquid asset with deep markets rather than a newly deployed microcap token contract.",
+    "dangerous_contract_permissions": "Not applicable in the same form as a new ERC-20/SPL token.",
+    "max_supply": 1000000000,
+    "unlocked_supply_pct_tokenomist": 22.24,
+    "core_contributor_allocation_pct": 23.80,
+    "next_scheduled_unlock": "2026-10-06 core contributors per Tokenomist",
+    "counterflow": "Galaxy Digital separately transferred 95,270 HYPE (~$8.11M) to Bybit/OKX on Sep. 9, and another whale reportedly deposited 232,610 HYPE (~$19.67M) to Bybit/Gate over two weeks. These are potential distribution flows and prevent a one-sided accumulation interpretation.",
+    "creator_dumping_wash_sniper": "No new evidence in this scan triggers a hard rejection for wash trading, bundled-wallet control, creator dumping or sellability risk in HYPE itself."
+  },
+  "major_uncertainties": [
+    "Beneficial-owner independence among 0x8e48, 0x6436 and 0x3305 cannot be proven from public data.",
+    "0x8e48's eight-month accumulation demonstrates persistence but not a verified cross-asset historical success record.",
+    "Weekly spot and perp turnover are still below the prior week, so this is not a clean velocity breakout.",
+    "Near-record leveraged open interest can unwind violently in a liquidation cascade.",
+    "Large exchange deposits create real countervailing distribution risk.",
+    "Only ~22.24% of max supply is shown unlocked by Tokenomist, and the next core-contributor unlock is scheduled for Oct. 6."
+  ],
+  "why_signal_matters_now": "The prior HYPE alert's explicit missing confirmation was independent wallet convergence. Today's new 0x8e48 accumulation materially improves that dimension while the underlying capital-stock regime has persisted. The upgrade is therefore about signal quality and convergence, not about chasing a new price spike or treating raw volume as sufficient evidence.",
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://defillama.com/chain/hyperliquid-l1?appRevenue=false&groupBy=monthly&perps=true&tvl=false&volume=true",
+    "https://defillama.com/perps/chains",
+    "https://defillama.com/token/HYPE",
+    "https://www.odaily.com.cn/en/newsflash/516849",
+    "https://www.gate.com/en-us/news/detail/whale-0x6436-buys-343k-hype-tokens-for-2909m-cumulative-holdings-hit-252m-17862951",
+    "https://themarketperiodical.com/2026/09/09/hype-price-near-record-as-whales-and-etf-buyers-accumulate/",
+    "https://ambcrypto.com/hyperliquid-faces-27-8m-supply-pressure-can-hype-still-reach-100/",
+    "https://tokenomist.ai/hyperliquid/updates"
+  ]
+}
