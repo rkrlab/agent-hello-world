@@ -1,0 +1,112 @@
+{
+  "timestamp_utc": "2026-09-10T05:47:15Z",
+  "classification": "NO_NEW_THRESHOLD",
+  "alert": false,
+  "summary": "No ecosystem or asset produced enough new, independent evidence since the 2026-09-10T03:29Z STONK persistence/reacceleration alert to justify another user-facing alert.",
+  "ecosystems": {
+    "solana_stonkfun": {
+      "status": "continuation_not_new_threshold",
+      "evidence": {
+        "solana_stablecoin_mcap_usd": 16314000000,
+        "solana_stablecoin_7d_pct": 5.13,
+        "solana_dex_24h_usd": 2731000000,
+        "solana_dex_7d_usd": 14799000000,
+        "solana_dex_weekly_change_pct": -7.80,
+        "stonkfun_24h_volume_usd": 23920000,
+        "stonkfun_24h_holder_revenue_usd": 493369,
+        "stonk_recent_price_usd_approx": 0.195
+      },
+      "interpretation": "The StonkFun pocket remains stronger than broad Solana, but the latest STONK price snapshot is slightly below the ~0.201-0.204 area used in the 03:29Z alert and no new independent wallet/holder/structural evidence crossed another threshold."
+    },
+    "bnb_chain": {
+      "status": "raw_acceleration_discounted",
+      "evidence": {
+        "stablecoin_mcap_usd": 13294000000,
+        "stablecoin_7d_pct": -0.59,
+        "dex_24h_usd": 2948000000,
+        "dex_7d_usd": 10194000000,
+        "dex_weekly_change_pct": 53.90,
+        "active_addresses_24h": 1900000
+      },
+      "interpretation": "Raw DEX growth is strong, but BNC4/Four.meme mechanics directly reward volume competition and recent BSC new-pair data shows extreme volume relative to liquidity. That remains material incentive/wash contamination. CAKE has prior alerts and no fresh selective-wallet convergence surfaced."
+    },
+    "robinhood_chain": {
+      "status": "strong_but_below_prior_peak",
+      "evidence": {
+        "stablecoin_mcap_usd": 1028000000,
+        "stablecoin_7d_pct": 23.42,
+        "dex_24h_usd": 1807000000,
+        "dex_7d_usd": 10758000000,
+        "dex_weekly_change_pct": 38.31,
+        "perps_24h_usd": 444870000
+      },
+      "interpretation": "Capital remains active and stablecoins continue to expand, but current DEX volume is below the >$3B peak already captured in prior observations; no new PONS/UNI leadership transition is established."
+    },
+    "sui": {
+      "status": "watch_no_reacceleration",
+      "evidence": {
+        "stablecoin_mcap_usd": 454090000,
+        "stablecoin_7d_pct": 13.14,
+        "dex_24h_usd": 44630000,
+        "dex_7d_usd": 330040000,
+        "dex_weekly_change_pct": 58.36,
+        "perps_weekly_change_pct": -22.35
+      },
+      "interpretation": "Stablecoin and weekly spot growth are constructive, but the current 24h spot run rate is near/below the trailing-week daily average and perps are contracting. No asset-level value-capture leader clears the full framework."
+    },
+    "avalanche": {
+      "status": "watch_no_reacceleration",
+      "evidence": {
+        "stablecoin_mcap_usd": 1371000000,
+        "stablecoin_7d_pct": -0.55,
+        "dex_24h_usd": 107830000,
+        "dex_7d_usd": 951450000,
+        "dex_weekly_change_pct": 77.81
+      },
+      "interpretation": "Weekly DEX growth remains high, but current 24h activity is below the trailing-week daily average and stablecoins are not confirming. Prior Avalanche acceleration already received a quality downgrade."
+    },
+    "monad": {
+      "status": "rejected_flow_quality",
+      "evidence": {
+        "stablecoin_mcap_usd": 763630000,
+        "stablecoin_7d_pct": 0.81,
+        "dex_24h_usd": 86920000,
+        "dex_weekly_change_pct": -8.68,
+        "perps_24h_usd": 74560000,
+        "perps_7d_usd": 983430000,
+        "perps_weekly_change_pct": 107,
+        "perps_open_interest_usd_approx": 3450000
+      },
+      "interpretation": "Perp growth is visually exceptional but open interest is tiny relative to reported turnover and prior work identified points/rewards contamination. The normalized/reported-volume gap remains a quality warning, so the growth is not treated as clean discretionary capital migration."
+    },
+    "base_laptop": {
+      "status": "hard_rejection",
+      "candidate": "$LAPTOP",
+      "evidence": {
+        "launch_drawdown_pct_approx": -95,
+        "founder_allocation_pct": 30,
+        "airdrop_allocation_pct": 20,
+        "first_hour_liquidity_usd_approx": 2500000
+      },
+      "hard_gate_failures": [
+        "sniper_bot_domination_at_launch",
+        "extreme_price_instability_and_non_persistence",
+        "concentrated_available_float",
+        "airdrop_contamination",
+        "insufficient_liquidity_relative_to_implied_valuation"
+      ],
+      "interpretation": "High attention is not a qualifying regime signal. The launch behavior fails multiple structural and persistence gates."
+    }
+  },
+  "sources": [
+    "https://defillama.com/chain/solana",
+    "https://defillama.com/chain/bsc",
+    "https://defillama.com/chain/robinhood-chain",
+    "https://defillama.com/chain/sui",
+    "https://defillama.com/chain/avalanche",
+    "https://defillama.com/chain/monad",
+    "https://defillama.com/perps/chain/monad",
+    "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-09-2026/card/hunter-biden-s-meme-coin-crashes-after-debut-vWPQe3irKbilZO8qoPrg",
+    "https://www.marketwatch.com/story/hunter-bidens-memecoin-flops-falling-95-just-hours-after-launch-3e9307d0"
+  ]
+}
