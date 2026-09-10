@@ -1,0 +1,92 @@
+{
+  "observed_at_utc": "2026-09-10T15:56:04Z",
+  "classification": "QUALIFIED_LEADERSHIP_ROTATION_BACK_TO_INFRASTRUCTURE_VALUE_CAPTURE",
+  "ecosystem": "Solana / Raydium / StonkFun",
+  "candidate_asset": {
+    "symbol": "RAY",
+    "name": "Raydium",
+    "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"
+  },
+  "prospective_only": true,
+  "trade_recommendation": false,
+  "paper_trade_created": false,
+  "threshold_change": "STONK remains the flagship attention asset, but price persistence has broken while Raydium's user growth, staking, DEX activity, fee generation and fee-funded RAY buybacks are simultaneously accelerating. This constitutes a leadership rotation toward the infrastructure/value-capture layer rather than a new Solana-wide regime.",
+  "ecosystem_regime_evidence": {
+    "solana_dex_volume_24h_usd": 2731000000,
+    "solana_dex_volume_7d_usd": 14799000000,
+    "solana_weekly_dex_change_pct": -7.8,
+    "solana_stablecoin_7d_change_pct": 5.13,
+    "raydium_dex_volume_24h_usd": 435130000,
+    "raydium_dex_volume_7d_usd": 1952000000,
+    "raydium_current_vs_prior_6d_daily_volume_multiple_est": 1.72,
+    "raydium_fees_24h_usd": 1610000,
+    "raydium_fees_7d_usd": 8730000,
+    "raydium_current_vs_prior_6d_daily_fee_multiple_est": 1.36,
+    "raydium_holder_revenue_24h_usd": 193293,
+    "raydium_holder_revenue_7d_usd": 1070000
+  },
+  "why_flows_appear_speculative": "The acceleration is concentrated in launchpad/new-asset trading and tokenized-equity/custom-pair activity rather than broad Solana beta. Raydium itself reports no token incentives in the measured periods, while StonkFun traffic is fee-paying launch and swap activity. This does not eliminate bot activity, but it avoids the explicit points/quest/volume-reward contamination seen in competing ecosystems such as BNC4.",
+  "leadership_rotation_evidence": {
+    "stonk_price_24h_change_pct": -17.81,
+    "stonk_holders": 44576,
+    "stonk_volume_24h_usd": 109130148,
+    "stonk_market_cap_usd": 159989204,
+    "stonk_liquidity_usd": 3511557,
+    "ray_network_growth_new_addresses_first_transfer_latest": 1074,
+    "raydium_active_addresses_monthly_high": 162085,
+    "raydium_transactions_monthly_high": 3100000,
+    "raydium_staked_sol_new_high": 470817,
+    "ray_buyback_latest_usd": 640788,
+    "ray_buyback_note": "Largest reported single-day RAY buyback to date at observation time, funded by protocol swap fees."
+  },
+  "wallet_quality_evidence": {
+    "score": "neutral_to_moderate",
+    "reason": "No new independently funded selective-wallet convergence on RAY was established in this scan. The principal accumulation signal is protocol-driven open-market buyback demand, which is economically meaningful but is not treated as smart-wallet evidence."
+  },
+  "narrative_news_evidence": "Raydium is capturing activity from StonkFun LaunchLab custom pairs and a growing set of tokenized U.S. equities and other nonstandard assets. The narrative is therefore directly composable with Raydium liquidity and fee economics rather than relying mainly on influencer promotion.",
+  "liquidity_executability": {
+    "result": "PASS",
+    "ray_market_cap_usd_approx": 327460000,
+    "ray_token_volume_24h_usd_approx": 172600000,
+    "ray_known_dex_liquidity_usd_approx": 36010000,
+    "comment": "RAY has materially deeper executable liquidity than STONK and is broadly traded across centralized and decentralized venues."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_EMISSION_CAVEAT",
+    "canonical_mint_verified": true,
+    "mint_authority": "disabled/revoked per Raydium documentation and secondary tokenomics review",
+    "max_supply": 555000000,
+    "team_seed_vesting": "completed February 21, 2024",
+    "ongoing_emissions": "approximately 1.9M RAY/year from pre-allocated mining reserve",
+    "major_risk": "Large historical reserve/allocation base remains relevant to dilution analysis even though current emissions are from an existing capped reserve rather than new mint authority."
+  },
+  "major_uncertainties": [
+    "No high-confidence selective-wallet convergence on RAY yet.",
+    "STONK holder count is still rising quickly despite its price decline, so this could be temporary relative-performance rotation rather than durable displacement.",
+    "Launchpad activity naturally contains bots and short-horizon churn even without explicit points incentives.",
+    "Current macro tape is risk-off, which can distort relative token performance and shorten speculative regimes."
+  ],
+  "why_it_matters_now": "The prior sequence was RAY infrastructure confirmation followed by STONK asset-level leadership. The new evidence reverses that ordering: STONK attention and holder growth persist but price persistence has failed, while Raydium's underlying usage, staking, volume and fee-funded token accumulation are strengthening. The framework therefore upgrades RAY as the current cleaner leader of the same speculative sub-regime.",
+  "rejected_or_discounted_competing_signals": [
+    "BNB Chain: very strong DEX acceleration, but BNC4/Four.meme explicitly rewards volume leadership with buybacks, contaminating the core metric.",
+    "Base/LAPTOP: rejected at asset level because the launch was dominated by extreme sniper-driven price distortion, thin liquidity, concentrated founder allocation and airdrop-related supply.",
+    "Robinhood Chain/PONS: ecosystem activity remains strong, but PONS is down materially from its recent high and no new leadership upgrade was established in this scan.",
+    "Monad: spot DEX volume remains down week over week and 24h inflows are negative despite perps growth.",
+    "Sui/Avalanche: weekly growth remains notable but current daily spot run rates do not show a fresh acceleration threshold."
+  ],
+  "sources": [
+    "https://defillama.com/chain/solana",
+    "https://defillama.com/protocol/raydium",
+    "https://solanacompass.com/tokens/6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+    "https://www.fxstreet.com/cryptocurrencies/news/raydium-price-forecast-rally-signals-trend-reversal-amid-network-growth-buyback-202609100607",
+    "https://raydium.mintlify.app/getting-started/trust-and-safety",
+    "https://defillama.com/token/RAY"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  }
+}
