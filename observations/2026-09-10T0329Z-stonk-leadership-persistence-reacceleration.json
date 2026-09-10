@@ -1,0 +1,69 @@
+{
+  "timestamp_utc": "2026-09-10T03:29:30Z",
+  "classification": "QUALIFIED_ASSET_LEADERSHIP_PERSISTENCE_AND_REACCELERATION",
+  "ecosystem": "Solana / Raydium LaunchLab / StonkFun",
+  "candidate": {
+    "symbol": "STONK",
+    "name": "STONK / StonkFun",
+    "chain": "Solana",
+    "contract": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx"
+  },
+  "prior_signal": "2026-09-09T10:20Z qualified asset-level leadership upgrade",
+  "ecosystem_regime_evidence": {
+    "summary": "The new signal is relative sub-ecosystem acceleration rather than broad Solana beta. StonkFun bonding-curve DEX volume is $23.92M over 24h versus $52.3M over 7d, approximately 3.20x the trailing-seven-day daily average. StonkFun fees/revenue are $968,297 over 24h, and holder revenue (on-chain STONK purchases) is $493,369 over 24h. Raydium activity also remains elevated after the LaunchLab custom-pair integration.",
+    "sources": [
+      "https://defillama.com/protocol/stonkfun",
+      "https://crypto.news/raydium-launchlab-adds-support-for-any-token-pair-on-solana/"
+    ]
+  },
+  "why_flows_appear_speculative": "StonkFun routes discretionary token-launch trading through Raydium LaunchLab bonding curves using configurable quote assets including SOL, BTC-like assets, xStocks and STONK. The measured turnover is fee-paying trading; no points, quests or airdrop are required to create the measured DEX activity. Launchpad activity is still bot-prone, so the evidence is discounted rather than treated as fully organic.",
+  "leadership_rotation_evidence": {
+    "summary": "STONK remains the direct value-capture leader rather than being displaced by RAY or a new launch. MyToken reports approximately $176.2M market cap, $59.1M 24h token volume, $2.49M aggregate liquidity, 202,588 24h transactions and 38,009 holders. That holder count is about 7.7% above the approximately 35.3K observed at the prior alert roughly 17 hours earlier. The platform itself is simultaneously reaccelerating, which strengthens persistence versus a pure price spike.",
+    "source": "https://aitrade.mytokencap.com/en/sol/token/6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx"
+  },
+  "wallet_quality_evidence": {
+    "summary": "A previously identified selective wallet reportedly bought 44.43M STONK for about $19.7K, sold 34.62M for about $411K and retained about 9.8M; the same wallet had an independently notable ZCAT outcome. A separate wallet withdrew 16,976 SOL (about $1.76M) from Binance and bought 9.32M STONK at an average near $0.19. Exchange-origin funding gives partial evidence of independence from the earlier wallet, but full funding-graph independence and complete historical selectivity are not proven.",
+    "sources": [
+      "https://www.binance.com/en/square/post/364042474973781",
+      "https://www.gate.com/en-us/news/detail/whale-withdraws-176m-sol-from-binance-buys-932m-stonk-at-019-17866250"
+    ]
+  },
+  "narrative_and_news_evidence": "Raydium expanded LaunchLab to support arbitrary token pairs and StonkFun became the first integration. This directly enables StonkFun's stock/commodity/token-paired launch model and routes launches and liquidity through Raydium infrastructure. The catalyst is product-level and independently covered, not solely an influencer narrative.",
+  "liquidity_and_executability": {
+    "result": "PASS_WITH_THIN_DEPTH_CAVEAT",
+    "details": "MyToken reports about $2.49M aggregate liquidity and SolFoundry reports about $2.83M pool depth on Orca, while 24h token turnover is about $57-59M. Sellability and multi-venue execution are established, but the market-cap/liquidity ratio is still high enough that large exits can move price materially."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_UNRESOLVED_PROTOCOL_CLUSTER_AND_SECONDARY_LP_CAVEATS",
+    "details": "Mint and freeze authority are revoked; current scanners report no honeypot, blacklist or transfer tax; MyToken reports creator holding 0%. SolFoundry reports top 10 human holders at 17.3%, excluding locked LP/burn balances. DefiLlama's StonkFun methodology states that fees are harvested from permanently locked liquidity behind launches. However, MyToken flags its tracked Meteora pool as not LP-locked, so not every secondary pool should be assumed locked. A separate partial-data clustering source labels 45% as insider wallets while also reporting only 10.4% holder concentration; that conflict likely reflects protocol-linked addresses but is not fully decomposed. This is not treated as a clean maximum-grade pass and remains a monitoring condition.",
+    "sources": [
+      "https://solfoundry.io/rug-check/6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+      "https://aitrade.mytokencap.com/en/sol/token/6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+      "https://defillama.com/protocol/stonkfun",
+      "https://www.0xcoral.com/t/solana/6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx"
+    ]
+  },
+  "major_uncertainties": [
+    "Launchpad volume can contain bots, snipers and reflexive churn even without formal incentive programs.",
+    "The 45% insider-wallet label from a partial-data clustering source conflicts with human-holder concentration data and is not fully decomposed into protocol, LP, burn and true insider addresses.",
+    "Not all secondary liquidity pools are proven locked.",
+    "Wallet histories and funding graphs are incomplete, so selective-wallet independence receives only a partial bonus.",
+    "Liquidity is adequate for research/executability but shallow relative to market cap and turnover.",
+    "Price and holder feeds vary across providers during fast trading conditions."
+  ],
+  "why_signal_matters_now": "This is confirmation rather than first discovery: after the prior asset-level alert, holder breadth continued to expand and StonkFun's own measured DEX activity reaccelerated to roughly 3.2x its trailing-week daily average while fee-funded STONK purchasing remained substantial. That persistence makes the regime less consistent with a one-day launch spike, although structural caveats prevent a clean high-confidence grade.",
+  "nearby_non_alerts": {
+    "BNB_Chain": "Chain DEX activity is strong, but Four.meme's BNC4 campaign explicitly awards daily buybacks to the eligible meme token with the highest daily BNC4-pair trading volume, directly contaminating volume as a discretionary-flow signal.",
+    "Hyperliquid_HYPE": "Leadership persists but current perp/DEX turnover does not show a sufficiently new reacceleration beyond the prior alert.",
+    "Robinhood_Chain_PONS": "PONS remains the value-capture leader but no new leadership displacement or independent threshold crossing was found.",
+    "Avalanche_and_Sui": "Both show stronger weekly DEX statistics, but current 24h run rates do not provide enough fresh reacceleration and wallet-quality confirmation for an alert."
+  },
+  "trade_action": null,
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  }
+}
