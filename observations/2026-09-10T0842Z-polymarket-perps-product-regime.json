@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-09-10T08:42:17Z",
+  "classification": "QUALIFIED_PRODUCT_REGIME_NO_ASSET_CANDIDATE",
+  "alert": true,
+  "ecosystem": "Polygon / Polymarket Perps",
+  "candidate_asset": null,
+  "candidate_contract": null,
+  "paper_trade_created": false,
+  "signal": {
+    "perps_volume_24h_usd_range": [86690000, 96810000],
+    "perps_volume_7d_usd_range": [135260000, 136940000],
+    "open_interest_usd_range": [49100000, 51340000],
+    "estimated_24h_vs_preceding_6d_daily_average_multiple_range": [10.7, 14.5],
+    "polygon_stablecoin_mcap_usd": 3127000000,
+    "polygon_stablecoin_7d_change_pct": 0.22,
+    "polygon_inflows_24h_usd": -27090000,
+    "polygon_dex_volume_24h_usd": 112250000,
+    "polygon_dex_weekly_change_pct": -26.58,
+    "live_markets": 67
+  },
+  "regime_interpretation": "A localized discretionary-speculation regime has emerged in Polymarket Perps rather than a broad Polygon ecosystem rotation. Roughly two-thirds to seventy percent of the product's trailing-seven-day volume occurred in the latest 24-hour window, while open interest is about $49-51M. The product launched publicly on September 3 and expanded rapidly to 67 crypto, equity, index and commodity perpetual markets. The combination of rapidly rising turnover and material open interest is stronger than a launch-day buyer-count signal and indicates positions are persisting alongside turnover.",
+  "flow_quality": {
+    "assessment": "QUALIFIED_WITH_MODERATE_INCENTIVE_DISCOUNT",
+    "evidence": "No documented perps points, quest or explicit airdrop-volume program was found. Traders pay normal maker/taker fees and funding. However, volume-tier fee discounts, a top-tier maker rebate and referral commissions exist, so reported volume is not treated as purely organic. Broader Polymarket also operates liquidity-reward programs; no evidence was found that those prediction-market reward budgets explain the current perps acceleration.",
+    "chain_confirmation": "weak",
+    "chain_caveat": "Polygon stablecoins are only +0.22% over seven days and 24h net inflows are negative, so this is capital velocity/product adoption rather than confirmed chain-wide capital migration."
+  },
+  "leadership": {
+    "assessment": "broad_product_adoption_not_single_token_leadership",
+    "evidence": "BTC and ETH remain the largest crypto markets; activity also spans HYPE, equities, indices, oil and other assets. The platform's own Perps lead says top activity is still in crypto majors but rotates into event-driven equities and semiconductors when volatility shifts.",
+    "rotation_note": "The notable rotation is toward a cross-asset leveraged trading surface, not toward a new native token."
+  },
+  "wallet_quality": {
+    "assessment": "neutral_to_moderate",
+    "evidence": "Polymarket publicly identifies trader2121 as up nearly $500K and ShadowPixel47 as the top perps wallet, but ShadowPixel47 resembles a market-making firm with dozens of trades per day. Funding independence and selective-wallet convergence were not established, so no strong smart-wallet bonus is applied."
+  },
+  "narrative_and_catalyst": {
+    "catalyst": "Polymarket Perps public launch on 2026-09-03 with a single pUSD balance, cross-margin, rapid listings and up to 20x leverage across crypto, stocks, indices and commodities.",
+    "narrative_fit": "Strong. The product directly captures event-driven discretionary speculation and lets existing Polymarket users express leveraged cross-asset views without moving collateral to another venue.",
+    "current_context": "The acceleration is occurring during unusually high cross-asset volatility, including oil above $100 and risk-off macro conditions, which increases demand for event-driven leveraged markets."
+  },
+  "liquidity_and_executability": {
+    "result": "PASS_AT_PLATFORM_LEVEL",
+    "evidence": "Approximately $49-51M open interest against roughly $87-97M 24h volume implies materially funded positions rather than only transient prints. The venue lists 67 live markets and publishes market-level order books, funding and leverage parameters.",
+    "caveat": "Market-level depth varies materially; platform aggregate volume and OI do not guarantee executable depth in every contract."
+  },
+  "structural_gate": {
+    "result": "N_A_FOR_TOKEN; NO_ASSET_SURFACED",
+    "reason": "Polymarket currently has no liquid native token tied directly to this perps value capture. POL is not promoted as a proxy because Polymarket trading fees do not directly accrue to POL holders and Polygon chain fees remain small relative to application activity. Without a native candidate, token-level mint/freeze/LP/supply/deployer gates cannot be meaningfully applied.",
+    "platform_risks": [
+      "jurisdictional restrictions",
+      "leverage and liquidation risk",
+      "volume-tier maker rebates can inflate professional-market-maker turnover",
+      "referral incentives",
+      "limited evidence on unique-trader growth and wallet funding independence"
+    ]
+  },
+  "major_uncertainties": [
+    "No clean unique-trader growth time series was found for Perps.",
+    "No independent funding-graph analysis was completed for top traders.",
+    "Polygon-wide stablecoin and bridge flows do not confirm a chain-wide migration.",
+    "Polymarket's broader reward programs make exact organic-versus-incentivized attribution imperfect.",
+    "There is no currently liquid native token with direct value capture, so the regime is not yet an asset-level opportunity under this framework."
+  ],
+  "why_now": "The public launch itself was not enough. The threshold is crossed because current 24h perps turnover is approximately 11-14x the average of the preceding six days while open interest has built to roughly $50M, showing post-launch acceleration plus position persistence rather than only first-day novelty.",
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://defillama.com/perps/chain/polygon",
+    "https://defillama.com/chain/polygon",
+    "https://polymarket.com/perps",
+    "https://news.polymarket.com/p/inside-polymarket-perps",
+    "https://polymarketflow.com/perps/markets",
+    "https://polymarketflow.com/blog/polymarket-perps-referral-code",
+    "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-09-10/"
+  ]
+}
