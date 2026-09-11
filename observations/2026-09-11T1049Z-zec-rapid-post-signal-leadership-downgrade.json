@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "detected_at_utc": "2026-09-11T10:49:12Z",
+  "classification": "LEADERSHIP_QUALITY_DOWNGRADE_RAPID_POST_SIGNAL_PRICE_FAILURE_WITH_DISTRIBUTION_RISK",
+  "research_only": true,
+  "paper_trade_created": false,
+  "asset": {
+    "symbol": "ZEC",
+    "name": "Zcash",
+    "ecosystem": "Zcash / NEAR Intents / Rhea Finance cross-ecosystem privacy flow",
+    "contract_or_address": null,
+    "native_asset": true
+  },
+  "prior_signal_reference": {
+    "path": "observations/2026-09-11T0735Z-zec-privacy-cross-ecosystem-leadership.json",
+    "detected_at_utc": "2026-09-11T07:35:22Z",
+    "classification": "QUALIFIED_CROSS_ECOSYSTEM_PRIVACY_LEADERSHIP_WITH_LATE_DETECTION_AND_EXTENSION_RISK",
+    "frozen_price_usd_approx": 1225.94,
+    "note": "The prior record is not modified or backdated. This downgrade is a new prospective observation."
+  },
+  "current_market_snapshot": {
+    "zec_price_usd_approx": 1101.04,
+    "zec_change_since_prior_signal_pct_approx": -10.19,
+    "zec_24h_change_pct_approx": -9.8,
+    "zec_7d_change_pct_approx": 8.1,
+    "zec_24h_range_usd": [1055.58, 1236.14],
+    "zec_market_cap_usd_approx": 18646000000,
+    "zec_24h_volume_usd_approx": 1607000000,
+    "btc_24h_change_pct_approx": 1.4,
+    "eth_24h_change_pct_approx": 0.0
+  },
+  "threshold_basis": [
+    "Only about 3.2 hours after the late-detected ZEC leadership signal, ZEC is roughly 10.2% below the frozen signal price while BTC is about +1.4% and ETH roughly flat over their current 24h windows; the asset-level relative-strength leg of the thesis has failed quickly.",
+    "ZEC's approximately $1.61B of 24h global turnover remains very high while price is falling, making this look more like active distribution/forced repositioning than a quiet low-liquidity retracement.",
+    "NEAR Intents Bridged ZEC volume is about $58.94M over 24h but is down roughly 40.2% from the previous day; the main Rhea ZEC/WNEAR pair remains large but activity is cooling from the prior peak.",
+    "A previously reported whale bid zone around $1,185.5-$1,205.5 is now above spot, so that visible support did not hold. A separate whale had already realized about $16.4M of ZEC sales near $1,261.67 average, showing meaningful distribution into the prior strength."
+  ],
+  "ecosystem_regime_assessment": {
+    "result": "PRIVACY_FLOW_REGIME_NOT_FULLY_INVALIDATED_BUT_ASSET_LEADERSHIP_DOWNGRADED",
+    "details": [
+      "NEAR Intents remains active at roughly $150.77M 24h DEX volume and $1.015B over seven days, so the cross-chain execution surface itself has not collapsed.",
+      "Rhea Finance still shows about $50.06M 24h DEX volume and $318.81M over seven days, with very small current token incentives relative to activity.",
+      "However, bridged-ZEC-specific turnover has fallen materially day over day and ZEC price persistence has broken. The distinction between infrastructure activity and continued ZEC leadership is now critical."
+    ]
+  },
+  "leadership_rotation_evidence": {
+    "result": "ZEC_LEADERSHIP_WEAKENED_NO_CLEAN_SUCCESSOR_YET",
+    "details": [
+      "The prior signal relied on ZEC dominating multiple execution surfaces plus persistent global price/turnover. The global price-persistence component has now failed rapidly.",
+      "No alternative asset in this scan simultaneously clears the discretionary-flow, independent-wallet, executability, and structural gates strongly enough to replace ZEC as a new positive alert.",
+      "Solana spot activity is reaccelerating, but stablecoin supply is down week over week and the prior RAY token-flow divergence remains unresolved.",
+      "BSC still has very strong weekly DEX growth, but BNC4 directly rewards the highest daily BNC4-pair trading-volume meme with protocol-funded buybacks, contaminating the exact metric we would otherwise use as evidence of organic leadership.",
+      "Sui and Avalanche retain strong weekly DEX growth but their latest 24h run rates are well below trailing-week averages; Hyperliquid remains a large committed capital stock but has not produced a new leadership transition beyond the prior HYPE observation."
+    ]
+  },
+  "wallet_quality_update": {
+    "assessment": "DOWNGRADED_FROM_MODERATE_TO_CONFLICTED",
+    "details": [
+      "The earlier dormant multi-address buyer and other accumulation clusters remain real observations, but the latest tape shows that whale accumulation is not dominating price formation.",
+      "A whale sold 13,000 ZEC for about $16.4M at an average $1,261.67, realizing roughly $5.1M, while another buyer acquired 9,426.59 ZEC around $1,234.38 and left roughly $3M of bids at $1,185.5-$1,205.5. Spot is now below that bid zone.",
+      "Funding independence and historical cross-asset selectivity of the buyer clusters remain unproven; therefore no selective-wallet override is allowed."
+    ]
+  },
+  "narrative_and_attention_update": {
+    "assessment": "MORE_PROMOTIONAL_AND_TWO_SIDED",
+    "details": [
+      "CoinGecko's current news surface now includes an exchange promotion/influencer-list item, analyst trade-setup coverage, and reporting about a prominent trader profiting from a large ZEC short.",
+      "That mix is more promotional and reflexive than the institutional/cross-chain evidence that supported the earlier signal, so social attention receives less weight rather than being treated as confirmation."
+    ]
+  },
+  "liquidity_and_executability": {
+    "result": "PASS",
+    "details": [
+      "ZEC remains globally liquid at roughly $18.6B market cap and $1.61B 24h turnover.",
+      "The downgrade is not caused by lack of executability; it is caused by adverse price/flow persistence despite high executability."
+    ]
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_PRIOR_NETWORK_SECURITY_HISTORY_CAVEAT",
+    "failed_hard_gate": false,
+    "note": "No new native-network structural failure, mint/deployer/LP issue, or sellability problem surfaced. The earlier Orchard/NU6.2 security-history caveat remains unchanged. This is a market-quality/leadership downgrade, not a contract-safety rejection."
+  },
+  "major_uncertainties": [
+    "The decline may still be a violent but temporary shakeout after an extremely extended rally; high global turnover can represent capitulation followed by reaccumulation as well as distribution.",
+    "NEAR Intents aggregate volume is strong, but aggregate protocol volume does not reveal how much is attributable to ZEC at every instant.",
+    "Fresh shielded-pool net-flow data after the prior Sep-10 snapshot was not found in this scan, so it is unknown whether the recent +12,872 ZEC shielded inflow persisted through the selloff.",
+    "Whale intent cannot be inferred perfectly from public wallet labels, and shielded activity obscures ownership after funds enter privacy pools."
+  ],
+  "why_signal_matters_now": "The previous ZEC alert explicitly warned that it was late and extended. The first important forward test has now arrived quickly: cross-chain infrastructure activity remains elevated, but the asset itself has lost roughly 10% from the frozen signal price in just over three hours while BTC and ETH are far stronger on their current daily windows. That is meaningful evidence that persistent venue dominance and prior accumulation were insufficient to preserve near-term asset leadership. The downgrade is frozen now rather than waiting to see whether ZEC rebounds, preventing hindsight from erasing this failure state.",
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://www.coingecko.com/en/coins/zcash",
+    "https://www.coingecko.com/en/coins/bitcoin",
+    "https://www.coingecko.com/en/coins/ethereum",
+    "https://www.coingecko.com/en/coins/near-intents-bridged-zec",
+    "https://defillama.com/protocol/near-intents",
+    "https://defillama.com/protocol/rhea-finance",
+    "https://defillama.com/chain/solana",
+    "https://defillama.com/chain/bsc",
+    "https://defillama.com/chain/sui",
+    "https://defillama.com/chain/avalanche",
+    "https://defillama.com/chain/hyperliquid-l1",
+    "https://www.kucoin.com/news/flash/zec-whale-sells-16-4m-at-peak-new-buyer-enters-with-17m-plan",
+    "https://www.binance.com/en/square/post/09-10-2026-four-meme-completes-its-first-buyback-and-burn-365050356393716"
+  ]
+}
