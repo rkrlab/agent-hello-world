@@ -1,0 +1,81 @@
+{
+  "timestamp_utc": "2026-09-11T18:18:09Z",
+  "ecosystem": "Solana / Raydium",
+  "candidate_asset": "RAY",
+  "contract_or_mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+  "classification": "QUALIFIED_RAY_LEADERSHIP_REQUALIFICATION_WITH_UNRESOLVED_SPOT_DISTRIBUTION",
+  "previous_related_signals": [
+    {
+      "timestamp_utc": "2026-09-10T15:56:00Z",
+      "classification": "QUALIFIED_LEADERSHIP_ROTATION_BACK_TO_INFRASTRUCTURE_VALUE_CAPTURE"
+    },
+    {
+      "timestamp_utc": "2026-09-11T02:41:12Z",
+      "classification": "LEADERSHIP_QUALITY_DOWNGRADE / PROTOCOL_ACTIVITY_TOKEN_FLOW_DIVERGENCE"
+    }
+  ],
+  "threshold_change": "Since the 02:41 UTC downgrade, RAY has supplied the missing persistence evidence: it reached approximately $1.75, its highest level in roughly eleven months, and remains approximately $1.64 and +23% over 24 hours while Raydium user activity, transactions, DEX turnover and fee-funded value capture remain elevated. This does not prove the previously documented spot-distribution regime has reversed, so the requalification is lower-confidence and explicitly conditional on unresolved aggregate net selling.",
+  "ecosystem_regime_evidence": {
+    "solana_dex_volume_24h_usd": 2934000000,
+    "solana_dex_volume_7d_usd": 17248000000,
+    "solana_weekly_dex_change_pct": 15.96,
+    "solana_stablecoin_supply_usd": 16044000000,
+    "solana_stablecoin_7d_change_pct": -1.61,
+    "solana_inflows_24h_usd": 7350000,
+    "solana_active_addresses_24h": 2350000,
+    "solana_transactions_24h": 109580000,
+    "raydium_tvl_usd": 1114000000,
+    "raydium_dex_volume_24h_usd": 375460000,
+    "raydium_dex_volume_7d_usd": 2188000000,
+    "raydium_fees_24h_usd": 1690000,
+    "raydium_revenue_24h_usd": 275641,
+    "raydium_holder_revenue_24h_usd": 176591,
+    "raydium_active_addresses_24h": 169011,
+    "raydium_transactions_24h": 3010000,
+    "ray_price_usd": 1.64,
+    "ray_24h_change_pct": 23.27,
+    "ray_recent_high_usd": 1.75
+  },
+  "why_flows_appear_speculative": "The strongest activity is concentrated in fee-paying Raydium/LaunchLab/StonkFun and tokenized-equity trading rather than in broad Solana stablecoin growth. Raydium reports no direct token incentives across the measured periods. StonkFun's migration to LaunchLab and newly launched tokenized-equity trading provide product catalysts for discretionary transaction velocity, although some volume is mechanically routed through these venues and should not be treated as independent RAY buying.",
+  "leadership_rotation_evidence": "STONK no longer clears the framework after its data-integrity and structural downgrade, while RAY has now added actual token-price persistence to the previously strong infrastructure usage and buyback evidence. RAY is therefore requalified as the cleanest currently executable asset-level expression of the Solana/Raydium speculative sub-regime, but not as a high-confidence accumulation signal.",
+  "wallet_quality_evidence": "No new cluster of independently funded, historically selective wallets accumulating RAY was established in this scan. The previously documented aggregate spot-netflow evidence remained negative for more than ten consecutive days in the latest available report. No smart-money or net-accumulation bonus is awarded, and this remains the principal unresolved weakness.",
+  "narrative_news_evidence": "Current catalysts include StonkFun routing new deployments through Raydium LaunchLab after the September 6 upgrade, a reported $640,788 RAY buyback on September 9, and the rollout of more than fifteen tokenized U.S. equities through the Raydium-connected Backpack/Sunrise surface. These are product and value-capture catalysts observable independently of influencer promotion.",
+  "liquidity_executability": {
+    "result": "PASS",
+    "ray_market_cap_usd": 441620000,
+    "ray_fdv_usd": 908650000,
+    "ray_24h_token_volume_usd": 309600000,
+    "ray_cex_volume_usd": 172680000,
+    "ray_dex_token_volume_usd": 142640000
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_EXISTING_EMISSION_AND_PROTOCOL_HISTORY_CAVEATS",
+    "new_hard_failure": false,
+    "note": "No new sellability, honeypot, mint-authority, deployer, LP-removal or executable-liquidity failure surfaced for RAY. Existing dilution/emission caveats remain, and Raydium has prior protocol exploit history, including the June 2026 accounting exploit, but no newly identified structural defect invalidates the current token-level observation."
+  },
+  "major_uncertainties": [
+    "No newer verified spot-netflow dataset was found proving that the previously documented RAY net-selling regime has reversed.",
+    "No new selective-wallet convergence or independently verified repeat-buyer cluster was established.",
+    "RAY has already risen sharply over the week and is extended, increasing mean-reversion risk even if the regime remains valid.",
+    "Part of Raydium volume is mechanically routed by StonkFun and tokenized-equity launches; venue growth is not equivalent to discretionary RAY demand.",
+    "Solana stablecoin supply is still down approximately 1.6% over seven days, so this is not yet a broad capital-stock expansion across the chain."
+  ],
+  "why_signal_matters_now": "The 02:41 UTC downgrade correctly identified that usage alone was insufficient because RAY holders were distributing. The new information is that RAY has nevertheless maintained and extended price leadership to an eleven-month high while the underlying fee-paying infrastructure and fee-funded buyback engine remain active. That persistence is a genuinely new dimension and is enough to requalify the asset prospectively, while preserving the unresolved distribution evidence rather than rewriting it away.",
+  "cross_ecosystem_notes": {
+    "bsc": "Weekly DEX growth remains large, but current 24h turnover is below its trailing-week average, stablecoin supply is slightly lower week over week, and BNC4 incentive contamination still prevents treating meme-volume leadership as clean discretionary migration.",
+    "base": "DEX activity and stablecoins are constructive, but no asset cleared the combined wallet-quality, persistence and structural threshold.",
+    "sui": "Stablecoins are up strongly week over week, but current DEX turnover remains below the trailing-seven-day daily average, so there is no fresh acceleration signal.",
+    "hyperliquid": "Perpetual activity and HYPE capital stock remain large, but the whale-accumulation evidence surfaced on September 10 and no new independent threshold change was found in this scan.",
+    "robinhood_chain": "DEX turnover remains exceptional and current pace is elevated, but synthetic maker/volume services and launch incentives continue to contaminate the metrics used to infer discretionary migration.",
+    "monad": "Perpetual growth is strong on a weekly basis, but absolute scale and negative 24h inflows do not yet support an asset-level candidate.",
+    "avalanche": "Weekly DEX growth remains high, but current 24h turnover is far below the trailing-week average and stablecoin supply is lower week over week."
+  },
+  "prospective_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_action": "NONE_RESEARCH_ONLY"
+}
