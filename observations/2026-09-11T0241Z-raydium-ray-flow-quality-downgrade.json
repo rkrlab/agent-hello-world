@@ -1,0 +1,68 @@
+{
+  "timestamp_utc": "2026-09-11T02:41:12Z",
+  "ecosystem": "Solana / Raydium",
+  "candidate_asset": "RAY",
+  "contract_or_mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+  "classification": "LEADERSHIP_QUALITY_DOWNGRADE / PROTOCOL_ACTIVITY_TOKEN_FLOW_DIVERGENCE",
+  "previous_related_signal": {
+    "timestamp_utc": "2026-09-10T15:56:00Z",
+    "classification": "QUALIFIED_LEADERSHIP_ROTATION_BACK_TO_INFRASTRUCTURE_VALUE_CAPTURE"
+  },
+  "threshold_change": "Newly surfaced spot-flow data shows more than ten consecutive days of net RAY selling, including approximately $466k of net selling in the latest reported 24h and approximately $23m of preceding cumulative sales, while Raydium protocol activity accelerated sharply. This materially weakens the net-accumulation and leadership-quality dimensions of the prior RAY signal.",
+  "ecosystem_regime_evidence": {
+    "solana_dex_volume_24h_usd": 2827000000,
+    "solana_dex_volume_7d_usd": 15957000000,
+    "solana_weekly_dex_change_pct": 7.28,
+    "solana_active_addresses_24h": 2350000,
+    "solana_transactions_24h": 109580000,
+    "solana_stablecoin_7d_change_pct": -1.73,
+    "solana_inflows_24h_usd": -3390000,
+    "raydium_tvl_usd": 1112000000,
+    "raydium_dex_volume_24h_usd": 361800000,
+    "raydium_dex_volume_7d_usd": 2175000000,
+    "raydium_fees_24h_usd": 1690000,
+    "raydium_holder_revenue_24h_usd": 176591,
+    "raydium_reported_peak_daily_active_users": 162085,
+    "raydium_reported_peak_daily_transactions": 3100000,
+    "raydium_sep9_dex_volume_usd": 435130000
+  },
+  "why_flows_appear_speculative": "Raydium remains a major venue for fee-paying spot speculation and LaunchLab/StonkFun activity, and DefiLlama reports no direct token incentives for Raydium. However, high protocol turnover cannot be treated as equivalent to discretionary RAY accumulation.",
+  "leadership_rotation_evidence": "Operational leadership remains with Raydium infrastructure, but token-level leadership quality has weakened because protocol usage, fees and buyback-related holder revenue are rising while aggregate RAY spot flow remains distributive. No replacement asset has yet cleared the framework strongly enough to inherit leadership.",
+  "wallet_quality_evidence": "No new selective, independently funded wallet-convergence evidence was found for RAY in this scan. Aggregate spot netflow is negative, so RAY receives no net-accumulation or wallet-quality bonus.",
+  "narrative_news_evidence": "The Raydium/StonkFun infrastructure narrative remains intact, but newly published flow reporting explicitly documents a divergence between protocol usage and RAY token capital flow.",
+  "liquidity_executability": {
+    "result": "PASS",
+    "ray_market_cap_usd": 390770000,
+    "ray_24h_token_volume_usd": 187860000,
+    "ray_dex_volume_usd": 100160000,
+    "ray_cex_volume_usd": 145920000
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_EXISTING_EMISSION_CAVEAT",
+    "new_hard_failure": false,
+    "note": "No new contract, mint, sellability or liquidity-removal failure surfaced. This downgrade is driven by market-flow quality, not a structural-contract failure."
+  },
+  "major_uncertainties": [
+    "CoinGlass spot-netflow aggregation does not identify beneficial owners or distinguish strategic exchange transfers from final sales.",
+    "Protocol-funded buybacks may partially offset external spot distribution and can support price despite negative aggregate netflow.",
+    "The reported ten-day selling period began before the previous RAY leadership-reclaim observation; this record preserves the newly surfaced evidence without rewriting the earlier signal.",
+    "STONK continues to show strong participation, but this scan did not establish sufficient new selective-wallet convergence or structural improvement to call a rotation back to STONK."
+  ],
+  "why_signal_matters_now": "The framework explicitly requires net accumulation and persistence, not just high DEX activity. Newly surfaced evidence shows that the protocol can be strengthening while the associated token is being distributed. That invalidates using Raydium usage growth alone as confirmation of RAY leadership and raises the bar for the next positive RAY signal.",
+  "cross_ecosystem_notes": {
+    "bsc": "Weekly DEX growth remains extreme, but the BNC4 daily-buyback campaign directly rewards the highest-volume eligible meme token, contaminating volume as a discretionary-demand signal.",
+    "base": "Activity remains healthy but no fresh asset-level candidate crossed the full wallet, persistence and structural threshold.",
+    "sui": "Stablecoin supply remains up strongly week over week, but current DEX turnover is below the trailing-week daily average.",
+    "avalanche": "Weekly DEX growth is high but current 24h turnover is below the trailing-week daily average.",
+    "arbitrum": "Perp activity remains strong, but no clean asset-level leadership signal with independent accumulation crossed threshold.",
+    "robinhood_chain": "Stablecoins and DEX volume remain elevated, but Pons/launchpad maker-volume contamination prevents treating launchpad tape as clean discretionary migration evidence."
+  },
+  "prospective_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_action": "NONE_RESEARCH_ONLY"
+}
