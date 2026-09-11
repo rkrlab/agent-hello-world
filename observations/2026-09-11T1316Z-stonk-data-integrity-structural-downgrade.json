@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "detected_at_utc": "2026-09-11T13:16:39Z",
+  "classification": "DATA_INTEGRITY_CORRECTION_AND_STRUCTURAL_GATE_DOWNGRADE",
+  "research_only": true,
+  "paper_trade_created": false,
+  "asset": {
+    "symbol": "STONK",
+    "name": "STONK / StonkFun",
+    "ecosystem": "Solana / Raydium LaunchLab / StonkFun",
+    "contract_or_address": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+    "native_asset": false
+  },
+  "prior_signal": {
+    "detected_at_utc": "2026-09-11T12:43:15Z",
+    "path": "observations/2026-09-11T1243Z-stonk-leadership-reclaim-new-ath.json",
+    "commit": "984cf4938b26a540680db3a9499230f669da6a22",
+    "classification": "QUALIFIED_LEADERSHIP_RECLAIM_PRICE_HOLDER_PERSISTENCE_WITH_SOCIAL_AND_CLUSTER_RISK",
+    "premise_now_challenged": "The prior record asserted a new STONK all-time high near $0.31, price near $0.29 and approximately 46,771 holders. Current cross-source verification does not corroborate that price/ATH premise."
+  },
+  "trigger": {
+    "result": "PRIOR_LEADERSHIP_RECLAIM_PREMISE_NOT_CROSS_SOURCE_VERIFIED",
+    "details": [
+      "Coral currently reports STONK near $0.206 with an ATH of $0.2495, approximately 42.6K holders, $96M of 24h volume and $9.2M liquidity.",
+      "MyToken currently reports STONK near $0.1918, approximately 45,423 holders, $83.67M of 24h volume and $2.79M aggregate liquidity.",
+      "The two independent exact-address snapshots disagree materially on liquidity and holder count, but neither supports a $0.29-$0.31 current/ATH price. The consistent conclusion is that the new-ATH premise used in the 12:43 UTC reclaim alert is not presently reproducible.",
+      "Because the framework depends on prospective, testable records, this correction is preserved separately rather than editing or deleting the earlier signal."
+    ]
+  },
+  "ecosystem_regime_evidence": {
+    "result": "SOLANA_ACTIVE_BUT_NO_NEW_CHAIN_WIDE_SPECULATIVE_BREAKOUT",
+    "details": [
+      "DefiLlama currently shows Solana at about $2.78B of 24h DEX volume versus $16.81B over seven days, stablecoin market cap up about 3.11% over seven days, and near-flat 24h net inflows.",
+      "The StonkFun/Raydium product catalyst remains real, but the asset-level STONK leadership confirmation must be separated from protocol activity."
+    ]
+  },
+  "why_flows_appear_speculative": {
+    "assessment": "SPECULATIVE_ACTIVITY_REMAINS_REAL_BUT_ASSET_LEADERSHIP_NOT_CONFIRMED",
+    "details": [
+      "STONK still shows unusually high turnover relative to market capitalization and a very large holder base for a recent launchpad token.",
+      "Raydium LaunchLab's any-token-pair upgrade and StonkFun integration remain credible product catalysts rather than an airdrop-only explanation.",
+      "However, high turnover alone cannot restore leadership after the price/ATH verification failure and unresolved structural concentration/liquidity questions."
+    ]
+  },
+  "leadership_rotation_evidence": {
+    "result": "STONK_RECLAIM_STATUS_WITHDRAWN_TO_UNRESOLVED",
+    "details": [
+      "The prior 12:43 UTC leadership-reclaim status depended heavily on a supposed fresh ATH and price/holder persistence. That specific evidence is not corroborated by current exact-address sources.",
+      "RAY is not automatically promoted back to leadership: the previously documented RAY protocol-activity/token-flow divergence has not been resolved by fresh selective-wallet accumulation evidence.",
+      "No new asset in the broader scan clears the combined persistence, wallet-quality and structural thresholds strongly enough to replace STONK at this timestamp."
+    ]
+  },
+  "wallet_quality_evidence": {
+    "assessment": "NO_NEW_UPGRADE",
+    "details": [
+      "Previously identified selective STONK buyers remain historical evidence, but no newly verified, independently funded, historically selective wallet cluster was established in this scan.",
+      "Unverified search snippets about additional whale buying are excluded from the score until the underlying transaction/source can be confirmed."
+    ]
+  },
+  "narrative_and_attention": {
+    "assessment": "CATALYST_VALID_SOCIAL_REFLEXIVITY_RISK_REMAINS",
+    "details": [
+      "Raydium LaunchLab now supports arbitrary quote-token pairs and StonkFun is the first integration, giving the ecosystem a genuine composability catalyst.",
+      "Late social promotion remains a risk and is not counted as confirmation."
+    ]
+  },
+  "liquidity_and_executability": {
+    "result": "EXECUTABLE_BUT_DEPTH_MEASUREMENT_CONFLICTED",
+    "details": [
+      "MyToken reports about $2.79M aggregate liquidity against roughly $164.7M market cap and $83.7M 24h volume; Coral reports about $9.2M liquidity against roughly $205.4M market cap and $96M 24h volume.",
+      "The large disagreement between data providers is itself a reason not to treat the earlier liquidity-depth assessment as settled."
+    ]
+  },
+  "structural_gate": {
+    "result": "NOT_CLEARED_DO_NOT_SURFACE_AS_QUALIFIED_CANDIDATE",
+    "failed_hard_gate": false,
+    "details": [
+      "Coral reports no mint authority, no freeze authority and no honeypot flag, but also labels approximately 47% of supply as insider wallets while top-10 concentration is about 18%. The insider classification remains undecomposed and therefore cannot be assumed benign.",
+      "MyToken reports LP Locked = No for its tracked Meteora pair. This does not prove every STONK pool is withdrawable or commonly controlled, but it means LP ownership/control and liquidity-removal risk are not fully verified across the executable pool set.",
+      "Under the framework's hard-gate rule, unresolved LP control plus unresolved insider-cluster attribution prevents a clean structural PASS regardless of opportunity score."
+    ]
+  },
+  "broader_scan_result": {
+    "new_positive_asset_threshold_crossed": false,
+    "notes": [
+      "Robinhood Chain remains one of the strongest raw-flow ecosystems, with stablecoins and DEX activity elevated, but the previously documented synthetic-volume contamination has not been resolved.",
+      "BSC still shows strong DEX growth but prior direct volume incentives contaminate the clean-discretionary-flow interpretation.",
+      "Sui has strong weekly stablecoin and DEX growth, but current 24h DEX pace remains below the trailing-seven-day daily average.",
+      "No fresh Hyperliquid, Avalanche, Monad, Arbitrum, RAY or ZEC leadership transition cleared the framework in this scan."
+    ]
+  },
+  "major_uncertainties": [
+    "Price, holder and liquidity snapshots are asynchronous across providers; this record therefore avoids treating any single quoted spot value as exact.",
+    "The 47% Coral insider-wallet label may include protocol, LP, burn, treasury or other infrastructure addresses; beneficial ownership is not yet decomposed.",
+    "MyToken's LP Locked = No flag is pair-specific and does not establish the control status of every STONK liquidity venue.",
+    "The underlying StonkFun product regime may remain strong even if STONK itself fails to maintain leadership."
+  ],
+  "why_signal_matters_now": "This correction occurs immediately after the 12:43 UTC reclaim alert and invalidates its most important new piece of evidence: the asserted fresh ATH. Preserving the correction before forward outcomes are known prevents the research record from benefiting from hindsight and adds cross-source data consistency to the effective gating discipline.",
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://www.0xcoral.com/t/solana/6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+    "https://ai.mytoken.io/en/sol/token/6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+    "https://defillama.com/chain/solana",
+    "https://crypto.news/raydium-launchlab-adds-support-for-any-token-pair-on-solana/",
+    "https://github.com/rkrlab/agent-hello-world/commit/984cf4938b26a540680db3a9499230f669da6a22"
+  ]
+}
