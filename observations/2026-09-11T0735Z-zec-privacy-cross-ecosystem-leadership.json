@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "detected_at_utc": "2026-09-11T07:35:22Z",
+  "classification": "QUALIFIED_CROSS_ECOSYSTEM_PRIVACY_LEADERSHIP_WITH_LATE_DETECTION_AND_EXTENSION_RISK",
+  "research_only": true,
+  "paper_trade_created": false,
+  "asset": {
+    "symbol": "ZEC",
+    "name": "Zcash",
+    "ecosystem": "Zcash / NEAR Intents / Rhea Finance cross-ecosystem privacy flow",
+    "contract_or_address": null,
+    "native_asset": true
+  },
+  "detection_integrity": {
+    "note": "This is the first ZEC alert in this research ledger, but several catalysts and portions of the move began before this scan. Do not backdate this signal or infer an earlier entry. Forward outcome measurement begins only from detected_at_utc.",
+    "threshold_basis": "Cross-venue persistence, institutional access/inflows, recent shielded-pool accumulation, and multiple large buyer clusters now jointly exceed the research threshold despite cooling from peak venue-level volume."
+  },
+  "market_snapshot": {
+    "zec_price_usd_approx": 1225.94,
+    "zec_market_cap_usd_approx": 21000000000,
+    "zec_24h_volume_usd_range": [1580000000, 1705000000],
+    "zec_7d_price_change_pct_approx": 52.1,
+    "recent_24h_range_usd": [1206.72, 1293.92]
+  },
+  "ecosystem_regime_evidence": [
+    "Rhea Finance reported about $63.45M 24h volume, $483.86M 7d volume (+353% 7d) and $1.94B 30d volume (+1169%); WNEAR/ZEC alone was about $57.80M, roughly 91% of Rhea volume in the cited Sep-10 snapshot.",
+    "NEAR Intents remains a large cross-chain route, with about $104.74M 24h, $835.13M 7d and $3.26B 30d DEX volume in the latest DefiLlama snapshot. A Sep-7 pair-level snapshot had ZEC-related pairs near 40% of Intents volume, so ZEC has been a major driver rather than a peripheral pair.",
+    "Zcash itself shows persistence after the breakout: CoinGecko places ZEC near $1,226, up about 52% over seven days, with roughly $1.6-$1.7B of daily turnover rather than a one-hour launch spike.",
+    "Recent privacy-pool data showed 4.89M ZEC, 28.9% of issued supply, shielded, with +12,872 ZEC net into shielded pools over the preceding 24h in the Sep-10 snapshot."
+  ],
+  "why_flows_appear_speculative": {
+    "qualified_factors": [
+      "ZEC dominates real fee-paying swap activity on Rhea and has been a major share of NEAR Intents cross-chain swaps.",
+      "The ZCSH exchange-traded product gives traditional investors a regulated access path to ZEC; SEC-filed Grayscale materials reported more than $70M cumulative ETP inflows in two weeks after the Aug-25 launch.",
+      "Large buyers have used NEAR Intents and spot routes to acquire multi-million-dollar ZEC positions, while shielded-pool balances have recently increased."
+    ],
+    "discounts": [
+      "Do not count Grayscale/DCG's separate ~$100M contribution as fresh open-market buying: the SEC filing says 85,705.3256 ZEC were contributed in kind for ZCSH shares.",
+      "Part of the earlier upside was amplified by short liquidations/forced covering, so price acceleration alone is not treated as clean discretionary demand.",
+      "NEAR's Confidential Intents/TVL growth has had snapshot/airdrop incentives; therefore NEAR stablecoin/TVL growth is discounted and is not the basis of this ZEC signal. The ZEC signal rests more heavily on fee-paying swaps, institutional inflows, shielded balances, and direct accumulation."
+    ]
+  },
+  "leadership_rotation_evidence": [
+    "Within Rhea, ZEC/WNEAR represented roughly nine-tenths of observed volume, making ZEC the clear activity leader rather than one of many equally active assets.",
+    "A Sep-7 NEAR Intents pair snapshot put ZEC-related pairs near 40% of volume, indicating the same asset was simultaneously leading a second, independent cross-chain execution surface.",
+    "The combination suggests a privacy/ZEC-centered cross-ecosystem rotation rather than generic NEAR beta; RHEA itself does not qualify as the leader because token liquidity is small and its unlock/airdrop overhang is material."
+  ],
+  "wallet_quality_evidence": {
+    "assessment": "moderate, not elite-smart-money",
+    "evidence": [
+      "One dormant entity controlling four addresses reportedly reactivated after six months and bought 6,601.37 ZEC for about $8.21M through NEAR Intents while also buying ETH.",
+      "A separate three-wallet cluster, possibly one whale, reportedly spent about $11.23M to buy 8,994 ZEC and was still buying.",
+      "On Sep-10, another buyer reportedly acquired 9,426.59 ZEC for about $11.64M and maintained additional bids, while a different whale sold 13,000 ZEC for about $16.4M, showing meaningful two-sided whale participation rather than a single promotional wallet."
+    ],
+    "limitations": [
+      "Addresses within each cluster are explicitly linked or possibly linked, so raw wallet counts are not treated as independent buyers.",
+      "Funding-graph independence between the two main clusters is not proven.",
+      "No strong evidence was found that these buyers have a selective, historically exceptional cross-asset hit rate, so no maximum smart-wallet bonus is awarded."
+    ]
+  },
+  "narrative_and_news_evidence": [
+    "Grayscale's ZCSH began trading on NYSE Arca Aug-25. An SEC-filed Sep-8 release reported AUM above $500M, more than $70M of cumulative inflows in two weeks, and launch of ZCSH options.",
+    "The privacy narrative is broad and institutionally visible rather than dependent on one influencer; ETF coverage, privacy-pool growth and cross-chain utility are independently observable.",
+    "Zcash's recent Ironwood/NU6.x privacy infrastructure and cross-chain Zashi/NEAR-Intents integrations give the narrative an actual product/composability channel rather than social attention alone."
+  ],
+  "liquidity_and_executability": {
+    "result": "PASS_WITH_ROUTE_CAVEAT",
+    "details": [
+      "ZEC has roughly $21B market capitalization and around $1.6-$1.7B of recent 24h global turnover across many exchanges, so the asset is broadly executable.",
+      "The specific Rhea WNEAR/ZEC pool is not equivalent to global liquidity; quoted +/-2% depth in recent aggregators was only in the low hundreds of thousands of dollars, so large execution through that pool alone would be inappropriate."
+    ]
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_NETWORK_SECURITY_HISTORY_CAVEAT",
+    "applicable_native_asset_checks": [
+      "ZEC is a native Proof-of-Work asset, so honeypot, token mint-authority, deployer privilege, LP ownership and removable-liquidity checks do not apply in the smart-contract-token sense.",
+      "SEC-filed fund materials describe a Bitcoin-like 21M ZEC supply cap; issuance is protocol-defined rather than controlled by a token deployer."
+    ],
+    "security_caveat": "A critical Orchard circuit soundness flaw was discovered May-29 2026. The network temporarily disabled Orchard actions and NU6.2 re-enabled them with the corrected circuit on June-3. The published security advisory states the turnstile supply check confirmed total supply remained intact. This history remains a material risk factor even though the specific flaw was remediated.",
+    "failed_hard_gate": false
+  },
+  "major_uncertainties": [
+    "The signal is detected after a very large move: roughly +52% in seven days and far above long-term averages, creating substantial extension/reversal risk.",
+    "Current Rhea and NEAR Intents 24h volume has cooled from the strongest recent days, so this is persistence/leadership confirmation, not a fresh first-hour acceleration signal.",
+    "Some prior price acceleration was short-squeeze driven.",
+    "Whale clusters may be less independent than public labels imply, and historical wallet selectivity is not established.",
+    "Recent privacy-pool inflows show ZEC moving into shielded pools but cannot reveal ownership or subsequent shielded-to-shielded activity.",
+    "Regulatory/exchange-access risk remains structurally higher for privacy assets than for many large-cap tokens."
+  ],
+  "why_signal_matters_now": "This is the first asset found in the current scan that is simultaneously dominating two separate onchain execution surfaces, showing persistent global price/turnover, receiving regulated-product inflows, and displaying recent large-buyer and shielded-pool accumulation. It clears the research threshold, but it is explicitly a late-detected, extended signal rather than an early entry signal.",
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://www.coingecko.com/en/coins/zcash",
+    "https://defillama.com/protocol/near-intents",
+    "https://giacoin.com/san-giao-dich/rhea-finance/",
+    "https://www.sec.gov/Archives/edgar/data/1720265/000119312526385317/zcsh-ex99_1.htm",
+    "https://zecstats.org/shielded-percentage",
+    "https://www.aicoin.com/en/news-flash/axedechx",
+    "https://www.odaily.news/en/newsflash/516622",
+    "https://github.com/advisories/GHSA-ww9q-8r59-xv46"
+  ]
+}
