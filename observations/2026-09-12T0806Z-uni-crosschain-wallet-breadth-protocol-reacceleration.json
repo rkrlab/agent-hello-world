@@ -1,0 +1,136 @@
+{
+  "timestamp_utc": "2026-09-12T08:06:22Z",
+  "type": "RESEARCH_OBSERVATION",
+  "prospective_research_only": true,
+  "ecosystem": "Uniswap cross-chain DEX / Ethereum + Base + Robinhood Chain + Arbitrum",
+  "candidate": {
+    "symbol": "UNI",
+    "name": "Uniswap",
+    "network": "Ethereum ERC-20",
+    "contract": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
+  },
+  "classification": "QUALIFIED_CROSSCHAIN_PROTOCOL_REACCELERATION_WITH_MULTI_WHALE_BREADTH_AND_PRICE_DIVERGENCE",
+  "previous_related_signal": {
+    "timestamp_utc": "2026-09-08T13:18:11Z",
+    "classification": "QUALIFIED_LEADERSHIP_UPGRADE_NOT_ENTRY_SIGNAL",
+    "snapshot_price_usd": 7.06
+  },
+  "threshold_change": "The new threshold is not a price breakout. Uniswap protocol throughput has reaccelerated across several independent chains while a fresh Ethereum whale report ranks UNI first for multi-whale accumulation: 287 distinct tracked whale wallets with +$7.8M net flow. This materially broadens the prior wallet evidence. At the same time UNI is about $6.19, roughly 12.3% below the September 8 research snapshot and down 2.2% over seven days, so this is explicitly an accumulation/value-capture divergence signal rather than a clean token-price leadership signal.",
+  "ecosystem_regime_evidence": {
+    "uniswap_tvl_usd": 3677000000,
+    "uniswap_active_addresses_24h": 517009,
+    "uniswap_transactions_24h": 7220000,
+    "uniswap_dex_volume_24h_usd": 4593000000,
+    "uniswap_dex_volume_7d_usd": 21238000000,
+    "uniswap_current_24h_vs_preceding_6d_daily_average_multiple": 1.66,
+    "uniswap_dex_volume_24h_by_chain_usd": {
+      "Robinhood Chain": 2326000000,
+      "Ethereum": 1068000000,
+      "Base": 478860000,
+      "Arbitrum": 251170000,
+      "BSC": 242780000
+    },
+    "chain_current_24h_vs_preceding_6d_multiple": {
+      "Robinhood Chain": 1.75,
+      "Ethereum": 1.70,
+      "Base": 2.10,
+      "Arbitrum": 2.21,
+      "BSC": 0.70
+    },
+    "non_robinhood_dex_volume_24h_usd": 2267000000,
+    "non_robinhood_current_24h_vs_preceding_6d_daily_average_multiple": 1.57,
+    "change_vs_2026_09_08_snapshot": {
+      "total_dex_volume_24h_pct": 98.9,
+      "non_robinhood_dex_volume_24h_pct": 90.0,
+      "active_addresses_24h_pct": 9.46,
+      "transactions_24h_pct": 9.06,
+      "holder_revenue_24h_pct": 18.62
+    },
+    "uniswap_fees_24h_usd": 7660000,
+    "uniswap_holder_revenue_24h_usd": 746599,
+    "uniswap_incentives_24h_usd": 5775.69,
+    "interpretation": "Robinhood still supplies the largest single slice of Uniswap volume, but the acceleration is no longer dependent on Robinhood alone. Ethereum, Base and Arbitrum are each running roughly 1.7x-2.2x their preceding-six-day daily averages, and non-Robinhood Uniswap volume is about 90% above the September 8 snapshot. Direct Uniswap incentives are tiny relative to fee-paying volume."
+  },
+  "why_flows_appear_speculative": {
+    "classification": "QUALIFIED_WITH_ROBINHOOD_CONTAMINATION_DISCOUNT",
+    "evidence": [
+      "Uniswap spot volume is accelerating across Ethereum, Base and Arbitrum as well as Robinhood Chain, reducing dependence on one contaminated venue.",
+      "Current 24h Uniswap incentives are only about $5.8K against roughly $4.59B of spot volume, so protocol-wide turnover is not plausibly explained by direct Uniswap liquidity-mining rewards.",
+      "Protocol fees on enabled deployments are used to acquire and burn UNI, creating observable value capture from fee-paying activity rather than a narrative-only association."
+    ],
+    "discounts": [
+      "Robinhood Chain remains contaminated as a discretionary-flow indicator by gas subsidies and previously documented synthetic maker/volume services, so its $2.326B contribution receives a large quality discount.",
+      "The current signal is protocol-level and cross-chain; it does not prove every underlying swap is discretionary speculation.",
+      "UNI price has not confirmed the protocol reacceleration and is materially below the September 8 observation price."
+    ]
+  },
+  "wallet_quality_evidence": {
+    "fresh_report_date": "2026-09-11",
+    "tracked_whale_wallets_marketwide": 2705,
+    "uni_distinct_tracked_whales_in_high_conviction_signal": 287,
+    "uni_net_flow_usd": 7800000,
+    "uni_conviction_rank": 1,
+    "report_status": "PENDING",
+    "assessment": "This is a meaningful breadth upgrade versus the prior evidence centered on a small Nansen-labelled cohort plus a known public buyer. However, distinct tracked wallets are not equivalent to proven independent beneficial owners or historically selective wallets. Funding relationships among the 287 addresses were not independently reconstructed in this run, so no maximum selective-wallet-convergence score is awarded. The source itself labels the signal PENDING and reports a 41% historical confirmed rate across its published picks universe."
+  },
+  "leadership_rotation_evidence": "UNI is not replacing RAY or ZEC on immediate price momentum. Instead, it is re-emerging as a cross-chain infrastructure/value-capture candidate while local speculative regimes remain noisy: Raydium usage is strong but RAY spot-distribution evidence is unresolved; ZEC repaired its leverage flush but remains highly extended; Robinhood-native assets remain contaminated by synthetic-volume risk. The present UNI threshold is therefore a protocol-and-wallet breadth upgrade with price lag, not a declaration of outright market leadership.",
+  "price_and_executability": {
+    "uni_price_usd": 6.19,
+    "uni_market_cap_usd": 3855000000,
+    "uni_fdv_usd": 5508000000,
+    "uni_24h_token_volume_usd": 659950000,
+    "uni_dex_token_volume_usd": 372740000,
+    "uni_dex_share_of_token_volume_pct": 56.48,
+    "uni_7d_price_change_pct": -2.2,
+    "uni_30d_price_change_pct": 74.6,
+    "change_from_2026_09_08_snapshot_pct": -12.32,
+    "result": "PASS",
+    "note": "UNI has deep global CEX and DEX turnover and does not depend on one removable microcap LP for sellability."
+  },
+  "narrative_news_evidence": "The catalyst remains concrete rather than primarily influencer-driven: fee-switch deployments convert qualifying protocol fees into UNI acquisition and burn, while Uniswap is monetizing high-velocity trading across multiple chains. Current social/news coverage is increasingly momentum-oriented, so it is not counted as additive confirmation. The stronger evidence is the cross-chain volume breadth, burn mechanism and multi-wallet flow.",
+  "structural_gate": {
+    "result": "PASS_WITH_GOVERNANCE_MINT_AND_TREASURY_CONCENTRATION_CAVEATS",
+    "sellability_honeypot": "PASS; mature ERC-20 with deep distributed liquidity.",
+    "mint_authority": "Uniswap governance can mint up to 2% of total UNI supply annually. Official documentation states there is no active inflation and governance has not exercised this authority to date.",
+    "freeze_blacklist": "No freeze/blacklist mechanism identified in the canonical UNI governance documentation reviewed.",
+    "vesting": "Official Uniswap documentation states all team, investor and advisor vesting concluded in September 2025.",
+    "lp_control": "UNI sellability is distributed across major CEX and DEX venues and is not dependent on a creator-controlled LP.",
+    "concentration": "A large governance-controlled UNI treasury remains transparent supply and governance concentration; it is a caveat rather than a hidden deployer-rug condition.",
+    "wash_sniper_creator_dump": "No new evidence in this run triggered a hard UNI-specific rejection for creator dumping, wash trading, bundled wallets, sniper domination or suspicious privileged transfers."
+  },
+  "major_uncertainties": [
+    "UNI price is diverging negatively from protocol usage: roughly -12.3% from the September 8 research snapshot and -2.2% over seven days.",
+    "Funding independence and beneficial-owner independence across the 287 tracked whale wallets were not proven.",
+    "Robinhood Chain still contributes about half of current Uniswap volume and remains a contaminated market-quality surface.",
+    "Seven-day holder revenue is below the earlier September 8 snapshot despite stronger current 24h throughput, so the recent value-capture peak has not monotonically accelerated.",
+    "Governance retains a rate-limited 2% annual mint authority and a large transparent treasury.",
+    "The whale-data provider labels the current accumulation signal PENDING and its published historical confirmed rate is 41%, so its score must not be treated as deterministic smart money."
+  ],
+  "why_signal_matters_now": "The September 8 UNI observation already established cross-chain value capture but only moderate wallet evidence. The genuinely new state is a near-doubling of 24h Uniswap throughput versus that snapshot, a roughly 90% increase even after removing Robinhood Chain, simultaneous Ethereum/Base/Arbitrum reacceleration, and the broadest fresh multi-whale UNI accumulation signal found in the current scan. Recording the price divergence at the same time makes the test falsifiable: later outcomes can show whether protocol reacceleration plus distributed accumulation preceded renewed UNI leadership or whether price correctly rejected a misleading activity/whale signal.",
+  "cross_ecosystem_notes": {
+    "raydium_ray": "Raydium itself has reaccelerated to roughly $555.8M 24h DEX volume, 195,232 active addresses and 3.83M transactions, but RAY remains near $1.62 and no fresh evidence proves the previously documented spot-distribution regime reversed; no new RAY alert is recorded here.",
+    "zcash": "ZEC remains above its liquidation trough but fresh pricing around $1.13K-$1.18K does not create a new threshold beyond the 01:52 UTC repair observation.",
+    "hyperliquid_hype": "Hyperliquid remains dominant at roughly $14.0B open interest and $8.7B 24h perp volume, but the current whale/treasury evidence is largely continuation of previously recorded accumulation rather than a new independent threshold.",
+    "bsc": "BSC still shows strong weekly DEX growth but current 24h volume is below its trailing-week daily average, stablecoins are slightly down over seven days, and BNC4-linked incentive contamination remains unresolved.",
+    "sui": "Sui stablecoins are up about 11% over seven days but current DEX turnover remains below its trailing-week daily average, so no fresh discretionary acceleration threshold is crossed.",
+    "monad": "Monad has positive 24h inflows and strong weekly perp growth, but current 24h spot/perp turnover is below the respective trailing-week daily averages and stablecoins are slightly down week over week; no asset-level candidate clears the framework."
+  },
+  "sources": [
+    "https://defillama.com/protocol/uniswap",
+    "https://deepbluealpha.io/reports/ethereum-whale-report-2026-09-11",
+    "https://developers.uniswap.org/docs/ecosystem/governance/uni",
+    "https://defillama.com/protocol/raydium",
+    "https://defillama.com/perps",
+    "https://defillama.com/chain/bsc",
+    "https://defillama.com/chain/sui",
+    "https://defillama.com/chain/monad"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_action": "NONE_RESEARCH_ONLY"
+}
