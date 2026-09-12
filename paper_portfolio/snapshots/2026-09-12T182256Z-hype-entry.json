@@ -1,0 +1,32 @@
+{
+  "timestamp_utc": "2026-09-12T18:22:56Z",
+  "event": "BUY-HYPE-20260912-182256Z",
+  "marks_usd": {
+    "BTC": 77036.84,
+    "ETH": 2525.96,
+    "SOL": 101.87,
+    "SUI": 0.7235,
+    "BNB": 730.55,
+    "UNI": 6.35,
+    "HYPE": 79.35
+  },
+  "mark_notes": {
+    "HYPE": "CoinMarketCap live USD mark substituted for CoinGecko due internally inconsistent CoinGecko web cache in this run.",
+    "other_assets": "Contemporaneous liquid-market marks used for portfolio and passive-benchmark comparison."
+  },
+  "cash_usd": 3504.476073292041,
+  "positions": {
+    "BTC": {"quantity": 0.025297677774, "mark_value_usd": 1948.8531550471942},
+    "ETH": {"quantity": 0.798766704209, "mark_value_usd": 2017.6527441637656},
+    "SOL": {"quantity": 9.673050880248, "mark_value_usd": 985.3936931708639},
+    "SUI": {"quantity": 616.067028092657, "mark_value_usd": 445.72449482503737},
+    "BNB": {"quantity": 0.672675904749, "mark_value_usd": 491.4233822143819},
+    "UNI": {"quantity": 38.397030573568, "mark_value_usd": 243.8211441421568},
+    "HYPE": {"quantity": 3.114315146532163, "mark_value_usd": 247.1209068773271}
+  },
+  "portfolio_nav_usd": 9884.465593732766,
+  "passive_benchmark_nav_usd": 9889.047469421243,
+  "alpha_vs_benchmark_usd": -4.58187568847643,
+  "alpha_vs_benchmark_bps": -4.6332831373741,
+  "transaction_cost_usd": 0.37068136031599064
+}
