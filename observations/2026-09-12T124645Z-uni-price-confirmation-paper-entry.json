@@ -1,0 +1,109 @@
+{
+  "timestamp_utc": "2026-09-12T12:46:45Z",
+  "classification": "QUALIFIED_UNI_PRICE_CONFIRMATION_AFTER_CROSSCHAIN_PROTOCOL_REACCELERATION",
+  "candidate": {
+    "asset": "Uniswap",
+    "symbol": "UNI",
+    "ecosystem": "Cross-chain Uniswap / Ethereum-rooted DEX infrastructure",
+    "contract_address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
+  },
+  "threshold_change": "The prior cross-chain Uniswap reacceleration/whale-breadth signal had a price-confirmation deficit. UNI has now advanced to about $6.45, roughly +9% over 24 hours and above the prior approximately $6.19 observation level, while protocol throughput remains abnormally high. This closes one of the prior signal's main missing confirmation legs.",
+  "ecosystem_regime_evidence": {
+    "uniswap_dex_volume_24h_usd": 4594000000,
+    "uniswap_dex_volume_7d_usd": 19596000000,
+    "implied_preceding_6d_daily_average_usd": 2500333333.33,
+    "current_vs_preceding_6d_ratio": 1.837,
+    "active_addresses_24h": 505679,
+    "transactions_24h": 6570000,
+    "interpretation": "Uniswap remains the largest DEX by current 24h volume and its current pace is about 1.84x the implied average of the preceding six days. Prior research established that the acceleration was spread across Ethereum, Base and Arbitrum as well as Robinhood Chain; Robinhood-derived activity remains explicitly discounted because synthetic maker-volume services can contaminate raw user/volume metrics there."
+  },
+  "capital_quality": {
+    "why_financially_substantive": "The signal combines fee-paying spot execution, price confirmation, broad tracked-whale accumulation, and a protocol-fee mechanism that converts enabled-chain activity into UNI burns. This is stronger than launchpad graduation, points, rebates, or quest participation alone.",
+    "incentive_discount": "No opportunity score is assigned to Robinhood Chain maker counts or raw Robinhood volume because prior research documented services capable of manufacturing distributed real-onchain trading activity. The thesis is required to survive without that evidence.",
+    "capital_velocity_note": "The protocol is processing materially more spot volume than its trailing daily baseline, indicating elevated capital turnover rather than merely passive TVL growth."
+  },
+  "wallet_quality": {
+    "source_date": "2026-09-11",
+    "tracked_whale_wallets_in_high_conviction_uni_signal": 287,
+    "net_flow_usd": 7800000,
+    "status": "PENDING",
+    "caveat": "These are tracked addresses, not proven independent beneficial owners. Funding-lineage independence has not been fully reconstructed, and aggregate UNI whale buy/sell volume for the day was nearly balanced. Therefore wallet breadth is meaningful confirmation but not treated as 287 independent smart-money votes."
+  },
+  "price_and_liquidity": {
+    "uni_mark_usd": 6.45,
+    "approx_24h_change_pct": 8.9,
+    "24h_range_usd": [5.88, 6.51],
+    "market_depth": "Deep multi-venue CEX and DEX liquidity; suitable for Tier A modeled execution at portfolio starter size.",
+    "price_persistence_note": "Price is now confirming rather than diverging from protocol and wallet evidence, but remains below the earlier September 8 frozen observation around $7.06, so this is a prospective confirmation test rather than credit for the prior rally."
+  },
+  "direct_token_value_capture": {
+    "mechanism": "Protocol fees on enabled Uniswap deployments accumulate in TokenJar contracts; searchers claim fee assets by supplying UNI that is bridged to mainnet and burned. v4 protocol fees were also activated in July 2026.",
+    "quality": "Direct and onchain, but governed: governance can modify protocol-fee parameters, and excessive fee extraction could impair LP competitiveness."
+  },
+  "rwa_evidence": {
+    "as_of": "2026-09-06",
+    "uniswap_v4_tokenized_stock_deposits_usd": 59100000,
+    "uniswap_v3_tokenized_stock_deposits_usd": 20900000,
+    "category_total_measured_defi_tvl_usd": 192600000,
+    "interpretation": "This is not counted as RWA issuance/AUM and not presented as secondary trading volume. It is deposited tokenized-stock liquidity/utilization inside DeFi, showing that tokenized equities are being placed into AMM liquidity rather than merely minted and held. The RWA usage leg is additive but not the primary trigger for the trade."
+  },
+  "leadership_rotation": {
+    "status": "UNI moves from qualified protocol/whale divergence candidate to qualified price-confirmed cross-chain infrastructure candidate.",
+    "not_claimed": "This does not establish UNI as the single highest-momentum crypto asset and does not erase the still-active RAY/ZEC regimes. It establishes a fresh confirmation threshold within UNI's own prospective record."
+  },
+  "social_news_quality": {
+    "assessment": "Recent coverage increasingly discusses fee burns, whales and tokenized assets. Social/news attention is treated as secondary because momentum coverage can become reflexive; the trade relies on onchain/protocol and market data rather than influencer promotion."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_GOVERNANCE_CAVEAT",
+    "sellability": "PASS",
+    "honeypot_risk": "PASS / not indicated for canonical UNI",
+    "dangerous_permissions": "No new hard-fail permission issue identified",
+    "lp_removal_risk": "PASS for executable market; position is not dependent on a creator-controlled single LP",
+    "supply_holder_concentration": "No new hard-fail concentration evidence identified in this run",
+    "wash_bot_risk": "Robinhood activity discounted rather than allowed to carry the thesis",
+    "executable_liquidity": "PASS",
+    "major_caveat": "Protocol-fee parameters are governance-controlled; whale-address independence remains unresolved."
+  },
+  "paper_trade": {
+    "trade_id": "BUY-UNI-20260912-124645Z",
+    "action": "BUY",
+    "portfolio": "regime-framework-10k-2026-09-09",
+    "gross_usd": 247.660847199516,
+    "sizing_pct_of_pretrade_nav": 2.5,
+    "quantity": 38.397030573568,
+    "mark_fill_usd": 6.45,
+    "simulated_execution_cost_rate": 0.0015,
+    "simulated_execution_cost_usd": 0.371491270799,
+    "all_in_average_cost_usd": 6.459675,
+    "cash_after_usd": 3751.967661529684,
+    "portfolio_nav_after_usd": 9906.062396709853,
+    "passive_benchmark_nav_usd": 9906.433887980653,
+    "alpha_vs_benchmark_bps_immediate": -0.375,
+    "note": "Starter size only. No scaling unless later independent confirmation improves wallet independence/persistence or other evidence. No real trade executed."
+  },
+  "major_uncertainties": [
+    "The 287-wallet Deep Blue cohort is address-level breadth, not proven beneficial-owner independence.",
+    "Robinhood Chain contributes a large share of Uniswap fees/volume and remains contaminated as a clean discretionary-flow measure.",
+    "Tokenized-stock deposits show DeFi utilization but do not by themselves prove high secondary RWA trading volume on Uniswap.",
+    "UNI has already rallied sharply over 24 hours, increasing short-term mean-reversion risk.",
+    "Governance can alter fee extraction; LP competitiveness must be monitored as the burn mechanism scales."
+  ],
+  "why_now": "The 08:06 UTC observation had protocol reacceleration and multi-whale breadth but specifically lacked token-price confirmation. By this run UNI had advanced to roughly $6.45 with strong turnover while protocol activity remained elevated, so the framework's missing confirmation leg arrived prospectively. That is sufficient for a 2.5% starter paper position, not a larger allocation.",
+  "sources": [
+    "https://www.coingecko.com/en/coins/uniswap",
+    "https://defillama.com/dexs",
+    "https://defillama.com/protocol/uniswap",
+    "https://deepbluealpha.io/reports/ethereum-whale-report-2026-09-11",
+    "https://gov.uniswap.org/t/temp-check-protocol-fee-expansion-robinhood-chain/26168",
+    "https://gov.uniswap.org/t/temp-check-activate-v4-protocol-fees/26162",
+    "https://crypto.news/uniswap-v4-leads-tokenized-stocks-with-59m-tvl/"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  }
+}
