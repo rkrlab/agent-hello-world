@@ -1,0 +1,63 @@
+{
+  "timestamp_utc": "2026-09-12T01:52:34Z",
+  "classification": "PARTIAL_LEADERSHIP_REPAIR_AFTER_LEVERAGE_FLUSH",
+  "ecosystem": "Zcash / cross-chain privacy execution via NEAR Intents and Rhea",
+  "candidate": {
+    "symbol": "ZEC",
+    "name": "Zcash",
+    "address": null,
+    "address_note": "Native Zcash asset; no token contract address."
+  },
+  "prospective_research_only": true,
+  "signal_summary": "The rapid-price-failure downgrade from 2026-09-11 has partially reversed. ZEC has rebounded materially from the roughly $1.07K-$1.10K liquidation trough, while NEAR Intents throughput has reaccelerated above its recent daily baseline and shielded-pool balances remain elevated. This is a repair signal, not a fresh early breakout and not a trade recommendation.",
+  "ecosystem_regime_evidence": {
+    "near_intents_dex_volume_24h_usd": 198860000,
+    "near_intents_dex_volume_7d_usd": 1034000000,
+    "near_intents_preceding_6d_daily_average_usd_approx": 139190000,
+    "near_intents_current_vs_preceding_6d_multiple_approx": 1.43,
+    "rhea_dex_volume_24h_usd": 50060000,
+    "rhea_dex_volume_7d_usd": 318810000,
+    "rhea_preceding_6d_daily_average_usd_approx": 44790000,
+    "rhea_current_vs_preceding_6d_multiple_approx": 1.12,
+    "shielded_supply_zec_approx": 4900000,
+    "shielded_share_of_circulating_supply_pct": 28.9,
+    "shielded_net_inflow_7d_zec": 30462
+  },
+  "price_persistence_evidence": {
+    "prior_downgrade_reference_price_usd_approx": 1101,
+    "fresh_live_quotes_usd_range": [1157.37, 1203.73],
+    "note": "Fresh web quotes are asynchronous; the range is preserved rather than asserting a single exact tick. Even the lower fresh quote is materially above the downgrade reference level."
+  },
+  "why_flows_appear_speculative": "ZEC recently experienced a large leveraged-long flush, yet fee-paying NEAR Intents/Rhea activity and shielded-pool accumulation persisted. No airdrop, points, quest, or liquidity-mining incentive is being counted as the reason for this repair signal.",
+  "leadership_rotation_evidence": "ZEC has repaired much of the rapid breakdown that invalidated its first persistence test, but it does not clearly displace RAY as the strongest current asset-level leader. This observation records a failed-breakdown/repair state rather than a top-rank leadership change.",
+  "wallet_quality_evidence": "No new independent historically selective wallet cluster was verified in this scan. Recent leveraged momentum wallets were liquidated, which is negative for wallet-quality confidence. Shielded-pool net inflow is treated as real asset migration but not as selective-wallet convergence.",
+  "narrative_news_evidence": "The privacy/institutional-access narrative remains active, but this alert is not based on new influencer promotion or a fresh ETF headline. It is driven primarily by post-flush price resilience, cross-chain execution throughput, and persistent shielded balances.",
+  "liquidity_executability": "PASS. ZEC remains a large-cap native asset with deep global CEX/perpetual liquidity; execution is not dependent on a thin launchpad LP.",
+  "structural_gate": {
+    "result": "PASS_WITH_EXISTING_NETWORK_SECURITY_HISTORY_CAVEAT",
+    "details": "No new sellability, contract-permission, deployer, LP-removal, or concentration failure surfaced. As a native PoW asset, common token-contract honeypot and mint/freeze-authority gates are not applicable."
+  },
+  "major_uncertainties": [
+    "Fresh price feeds are asynchronous and volatile, so exact reclaim of the $1,185-$1,205 zone should not be overclaimed.",
+    "Current NEAR Intents volume is not fully decomposed into ZEC-specific routes in the fresh dataset.",
+    "No new selective-wallet convergence was verified.",
+    "Recent derivatives leverage was extreme and could rebuild quickly.",
+    "No fresh daily ETF-flow confirmation was found in this scan."
+  ],
+  "why_signal_matters_now": "The earlier downgrade was specifically triggered by rapid post-alert price failure. Within the same prospective test window, price has materially repaired while cross-chain execution volume is again running above recent baseline. Recording that reversal now prevents hindsight from turning the earlier downgrade into either a permanent failure or a retroactively ignored shakeout.",
+  "sources": [
+    "https://defillama.com/protocol/near-intents?dexVolume=true&events=false&tvl=false",
+    "https://defillama.com/protocol/rhea-finance",
+    "https://www.zecmetrics.io/",
+    "https://coinmarketcap.com/currencies/zcash/",
+    "https://pt.bsc.news/tokens/zcash",
+    "https://primexbt.one/news/zcash-drops-14-36-as-1-35-billion-leverage-flush-hits-zec-longs/"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  }
+}
