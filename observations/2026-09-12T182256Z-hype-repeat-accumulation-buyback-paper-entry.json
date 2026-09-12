@@ -1,0 +1,128 @@
+{
+  "timestamp_utc": "2026-09-12T18:22:56Z",
+  "type": "RESEARCH_OBSERVATION_AND_PAPER_ENTRY",
+  "execution_trigger": true,
+  "ecosystem": "Hyperliquid L1 / onchain perpetuals",
+  "regime_status": "QUALIFIED_REPEAT_ACCUMULATION_AND_BUYBACK_ACCELERATION_WITH_DILUTION_RISK",
+  "candidate": {
+    "asset": "HYPE",
+    "network": "Hyperliquid L1 native asset",
+    "contract": null,
+    "execution_mark_usd": 79.35,
+    "execution_mark_source": "CoinMarketCap HYPE/USD live spot",
+    "mark_source_note": "The configured canonical source is CoinGecko, but its web page/cache returned internally contradictory stale data during this run while fresh CoinMarketCap pages and other current sources clustered near $79; the portfolio rules permit an independently verifiable substitute when CoinGecko is unavailable/unreliable."
+  },
+  "threshold_reason": [
+    "Wallet 0x3305 has extended its repeat-buy sequence from the 194,210 HYPE observed in the Sep. 10 research record to 358,609 HYPE (~$28.8M) over 15 days. This adds roughly 164,399 HYPE of subsequent accumulation rather than merely repeating the old signal.",
+    "A separate address attributed by onchain analysts to Nasdaq-listed Hyperliquid Strategies accumulated and staked another 365,000 HYPE (~$29.65M) in 24h; over 15 days it reportedly accumulated/staked 3.029M HYPE (~$252M) at an average ~$83.40.",
+    "The fee-funded Assistance Fund reportedly bought and burned 32,770 HYPE (~$2.65M) in the latest 24h at an average $81.01, versus 9,730 HYPE (~$829.5K) in a Sep. 6 comparison, materially accelerating direct token value capture.",
+    "Hyperliquid still leads onchain perps with about $8.729B 24h volume and $13.975B open interest. OI is modestly below the Sep. 10 checkpoint rather than accelerating, so this is a persistence/value-capture confirmation, not a fresh leverage-volume breakout.",
+    "HYPE is around $79.35, below the prior Sep. 10 signal price of $84.02 and about 11% below its Sep. 6 ATH, so this paper entry is prospective at the current observable mark rather than taking credit for the earlier rally."
+  ],
+  "why_flows_appear_financially_substantive": {
+    "classification": "QUALIFIED_DIRECTIONAL_ACCUMULATION_AND_FEE_FUNDED_VALUE_CAPTURE",
+    "evidence": [
+      "0x3305 is repeatedly buying spot HYPE over 15 days rather than farming a points/quest loop.",
+      "The suspected Hyperliquid Strategies wallet is accumulating and staking HYPE with treasury capital; it is treated as a separate institutional capital source, not as a selective smart wallet.",
+      "Assistance Fund purchases are financed by protocol trading fees and permanently burn HYPE, creating auditable direct value capture.",
+      "This trigger does not rely on referral programs, airdrops, trading rewards, or HIP-3 builder incentives."
+    ]
+  },
+  "leadership_rotation": {
+    "classification": "HYPE_CORE_PERPS_LEADERSHIP_PERSISTS_WITH_STRONGER_VALUE_CAPTURE_CONFIRMATION",
+    "evidence": "The prior Sep. 10 HYPE record established multi-wallet convergence and near-record capital stock. The new evidence is persistence: one repeat accumulator continued buying for five more days, a separate public-company treasury continued accumulating/staking, and the fee-funded burn rate accelerated while Hyperliquid retained the largest onchain perp OI."
+  },
+  "wallet_quality": {
+    "score": "MEDIUM_HIGH_WITH_REPEAT_BUYING_AND_PARTIAL_INDEPENDENCE",
+    "new_evidence": {
+      "0x3305_total_hype_after_15d": 358609,
+      "0x3305_value_usd_approx": 28800000,
+      "prior_0x3305_hype_after_10d": 194210,
+      "incremental_hype_since_prior_record_approx": 164399,
+      "suspected_hyperliquid_strategies_latest_hype": 365000,
+      "suspected_hyperliquid_strategies_15d_hype": 3029000,
+      "suspected_hyperliquid_strategies_15d_value_usd_approx": 252000000,
+      "suspected_hyperliquid_strategies_avg_price_usd": 83.4
+    },
+    "independence_check": "0x3305 and the treasury-attributed address are distinct capital paths. Prior records also identified 0x8e48 and 0x6436 with different acquisition routes. Beneficial-owner independence among all private wallets is not provable from public data, and the public-company treasury is not credited as a historically selective wallet.",
+    "historical_skill": "No maximum smart-wallet score: persistent HYPE accumulation is established, but cross-asset historical hit rates remain unverified."
+  },
+  "narrative_news": {
+    "quality": "HIGH_PROTOCOL_ECONOMICS_LOW_PROMOTION_DEPENDENCE",
+    "evidence": [
+      "Fresh onchain reporting shows a materially larger daily HYPE buyback/burn.",
+      "Institutional access remains broader after HYPE's Sep. 1 addition to Hashdex NCIQ, but that older ETF inclusion is background rather than the trigger for this run.",
+      "Current signal does not require influencer promotion or social-volume claims."
+    ]
+  },
+  "rwa_context": {
+    "classification": "NOT_PRIMARY_TRIGGER",
+    "note": "Hyperliquid has meaningful HIP-3 RWA/perpetual markets and tokenized-stock spot infrastructure, but this paper entry is not based on RWA issuance/AUM. It is based on core perp capital stock, repeat spot accumulation, staking, and fee-funded HYPE burns."
+  },
+  "liquidity_executability": {
+    "result": "PASS_TIER_A",
+    "evidence": "HYPE is a large-cap asset with broad CEX/DEX coverage; DefiLlama's current token rating shows 3 of 4 top-tier exchange coverage and hundreds of millions of average spot volume. A 2.5% paper-NAV starter is negligible relative to executable depth.",
+    "simulated_one_way_cost_rate": 0.0015
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_MAJOR_DILUTION_UNLOCK_CAVEAT",
+    "sellability_honeypot": "PASS; native Hyperliquid asset with deep markets.",
+    "dangerous_permissions": "Not applicable in the same form as a newly deployed microcap token.",
+    "max_supply": 1000000000,
+    "low_float_fdv_caveat": "DefiLlama UTR reports market-cap/FDV near 0.23 and a high annualized inflation estimate; future emissions are a material supply-overhang risk.",
+    "unlock_schedule": "Tokenomist, updated Sep. 12, lists the next core-contributor unlock for Oct. 6, 2026. Other vesting trackers use different release definitions and show a Sep. 29 broader scheduled release, so unlock-date/amount definitions are treated as an explicit data-source uncertainty.",
+    "wash_bot_creator_dump": "No new evidence in this run triggers a hard rejection for wash trading, linked-wallet control, creator dumping, or sellability risk in HYPE itself.",
+    "gate_override": "No opportunity score is used to waive the dilution risk; starter sizing remains 2.5% rather than scaling."
+  },
+  "major_uncertainties": [
+    "The private whale addresses' beneficial-owner independence cannot be proven.",
+    "The suspected Hyperliquid Strategies attribution comes from onchain analysts rather than a wallet attestation by the company.",
+    "Perp open interest is still highly leveraged and can unwind abruptly.",
+    "The low circulating/fully diluted ratio and future unlocks can overwhelm buybacks if claims/sales accelerate.",
+    "Public unlock trackers disagree on schedule definitions; Tokenomist's current core-contributor date is Oct. 6 while another tracker shows a Sep. 29 broader release.",
+    "CoinGecko's web cache was internally inconsistent during this run, so CoinMarketCap was used as the permitted independent execution-mark substitute."
+  ],
+  "why_signal_matters_now": "The Sep. 10 HYPE upgrade was already strong but still depended on whether repeat accumulation and value capture would persist. Five more days of buying by 0x3305, a separate treasury accumulator staking fresh HYPE, and a roughly threefold increase in the observed daily fee-funded burn versus Sep. 6 supply that missing persistence confirmation. The current price is below the prior signal rather than extended above it, so the paper portfolio can test the thesis prospectively without backdating.",
+  "paper_trade": {
+    "trade_id": "BUY-HYPE-20260912-182256Z",
+    "action": "BUY",
+    "gross_usd": 247.1209068773271,
+    "quantity": 3.114315146532163,
+    "mark_price_usd": 79.35,
+    "transaction_cost_rate": 0.0015,
+    "transaction_cost_usd": 0.37068136031599064,
+    "all_in_average_cost_usd": 79.469025,
+    "cash_after_usd": 3504.476073292041,
+    "portfolio_nav_pre_trade_usd": 9884.836275093083,
+    "portfolio_nav_after_usd": 9884.465593732766,
+    "passive_benchmark_nav_usd": 9889.047469421243,
+    "alpha_vs_benchmark_usd": -4.58187568847643,
+    "alpha_vs_benchmark_bps": -4.6332831373741,
+    "sizing": "2.5% of pre-trade NAV starter; no scaling because dilution/unlock risk and wallet-independence uncertainty remain."
+  },
+  "existing_positions_action": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD",
+    "SUI": "HOLD",
+    "BNB": "HOLD",
+    "UNI": "HOLD; current protocol thesis remains intact, but no independent confirmation sufficient for an add in this run."
+  },
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://coinmarketcap.com/currencies/hyperliquid/hype/usd/",
+    "https://defillama.com/perps",
+    "https://defillama.com/universal-token-rating/token/hyperliquid",
+    "https://www.kucoin.com/news/flash/hyperliquid-repurchases-and-burns-32-770-hype-in-24-hours-total-burned-reaches-4-86",
+    "https://coinfomania.com/whale-0x3305-accumulates-358609-hype-tokens-worth-28-8m/",
+    "https://www.kucoin.com/news/flash/suspected-hyperliquid-strategies-inc-address-stakes-365-000-hype-in-24-hours",
+    "https://tokenomist.ai/hyperliquid/updates",
+    "https://hashdex.com/en-EU/insights/hashdex-announces-addition-of-hype-to-nciq-multi-asset-spot-etf"
+  ]
+}
