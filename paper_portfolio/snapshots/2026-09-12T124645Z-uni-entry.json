@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-09-12T12:46:45Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "marks_usd": {
+    "BTC": 77263.0,
+    "ETH": 2543.73,
+    "SOL": 101.60,
+    "SUI": 0.73,
+    "BNB": 724.72,
+    "UNI": 6.45
+  },
+  "mark_sources": {
+    "BTC": "current liquid-market reference used for portfolio mark; no trade",
+    "ETH": "current DefiLlama/Ethereum market reference; no trade",
+    "SOL": "current DefiLlama/Solana market reference; no trade",
+    "SUI": "current DefiLlama/Sui market reference; no trade",
+    "BNB": "current DefiLlama/BSC market reference; no trade",
+    "UNI": "CoinGecko UNI/USD volume-weighted spot across 145 exchanges / 334 markets"
+  },
+  "positions": {
+    "BTC": {"quantity": 0.025297677774, "market_value_usd": 1954.574477852562},
+    "ETH": {"quantity": 0.798766704209, "market_value_usd": 2031.8468284975595},
+    "SOL": {"quantity": 9.673050880248, "market_value_usd": 982.7819694331968},
+    "SUI": {"quantity": 616.067028092657, "market_value_usd": 449.7289305076396},
+    "BNB": {"quantity": 0.672675904749, "market_value_usd": 487.50168168969526},
+    "UNI": {"quantity": 38.397030573568, "market_value_usd": 247.660847199516}
+  },
+  "cash_usd": 3751.967661529684,
+  "portfolio_nav_usd": 9906.062396709853,
+  "portfolio_return_since_start_pct": -0.9393760329014733,
+  "passive_benchmark_nav_usd": 9906.433887980653,
+  "passive_benchmark_return_since_start_pct": -0.9356611201934761,
+  "alpha_vs_benchmark_usd": -0.3714912708,
+  "alpha_vs_benchmark_bps": -0.375,
+  "note": "Immediate post-trade alpha reflects only the modeled 0.15% UNI execution cost because UNI was marked at the decision/fill price. No framework-generated trades existed before this entry."
+}
