@@ -1,0 +1,55 @@
+{
+  "timestamp_utc": "2026-09-12T22:46:43Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 3504.476073292041,
+  "marks_usd": {
+    "BTC": 77141.96,
+    "ETH": 2511.23,
+    "SOL": 101.45,
+    "SUI": 0.7222,
+    "BNB": 727.70,
+    "UNI": 6.00,
+    "HYPE": 79.78
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko BTC/USD current spot snapshot",
+    "ETH": "CoinGecko ETH/USD current spot snapshot",
+    "SOL": "CoinGecko SOL/USD current spot snapshot",
+    "SUI": "CoinGecko SUI/USD current spot snapshot",
+    "BNB": "CoinGecko BNB/USD current spot snapshot",
+    "UNI": "CoinGecko UNI/USD current spot snapshot",
+    "HYPE": "CoinGecko HYPE/USD current spot snapshot"
+  },
+  "position_values_usd": {
+    "BTC": 1951.5124469347973,
+    "ETH": 2005.886910610767,
+    "SOL": 981.3310118011597,
+    "SUI": 444.9236076885168,
+    "BNB": 489.5062558858473,
+    "UNI": 230.38218344140802,
+    "HYPE": 248.46006239033596
+  },
+  "portfolio_nav_usd": 9856.478552044873,
+  "passive_benchmark_nav_usd": 9873.160232921087,
+  "alpha_vs_benchmark_usd": -16.68168087621416,
+  "alpha_vs_benchmark_bps": -16.89598920980815,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD",
+    "SUI": "HOLD",
+    "BNB": "HOLD",
+    "UNI": "HOLD_NO_ADD",
+    "HYPE": "HOLD_NO_ADD"
+  },
+  "regime_notes": [
+    "Solana spot DEX activity is elevated and tokenized-equity secondary trading is financially substantive, but SOL itself has not confirmed the RWA/DEX acceleration with price leadership; no add.",
+    "Raydium DEX throughput is accelerating without reported token incentives, but RAY has retraced and the previously observed spot-distribution concern has not been independently reversed; no new candidate qualification.",
+    "Uniswap throughput remains near the elevated level underlying the UNI starter thesis, but UNI has retreated to about $6.00 after the entry's initial price-confirmation leg. No hard structural failure or sufficiently persistent distribution signal is present, so hold rather than add or trim.",
+    "Hyperliquid remains highly liquid with the prior repeat-accumulation/value-capture thesis intact, but current perp activity is not a fresh acceleration and HYPE is roughly flat to the paper entry; hold without scaling.",
+    "BSC, Sui, Monad, Arbitrum, and Robinhood Chain did not clear the full discretionary-flow plus structural/value-capture threshold in this run; Robinhood Chain activity remains discounted for subsidy/synthetic-volume contamination."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "notes": "Hourly prospective mark. No paper trade. Original state and immutable trade ledger left unchanged because no transaction occurred."
+}
