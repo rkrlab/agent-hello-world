@@ -3,7 +3,7 @@
   "initialized_at_utc": "2026-09-09T15:14:00Z",
   "base_currency": "USD",
   "starting_nav_usd": 10000.0,
-  "current_cash_usd": 4000.0,
+  "current_cash_usd": 3751.967661529684,
   "realized_pnl_usd": 0.0,
   "positions": {
     "BTC": {
@@ -40,10 +40,18 @@
       "starting_value_usd": 500.0,
       "initial_weight": 0.05,
       "price_source": "CoinGecko BNB/USD volume-weighted spot"
+    },
+    "UNI": {
+      "quantity": 38.397030573568,
+      "average_cost_usd": 6.459675,
+      "framework_entry_at_utc": "2026-09-12T12:46:45Z",
+      "gross_entry_value_usd": 247.660847199516,
+      "transaction_cost_usd": 0.371491270799,
+      "price_source": "CoinGecko UNI/USD volume-weighted spot"
     }
   },
-  "last_trade_id": null,
-  "trade_count": 0,
+  "last_trade_id": "BUY-UNI-20260912-124645Z",
+  "trade_count": 1,
   "benchmark": {
     "type": "passive_hold_opening_allocation",
     "starting_nav_usd": 10000.0,
@@ -59,6 +67,7 @@
   "notes": [
     "Opening positions are user-specified inventory, not framework-generated buys.",
     "Opening inventory carries no simulated transaction cost.",
-    "Future paper trades must be timestamped and logged prospectively."
+    "Future paper trades must be timestamped and logged prospectively.",
+    "UNI starter bought prospectively on 2026-09-12 after price confirmation of the cross-chain Uniswap regime thesis; 0.15% Tier A simulated execution cost applied."
   ]
 }
