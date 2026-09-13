@@ -1,0 +1,56 @@
+{
+  "timestamp_utc": "2026-09-13T00:19:39Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 3504.476073292041,
+  "marks_usd": {
+    "BTC": 77204.00,
+    "ETH": 2521.19,
+    "SOL": 101.52,
+    "SUI": 0.72,
+    "BNB": 726.82,
+    "UNI": 6.34,
+    "HYPE": 79.59
+  },
+  "mark_sources": {
+    "BTC": "DefiLlama Bitcoin chain live USD price snapshot",
+    "ETH": "DefiLlama Ethereum chain live USD price snapshot",
+    "SOL": "DefiLlama Solana chain live USD price snapshot",
+    "SUI": "DefiLlama Sui chain live USD price snapshot",
+    "BNB": "DefiLlama BSC chain live BNB/USD price snapshot",
+    "UNI": "DefiLlama Uniswap protocol live UNI/USD price snapshot",
+    "HYPE": "DefiLlama Hyperliquid protocol live HYPE/USD price snapshot"
+  },
+  "position_values_usd": {
+    "BTC": 1953.0819148638961,
+    "ETH": 2013.8426269846886,
+    "SOL": 982.008125362777,
+    "SUI": 443.568260226713,
+    "BNB": 488.9143010896682,
+    "UNI": 243.43717383642112,
+    "HYPE": 247.86834251249485
+  },
+  "portfolio_nav_usd": 9877.1968181687,
+  "passive_benchmark_nav_usd": 9881.415228527743,
+  "alpha_vs_benchmark_usd": -4.218410359042537,
+  "alpha_vs_benchmark_bps": -4.269034608386807,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD",
+    "SUI": "HOLD",
+    "BNB": "HOLD",
+    "UNI": "HOLD_NO_ADD",
+    "HYPE": "HOLD_NO_ADD"
+  },
+  "regime_notes": [
+    "Solana remains active on a weekly basis, but current 24-hour DEX throughput is slightly below the preceding-six-day average, stablecoin supply is approximately flat to down over seven days, and net bridge/inflow data are negative; no fresh SOL add signal.",
+    "BSC weekly DEX growth remains high but the current daily pace is well below the preceding-six-day average and previously identified volume-incentive contamination remains unresolved; no qualifying leadership signal.",
+    "Uniswap cross-chain throughput and fee-funded UNI value capture remain consistent with the existing starter thesis. UNI has recovered from the prior hourly mark but remains below the paper entry, and there is no new independent wallet-confirmation cohort or structural change; hold without adding.",
+    "Hyperliquid retains deep open interest and the repeat-accumulation/buyback thesis remains intact, but current perp and spot throughput are not a fresh acceleration. HYPE remains near the paper entry and dilution/unlock risk is unchanged; hold without adding.",
+    "Sui stablecoin supply continues to grow, but 24-hour DEX throughput is far below the preceding-six-day average; no add or rotation signal. Monad and Base likewise lack current DEX acceleration. Robinhood Chain remains discounted because gas subsidies and previously identified synthetic-volume risks contaminate raw user/volume measures.",
+    "RWA stocks remain largest on Ethereum and meaningful on BSC, Solana, Arbitrum, Monad, Robinhood Chain, and Base, but current RWA issuance/AUM figures do not by themselves establish new secondary-trading or collateral-utilization leadership. No new liquid token clears the combined utilization, value-capture, wallet-quality, and structural gates this run."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "notes": "Hourly prospective mark. No paper trade. Original state and immutable trade ledger left unchanged because no transaction occurred."
+}
