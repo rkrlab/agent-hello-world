@@ -3,7 +3,7 @@
   "initialized_at_utc": "2026-09-09T15:14:00Z",
   "base_currency": "USD",
   "starting_nav_usd": 10000.0,
-  "current_cash_usd": 3504.476073292041,
+  "current_cash_usd": 3257.737519195861,
   "realized_pnl_usd": 0.0,
   "positions": {
     "BTC": {
@@ -56,10 +56,18 @@
       "gross_entry_value_usd": 247.1209068773271,
       "transaction_cost_usd": 0.37068136031599064,
       "price_source": "CoinMarketCap HYPE/USD live spot (substituted because CoinGecko web cache was internally inconsistent during this run)"
+    },
+    "AERO": {
+      "quantity": 439.381667552024,
+      "average_cost_usd": 0.5615586,
+      "framework_entry_at_utc": "2026-09-13T10:17:08Z",
+      "gross_entry_value_usd": 245.87798116211263,
+      "transaction_cost_usd": 0.8605729340673942,
+      "price_source": "CoinGecko AERO/USD volume-weighted spot across 55 exchanges / 123 markets"
     }
   },
-  "last_trade_id": "BUY-HYPE-20260912-182256Z",
-  "trade_count": 2,
+  "last_trade_id": "BUY-AERO-20260913-101708Z",
+  "trade_count": 3,
   "benchmark": {
     "type": "passive_hold_opening_allocation",
     "starting_nav_usd": 10000.0,
@@ -77,6 +85,7 @@
     "Opening inventory carries no simulated transaction cost.",
     "Future paper trades must be timestamped and logged prospectively.",
     "UNI starter bought prospectively on 2026-09-12 after price confirmation of the cross-chain Uniswap regime thesis; 0.15% Tier A simulated execution cost applied.",
-    "HYPE starter bought prospectively on 2026-09-12 after repeat-wallet accumulation persisted, a separate treasury accumulator continued staking, and fee-funded HYPE buyback/burn accelerated; 0.15% Tier A simulated execution cost applied. HYPE dilution/unlock risk remains a major caveat."
+    "HYPE starter bought prospectively on 2026-09-12 after repeat-wallet accumulation persisted, a separate treasury accumulator continued staking, and fee-funded HYPE buyback/burn accelerated; 0.15% Tier A simulated execution cost applied. HYPE dilution/unlock risk remains a major caveat.",
+    "AERO starter bought prospectively on 2026-09-13 after Base tokenized-stock secondary trading reached a new $100M daily DEX record, Aerodrome captured 76% of the preceding 30-day stock-token DEX volume, smart-money AERO balances were reported up 74% over 30 days, and veAERO directly captures exchange revenue. 0.35% Tier B simulated execution cost applied because AERO is a liquid mid-cap; weekly emissions/governance and wallet-independence remain caveats."
   ]
 }
