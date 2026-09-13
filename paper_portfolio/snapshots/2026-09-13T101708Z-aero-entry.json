@@ -1,0 +1,83 @@
+{
+  "timestamp_utc": "2026-09-13T10:17:08Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_pre_trade_usd": 3504.476073292041,
+  "marks_usd": {
+    "BTC": 76916.0,
+    "ETH": 2510.92,
+    "SOL": 100.44,
+    "SUI": 0.71,
+    "BNB": 720.47,
+    "UNI": 6.33,
+    "HYPE": 77.88,
+    "AERO": 0.5596
+  },
+  "mark_sources": {
+    "BTC": "DefiLlama Bitcoin chain page BTC/USD price snapshot crawled 2026-09-13",
+    "ETH": "DefiLlama Ethereum chain page ETH/USD price snapshot crawled 2026-09-13",
+    "SOL": "DefiLlama Solana chain page SOL/USD price snapshot crawled 2026-09-13",
+    "SUI": "DefiLlama Sui chain page SUI/USD price snapshot crawled 2026-09-13",
+    "BNB": "DefiLlama BSC chain page BNB/USD price snapshot crawled 2026-09-13",
+    "UNI": "DefiLlama Uniswap protocol/token page UNI/USD price snapshot crawled 2026-09-13",
+    "HYPE": "DefiLlama Hyperliquid protocol/token page HYPE/USD price snapshot crawled 2026-09-13",
+    "AERO": "CoinGecko AERO/USD volume-weighted spot across 55 exchanges / 123 markets"
+  },
+  "pre_trade_position_values_usd": {
+    "BTC": 1945.796183664984,
+    "ETH": 2005.6392929324622,
+    "SOL": 971.5612304121091,
+    "SUI": 437.4075899457864,
+    "BNB": 484.642809094512,
+    "UNI": 243.05320353068547,
+    "HYPE": 242.54286361192482
+  },
+  "pre_trade_nav_usd": 9835.119246484504,
+  "passive_benchmark_nav_usd": 9845.047106049853,
+  "pre_trade_alpha_vs_benchmark_usd": -9.927859565348626,
+  "pre_trade_alpha_vs_benchmark_bps": -10.08411585887492,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD_CURRENT_DEX_RUN_RATE_BELOW_TRAILING_WEEK_AND_STABLECOINS_CONTRACTING",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_GROWTH_NOT_CONFIRMED_BY_CURRENT_TRADING_OR_NET_FLOWS",
+    "BNB": "HOLD_NO_ADD_CURRENT_DEX_RUN_RATE_BELOW_TRAILING_WEEK_AND_STABLECOINS_FLAT_DOWN",
+    "UNI": "HOLD_NO_ADD_CURRENT_24H_PROTOCOL_THROUGHPUT_WELL_BELOW_ENTRY_ACCELERATION_BUT_MONTHLY_LEADERSHIP_AND_TOKENIZED_STOCK_USAGE_REMAIN",
+    "HYPE": "HOLD_NO_ADD_PERP_VOLUME_COOLING_BUT_OI_AND_PRIOR_ACCUMULATION_VALUE_CAPTURE_REMAIN",
+    "AERO": "BUY_2_5_PERCENT_STARTER_BASE_TOKENIZED_STOCK_SECONDARY_TRADING_RECORD_PLUS_VENUE_DOMINANCE_SMART_MONEY_AND_DIRECT_FEE_CAPTURE"
+  },
+  "regime_notes": [
+    "Fresh evidence published after the prior hourly mark resolves the missing RWA-utilization leg: Base tokenized stocks set a $100M daily DEX-volume record and reached $730.9M over 30 days. Aerodrome handled $557.1M (76%) and Uniswap v4 $139.3M. These are secondary-market swaps, not issuance/AUM.",
+    "Base overall DEX volume is $506.18M/24h versus $6.718B/7d, so the chain as a whole is not a broad fresh spot-DEX acceleration. The qualifying migration is narrower and financially substantive: tokenized-equity secondary trading.",
+    "Aerodrome currently shows $9.24M 7d holder revenue, $6.95M 7d earnings after incentives, and zero 24h incentives. The veAERO model distributes exchange revenue to locked AERO voters, giving the token direct but lock-dependent value capture.",
+    "Nansen-attributed reporting dated Sep. 8 says smart-money AERO balances rose from 4.26M to 7.26M tokens (+74%) over 30 days as new wallets entered. Funding-lineage and beneficial-owner independence were not available, so wallet quality is medium rather than high.",
+    "AERO is $0.5596, +2.4% over 7d and +38.3% over 30d. Its 24h token turnover is only ~$15.2M and down 77.4% from the prior day, so asset-level momentum is not strong enough to scale beyond a starter.",
+    "Structural gate passes with caveats. Official Aerodrome docs state weekly AERO emissions are around 10.9% annualized and expose governance/minter architecture; security docs list emergency council and multisigs. Automated/current sources find no honeypot, blacklist, transfer tax, or pause, and AERO has broad venue liquidity. Dilution/governance are material but not an arbitrary-mint or sellability hard failure based on current evidence.",
+    "UNI remains HOLD_NO_ADD: Uniswap still leads monthly DEX volume (> $70B) and participates in Base tokenized equities, but current aggregate 24h volume is ~$2.0B, with ~$1.24B on Robinhood Chain, substantially weaker than the entry acceleration. No structural/value-capture break warrants a trim yet.",
+    "HYPE remains HOLD_NO_ADD: current perp volume is ~$1.955B/24h versus $39.588B/7d, while OI remains high at ~$14.238B and HYPE ~$77.88 versus the $79.35 entry. No new hard risk or wallet-distribution reversal surfaced."
+  ],
+  "paper_trade": {
+    "trade_id": "BUY-AERO-20260913-101708Z",
+    "timestamp_utc": "2026-09-13T10:17:08Z",
+    "action": "BUY",
+    "asset": "AERO",
+    "contract_address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+    "quantity": 439.381667552024,
+    "mark_price_usd": 0.5596,
+    "price_source": "CoinGecko AERO/USD volume-weighted spot across 55 exchanges / 123 markets",
+    "gross_usd": 245.87798116211263,
+    "transaction_cost_rate": 0.0035,
+    "transaction_cost_usd": 0.8605729340673942,
+    "all_in_average_cost_usd": 0.5615586,
+    "cash_after_usd": 3257.737519195861,
+    "portfolio_nav_after_usd": 9834.258673550437,
+    "passive_benchmark_nav_usd": 9845.047106049853,
+    "alpha_vs_benchmark_usd": -10.788432499415649,
+    "alpha_vs_benchmark_bps": -10.958233498736814
+  },
+  "post_trade_cash_usd": 3257.737519195861,
+  "post_trade_nav_usd": 9834.258673550437,
+  "post_trade_alpha_vs_benchmark_usd": -10.788432499415649,
+  "post_trade_alpha_vs_benchmark_bps": -10.958233498736814,
+  "alert_threshold_crossed": true,
+  "notes": "Prospective entry mark. State and immutable trade ledger updated after the AERO starter; no real trade."
+}
