@@ -1,0 +1,143 @@
+{
+  "timestamp_utc": "2026-09-13T10:17:08Z",
+  "type": "RESEARCH_OBSERVATION_AND_PAPER_ENTRY",
+  "execution_trigger": true,
+  "ecosystem": "Base tokenized-equity secondary markets / Aerodrome",
+  "regime_status": "QUALIFIED_RWA_SECONDARY_TRADING_BREAKOUT_WITH_AERODROME_VENUE_LEADERSHIP",
+  "candidate": {
+    "asset": "AERO",
+    "network": "Base",
+    "contract": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+    "execution_mark_usd": 0.5596,
+    "execution_mark_source": "CoinGecko AERO/USD volume-weighted spot across 55 exchanges / 123 markets"
+  },
+  "threshold_reason": [
+    "Base tokenized stocks reached a new $100M daily DEX-volume record and $730.9M over the preceding 30 days; this is measured secondary trading, not tokenized-asset issuance or AUM.",
+    "Aerodrome processed $557.1M of that 30-day tokenized-stock volume (76%), versus $139.3M for Uniswap v4, establishing a clear venue leader inside the new RWA trading regime.",
+    "Aerodrome's economic model routes exchange revenue to veAERO voters. Current DefiLlama data show $9.24M of 7d holder revenue and $6.95M of 7d earnings after incentives, with $0 of 24h incentives, so the observed economics are not currently explained by liquidity-mining spend alone.",
+    "Nansen-attributed data reported on Sep. 8 showed smart-money AERO balances rising 74% over 30 days, from 4.26M to 7.26M AERO, alongside new wallets.",
+    "AERO has held a +38.3% 30-day gain while the new tokenized-equity usage catalyst has persisted long enough to set another volume record. Current 7-day price performance is only +2.4%, avoiding a chase of the Sep. 8 spike."
+  ],
+  "rwa_context": {
+    "issuance_aum": "Base RWA Active Mcap is about $178.49M in current DefiLlama chain data. This is an asset-stock metric and is not treated as the trigger.",
+    "secondary_trading": "QUALIFYING: Base tokenized-stock DEX volume reached a $100M/day record and $730.9M/30d; Aerodrome handled $557.1M/30d.",
+    "collateral_utilization": "No incremental collateral-utilization figure is used as a trigger in this run.",
+    "classification": "SECONDARY_TRADING_USAGE_CONFIRMED; ISSUANCE_AUM_SEPARATED"
+  },
+  "why_flows_appear_financially_substantive": {
+    "classification": "QUALIFIED_ACTUAL_SECONDARY_MARKET_USAGE_WITH_PROTOCOL_FEE_CAPTURE",
+    "evidence": [
+      "The $100M daily figure represents completed tokenized-stock DEX swaps rather than deposited AUM or announced issuance.",
+      "Aerodrome receives swap fees from real trading; veAERO voters receive exchange revenue.",
+      "Current DefiLlama 24h incentives are zero, while 7d earnings remain strongly positive after incentives.",
+      "The trigger does not rely on an airdrop, quest, points program, referral reward, or trading rebate."
+    ],
+    "caveat": "Aerodrome's broader liquidity model uses scheduled AERO emissions and voting incentives. Those emissions help bootstrap liquidity, so protocol-wide activity cannot be classified as wholly incentive-free; the tokenized-stock secondary-volume record plus positive after-incentive economics are what clear the filter."
+  },
+  "leadership_rotation": {
+    "classification": "AERODROME_LEADS_BASE_TOKENIZED_EQUITY_EXECUTION",
+    "evidence": "Aerodrome's $557.1M 30d tokenized-stock volume is 76% of the measured Base total, roughly 4x Uniswap v4's $139.3M. This makes AERO the clearest directly value-capturing liquid-token exposure to this specific Base secondary-trading migration in the current scan."
+  },
+  "wallet_quality": {
+    "score": "MEDIUM",
+    "evidence": "Nansen-attributed reporting says smart-money balances increased from 4.26M to 7.26M AERO (+74%) over 30 days and fresh wallets entered.",
+    "independence_check": "No address-level funding-lineage reconstruction was available for the Nansen cohort, so apparently separate wallets are not assumed independent and the signal receives no high-confidence selective-wallet bonus.",
+    "protocol_wallet": "The Public Goods Fund's reported Sep. 10 purchase/max-lock of 171,000 AERO is treated as protocol-directed value support, not independent smart-money evidence."
+  },
+  "market_persistence": {
+    "price_usd": 0.5596,
+    "price_change_7d_pct": 2.4,
+    "price_change_30d_pct": 38.3,
+    "token_volume_24h_usd": 15192000,
+    "token_volume_day_over_day_pct": -77.4,
+    "interpretation": "Price/30d persistence supports the regime, but current token turnover has cooled sharply and 7d price leadership is modest. This caps sizing at a starter rather than a confirmation add."
+  },
+  "protocol_economics": {
+    "tvl_usd": 342090000,
+    "dex_volume_24h_usd": 168350000,
+    "dex_volume_7d_usd": 3129000000,
+    "dex_volume_30d_usd": 13814000000,
+    "holder_revenue_24h_usd": 104787,
+    "holder_revenue_7d_usd": 9240000,
+    "holder_revenue_30d_usd": 13450000,
+    "incentives_24h_usd": 0,
+    "incentives_7d_usd": 2290000,
+    "earnings_7d_usd": 6950000,
+    "note": "Current total Aerodrome DEX volume is below its trailing-week daily average; the fresh breakout is specific to tokenized stocks, not broad protocol throughput."
+  },
+  "narrative_news": {
+    "quality": "HIGH_INDEPENDENT_PRODUCT_USAGE_WITH_MODERATE_SOCIAL_REFLEXIVITY",
+    "evidence": [
+      "The catalyst is a measured new secondary-trading record rather than an announced roadmap.",
+      "Tokenized equities have broader institutional tailwinds, including Nasdaq's Sep. 10 $100M investment in Kraken parent Payward to deepen tokenized-equity infrastructure.",
+      "Social promotion around Base 'stonks' exists and is discounted; it is not used as confirmation."
+    ]
+  },
+  "liquidity_executability": {
+    "result": "PASS_TIER_B",
+    "evidence": "CoinGecko aggregates AERO across 55 exchanges and 123 markets with about $15.2M 24h token turnover; current market cap is about $553.5M. A ~$246 paper starter is negligible relative to market depth.",
+    "simulated_one_way_cost_rate": 0.0035
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_EMISSION_GOVERNANCE_AND_CONCENTRATION_CAVEATS",
+    "sellability_honeypot": "PASS: current security scans show no honeypot and broad exchange/DEX liquidity.",
+    "trading_permissions": "No blacklist, transfer pause, or transfer tax surfaced in the current scans.",
+    "mint_emissions": "CAUTION: AERO has a Minter and weekly emissions. Official docs describe current emissions near 10.9% annualized and a structured emissions system; this is treated as dilution/governance risk rather than evidence of arbitrary deployer minting.",
+    "governance_privileges": "CAUTION: official security docs list an Emergency Council and Foundation/Public Goods multisigs with protocol/gauge powers.",
+    "holder_concentration": "CAUTION: vote-escrow and protocol-controlled locks create headline concentration; current automated sources do not show a linked insider dumping cluster, but beneficial-owner concentration is not fully decomposed.",
+    "lp_control": "PASS for portfolio executability: AERO has multiple material pools and major CEX listings; exit is not dependent on a single creator-controlled LP.",
+    "wash_bot_creator_dump": "No new evidence in this run triggers a hard rejection for wash trading, bot domination, creator dumping, or suspicious transfers."
+  },
+  "major_uncertainties": [
+    "The $100M daily/$730.9M monthly tokenized-stock figures are reported from Token Terminal via fresh secondary coverage; exact pair-level wallet decomposition was not independently reconstructed.",
+    "Nansen smart-money aggregate data do not prove beneficial-owner independence or historical selectivity for each wallet.",
+    "Aerodrome's emission/vote-incentive system can subsidize liquidity; continued after-incentive earnings and stock-specific trading persistence are required.",
+    "AERO token volume is down sharply day-over-day and the token is not presently the strongest 7d price leader.",
+    "Base overall DEX volume is below its 7d daily average, so this is a narrow RWA-secondary-trading regime, not a broad Base-wide speculative breakout.",
+    "veAERO value capture requires locking AERO; liquid AERO holders do not automatically receive the fee stream."
+  ],
+  "why_signal_matters_now": "The immediately preceding hourly portfolio record explicitly withheld a new RWA trade because active RWA market-cap figures were issuance/asset-stock measures without secondary-use confirmation. Fresh evidence now supplies that missing dimension: actual Base tokenized-stock swaps reached a record $100M/day, Aerodrome owns 76% of the 30-day measured flow, and AERO has both prior smart-money accumulation and direct lock-based fee capture. This is a prospective state change after the previous no-trade decision, not a backdated claim on the earlier AERO rally.",
+  "paper_trade": {
+    "trade_id": "BUY-AERO-20260913-101708Z",
+    "action": "BUY",
+    "gross_usd": 245.87798116211263,
+    "quantity": 439.381667552024,
+    "mark_price_usd": 0.5596,
+    "transaction_cost_rate": 0.0035,
+    "transaction_cost_usd": 0.8605729340673942,
+    "all_in_average_cost_usd": 0.5615586,
+    "cash_after_usd": 3257.737519195861,
+    "portfolio_nav_pre_trade_usd": 9835.119246484504,
+    "portfolio_nav_after_usd": 9834.258673550437,
+    "passive_benchmark_nav_usd": 9845.047106049853,
+    "alpha_vs_benchmark_usd": -10.788432499415649,
+    "alpha_vs_benchmark_bps": -10.958233498736814,
+    "sizing": "2.5% of pre-trade NAV starter; no scaling because current token turnover has cooled, weekly emissions persist, and wallet-independence evidence is incomplete."
+  },
+  "existing_positions_action": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD",
+    "SUI": "HOLD_NO_ADD",
+    "BNB": "HOLD_NO_ADD",
+    "UNI": "HOLD_NO_ADD; 24h protocol throughput has weakened materially from entry but monthly leadership/value capture remain intact and no structural/distribution failure is confirmed.",
+    "HYPE": "HOLD_NO_ADD; perp volume has cooled but OI remains high and no new thesis-breaking distribution/structural evidence surfaced."
+  },
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://crypto.news/base-tokenized-stock-volume-reaches-100-million/",
+    "https://defillama.com/protocol/aerodrome",
+    "https://defillama.com/chain/base",
+    "https://www.coingecko.com/en/coins/aerodrome-finance",
+    "https://aerodrome.finance/docs",
+    "https://aerodrome.finance/security",
+    "https://www.gate.com/en-us/news/detail/smart-moneys-aero-holdings-surge-74-in-30-days-as-new-investors-enter-17865525",
+    "https://www.reuters.com/legal/government/nasdaq-invest-100-million-kraken-parent-deepen-tokenization-push-2026-09-10/"
+  ]
+}
