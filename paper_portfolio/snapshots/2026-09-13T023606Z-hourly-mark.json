@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-09-13T02:36:06Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 3504.476073292041,
+  "marks_usd": {
+    "BTC": 77241.94,
+    "ETH": 2524.38,
+    "SOL": 101.60,
+    "SUI": 0.7279,
+    "BNB": 727.31,
+    "UNI": 6.39,
+    "HYPE": 79.21
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko BTC/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "ETH": "CoinGecko ETH/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "SOL": "CoinGecko SOL/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "SUI": "CoinGecko SUI/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "BNB": "CoinGecko BNB/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "UNI": "CoinGecko UNI/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "HYPE": "CoinGecko HYPE/USD global volume-weighted spot snapshot crawled 2026-09-13"
+  },
+  "position_values_usd": {
+    "BTC": 1954.0417087586416,
+    "ETH": 2016.3906927711155,
+    "SOL": 982.7819694331968,
+    "SUI": 448.43518974864503,
+    "BNB": 489.24391228299515,
+    "UNI": 245.35702536509953,
+    "HYPE": 246.6849027568126
+  },
+  "portfolio_nav_usd": 9887.411474408547,
+  "passive_benchmark_nav_usd": 9890.893472994594,
+  "alpha_vs_benchmark_usd": -3.481998586046757,
+  "alpha_vs_benchmark_bps": -3.520408541001643,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD",
+    "SUI": "HOLD",
+    "BNB": "HOLD",
+    "UNI": "HOLD_NO_ADD",
+    "HYPE": "HOLD_NO_ADD"
+  },
+  "regime_notes": [
+    "No new ecosystem crossed the prospective threshold. Solana remains large but current 24-hour DEX volume (~$2.36B) is below the preceding-six-day average implied by ~$17.85B/7d; stablecoin supply is down ~0.9% over seven days and 24-hour inflows are negative. Raydium itself is still unusually active (~$571.7M/24h versus $2.60B/7d), but RAY price has cooled to ~$1.53 and the previously unresolved distribution/wallet-quality issue has not been repaired, so no paper entry.",
+    "BSC still shows strong weekly DEX growth (~51%), but current ~$1.09B/24h is well below the preceding-six-day pace and prior incentive/volume-contamination concerns remain. No qualifying BNB add or BSC ecosystem rotation signal.",
+    "Sui stablecoins are up ~9.1% over seven days, but current DEX volume (~$16.5M/24h) is far below the preceding-six-day average; this is retained-capital growth without current speculative turnover confirmation. SUI remains HOLD only.",
+    "Base and Arbitrum lack fresh spot acceleration. Arbitrum perps remain elevated weekly but the current 24-hour pace is also below the preceding-six-day average; Base stablecoins are nearly flat week over week. No new liquid token clears the combined leadership and value-capture gates.",
+    "Robinhood Chain stablecoins remain strong (+~8.9%/7d) and RWA active market cap is ~$274M, but current DEX volume (~$1.48B/24h) is below its preceding-six-day average and the chain still has synthetic-volume/gas-subsidy contamination. RWA issuance is therefore not treated as clean secondary-trading or collateral-utilization leadership.",
+    "Uniswap remains the clearest cross-chain infrastructure/value-capture thesis already owned: ~$4.59B/24h DEX volume versus ~$21.24B/7d, with non-Robinhood activity still substantial and incentives tiny relative to turnover. UNI is ~$6.39, modestly below the $6.45 paper entry; no new independent wallet-confirmation cohort or structural improvement justifies an add. New StablePair Hook and tokenized-stock usage are supportive but not a separate threshold event.",
+    "Hyperliquid remains structurally qualified and the repeat-accumulation/buyback thesis is intact, but current perps (~$4.51B/24h versus ~$40.18B/7d) are below the preceding-six-day pace and HYPE is ~$79.21, near the $79.35 paper entry. No new selective-wallet convergence or value-capture step-change was verified after the prior entry, so no add.",
+    "RWA active market-cap figures remain largest on Ethereum (~$14.5B), BSC (~$4.9B), Solana (~$2.46B), Avalanche (~$0.90B), Arbitrum (~$0.85B), Monad (~$0.40B), Robinhood Chain (~$0.27B), and Base (~$0.18B). These figures are issuance/AUM-style stock measures, not proof of secondary trading or collateral utilization. Current secondary tokenized-equity activity remains fragmented across Robinhood/Uniswap and Base venues; no new liquid crypto token gained enough direct value capture plus wallet-quality confirmation to warrant a trade this run."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "notes": "Hourly prospective mark. No paper trade. Original state and immutable trade ledger left unchanged because no transaction occurred."
+}
