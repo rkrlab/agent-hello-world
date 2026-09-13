@@ -1,0 +1,58 @@
+{
+  "timestamp_utc": "2026-09-13T09:34:29Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 3504.476073292041,
+  "marks_usd": {
+    "BTC": 76916.0,
+    "ETH": 2514.38,
+    "SOL": 101.28,
+    "SUI": 0.71,
+    "BNB": 722.82,
+    "UNI": 6.33,
+    "HYPE": 78.67
+  },
+  "mark_sources": {
+    "BTC": "DefiLlama Bitcoin chain page BTC/USD price snapshot crawled 2026-09-13",
+    "ETH": "DefiLlama Ethereum chain page ETH/USD price snapshot crawled 2026-09-13",
+    "SOL": "DefiLlama Solana chain page SOL/USD price snapshot crawled 2026-09-13",
+    "SUI": "DefiLlama Sui chain page SUI/USD price snapshot crawled 2026-09-13",
+    "BNB": "DefiLlama BSC chain page BNB/USD price snapshot crawled 2026-09-13",
+    "UNI": "DefiLlama Uniswap protocol/token page UNI/USD price snapshot crawled 2026-09-13",
+    "HYPE": "DefiLlama Hyperliquid protocol/token page HYPE/USD price snapshot crawled 2026-09-13"
+  },
+  "position_values_usd": {
+    "BTC": 1945.796183664984,
+    "ETH": 2008.4030257290256,
+    "SOL": 979.6865931515175,
+    "SUI": 437.4075899457864,
+    "BNB": 486.2235974706722,
+    "UNI": 243.05320353068547,
+    "HYPE": 245.00317257768526
+  },
+  "portfolio_nav_usd": 9850.049439362398,
+  "passive_benchmark_nav_usd": 9857.516989961987,
+  "alpha_vs_benchmark_usd": -7.467550599589231,
+  "alpha_vs_benchmark_bps": -7.5754884391206385,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD_CURRENT_DEX_RUN_RATE_BELOW_TRAILING_WEEK_AND_STABLECOINS_CONTRACTING",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_GROWTH_NOT_CONFIRMED_BY_CURRENT_TRADING_OR_NET_FLOWS",
+    "BNB": "HOLD_NO_ADD_RWA_ASSET_STOCK_NOT_CONFIRMED_BY_CURRENT_SECONDARY_TRADING_ACCELERATION",
+    "UNI": "HOLD_NO_ADD_PROTOCOL_THROUGHPUT_REVERSED_FROM_ENTRY_ACCELERATION_BUT_NO_THESIS_BREAK",
+    "HYPE": "HOLD_NO_ADD_PERP_VOLUME_COOLING_BUT_OI_AND_VALUE_CAPTURE_REMAIN_INTACT"
+  },
+  "regime_notes": [
+    "No ecosystem crossed a fresh prospective paper-trade threshold. Solana remains highly active at about $2.35B DEX volume/24h versus $17.85B/7d, but the latest daily run rate is below the trailing-week average, stablecoin supply is about -0.94% over seven days, and 24h net inflows are only about +$9M. This is ongoing velocity rather than a new retained-capital migration signal.",
+    "BSC, Base, Arbitrum, Avalanche and Sui all fail the fresh-acceleration test on current spot DEX throughput. Sui stablecoins remain a constructive outlier at roughly +8.8% over seven days, but its current DEX volume (~$12M/24h versus ~$283M/7d) and negligible net inflows do not confirm discretionary speculative migration. Existing SUI is therefore HOLD with no add.",
+    "Monad is the standout raw anomaly: perp volume is about $372M/24h versus $926M/7d, roughly 2.8x the preceding-six-day daily pace, with Perpl responsible for most of the surge (~$296M/24h). The framework rejects this as a qualified signal because Perpl is actively running its Purple Summer mPoints/reward campaign with weekly trading rewards/referrals and a large MON reward pool. Volume is therefore incentive-contaminated. MON also carries substantial low-float/FDV dilution risk.",
+    "Robinhood Chain retains strong stablecoin growth (~+8.2% over seven days) and large nominal DEX turnover (~$1.35B/24h), but current DEX pace is below its trailing-week average, net inflows are negative (~-$14M/24h), and prior synthetic-volume/maker contamination remains unresolved. No asset is promoted from this surface.",
+    "Uniswap has materially cooled from the condition that justified the UNI starter: aggregate DEX volume is now about $2.0B/24h, with roughly $1.24B coming from Robinhood Chain, versus roughly $4.59B/24h at the qualifying alert. UNI is about $6.33 versus the $6.45 paper mark. However, no hard structural failure, verified whale-distribution reversal, or invalidation of the protocol-fee-to-UNI-burn mechanism surfaced. The position remains HOLD_NO_ADD rather than being trimmed.",
+    "Hyperliquid perp volume has cooled sharply to about $1.96B/24h versus $39.59B/7d, while open interest remains high near $14.24B and fee/holder revenue remains substantial (~$733K fees and ~$584K holder revenue over 24h) with zero protocol incentives reported. HYPE is about $78.67 versus the $79.35 paper mark. No sufficiently fresh independent-wallet convergence or structural break was verified, so HYPE remains HOLD_NO_ADD; dilution/unlock risk remains a major caveat.",
+    "RWA asset stocks are large but do not create a new direct-token trade. Current active RWA market-cap figures are roughly Ethereum $14.5B, BSC $4.88B, Solana $2.45B, Avalanche $0.90B, Arbitrum $0.85B, Monad $0.40B, Robinhood Chain $0.27B and Base $0.18B. These are issuance/asset-stock measures, not secondary trading or collateral-utilization evidence. Current chain trading and flow data do not provide the additional secondary-use plus direct-token-value-capture confirmation required for a new paper position.",
+    "Portfolio NAV is approximately $9,850.05 versus passive benchmark $9,857.52, trailing by about $7.47 or 7.58 bps. The deterioration versus the prior mark is mostly market movement in the two new speculative positions plus ordinary opening-inventory beta; neither UNI nor HYPE has crossed a thesis-risk threshold that justifies a trim or exit. No paper trade is justified, and state.json plus the immutable trade ledger remain unchanged."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "notes": "Hourly prospective mark. No qualifying threshold, material thesis break, or paper trade. State and immutable trade ledger left unchanged."
+}
