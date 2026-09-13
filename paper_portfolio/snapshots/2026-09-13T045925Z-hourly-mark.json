@@ -1,0 +1,57 @@
+{
+  "timestamp_utc": "2026-09-13T04:59:25Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 3504.476073292041,
+  "marks_usd": {
+    "BTC": 77220.69,
+    "ETH": 2520.35,
+    "SOL": 101.60,
+    "SUI": 0.7230,
+    "BNB": 727.31,
+    "UNI": 6.42,
+    "HYPE": 79.06
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko BTC/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "ETH": "CoinGecko ETH/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "SOL": "CoinGecko SOL/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "SUI": "CoinGecko SUI/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "BNB": "CoinGecko BNB/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "UNI": "CoinGecko UNI/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "HYPE": "CoinGecko HYPE/USD global volume-weighted spot snapshot crawled 2026-09-13"
+  },
+  "position_values_usd": {
+    "BTC": 1953.5041331059442,
+    "ETH": 2013.171662953153,
+    "SOL": 982.7819694331968,
+    "SUI": 445.416461310991,
+    "BNB": 489.24391228299515,
+    "UNI": 246.50893628230656,
+    "HYPE": 246.2177554848328
+  },
+  "portfolio_nav_usd": 9881.320904145461,
+  "passive_benchmark_nav_usd": 9884.11813908628,
+  "alpha_vs_benchmark_usd": -2.7972349408191803,
+  "alpha_vs_benchmark_bps": -2.8300298534045254,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD",
+    "SUI": "HOLD",
+    "BNB": "HOLD",
+    "UNI": "HOLD_NO_ADD_WATCH_PERSISTENCE",
+    "HYPE": "HOLD_NO_ADD_WATCH_ACTIVITY"
+  },
+  "regime_notes": [
+    "No ecosystem crossed a fresh prospective trade threshold. Major-chain spot DEX activity remains below recent run-rate averages: Solana ~$2.36B/24h versus $17.85B/7d, BSC ~$0.77B versus $10.30B/7d, Base ~$0.50B versus $6.72B/7d, Arbitrum ~$0.064B versus $1.20B/7d, and Sui ~$0.015B versus $0.283B/7d. Solana stablecoin supply is -0.93% over seven days; BSC is -0.15%; Base is +0.96%; Arbitrum +2.83%; Sui +8.87%. The strongest retained-capital growth is not being confirmed by fresh speculative velocity.",
+    "Uniswap remains below the acceleration regime that triggered the UNI starter. Aggregate DEX volume is about $2.0B/24h versus $21.26B/7d, with Robinhood Chain about $1.24B and non-Robinhood volume about $0.76B. Active addresses are ~469,939 and transactions ~5.45M/24h, both below the prior acceleration snapshot. UNI is ~$6.42 versus the $6.45 entry. No hard structural failure, value-capture break, or verified selective-wallet distribution reversal surfaced, so the paper position remains HOLD_NO_ADD rather than being trimmed on a single weak persistence window.",
+    "Hyperliquid short-term activity is also weak relative to its trailing week: perp volume ~$1.96B/24h versus $39.59B/7d and fees ~$0.73M/24h versus $13.14M/7d. Open interest remains high near $14.24B, HYPE is ~$79.06 versus the $79.35 entry, and fresh reporting continues to describe repeat whale accumulation rather than a verified distribution reversal. The Assistance Fund/value-capture mechanism remains intact. HOLD_NO_ADD; require renewed activity or another independent accumulation confirmation before scaling.",
+    "RWA issuance continues to expand, but issuance/AUM is not being mistaken for executable secondary demand. RWA.xyz shows about $39.1B distributed RWA value across networks and ~$15.8B in tokenized U.S. Treasuries, while DefiLlama active RWA market caps include ~$2.45B on Solana, ~$4.88B on BSC, ~$0.85B on Arbitrum, ~$0.18B on Base and ~$0.025B on Sui. None of those balances produced a new chain-specific secondary-trading/collateral-utilization plus direct-token-value-capture signal this run. Robinhood tokenized-equity activity remains discounted because prior synthetic-volume/gas-subsidy contamination is unresolved.",
+    "RWA utilization on Hyperliquid remains strategically important, but current total Hyperliquid perp throughput is decelerating rather than reaccelerating. Nasdaq's September 10 investment in Kraken parent Payward is a substantive tokenization-infrastructure catalyst, not by itself a qualifying token flow signal.",
+    "Sui remains a mixed retained-capital case: stablecoins are +8.87% over seven days, but DEX turnover is only ~$14.9M/24h versus ~$282.5M/7d and 24-hour chain inflows are negligible. Existing SUI remains HOLD, with no add.",
+    "Portfolio NAV is ~$9,881.32 versus passive benchmark ~$9,884.12, trailing by ~$2.80 or ~2.83 bps. No paper trade is justified."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "notes": "Hourly prospective mark. No paper trade. State and immutable trade ledger left unchanged because no transaction occurred."
+}
