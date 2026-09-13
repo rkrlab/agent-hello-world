@@ -1,0 +1,59 @@
+{
+  "timestamp_utc": "2026-09-13T06:07:22Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 3504.476073292041,
+  "marks_usd": {
+    "BTC": 77299.41,
+    "ETH": 2522.65,
+    "SOL": 101.75,
+    "SUI": 0.7250,
+    "BNB": 725.97,
+    "UNI": 6.42,
+    "HYPE": 79.50
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko BTC/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "ETH": "CoinGecko ETH/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "SOL": "CoinGecko SOL/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "SUI": "CoinGecko SUI/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "BNB": "CoinGecko BNB/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "UNI": "CoinGecko UNI/USD global volume-weighted spot snapshot crawled 2026-09-13",
+    "HYPE": "CoinGecko HYPE/USD global volume-weighted spot snapshot crawled 2026-09-13"
+  },
+  "position_values_usd": {
+    "BTC": 1955.4955663003134,
+    "ETH": 2015.008826372834,
+    "SOL": 984.2329270652341,
+    "SUI": 446.6485953671763,
+    "BNB": 488.34252657063155,
+    "UNI": 246.50893628230656,
+    "HYPE": 247.58805414930694
+  },
+  "portfolio_nav_usd": 9888.301505399844,
+  "passive_benchmark_nav_usd": 9889.72844167619,
+  "alpha_vs_benchmark_usd": -1.4269362763461686,
+  "alpha_vs_benchmark_bps": -1.4428467725491334,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_GROWTH_UNCONFIRMED_BY_VELOCITY",
+    "BNB": "HOLD_NO_ADD_RWA_DISTRIBUTION_NOT_CAPITAL_GROWTH",
+    "UNI": "HOLD_NO_ADD_PROTOCOL_DECELERATED",
+    "HYPE": "HOLD_NO_ADD_WAIT_INDEPENDENT_CONFIRMATION"
+  },
+  "regime_notes": [
+    "No ecosystem crossed a fresh prospective trade threshold. Solana has reaccelerated to about $3.04B DEX volume/24h versus $17.28B/7d, roughly 1.28x the preceding-six-day daily average, but stablecoin supply is -0.29% over seven days and 24h inflows are only about +$0.38M. That is constructive velocity, not yet a clean retained-capital migration signal. StonkFun fee acceleration is not actionable because STONK's previously unresolved insider/LP structural gate remains unresolved.",
+    "Base is also faster at about $1.25B DEX volume/24h versus $6.78B/7d, roughly 1.36x its preceding-six-day daily average, but the direct-token candidate AERO is not independently confirming: Aerodrome volume is only modestly above its trailing baseline, AERO price is roughly flat-to-down on the day, and the protocol has material weekly token incentives. No paper entry.",
+    "Arbitrum shows the sharpest raw spot-DEX acceleration among established L2s at about $308M/24h versus $1.24B/7d, close to 2x its preceding-six-day daily average, but it simultaneously shows roughly -$42.7M of 24h net inflows and lacks a clean direct-token value-capture leader. This is treated as high velocity without confirmed discretionary capital migration.",
+    "Robinhood Chain is again visually strong at about $2.50B DEX volume/24h versus $12.23B/7d with stablecoins +8.91% over seven days, but 24h net inflows are negative (~-$17.4M), wallet-app gas subsidies continue through late September, and prior synthetic-volume/maker contamination is unresolved. The chain therefore still fails the clean discretionary-flow test; PONS is down roughly one-third over seven days and does not repair leadership.",
+    "Sui retains the strongest stablecoin-growth signal among current portfolio chains at about +9.09% over seven days, but DEX turnover (~$37.3M/24h versus ~$313.5M/7d) is below its preceding-six-day daily average and current net inflows are small. Existing SUI remains HOLD with no add.",
+    "Uniswap remains below the acceleration state that justified the UNI starter. Current aggregate DEX volume is about $2.0B/24h versus $21.26B/7d, including roughly $1.24B from Robinhood Chain; non-Robinhood throughput is therefore only about $0.76B/24h. UNI is ~$6.42 versus the $6.45 trade mark. No hard structural failure or verified whale-distribution reversal surfaced, so the position remains HOLD_NO_ADD rather than being trimmed.",
+    "Hyperliquid's HYPE mark is about $79.50 versus the $79.35 starter trade. The direct Assistance Fund/value-capture mechanism and previously observed repeat accumulation remain intact, but no sufficiently new independent accumulator or renewed protocol-activity acceleration was verified in this run. Dilution/unlock risk remains material. HOLD_NO_ADD.",
+    "RWA growth remains financially substantive but does not produce a new token trade. RWA.xyz's latest broad snapshots place distributed onchain RWA value near $39B and tokenized U.S. Treasuries around $16B. BNB Chain has expanded asset/holder breadth and substantial transfer activity, but reported distributed RWA value has not shown matching recent capital-value growth; Solana has substantial RWA inflows and tokenized-equity infrastructure, but no fresh chain-specific secondary-trading/collateral-utilization plus direct-token-value-capture confirmation crossed threshold. Issuance/AUM is therefore not being treated as secondary demand.",
+    "Portfolio NAV is approximately $9,888.30 versus passive benchmark $9,889.73, trailing by about $1.43 or 1.44 bps. No paper trade is justified, and state.json plus the immutable trade ledger remain unchanged."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "notes": "Hourly prospective mark. No qualifying threshold, material thesis break, or paper trade. State and immutable trade ledger left unchanged."
+}
