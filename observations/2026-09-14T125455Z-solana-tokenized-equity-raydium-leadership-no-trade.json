@@ -1,0 +1,132 @@
+{
+  "timestamp_utc": "2026-09-14T12:54:55Z",
+  "type": "RESEARCH_OBSERVATION_NO_PAPER_TRADE",
+  "execution_trigger": false,
+  "ecosystem": "Solana tokenized-equity secondary markets / Raydium",
+  "regime_status": "QUALIFIED_RWA_SECONDARY_TRADING_LEADERSHIP_ROTATION_WITH_RAY_TOKEN_DIVERGENCE",
+  "candidate": {
+    "asset": "RAY",
+    "network": "Solana",
+    "contract": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+    "current_mark_usd": 1.39,
+    "mark_source": "CoinGecko RAY/USD volume-weighted spot, observed Sep. 14, 2026"
+  },
+  "threshold_reason": [
+    "Newly published Sep. 12 usage data show more than $200M of actual tokenized-equity secondary trading on Solana in one day, with 128K+ active traders. This is completed trading volume, not issuance/AUM.",
+    "Messari-attributed data show Raydium settled 63% of Solana tokenized-equity volume, including 75% of xStocks volume and 60% of Backpack Securities token volume. At $200M+ ecosystem volume, the 63% share implies roughly $126M+ of stock-token secondary trading routed through Raydium that day.",
+    "This creates a cross-chain RWA venue-leadership challenge to the existing Base/Aerodrome paper thesis: Base separately reached a $100M daily stock-token DEX record, while Aerodrome owns 76% of Base's measured 30-day stock-token volume. Solana/Raydium now leads the freshest same-sector daily usage snapshot, but one day is not enough to invalidate Aerodrome's persistent Base-specific leadership.",
+    "Raydium has direct token value capture: official protocol docs route 12% of trading fees to RAY open-market buybacks held by the protocol.",
+    "The new RWA evidence is not being inferred from Solana's concurrent Stocklana/LaunchOnSF incentive programs. Those incentives are explicitly excluded from the qualifying evidence; the trigger is stock-token secondary trading across xStocks and Backpack Securities."
+  ],
+  "rwa_context": {
+    "issuance_aum": "Solana tokenized-equity supply reached about $684M. This is classified as asset stock / issuance and is not used as the primary trigger.",
+    "secondary_trading": "QUALIFYING: tokenized equities traded more than $200M on Sep. 12; Raydium captured 63% overall, 75% of xStocks and 60% of Backpack Securities token volume.",
+    "wallet_usage": "128K+ active traders were reported for the Sep. 12 tokenized-equity session and total tokenized-equity holders reached about 727K. These are ecosystem participation metrics, not assumed to be 128K independent beneficial owners.",
+    "collateral_utilization": "No new collateral-utilization figure is used as the trigger in this run.",
+    "classification": "SECONDARY_TRADING_USAGE_CONFIRMED; ISSUANCE_AUM_SEPARATED"
+  },
+  "why_flows_appear_financially_substantive": {
+    "classification": "QUALIFIED_ACTUAL_SECONDARY_MARKET_USAGE_WITH_FEE_FUNDED_TOKEN_BUYBACK_LINK",
+    "evidence": [
+      "The $200M+ figure represents actual tokenized-equity trading volume rather than the value of securities issued or deposited.",
+      "The volume spans at least two separate issuance/product surfaces, xStocks and Backpack Securities, reducing dependence on one token issuer.",
+      "63% of cumulative trading through August reportedly occurred outside standard U.S. market hours, consistent with 24/7 access as a product-use catalyst rather than an airdrop-only motive.",
+      "Raydium's published fee rules route 12% of trading fees into RAY buybacks."
+    ],
+    "incentive_discount": "Stocklana/LaunchOnSF and StonkFun rewards are active through Sep. 18. All launchpad/meme activity potentially influenced by those programs is excluded from the qualifying RWA evidence."
+  },
+  "leadership_rotation": {
+    "classification": "SOLANA_RAYDIUM_TAKES_FRESHEST_CROSSCHAIN_RWA_SECONDARY_USAGE_LEAD; AERO_BASE_LEADERSHIP_REMAINS_LOCALLY_INTACT",
+    "evidence": "Base's record stock-token day was $100M and Aerodrome dominates Base over 30 days. Solana's Sep. 12 stock-token day exceeded $200M and Raydium captured 63% across xStocks and Backpack. This is a meaningful venue-usage rotation, but it is not yet persistent enough to force an AERO paper exit."
+  },
+  "wallet_quality": {
+    "score": "LOW_FOR_RAY_TOKEN_ENTRY",
+    "evidence": "No fresh cluster of independently funded, historically selective RAY accumulators was verified in this run.",
+    "negative_evidence": "The most recent credible spot-flow evidence remains the Sep. 10 divergence: RAY had experienced more than ten days of spot selling, including roughly $23M of sales followed by another reported net-selling session. No credible newer source in this scan establishes that distribution has reversed.",
+    "independence_check": "No new address-level funding-lineage evidence was sufficient to award a selective-wallet convergence bonus."
+  },
+  "market_persistence": {
+    "price_usd": 1.39,
+    "price_change_24h_pct": -7.4,
+    "price_change_7d_pct": 15.2,
+    "token_volume_24h_usd": 60752344.13,
+    "token_volume_day_over_day_pct": -16.2,
+    "market_cap_usd": 375708271,
+    "fdv_usd": 773037267,
+    "interpretation": "The underlying RWA usage regime strengthened, but RAY itself is no longer providing clean price/turnover confirmation after its 11-month-high rally. This divergence prevents a paper entry in this run."
+  },
+  "protocol_economics": {
+    "raydium_fees_24h_usd": 523670,
+    "raydium_project_revenue_24h_usd": 75945.17,
+    "fee_change_indicator_pct": -56.0,
+    "revenue_change_indicator_pct": -51.0,
+    "buyback_rule": "12% of Raydium trading fees are used to buy RAY on the open market and hold it in a public protocol address.",
+    "interpretation": "Direct token value capture is real, but current aggregate protocol fees/revenue have cooled sharply from the prior burst. The RWA sub-regime is strong enough for a research alert but not enough to override current token-flow divergence."
+  },
+  "narrative_news": {
+    "quality": "HIGH_PRODUCT_USAGE / MODERATE_PROMOTIONAL_CONTAMINATION",
+    "evidence": [
+      "GRND reportedly cleared $31M on-chain in its first 24 hours and FLWS $22.19M on its first day, while the market spans xStocks and Backpack Securities rather than one promotional token.",
+      "The broader tokenization theme has an independent institutional catalyst: Nasdaq announced a $100M investment in Kraken parent Payward on Sep. 10 to deepen tokenized-equity infrastructure.",
+      "Solana/Raydium social promotion around 'stonks' and launchpad tokens is discounted and not counted as wallet-quality evidence."
+    ]
+  },
+  "liquidity_executability": {
+    "result": "PASS_TIER_B_IF_ENTRY_WERE_OTHERWISE_QUALIFIED",
+    "evidence": "CoinGecko aggregates RAY across 73 exchanges and 149 markets with about $60.8M of 24h token volume; top venues show material two-sided depth. A portfolio-sized starter would be negligible relative to execution depth.",
+    "paper_trade_rejected_for": "ENTRY_QUALITY_NOT_LIQUIDITY"
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_TREASURY_SUPPLY_OVERHANG_AND_PROTOCOL_SECURITY_CAVEATS",
+    "sellability_honeypot": "PASS: established multi-venue token with deep CEX/DEX markets and no current sellability failure surfaced.",
+    "mint_freeze_authority": "PASS based on current secondary on-chain scanner reporting: mint and freeze authority disabled.",
+    "supply": "RAY has a 555M hard cap. Team/community/seed vesting concluded in 2024, but a large share of unlocked/non-circulating supply remains in publicly labelled protocol treasury/reserve wallets and current mining-reserve emissions are about 1.9M RAY/year. This is a material supply-overhang/governance caveat rather than hidden mint authority.",
+    "holder_concentration": "CAUTION: raw holder scans show very high top-address concentration, but transparency filings identify large non-circulating balances as labelled protocol treasury/reserve accounts. Beneficial-owner concentration is therefore not inferred directly from raw top-holder percentages.",
+    "lp_control": "PASS for portfolio executability: RAY exit liquidity does not depend on one creator-controlled LP.",
+    "security": "CAUTION: current third-party CoinGecko-linked security ratings are middling (overall DeFiSafety score 51%, platform audit coverage 50%); Raydium has a historical exploit/remediation record. No new active exploit or admin-control failure surfaced in this run.",
+    "wash_bot_creator_dump": "No new evidence in this run triggers a hard rejection for wash trading, bot domination, creator dumping or suspicious token transfers."
+  },
+  "paper_portfolio_mark": {
+    "approx_nav_usd": 9879.37,
+    "approx_passive_benchmark_nav_usd": 9883.99,
+    "approx_alpha_usd": -4.62,
+    "approx_alpha_bps": -4.67,
+    "note": "Approximate mark from contemporaneous web prices: BTC 77842.34, ETH 2509.43, SOL 101.47, SUI 0.72, BNB 721.32, UNI 6.27, HYPE 79.98, AERO 0.564. No trade was generated, so state.json and the immutable trade ledger were not changed."
+  },
+  "existing_positions_action": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD; Solana leads current chain DEX volume and RWA usage is strengthening, but aggregate DEX activity is below prior-week pace.",
+    "SUI": "HOLD_NO_ADD; no new hard structural failure or qualifying leadership signal surfaced.",
+    "BNB": "HOLD_NO_ADD; BNB Chain remains active but current activity includes airdrop/incentive contamination, so no framework add is justified.",
+    "UNI": "HOLD_NO_ADD; value-capture/security thesis remains intact, but price and broad protocol acceleration have cooled versus entry.",
+    "HYPE": "HOLD_NO_ADD; current price remains near paper cost and no new thesis-breaking distribution/structural evidence surfaced in this run.",
+    "AERO": "HOLD_NO_ADD; Base/Aerodrome tokenized-stock thesis remains valid locally, but Solana/Raydium now leads the freshest daily cross-chain tokenized-equity usage snapshot. One competing high-volume day is not persistent enough to trim or exit."
+  },
+  "paper_trade": null,
+  "why_no_ray_trade": "The ecosystem-level RWA regime crosses the research-alert threshold, but RAY does not cross the portfolio entry threshold: the token is down about 7.4% in 24h after a sharp prior rally, token turnover and aggregate Raydium fees have cooled, no fresh selective-wallet accumulation is verified, and the last credible spot-flow evidence remains persistent distribution. Direct fee-funded buybacks are not allowed to override those missing confirmations.",
+  "why_signal_matters_now": "This is the first clean cross-chain leadership challenge to the existing AERO/Base RWA paper thesis using the exact metric the framework now prioritizes: actual secondary trading rather than issuance/AUM. Raydium captured the majority of a Solana tokenized-equity day more than twice Base's record daily volume, yet RAY itself is failing to confirm with fresh accumulation and current price/fee persistence. Freezing both facts prospectively lets later runs test whether venue-level RWA leadership predicts token leadership or whether the token-flow divergence was the more important signal.",
+  "major_uncertainties": [
+    "The $200M+/128K trader/727K holder figures are reported by Solana Compass from Solana Foundation, Messari and ecosystem datasets; pair-level raw wallet data were not independently reconstructed in this run.",
+    "Solana's Stocklana/LaunchOnSF programs run through Sep. 18. The observation excludes launchpad/meme metrics, but second-order promotional effects on broader attention cannot be perfectly isolated.",
+    "Raydium's 63% share is a one-day/near-term leadership snapshot. Persistence across several sessions is required before treating it as a durable cross-chain RWA venue regime.",
+    "RAY buybacks are held by the protocol rather than burned; future governance disposition of the accumulated tokens matters to effective float.",
+    "No fresh RAY spot-netflow source was found that conclusively reverses the prior distribution regime."
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://solanacompass.com/news/solana-tokenized-stocks-beat-nyse-and-nasdaq-combined-in-volume-with-63-of-trades-after-market-hours",
+    "https://docs.raydium.io/ray/ray-buybacks",
+    "https://www.coingecko.com/en/coins/raydium",
+    "https://ambcrypto.com/why-raydiums-3-1m-transactions-matter-for-rays-next-breakout/",
+    "https://blockworks.com/token-transparency/filing/raydium",
+    "https://coindoo.com/solana-retakes-the-dex-lead-as-trading-activity-cools/",
+    "https://www.reuters.com/legal/government/nasdaq-invest-100-million-kraken-parent-deepen-tokenization-push-2026-09-10/"
+  ]
+}
