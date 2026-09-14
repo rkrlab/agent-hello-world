@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-09-14T09:04:43Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 3257.737519195861,
+  "marks_usd": {
+    "BTC": 77652.65,
+    "ETH": 2522.65,
+    "SOL": 101.56,
+    "SUI": 0.7244,
+    "BNB": 723.67,
+    "UNI": 6.32,
+    "HYPE": 79.76,
+    "AERO": 0.5705
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko BTC/USD global volume-weighted spot snapshot crawled 2026-09-14",
+    "ETH": "CoinGecko ETH/USD global volume-weighted spot snapshot crawled 2026-09-14",
+    "SOL": "CoinGecko SOL/USD global volume-weighted spot snapshot crawled 2026-09-14",
+    "SUI": "CoinGecko SUI/USD global volume-weighted spot snapshot crawled 2026-09-14",
+    "BNB": "CoinGecko BNB/USD global volume-weighted spot snapshot crawled 2026-09-14",
+    "UNI": "CoinGecko UNI/USD global volume-weighted spot snapshot crawled 2026-09-14",
+    "HYPE": "CoinGecko HYPE/USD global volume-weighted spot snapshot crawled 2026-09-14",
+    "AERO": "CoinGecko AERO/USD global volume-weighted spot snapshot crawled 2026-09-14"
+  },
+  "position_values_usd": {
+    "BTC": 1964.431717997201,
+    "ETH": 2015.008826372834,
+    "SOL": 982.395047397987,
+    "SUI": 446.27895515032077,
+    "BNB": 486.79537198970877,
+    "UNI": 242.66923322494978,
+    "HYPE": 248.39777608740533,
+    "AERO": 250.6672413384297
+  },
+  "portfolio_nav_usd": 9894.381688754696,
+  "passive_benchmark_nav_usd": 9894.909918908052,
+  "alpha_vs_benchmark_usd": -0.5282301533552527,
+  "alpha_vs_benchmark_bps": -0.5338402852418744,
+  "decisions": {
+    "BTC": "HOLD_NO_ACTION_ETF_OUTFLOW_HEADLINE_NOT_A_STRUCTURAL_OR_PORTFOLIO_EXIT_SIGNAL",
+    "ETH": "HOLD_NO_ADD_ETF_INFLOW_NOT_CONFIRMED_BY_ONCHAIN_DEX_OR_STABLECOIN_ACCELERATION",
+    "SOL": "HOLD_NO_ADD_DEX_LEADERSHIP_PERSISTS_BUT_CURRENT_24H_VOLUME_IS_BELOW_TRAILING_WEEK_PACE_AND_STABLECOINS_ARE_CONTRACTING",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_GROWTH_NOT_CONFIRMED_BY_CURRENT_SPOT_OR_PERP_ACTIVITY",
+    "BNB": "HOLD_NO_ADD_RWA_ASSET_STOCK_IS_LARGE_BUT_CURRENT_DEX_ACTIVITY_AND_NET_FLOWS_DO_NOT_CONFIRM_FRESH_DISCRETIONARY_MIGRATION",
+    "UNI": "HOLD_NO_ADD_PROTOCOL_VALUE_CAPTURE_REMAINS_INTACT_BUT_CURRENT_UNISWAP_SPOT_VOLUME_IS_WELL_BELOW_TRAILING_WEEK_PACE",
+    "HYPE": "HOLD_NO_ADD_PRICE_AND_VALUE_CAPTURE_REMAIN_INTACT_BUT_PERP_AND_SPOT_ACTIVITY_ARE_BELOW_TRAILING_WEEK_PACE_AND_DILUTION_RISK_REMAINS",
+    "AERO": "HOLD_NO_ADD_BASE_RWA_SECONDARY_TRADING_THESIS_REMAINS_INTACT_BUT_AERODROME_CURRENT_DEX_VOLUME_HAS_COOLLED_BELOW_TRAILING_WEEK_PACE"
+  },
+  "regime_notes": [
+    "No ecosystem crossed a fresh prospective paper-trade threshold. Aggregate DeFi spot activity remains active, but the strongest chains are generally running below their trailing-week daily pace rather than accelerating into a new regime.",
+    "Solana remains the leading high-velocity speculative venue with about $1.575B DEX volume/24h versus $16.592B/7d, 2.26M active addresses and zero reported token incentives, but stablecoin supply is down about 2.34% over seven days and 24h inflows are only about +$3.05M. This is continuing velocity, not a new retained-capital migration signal.",
+    "Ethereum received a reported roughly $216M of spot-ETF inflows while Bitcoin ETFs saw a large outflow headline, but Ethereum on-chain DEX volume is only about $797M/24h versus $8.325B/7d and stablecoin supply is essentially flat (+0.03%/7d). The ETF rotation is therefore not yet confirmed as an Ethereum speculative-ecosystem regime change and does not justify an ETH add.",
+    "Base remains constructive with about $670M DEX volume/24h, $5.03B stablecoins (+1.17%/7d) and $182M active RWA market cap, but the current DEX run rate is below the preceding six-day average. The previously verified tokenized-equity secondary-trading regime remains relevant, yet no new higher-order confirmation warrants adding to AERO.",
+    "Aerodrome is processing about $264.5M DEX volume/24h versus $3.012B/7d, with about $133K of 24h holder revenue and zero current 24h incentives. AERO is about $0.5705 versus the $0.5596 gross entry mark. Direct value capture remains intact, but protocol turnover has cooled enough to block scaling.",
+    "Uniswap is processing about $1.93B DEX volume/24h versus $21.116B/7d, with more than half of the latest day still coming from Robinhood Chain. UNI is about $6.32 versus the $6.45 gross entry mark. The burn/value-capture thesis is not invalidated, but the entry-era throughput acceleration has not reappeared and Robinhood-derived activity remains discounted.",
+    "Hyperliquid L1 shows about $4.245B perp volume/24h versus $39.996B/7d, $157M spot DEX volume/24h versus $1.653B/7d, stablecoins down about 2.75%/7d, and HYPE near $79.76 versus the $79.35 gross entry mark. No new independent wallet-convergence or buyback acceleration signal was verified; unlock/dilution risk remains the key caveat.",
+    "Sui stablecoins are still growing strongly at about +8.14% over seven days, but current DEX volume is only about $17.2M/24h versus $252.9M/7d and perp volume about $16.3M/24h versus $141.7M/7d. The liquidity increase is not translating into discretionary speculative turnover strongly enough to justify an add or new Sui-adjacent candidate.",
+    "BSC has about $4.88B of active RWA market cap, but that is an issuance/asset-stock measure rather than secondary trading. Current DEX volume is about $658M/24h versus $9.508B/7d, stablecoins are flat-to-down, and 24h inflows are about -$8.47M. Current trading therefore does not confirm a fresh RWA or speculative-capital migration signal.",
+    "Robinhood Chain remains excluded as a clean capital-migration signal because prior research found synthetic-volume/maker contamination and current points/reward programs contaminate some launchpad activity. Raw volume or wallet counts from that surface are not promoted without independent funding-lineage and incentive-adjusted confirmation.",
+    "Recent FIL and LSK price surges were reviewed but rejected as qualifying ecosystem-regime signals: FIL lacks sufficiently fresh chain-flow/wallet convergence evidence, while Lisk native-chain usage is tiny and its move is dominated by derivatives/speculation around its migration narrative rather than demonstrated ecosystem capital migration.",
+    "Portfolio NAV is approximately $9,894.38 versus passive benchmark $9,894.91, trailing by about $0.53 or 0.53 bps. No existing generated position has developed a structural failure or material thesis invalidation, and no independent confirmation supports an add. State.json and the immutable trade ledger remain unchanged."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "notes": "Hourly prospective mark. No qualifying threshold, material thesis break, or paper trade. State and immutable trade ledger left unchanged."
+}
