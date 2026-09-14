@@ -1,0 +1,63 @@
+{
+  "timestamp_utc": "2026-09-14T19:36:39Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 3257.737519195861,
+  "marks_usd": {
+    "BTC": 77908.61,
+    "ETH": 2510.29,
+    "SOL": 101.74,
+    "SUI": 0.7237,
+    "BNB": 723.13,
+    "UNI": 6.411,
+    "HYPE": 79.78,
+    "AERO": 0.5738
+  },
+  "mark_sources": {
+    "BTC": "CoinMarketCap BTC/USD live converter snapshot retrieved 2026-09-14; cross-checked against same-day Barron's/LSEG market quote",
+    "ETH": "CoinMarketCap ETH/USD live converter snapshot retrieved 2026-09-14",
+    "SOL": "CoinMarketCap SOL/USD live converter snapshot retrieved 2026-09-14",
+    "SUI": "CoinMarketCap SUI/USD live converter snapshot retrieved 2026-09-14",
+    "BNB": "CoinMarketCap BNB/USD live converter snapshot retrieved 2026-09-14",
+    "UNI": "Bybit UNI/USDT live market rate surfaced by TradingView Hub, updated 2026-09-14 17:39:46 UTC; used as independently verifiable liquid-market substitute",
+    "HYPE": "CoinMarketCap HYPE/USD live converter snapshot retrieved 2026-09-14",
+    "AERO": "CoinMarketCap AERO/USD live converter snapshot retrieved 2026-09-14"
+  },
+  "position_values_usd": {
+    "BTC": 1970.9069116002343,
+    "ETH": 2005.1360699088104,
+    "SOL": 984.1361965564315,
+    "SUI": 445.8477082306559,
+    "BNB": 486.43212700114435,
+    "UNI": 246.16336300714445,
+    "HYPE": 248.46006239033596,
+    "AERO": 252.11720084135135
+  },
+  "portfolio_nav_usd": 9896.93715873197,
+  "passive_benchmark_nav_usd": 9892.459013297277,
+  "alpha_vs_benchmark_usd": 4.478145434692124,
+  "alpha_vs_benchmark_bps": 4.526827383032546,
+  "decisions": {
+    "BTC": "HOLD_NO_ACTION_MACRO_VOLATILITY_WITHOUT_FRAMEWORK_THESIS_BREAK",
+    "ETH": "HOLD_NO_ADD_ETF_RELATIVE_FLOW_IMPROVEMENT_LACKS_FRESH_ONCHAIN_REGIME_CONFIRMATION",
+    "SOL": "HOLD_NO_ADD_TOKENIZED_EQUITY_AND_DEX_LEADERSHIP_PERSIST_BUT_STABLECOIN_RETENTION_AND_ASSET_LEVEL_ACCUMULATION_CONFIRMATION_REMAIN_INSUFFICIENT",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_GROWTH_STILL_NOT_CONFIRMED_BY_STRONG_CURRENT_SPOT_PERP_ACCELERATION",
+    "BNB": "HOLD_NO_ADD_BSTOCKS_SECONDARY_TRADING_IS_FINANCIALLY_REAL_BUT_CURRENT_REWARD_CAMPAIGNS_MATERIALLY_CONTAMINATE_FLOW_QUALITY",
+    "UNI": "HOLD_NO_ADD_PROTOCOL_VOLUME_AND_VALUE_CAPTURE_REMAIN_INTACT_BUT_NO_FRESH_INDEPENDENT_WALLET_OR_PRICE_LEADERSHIP_CONFIRMATION",
+    "HYPE": "HOLD_NO_ADD_ACCUMULATION_AND_BUYBACK_THESIS_REMAINS_INTACT_BUT_NO_NEW_INDEPENDENT_POST_ENTRY_CONFIRMATION_AND_DILUTION_LEVERAGE_RISK_REMAINS",
+    "AERO": "HOLD_NO_ADD_BASE_TOKENIZED_EQUITY_USAGE_AND_VALUE_CAPTURE_REMAIN_VALID_BUT_NO_FRESH_WALLET_CONFIRMATION_OR_NEW_VOLUME_STEP_CHANGE"
+  },
+  "regime_notes": [
+    "No ecosystem or asset crossed a fresh prospective paper-trade threshold in this scan. No generated position developed a structural failure or thesis deterioration strong enough to justify a trim or exit.",
+    "Solana remains the strongest observed high-velocity spot/RWA venue in the current research set. Same-day reporting still shows roughly $2.6B of DEX volume and substantive tokenized-equity secondary trading, but fresh reporting also characterizes stablecoin retention and net inflows as limited. The Raydium venue thesis therefore remains stronger than the RAY asset-entry thesis; no new selective-wallet accumulation or distribution reversal was verified after the previously frozen no-trade observation.",
+    "BNB Chain tokenized-equity usage is financially substantive rather than issuance-only: recent reporting shows large completed bStocks secondary volume, including $180.5M weekend volume in QQQB and more than $5.2B cumulative tokenized-stock volume on the chain. However, Binance's official US Stocks MegaFest runs Sep 3-Oct 8 with rewards explicitly tied to bStocks trading thresholds and referrals. Current bStocks user/volume growth is therefore materially incentive-contaminated and cannot qualify as clean discretionary migration. CAKE also remains structurally rejected under the framework because its previously documented owner-controlled mint/admin authority has not been shown to be cryptographically removed.",
+    "AERO is approximately $0.5738 versus the $0.5596 gross paper entry. Base's tokenized-equity secondary-trading thesis remains valid, but no new independent smart-money cohort or renewed venue-volume acceleration was verified; Solana/Raydium competition remains a monitor rather than an exit trigger.",
+    "UNI is approximately $6.411 versus the $6.45 gross entry. Uniswap's $70B-plus monthly-volume leadership and fee-to-UNI-burn mechanism remain intact, but the current evidence is continuation rather than a fresh independent threshold; no add.",
+    "HYPE is approximately $79.78 versus the $79.35 gross entry. Reports surfaced in this scan largely repeat the pre-entry whale accumulation and buyback/burn evidence. Short-term leverage remains a risk, but no protocol structural failure or independent distribution reversal was verified; no trim and no add.",
+    "SUI continues to have an interesting stablecoin-growth backdrop, but no sufficiently abnormal current DEX/perp acceleration or selective-wallet convergence was verified. Arbitrum's prior watch-only reacceleration likewise lacks a direct enough token-value-capture path and fresh retained-capital confirmation.",
+    "Robinhood Chain remains excluded from clean-flow inference because previously documented synthetic-maker infrastructure and active rewards contaminate raw user/volume metrics. Fresh high volume alone is not promoted without independent wallet-funding and incentive-adjusted evidence.",
+    "Portfolio NAV is approximately $9,896.94 versus passive benchmark $9,892.46, ahead by about $4.48 or 4.53 bps. The decline in absolute NAV since the prior mark is mostly broad-market movement and does not itself create a regime signal. State.json and the immutable trade ledger remain unchanged."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "notes": "Hourly prospective mark. No qualifying new threshold, material thesis break, or paper trade. State and immutable trade ledger left unchanged."
+}
