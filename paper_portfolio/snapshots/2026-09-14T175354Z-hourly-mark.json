@@ -1,0 +1,64 @@
+{
+  "timestamp_utc": "2026-09-14T17:53:54Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 3257.737519195861,
+  "marks_usd": {
+    "BTC": 78940.86,
+    "ETH": 2526.12,
+    "SOL": 102.79,
+    "SUI": 0.7318,
+    "BNB": 724.75,
+    "UNI": 6.41,
+    "HYPE": 80.79,
+    "AERO": 0.5751
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko BTC/USD global volume-weighted spot snapshot retrieved 2026-09-14",
+    "ETH": "CoinGecko ETH/USD global volume-weighted spot snapshot retrieved 2026-09-14",
+    "SOL": "CoinGecko SOL/USD global volume-weighted spot snapshot retrieved 2026-09-14",
+    "SUI": "CoinGecko SUI/USD global volume-weighted spot snapshot retrieved 2026-09-14",
+    "BNB": "CoinGecko BNB/USD global volume-weighted spot snapshot retrieved 2026-09-14",
+    "UNI": "CoinGecko UNI/USD global volume-weighted spot snapshot retrieved 2026-09-14",
+    "HYPE": "CoinGecko HYPE/USD global volume-weighted spot snapshot retrieved 2026-09-14",
+    "AERO": "CoinGecko AERO/USD global volume-weighted spot snapshot retrieved 2026-09-14"
+  },
+  "position_values_usd": {
+    "BTC": 1997.0204394824457,
+    "ETH": 2017.780546836439,
+    "SOL": 994.292899980692,
+    "SUI": 450.8378511582064,
+    "BNB": 487.5218619668377,
+    "UNI": 246.1249659765709,
+    "HYPE": 251.60552068833346,
+    "AERO": 252.68839700916897
+  },
+  "portfolio_nav_usd": 9955.610002294554,
+  "passive_benchmark_nav_usd": 9947.453599424622,
+  "alpha_vs_benchmark_usd": 8.156402869932208,
+  "alpha_vs_benchmark_bps": 8.199488229232845,
+  "decisions": {
+    "BTC": "HOLD_NO_ACTION_NO_NEW_REGIME_OR_STRUCTURAL_SIGNAL",
+    "ETH": "HOLD_NO_ADD_NO_CONFIRMED_ONCHAIN_CAPITAL_MIGRATION_BREAKOUT",
+    "SOL": "HOLD_NO_ADD_DEX_LEADERSHIP_AND_RWA_USAGE_PERSIST_BUT_RETAINED_CAPITAL_CONFIRMATION_AND_ASSET_LEVEL_ACCUMULATION_ARE_INSUFFICIENT",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_GROWTH_NOT_CONFIRMED_BY_CURRENT_SPOT_OR_PERP_ACCELERATION",
+    "BNB": "HOLD_NO_ADD_RWA_ASSET_STOCK_GROWTH_IS_NOT_SECONDARY_TRADING_CONFIRMATION_AND_CURRENT_FLOW_QUALITY_IS_MIXED",
+    "UNI": "HOLD_NO_ADD_VALUE_CAPTURE_REMAINS_INTACT_BUT_NO_FRESH_INDEPENDENT_WALLET_OR_THROUGHPUT_CONFIRMATION",
+    "HYPE": "HOLD_NO_ADD_REPEAT_ACCUMULATION_AND_BUYBACK_THESIS_REMAINS_INTACT_BUT_NO_NEW_INDEPENDENT_CONFIRMATION_AND_DILUTION_RISK_REMAINS",
+    "AERO": "HOLD_NO_ADD_BASE_TOKENIZED_EQUITY_THESIS_REMAINS_INTACT; SOLANA_RAYDIUM_COMPETITION_IS_NOT_YET_PERSISTENT_ENOUGH_TO_INVALIDATE_OR_SCALE_THE_POSITION"
+  },
+  "regime_notes": [
+    "No ecosystem or asset crossed a fresh prospective paper-trade threshold in this scan. Existing generated positions remain structurally valid and no thesis deterioration is strong enough to justify a trim or exit.",
+    "Solana remains the strongest high-velocity spot venue and its tokenized-equity secondary-trading regime remains substantive, but this was already frozen earlier today. Current evidence does not add the missing RAY selective-wallet/net-accumulation confirmation, and SOL stablecoin retention remains weaker than its trading velocity. No RAY paper entry and no SOL add.",
+    "Base and Aerodrome remain a valid competing tokenized-equity venue thesis. AERO is approximately $0.5751 versus the $0.5596 gross entry mark, but no new independent smart-money cohort or renewed protocol-volume acceleration was verified. The Solana/Raydium competitive development is material to monitor, not yet a reason to trim AERO.",
+    "Uniswap value capture remains intact and UNI is approximately $6.41 versus the $6.45 gross entry mark. No fresh wallet-convergence cohort, abnormal cross-chain throughput acceleration, or RWA-usage step-change was verified, so the starter is held without scaling.",
+    "Hyperliquid remains a major committed-capital venue and HYPE is approximately $80.79 versus the $79.35 gross entry mark. The latest whale and buyback evidence located in this run largely predates or duplicates the paper entry evidence; it is not counted as new independent confirmation. Unlock/FDV dilution risk remains the main caveat.",
+    "Sui continues to show strong seven-day stablecoin growth, but current DEX/perp activity remains below the level needed to confirm discretionary speculative migration. Avalanche and Monad likewise show interesting weekly growth without a fresh current-pace confirmation.",
+    "BSC RWA growth headlines are treated as issuance/asset-stock evidence rather than secondary trading or collateral utilization. Current chain activity does not supply the missing usage-quality confirmation, and prior incentive contamination remains relevant.",
+    "Robinhood Chain raw DEX and stablecoin metrics remain discounted because previously documented synthetic-volume/maker infrastructure and active reward programs contaminate user/volume inference. No candidate from that surface is promoted without independent funding-lineage evidence.",
+    "Arbitrum shows a potentially interesting current DEX/perp reacceleration relative to its recent average, but ARB lacks a sufficiently direct token value-capture link and no fresh selective-wallet convergence or retained-capital evidence was verified. It remains watch-only.",
+    "Portfolio NAV is approximately $9,955.61 versus passive benchmark $9,947.45, ahead by about $8.16 or 8.20 bps. The improvement versus the prior mark does not by itself constitute a trading signal. State.json and the immutable trade ledger remain unchanged."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "notes": "Hourly prospective mark. No qualifying new threshold, material thesis break, or paper trade. State and immutable trade ledger left unchanged."
+}
