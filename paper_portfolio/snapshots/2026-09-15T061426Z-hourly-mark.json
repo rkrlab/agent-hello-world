@@ -1,0 +1,63 @@
+{
+  "timestamp_utc": "2026-09-15T06:14:26Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 3257.737519195861,
+  "marks_usd": {
+    "BTC": 77595.0,
+    "ETH": 2492.69,
+    "SOL": 101.33,
+    "SUI": 0.71,
+    "BNB": 715.04,
+    "UNI": 6.62,
+    "HYPE": 79.63,
+    "AERO": 0.58
+  },
+  "mark_sources": {
+    "BTC": "DefiLlama BTC live USD mark retrieved 2026-09-15 UTC; CoinGecko canonical page was not returned reliably by web search in this run",
+    "ETH": "DefiLlama ETH live USD mark retrieved 2026-09-15 UTC; CoinGecko canonical page was not returned reliably by web search in this run",
+    "SOL": "DefiLlama SOL live USD mark retrieved 2026-09-15 UTC; CoinGecko canonical page was not returned reliably by web search in this run",
+    "SUI": "DefiLlama SUI live USD mark retrieved 2026-09-15 UTC; CoinGecko canonical page was not returned reliably by web search in this run",
+    "BNB": "DefiLlama BNB USD mark retrieved 2026-09-15 UTC; CoinGecko canonical page was not returned reliably by web search in this run",
+    "UNI": "DefiLlama UNI live USD mark retrieved 2026-09-15 UTC; CoinGecko canonical page was not returned reliably by web search in this run",
+    "HYPE": "DefiLlama HYPE live USD mark retrieved 2026-09-15 UTC; CoinGecko canonical page was not returned reliably by web search in this run",
+    "AERO": "DefiLlama AERO live USD mark retrieved 2026-09-15 UTC; CoinGecko canonical page was not returned reliably by web search in this run"
+  },
+  "position_values_usd": {
+    "BTC": 1962.97330687353,
+    "ETH": 1991.0777759147322,
+    "SOL": 980.1702456955298,
+    "SUI": 437.4075899457864,
+    "BNB": 480.9901789317249,
+    "UNI": 254.1883423970202,
+    "HYPE": 247.9929151183561,
+    "AERO": 254.8413671801739
+  },
+  "portfolio_nav_usd": 9867.379241252715,
+  "passive_benchmark_nav_usd": 9852.619097361303,
+  "alpha_vs_benchmark_usd": 14.760143891411644,
+  "alpha_vs_benchmark_bps": 14.980934252664513,
+  "decisions": {
+    "BTC": "HOLD_NO_ACTION",
+    "ETH": "HOLD_NO_ACTION",
+    "SOL": "HOLD_NO_ADD_CURRENT_CHAIN_DEX_PACE_BELOW_TRAILING_WEEK_AVERAGE_AND_STABLECOIN_SUPPLY_SLIGHTLY_NEGATIVE_7D",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_GROWTH_NOT_CONFIRMED_BY_CURRENT_DEX_ACCELERATION",
+    "BNB": "HOLD_NO_ADD_CURRENT_DEX_PACE_BELOW_TRAILING_WEEK_AVERAGE_AND_PRIOR_INCENTIVE_CONTAMINATION_REMAINS",
+    "UNI": "HOLD_NO_ADD_VALUE_CAPTURE_AND_PRICE_PERSISTENCE_INTACT_BUT_NO_NEW_INDEPENDENT_SELECTIVE_WALLET_CONFIRMATION_AND_ROBINHOOD_ACTIVITY_REMAINS_CONTAMINATED",
+    "HYPE": "HOLD_NO_ADD_PRIOR_ACTIVITY_SPIKE_HAS_COOLLED_AND_EXTERNAL_FLOW_CONFLICT_REMAINS_BUT_PRICE_OI_AND_VALUE_CAPTURE_HAVE_NOT MATERIALLY_INVALIDATED_THE_THESIS",
+    "AERO": "HOLD_NO_ADD_BASE_TOKENIZED_EQUITY_USAGE_THESIS_REMAINS_INTACT_BUT_CURRENT_PROTOCOL_FEES_HAVE_COOLED_AND_NO_NEW_SELECTIVE_WALLET_CONFIRMATION_WAS_VERIFIED"
+  },
+  "regime_notes": [
+    "No new ecosystem or asset crossed the framework threshold in this scan. Broad DEX activity remains active but most major-chain current 24h spot run rates are at or below their trailing-week averages rather than showing a clean new migration burst.",
+    "PONS rebounded to roughly $0.64, about +15% to +20% over 24h, while more than 1.1M PONS was reported bought and burned in the latest day and the project reports about 31% of original supply burned. However, this only returns price to roughly the level of the Sep 10 volume-quality downgrade, the previously documented Robinhood/Pons synthetic-volume and unique-maker contamination remains unresolved, no new independently funded selective-wallet convergence was verified, and current momentum includes short covering and concentrated social promotion. No qualification or paper buy is granted.",
+    "FIL rose roughly 24% around $1 after official messaging highlighted an expected roughly 75% drop in gross issuance when Protocol Labs/Filecoin Foundation vesting ends in October. The move is primarily a supply-narrative and leveraged-trading event; Filecoin chain fee revenue and onchain DEX/utilization remain too small to establish a broader discretionary capital-migration regime, and no selective-wallet cohort was verified. No paper action.",
+    "Hyperliquid's rolling 24h perp volume has cooled materially from the roughly $9.35B reading that triggered the 04:09 UTC divergence alert to roughly $4.51B on the current DefiLlama snapshot, while open interest remains around $14.24B and HYPE is about $79.63. This is not yet a persistent thesis failure and does not resolve the ETF-distribution conflict; HYPE remains HOLD with no add or trim.",
+    "Aerodrome remains around $0.58 versus the $0.5596 gross paper entry. Base tokenized-equity secondary-trading usage remains a valid thesis, but current Aerodrome daily fee/revenue pace is well below its recent weekly average and no new independent wallet cohort was verified. AERO remains HOLD with no add.",
+    "UNI is about $6.62 versus the $6.45 gross paper entry. Cross-chain value capture remains intact, but Robinhood Chain continues to account for a disproportionate share of Uniswap fee activity and no fresh independent accumulation cohort was verified. UNI remains HOLD with no add.",
+    "Arbitrum shows a noteworthy latest 24h inflow pulse and elevated perps turnover, but stablecoin supply is down roughly 9% over seven days, an ARB unlock is imminent/current, and direct ARB token value capture plus selective-wallet confirmation remain insufficient. Injective DEX/perp activity remains elevated, but retained stablecoin capital is only about $12.7M and the canonical USDC migration is partly mechanically mandated. Neither clears the asset-level threshold.",
+    "Solana tokenized-equity secondary trading remains structurally important, but the latest systematic daily series does not establish a new record after the prior Raydium leadership observation; Solana aggregate DEX pace is below its seven-day average. Robinhood Chain stablecoins remain elevated but 24h net flows are negative and DEX pace is near its trailing-week average, while market-quality contamination remains unresolved.",
+    "No paper trade was executed. State.json and the immutable trade ledger remain unchanged."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "alert_classification": "NO_NEW_THRESHOLD"
+}
