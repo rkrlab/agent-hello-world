@@ -1,0 +1,68 @@
+{
+  "timestamp_utc": "2026-09-15T10:46:06Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 3012.312032583079,
+  "marks_usd": {
+    "BTC": 76977.73,
+    "ETH": 2488.52,
+    "SOL": 100.86,
+    "SUI": 0.711,
+    "BNB": 720.44,
+    "UNI": 6.65,
+    "HYPE": 80.34,
+    "AERO": 0.548019,
+    "ZEC": 1143.04
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko live/trending price visible on Uniswap page during 2026-09-15 scan",
+    "ETH": "CoinGecko ETH/USD volume-weighted live page crawled 2026-09-15",
+    "SOL": "CoinGecko live/trending price visible on Uniswap page during 2026-09-15 scan",
+    "SUI": "CoinGecko live/trending price visible on Uniswap page during 2026-09-15 scan",
+    "BNB": "CoinGecko BNB/USD live page crawled 2026-09-15",
+    "UNI": "CoinGecko UNI/USD volume-weighted live price across 144 exchanges / 332 markets",
+    "HYPE": "CoinMarketCap HYPE/USDT live conversion; CoinGecko direct price result was not reliably returned in this scan",
+    "AERO": "CoinMarketCap AERO/USD live price; CoinGecko direct price result was not reliably returned in this scan",
+    "ZEC": "CoinGecko live/trending price visible on Uniswap page during 2026-09-15 scan"
+  },
+  "position_values_usd": {
+    "BTC": 1947.357809313973,
+    "ETH": 1987.7469187581805,
+    "SOL": 975.6239117818134,
+    "SUI": 438.0236569738791,
+    "BNB": 484.62262881736956,
+    "UNI": 255.34025331422723,
+    "HYPE": 250.20407887239398,
+    "AERO": 240.78950207019267,
+    "ZEC": 246.28822043316893
+  },
+  "portfolio_nav_usd": 9838.309012918276,
+  "passive_benchmark_nav_usd": 9833.374925645216,
+  "alpha_vs_benchmark_usd": 4.934087273060868,
+  "alpha_vs_benchmark_bps": 5.017694647433402,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD_DAILY_DEX_LEADERSHIP_PERSISTS_BUT_LATEST_REPORTED_MAJOR_CHAIN_ACTIVITY_REMAINS_BELOW_TRAILING_WEEK_PACE",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_BASE_REMAINS_MEANINGFUL_BUT_NO_FRESH_DISCRETIONARY_TRADING_ACCELERATION_VERIFIED",
+    "BNB": "HOLD_NO_ADD_RWA_ASSET_STOCK_GROWTH_NOT_YET_MATCHED_BY_FRESH_DIRECT_SECONDARY_TRADING_VALUE_CAPTURE_FOR_BNB",
+    "UNI": "HOLD_NO_ADD_NEW_STABLEPAIR_PRODUCT_CONFIRMATION_AND_PRICE_VOLUME_STRENGTH_BUT_NO_FRESH_INDEPENDENT_SELECTIVE_WALLET_CONFIRMATION",
+    "HYPE": "HOLD_NO_ADD_PROTOCOL_ACTIVITY_REMAINS_STRONG_BUT_EXTERNAL_FLOW_QUALITY_AND_DILUTION_CAVEATS_REMAIN",
+    "AERO": "HOLD_NO_ADD_BASE_RWA_SECONDARY_TRADING_THESIS_INTACT_BUT_NO_NEW_PERSISTENCE_OR_WALLET_CONFIRMATION_SINCE_ENTRY",
+    "ZEC": "HOLD_NO_ADD_RECENT_STARTER_HAS_NO_NEW_INDEPENDENT_CONFIRMATION_SINCE_ENTRY"
+  },
+  "regime_notes": [
+    "No ecosystem/candidate crossed a fresh paper-trade threshold in this scan. Solana most recently regained the DEX-volume lead, but the leading chains were collectively running materially below their trailing-week daily pace, so this is ongoing high turnover rather than a new broad capital-migration breakout.",
+    "Stablecoin stock remains large on Ethereum, Tron, Solana, BSC, Hyperliquid and Base. Current supply alone is treated as settlement liquidity, not evidence of speculative migration. No fresh bridge/stablecoin-flow acceleration strong enough to promote a new chain was independently verified during this run.",
+    "RWA issuance/AUM continues to expand, but the framework keeps asset stock separate from actual use. A recent cross-market estimate puts only about $2.47B of nearly $30B tokenized RWA value into DeFi-active use; tokenized equities are a small subset. Solana tokenized-equity secondary trading averaged roughly $164.5M/day over the latest reported 7-day period, but no new post-entry venue/token confirmation materially exceeded the already-recorded Raydium/Aerodrome observations.",
+    "UNI strengthened tactically: CoinGecko showed about $6.65 (+5.6%/24h) with token turnover around $593M (+68% day/day), and current protocol financial data showed roughly $3.62M of 24h fees and $358K of project revenue. Uniswap Labs' StablePair Hook, deployed Sep 10, became the highest-volume Ethereum pool within five days, while Arc mainnet with Uniswap v4 is scheduled for Sep 16. This is positive product confirmation, but the StablePair design includes controlled/upgradeable parameters, some rebalancing trades can carry zero fees, and no fresh independently funded selective-wallet cohort was verified. Existing UNI is therefore HOLD_NO_ADD rather than scaled.",
+    "The Sep 15 rsETH incident does not constitute a Uniswap structural-gate failure: public reporting attributes the loss to a custom Safe module with an exposed public entry point and unsafe delegatecall path that redirected to a malicious v4 hook; Kelp said core contracts remained secure. No UNI exit is justified on this event.",
+    "HYPE is around $80.34, modestly above the $79.35 paper entry. Hyperliquid remains a category leader with strong fee/value-capture economics, but the prior ETF-distribution conflict, low-float/FDV dilution, upcoming unlock risk and lack of a fresh independently verified selective-wallet cohort prevent a confirmation add.",
+    "AERO is around $0.548, slightly below its $0.5596 paper entry. The Base tokenized-equity venue thesis remains intact, but there is no fresh secondary-trading persistence measurement or independent wallet confirmation in this run that justifies adding; Arc's Sep 16 launch also introduces another institutional stablecoin/RWA liquidity venue where Uniswap and Aerodrome-related infrastructure may compete for flow.",
+    "ZEC is around $1,143, close to its very recent $1,137.33 starter mark. No new whale-independence, shielded-flow, or usage datapoint materially improves or invalidates the thesis since the 08:07 UTC entry, so it remains HOLD_NO_ADD.",
+    "Robinhood Chain and Pons remain excluded from clean regime qualification despite high nominal activity because free-gas subsidy/incentive effects and previously identified synthetic/maker-volume contamination remain unresolved. STONK also remains structurally disqualified under the prior insider/LP-control downgrade.",
+    "Portfolio NAV is approximately $9,838.31 versus $9,833.37 for the frozen passive benchmark, ahead by about $4.93 or 5.02 bps. No paper trade is justified; state.json and the immutable trade ledger remain unchanged."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "notes": "Hourly prospective mark. Prices are asynchronous public spot snapshots gathered during the same scan window. No qualifying threshold, material thesis break, or paper trade; state and immutable trade ledger left unchanged."
+}
