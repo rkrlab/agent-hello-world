@@ -1,0 +1,82 @@
+{
+  "timestamp_utc": "2026-09-15T00:56:47Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 3257.737519195861,
+  "marks_usd": {
+    "BTC": 78720.86,
+    "ETH": 2525.06,
+    "SOL": 102.96,
+    "SUI": 0.72,
+    "BNB": 722.25,
+    "UNI": 6.51,
+    "HYPE": 80.3,
+    "AERO": 0.5762
+  },
+  "mark_sources": {
+    "BTC": "CoinMarketCap BTC/USD live converter snapshot retrieved 2026-09-15 UTC",
+    "ETH": "DefiLlama Ethereum chain page live ETH mark retrieved 2026-09-15 UTC",
+    "SOL": "DefiLlama Solana chain page live SOL mark retrieved 2026-09-15 UTC",
+    "SUI": "DefiLlama Sui chain page live SUI mark retrieved 2026-09-15 UTC",
+    "BNB": "DefiLlama BSC chain page live BNB mark retrieved 2026-09-15 UTC",
+    "UNI": "DefiLlama Base protocol table live UNI mark retrieved 2026-09-15 UTC",
+    "HYPE": "DefiLlama Hyperliquid L1 chain page live HYPE mark retrieved 2026-09-15 UTC",
+    "AERO": "CoinMarketCap AERO/USD live converter snapshot retrieved 2026-09-15 UTC"
+  },
+  "position_values_usd": {
+    "BTC": 1991.4549503721657,
+    "ETH": 2016.9338541299774,
+    "SOL": 995.9373186303341,
+    "SUI": 443.568260226713,
+    "BNB": 485.8401722049652,
+    "UNI": 249.9646690339277,
+    "HYPE": 250.07950626653266,
+    "AERO": 253.17171684347625
+  },
+  "portfolio_nav_usd": 9944.687966903952,
+  "passive_benchmark_nav_usd": 9933.734555564155,
+  "alpha_vs_benchmark_usd": 10.95341133979673,
+  "alpha_vs_benchmark_bps": 11.02647879156528,
+  "decisions": {
+    "BTC": "HOLD_NO_ACTION_BROAD_MARKET_REBOUND_WITHOUT_POSITION_SPECIFIC_THESIS_BREAK_OR_NEW_REGIME_ENTRY_SIGNAL",
+    "ETH": "HOLD_NO_ADD_POSITIVE_RELATIVE_FLOW_BACKDROP_BUT_CURRENT_CHAIN_ACTIVITY_DOES_NOT_CROSS_A_FRESH_REGIME_THRESHOLD",
+    "SOL": "HOLD_NO_ADD_RWA_AND_DEX_LEADERSHIP_REMAIN_SUBSTANTIVE_BUT_STABLECOIN_SUPPLY_IS_DOWN_2_32_PERCENT_7D_AND_CURRENT_DEX_PACE_IS_BELOW_TRAILING_WEEK_AVERAGE",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_SUPPLY_UP_8_13_PERCENT_7D_BUT_SPOT_AND_PERP_ACTIVITY_REMAIN_BELOW_TRAILING_WEEK_PACE",
+    "BNB": "HOLD_NO_ADD_TOKENIZED_EQUITY_ACTIVITY_REMAINS_FINANCIALLY_REAL_BUT_ACTIVE_TRADING_REWARD_CAMPAIGNS_CONTAMINATE_FLOW_QUALITY_AND_CURRENT_NET_INFLOWS_ARE_NEGATIVE",
+    "UNI": "HOLD_NO_ADD_UNISWAP_VALUE_CAPTURE_AND_CROSSCHAIN_USAGE_REMAIN_INTACT_BUT_NO_NEW_INDEPENDENT_WALLET_CONVERGENCE_OR_FRESH_VOLUME_STEP_CHANGE",
+    "HYPE": "HOLD_NO_ADD_FEE_FUNDED_ASSISTANCE_FUND_VALUE_CAPTURE_REMAINS_ECONOMICALLY_INTACT_BUT_SPOT_AND_PERP_PACE_HAVE_COOLED_AND_NO_NEW_INDEPENDENT_POST_ENTRY_WALLET_CONFIRMATION_WAS_VERIFIED",
+    "AERO": "HOLD_NO_ADD_BASE_TOKENIZED_EQUITY_SECONDARY_TRADING_THESIS_AND_VEAERO_REVENUE_CAPTURE_REMAIN_VALID_BUT_CURRENT_BASE_DEX_PACE_IS_BELOW_TRAILING_WEEK_AVERAGE_AND_NO_FRESH_SMART_MONEY_COHORT_WAS_VERIFIED"
+  },
+  "regime_notes": [
+    "No ecosystem or asset cleared a fresh paper-trade threshold in this scan, and no generated position developed a structural failure or persistent thesis deterioration that justified a trim or exit.",
+    "Injective is the strongest new watch candidate: current DEX volume is about $23.69M against $83.87M over seven days, making the latest 24h roughly 2.36x the preceding-six-day daily average; perps are about $73.61M against $321.13M over seven days, roughly 1.78x the preceding-six-day daily average; INJ is about $6.32 with market cap approximately equal to FDV. The catalyst is concrete: USDC.inj became the canonical Cosmos/dYdX USDC rail and migration from Noble opened September 11. However, retained capital does not yet confirm the narrative: Injective stablecoin market cap is only about $12.29M and +1.54% over seven days, current net inflows are slightly negative, and no fresh selective independently funded INJ wallet cluster was verified. The migration itself is partly mechanical rather than discretionary, while Helix also has standing maker rebates. INJ therefore remains WATCH_NO_PAPER_BUY despite the abnormal activity acceleration and price confirmation.",
+    "Injective direct token value capture is real but currently modest relative to valuation: the Community BuyBack exchanges ecosystem revenue for participant-committed INJ and permanently burns the committed INJ; the September 2 round burned about 25,200 INJ. This improves the quality of an eventual signal but does not compensate for absent retained-capital and wallet-quality confirmation today.",
+    "Solana remains the largest high-velocity spot venue in the monitored set at about $1.92B DEX volume over 24h, but the latest pace is below its $17.67B seven-day average and stablecoin supply is down 2.32% over seven days. The previously frozen tokenized-equity/Raydium usage signal remains valid, but no new RAY accumulation/distribution-reversal evidence was verified; no RAY paper entry.",
+    "Base is at about $777.6M DEX volume over 24h versus $6.55B over seven days, with stablecoins +1.18% over seven days. AERO is about $0.5762 versus its $0.5596 gross entry and $0.5615586 all-in cost. The Base tokenized-equity secondary-trading thesis remains intact, but this run adds no fresh venue-volume record or independent wallet confirmation; HOLD_NO_ADD.",
+    "Hyperliquid is at about $4.25B perp volume over 24h versus $40.0B over seven days and about $199.8M spot volume versus $1.65B over seven days, both below trailing-week daily pace. HYPE is about $80.30 versus its $79.35 gross entry. A data-definition check found no thesis-breaking burn correction: validators formally recognized Assistance Fund HYPE at the keyless system address as permanently burned in December 2025, while some trackers separately count only strict ledger supply destruction. The economic value-capture thesis therefore remains intact, but leverage, dilution and lack of fresh independent wallet confirmation still block an add.",
+    "Sui stablecoin supply is up 8.13% over seven days and 24h inflows are positive, but DEX volume of about $28.65M and perps of about $16.24M remain below trailing-week daily averages. This is retained-capital interest without sufficient speculative velocity confirmation, so no add to the opening SUI position.",
+    "BSC currently shows about $815.3M DEX volume over 24h against $9.57B over seven days, stablecoins roughly flat week over week and approximately $8.13M of 24h outflows. Tokenized-stock usage remains substantive, but the active US Stocks MegaFest trading/referral rewards continue to contaminate bStocks flow inference; no BNB add and CAKE remains structurally rejected under the previously recorded mint/admin-authority gate.",
+    "Ethereum has about $1.23B DEX volume over 24h, $147.36B stablecoin market cap roughly flat over seven days and $6.38M of 24h inflows. RWA active market cap is large at about $14.36B, but this is asset stock, not evidence of a new secondary-trading regime by itself. No generated ETH action.",
+    "Portfolio NAV is approximately $9,944.69 versus passive benchmark $9,933.73, ahead by about $10.95 or 11.03 bps. Framework-generated positions are all modestly above their all-in costs at this mark: UNI about +0.78%, HYPE about +1.05%, and AERO about +2.61%. State.json and the immutable trade ledger remain unchanged."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "watch_candidates": {
+    "INJ": {
+      "ecosystem": "Injective",
+      "status": "WATCH_NO_PAPER_BUY",
+      "price_usd": 6.32,
+      "market_cap_usd": 631940000,
+      "fdv_usd": 631940000,
+      "dex_volume_24h_usd": 23690000,
+      "dex_volume_7d_usd": 83870000,
+      "perps_volume_24h_usd": 73610000,
+      "perps_volume_7d_usd": 321130000,
+      "stablecoin_mcap_usd": 12290000,
+      "stablecoin_change_7d_pct": 1.54,
+      "net_inflows_24h_usd": -4718.83,
+      "structural_gate": "PASS_NATIVE_TOKEN_FULLY_DILUTED_BUT_NO_WALLET_QUALITY_CONFIRMATION",
+      "why_not_trade": "Abnormal spot/perp acceleration and a real canonical-USDC catalyst are not yet confirmed by retained stablecoin capital, positive bridge inflows, or a fresh independently funded selective-wallet cohort; the migration is partly mechanical and standing maker rebates reduce volume-quality confidence."
+    }
+  },
+  "notes": "Hourly prospective mark. No qualifying new threshold, material thesis break, or paper trade. State and immutable trade ledger left unchanged."
+}
