@@ -1,0 +1,84 @@
+{
+  "timestamp_utc": "2026-09-15T04:09:16Z",
+  "classification": "HYPE_PROTOCOL_ACTIVITY_REACCELERATION_WITH_ETF_DISTRIBUTION_CONFLICT_NO_ADD",
+  "ecosystem": "Hyperliquid",
+  "candidate_asset": "HYPE",
+  "contract_address": null,
+  "native_asset": true,
+  "alert_threshold_crossed": true,
+  "paper_action": "HOLD_NO_ADD_NO_TRIM",
+  "paper_position": {
+    "quantity": 3.114315146532163,
+    "gross_entry_price_usd": 79.35,
+    "all_in_average_cost_usd": 79.469025,
+    "current_mark_usd": 79.49,
+    "current_mark_value_usd": 247.5569109978416
+  },
+  "ecosystem_regime_evidence": {
+    "perp_volume_24h_usd": 9353000000,
+    "perp_volume_7d_usd": 44361000000,
+    "preceding_6d_daily_avg_perp_volume_usd": 5834666666.666667,
+    "current_vs_preceding_6d_perp_multiple": 1.6030,
+    "spot_dex_volume_24h_usd": 157050000,
+    "spot_dex_volume_7d_usd": 949470000,
+    "fees_24h_usd": 2920000,
+    "fees_7d_usd": 13940000,
+    "current_vs_preceding_6d_fees_multiple": 1.5898,
+    "holders_revenue_24h_usd": 2190000,
+    "holders_revenue_7d_usd": 10670000,
+    "current_vs_preceding_6d_holders_revenue_multiple": 1.5495,
+    "protocol_incentives_24h_usd": 0,
+    "protocol_incentives_7d_usd": 0,
+    "open_interest_usd": 13810000000,
+    "liquidations_24h_usd": 50390000,
+    "interpretation": "Perp turnover, fees and holder revenue have reaccelerated to roughly 1.55-1.60x their preceding-six-day daily pace without reported protocol incentives. OI is below the recent local high, so this is capital velocity/churn rather than a fresh leverage-stock breakout. Elevated liquidations mean a meaningful portion of turnover may be forced flow and is discounted."
+  },
+  "why_flows_appear_financially_substantive": "Trading generates direct protocol revenue and holder-linked fee capture, and DefiLlama reports zero incentives. However, not all volume is discretionary speculation because liquidations are elevated, so the flow-quality score is positive but not maximal.",
+  "leadership_rotation_evidence": "Hyperliquid remains the dominant on-chain perp venue and has reaccelerated from the cooled state recorded at 2026-09-15T00:56:47Z. HYPE price itself has not established a new leadership leg; the token is near paper entry and down on a seven-day basis.",
+  "wallet_and_institutional_flow_quality": {
+    "new_selective_wallet_cohort_verified": false,
+    "us_hype_etf_weekly_net_flow_usd": -26400000,
+    "week": "2026-09-07 through 2026-09-11",
+    "bhyp_net_flow_usd": -20100000,
+    "thyp_net_flow_usd": -6300000,
+    "assessment": "This materially weakens the institutional-demand leg of the earlier thesis but does not by itself invalidate HYPE because cumulative ETF flows remain positive and protocol economics have simultaneously strengthened. No fresh independent selective-wallet convergence was verified in this run."
+  },
+  "narrative_and_news_evidence": "Attention remains broad around Hyperliquid's fee-funded value capture, regulatory access and ETF exposure, but price-prediction and momentum coverage is increasingly promotional. Such commentary is not counted as confirmation. The meaningful news input is the reported weekly ETF outflow, not influencer attention.",
+  "liquidity_and_executability": "PASS. HYPE has deep multi-venue spot liquidity; CoinGecko reported roughly $744M 24h token volume and a global volume-weighted price across 66 exchanges and 83 markets. No sellability constraint surfaced.",
+  "structural_gate": {
+    "result": "PASS_WITH_MAJOR_DILUTION_CAVEAT",
+    "market_cap_to_fdv": 0.23,
+    "unlock_risk": "A roughly 9.92M HYPE core-contributor unlock is reported for 2026-10-06. This remains a material future-supply risk but is not a current hard gate failure.",
+    "honeypot_or_sellability_failure": false,
+    "lp_removal_risk_applicable": false,
+    "dangerous_contract_permission_failure_found": false
+  },
+  "major_uncertainties": [
+    "ETF flow reporting differs across secondary aggregators and must be reconciled with issuer/SoSoValue data as subsequent sessions settle.",
+    "A portion of the volume acceleration is liquidation-driven rather than purely discretionary new positioning.",
+    "No fresh independently funded selective wallet cohort was verified after the paper entry.",
+    "Low market-cap/FDV and the October contributor unlock remain significant dilution risks.",
+    "Current price has not confirmed the protocol-activity reacceleration."
+  ],
+  "why_signal_matters_now": "The post-entry thesis has split into opposing legs: protocol economics and turnover have strengthened sharply while regulated-product flows have weakened. That conflict is material enough to freeze prospectively because it determines whether activity/value capture or external distribution proves more predictive. It blocks a confirmation add today but does not yet justify a trim or exit.",
+  "paper_trade": null,
+  "portfolio_nav_usd": 9882.635574937325,
+  "passive_benchmark_nav_usd": 9874.42274957238,
+  "alpha_vs_benchmark_usd": 8.212825364944365,
+  "alpha_vs_benchmark_bps": 8.317271371939212,
+  "sources": [
+    "https://defillama.com/protocol/hyperliquid",
+    "https://www.coingecko.com/en/coins/hyperliquid",
+    "https://cryptobriefing.com/hype-etf-outflows-26-million-september-2026/",
+    "https://www.diariobitcoin.com/mercados/hyperliquid-enfrenta-desbloqueo-de-hype-por-usd-860-millones-el-6-de-octubre/",
+    "https://defillama.com/chain/injective",
+    "https://defillama.com/chain/solana"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  }
+}
