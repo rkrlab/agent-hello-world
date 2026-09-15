@@ -1,0 +1,55 @@
+{
+  "timestamp_utc": "2026-09-15T12:03:11Z",
+  "classification": "MATERIAL_HYPE_INSTITUTIONAL_DISTRIBUTION_ESCALATION_NO_TRIM",
+  "ecosystem": "Hyperliquid",
+  "asset": "HYPE",
+  "contract_address": null,
+  "paper_portfolio_action": "HOLD_NO_ADD_NO_TRIM",
+  "paper_position": {
+    "quantity": 3.114315146532163,
+    "average_cost_usd": 79.469025,
+    "current_mark_usd": 78.85,
+    "mark_source": "CoinGecko HYPE/USDC and broad market quotes, observed during the run",
+    "marked_value_usd": 245.56374930406102
+  },
+  "new_material_evidence": {
+    "multicoin_distribution_risk": "Lookonchain-attributed reporting shows Multicoin Capital deposited another 333,166 HYPE (~$26.73M) to Coinbase Prime on Sep 15. The same reporting states Multicoin deposited 159.66K HYPE (~$13M) six days earlier. Exchange deposits are not proof of sale, but this is a material escalation in potential distribution supply.",
+    "bitwise_distribution_risk": "Onchain Lens-attributed reporting shows a Bitwise BHYP ETF wallet deposited 84.32K HYPE (~$6.71M) to Coinbase. Sale is not confirmed. This is consistent with the already-recorded deterioration in recent HYPE ETF flows rather than an independent bullish accumulation confirmation.",
+    "offsetting_absorption": "The same current reporting cites aggregate HYPE spot exchange netflow near -$2.6M, meaning net coins were still leaving exchanges overall despite the named institutional deposits. This argues against treating the deposits as confirmed market-wide distribution.",
+    "protocol_economics": "CoinGecko currently reports roughly $3.36M of Hyperliquid fees and $2.68M of project revenue over 24 hours. HYPE 24h token turnover is roughly $742M, up about 8.6% day/day. The fee/value-capture leg therefore remains strong rather than breaking.",
+    "price_persistence": "HYPE was approximately $78.85 during this run, close to the paper entry mark of $79.35 and all-in basis of $79.469025 rather than showing a decisive breakdown."
+  },
+  "wallet_quality_assessment": "NEGATIVE_CHANGE_MEDIUM_CONFIDENCE. Multicoin is a sophisticated institutional holder, but Coinbase Prime can be used for custody/rebalancing as well as selling. Bitwise ETF wallet movement is mechanically related to ETF flows and should not be treated as an independent discretionary smart-wallet signal. The aggregate negative exchange netflow shows offsetting demand/withdrawals elsewhere.",
+  "structural_gate": {
+    "result": "PASS_WITH_MAJOR_DILUTION_AND_DISTRIBUTION_CAVEATS",
+    "details": "No sellability, honeypot, creator-LP, or executable-liquidity failure. CoinGecko shows deep multi-venue liquidity. The next reported core-contributor unlock remains 9.92M HYPE on Oct 6, 2026, and current circulating market cap remains far below FDV. Institutional exchange deposits add distribution risk but do not constitute a hard structural failure."
+  },
+  "decision_rationale": "Do not add: the fresh Multicoin and Bitwise exchange deposits materially worsen the external-flow leg and prevent scaling despite strong protocol economics. Do not trim yet: neither transfer is confirmed sold, aggregate spot exchange netflow remains negative, protocol fees/revenue remain elevated, and price is still near the starter entry. The appropriate prospective decision is HOLD with a tighter distribution-risk watch. A confirmed continuation of institutional selling combined with positive exchange net inflows and/or price/fee deterioration would move the position toward trim/exit; renewed independent accumulation would be required before any add.",
+  "portfolio_mark": {
+    "cash_usd": 3012.312032583079,
+    "nav_usd": 9813.59480429714,
+    "passive_benchmark_nav_usd": 9814.879013683043,
+    "alpha_vs_benchmark_usd": -1.284209385903523,
+    "alpha_vs_benchmark_bps": -1.3084311932049197,
+    "mark_notes": "Approximate current marks used: BTC 76885, ETH 2474.52, SOL 100.82, SUI 0.7060, BNB 718.21, UNI 6.68, HYPE 78.85, AERO 0.5490, ZEC 1128.37. No portfolio state mutation because no trade occurred."
+  },
+  "major_uncertainties": [
+    "Coinbase Prime deposits do not prove execution or sale.",
+    "ETF-wallet transfers can reflect creation/redemption and custody mechanics rather than discretionary directional trading.",
+    "Named institutional wallets may be only a subset of aggregate HYPE flows; current aggregate spot exchange netflow remains negative.",
+    "Future HYPE unlocks and low circulating-market-cap/FDV ratio remain material dilution risks."
+  ],
+  "why_signal_matters_now": "The prior HYPE checkpoint already identified ETF-flow deterioration but not this fresh second Multicoin exchange deposit plus Bitwise ETF-wallet transfer. Potential institutional supply has therefore escalated while the protocol/value-capture thesis remains intact, creating a meaningful divergence that could become an exit signal if market-wide absorption weakens.",
+  "sources": [
+    "AMBCrypto, Sep 15 2026: Multicoin 333,166 HYPE to Coinbase Prime; prior 159.66K deposit; Bitwise 84.32K HYPE to Coinbase; aggregate spot netflow around -$2.6M.",
+    "TokenPost/PANews/Lookonchain, Sep 15 2026: independent reporting of the 333,166 HYPE Multicoin-to-Coinbase-Prime transfer and explicit caution that deposit is not proof of sale.",
+    "CoinGecko HYPE page, Sep 15 2026: HYPE around $78.85 across liquid venues, ~$742M 24h turnover, ~$3.36M 24h fees, ~$2.68M 24h project revenue, next 9.92M core-contributor unlock Oct 6."
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  }
+}
