@@ -1,0 +1,74 @@
+{
+  "timestamp_utc": "2026-09-15T08:07:21Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 3012.312032583079,
+  "marks_usd": {
+    "BTC": 76867.28,
+    "ETH": 2480.35,
+    "SOL": 100.12,
+    "SUI": 0.7033,
+    "BNB": 714.72,
+    "UNI": 6.57,
+    "HYPE": 78.55,
+    "AERO": 0.5448,
+    "ZEC": 1137.33
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko USD volume-weighted spot retrieved 2026-09-15",
+    "ETH": "CoinGecko USD volume-weighted spot retrieved 2026-09-15",
+    "SOL": "CoinGecko USD volume-weighted spot retrieved 2026-09-15",
+    "SUI": "CoinGecko USD volume-weighted spot retrieved 2026-09-15",
+    "BNB": "CoinGecko USD volume-weighted spot retrieved 2026-09-15",
+    "UNI": "CoinGecko USD volume-weighted spot retrieved 2026-09-15",
+    "HYPE": "CoinGecko USD volume-weighted spot retrieved 2026-09-15",
+    "AERO": "CoinGecko USD volume-weighted spot retrieved 2026-09-15",
+    "ZEC": "CoinGecko ZEC/USD live volume-weighted spot across 49 exchanges / 83 markets"
+  },
+  "position_values_usd": {
+    "BTC": 1944.568060794704,
+    "ETH": 1981.2212112850978,
+    "SOL": 968.465854933631,
+    "SUI": 433.2679398573667,
+    "BNB": 480.7748993610763,
+    "UNI": 252.26859086834975,
+    "HYPE": 244.6284522570944,
+    "AERO": 239.37585236294268,
+    "ZEC": 245.0578997631369
+  },
+  "portfolio_nav_usd": 9801.948403675831,
+  "passive_benchmark_nav_usd": 9808.305393218829,
+  "alpha_vs_benchmark_usd": -6.356989542997326,
+  "alpha_vs_benchmark_bps": -6.481231250601516,
+  "decisions": {
+    "BTC": "HOLD_NO_ACTION",
+    "ETH": "HOLD_NO_ACTION",
+    "SOL": "HOLD_NO_ADD_CHAIN_DEX_PACE_NOT_IN_FRESH_ACCELERATION_AND_STABLECOIN_SUPPLY_WEAK_7D",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_GROWTH_NOT_CONFIRMED_BY_CHAIN_DEX_ACCELERATION",
+    "BNB": "HOLD_NO_ADD_NO_CLEAN_NEW_CHAIN_ACCELERATION_AND_PRIOR_INCENTIVE_CONTAMINATION_REMAINS",
+    "UNI": "HOLD_NO_ADD_PROTOCOL_THESIS_INTACT_BUT_CURRENT_UNISWAP_24H_VOLUME_BELOW_TRAILING_WEEK_BASELINE",
+    "HYPE": "HOLD_NO_ADD_ACTIVITY_VALUE_CAPTURE_INTACT_BUT_ETF_DISTRIBUTION_CONFLICT_REMAINS_AND_DAILY_BURN_HAS_COOLLED",
+    "AERO": "HOLD_NO_ADD_BASE_RWA_USAGE_THESIS_INTACT_BUT_AERODROME_CURRENT_ACTIVITY_AND_TOKEN_PRICE_NOT_REACCELERATING",
+    "ZEC": "BUY_2_5PCT_NAV_STARTER_SECOND_DISTINCT_ACCUMULATION_PATH_CONFIRMS_EARLIER_POST_LIQUIDATION_REPAIR_WITH_SHIELDED_USAGE_PERSISTING"
+  },
+  "regime_notes": [
+    "ZEC crossed the asset-level paper threshold on a new wallet-quality leg: after the first 36.36K ZEC exchange-withdrawal accumulator, a second distinct address accumulated ~12.87K ZEC from Binance/OKX/Kraken/Gate and moved ~12.86K ZEC to a fresh wallet. Beneficial-owner independence and historical selectivity remain unproven, so this is a starter rather than a scale-up.",
+    "Zcash shielded balances remain about 4.89M ZEC / 28.9% of circulating supply with +17,561 ZEC net into shielded pools over seven days. That 7d inflow is positive but slower than the Sep 12 checkpoint.",
+    "ZEC current CoinGecko mark is $1,137.33 with ~$961M 24h turnover across 49 exchanges / 83 markets. Turnover is down ~38.7% day/day and price is not at a fresh local high, so this is accumulation/usage confirmation rather than a momentum breakout.",
+    "Solana/Raydium tokenized-equity secondary-trading leadership persists, including xStocks >$1B 30d DEX volume with ~75% on Raydium, but RAY still lacks the asset-level wallet/price confirmation needed for a paper entry.",
+    "UNI, HYPE and AERO remain HOLD/NO ADD. No existing position has a structural hard-gate failure or a sufficiently persistent thesis reversal to justify a trim or sale."
+  ],
+  "paper_trade": {
+    "trade_id": "BUY-ZEC-20260915-080721Z",
+    "action": "BUY",
+    "asset": "ZEC",
+    "quantity": 0.21546771804413575,
+    "mark_price_usd": 1137.33,
+    "gross_usd": 245.0578997631369,
+    "transaction_cost_rate": 0.0015,
+    "transaction_cost_usd": 0.36758684964470534,
+    "all_in_average_cost_usd": 1139.035995,
+    "cash_after_usd": 3012.312032583079
+  },
+  "alert_threshold_crossed": true,
+  "alert_classification": "QUALIFIED_ZEC_MULTI_WALLET_ACCUMULATION_CONFIRMATION_AFTER_LEVERAGE_FLUSH"
+}
