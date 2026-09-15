@@ -1,0 +1,62 @@
+{
+  "timestamp_utc": "2026-09-15T04:09:16Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 3257.737519195861,
+  "marks_usd": {
+    "BTC": 77659.37,
+    "ETH": 2502.79,
+    "SOL": 101.64,
+    "SUI": 0.7183,
+    "BNB": 720.98,
+    "UNI": 6.70,
+    "HYPE": 79.49,
+    "AERO": 0.5591
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko BTC/USD volume-weighted spot retrieved 2026-09-15 UTC",
+    "ETH": "CoinGecko ETH/USD volume-weighted spot retrieved 2026-09-15 UTC",
+    "SOL": "DefiLlama Solana chain live SOL mark retrieved 2026-09-15 UTC; CoinGecko page rendered non-USD for SOL in this run",
+    "SUI": "CoinGecko SUI/USD volume-weighted spot retrieved 2026-09-15 UTC",
+    "BNB": "CoinGecko BNB/USD volume-weighted spot retrieved 2026-09-15 UTC",
+    "UNI": "DefiLlama Uniswap live UNI mark retrieved 2026-09-15 UTC; CoinGecko direct page was unreliable in this run",
+    "HYPE": "CoinGecko HYPE/USD global volume-weighted spot across 66 exchanges / 83 markets retrieved 2026-09-15 UTC",
+    "AERO": "CoinGecko AERO/USD volume-weighted spot across 55 exchanges / 122 markets retrieved 2026-09-15 UTC"
+  },
+  "position_values_usd": {
+    "BTC": 1964.6017183918423,
+    "ETH": 1999.145319627243,
+    "SOL": 983.1688914684067,
+    "SUI": 442.52094627895553,
+    "BNB": 484.98587380593403,
+    "UNI": 257.2601048429056,
+    "HYPE": 247.5569109978416,
+    "AERO": 245.65829032833665
+  },
+  "portfolio_nav_usd": 9882.635574937325,
+  "passive_benchmark_nav_usd": 9874.42274957238,
+  "alpha_vs_benchmark_usd": 8.212825364944365,
+  "alpha_vs_benchmark_bps": 8.317271371939212,
+  "decisions": {
+    "BTC": "HOLD_NO_ACTION",
+    "ETH": "HOLD_NO_ACTION",
+    "SOL": "HOLD_NO_ADD_SPOT_DEX_PACE_BELOW_TRAILING_WEEK_AVERAGE_AND_STABLECOIN_SUPPLY_DOWN_1_85_PERCENT_7D_DESPITE_POSITIVE_24H_INFLOWS",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_GROWTH_NOT_CONFIRMED_BY_SPOT_VELOCITY",
+    "BNB": "HOLD_NO_ADD_CURRENT_DEX_PACE_BELOW_TRAILING_WEEK_AVERAGE_AND_PRIOR_REWARD_CONTAMINATION_REMAINS",
+    "UNI": "HOLD_NO_ADD_CROSSCHAIN_VALUE_CAPTURE_INTACT_BUT_ROBINHOOD_CONCENTRATION_AND_NO_FRESH_INDEPENDENT_WALLET_CONFIRMATION",
+    "HYPE": "HOLD_NO_ADD_PROTOCOL_ACTIVITY_AND_HOLDER_REVENUE_REACCELERATED_BUT_US_HYPE_ETFS_POSTED_26_4M_WEEKLY_NET_OUTFLOW_AND_NO_NEW_INDEPENDENT_SELECTIVE_WALLET_COHORT_WAS_VERIFIED",
+    "AERO": "HOLD_NO_ADD_BASE_RWA_THESIS_INTACT_BUT_CURRENT_AERODROME_DAILY_VOLUME_NEAR_TRAILING_WEEK_PACE_WITH_NO_NEW_SMART_MONEY_COHORT"
+  },
+  "regime_notes": [
+    "Hyperliquid crossed a fresh protocol-activity threshold: 24h perp volume is about $9.353B versus $44.361B over seven days, approximately 1.60x the preceding-six-day daily average. Fees are $2.92M/24h versus $13.94M/7d and holder revenue $2.19M/24h versus $10.67M/7d, each about 1.55-1.59x the preceding-six-day daily average. DefiLlama reports zero protocol incentives across 24h/7d/30d, supporting financially substantive rather than reward-driven activity.",
+    "The activity acceleration does not receive a portfolio scale-up because the external-demand leg weakened. U.S.-listed HYPE spot ETFs were reported to have $26.4M combined net outflows for Sep 7-11, led by BHYP at roughly $20.1M and THYP at roughly $6.3M; cumulative flows remain positive, so this is a conflict rather than a full institutional-demand failure.",
+    "Open interest is about $13.81B, below the recent ~$14.67B high, while 24h perp turnover accelerated. This indicates higher capital velocity/churn rather than a fresh stock of leverage. 24h liquidations are about $50.39M, so part of the activity increase is forced flow and is discounted.",
+    "HYPE is $79.49, approximately flat to the paper gross entry at $79.35 and all-in average cost $79.469025, but down about 5.6% over seven days. Price has not confirmed a new leadership leg.",
+    "HYPE structural gate remains PASS_WITH_MAJOR_DILUTION_CAVEAT: deep executable liquidity and native-token structure remain acceptable, but CoinGecko reports market-cap/FDV near 0.23 and a roughly 9.92M HYPE contributor unlock is reported for Oct 6. No hard gate failure surfaced.",
+    "Injective remains the strongest watch challenger but still does not clear the paper-entry threshold. DEX volume is $21.78M/24h vs $103.75M/7d and perps $77.51M/24h vs $364.12M/7d; stablecoin market cap is only $12.74M (+1.69% 7d) and 24h net inflows are just $9.6K. The canonical USDC migration is real but partly mechanical, and no new selective independently funded INJ wallet cluster was verified.",
+    "Solana remains high velocity at $2.099B DEX volume/24h, but that is below its $16.435B seven-day average pace; stablecoins are down 1.85% over seven days despite +$10.87M 24h inflows. Raydium tokenized-equity venue leadership remains a valid prior observation, but RAY still lacks fresh wallet/distribution reversal evidence.",
+    "No paper trade was executed. HYPE is held rather than added or trimmed because stronger non-incentivized protocol economics are offset by weaker ETF flow quality and absent fresh wallet confirmation. State.json and the immutable trade ledger remain unchanged."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": true,
+  "alert_classification": "HYPE_PROTOCOL_ACTIVITY_REACCELERATION_WITH_ETF_DISTRIBUTION_CONFLICT_NO_ADD"
+}
