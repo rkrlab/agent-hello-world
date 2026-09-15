@@ -1,0 +1,130 @@
+{
+  "timestamp_utc": "2026-09-15T08:07:21Z",
+  "classification": "QUALIFIED_ZEC_MULTI_WALLET_ACCUMULATION_CONFIRMATION_AFTER_LEVERAGE_FLUSH",
+  "alert_threshold_crossed": true,
+  "ecosystem": "Zcash / privacy",
+  "candidate": {
+    "asset": "ZEC",
+    "contract_address": null,
+    "native_asset": true
+  },
+  "signal_summary": "The earlier ZEC post-liquidation repair has gained a second distinct large exchange-withdrawal accumulator while shielded-pool utilization remains elevated. The signal is accumulation/usage confirmation, not a fresh token-volume breakout.",
+  "ecosystem_regime_evidence": {
+    "shielded_supply_zec": 4890000,
+    "shielded_pct_circulating": 28.9,
+    "shielded_net_inflow_7d_zec": 17561,
+    "estimated_new_supply_zec_per_day": 1800,
+    "note": "7d shielded inflow remains positive but is lower than the +30,462 ZEC observed in the Sep 12 repair scan, so shielded-flow momentum is constructive but decelerating."
+  },
+  "discretionary_flow_quality": {
+    "classification": "FINANCIALLY_SUBSTANTIVE_WITH_IDENTITY_UNCERTAINTY",
+    "evidence": [
+      "One address accumulated 36.36K ZEC from Binance, OKX, Kraken and Gate over six days; another 6.52K ZEC withdrawal was reported while buying continued.",
+      "A second address accumulated about 12.87K ZEC from the same four exchanges over a week and moved about 12.86K ZEC to a fresh wallet on Sep 14.",
+      "The roughly 49.23K ZEC observed across the two accumulation paths is about 27 days of estimated 1,800 ZEC/day new issuance."
+    ],
+    "incentive_discount": "Exchange withdrawals and shielded-pool net inflow are not points, quests, rebates or yield-farming metrics. No incentive credit is assigned."
+  },
+  "leadership_rotation": {
+    "status": "PRIVACY_LEADERSHIP_CONFIRMATION_NOT_FRESH_PRICE_BREAKOUT",
+    "price_usd": 1137.33,
+    "price_change_24h_pct": 0.9,
+    "price_change_7d_pct": 1.4,
+    "price_change_30d_pct": 135.1,
+    "seven_day_range_usd": [
+      1048.58,
+      1293.92
+    ],
+    "market_cap_usd": 19263000000,
+    "comment": "ZEC is holding the repaired regime after the prior liquidation flush, but current price is below the recent local high and does not qualify as a fresh momentum breakout."
+  },
+  "wallet_quality": {
+    "score": "MEDIUM",
+    "positive": "Two separately observed accumulation paths now exist, and both move ZEC off centralized exchanges rather than into trading venues.",
+    "limitations": "Beneficial-owner independence is unproven, both source from the same four exchanges, and neither address has a verified history of selective profitable accumulation. They are not scored as two independent smart-money owners."
+  },
+  "narrative_news": {
+    "positive": "Privacy usage is economically native to ZEC: 4.89M ZEC is shielded and 7d net movement into shielded pools remains positive.",
+    "risk": "ZEC has already risen about 135% over 30 days and privacy/social attention is crowded; influencer/momentum promotion is treated as a risk rather than confirmation."
+  },
+  "liquidity_executability": {
+    "coin_gecko_price_usd": 1137.33,
+    "coin_gecko_24h_volume_usd": 961078000,
+    "tracked_exchanges": 49,
+    "tracked_markets": 83,
+    "volume_change_vs_previous_day_pct": -38.7,
+    "tier": "A",
+    "paper_execution_cost_rate": 0.0015,
+    "comment": "Liquidity is ample for the paper starter. Falling day/day token volume is a caveat and is why this is not a scale-up."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_NATIVE_ISSUANCE_AND_OPACITY_CAVEATS",
+    "details": [
+      "ZEC is a native proof-of-work asset, so honeypot, contract mint/freeze, creator-controlled LP and deployer privilege gates do not apply as they do to smart-contract launch tokens.",
+      "Maximum supply is 21M ZEC; circulating supply is about 16.93M and current issuance is estimated near 1,800 ZEC/day.",
+      "Shielded balances improve privacy but make beneficial-owner concentration harder to audit; this remains a structural-data limitation rather than a discovered hard failure.",
+      "Privacy-asset regulatory/listing risk remains material."
+    ]
+  },
+  "major_uncertainties": [
+    "The two whale paths may be related or controlled by one beneficial owner.",
+    "No verified historical selectivity/PnL record exists for the accumulator addresses.",
+    "Shielded 7d inflow is positive but slower than at the Sep 12 repair checkpoint.",
+    "Current ZEC trading volume is down about 38.7% from the previous day; the signal is not a volume acceleration.",
+    "Recent institutional/ETF AUM evidence is not fresh enough to be treated as a new flow leg.",
+    "The asset has already had an extreme multi-month run, increasing crowding and reversal risk."
+  ],
+  "why_signal_matters_now": "The Sep 12 repair signal lacked a credible new accumulation cohort. A second distinct exchange-withdrawal accumulator was subsequently observed, while the first path and shielded-pool usage remained visible. This is enough for a prospective starter now, at the current mark, without taking credit for the prior rally.",
+  "paper_trade": {
+    "trade_id": "BUY-ZEC-20260915-080721Z",
+    "action": "BUY",
+    "asset": "ZEC",
+    "quantity": 0.21546771804413575,
+    "mark_price_usd": 1137.33,
+    "gross_usd": 245.0578997631369,
+    "transaction_cost_rate": 0.0015,
+    "transaction_cost_usd": 0.36758684964470534,
+    "all_in_average_cost_usd": 1139.035995,
+    "cash_after_usd": 3012.312032583079,
+    "portfolio_nav_after_usd": 9801.948403675831,
+    "passive_benchmark_nav_usd": 9808.305393218829,
+    "alpha_vs_benchmark_usd": -6.356989542997326,
+    "alpha_vs_benchmark_bps": -6.481231250601516,
+    "sizing": "2.5% of pre-trade NAV; no scale-up because wallet independence, volume momentum and crowding remain unresolved."
+  },
+  "existing_paper_positions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD",
+    "SUI": "HOLD_NO_ADD",
+    "BNB": "HOLD_NO_ADD",
+    "UNI": "HOLD_NO_ADD",
+    "HYPE": "HOLD_NO_ADD",
+    "AERO": "HOLD_NO_ADD"
+  },
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    {
+      "name": "CoinGecko Zcash",
+      "url": "https://www.coingecko.com/en/coins/zcash",
+      "use": "current price, market cap, 24h volume, market breadth, performance"
+    },
+    {
+      "name": "zecmetrics",
+      "url": "https://www.zecmetrics.io/",
+      "use": "shielded supply, 7d shielded inflow, estimated daily issuance"
+    },
+    {
+      "name": "Onchain Lens",
+      "url": "https://t.me/s/OnchainLens",
+      "use": "large ZEC exchange-withdrawal accumulation paths"
+    }
+  ],
+  "real_trade_executed": false
+}
