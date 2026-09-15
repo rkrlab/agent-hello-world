@@ -1,0 +1,67 @@
+{
+  "timestamp_utc": "2026-09-15T21:34:28Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 2766.312021847349,
+  "marks_usd": {
+    "BTC": 75687.05,
+    "ETH": 2400.54,
+    "SOL": 97.27,
+    "SUI": 0.6876,
+    "BNB": 712.09,
+    "UNI": 6.27,
+    "HYPE": 76.97,
+    "AERO": 0.5258,
+    "ZEC": 1122.47
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko BTC/USD live volume-weighted spot page, crawled 2026-09-15",
+    "ETH": "CoinGecko ETH/USD live volume-weighted spot page, crawled 2026-09-15",
+    "SOL": "CoinGecko SOL/USD live volume-weighted spot page, crawled 2026-09-15",
+    "SUI": "CoinGecko SUI/USD live volume-weighted spot page, crawled 2026-09-15",
+    "BNB": "CoinGecko BNB/USD live volume-weighted spot page, crawled 2026-09-15",
+    "UNI": "CoinGecko UNI/USD live volume-weighted spot page, crawled 2026-09-15",
+    "HYPE": "CoinGecko HYPE/USD live volume-weighted spot page, crawled 2026-09-15",
+    "AERO": "CoinGecko AERO/USD live volume-weighted spot page, crawled 2026-09-15",
+    "ZEC": "CoinGecko ZEC/USD live volume-weighted spot page, crawled 2026-09-15"
+  },
+  "position_values_usd": {
+    "BTC": 1914.7066025646268,
+    "ETH": 1917.4714241218728,
+    "SOL": 940.897659121723,
+    "SUI": 423.60768851651096,
+    "BNB": 479.0057850127154,
+    "UNI": 470.27395732359497,
+    "HYPE": 239.70883682858056,
+    "AERO": 231.02688079885425,
+    "ZEC": 241.85604947300106
+  },
+  "portfolio_nav_usd": 9624.86690560883,
+  "passive_benchmark_nav_usd": 9675.68915933745,
+  "alpha_vs_benchmark_usd": -50.822253728620126,
+  "alpha_vs_benchmark_bps": -52.52571976185748,
+  "decisions": {
+    "BTC": "HOLD_BROAD_POLICY_AND_MACRO_RISK_OFF_NOT_A_BITCOIN_SPECIFIC_STRUCTURAL_FAILURE",
+    "ETH": "HOLD_BROAD_POLICY_AND_MACRO_RISK_OFF_NO_ETHEREUM_SPECIFIC_STRUCTURAL_FAILURE",
+    "SOL": "HOLD_NO_ADD_REPORTED_PERP_ACCELERATION_IS_DOMINATED_BY_GMTRADE_WHERE_TRADE_TO_MINT_POINTS_AND_FEE_REBATES_CONTAMINATE_VOLUME",
+    "SUI": "HOLD_NO_ADD_STABLECOINS_UP_MODESTLY_BUT_DEX_AND_PERP_USAGE_REMAIN_WEAK",
+    "BNB": "HOLD_NO_ADD_NO_FRESH_CLEAN_SPECULATIVE_OR_RWA_SECONDARY_TRADING_ACCELERATION",
+    "UNI": "HOLD_NO_ADD_NO_TRIM_STABLEPAIR_USAGE_THESIS_REMAINS_INTACT_BUT_CLARITY_ACT_FAILURE_IS_A_REGULATORY_HEADWIND_AND_CURRENT_PRICE_HAS_REVERSED_AFTER_THE_CONFIRMATION_ADD;_V4_CORE_NOT_SHOWN_COMPROMISED_BY_TODAYS_CUSTOM_MODULE_INCIDENT",
+    "HYPE": "HOLD_NO_ADD_NO_TRIM_PRIOR_INSTITUTIONAL_DISTRIBUTION_CONFLICT_REMAINS_AND_PRICE_IS_BELOW_ENTRY_BUT_BROAD_MARKET_POLICY_SHOCK_AND_STRONG_PROTOCOL_ECONOMICS_PREVENT_A_THESIS_INVALIDATION_CALL",
+    "AERO": "HOLD_NO_ADD_NO_TRIM_BASE_TOKENIZED_EQUITY_USAGE_THESIS_REMAINS_INTACT_BUT_CLARITY_ACT_FAILURE_ADDS_US_REGULATORY_TIMELINE_RISK_AND_AERO_IS_UNDERPERFORMING_IN_THE_BROAD_SELLOFF",
+    "ZEC": "HOLD_NO_ADD_RECENT_ACCUMULATION_AND_SHIELDED_USE_THESIS_NOT_INVALIDATED_BY_BROAD_MARKET_RISK_OFF"
+  },
+  "regime_notes": [
+    "A material portfolio-level risk threshold crossed after the U.S. Senate failed 49-50 to advance the CLARITY Act, well short of the 60 votes required. Reuters and CoinDesk report little near-term legislative runway before the November midterms; crypto-linked equities sold off sharply and CoinGecko showed total crypto market capitalization down about 3.9% during this scan.",
+    "The selloff is broad rather than a clean leadership rotation: CoinGecko marks BTC about -4.1%, ETH -6.0%, SOL -6.2%, SUI -6.4%, UNI -5.2%, AERO -8.3%, ZEC -5.0%, and HYPE -4.9% over 24h snapshots. That weakens risk appetite but does not by itself invalidate any ecosystem thesis.",
+    "The CLARITY failure is most relevant to UNI/AERO because regulatory certainty was part of the U.S. tokenization/RWA expansion backdrop. A contemporaneous market analyst cited by CoinDesk said failure could push some U.S. product launches and tokenization work into 2027-2028 rather than eliminate them. Existing secondary-trading usage on Base/Uniswap therefore remains real, but the expected adoption timeline has become less certain.",
+    "No new clean speculative ecosystem qualified for a buy. Solana perp volume is elevated, but GMTrade accounts for most of the current surge and explicitly rewards trading with GT points ('Trade to Mint') plus fee discounts/referrals, so that activity is rejected as incentive-contaminated rather than discretionary capital migration.",
+    "Canton remains financially substantive for institutional settlement and fee burn, but its fee leadership is not new, current CC issuance/incentives remain material, and no selective-wallet/price confirmation justifies a speculative token position.",
+    "Zama launched 16 confidential Morpho vaults and private swaps today after its first confidential vault reached about $40M TVL in seven weeks. This is a real privacy/product catalyst and swap fees are designed to buy back and burn ZAMA, but the swap venue is still private beta, fresh secondary volume and independent wallet convergence are unverified, and vault deposits are yield allocation rather than discretionary speculation. No paper buy.",
+    "No hard structural gate failed. The Uniswap v4 rsETH incident remains attributed to a custom LP module and attacker-created malicious hook rather than v4 core or the official StablePair hook; it therefore does not trigger a UNI forced exit.",
+    "Portfolio NAV is approximately $9,624.87 versus $9,675.69 for the frozen passive benchmark, trailing by about $50.82 or 52.53 bps. The generated speculative positions are still individually modest and none meets the framework's persistent thesis-failure or structural-failure exit condition, so no trim or sell is executed into a first-session policy shock."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": true,
+  "alert_classification": "BROAD_CRYPTO_POLICY_RISK_OFF_WITH_RWA_ADOPTION_HEADWIND_NO_TRIM",
+  "notes": "Prospective mark taken after the Senate CLARITY Act procedural failure and associated broad crypto selloff. No paper trade; state.json and immutable trade ledger remain unchanged."
+}
