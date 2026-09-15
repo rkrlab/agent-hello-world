@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-09-15T21:34:28Z",
+  "classification": "BROAD_CRYPTO_POLICY_RISK_OFF_WITH_RWA_ADOPTION_HEADWIND_NO_TRIM",
+  "scope": "portfolio-level regime/risk alert",
+  "primary_affected_assets": [
+    {
+      "asset": "UNI",
+      "contract_address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+      "mark_usd": 6.27,
+      "paper_action": "HOLD_NO_ADD_NO_TRIM"
+    },
+    {
+      "asset": "AERO",
+      "contract_address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+      "mark_usd": 0.5258,
+      "paper_action": "HOLD_NO_ADD_NO_TRIM"
+    }
+  ],
+  "ecosystem_regime_evidence": {
+    "market": "U.S. Senate failed 49-50 to invoke cloture/advance the CLARITY Act on 2026-09-15; 60 votes were required. Reuters reports little chance of revival in the near term given the November midterms and congressional calendar.",
+    "price_response": "CoinGecko live snapshots during this run showed BTC about $75,687 (-4.1% 24h), ETH $2,400.54 (-6.0%), SOL $97.27 (-6.2%), UNI $6.27 (-5.2%), AERO $0.5258 (-8.3%), ZEC $1,122.47 (-5.0%) and HYPE $76.97 (-4.9%). Total crypto market capitalization was down about 3.9%.",
+    "interpretation": "This is broad policy/macroeconomic risk-off rather than a clean migration into a new speculative ecosystem. It weakens the forward adoption/risk-premium backdrop while leaving existing onchain usage evidence intact."
+  },
+  "why_flows_appear_speculative_or_financially_substantive": "The current move is price-risk repricing after a major U.S. market-structure setback, not a positive discretionary-flow regime. Existing Base/Uniswap tokenized-equity and stablecoin secondary activity remains financially substantive, but the policy event increases uncertainty around U.S. product launches and tokenization timelines.",
+  "leadership_rotation_evidence": "No clean replacement leader emerged in this scan. Solana perp activity accelerated, but the majority of the surge is attributable to GMTrade, which explicitly rewards trading with GT points ('Trade to Mint') and fee discounts/referrals; that volume is rejected as incentive-contaminated. Base, Uniswap, Hyperliquid and Zcash did not produce new independent confirmation sufficient for adds.",
+  "wallet_quality_evidence": "No fresh independently funded selective-wallet cohort was verified for UNI, AERO, HYPE or ZEC in this run. Prior wallet evidence remains part of the existing theses but is not reused as new confirmation.",
+  "narrative_news_evidence": "Reuters and CoinDesk reported the Senate failure as a major setback to the crypto industry's U.S. regulatory push. CoinDesk cited an analyst view that failure could push some U.S. product launches and tokenization work into 2027-2028 rather than eliminate them, which is directly relevant to the forward timing of the UNI/AERO RWA/tokenization theses.",
+  "rwa_distinction": "The risk alert does not erase already-observed tokenized-equity secondary trading on Base or Uniswap usage. Those are actual swap/venue-usage datapoints, distinct from issuance/AUM. The new uncertainty concerns the future U.S. adoption and product-launch path, not whether the already-recorded secondary activity occurred.",
+  "liquidity_executability": "All current paper holdings remain liquid at portfolio size. No executable-liquidity failure was found.",
+  "structural_gate_result": "PASS_ALL_CURRENT_POSITIONS_WITH_EXISTING_CAVEATS",
+  "structural_gate_notes": "No honeypot, sellability, LP-removal, mint/freeze, creator dumping or other hard structural failure emerged. Today's rsETH incident remains attributed to a custom Safe/LP module redirected to an attacker-controlled Uniswap v4 hook, not a compromise of Uniswap v4 core or the official StablePair hook, so it does not force a UNI exit.",
+  "major_uncertainties": [
+    "The first-session policy selloff may overstate the durable impact if legislative negotiations revive after the election or regulatory agencies provide alternative clarity.",
+    "The Federal Reserve decision and rising Treasury yields/oil prices are simultaneous macro factors, so the exact share of the crypto decline attributable to CLARITY is not identifiable.",
+    "AERO is underperforming the broad market in the current snapshot, but one session is not persistent leadership failure.",
+    "UNI has reversed below today's $6.71 confirmation-add mark, but its StablePair usage and protocol-value-capture thesis has not yet broken."
+  ],
+  "why_signal_matters_now": "This is the first major portfolio-level external policy shock after the framework added UNI, HYPE, AERO and ZEC. It creates a prospective test of whether the framework's protocol/flow signals persist through a broad regulatory risk-off episode. The correct action under the rules is not to chase the selloff: no hard gate failed and thesis deterioration is not yet persistent, so all positions are held and no new risk is added.",
+  "paper_portfolio": {
+    "cash_usd": 2766.312021847349,
+    "portfolio_nav_usd": 9624.86690560883,
+    "passive_benchmark_nav_usd": 9675.68915933745,
+    "alpha_vs_benchmark_usd": -50.822253728620126,
+    "alpha_vs_benchmark_bps": -52.52571976185748,
+    "paper_trade": null
+  },
+  "rejected_or_watchlist_signals": [
+    "Solana perps: reject current acceleration as clean regime evidence because GMTrade dominates the surge and uses trade-to-mint points plus fee/referral incentives.",
+    "Canton/CC: financially substantive institutional settlement and fee burn, but leadership is not newly emerging, token incentives/net issuance remain material, and wallet/price confirmation is insufficient.",
+    "ZAMA: 16 confidential Morpho vaults and private swaps launched today after the first vault reached ~$40M TVL; 100% of swap fees are specified for ZAMA buyback/burn. Watch only because swaps are still private beta, fresh secondary volume/wallet convergence are unverified, and vault deposits are yield allocation rather than discretionary speculation."
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "source_notes": [
+    "Reuters, 2026-09-15: U.S. Senate failed to advance CLARITY Act; 49-50 vote; little near-term legislative runway.",
+    "CoinDesk, 2026-09-15: crypto stocks and majors sold off after the vote; analyst commentary on delayed U.S. tokenization/product launches.",
+    "CoinGecko live pages, 2026-09-15: portfolio marks and broad market drawdown.",
+    "DefiLlama and GMTrade public pages, 2026-09-15: Solana perp activity and explicit GMTrade trade-to-mint/fee incentive contamination.",
+    "Zama/The Block, 2026-09-15: confidential vault expansion and private swap launch; Zama documentation states swap fees buy and burn ZAMA."
+  ]
+}
