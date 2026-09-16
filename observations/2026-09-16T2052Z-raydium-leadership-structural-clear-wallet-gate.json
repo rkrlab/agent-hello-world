@@ -1,0 +1,80 @@
+{
+  "timestamp_utc": "2026-09-16T20:52:11Z",
+  "classification": "RAYDIUM_RAY_TOKENIZED_EQUITY_LEADERSHIP_STRUCTURALLY_CLEARED_WALLET_CONFIRMATION_MISSING_NO_TRADE",
+  "ecosystem": "Solana / Raydium",
+  "candidate": {
+    "asset": "RAY",
+    "contract_address": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+    "mark_price_usd": 1.40,
+    "mark_source": "CoinGecko global volume-weighted RAY/USD",
+    "market_cap_usd": 377001000,
+    "fdv_usd": 775698000,
+    "tvl_usd": 1095000000,
+    "token_24h_volume_usd": 63642000,
+    "price_change_24h_pct": 11.4,
+    "price_change_30d_pct": 122.2
+  },
+  "regime_evidence": [
+    "RAY is showing protocol-specific leadership rather than merely following SOL. On this checkpoint CoinGecko marks RAY near $1.40, +11.4% over 24h and +122.2% over 30d, with $63.6M token turnover across 73 exchanges / 147 markets.",
+    "Raydium announced tokenized AMD stock trading on 2026-09-16, adding another tokenized-equity product catalyst after the earlier Solana tokenized-stock expansion.",
+    "Recent reporting puts Solana tokenized-equity supply near $684M, up roughly 47% in three weeks, with Raydium handling a large share of secondary tokenized-equity liquidity. This is distinct from issuance/AUM alone because completed DEX swaps are occurring, although some of the observed tokenized-equity volume is speculative memecoin-vs-tokenized-stock trading rather than investors simply buying stocks.",
+    "StonkFun routes new launches through Raydium LaunchLab, creating another fee-producing speculative flow surface. This flow is economically real but should not be interpreted as RWA demand."
+  ],
+  "value_capture": {
+    "status": "VERIFIED_DIRECT_BUYBACK_LINK_WITH_CAVEAT",
+    "detail": "Raydium documentation states that 12% of swap fees across its listed pool types route to RAY buybacks. On a standard 0.25% fee pool this is approximately 0.03% of notional. Bought-back RAY accumulates at DdHDoz94o2WJmD9myRobHCwtx1bESpHTd4SSPe6VEZaz. The tokens are held rather than burned, so this is persistent protocol-funded demand but not permanent supply destruction. Pool-specific fee parameters remain subject to current on-chain configuration."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "mint_authority": "revoked",
+    "freeze_authority": "revoked",
+    "liquidity_executability": "pass; ~$63.6M 24h token turnover and broad CEX/DEX market coverage",
+    "holder_concentration_note": "Raw scanners show high top-holder concentration, but major large accounts investigated in the preceding scan resolve to protocol-related infrastructure, including Raydium treasury / staking authority / official buyback holdings. This materially reduces but does not eliminate concentration/governance risk.",
+    "remaining_caveats": [
+      "Bought-back RAY is held, not burned, leaving future governance/disposition risk.",
+      "Headline holder concentration remains high even after known protocol accounts are classified.",
+      "RAY has already appreciated more than 120% over 30 days, creating chase / mean-reversion risk."
+    ]
+  },
+  "wallet_quality": {
+    "rating": "LOW_TO_MEDIUM_FOR_FRESH_CONFIRMATION",
+    "detail": "No new independently funded, historically selective RAY accumulator cohort with verified net buying was found at this checkpoint. Generic smart-money/whale labels and social claims are not counted as confirmation. This remains the principal missing confirmation leg."
+  },
+  "incentive_filter": {
+    "ray": "No token-level airdrop or points catalyst was used as a positive signal for RAY in this checkpoint. Fee-funded RAY buybacks are treated as protocol value capture, not user acquisition incentives.",
+    "stonk_challenger": "Rejected as a cleaner leader at this checkpoint because STONK holder/persistence metrics are contaminated by an active 10M STONK community airdrop with a Sep. 10 snapshot and Sep. 30 claim deadline, alongside reward-mode mechanics."
+  },
+  "macro_context": "The Federal Reserve raised the target range 25 bp to 3.75%-4.00% on 2026-09-16 and signaled potential further tightening. RAY's strong relative performance through that risk-off macro event increases the significance of its protocol-specific leadership, but does not by itself justify chasing the token.",
+  "portfolio_decision": {
+    "action": "NO_TRADE",
+    "reason": "RAY now clears the structural/executability gate and has persistent protocol-specific leadership plus verified fee-funded value capture. However, the move is already extended and no fresh independent selective-wallet accumulation cohort has been verified. Under the framework, the correct prospective action is to keep RAY at the front of the watchlist rather than buy after a +122% 30d move without the missing wallet-quality confirmation.",
+    "paper_cash_usd": 2524.2456382437135,
+    "paper_trade_count": 6,
+    "paper_nav_marked_approx_usd": 9758.01,
+    "passive_benchmark_nav_approx_usd": 9727.93,
+    "alpha_vs_benchmark_approx_usd": 30.08,
+    "alpha_vs_benchmark_approx_bps": 30.9
+  },
+  "existing_positions_review": {
+    "ZEC": "HOLD_NO_ADD. Price persistence remains strong, but the $13.65M / 12.87K ZEC whale story resurfacing today is the same Sep. 14 accumulator already incorporated into the existing thesis, not a new independent wallet cohort.",
+    "UNI": "HOLD_NO_ADD. No new independent wallet/usage leg beyond already-recorded Arc and StablePair evidence sufficient to scale above the existing position.",
+    "HYPE": "HOLD_NO_ADD. Strong protocol economics remain offset by unresolved distribution/unlock caveats.",
+    "AERO": "HOLD_NO_ADD. Prior tokenized-stock incentive-contamination downgrade remains unresolved.",
+    "BTC_ETH_SOL_SUI_BNB": "HOLD. No framework-level structural failure or leadership signal requiring rebalance at this checkpoint."
+  },
+  "sources": [
+    "https://www.coingecko.com/en/coins/raydium",
+    "https://docs.raydium.io/raydium/protocol/protocol-fees",
+    "https://docs.raydium.io/ray/treasury",
+    "https://coinmarketcap.com/top-stories/6aaacc9e84f8f4387e48cafa/",
+    "https://stonkfun.club/",
+    "https://www.reuters.com/business/view-markets-steady-after-fed-raises-rates-points-another-hike-this-year-2026-09-16/"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  }
+}
