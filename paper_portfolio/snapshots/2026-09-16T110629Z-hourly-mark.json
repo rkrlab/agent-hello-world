@@ -1,0 +1,39 @@
+{
+  "timestamp_utc": "2026-09-16T11:06:29Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 2766.312021847349,
+  "marks": {
+    "BTC": {"quantity": 0.025297677774, "price_usd": 75853.56, "value_usd": 1918.9189188907753},
+    "ETH": {"quantity": 0.798766704209, "price_usd": 2404.31, "value_usd": 1920.4827745967407},
+    "SOL": {"quantity": 9.673050880248, "price_usd": 97.28, "value_usd": 940.9943896305255},
+    "SUI": {"quantity": 616.067028092657, "price_usd": 0.6899, "value_usd": 425.024642681124},
+    "BNB": {"quantity": 0.672675904749, "price_usd": 711.29, "value_usd": 478.4676442889162},
+    "UNI": {"quantity": 75.003820944752, "price_usd": 6.29, "value_usd": 471.77403374249},
+    "HYPE": {"quantity": 3.114315146532163, "price_usd": 77.68, "value_usd": 241.92000058261843},
+    "AERO": {"quantity": 439.381667552024, "price_usd": 0.5309, "value_usd": 233.26772730336955},
+    "ZEC": {"quantity": 0.21546771804413575, "price_usd": 1126.84, "value_usd": 242.79764340085393}
+  },
+  "portfolio_nav_usd": 9639.959796964762,
+  "passive_benchmark_nav_usd": 9683.888370088082,
+  "alpha_vs_benchmark_usd": -43.92857312331944,
+  "alpha_vs_benchmark_bps": -45.36253563083966,
+  "paper_trade_executed": false,
+  "position_actions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD",
+    "SUI": "HOLD_NO_ADD",
+    "BNB": "HOLD_NO_ADD",
+    "UNI": "HOLD_NO_ADD",
+    "HYPE": "HOLD_NO_ADD",
+    "AERO": "HOLD_NO_ADD",
+    "ZEC": "HOLD_NO_ADD"
+  },
+  "notes": [
+    "ZEC gained independent NU7 roadmap confirmation, but the news spike retraced and no fresh selective-wallet cohort was verified, so no add.",
+    "HYPE protocol activity remains strong but institutional ETF/distribution conflict persists, so no add.",
+    "AERO remains no-add after the tokenized-stock incentive-contamination downgrade.",
+    "UNI underlying protocol usage remains strong, but Robinhood Chain activity includes gas subsidy/speculative churn and no new wallet confirmation was verified after the Sep 15 add.",
+    "No hard structural-gate failure requiring an exit surfaced in this scan."
+  ]
+}
