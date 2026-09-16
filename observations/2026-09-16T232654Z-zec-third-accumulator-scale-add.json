@@ -1,0 +1,124 @@
+{
+  "timestamp_utc": "2026-09-16T23:26:54Z",
+  "classification": "QUALIFIED_ZEC_THIRD_ACCUMULATOR_PRICE_VOLUME_PERSISTENCE_SCALE_TO_MAX",
+  "alert_threshold_crossed": true,
+  "ecosystem": "Zcash / privacy",
+  "candidate": {
+    "asset": "ZEC",
+    "contract_address": null,
+    "native_asset": true
+  },
+  "signal_summary": "A third distinct transparent exchange-withdrawal address appeared after the earlier ZEC starter and confirmation add, while the NU7-driven price/volume move persisted rather than reverting. This supplies the missing additional wallet-breadth leg and justifies scaling the paper position only to the normal 7.5% non-core cap.",
+  "ecosystem_regime_evidence": {
+    "current_price_usd": 1286.84,
+    "price_change_24h_pct": 17.8,
+    "range_24h_usd": [1101.78, 1363.21],
+    "volume_24h_usd": 2161132512.02,
+    "volume_change_day_over_day_pct": 125.4,
+    "shielded_supply_zec_approx": 4895942,
+    "shielded_pct_issued": 28.9,
+    "shielded_net_inflow_7d_zec_latest_available": 14670,
+    "estimated_new_supply_zec_per_day": 1800,
+    "comment": "The shielded stock is a harder-to-game usage/capital-stock measure than raw wallet or transaction counts. Seven-day net shielding remains positive but has cooled, so it supports the regime without being scored as fresh acceleration."
+  },
+  "discretionary_flow_quality": {
+    "classification": "FINANCIALLY_SUBSTANTIVE_MULTI_PATH_EXCHANGE_WITHDRAWAL_WITH_IDENTITY_UNCERTAINTY",
+    "new_path": {
+      "address": "t1JhvBZkQ81Ahw2C78jHn2Br6F3jnwhjB1e",
+      "zec_accumulated": 15300,
+      "reported_value_usd": 17920000,
+      "sources": ["Binance", "OKX", "Kraken"]
+    },
+    "prior_paths": [
+      {"address": "t1LMGUmHPpAy1iHNvmx6qemj6zg3TTE6SPN", "zec_accumulated_approx": 36360},
+      {"address": "t1fWZrVxesXzazmpp6cdKhRo21xaZ4wNFBD", "fresh_wallet": "t1XvZ8MTwYPTqvzFWryUpuQBgseWA967qnz", "zec_accumulated_approx": 12870}
+    ],
+    "combined_observed_zec_approx": 64530,
+    "combined_as_days_of_estimated_issuance": 35.85,
+    "incentive_discount": "Exchange withdrawals and shielded-pool balances are not points, quests, rebates or yield-farming metrics. No incentive credit is assigned."
+  },
+  "wallet_quality": {
+    "score": "MEDIUM_HIGH_NOT_VERIFIED_SMART_MONEY",
+    "positive": "The new transparent address is distinct from both prior observed paths, arrived after the earlier paper entries, and withdrew from three major centralized exchanges. No public direct funding/linkage among the new address and the two earlier accumulator addresses surfaced in this scan.",
+    "limitations": "Beneficial-owner independence remains unproven, and none of the three addresses has a verified historical record of selective profitable accumulation. The evidence is therefore treated as breadth/persistence confirmation, not as three independent elite smart-money wallets."
+  },
+  "leadership_rotation": {
+    "status": "ZEC_PRIVACY_LEADERSHIP_REACCELERATION_CONFIRMED",
+    "comment": "ZEC is outperforming the weak broader crypto tape while turnover has more than doubled day/day. The signal is stronger than the earlier first-reaction NU7 spike because it persisted through a retracement and then gained a fresh accumulator path."
+  },
+  "narrative_news": {
+    "positive": "The NU7 coinholder vote remains a genuine product/governance catalyst rather than an incentive campaign; the current move now has separate wallet and market-persistence confirmation.",
+    "risk": "High-profile endorsements and broad social enthusiasm are discounted as crowding/inverse-signal risk rather than counted as confirmation."
+  },
+  "liquidity_executability": {
+    "tier": "A",
+    "coin_gecko_mark_usd": 1286.84,
+    "tracked_exchanges": 49,
+    "tracked_markets": 83,
+    "volume_24h_usd": 2161132512.02,
+    "binance_plus_2pct_depth_usd": 826954,
+    "binance_minus_2pct_depth_usd": 2958709,
+    "okx_plus_2pct_depth_usd": 457598,
+    "okx_minus_2pct_depth_usd": 4387799,
+    "paper_execution_cost_rate": 0.0015,
+    "comment": "Depth and broad venue turnover are ample for a sub-$200 paper add."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_NATIVE_ISSUANCE_PRIVACY_AND_OPACITY_CAVEATS",
+    "details": [
+      "ZEC is a native proof-of-work asset, so honeypot, creator-controlled LP, freeze-authority and smart-contract mint gates do not apply in the usual token-launch sense.",
+      "Maximum supply remains 21M ZEC.",
+      "Ongoing PoW issuance remains a source of sell pressure.",
+      "Shielded ownership improves privacy but prevents complete beneficial-owner concentration analysis.",
+      "Privacy-asset regulatory and exchange-listing risk remains material."
+    ]
+  },
+  "major_uncertainties": [
+    "The three transparent accumulator addresses may still share a beneficial owner or coordinated source despite no public direct linkage found in this scan.",
+    "Historical wallet selectivity/PnL remains unverified.",
+    "ZEC is now extended after a large 24-hour move, increasing reversal risk.",
+    "Seven-day shielded net inflow is positive but no longer accelerating.",
+    "NU7 remains a voted direction requiring implementation and testing rather than a completed protocol upgrade."
+  ],
+  "why_signal_matters_now": "The prior confirmation add deliberately stopped around 5% because fresh wallet-quality confirmation was missing. A new 15.3K-ZEC exchange-withdrawal path appeared after that decision, while ZEC's volume accelerated to roughly $2.16B and price held a second-leg breakout. This crosses the framework's additional-confirmation threshold, but the unresolved beneficial-owner/selectivity questions argue against exceeding the normal 7.5% cap.",
+  "paper_trade": {
+    "trade_id": "ADD-ZEC-20260916-232654Z",
+    "action": "ADD",
+    "asset": "ZEC",
+    "quantity": 0.1501701233753564,
+    "mark_price_usd": 1286.84,
+    "gross_usd": 193.24492156434363,
+    "transaction_cost_rate": 0.0015,
+    "transaction_cost_usd": 0.28986738234651543,
+    "position_after_quantity": 0.5662269248504845,
+    "position_after_value_usd": 728.6434559745975,
+    "all_in_average_cost_usd": 1202.7450996664215,
+    "cash_after_usd": 2330.7108492970233,
+    "portfolio_nav_after_usd": 9715.246079661301,
+    "passive_benchmark_nav_usd": 9697.401177485724,
+    "alpha_vs_benchmark_usd": 17.844902175576863,
+    "alpha_vs_benchmark_bps": 18.401736557013894,
+    "position_weight_after": 0.075,
+    "sizing": "Added only enough to reach the 7.5% non-core maximum at the current mark; no further scale without a materially new regime or a later risk-budget decision."
+  },
+  "broader_scan": {
+    "RAY": "Still the leading structurally acceptable Solana tokenized-equity/LaunchLab application candidate, but no fresh verified selective-wallet cohort surfaced in this scan; no chase trade after the recent large rally.",
+    "HYPE": "Fee-funded burn remains strong and a new ~$7.7M accumulation was reported, but Bitwise ETFs simultaneously sold ~50.6K HYPE (~$3.94M), preserving the institutional-flow conflict; no add.",
+    "ARC": "Launch-day DEX activity remains large, but ARGUS/TOLLY continue to fail the prior structural/liquidity-quality gates; ecosystem yes, token no.",
+    "AERO": "Hold/no-add while current tokenized-stock liquidity/trader incentives contaminate the organic-demand signal.",
+    "UNI": "Protocol fee/revenue activity remains healthy, but no new independent threshold above the existing ~5% paper position emerged."
+  },
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    {"name": "CoinGecko Zcash", "url": "https://www.coingecko.com/en/coins/zcash", "use": "canonical mark, 24h price range, turnover, venue breadth and depth"},
+    {"name": "Onchain Lens", "url": "https://t.me/s/OnchainLens", "use": "new and prior ZEC exchange-withdrawal accumulator paths"},
+    {"name": "ZecStats/Zecmetrics", "url": "https://zecstats.com/", "use": "shielded capital stock / issued supply context"}
+  ],
+  "real_trade_executed": false
+}
