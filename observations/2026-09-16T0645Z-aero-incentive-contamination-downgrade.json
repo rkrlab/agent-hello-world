@@ -1,0 +1,89 @@
+{
+  "observed_at_utc": "2026-09-16T06:45:40Z",
+  "classification": "MATERIAL_AERO_TOKENIZED_STOCK_INCENTIVE_CONTAMINATION_DOWNGRADE_HOLD_NO_ADD",
+  "ecosystem": "Base / Aerodrome",
+  "candidate": {
+    "asset": "AERO",
+    "contract_address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+    "paper_position_quantity": 439.381667552024,
+    "paper_average_cost_usd": 0.5615586,
+    "observable_mark_usd": 0.5296,
+    "mark_source": "CoinGecko AERO/USD live volume-weighted spot"
+  },
+  "thesis_change": "Newly verified incentive data materially lowers confidence that Base tokenized-stock growth can be treated as purely discretionary demand. This is a research-quality correction, not a claim that incentives began today. Aerodrome tokenized-stock LPs currently/very recently show large AERO reward components, and Base tokenized-stock purchase cashback is active through 2026-09-21. The original paper thesis remains partially supported by real secondary swaps, fee-derived pool APY, Base stablecoin/DEX growth, Aerodrome venue leadership and direct veAERO fee capture, but tokenized-stock activity must now be incentive-adjusted before any scale-up.",
+  "evidence": {
+    "base_chain": {
+      "stablecoin_mcap_usd": 5072000000,
+      "stablecoin_change_7d_pct": 2.66,
+      "dex_volume_24h_usd": 942760000,
+      "dex_volume_7d_usd": 6593000000,
+      "dex_volume_weekly_change_pct": 14.0,
+      "active_addresses_24h": 394155,
+      "new_addresses_24h": 59028,
+      "rwa_active_aum_usd": 182520000,
+      "source": "https://defillama.com/chain/base?chainFees=true"
+    },
+    "aerodrome_protocol": {
+      "tvl_usd": 331740000,
+      "fees_24h_usd": 359488,
+      "revenue_24h_usd": 244692,
+      "holder_revenue_24h_usd": 244692,
+      "incentives_24h_usd": 0,
+      "fees_7d_usd": 10050000,
+      "revenue_7d_usd": 9160000,
+      "incentives_7d_usd": 2290000,
+      "earnings_7d_usd": 6860000,
+      "dex_volume_24h_usd": 450380000,
+      "dex_volume_7d_usd": 2888000000,
+      "source": "https://defillama.com/protocol/aerodrome"
+    },
+    "tokenized_stock_incentives": [
+      {
+        "observation": "USDC/MSFTc individual pool display showed 946.76% APY, including 102.45% fee/base APY and 844.31% AERO reward APY; reward component ~89.2% of headline yield.",
+        "observed_date": "2026-09-16",
+        "source": "https://www.signaetstructura.com/en/research/"
+      },
+      {
+        "observation": "Coinbase tokenized-stock cashback remains active on Base through 2026-09-21. KyberSwap Epoch 2 offers up to 4% USDC cashback with a $20 per-address cap across ten cStocks; broader Merkl/1inch routes advertise up to 5% with campaign caps.",
+        "source": "https://blog.kyberswap.com/earn-cashback-on-coinbase-tokenized-stocks-with-kyberswap/"
+      },
+      {
+        "observation": "The direct cashback budgets are small relative to hundreds of millions of reported DEX turnover, so they cannot by themselves explain the entire volume regime. LP incentives are much larger and clearly influence where liquidity sits, but fee-derived base APY remains non-zero/substantial in several pools."
+      }
+    ]
+  },
+  "wallet_quality": {
+    "status": "NO_NEW_INDEPENDENT_CONFIRMATION",
+    "note": "No new independently funded selective-wallet accumulation cohort was verified this run. The earlier Nansen-attributed AERO smart-money balance increase is not recycled as fresh confirmation."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "hard_gate_failure": false,
+    "caveats": [
+      "Ongoing weekly AERO emissions and vote-directed rewards can subsidize liquidity and create sell pressure.",
+      "Tokenized-stock LP activity is materially reward-influenced and must not be scored as wholly organic.",
+      "No new deployer, sellability, blacklist, honeypot, LP-removal or holder-concentration hard failure was verified."
+    ]
+  },
+  "paper_action": {
+    "decision": "HOLD_NO_ADD",
+    "trade_executed": false,
+    "reason": "The Base/Aerodrome regime remains economically substantive after adjustment: Base stablecoins and DEX volume are growing, Aerodrome produces material real fees/revenue and direct veAERO holder revenue, and current protocol-wide 7d earnings remain positive after reported incentives. But the tokenized-stock pillar is more incentive-contaminated than the entry rationale explicitly recognized, so it is no longer sufficient for scaling. Require persistence after the Sep. 21 cashback epoch and/or incentive-adjusted pool volume plus fresh independent wallet accumulation before adding."
+  },
+  "portfolio_mark_context": {
+    "paper_nav_usd_approx": 9641.49,
+    "passive_benchmark_nav_usd_approx": 9675.57,
+    "alpha_vs_benchmark_usd_approx": -34.08,
+    "alpha_vs_benchmark_bps_approx": -35.22,
+    "cash_usd": 2766.312021847349,
+    "mark_note": "Approximate run-time marks: BTC 75864.18, ETH 2398.21, SOL 96.93, SUI 0.6876, BNB 712.91, UNI 6.32, HYPE 77.40, AERO 0.5296, ZEC 1168.81."
+  },
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "real_trade_executed": false
+}
