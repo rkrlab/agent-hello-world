@@ -1,0 +1,68 @@
+{
+  "timestamp_utc": "2026-09-16T00:43:54Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 2766.312021847349,
+  "marks_usd": {
+    "BTC": 75785.18,
+    "ETH": 2402.75,
+    "SOL": 97.09,
+    "SUI": 0.687,
+    "BNB": 715.30,
+    "UNI": 6.38,
+    "HYPE": 77.03,
+    "AERO": 0.5269,
+    "ZEC": 1107.82
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko BTC/USD live volume-weighted spot page, crawled 2026-09-16 UTC",
+    "ETH": "CoinGecko ETH/USD live volume-weighted spot page, crawled 2026-09-16 UTC",
+    "SOL": "CoinGecko SOL/USD live volume-weighted spot page, crawled 2026-09-16 UTC",
+    "SUI": "CoinGecko SUI/USD live volume-weighted spot page, crawled 2026-09-16 UTC",
+    "BNB": "CoinGecko BNB/USD live volume-weighted spot page, crawled 2026-09-16 UTC",
+    "UNI": "CoinGecko UNI/USD live volume-weighted spot page, crawled 2026-09-16 UTC",
+    "HYPE": "CoinGecko HYPE/USD live volume-weighted spot page, crawled 2026-09-16 UTC",
+    "AERO": "CoinGecko AERO/USD live volume-weighted spot page, crawled 2026-09-16 UTC",
+    "ZEC": "CoinGecko ZEC/USD live volume-weighted spot page, crawled 2026-09-16 UTC"
+  },
+  "position_values_usd": {
+    "BTC": 1917.1890636845892,
+    "ETH": 1919.2366985381748,
+    "SOL": 939.1565099632784,
+    "SUI": 423.23804829965536,
+    "BNB": 481.16507466695964,
+    "UNI": 478.5243776275177,
+    "HYPE": 239.8956957373725,
+    "AERO": 231.51020063316145,
+    "ZEC": 238.69944740365446
+  },
+  "portfolio_nav_usd": 9634.927138401712,
+  "passive_benchmark_nav_usd": 9679.985395152657,
+  "alpha_vs_benchmark_usd": -45.058256750944565,
+  "alpha_vs_benchmark_bps": -46.54785612952258,
+  "decisions": {
+    "BTC": "HOLD_NO_ADD_MACRO_AND_REGULATORY_RISK_OFF_REMAINS_UNRESOLVED_AHEAD_OF_FED",
+    "ETH": "HOLD_NO_ADD_INSTITUTIONAL_RELATIVE_FLOW_SIGNAL_IS_CONSTRUCTIVE_BUT_CURRENT_PRICE_AND_CURRENT_SESSION_ETF_FLOW_CONFIRMATION_ARE_NOT_YET_SUFFICIENT",
+    "SOL": "HOLD_NO_ADD_DEX_AND_PERP_ACTIVITY_REMAIN_HIGH_BUT_STABLECOIN_RETENTION_AND_INCENTIVE_CLEANLINESS_DO_NOT_CONFIRM_FRESH_DISCRETIONARY_CAPITAL",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_GROWTH_CONTINUES_BUT_DEX_AND_PERP_ACTIVITY_HAVE_NOT_CONFIRMED_SPECULATIVE_LEADERSHIP",
+    "BNB": "HOLD_NO_ADD_RELATIVE_PRICE_RESILIENCE_IS_NOT_MATCHED_BY_FRESH_RETAINED_CAPITAL_OR_CLEAN_ACTIVITY_ACCELERATION",
+    "UNI": "HOLD_NO_ADD_NO_TRIM_STABLEPAIR_USAGE_CONFIRMATION_PERSISTS_AND_PRICE_HAS_PARTIALLY_REBOUNDED_FROM_THE_PRIOR_MARK_BUT_NO_NEW_INDEPENDENT_SELECTIVE_WALLET_COHORT_IS_VERIFIED",
+    "HYPE": "HOLD_NO_ADD_NO_TRIM_REPEATED_MULTICOIN_AND_BITWISE_EXCHANGE_DEPOSIT_RISK_PERSISTS_BUT_IS_NOT_NEW_ENOUGH_TO_REALERT_AND_PROTOCOL_ECONOMICS_REMAIN_STRONG;_NO_CONFIRMED_STRUCTURAL_FAILURE",
+    "AERO": "HOLD_NO_ADD_NO_TRIM_BASE_TOKENIZED_EQUITY_SECONDARY_TRADING_LEADERSHIP_AND_ZERO_CURRENT_INCENTIVE_REVENUE_QUALITY_REMAIN_INTACT_BUT_NO_NEW_WALLET_CONFIRMATION",
+    "ZEC": "HOLD_NO_ADD_SHIELDED_USAGE_AND_PRIOR_ACCUMULATION_THESIS_PERSIST_BUT_PRICE_IS_BELOW_ENTRY_AND_NO_THIRD_INDEPENDENT_HIGH_QUALITY_ACCUMULATOR_IS_VERIFIED"
+  },
+  "regime_notes": [
+    "No new ecosystem crossed the framework threshold after the prior CLARITY Act risk alert. The broad selloff remains primarily a macro/regulatory risk-off event ahead of the September 16 Federal Reserve decision rather than a clean new speculative leadership migration.",
+    "Chain-level activity remains mixed rather than capitulatory: Solana and Base continue to show strong DEX velocity, but Solana stablecoin supply has recently contracted and Base's tokenized-equity leadership is already represented by the existing AERO/UNI theses. BSC shows high activity without fresh retained stablecoin capital; Sui stablecoins are growing while DEX/perp usage is contracting; Hyperliquid perps remain economically large but its stablecoin base has softened.",
+    "Stablecoin-in-DeFi tracking shows Ethereum still dominates deployed stable liquidity, with Solana and Base next among the major speculative venues. Changes since the prior observation are not large or clean enough to establish a new capital-migration regime.",
+    "Ethereum has a constructive relative institutional-flow setup: September ETF demand has recently outpaced Bitcoin over some mid-month cutoffs and exchange-held ETH remains historically low. However, the latest fully settled ETF session is still September 14 and ETH is underperforming BTC in the current risk-off tape, so there is no prospective add without post-Fed and current-session flow confirmation.",
+    "Uniswap StablePair's USDC/USDT usage remains a real secondary-trading/product-use confirmation rather than an incentive campaign; the existing ~5% UNI position is therefore held, but the framework requires another independent confirmation before scaling toward the 7.5% ceiling.",
+    "Aerodrome remains the leading Base venue for actual tokenized-stock secondary trading and continues to produce holder revenue with no current protocol incentive line in the latest DefiLlama snapshot. The regulatory timeline has worsened but the usage/value-capture thesis has not failed.",
+    "HYPE distribution remains the most material existing-position risk. Reporting now aggregates roughly 441,000 HYPE transferred from four Multicoin-linked wallets to Coinbase Prime during September 15, while Bitwise has also deposited HYPE. These transfers may precede sales but are not proof of executed sales. This is continuation/clarification of the distribution risk already alerted, not a new structural-gate failure; strong Hyperliquid fees/revenue and deep liquidity keep the position at HOLD rather than TRIM.",
+    "ZEC shielded usage remains elevated near 29% of circulating supply with positive seven-day net shielded inflow. No fresh independent selective-wallet confirmation was found beyond the two accumulation paths that triggered the starter, so no add is justified.",
+    "Portfolio NAV is approximately $9,634.93 versus $9,679.99 for the frozen passive benchmark, trailing by about $45.06 or 46.55 bps. Alpha has modestly improved from the prior mark without any trade. No hard structural gate failed and no position meets the persistent thesis-failure condition for a trim or exit."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "alert_classification": null,
+  "notes": "Prospective hourly mark after a fresh regime/leadership scan. No new alert threshold and no paper trade; state.json and immutable trade ledger remain unchanged."
+}
