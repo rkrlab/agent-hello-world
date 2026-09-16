@@ -3,7 +3,7 @@
   "initialized_at_utc": "2026-09-09T15:14:00Z",
   "base_currency": "USD",
   "starting_nav_usd": 10000.0,
-  "current_cash_usd": 2766.312021847349,
+  "current_cash_usd": 2524.2456382437135,
   "realized_pnl_usd": 0.0,
   "positions": {
     "BTC": {
@@ -71,16 +71,21 @@
       "price_source": "CoinGecko AERO/USD volume-weighted spot across 55 exchanges / 123 markets"
     },
     "ZEC": {
-      "quantity": 0.21546771804413575,
-      "average_cost_usd": 1139.035995,
+      "quantity": 0.41605680147512814,
+      "average_cost_usd": 1171.6954715991094,
       "framework_entry_at_utc": "2026-09-15T08:07:21Z",
       "gross_entry_value_usd": 245.0578997631369,
       "transaction_cost_usd": 0.36758684964470534,
-      "price_source": "CoinGecko ZEC/USD live volume-weighted spot across 49 exchanges / 83 markets"
+      "latest_add_at_utc": "2026-09-16T12:32:20Z",
+      "latest_add_mark_price_usd": 1204.97,
+      "latest_add_quantity": 0.20058908343099238,
+      "cumulative_gross_buys_usd": 486.7617276249798,
+      "cumulative_transaction_cost_usd": 0.7301425914374697,
+      "price_source": "CoinGecko ZEC/USD live volume-weighted spot across 49 exchanges / 83 markets; latest add marked at $1,204.97"
     }
   },
-  "last_trade_id": "ADD-UNI-20260915-130553Z",
-  "trade_count": 5,
+  "last_trade_id": "ADD-ZEC-20260916-123220Z",
+  "trade_count": 6,
   "benchmark": {
     "type": "passive_hold_opening_allocation",
     "starting_nav_usd": 10000.0,
@@ -101,6 +106,7 @@
     "HYPE starter bought prospectively on 2026-09-12 after repeat-wallet accumulation persisted, a separate treasury accumulator continued staking, and fee-funded HYPE buyback/burn accelerated; 0.15% Tier A simulated execution cost applied. HYPE dilution/unlock risk remains a major caveat.",
     "AERO starter bought prospectively on 2026-09-13 after Base tokenized-stock secondary trading reached a new $100M daily DEX record, Aerodrome captured 76% of the preceding 30-day stock-token DEX volume, smart-money AERO balances were reported up 74% over 30 days, and veAERO directly captures exchange revenue. 0.35% Tier B simulated execution cost applied because AERO is a liquid mid-cap; weekly emissions/governance and wallet-independence remain caveats.",
     "ZEC starter bought prospectively on 2026-09-15 after the earlier post-liquidation privacy-regime repair gained a second distinct large exchange-withdrawal accumulator while shielded-pool balances and 7d net shielded inflow remained elevated. Wallet beneficial-owner independence and historical selectivity are unproven; current token volume has cooled day/day, so sizing remains a 2.5% starter. 0.15% Tier A simulated execution cost applied.",
-    "UNI confirmation add executed prospectively on 2026-09-15 after Uniswap StablePair's USDC/USDT pool became Ethereum's highest-volume pool within five days of launch, while UNI turnover, Uniswap fees and project revenue reaccelerated. No fresh independent selective-wallet cohort was verified, and StablePair LP fees are not assumed to equal direct UNI burn, so the position was increased only to ~5.1% of marked NAV rather than the 7.5% non-core cap. 0.15% Tier A simulated execution cost applied."
+    "UNI confirmation add executed prospectively on 2026-09-15 after Uniswap StablePair's USDC/USDT pool became Ethereum's highest-volume pool within five days of launch, while UNI turnover, Uniswap fees and project revenue reaccelerated. No fresh independent selective-wallet cohort was verified, and StablePair LP fees are not assumed to equal direct UNI burn, so the position was increased only to ~5.1% of marked NAV rather than the 7.5% non-core cap. 0.15% Tier A simulated execution cost applied.",
+    "ZEC confirmation add executed prospectively on 2026-09-16 after the NU7 coinholder vote supplied an independent product/governance confirmation and ZEC recovered from its initial post-vote rejection to near its 24h high with 24h turnover up ~39% day/day. Shielded balances remain substantial at ~28.9% of issued supply. No fresh selective-wallet cohort was verified and NU7 is not yet implemented, so the position was increased only to ~5.2% of marked NAV rather than the 7.5% cap. 0.15% Tier A simulated execution cost applied."
   ]
 }
