@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-09-16T13:57:10Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 2524.2456382437135,
+  "marks_usd": {
+    "BTC": 75682.48,
+    "ETH": 2394.78,
+    "SOL": 97.11,
+    "SUI": 0.6893,
+    "BNB": 709.86,
+    "UNI": 6.22,
+    "HYPE": 78.67,
+    "AERO": 0.5225,
+    "ZEC": 1254.27
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko BTC/USD current volume-weighted spot observed during the run",
+    "ETH": "CoinGecko ETH/USD current volume-weighted spot observed during the run",
+    "SOL": "CoinGecko SOL/USD current volume-weighted spot observed during the run",
+    "SUI": "CoinGecko SUI/USD current volume-weighted spot observed during the run",
+    "BNB": "CoinGecko BNB/USD current volume-weighted spot observed during the run",
+    "UNI": "CoinGecko UNI/USD current volume-weighted spot observed during the run",
+    "HYPE": "CoinGecko HYPE/USD current volume-weighted spot observed during the run",
+    "AERO": "CoinGecko AERO/USD current volume-weighted spot observed during the run",
+    "ZEC": "CoinGecko ZEC/USD current volume-weighted spot observed during the run"
+  },
+  "position_values_usd": {
+    "BTC": 1914.5909921771995,
+    "ETH": 1912.8705279056292,
+    "SOL": 939.3499709808833,
+    "SUI": 424.6550024642685,
+    "BNB": 477.50571774512514,
+    "UNI": 466.5237662763574,
+    "HYPE": 245.00317257768526,
+    "AERO": 229.57692129593252,
+    "ZEC": 521.847564386209
+  },
+  "portfolio_nav_usd": 9656.169274053003,
+  "passive_benchmark_nav_usd": 9668.972211273105,
+  "alpha_vs_benchmark_usd": -12.80293722010174,
+  "alpha_vs_benchmark_bps": -13.241259712355703,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD_ACTIVITY_HIGH_BUT_STABLECOINS_CONTRACTING_AND_NET_OUTFLOWS",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_GROWTH_UNCONFIRMED_BY_DEX_PERPS",
+    "BNB": "HOLD_NO_ADD_BSC_ACTIVITY_ACCELERATING_BUT_STABLECOINS_AND_FLOWS_NOT_CONFIRMING_AND_DIRECT_CAPTURE_WEAK",
+    "UNI": "HOLD_NO_ADD_ARC_INFRASTRUCTURE_CATALYST_LACKS_FRESH_USAGE_WALLET_CONFIRMATION",
+    "HYPE": "HOLD_NO_ADD_STRONG_CORE_ACTIVITY_BUT_INSTITUTIONAL_DISTRIBUTION_AND_DILUTION_CONFLICT_UNRESOLVED",
+    "AERO": "HOLD_NO_ADD_BASE_ACTIVITY_CONSTRUCTIVE_BUT_INCENTIVE_CONTAMINATION_AND_NO_FRESH_WALLET_CONFIRMATION",
+    "ZEC": "HOLD_NO_ADD_POST_TRADE_PRICE_PERSISTENCE_CONFIRMED_BUT_NO_NEW_INDEPENDENT_WALLET_OR_USAGE_LEG"
+  },
+  "regime_notes": [
+    "Solana remains one of the largest absolute speculative-activity surfaces, with roughly $2.38B of 24h DEX volume and $1.83B of 24h perp volume, but seven-day stablecoin supply is down about 4.1%, 24h net inflows are about -$10M, and weekly DEX volume is slightly lower. This is high velocity without a fresh retained-capital migration signal.",
+    "Base is constructive at the ecosystem level: about $943M of 24h DEX volume, weekly DEX volume up about 14%, and stablecoin supply up about 2.7% over seven days. Aerodrome remains blocked from scaling because current tokenized-stock trader/LP incentives contaminate attribution and no fresh independent selective-wallet accumulation was verified. The clean post-incentive test remains after the current cashback epoch ends September 21.",
+    "BSC shows strong headline DEX acceleration, but stablecoin supply is slightly lower over seven days, 24h net flows are negative, and recent activity is heavily associated with memecoin speculation. No cleaner direct-token value-capture plus retained-capital confirmation emerged for an additional BNB-linked trade.",
+    "Sui stablecoin supply remains a positive outlier, up roughly 8% over seven days, but both DEX and perp activity are down week-over-week and net inflows are small. The stablecoin growth is therefore not yet confirmed as discretionary speculative migration.",
+    "Hyperliquid retains strong core economic activity and HYPE token turnover reaccelerated, but the Sep 15 Multicoin/Coinbase Prime distribution warning remains unresolved, low circulating supply versus FDV remains material, and no fresh independent selective accumulator emerged. Payward-related U.S. access headlines were not treated as a new completed launch without independent confirmation.",
+    "ZEC marked about $1,254.27, roughly 4.1% above the $1,204.97 Sep 16 confirmation-add mark. This is prospective post-trade follow-through, not a new independent signal: no fresh selective-wallet cohort or additional usage leg was verified, so the position remains near 5.2% rather than scaling toward 7.5%.",
+    "UNI remains a hold after the Sep 15 StablePair confirmation add. Arc deployment is infrastructure expansion but was pre-announced, and no fresh Arc usage or independent wallet confirmation justified increasing an already approximately 5% position.",
+    "Portfolio NAV is approximately $9,656.17 versus $9,668.97 for the frozen passive benchmark, trailing by about $12.80 or 13.24 bp. The gap has narrowed materially from the immediate post-ZEC-add mark, helped by ZEC follow-through after the trade, but no new threshold or material thesis break justifies another paper action."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "notes": "Hourly prospective mark. No qualifying new ecosystem/candidate threshold, no hard structural-gate failure, no material thesis change requiring action, and no paper trade. State and immutable trade ledger left unchanged."
+}
