@@ -1,0 +1,113 @@
+{
+  "timestamp_utc": "2026-09-16T15:49:35Z",
+  "type": "RESEARCH_OBSERVATION_NO_PAPER_TRADE",
+  "execution_trigger": false,
+  "ecosystem": "Circle Arc mainnet / USDC-native L1",
+  "regime_status": "ARC_MAINNET_DISCRETIONARY_SPECULATION_REGIME_EMERGENCE_STRUCTURAL_GATES_BLOCK_TOKEN_ENTRY",
+  "threshold_reason": [
+    "Arc public mainnet launched today with more than 100 applications and more than 100 institutional/ecosystem builders, creating a genuinely new venue rather than a recycled narrative catalyst.",
+    "Within roughly two hours, monitoring cited about $372M of USDC resident on Arc and about 176,000 on-chain addresses. Reports also documented users paying 80%-100% USDC premiums before launch to reach Arc early for meme-token trading, strong evidence of discretionary speculative urgency rather than ordinary yield farming.",
+    "ARC Screener data reported about $127M of 24h trading volume across the top 500 Arc tokens, about $57.91M of on-chain liquidity, roughly 767,000 transactions and roughly 30,200 listed tokens. This is actual secondary trading/velocity, not simply stablecoin issuance or RWA AUM.",
+    "Early leadership is concentrated in new high-volatility assets: ARGUS represented about $21.97M of reported volume and TOLLY about $9.12M. The first-day breadth and velocity are sufficiently abnormal to qualify Arc as a new speculative-capital destination, but not sufficient to qualify any token for a paper buy."
+  ],
+  "capital_migration_classification": {
+    "stablecoin_capital_stock": "~$372M USDC reported on Arc within roughly two hours of launch; this is capital/settlement stock, not turnover.",
+    "secondary_trading_velocity": "~$127M reported 24h trading volume across the top 500 tokens against ~$57.91M of on-chain liquidity; volume/liquidity >2x signals high capital velocity but also high slippage/reflexivity risk.",
+    "wallet_breadth": "~176K addresses reported shortly after launch, but raw address counts receive low weight because sybil/bot/new-launch churn is unmeasured.",
+    "new_token_activity": "~30.2K listed tokens and ~767K transactions reported; scored as regime breadth only, not as evidence of profitability or organic user quality.",
+    "why_capital_appears_discretionary": "Users reportedly paid 80%-100% premiums on USDC to reach Arc early for meme trading, which is difficult to explain as rational yield-farming economics. This is an unusually strong revealed-preference signal for speculative access.",
+    "incentive_contamination": "Token-specific reward mechanics remain material. Tolly routes a portion of buy fees to holder rewards and TOLLY/project-token buy-and-remove mechanics; ArgusPad permits creator-configurable holder rewards and buyback/burn allocations. Those flows are discounted rather than treated as purely organic demand."
+  },
+  "rwa_classification": {
+    "availability_or_issuance": "Circle says USYC and BlackRock BUIDL are available on Arc and can be traded, lent, or posted as collateral, alongside other RWA issuers/builders.",
+    "actual_secondary_or_collateral_usage": "NOT_YET_VERIFIED at meaningful scale in this run. Day-one availability and AUM are not counted as secondary trading, collateral utilization, or sustained institutional settlement.",
+    "interpretation": "The current qualified Arc regime is speculative/new-token capital migration. Institutional RWA infrastructure is a separate future confirmation leg, not part of today's opportunity score."
+  },
+  "preliminary_leadership": [
+    {
+      "rank": 1,
+      "asset": "ARGUS",
+      "contract": "0xece5ca8bf9220718e5727754026757512212cb3c",
+      "reported_24h_volume_usd": 21970000,
+      "catalysts": [
+        "Arc-native ArgusPad launch infrastructure",
+        "MEXC Meme+ listing live Sep. 16",
+        "Gate announced deposits and forthcoming spot listing",
+        "ArgusPad documentation/reporting describes platform-fee value capture with a portion used for ARGUS market buybacks/burns"
+      ],
+      "wallet_quality": "UNQUALIFIED: one reported early trader turned about $1.2K into a large mostly unrealized position and still held ~10.1M ARGUS; historical selectivity, funding independence and cohort convergence are not established.",
+      "structural_gate": "NOT_PASSED",
+      "gate_reasons": [
+        "Arcscan identifies ARGUS as a 45-byte proxy forwarding to an implementation contract.",
+        "Arcscan reports the deployed source as unverified and holder-query data unavailable, preventing verification of dangerous permissions, implementation upgrade authority, holder concentration and linked-wallet distribution.",
+        "Arcscan itself could not compute a reliable on-chain price because it considered liquidity too thin; third-party market-cap/circulating-supply data conflict materially.",
+        "Creator-configurable fee allocations and holder rewards contaminate some activity and create governance/implementation dependencies that require contract-specific audit."
+      ],
+      "paper_action": "REJECT_FOR_NOW; opportunity score cannot override unresolved structural gates."
+    },
+    {
+      "rank": 2,
+      "asset": "TOLLY",
+      "contract": "0xBc43CE8DEc648EA298C4275559b81D6261c90b67",
+      "reported_24h_volume_usd": 9120000,
+      "structural_gate": "NOT_PASSED",
+      "gate_reasons": [
+        "Tolly states that launched project-token supply enters permanently locked USDC liquidity, which is positive for those project LP-removal risks, but this does not by itself prove the TOLLY platform token's ownership/permission/concentration safety.",
+        "Tolly explicitly routes part of buy fees to holder rewards and platform/project-token buy-and-remove mechanics, so its demand/turnover is incentive-contaminated under the framework.",
+        "No independent selective-wallet cohort, beneficial-owner distribution audit, creator-dump audit or complete permission review was verified in this run."
+      ],
+      "paper_action": "REJECT_FOR_NOW pending persistence and full structural verification."
+    }
+  ],
+  "official_arc_token_warning": {
+    "status": "NO_PUBLIC_TOKEN_LAUNCH_CONFIRMED",
+    "evidence": "Circle says it completed the genesis mint of 10B ARC tokens as a technical milestone but explicitly says this is not a commitment to publicly launch ARC. Network fees remain payable in USDC.",
+    "implication": "Do not treat any currently traded token using the ARC ticker as the official Circle Arc network token without direct Circle confirmation."
+  },
+  "ecosystem_catalysts": [
+    "USDC-native gas and sub-second finality",
+    "Founding validators include BlackRock, DTCC, ICE, Mastercard, Visa and other financial institutions",
+    "Day-one Aave, Morpho and Uniswap integrations",
+    "Uniswap, Aero and fomo named by Circle as day-one trading infrastructure",
+    "Major exchanges and wallets provide immediate distribution/access"
+  ],
+  "major_uncertainties": [
+    "The ~$372M USDC and ~176K-address figures come from very early post-launch monitoring and need persistence/reconciliation against canonical chain analytics.",
+    "Top-500-token volume can be dominated by bots, wash trading, launch snipers and recycling of the same USDC; independent wallet-quality/funding-lineage analysis is not yet adequate.",
+    "Reported token counts and transactions are raw activity measures and not evidence of unique profitable users.",
+    "First-day price gains of hundreds or thousands of percent create extreme adverse-selection and liquidity risk.",
+    "RWA products are available on Arc, but meaningful secondary volume, borrow/lend utilization and collateral velocity have not yet been established."
+  ],
+  "paper_portfolio": {
+    "source_of_truth": "paper_portfolio/state.json and paper_portfolio/trades.jsonl read before decision",
+    "cash_usd": 2524.2456382437135,
+    "trade_count_before_and_after": 6,
+    "action": "NO_PAPER_TRADE",
+    "reason": "Arc qualifies as an ecosystem-level speculative regime, but no Arc-native token currently passes the framework's structural, wallet-quality and persistence gates. Existing portfolio positions do not require an action from the Arc event alone."
+  },
+  "existing_position_watch": {
+    "UNI": "HOLD_NO_ADD. Arc is an independent distribution catalyst for Uniswap, but the reported Arc speculative volume is not yet attributable enough to Uniswap protocol revenue/UNI burn to justify moving the existing ~5% position toward the 7.5% cap.",
+    "ZEC": "HOLD_NO_ADD. Price has retraced sharply from the $1,204.97 confirmation-add mark, but shielded capital stock remains ~28.9% and positive 24h shielded net flow persists. A few hours of price reversal alone does not yet meet the portfolio sell discipline's requirement for persistent negative price/holder/liquidity confirmation.",
+    "HYPE": "HOLD_NO_ADD. Prior institutional-distribution conflict remains unresolved; no Arc-specific action.",
+    "AERO": "HOLD_NO_ADD. Do not assume Circle's day-one 'Aero' integration automatically creates AERO-token value capture without verified token-level linkage.",
+    "SUI": "HOLD_NO_ADD. Weak DEX momentum and the previously announced Phantom support sunset remain headwinds, but no new hard structural failure occurred in this run."
+  },
+  "why_signal_matters_now": "Arc has moved from an institutional/RWA launch narrative into observable first-day speculative capital migration: substantial USDC stock arrived, traders paid extreme access premiums, and new-token turnover is already large relative to available liquidity. The framework should now track Arc as a live speculative ecosystem while refusing to chase first-day leaders until contract safety, holder independence, wash/bot quality and persistence are verified.",
+  "sources": [
+    "https://www.circle.com/fr/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
+    "https://www.theblock.co/news/ecosystems/2026-09-16-circle-launches-arc-mainnet-with-blackrock-and-visa-among-validators-mints-10-billion-arc-tokens-415250",
+    "https://en.theblockbeats.news/flash/367356",
+    "https://www.insigtx.com/en/news/arc-chain-sees-24-hour-trading-volume-surge-new-token-597058/",
+    "https://arc-scan.org/token/0xece5ca8bf9220718e5727754026757512212cb3c/info",
+    "https://www.mexc.co/announcements/article/first-in-market-17827791538603",
+    "https://www.gate.com/ja/announcements/article/101784",
+    "https://tollylabs.com/wallet/0x369b573a4ad53c95f7cd35362eb224c75ecef415"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  }
+}
