@@ -1,0 +1,68 @@
+{
+  "timestamp_utc": "2026-09-16T16:40:21Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 2524.2456382437135,
+  "marks_usd": {
+    "BTC": 75752.14,
+    "ETH": 2398.69,
+    "SOL": 97.14,
+    "SUI": 0.6866,
+    "BNB": 711.43,
+    "UNI": 6.18,
+    "HYPE": 78.80,
+    "AERO": 0.5265,
+    "ZEC": 1266.19
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko BTC/USD current volume-weighted spot observed during the run",
+    "ETH": "CoinGecko ETH/USD current volume-weighted spot observed during the run",
+    "SOL": "CoinGecko SOL/USD current volume-weighted spot observed during the run",
+    "SUI": "CoinGecko SUI/USD current volume-weighted spot observed during the run",
+    "BNB": "CoinGecko BNB/USD current volume-weighted spot observed during the run",
+    "UNI": "CoinGecko UNI/USD current volume-weighted spot observed during the run",
+    "HYPE": "CoinGecko HYPE/USD current volume-weighted spot observed during the run",
+    "AERO": "CoinGecko AERO/USD current volume-weighted spot observed during the run",
+    "ZEC": "CoinGecko ZEC/USD current volume-weighted spot observed during the run"
+  },
+  "position_values_usd": {
+    "BTC": 1916.3532284109365,
+    "ETH": 1915.9937057190862,
+    "SOL": 939.6401625072908,
+    "SUI": 422.9916214884183,
+    "BNB": 478.561818915581,
+    "UNI": 463.5236134385673,
+    "HYPE": 245.40803354673443,
+    "AERO": 231.33444796614063,
+    "ZEC": 526.8069614597925
+  },
+  "portfolio_nav_usd": 9664.85923169626,
+  "passive_benchmark_nav_usd": 9673.540537041314,
+  "alpha_vs_benchmark_usd": -8.68130534505326,
+  "alpha_vs_benchmark_bps": -8.974279181248429,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD_HIGH_ACTIVITY_BUT_STABLECOIN_CONTRACTION_AND_NET_OUTFLOWS",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_GROWTH_NOT_CONFIRMED_BY_CURRENT_DEX_PERPS",
+    "BNB": "HOLD_NO_ADD_BSC_VOLUME_AND_ACTIVE_USERS_NOT_CONFIRMED_BY_RETAINED_STABLECOIN_CAPITAL",
+    "UNI": "HOLD_NO_ADD_ARC_EXPANSION_REAL_BUT_CLEAN_ATTRIBUTABLE_USAGE_AND_FRESH_WALLET_CONFIRMATION_INSUFFICIENT",
+    "HYPE": "HOLD_NO_ADD_PAYWARD_HIP3_CATALYST_SUBSTANTIVE_BUT_NOT_YET_LIVE_AND_PRIOR_DISTRIBUTION_DILUTION_CONFLICT_UNRESOLVED",
+    "AERO": "HOLD_NO_ADD_BASE_ACTIVITY_CONSTRUCTIVE_BUT_INCENTIVE_CONTAMINATION_AND_NO_FRESH_SELECTIVE_WALLET_CONFIRMATION",
+    "ZEC": "HOLD_NO_ADD_PRICE_VOLUME_AND_SHIELDED_USAGE_PERSISTENCE_CONFIRMED_BUT_NO_FRESH_INDEPENDENT_SELECTIVE_WALLET_LEG"
+  },
+  "regime_notes": [
+    "Broad conditions remain defensive rather than a clean market-wide speculative migration: global DeFi TVL is down roughly 3% over 24 hours, stablecoin supply is slightly lower week over week, and the latest ETF-flow reading is negative. This raises the confirmation bar for new risk rather than creating an automatic dip-buy signal.",
+    "Base remains one of the stronger absolute activity surfaces with about $1.04B of 24h DEX volume and $6.64B over seven days, up about 11.8% week over week. However stablecoin supply is down about 0.35% over seven days, so turnover acceleration is not being confirmed by retained new capital. AERO remains blocked from scaling while the identified LP/trader incentive contamination persists and no fresh independent selective-wallet cohort is verified.",
+    "Solana continues to show very large DEX and perp activity, with weekly DEX and perp volume still higher, but stablecoin supply is down about 4.1% over seven days and the latest bridge flow is negative. Tokenized-equity issuance and usage remain real but do not produce a new token-level entry without cleaner retained-capital and selective-wallet confirmation.",
+    "Robinhood Chain still has very high reported DEX and perp throughput, but stablecoin supply is approximately flat-to-lower and 24h net bridge flow is negative. Prior synthetic/incentive contamination concerns therefore remain unresolved; raw volume is not treated as clean discretionary migration.",
+    "Injective continues to show spectacular percentage DEX/perp acceleration from a small base, but stablecoin supply is only about $12M and declining week over week. The scheduled Noble-to-Injective USDC migration is structurally mandated rather than discretionary, so the liquidity story remains attribution-contaminated and does not qualify INJ for a paper trade.",
+    "Arc remains a genuine launch-day capital destination, but measurement quality is not yet clean enough for a token entry. DefiLlama currently recognizes roughly $308.5M TVL and only about $15.2M of 24h DEX volume, while ARC Screener reports about $127M across its top-500-token universe. That methodology gap, plus unresolved contract/holder/LP checks on early token leaders, keeps all Arc-native speculative candidates behind the structural gate.",
+    "ZEC is approximately $1,266.19, about 5.1% above the $1,204.97 Sep 16 confirmation-add mark and near the top of its 24h range; 24h token turnover has reaccelerated sharply. Privacy utilization remains substantive with about 4.896M ZEC shielded (28.9% of issued supply) and the latest 24h shielded flow still net positive. This validates persistence after the paper add, but no fresh independently funded historically selective accumulator was verified, so the position is not scaled toward the 7.5% cap.",
+    "HYPE has a substantive new platform catalyst in Payward's announced intent to deploy regulated U.S. HIP-3 markets through Bitnomial, which would use Hyperliquid's onchain infrastructure and create protocol-fee value capture if approved and launched. The plan remains subject to regulatory approval and was already known at the prior checkpoint. A fresh reported FalconX withdrawal is not enough to establish an independent selective-wallet cohort, while dilution/distribution risk remains unresolved, so HYPE stays at starter size.",
+    "UNI remains a hold. Uniswap now has measurable Arc deployment and TVL, but Arc's clean recognized DEX volume is still too early and noisy to attribute enough incremental protocol revenue or wallet migration to justify increasing the existing roughly 5% position.",
+    "Portfolio NAV is approximately $9,664.86 versus $9,673.54 for the frozen passive benchmark, trailing by about $8.68 or 8.97 bp. No current holding has triggered a structural-gate failure or material thesis break requiring a trim or exit, and no candidate has earned a new prospective paper entry or scale-up."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "notes": "Prospective hourly mark. No qualifying new ecosystem/candidate threshold, no hard structural-gate failure, no material thesis change requiring action, and no paper trade. State and immutable trade ledger left unchanged."
+}
