@@ -1,0 +1,133 @@
+{
+  "timestamp_utc": "2026-09-16T11:06:29Z",
+  "classification": "ZEC_NU7_COINHOLDER_PRODUCT_CONFIRMATION_WITH_PRICE_REJECTION_NO_ADD",
+  "alert_threshold_crossed": true,
+  "ecosystem": "Zcash / privacy",
+  "candidate": {
+    "asset": "ZEC",
+    "contract_address": null,
+    "native_asset": true
+  },
+  "signal_summary": "The existing ZEC paper thesis gained an independent roadmap/product confirmation from the NU7 coinholder vote, but the initial news-driven price spike did not persist. This is a material thesis improvement, not an add signal yet.",
+  "ecosystem_regime_evidence": {
+    "shielded_zec": 4895790,
+    "shielded_pct_issued_supply": 28.9,
+    "shielded_net_flow_24h_zec": 718,
+    "shielded_net_flow_7d_zec": 14670,
+    "comment": "Real movement into privacy pools remains positive and is not an incentive metric, but the 7d pace has slowed from +17,561 ZEC at the Sep 15 paper entry."
+  },
+  "nu7_confirmation": {
+    "participating_zec_approx": 2400000,
+    "eligible_ironwood_zec_approx": 3600000,
+    "block_time_25s_support_pct": 99.9,
+    "retain_halving_support_pct": 98.9,
+    "delay_nsm_reissuance_to_2031_support_pct": 96.6,
+    "ship_nu7_asap_support_pct": 99.3,
+    "technical_effect": "Draft ZIP 218 reduces target block spacing from 75s to 25s, keeps mined ZEC/day unchanged by adjusting per-block subsidy, targets more than 2x Orchard throughput, and reduces maximum light-client shielded-sync DoS burden.",
+    "binding_status": "ADVISORY_IMPLEMENTATION_PENDING"
+  },
+  "discretionary_flow_quality": {
+    "classification": "SUBSTANTIVE_USAGE_PLUS_GOVERNANCE_CONFIRMATION",
+    "incentive_discount": "Shielded-pool balances require real ZEC movement and the NU7 vote is not a points/quest/yield-farming campaign. No incentive credit is assigned.",
+    "caveat": "The vote is ZEC-weighted rather than wallet-count-weighted, so participation does not prove broad independent-holder diversity."
+  },
+  "leadership_rotation": {
+    "status": "ZEC_PRIVACY_LEADERSHIP_PERSISTS_BUT_NEWS_MOVE_REJECTED",
+    "current_mark_usd": 1126.84,
+    "paper_all_in_basis_usd": 1139.035995,
+    "coin_gecko_24h_range_usd": [1124.24, 1222.73],
+    "coin_gecko_24h_volume_usd": 925121366.92,
+    "comment": "ZEC traded to roughly $1,223 after the vote/short-squeeze catalyst but retraced to roughly $1,127 by this scan. That failed persistence test blocks an add despite stronger fundamentals."
+  },
+  "wallet_quality": {
+    "score": "MEDIUM_UNCHANGED",
+    "comment": "No new independently funded, historically selective accumulation cohort was verified this run. The two previously observed exchange-withdrawal paths remain supporting evidence, with beneficial-owner independence still unproven."
+  },
+  "narrative_news": {
+    "positive": "NU7 now has unusually strong coinholder support for faster confirmations, unchanged Bitcoin-style halving economics, delayed NSM reissuance and rapid shipping.",
+    "risk": "High-profile ZEC promotion remains concentrated enough to treat influencer attention as crowding risk rather than confirmation; the immediate move also included short-covering."
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "comment": "CoinGecko aggregates ZEC across 49 exchanges and 83 markets with roughly $925M of 24h turnover; executable liquidity is ample for the paper portfolio."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_NATIVE_ASSET_AND_GOVERNANCE_CAVEATS",
+    "details": [
+      "Native PoW asset: honeypot, token-contract mint/freeze, creator LP-control and deployer-privilege gates do not apply.",
+      "Maximum supply remains 21M ZEC; the 25-second proposal explicitly keeps mined ZEC/day unchanged by reducing subsidy per block.",
+      "Privacy regulatory/listing risk and opaque beneficial ownership remain material.",
+      "NU7 coinholder results are advisory until developers implement, test and include the changes in a network upgrade."
+    ]
+  },
+  "major_uncertainties": [
+    "NU7 implementation is not automatic or binding from the vote alone.",
+    "Vote weight is by ZEC, so holder-count diversity and independence cannot be inferred from participation.",
+    "The initial catalyst rally retraced sharply instead of persisting.",
+    "7d net shielded inflow remains positive but has decelerated since the paper entry.",
+    "No fresh selective-wallet accumulation confirmation was found.",
+    "Broad macro/Fed event risk remains high."
+  ],
+  "why_signal_matters_now": "This is the first independent product/governance confirmation after the Sep 15 paper starter: the asset's privacy-use thesis is now paired with a credible near-term UX/throughput roadmap. But the framework requires persistence and independent confirmation before scaling; the post-news price rejection, slower shielded inflow and unchanged wallet-quality score keep the position at starter size.",
+  "paper_action": {
+    "action": "HOLD_NO_ADD",
+    "asset": "ZEC",
+    "quantity": 0.21546771804413575,
+    "average_cost_usd": 1139.035995,
+    "reason": "Positive independent thesis confirmation is offset by failed price persistence, no fresh selective-wallet cohort and implementation uncertainty."
+  },
+  "portfolio_context": {
+    "cash_usd": 2766.312021847349,
+    "approx_marked_nav_usd": 9639.96,
+    "approx_passive_benchmark_nav_usd": 9683.89,
+    "approx_alpha_vs_benchmark_usd": -43.93,
+    "approx_alpha_vs_benchmark_bps": -45.36,
+    "trade_count": 5
+  },
+  "other_positions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD",
+    "SUI": "HOLD_NO_ADD",
+    "BNB": "HOLD_NO_ADD",
+    "UNI": "HOLD_NO_ADD",
+    "HYPE": "HOLD_NO_ADD",
+    "AERO": "HOLD_NO_ADD"
+  },
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    {
+      "name": "CoinGecko Zcash",
+      "url": "https://www.coingecko.com/en/coins/zcash",
+      "use": "current mark, 24h range, volume and market breadth"
+    },
+    {
+      "name": "ZecStats",
+      "url": "https://zecstats.org/shielded-percentage",
+      "use": "Ironwood-inclusive shielded balance and supply share"
+    },
+    {
+      "name": "zecmetrics",
+      "url": "https://www.zecmetrics.io/",
+      "use": "7d shielded flow and issuance context"
+    },
+    {
+      "name": "Zcash Community Forum NU7 results",
+      "url": "https://forum.zcashcommunity.com/t/nu7-sentiment-polls-results/57590",
+      "use": "coinholder vote counts/results and governance context"
+    },
+    {
+      "name": "ZIP 218",
+      "url": "https://zips.z.cash/zip-0218",
+      "use": "25-second block-spacing technical and emission details"
+    }
+  ],
+  "paper_trade_executed": false,
+  "real_trade_executed": false
+}
