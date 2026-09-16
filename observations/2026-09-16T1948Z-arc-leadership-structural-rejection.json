@@ -1,0 +1,62 @@
+{
+  "timestamp_utc": "2026-09-16T19:48:33Z",
+  "classification": "ARC_SPECULATION_PERSISTS_ARGUS_TOLLY_HARD_STRUCTURAL_REJECTION",
+  "ecosystem": "Arc",
+  "regime_assessment": {
+    "status": "qualified_discretionary_speculation_regime_but_no_token_entry",
+    "summary": "Arc launch-day speculative secondary trading remains material and leadership is concentrating in ARGUS and TOLLY, but deeper structural review fails the hard-gate standard for both candidates. The ecosystem-level regime therefore remains worth tracking while token-level paper entry remains blocked.",
+    "capital_quality": "mixed_but_materially_discretionary",
+    "rwa_note": "BUIDL and USYC are available on Arc for trading/lending/collateral, but no Arc-specific secondary-volume or collateral-utilization evidence was strong enough in this run to count RWA availability as actual usage."
+  },
+  "leadership": [
+    {
+      "asset": "ARGUS",
+      "contract": "0xece5ca8bf9220718e5727754026757512212cb3c",
+      "market_evidence": "ARGUS remains the leading Arc-native speculative token by observed on-chain secondary trading. OpenSea showed roughly 12.3k holders and about $29.9M one-day volume; Arc venue data showed ARGUS/USDC leading around $25M in 24h trading. Multiple CEX listings also expanded distribution.",
+      "structural_gate": "FAIL",
+      "gate_reasons": [
+        "Arcscan identifies the token contract as a 45-byte proxy whose implementation source code is not verified, preventing reliable audit of upgrade authority, minting, fee mutation, transfer restrictions and other privileged controls.",
+        "Arcscan could not provide a normal holder query and noted insufficient native liquidity for its own reliable price derivation at the observed checkpoint.",
+        "A third-party automated scanner separately flagged possible hidden-mint, mutable-fee, excess-debit and trading-toggle capabilities. These flags are not treated as proven because the implementation is unverified, but the inability to resolve them reinforces rejection under the hard-gate rule.",
+        "Public documentation does not establish that all Argus platform revenue automatically accrues to ARGUS holders; therefore direct token value-capture certainty is weaker than earlier provisional reporting suggested."
+      ],
+      "decision": "REJECT_NO_PAPER_BUY"
+    },
+    {
+      "asset": "TOLLY",
+      "contract": "0xBc43CE8DEc648EA298C4275559b81D6261c90b67",
+      "market_evidence": "TOLLY remains the second major Arc-native launch-day leader with roughly $10.6M observed TOLLY/USDC 24h trading and about 7.7k holders.",
+      "structural_gate": "FAIL",
+      "gate_reasons": [
+        "Arcscan holder concentration remained high: top 10 about 26.45% and top 100 about 72.78% at the checkpoint.",
+        "Observed pool depth was only about $269k against roughly $10.75M on-chain market capitalization, creating poor executable-liquidity characteristics for the framework.",
+        "Arcscan reported an internal supply-accounting inconsistency in which indexed holder balances summed to more than contract-reported total supply; this requires resolution before entry.",
+        "TOLLY economics include holder-reward and fee-routing incentives, contaminating the discretionary-demand signal."
+      ],
+      "decision": "REJECT_NO_PAPER_BUY"
+    }
+  ],
+  "paper_portfolio": {
+    "action": "NO_TRADE",
+    "cash_usd": 2524.2456382437135,
+    "trade_count": 6,
+    "approx_nav_usd": 9681.78,
+    "approx_passive_benchmark_nav_usd": 9683.53,
+    "approx_alpha_usd": -1.75,
+    "note": "Existing paper holdings remain hold/no-add this run. ZEC remains the strongest recent confirmation but lacks a fresh independent selective-wallet leg for another scale-up."
+  },
+  "why_signal_matters_now": "The previous Arc alert explicitly identified ARGUS as the first structural-review target. Deeper review now resolves that uncertainty negatively: market leadership strengthened, but the token still cannot clear the non-negotiable structural gates. This is a meaningful rejection rather than a missed entry.",
+  "major_uncertainties": [
+    "Arc launch-day data remain fast-moving and some analytics providers disagree on market cap, liquidity and volume.",
+    "Automated contract-security scanner flags may contain false positives and are not treated as confirmed vulnerabilities.",
+    "The degree of wash trading, bot activity and wallet independence across Arc-native launch tokens remains unresolved.",
+    "Arc RWA product availability has not yet translated into verified chain-specific secondary trading or collateral-utilization evidence in this research record."
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  }
+}
