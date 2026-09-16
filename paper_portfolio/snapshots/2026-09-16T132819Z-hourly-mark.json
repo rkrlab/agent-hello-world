@@ -1,0 +1,41 @@
+{
+  "timestamp_utc": "2026-09-16T13:28:19Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 2524.2456382437135,
+  "marks": {
+    "BTC": {"quantity": 0.025297677774, "price_usd": 75750.04, "value_usd": 1916.300103287611},
+    "ETH": {"quantity": 0.798766704209, "price_usd": 2400.29, "value_usd": 1917.2717324458206},
+    "SOL": {"quantity": 9.673050880248, "price_usd": 97.11, "value_usd": 939.3499709808833},
+    "SUI": {"quantity": 616.067028092657, "price_usd": 0.6854, "value_usd": 422.2523410547071},
+    "BNB": {"quantity": 0.672675904749, "price_usd": 711.33, "value_usd": 478.49455132510616},
+    "UNI": {"quantity": 75.003820944752, "price_usd": 6.27, "value_usd": 470.27395732359497},
+    "HYPE": {"quantity": 3.114315146532163, "price_usd": 78.05, "value_usd": 243.0722971868353},
+    "AERO": {"quantity": 439.381667552024, "price_usd": 0.5259, "value_usd": 231.07081896560945},
+    "ZEC": {"quantity": 0.41605680147512814, "price_usd": 1225.24, "value_usd": 509.769435439386}
+  },
+  "price_source": "CoinGecko live volume-weighted spot pages captured during the run",
+  "portfolio_nav_usd": 9652.100846253268,
+  "passive_benchmark_nav_usd": 9673.668699094129,
+  "alpha_vs_benchmark_usd": -21.567852840860724,
+  "alpha_vs_benchmark_bps": -22.295422255757426,
+  "paper_trade_executed": false,
+  "position_actions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD",
+    "SUI": "HOLD_NO_ADD",
+    "BNB": "HOLD_NO_ADD",
+    "UNI": "HOLD_NO_ADD",
+    "HYPE": "HOLD_NO_ADD",
+    "AERO": "HOLD_NO_ADD",
+    "ZEC": "HOLD_NO_ADD"
+  },
+  "notes": [
+    "No new cross-ecosystem candidate crossed the framework threshold and no existing paper position developed a material thesis break requiring action.",
+    "ZEC was $1,225.24, about 1.68% above the $1,204.97 confirmation-add mark and near its current 24h high; the formal +1h checkpoint was not yet due at this timestamp, so no forward outcome was filled early and no further add was justified.",
+    "STONK/StonkFun remains a direct-value-capture Solana candidate, but current persistence is insufficient for a paper entry: the main pool showed net selling, the token remained sharply below its recent peak, and higher-value holder/whale counts were weakening despite fee-funded buy/burn, substantial supply burn, revoked mint/freeze authority, and mostly burned LP tokens.",
+    "HYPE's protocol economics remain resilient, but Multicoin-linked Coinbase Prime deposits and prior distribution remain unresolved; the Robinhood insider-trading case involved traders using Hyperliquid rather than a new structural failure of HYPE itself.",
+    "AERO remains no-add pending a post-incentive persistence test; UNI has no fresh independent wallet/product confirmation beyond the already-recorded StablePair/Arc catalysts; SOL/Raydium tokenized-equity usage remains strong but RAY token-level confirmation is still inadequate.",
+    "No hard structural-gate failure requiring a paper exit surfaced in this scan. No real trade was executed."
+  ]
+}
