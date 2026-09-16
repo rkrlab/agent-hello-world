@@ -1,0 +1,154 @@
+{
+  "timestamp_utc": "2026-09-16T12:32:20Z",
+  "type": "RESEARCH_OBSERVATION_WITH_PAPER_TRADE",
+  "execution_trigger": true,
+  "ecosystem": "Zcash privacy / native ZEC",
+  "regime_status": "QUALIFIED_ZEC_NU7_PRODUCT_GOVERNANCE_CONFIRMATION_WITH_PRICE_VOLUME_PERSISTENCE",
+  "candidate": {
+    "asset": "ZEC",
+    "network": "Zcash",
+    "contract": null,
+    "mark_price_usd": 1204.97,
+    "mark_source": "CoinGecko ZEC/USD live volume-weighted spot across 49 exchanges / 83 markets"
+  },
+  "threshold_reason": [
+    "The Sep. 15 starter was based on exchange-withdrawal accumulation plus persistent shielded-pool usage, but lacked a fresh independent product confirmation.",
+    "The completed NU7 coinholder vote supplied that independent product/governance leg: nearly 2.4M eligible ZEC participated; 99.9% supported reducing block targets from 75s to 25s, 98.9% supported preserving halvings, 96.6% supported delaying NSM fee reissuance until February 2031, and 99.3% supported shipping NU7 quickly rather than waiting for unfinished scope.",
+    "The initial post-vote move was not chased. Earlier on Sep. 16 ZEC had retraced near $1,127 after an initial spike; by this run it had recovered to $1,204.97 near the top of its $1,088.87-$1,212.19 24h range, while 24h spot turnover rose to about $1.305B, +39% day/day. This converts the earlier failed first reaction into a second price/volume confirmation leg.",
+    "Privacy use remains financially substantive rather than incentive-driven: 4,895,790 ZEC, 28.9% of issued supply, remained inside shielded pools in the latest ZecStats snapshot."
+  ],
+  "capital_migration_classification": {
+    "why_capital_appears_substantive": "ZEC is being accumulated as the native asset and moved into native privacy pools. The qualifying evidence is exchange withdrawal accumulation, shielded-balance stock, governance participation and broad spot turnover; no points, quests, trading-reward, rebate or liquidity-mining program is used as the trigger.",
+    "what_is_not_counted": [
+      "Raw influencer endorsements are not counted as confirmation.",
+      "Governance participation is not treated as equivalent to new-money inflow; it is product/governance conviction from eligible balances.",
+      "The NU7 vote is advisory and is not treated as completed protocol implementation."
+    ]
+  },
+  "product_governance_evidence": {
+    "eligible_participation_zec_approx": 2400000,
+    "eligible_snapshot_zec_approx": 3600000,
+    "block_time_25s_support_pct": 99.9,
+    "preserve_halvings_support_pct": 98.9,
+    "delay_nsm_reissuance_to_2031_support_pct": 96.6,
+    "ship_quickly_support_pct": 99.3,
+    "implementation_status": "NOT_YET_IMPLEMENTED; requires specification, implementation, testing and activation",
+    "interpretation": "High-participation governance meaningfully reduces uncertainty about the direction of the next protocol upgrade without increasing daily issuance merely because blocks become more frequent."
+  },
+  "privacy_usage": {
+    "shielded_zec": 4895790,
+    "shielded_share_of_issued_supply_pct": 28.9,
+    "issued_supply_zec_approx": 16934938,
+    "interpretation": "Shielded balance is a harder-to-game stock metric than note counts or transaction counts because ZEC must actually cross into a shielded value pool. It does not reveal beneficial-owner diversity or shielded-to-shielded velocity."
+  },
+  "market_persistence": {
+    "price_usd": 1204.97,
+    "price_change_1h_pct": 1.6,
+    "price_change_24h_pct": 5.5,
+    "price_change_7d_pct": -3.1,
+    "range_24h_usd": [1088.87, 1212.19],
+    "spot_volume_24h_usd": 1305403918.54,
+    "spot_volume_day_over_day_pct": 39.0,
+    "relative_7d_global_crypto_market_pct": -4.2,
+    "interpretation": "The token has recovered from the earlier same-day rejection and is trading near its 24h high with materially higher spot turnover. This is scored as confirmation after a failed first reaction, not as a first-minute buyer-count signal."
+  },
+  "wallet_quality": {
+    "score": "MEDIUM_UNCHANGED",
+    "supporting_history": "The Sep. 15 starter recorded two distinct exchange-withdrawal paths totaling roughly 49.23K ZEC, but beneficial-owner independence and historical selectivity were not proven.",
+    "fresh_selective_wallet_confirmation": false,
+    "independence_check": "No new funding-lineage evidence in this run was sufficient to promote the wallet-quality score.",
+    "interpretation": "The add is justified by an independent product/governance plus market-persistence leg, not by pretending the old accumulation paths are fresh smart-money confirmation."
+  },
+  "social_news_attention": {
+    "quality": "BROAD_GOVERNANCE_COVERAGE_WITH_INFLUENCER_CAVEAT",
+    "evidence": "NU7 results received fresh independent press coverage on Sep. 16. Older high-profile endorsements from Arthur Hayes, Matt Hougan and others are explicitly discounted and not used as a positive score because concentrated influencer promotion can be reflexive or late-cycle attention."
+  },
+  "liquidity_executability": {
+    "result": "PASS_TIER_A",
+    "evidence": "CoinGecko showed about $1.305B of 24h ZEC turnover across 49 exchanges / 83 markets. Major venue order books showed multi-million-dollar two-sided depth within 2% (including Binance and Coinbase), making a roughly $242 paper add negligible relative to executable liquidity."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_NATIVE_ASSET_CAVEATS",
+    "sellability_honeypot": "PASS; ZEC is a native PoW asset with deep multi-venue markets rather than a creator-controlled smart-contract token.",
+    "mint_freeze_permissions": "NOT_APPLICABLE in the ERC/SPL sense; issuance is consensus-defined.",
+    "max_supply": "21M ZEC hard cap.",
+    "lp_control": "No single creator-controlled LP is required for exit liquidity.",
+    "supply_concentration": "Beneficial ownership is intrinsically harder to audit because shielded balances conceal ownership; no hard concentration failure can be claimed from transparent-address scans alone.",
+    "ongoing_issuance": "Current PoW issuance remains a supply headwind until future halvings.",
+    "regulatory_listing_risk": "Privacy-asset regulatory and exchange-listing risk remains material.",
+    "wash_bot_creator_dump": "No new evidence in this run triggered a hard rejection for creator dumping, wash trading, bot domination or suspicious token transfers."
+  },
+  "paper_trade": {
+    "trade_id": "ADD-ZEC-20260916-123220Z",
+    "action": "ADD",
+    "quantity": 0.20058908343099238,
+    "mark_price_usd": 1204.97,
+    "gross_usd": 241.70382786184288,
+    "transaction_cost_rate": 0.0015,
+    "transaction_cost_usd": 0.36255574179276434,
+    "cash_after_usd": 2524.2456382437135,
+    "position_after_quantity": 0.41605680147512814,
+    "position_mark_value_usd": 501.3359640734852,
+    "blended_all_in_average_cost_usd": 1171.6954715991094,
+    "position_weight_after_pct_approx": 5.19,
+    "portfolio_nav_after_usd": 9667.790558731922,
+    "passive_benchmark_nav_usd": 9697.53514786023,
+    "alpha_vs_benchmark_usd": -29.74458912830778,
+    "alpha_vs_benchmark_bps": -30.67231897052825,
+    "sizing_reason": "2.5% of pre-trade NAV confirmation add. Total ZEC remains well below the 7.5% non-core ceiling because no fresh selective-wallet cohort was verified and NU7 remains unimplemented."
+  },
+  "paper_portfolio_marks_used": {
+    "BTC": 75905.83,
+    "ETH": 2414.19,
+    "SOL": 97.70,
+    "SUI": 0.6899,
+    "BNB": 711.84,
+    "UNI": 6.25,
+    "HYPE": 78.60,
+    "AERO": 0.5260,
+    "ZEC": 1204.97,
+    "pre_trade_nav_usd": 9668.153114473715,
+    "passive_benchmark_nav_usd": 9697.53514786023
+  },
+  "existing_positions_action": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD; Solana tokenized-equity secondary trading remains strong but chain stablecoin stock is down week/week and RAY token leadership is unconfirmed.",
+    "SUI": "HOLD_NO_ADD; stablecoin supply growth is not converting into DEX/perps acceleration.",
+    "BNB": "HOLD_NO_ADD; BNB Chain spot activity remains active but recent acceleration has faded and net inflows are weak/negative.",
+    "UNI": "HOLD_NO_ADD; Arc launch is a real distribution/product catalyst, but it was pre-announced and no fresh Arc usage or selective-wallet confirmation justifies moving UNI beyond its existing ~5% position.",
+    "HYPE": "HOLD_NO_ADD; protocol economics remain strong but repeated institutional exchange deposits and dilution risk still block scaling.",
+    "AERO": "HOLD_NO_ADD; Base tokenized-equity activity is real but trader/LP incentive contamination and Raydium's competing RWA venue leadership still require a post-incentive persistence test.",
+    "ZEC": "ADD_2.5_PERCENT_NAV; independent NU7 governance/product confirmation plus second-leg price/volume persistence crosses the scaling threshold."
+  },
+  "competing_signals_rejected_or_held": [
+    "Raydium/Solana RWA: xStocks 30-day DEX volume surpassed $1B and Raydium remains the dominant venue, but RAY itself still lacks fresh selective accumulation and has not provided clean token-price persistence; no RAY paper entry.",
+    "Base/Aerodrome RWA: actual secondary stock-token use remains substantive, but current cashback and AERO-reward contamination prevents treating all activity as discretionary capital; no AERO add.",
+    "Injective: raw DEX/perps percentage acceleration is impressive off a small base, while the main USDC catalyst is a scheduled migration from Noble rather than clearly discretionary new capital; no INJ entry.",
+    "Sui: stablecoin growth is positive but DEX and perps volumes are not confirming speculative migration.",
+    "Robinhood Chain/PONS: market-quality evidence remains contaminated by purchasable on-chain volume/maker-generation services; raw breadth and turnover are not sufficient for qualification.",
+    "Hyperliquid/HYPE: price and protocol economics are resilient, but prior Multicoin/Bitwise exchange-deposit risk remains unresolved; no add or trim."
+  ],
+  "major_uncertainties": [
+    "NU7 voting is ZEC-weighted and privacy-preserving, so the number of independent beneficial owners behind the ~2.4M participating ZEC is unknown.",
+    "NU7 results are governance direction, not deployed code; implementation and activation may slip or differ.",
+    "The two previously observed withdrawal accumulators may share beneficial ownership or institutional purpose.",
+    "A large shielded balance proves capital stock inside privacy pools but cannot prove active shielded-to-shielded transaction velocity or unique users.",
+    "ZEC remains volatile and sensitive to influencer attention, privacy-regulation headlines and exchange-listing policy."
+  ],
+  "why_signal_matters_now": "This is the first prospective run after the NU7 result in which ZEC repaired its initial same-day price rejection and simultaneously reaccelerated spot turnover while the underlying shielded-capital stock remained high. The independent product/governance catalyst plus the market's second-leg confirmation is sufficiently different from the Sep. 15 wallet-driven starter to justify one additional 2.5%-NAV paper tranche, while the unresolved wallet-independence and implementation risks cap total exposure below 7.5%.",
+  "sources": [
+    "https://www.coingecko.com/en/coins/zcash",
+    "https://forum.zcashcommunity.com/t/nu7-sentiment-polls-results/57590",
+    "https://www.coindesk.com/tech/2026/09/16/zcash-holders-overwhelmingly-back-faster-transactions-and-bitcoin-style-halvings",
+    "https://zecstats.org/shielded-percentage",
+    "https://zecstats.org/how-many-zcash-are-there"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  }
+}
