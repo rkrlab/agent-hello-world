@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-09-16T03:20:44Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 2766.312021847349,
+  "marks_usd": {
+    "BTC": 75778.09,
+    "ETH": 2407.10,
+    "SOL": 97.22,
+    "SUI": 0.6903,
+    "BNB": 712.96,
+    "UNI": 6.30,
+    "HYPE": 77.82,
+    "AERO": 0.5274,
+    "ZEC": 1131.63
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko BTC/USD live volume-weighted spot page, crawled 2026-09-16 UTC",
+    "ETH": "CoinGecko ETH/USD live volume-weighted spot page, crawled 2026-09-16 UTC",
+    "SOL": "CoinGecko SOL/USD live volume-weighted spot page, crawled 2026-09-16 UTC",
+    "SUI": "CoinGecko SUI/USD live volume-weighted spot page, crawled 2026-09-16 UTC",
+    "BNB": "CoinGecko BNB/USD live volume-weighted spot page, crawled 2026-09-16 UTC",
+    "UNI": "CoinGecko UNI/USD live volume-weighted spot page, crawled 2026-09-16 UTC",
+    "HYPE": "CoinGecko HYPE/USD live volume-weighted spot page, crawled 2026-09-16 UTC",
+    "AERO": "CoinGecko AERO/USD live volume-weighted spot page, crawled 2026-09-16 UTC",
+    "ZEC": "CoinGecko ZEC/USD live volume-weighted spot page, crawled 2026-09-16 UTC"
+  },
+  "position_values_usd": {
+    "BTC": 1917.0097031491716,
+    "ETH": 1922.7113337014837,
+    "SOL": 940.4140065777107,
+    "SUI": 425.2710694923611,
+    "BNB": 479.59101304984705,
+    "UNI": 472.5240719519376,
+    "HYPE": 242.3560047031329,
+    "AERO": 231.72989146693746,
+    "ZEC": 243.82973377028537
+  },
+  "portfolio_nav_usd": 9641.748849710217,
+  "passive_benchmark_nav_usd": 9684.997125970574,
+  "alpha_vs_benchmark_usd": -43.24827626035767,
+  "alpha_vs_benchmark_bps": -44.654919044205265,
+  "decisions": {
+    "BTC": "HOLD_NO_ADD_MACRO_REGULATORY_RISK_OFF_REMAINS_UNRESOLVED_AHEAD_OF_FED",
+    "ETH": "HOLD_NO_ADD_ETF_AND_ACCUMULATION_CONTEXT_CONSTRUCTIVE_BUT_NO_CLEAN_POST_SELL_OFF_CONFIRMATION",
+    "SOL": "HOLD_NO_ADD_HIGH_DEX_VELOCITY_PERSISTS_BUT_STONKFUN_STOCK_PAIR_ACTIVITY_IS_PARTLY_REWARD_AND_MEME_FLOW_CONTAMINATED",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_GROWTH_NOT_CONFIRMED_BY_DEX_OR_PERP_LEADERSHIP",
+    "BNB": "HOLD_NO_ADD_ACTIVITY_REMAINS_HIGH_WITHOUT_FRESH_RETAINED_CAPITAL_CONFIRMATION",
+    "UNI": "HOLD_NO_ADD_NO_TRIM_OFFICIAL_STABLEPAIR_USAGE_THESIS_REMAINS_INTACT;_CUSTOM_SAFE_MODULE_EXPLOIT_DID_NOT_IMPLICATE_UNISWAP_V4_CORE_OR_STABLEPAIR",
+    "HYPE": "HOLD_NO_ADD_NO_TRIM_INSTITUTIONAL_DISTRIBUTION_RISK_PERSISTS_BUT_AGGREGATE_NETFLOW_AND_PROTOCOL_ECONOMICS_HAVE_NOT_CONFIRMED_A_BREAK",
+    "AERO": "HOLD_NO_ADD_NO_TRIM_BASE_TOKENIZED_EQUITY_SECONDARY_TRADING_THESIS_REMAINS_INTACT_WITHOUT_NEW_WALLET_CONFIRMATION",
+    "ZEC": "HOLD_NO_ADD_RELATIVE_PRICE_RESILIENCE_AND_PRIOR_ACCUMULATION_PERSIST_BUT_NO_NEW_INDEPENDENT_HIGH_QUALITY_ACCUMULATOR"
+  },
+  "regime_notes": [
+    "No new ecosystem or asset crossed the framework alert threshold after the prior CLARITY Act risk-off observation. Broad weakness remains dominated by macro/regulatory risk ahead of the September 16 Federal Reserve decision rather than a clean new discretionary-capital migration.",
+    "Global on-chain activity is mixed rather than capitulatory: DEX velocity remains elevated on Solana and Base, while Sui DEX/perp activity contracts and Hyperliquid spot/stablecoin capital stock has softened even as perp fees and volume remain economically large.",
+    "Solana tokenized-equity headline volume remains quality-contaminated by StonkFun's stock-paired meme-launch model and substantial ecosystem rewards. This contamination was already identified in prior research, so it does not constitute a new RAY/STONK entry signal despite real Raydium settlement and fee generation.",
+    "The September 15 rsETH loss used an authorized custom Safe/Uniswap-v4 liquidity module with faulty authorization and an attacker-controlled hook. Available technical reporting does not identify Uniswap v4 core or the official StablePair hook as the failure mode, so UNI's structural gate remains pass with composability-risk caveats.",
+    "HYPE remains the largest existing-position risk: Multicoin-linked Coinbase Prime deposits and Bitwise-related transfers continue to signal possible distribution, but no new evidence establishes aggregate exchange net inflows or a collapse in protocol fees/revenue. The previously alerted risk therefore remains HOLD rather than TRIM.",
+    "ZEC continues to hold near its paper basis better than most risk assets, but no third independent selective accumulation path or fresh usage acceleration was verified; relative strength alone does not justify an add.",
+    "Portfolio NAV is approximately $9,641.75 versus $9,685.00 for the frozen passive benchmark, trailing by about $43.25 or 44.65 bps. No hard structural gate failed and no position meets the persistent thesis-failure condition for a trim or exit."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "alert_classification": null,
+  "notes": "Prospective hourly mark after a fresh regime/leadership scan. No new alert threshold and no paper trade; state.json and immutable trade ledger remain unchanged."
+}
