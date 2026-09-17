@@ -1,0 +1,68 @@
+{
+  "timestamp_utc": "2026-09-17T06:53:11Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 2330.7108492970233,
+  "marks_usd": {
+    "BTC": 76269.20,
+    "ETH": 2418.94,
+    "SOL": 99.51,
+    "SUI": 0.7184,
+    "BNB": 726.62,
+    "UNI": 6.80,
+    "HYPE": 78.78,
+    "AERO": 0.5539,
+    "ZEC": 1357.61
+  },
+  "mark_sources": {
+    "BTC": "CoinMarketCap BTC/USD live converter observed during the run",
+    "ETH": "CoinMarketCap ETH/USD live converter observed during the run",
+    "SOL": "CoinMarketCap SOL/USD live converter observed during the run",
+    "SUI": "CoinMarketCap SUI/USD live converter observed during the run",
+    "BNB": "CoinMarketCap BNB/USD live converter observed during the run",
+    "UNI": "CoinMarketCap UNI/USD live converter observed during the run",
+    "HYPE": "CoinMarketCap HYPE/USD live converter observed during the run",
+    "AERO": "CoinMarketCap AERO/USD live converter observed during the run",
+    "ZEC": "CoinMarketCap ZEC/USD live converter observed during the run"
+  },
+  "position_values_usd": {
+    "BTC": 1929.4336456807607,
+    "ETH": 1932.1687314793185,
+    "SOL": 962.5652930934785,
+    "SUI": 442.5825529817648,
+    "BNB": 488.77976590871833,
+    "UNI": 510.02598242431355,
+    "HYPE": 245.3457472438038,
+    "AERO": 243.37350565706606,
+    "ZEC": 768.7153354462663
+  },
+  "portfolio_nav_usd": 9853.701409212514,
+  "passive_benchmark_nav_usd": 9755.529989144043,
+  "alpha_vs_benchmark_usd": 98.17142006847098,
+  "alpha_vs_benchmark_bps": 100.6315599231576,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD_TOKENIZED_EQUITY_USAGE_REMAINS_REAL_BUT_NO_NEW_CHAIN_FLOW_OR_SELECTIVE_WALLET_TRIGGER",
+    "SUI": "HOLD_NO_ADD_NO_NEW_DISCRETIONARY_CAPITAL_MIGRATION_CONFIRMATION",
+    "BNB": "HOLD_NO_ADD_NO_NEW_ECOSYSTEM_SPECIFIC_LEADERSHIP_TRIGGER",
+    "UNI": "HOLD_NO_ADD_ARC_DISTRIBUTION_CATALYST_IS_REAL_BUT_LAUNCH_VOLUME_NOW_MATERIALLY_INCENTIVE_CONTAMINATED",
+    "HYPE": "HOLD_NO_ADD_SMALL_ETF_INFLOW_PARTIALLY_REPAIRS_PRIOR_DISTRIBUTION_CONFLICT_BUT_DOES_NOT_CLEAR_SCALE_THRESHOLD",
+    "AERO": "HOLD_NO_ADD_BASE_TOKENIZED_STOCK_THESIS_REMAINS_INCENTIVE_CONTAMINATED",
+    "ZEC": "HOLD_AT_7_5_PERCENT_CAP_PRICE_PERSISTENCE_STRONG_BUT_SHIELDED_FLOW_ACCELERATION_HAS_COOLED_AND_NO_ACTION_TRIGGER"
+  },
+  "regime_notes": [
+    "Arc remains an exceptional launch-day activity regime: secondary reports based on Dune show about 7.76M transactions, ~$280K fees, >$410M Uniswap volume, ~$1B USDC transfers, ~$650M on-chain USDC and >700K new addresses. These are materially stronger than the earliest launch snapshots.",
+    "However, Gate now confirms an Arc-specific campaign running Sep 16-27 with zero-gas trading and up to 60K USDT of rewards tied to check-ins, cumulative trading-volume milestones, a top-30 volume leaderboard and new-user fee rebates. Those mechanics directly contaminate the framework's volume/user-growth signals. The nominal reward pool is far too small to explain all reported Arc turnover by itself, so this is a quality downgrade rather than rejection of the entire regime.",
+    "Arc-native ARGUS and TOLLY remain structurally rejected under prior contract/liquidity/concentration reviews. No newly observed Arc token passed the hard gate. UNI remains hold/no-add because Arc is only an incremental thesis leg and launch activity cannot yet be cleanly decomposed into independent discretionary users versus reward-driven churn.",
+    "DRV's V3-driven breakout continues to show forward price/volume persistence, but the previously recorded wallet-quality and governance/supply-admin gates remain unresolved. No chase and no paper entry.",
+    "ZEC remains strong above the latest $1,286.84 scale-add mark and is already at the 7.5% non-core cap. Seven-day net shielded inflow has slowed materially from the prior checkpoint, so price strength does not justify exceeding the cap; no trim condition is present.",
+    "HYPE received about $1.669M of Sep-16 ETF net inflow, partially offsetting the recent institutional-distribution concern, but the amount is not enough to establish a new accumulation regime or justify an add.",
+    "RWA discipline is unchanged: Circle states USYC, BUIDL and private-credit products can trade, lend and serve as collateral on Arc, but product availability and on-chain balances are not counted as verified secondary RWA trading or collateral utilization until those flows are measured separately.",
+    "Approximate paper NAV is $9,853.70 versus $9,755.53 for the frozen passive benchmark, ahead by $98.17 or about 100.6 bp. No current holding triggered a hard structural failure, thesis invalidation, trim or exit condition."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": true,
+  "alert_type": "ARC_INCENTIVE_CONTAMINATION_FLOW_QUALITY_DOWNGRADE",
+  "observation_record": "observations/2026-09-17T065311Z-arc-incentive-contamination-flow-quality-downgrade.json",
+  "notes": "Prospective hourly mark. Source-of-truth state and immutable trade ledger were read before decisions. The alert is a correction to Arc flow-quality attribution, not a paper-trade signal; state.json and trades.jsonl are unchanged."
+}
