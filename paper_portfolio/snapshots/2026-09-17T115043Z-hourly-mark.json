@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-09-17T11:50:43Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 2330.7108492970233,
+  "marks_usd": {
+    "BTC": 76596.12,
+    "ETH": 2443.89,
+    "SOL": 100.04,
+    "SUI": 0.7228,
+    "BNB": 726.90,
+    "UNI": 6.74,
+    "HYPE": 79.90,
+    "AERO": 0.5532,
+    "ZEC": 1374.85
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko live global spot observed during the run",
+    "ETH": "CoinGecko live global spot observed during the run",
+    "SOL": "CoinGecko/current market spot observed during the run",
+    "SUI": "Current global spot search observed during the run",
+    "BNB": "Current global spot search observed during the run",
+    "UNI": "CoinGecko/current global spot observed during the run",
+    "HYPE": "CoinGecko live volume-weighted spot observed during the run",
+    "AERO": "Current global spot search observed during the run",
+    "ZEC": "CoinGecko/current global spot observed during the run"
+  },
+  "position_values_usd": {
+    "BTC": 1937.7039624986369,
+    "ETH": 1952.0979607493327,
+    "SOL": 967.69201006001,
+    "SUI": 445.2932479053725,
+    "BNB": 488.96811516204804,
+    "UNI": 505.52575316762847,
+    "HYPE": 248.83378020791983,
+    "AERO": 243.06593848977968,
+    "ZEC": 778.4770876306886
+  },
+  "portfolio_nav_usd": 9898.36870516844,
+  "passive_benchmark_nav_usd": 9791.7552963754,
+  "alpha_vs_benchmark_usd": 106.61340879303862,
+  "alpha_vs_benchmark_bps": 108.8807936535174,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD_RWA_UTILIZATION_REAL_BUT_NO_FRESH_SOL_SPECIFIC_SELECTIVE_WALLET_CONFIRMATION",
+    "SUI": "HOLD_NO_ADD_NO_NEW_CLEAN_DEX_OR_PERP_ACCELERATION",
+    "BNB": "HOLD_NO_ADD_TOKENIZED_STOCK_ACTIVITY_REMAINS_PARTLY_INCENTIVE_CONTAMINATED",
+    "UNI": "HOLD_NO_ADD_ARC_AND_V4_ACTIVITY_CONSTRUCTIVE_BUT_ALREADY_INCORPORATED",
+    "HYPE": "HOLD_NO_ADD_FRESH_ECOSYSTEM_INTEGRATIONS_INCREMENTAL_NOT_THRESHOLD_AND_PAYWARD_REMAINS_PRE_APPROVAL",
+    "AERO": "HOLD_NO_ADD_BASE_ACTIVITY_CONSTRUCTIVE_BUT_REWARD_CONTAMINATION_AND_NO_FRESH_WALLET_CONFIRMATION",
+    "ZEC": "HOLD_NO_ADD_AT_7_5_PERCENT_CAP_NEW_DERIVATIVES_WALLET_FAILS_SELECTIVE_WALLET_QUALITY_TEST"
+  },
+  "regime_notes": [
+    "No new ecosystem or asset crossed the framework threshold since the 10:13 UTC mark. Global DEX activity is positive versus the prior day but not showing a fresh broad migration burst, and Raydium AMM volume is down day/day despite strong 30-day growth.",
+    "The newly discussed ZEC derivatives wallet 0xc36af149b64a41aab6c26ea6b71c37082d9e105b is explicitly rejected as selective-smart-money confirmation. A third-party audit showed a 54-day account age, 35% 30-day drawdown and high-risk classification; another tracker showed roughly 12,051 trades in 30 days, a 21.5% win rate and 51.47% drawdown. Its 11 ZEC adds therefore remain leveraged high-frequency activity, not independent selective spot accumulation. Unfilled ZEC/PUMP bids are not counted as deployed capital.",
+    "HYPE received fresh ecosystem routing/integration headlines around Backd/Bounce and remains near $80, but these are incremental extensions of existing Hyperliquid composability rather than a new capital-migration threshold. Payward/Bitnomial remains pre-regulatory-approval and pre-live-volume.",
+    "DRV remains a high-volume V3 catalyst candidate, with roughly $95M 24-hour turnover and price still far above the pre-catalyst range, but its previously identified governance/supply and wallet-quality caveats remain unresolved. No paper entry.",
+    "Arc first-day volume remains dominated by launchpad/memecoin activity and the known incentive contamination; no Arc-native leader cleared the structural gate. RAY remains the cleaner Solana application-layer watch but lacks fresh independent selective-wallet confirmation and current Raydium AMM volume is not accelerating day/day.",
+    "Marked paper NAV is approximately $9,898.37 versus $9,791.76 for the frozen passive benchmark, ahead by $106.61 or about 108.9 bp. No current holding triggered a hard structural failure, thesis invalidation, trim or exit condition."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "alert_type": null,
+  "observation_record": null,
+  "notes": "Prospective hourly mark. Source-of-truth state and immutable trade ledger were read before decisions. No meaningful new threshold was crossed and no paper trade was justified; state.json and trades.jsonl are unchanged."
+}
