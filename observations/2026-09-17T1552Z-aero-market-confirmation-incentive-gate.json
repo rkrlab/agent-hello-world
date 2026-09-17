@@ -1,0 +1,56 @@
+{
+  "observed_at_utc": "2026-09-17T15:52:36Z",
+  "classification": "AERO_REGULATORY_THESIS_GAINS_MARKET_PROTOCOL_CONFIRMATION_BUT_INCENTIVE_CONTAMINATION_BLOCKS_ADD",
+  "ecosystem": "Base / Aerodrome",
+  "asset": "AERO",
+  "contract_address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+  "signal_status": "meaningful_update_no_trade",
+  "evidence": {
+    "aero_mark_usd": 0.5941,
+    "aero_24h_price_change_pct": 13.0,
+    "aero_24h_token_volume_usd": 52785342.24,
+    "aero_token_volume_change_day_over_day_pct": 92.2,
+    "aerodrome_slipstream_24h_volume_usd": 137776641.56,
+    "aerodrome_slipstream_volume_change_24h_pct": 32.01,
+    "aerodrome_24h_fees_usd": 217982,
+    "aerodrome_24h_fees_change_pct": 95.4,
+    "aerodrome_24h_project_revenue_usd": 190035,
+    "aerodrome_24h_project_revenue_change_pct": 95.0,
+    "aero_market_cap_usd": 589763768,
+    "aero_fdv_usd": 1177518581,
+    "aero_base_dex_depth_plus_2pct_usd": 702951,
+    "aero_base_dex_depth_minus_2pct_usd": 700839
+  },
+  "catalyst_context": "The same-day SEC five-year innovation exemption materially reduces the U.S. regulatory barrier for qualifying tokenized-stock venues and liquidity providers. This was already recorded as a Base/Aerodrome thesis upgrade earlier in the day. The new information at this checkpoint is that AERO price/turnover and Aerodrome trading/fee economics are accelerating rather than ignoring the catalyst.",
+  "capital_quality": {
+    "assessment": "mixed",
+    "positive": "Price, token turnover, DEX turnover, fees and project revenue are confirming simultaneously, which is stronger than a price-only narrative reaction.",
+    "negative": "Attribution to new U.S. tokenized-stock users is not established. Aerodrome remains materially incentive-driven over longer windows; DefiLlama shows $8.16M of incentives over 30d and $2.29M over 7d. Existing stock-token liquidity has previously shown reward-heavy pools. No post-exemption U.S. B20 launch or clean unique-funded-wallet cohort was verified in this run."
+  },
+  "wallet_quality": {
+    "rating": "medium_unchanged",
+    "note": "No fresh independently funded, historically selective AERO accumulator cohort was verified. Prior smart-money balance growth is not double-counted as new confirmation."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_MAJOR_CAVEATS",
+    "caveats": [
+      "ongoing weekly emissions and incentive dependence",
+      "governance/minter architecture",
+      "incomplete funding-lineage independence for prior smart-money cohort",
+      "current acceleration is not yet attributable specifically to organic U.S. tokenized-stock migration"
+    ],
+    "executability": "PASS for portfolio sizing; current CEX and Base DEX depth is ample for a ~2.5% NAV paper tranche."
+  },
+  "decision": {
+    "paper_action": "HOLD_NO_ADD",
+    "reason": "The prior missing market-confirmation leg has partially arrived, but the framework requires evidence that the incremental flow is discretionary rather than emissions/rewards/rebates. A high opportunity score cannot override that attribution problem. Wait for U.S. tokenized-stock access and measurable Base/Aerodrome funded-wallet, stock-pair volume, fee or liquidity growth that persists after incentive adjustment, or a genuinely new independent selective-wallet cohort.",
+    "real_trade": false
+  },
+  "forward_checkpoints": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  }
+}
