@@ -1,0 +1,131 @@
+{
+  "timestamp_utc": "2026-09-17T08:26:22Z",
+  "classification": "TOKENIZED_EQUITY_UTILIZATION_CONFIRMED_ARC_LAUNCHPAD_ATTRIBUTION_NO_TRADE",
+  "ecosystem": "Cross-chain tokenized equities / Robinhood Chain / Solana / BNB Chain / Arc",
+  "primary_candidate": {
+    "asset": "RAY",
+    "contract_address": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"
+  },
+  "alert_threshold": "Meaningful regime-quality threshold crossed: tokenized equities now have measurable secondary/composable DeFi utilization beyond issuance/AUM. No candidate crossed the paper-buy threshold because the cleanest marginal crypto asset, RAY, still lacks independently verified selective-wallet confirmation after a large price run.",
+  "tokenized_equity_regime": {
+    "active_market_cap": "Binance Research reports active tokenized-equity market cap around $4.0B as of 2026-09-09, up roughly 314% YTD.",
+    "monthly_secondary_volume": "Reported monthly tokenized-equity trading volume rose from about $237M in January to $7.9B in August, while turnover rose from 0.23x to 2.14x. This is secondary trading rather than issuance alone.",
+    "defi_active_tvl": "Binance Research measured tokenized-equity DeFi Active TVL rising from about $21.6M to $289.1M YTD as of 2026-09-09; a separate current Token Terminal-based report cites $247.8M, so the absolute totals are not treated as directly comparable because methodology/timing may differ.",
+    "utilization_mix": "65.4% of measured DeFi Active TVL is in LPs, 28.1% in lending, 5.7% in yield tokenization and 0.8% in other uses. LP plus lending therefore account for 93.5% of measured DeFi utilization.",
+    "borrowing": "bStocks borrowing utilization rose from about 5.5% at end-June to 46.2% on 2026-09-10, with about $3.1M borrowed against $6.8M collateral. This is direct collateral/borrowing usage rather than nominal issuance.",
+    "current_chain_split": "A current Token Terminal-based report attributes about $98.2M of tokenized-stock DeFi TVL to Robinhood Chain, $87.4M to Solana and $36.3M to BNB Chain; together they account for roughly 89.5% of the cited total.",
+    "flow_quality": "A substantial share of secondary turnover is crypto-native speculation rather than conventional equity investment. Binance Research reports stock-paired meme markets generated about $2.49B on Robinhood Chain and $2.90B on BNB Chain from July 26 through September 9, and a Robinhood sample attributed about $711.2M / 32.1% of cumulative stock-token DEX volume through August 30 to trades against other tokens, mostly memes. This is counted as discretionary speculative capital migration, not as straightforward TradFi equity demand.",
+    "cross_product_behavior": "58.5% of early bStocks users also traded perps and/or direct equities, supporting a cross-product speculative/composability interpretation."
+  },
+  "arc_attribution_update": {
+    "day_one_dex_volume_usd": 410800000,
+    "launchpad_share_pct": 82.0,
+    "launchpad_volume_usd": 336260000,
+    "arguspad_volume_usd": 202350000,
+    "minara_fun_volume_usd": 36410000,
+    "tollylabs_volume_usd": 19650000,
+    "tokens_minted": 97025,
+    "arguspad_tokens_minted": 83751,
+    "interpretation": "Arc remains a genuine high-velocity discretionary-speculation regime, but the first-day DEX burst is now attributable overwhelmingly to launchpad/memecoin activity rather than institutional RWA trading. This compounds the prior Gate reward-contamination downgrade. ARGUS and TOLLY remain structurally rejected under earlier contract/liquidity/concentration reviews."
+  },
+  "candidate_ranking": {
+    "RAY": {
+      "rank": 1,
+      "status": "WATCH_NO_TRADE",
+      "price_usd": 1.48,
+      "price_change_24h_pct": 14.6,
+      "price_change_30d_pct": 143.0,
+      "token_volume_24h_usd": 85760000,
+      "token_volume_change_day_pct": 82.2,
+      "market_cap_usd": 400160000,
+      "fdv_usd": 823360000,
+      "protocol_tvl_usd": 1125000000,
+      "rationale": "Solana is one of the three dominant tokenized-stock DeFi utilization chains, Raydium has previously verified fee-funded RAY buybacks and a structural pass with caveats, and RAY continues to outperform. However, no new independently funded historically selective wallet cohort was verified, and a +14.6% daily / +143% 30-day move makes an entry here a chase rather than confirmation discipline."
+    },
+    "UNI": {
+      "status": "HOLD_NO_ADD",
+      "rationale": "Uniswap remains a direct beneficiary of cross-chain secondary trading and tokenized-equity composability, but the new utilization evidence is cross-chain and does not isolate enough incremental UNI-specific value capture to justify scaling the existing roughly 5% position."
+    },
+    "AERO": {
+      "status": "HOLD_NO_ADD",
+      "rationale": "Base tokenized-stock economics remain interesting, but the previously identified LP/trader incentive contamination remains unresolved."
+    },
+    "BNB_CAKE": {
+      "status": "NO_NEW_SPECULATIVE_ENTRY",
+      "rationale": "BNB Chain is a major tokenized-stock utilization venue, but current bStocks trading activity is directly contaminated by a live Ave.ai/BNB Chain/Four.meme rewards campaign tied to participation and volume, and suspicious high-volume/low-liquidity Pancake pairs remain a wash/bot-quality concern."
+    },
+    "ARC_NATIVE": {
+      "status": "NO_ENTRY",
+      "rationale": "Arc has real discretionary speculative activity but day-one flow is overwhelmingly launchpad/memecoin churn; ARGUS/TOLLY remain hard-gate rejects."
+    }
+  },
+  "wallet_quality": {
+    "RAY": "LOW_TO_MEDIUM / INSUFFICIENT_FOR_ENTRY. No fresh independently funded historically selective RAY accumulation cohort was verified in this run. Protocol buybacks are value-capture evidence, not selective-wallet evidence."
+  },
+  "structural_gate": {
+    "RAY": "PASS_WITH_CAVEATS_UNCHANGED. Prior review found mint and freeze authorities revoked and resolved major holder accounts to protocol treasury/staking/buyback infrastructure. No new hard failure surfaced, but holder/funding-lineage and current selective-wallet confirmation remain incomplete.",
+    "ARC_NATIVE": "FAIL for currently observed leaders ARGUS/TOLLY under earlier unverified-implementation/liquidity/concentration reviews."
+  },
+  "portfolio_review": {
+    "action": "NO_TRADE",
+    "cash_usd": 2330.7108492970233,
+    "trade_count": 7,
+    "marks_usd": {
+      "BTC": 76443.09,
+      "ETH": 2441.64,
+      "SOL": 99.94,
+      "SUI": 0.7217,
+      "BNB": 724.18,
+      "UNI": 6.84,
+      "HYPE": 79.76,
+      "AERO": 0.5526,
+      "ZEC": 1365.26
+    },
+    "portfolio_nav_usd": 9890.596151938484,
+    "passive_benchmark_nav_usd": 9782.612110381331,
+    "alpha_usd": 107.98404155715252,
+    "alpha_bps": 110.38364839444019,
+    "decisions": {
+      "BTC": "HOLD",
+      "ETH": "HOLD",
+      "SOL": "HOLD_NO_ADD_TOKENIZED_EQUITY_UTILIZATION_REAL_BUT_NO_NEW_SOL_SPECIFIC_WALLET_FLOW_TRIGGER",
+      "SUI": "HOLD_NO_ADD_NO_CHAIN_WIDE_REGIME_CONFIRMATION",
+      "BNB": "HOLD_NO_ADD_BSTOCKS_ACTIVITY_INCENTIVE_CONTAMINATED",
+      "UNI": "HOLD_NO_ADD_CROSS_CHAIN_RWA_UTILIZATION_CONFIRMATION_NOT_SUFFICIENTLY_UNI_SPECIFIC",
+      "HYPE": "HOLD_NO_ADD_PAYWARD_HIP3_CATALYST_STILL_PENDING_REGULATORY_APPROVAL_AND_LIVE_VOLUME",
+      "AERO": "HOLD_NO_ADD_BASE_TOKENIZED_STOCK_THESIS_REMAINS_INCENTIVE_CONTAMINATED",
+      "ZEC": "HOLD_NO_ADD_AT_7_5_PERCENT_CAP_PARADIGM_DISCLOSURE_DISCOUNTED_AS_PROMOTION_NOT_NEW_SELECTIVE_WALLET_FLOW"
+    }
+  },
+  "major_uncertainties": [
+    "Current tokenized-stock DeFi TVL totals differ across Binance Research and Token Terminal-derived reporting; methodology and timestamp differences prevent treating the difference as a clean decline.",
+    "Public data still does not fully separate organic wallet diversity from launchpad bots, wash trading and incentive-driven recycling on several chains.",
+    "RAY still lacks a verified independent selective-wallet convergence leg despite strong protocol and price confirmation.",
+    "Arc's day-one activity is now better attributed, but launchpad-level trader independence and bot/wash shares remain unresolved."
+  ],
+  "why_signal_matters_now": "Earlier framework checkpoints repeatedly warned that tokenized-stock issuance/AUM was not enough. This run provides materially stronger evidence that the asset class is now being used in LPs, lending and borrowing/collateral while also showing that a large portion of secondary turnover is crypto-native speculative composability. The distinction improves where-to-look attribution without lowering the wallet and structural gates for token entries.",
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://www.binance.com/en/research/analysis/when-stocks-become-on-chain-assets",
+    "https://beincrypto.com/tokenized-stocks-defi-deposits-onchain-use/",
+    "https://beincrypto.com/arc-mainnet-meme-coin-launchpad-volume/",
+    "https://www.coingecko.com/en/coins/raydium",
+    "https://www.coingecko.com/en/coins/bitcoin",
+    "https://www.coingecko.com/en/coins/ethereum",
+    "https://www.coingecko.com/en/coins/solana",
+    "https://www.coingecko.com/en/coins/sui",
+    "https://www.coingecko.com/en/coins/bnb",
+    "https://www.coingecko.com/en/coins/uniswap",
+    "https://www.coingecko.com/en/coins/hyperliquid",
+    "https://www.coingecko.com/en/coins/aerodrome-finance",
+    "https://www.coingecko.com/en/coins/zcash"
+  ],
+  "paper_trade_created": false,
+  "real_trade_created": false
+}
