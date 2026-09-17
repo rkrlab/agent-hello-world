@@ -1,0 +1,69 @@
+{
+  "timestamp_utc": "2026-09-17T14:52:46Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 2330.7108492970233,
+  "marks_usd": {
+    "BTC": 76424.02,
+    "ETH": 2450.74,
+    "SOL": 100.59,
+    "SUI": 0.7228,
+    "BNB": 727.89,
+    "UNI": 6.94,
+    "HYPE": 79.92,
+    "AERO": 0.555225,
+    "ZEC": 1354.71
+  },
+  "mark_sources": {
+    "BTC": "CoinMarketCap BTC/USD live conversion observed during the run; cross-checked against same-day Reuters/Barron's spot reporting",
+    "ETH": "CoinMarketCap ETH/USD live conversion observed during the run",
+    "SOL": "CoinMarketCap SOL/USD live conversion observed during the run",
+    "SUI": "CoinMarketCap SUI/USD live conversion observed during the run",
+    "BNB": "CoinMarketCap BNB/USD live conversion observed during the run",
+    "UNI": "CoinMarketCap UNI/USD live conversion observed during the run",
+    "HYPE": "CoinMarketCap HYPE/USD live conversion observed during the run; localization caches ranged narrowly around $79.9-$80.1",
+    "AERO": "BTC-ECHO AERO/USD live mark, updated 2026-09-17 14:14 UTC, cross-checked against MetaMask/Bybit/GiaCoin",
+    "ZEC": "CoinMarketCap ZEC/USD live conversion observed during the run; localization caches varied modestly intraday"
+  },
+  "position_values_usd": {
+    "BTC": 1933.3502321537317,
+    "ETH": 1957.5695126731644,
+    "SOL": 973.0121880441465,
+    "SUI": 445.2932479053725,
+    "BNB": 489.63406430774955,
+    "UNI": 520.5265173565789,
+    "HYPE": 248.89606651085046,
+    "AERO": 243.9556863665725,
+    "ZEC": 767.0732773642
+  },
+  "portfolio_nav_usd": 9910.021641979389,
+  "passive_benchmark_nav_usd": 9798.859245084164,
+  "alpha_vs_benchmark_usd": 111.16239689522445,
+  "alpha_vs_benchmark_bps": 113.44422255171364,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD_TOKENIZED_EQUITY_SECONDARY_USAGE_REMAINS_REAL_BUT_NO_FRESH_CHAIN_LEVEL_SPECULATIVE_ACCELERATION",
+    "SUI": "HOLD_NO_ADD_NO_NEW_CLEAN_DEX_PERP_OR_STABLECOIN_ACCELERATION",
+    "BNB": "HOLD_NO_ADD_CHAIN_CAPITAL_GROWTH_REMAINS_MORE_PARKED_THAN_HIGH_VELOCITY_AND_TOKENIZED_STOCK_ACTIVITY_IS_PARTLY_INCENTIVE_CONTAMINATED",
+    "UNI": "HOLD_NO_ADD_FEES_AND_REVENUE_CONSTRUCTIVE_BUT_NO_NEW_SELECTIVE_WALLET_OR_PROTOCOL_SPECIFIC_THRESHOLD",
+    "HYPE": "HOLD_NO_ADD_PAYWARD_BITNOMIAL_CATALYST_REMAINS_PRE_APPROVAL_WITHOUT_LIVE_HIP3_USAGE_CONFIRMATION",
+    "AERO": "HOLD_NO_ADD_SEC_EXEMPTION_IMPROVES_ADDRESSABLE_MARKET_BUT_NO_POST_EXEMPTION_US_CAPITAL_MIGRATION_CONFIRMED_AND_EXISTING_FLOW_REMAINS_INCENTIVE_CONTAMINATED",
+    "ZEC": "HOLD_NO_ADD_AT_7_5_PERCENT_CAP_PRICE_VOLUME_PERSISTENCE_REMAINS_STRONG_BUT_NO_NEW_INDEPENDENT_ACCUMULATOR_OR_USAGE_ACCELERATION"
+  },
+  "regime_notes": [
+    "No new ecosystem, candidate asset, or existing paper holding crossed a meaningful framework threshold after the 13:27 UTC SEC-tokenized-stock/AERO thesis update; no paper action is justified.",
+    "RAY remains a structurally cleaner Solana application-layer watch candidate, but fresh Santiment analysis shows daily active addresses down about 41% from the September 11 peak while price has held up much better. This weakens the usage-confirmation leg and reinforces the decision not to chase without selective-wallet confirmation.",
+    "PUMP has a reported seven-day smart-money balance increase concentrated in seven tracked wallets, but only a small increment occurred in the latest 24 hours and no independently verified fresh catalyst or funding-lineage confirmation clears the threshold. Custom-pair trader cashback also contaminates activity quality.",
+    "NEAR's current price/volume burst is rejected as a clean regime signal because the immediate catalyst includes an explicit milestone incentive / TVL snapshot and claim mechanics.",
+    "Arc remains a genuine high-velocity launchpad/memecoin regime but continues to be materially incentive-contaminated and no Arc-native leader has cleared the structural contract/holder/liquidity gates.",
+    "Tokenized-equity utilization remains substantive across Robinhood Chain, Solana and BNB Chain, and a newly listed FWDI tokenized equity on Solana has generated actual secondary turnover. This supports the broader RWA-utilization thesis but does not yet create clean incremental value capture sufficient for a new crypto paper position.",
+    "The SEC's five-year conditional tokenized-stock exemption remains a meaningful Base/Aerodrome addressable-market catalyst, but no verified post-exemption U.S. B20 launch, funded-wallet migration, Aerodrome stock-token volume acceleration, or fee increase has appeared yet; headline policy change is not counted as capital migration.",
+    "ZEC remains well above the blended paper basis and has substantial turnover, but the position is already at the 7.5% speculative cap and no fourth independently verified selective accumulator or renewed shielded-flow acceleration surfaced in this run.",
+    "Marked paper NAV is approximately $9,910.02 versus $9,798.86 for the frozen passive benchmark, ahead by $111.16 or about 113.4 bp. No current holding triggered a hard structural failure, thesis invalidation, trim, or exit condition."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "alert_type": null,
+  "observation_record": null,
+  "notes": "Prospective hourly mark. Source-of-truth state and immutable trade ledger were read before decisions. Market marks are contemporaneous best-effort snapshots; some public converter pages expose slightly asynchronous localization caches, which does not affect the no-trade decision. state.json and trades.jsonl are unchanged."
+}
