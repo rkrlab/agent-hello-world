@@ -1,0 +1,48 @@
+{
+  "timestamp_utc": "2026-09-17T20:38:52Z",
+  "type": "hourly_mark_no_trade_no_alert",
+  "cash_usd": 2330.7108492970233,
+  "trade_count": 7,
+  "last_trade_id": "ADD-ZEC-20260916-232654Z",
+  "marks_usd": {
+    "BTC": 76873.08,
+    "ETH": 2461.69,
+    "SOL": 101.45,
+    "SUI": 0.7251,
+    "BNB": 727.32,
+    "UNI": 7.3474,
+    "HYPE": 81.62,
+    "AERO": 0.5883,
+    "ZEC": 1473.3
+  },
+  "position_values_usd": {
+    "BTC": 1944.710407334924,
+    "ETH": 1966.316008084253,
+    "SOL": 981.3310118011597,
+    "SUI": 446.71020206998554,
+    "BNB": 489.2506390420427,
+    "UNI": 551.0830740094708,
+    "HYPE": 254.19040225995514,
+    "AERO": 258.4882350208557,
+    "ZEC": 834.2221283822189
+  },
+  "portfolio_nav_usd": 10057.01295730189,
+  "passive_benchmark_nav_usd": 9828.318268332365,
+  "alpha_vs_benchmark_usd": 228.69468896952458,
+  "alpha_vs_benchmark_bps": 232.68954334374513,
+  "cash_weight_pct": 23.174981072335317,
+  "mark_sources": {
+    "BTC_ETH_SOL_SUI_BNB_UNI_HYPE_AERO_ZEC": "Contemporaneous public CoinMarketCap/CoinGecko-derived and exchange spot quotes gathered during the run. Some web result caches showed quote dispersion, so these marks are used for portfolio marking rather than as standalone trading signals."
+  },
+  "notes": [
+    "No paper trade executed and no alert threshold crossed in this run.",
+    "Since the 19:22 UTC mark, no new qualifying ecosystem showed a clean combination of discretionary capital migration, independent selective-wallet convergence, structural clearance and direct token value capture sufficient for a prospective entry.",
+    "UNI remains HOLD/NO ADD: price and turnover are strong, but the latest move is partly attributable to broad altcoin relief and short covering; no fresh independent selective-wallet cohort or new protocol-economic acceleration beyond the already-recorded StablePair/value-capture thesis was verified.",
+    "AERO remains HOLD/NO ADD: the SEC tokenized-stock exemption is constructive, but no measurable new U.S. tokenized-stock flow attributable to Base/Aerodrome has appeared and incentive contamination remains material.",
+    "HYPE remains HOLD/NO ADD: Hyperliquid still dominates perp volume, but the latest public figures are not a fresh acceleration versus the prior scan; AQAv2 payment realization and Payward/Bitnomial live utilization remain pending.",
+    "ZEC remains HOLD/NO ADD at/above the normal non-core sizing ceiling. A newly reported large leveraged trader added ZEC exposure and placed a deep limit bid, but that is not equivalent to a new independent spot-withdrawal accumulator and does not justify exceeding the cap. No sell-discipline trigger fired.",
+    "RAY remains watch/no-entry: Santiment's latest weekly anomaly analysis shows daily active addresses down roughly 41% from the Sep 11 peak while price had given back only about 19%, confirming that user-growth momentum has cooled after the initial tokenized-equity/LaunchLab surge.",
+    "LIT remains watch/no-entry: the previously identified holder concentration, limited float and incentive/fee-quality caveats remain unresolved; no new independent wallet-quality evidence appeared.",
+    "No real trade executed."
+  ]
+}
