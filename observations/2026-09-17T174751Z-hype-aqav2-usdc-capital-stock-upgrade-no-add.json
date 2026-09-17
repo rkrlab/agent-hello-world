@@ -1,0 +1,90 @@
+{
+  "timestamp_utc": "2026-09-17T17:47:51Z",
+  "classification": "HYPE_AQAV2_USDC_CAPITAL_STOCK_VALUE_CAPTURE_UPGRADE_NO_ADD",
+  "ecosystem": "Hyperliquid",
+  "asset": "HYPE",
+  "contract_address": null,
+  "alert_threshold": "Meaningful economic-quality upgrade crossed because Hyperliquid now carries roughly $6.7B of USDC and AQAv2 links a large eligible treasury balance directly to protocol reserve-yield revenue. The paper-add threshold did not cross because the latest stablecoin series is negative over 7 days, the ranking crossover is capital stock rather than fresh net inflow, no AQAv2 payment has settled yet, and no new selective-wallet cohort was verified.",
+  "ecosystem_regime_evidence": {
+    "stablecoin_capital_stock": "DefiLlama's latest Hyperliquid L1 stablecoin view reports about $6.756B of USDC, 98.32% USDC dominance, +12.03% over one month but -2.42% over seven days. Separate September 17 reporting placed Hyperliquid around $6.73B versus Solana around $6.72B, making Hyperliquid the second-largest USDC ecosystem by that snapshot. This is a capital-stock milestone, not proof that capital migrated from Solana to Hyperliquid during this run.",
+    "actual_secondary_activity": "DefiLlama reports approximately $8.311B of 24h perpetual-futures volume and $46.283B over seven days, with seven-day perp volume up about 1.05%. DEX spot volume is about $342.64M over 24h but its seven-day volume is down about 10.58%. The perp figures are actual derivatives secondary trading, distinct from the USDC stock and from RWA issuance/AUM.",
+    "rwa_classification": "Hyperliquid's currently reported RWA active AUM is only about $5.8M. The USDC/AQAv2 signal is therefore classified as stablecoin collateral/settlement capital and protocol-value-capture infrastructure, not tokenized-RWA growth."
+  },
+  "why_capital_is_financially_substantive": {
+    "finding": "USDC is Hyperliquid's dominant settlement/collateral asset, and the latest month-over-month supply growth is substantial. However, the current seven-day decline prevents classifying today's ranking crossover as fresh discretionary inflow.",
+    "incentive_discount": "AQAv2 is economically cleaner than a points/quest/trading-reward signal: current AQAv2 documentation and institutional analysis state that AQAv2 does not provide the old aligned-asset trading-fee or volume-contribution benefit. The capital-stock signal is therefore not scored as activity manufactured by an AQAv2 trading rebate. Existing referral/staking fee discounts and unrelated trading campaigns remain discounted."
+  },
+  "direct_hype_value_capture": {
+    "mechanism": "hl.eco's wallet-derived AQAv2 monitor shows about $5.50B in the designated treasury address and about $610M in the linked technical-deployer contract, close to the documented 9:1 split. The treasury address shares 100% of the cost-adjusted AQA rate with the protocol; reserve-yield revenue settles to the Assistance Fund, which buys and burns HYPE.",
+    "realized_vs_accruing": "No AQAv2 reserve-yield payment has reached the Assistance Fund yet. The monitor reports $0 received from AQAv2 and identifies the first scheduled payment as 2026-10-03. Therefore this run treats reserve-yield value capture as an accruing contractual mechanism backed by a large eligible balance, not as realized cash flow.",
+    "deployer_alignment": "The AQAv2 structure uses 500,000 HYPE slashable stakes for both the treasury and technical deployer roles, creating direct HYPE-denominated alignment in addition to reserve-yield sharing."
+  },
+  "leadership_and_wallet_quality": {
+    "rating": "MEDIUM / UNCHANGED",
+    "finding": "The September 12 starter already incorporated repeat-wallet accumulation, a separate treasury accumulator, and fee-funded Assistance Fund buying. No fresh independently funded, historically selective HYPE accumulator cohort was verified in this run, so those earlier wallets are not recycled as new confirmation.",
+    "leadership": "HYPE remains the cleanest liquid token with direct economic exposure to Hyperliquid's trading and stablecoin-capital flywheel. The new evidence strengthens the economic-quality thesis without proving a new wallet-led rotation today."
+  },
+  "liquidity_and_executability": {
+    "result": "PASS",
+    "finding": "HYPE has broad CEX/DEX liquidity and more than $1B of reported 24h token turnover on current market aggregators; a normal paper-sized add would be trivially executable under Tier A assumptions."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_MAJOR_CAVEATS",
+    "caveats": [
+      "HYPE has a low circulating-market-cap to FDV relationship and substantial future contributor/emission supply.",
+      "A 9.92M HYPE core-contributor unlock is scheduled for 2026-10-06, roughly 3.9%-4.5% of current circulating supply under contemporary estimates.",
+      "AQAv2 has not yet produced a settled payment to the Assistance Fund; the first scheduled payment is 2026-10-03.",
+      "Hyperliquid's USDC stock is down roughly 2.4% over seven days despite remaining up about 12% over one month, so the new rank milestone is not clean evidence of current net inflow.",
+      "No new independent selective-wallet cohort was verified in this run."
+    ]
+  },
+  "paper_portfolio": {
+    "action": "HOLD_NO_ADD",
+    "reason": "The AQAv2 discovery is a meaningful direct-value-capture upgrade, but confirmation discipline rejects treating a large existing USDC stock as fresh migration while seven-day supply is falling. The earlier Payward scale triggers are also still unmet. A cleaner add trigger is either the first verifiable AQAv2 payment on or after October 3, renewed positive stablecoin net inflow accompanied by persistent non-incentivized trading/fee growth, Payward/Bitnomial regulatory approval plus live HIP-3 utilization, or a genuinely new independent selective-wallet cohort.",
+    "hype_quantity": 3.114315146532163,
+    "hype_average_cost_usd": 79.469025,
+    "hype_mark_usd": 83.0,
+    "hype_position_value_usd": 258.4881571621695,
+    "hype_weight_pct": 2.558111359564603,
+    "current_cash_usd": 2330.7108492970233,
+    "cash_weight_pct": 23.065729451220545,
+    "trade_count": 7,
+    "portfolio_nav_usd": 10104.648345182473,
+    "passive_benchmark_nav_usd": 9847.600012497765,
+    "alpha_usd": 257.04833268470793,
+    "alpha_bps": 261.02637430285887,
+    "mark_set": {
+      "BTC": 76839.92,
+      "ETH": 2473.68,
+      "SOL": 101.83,
+      "SUI": 0.7339,
+      "BNB": 729.47,
+      "UNI": 7.66,
+      "HYPE": 83.0,
+      "AERO": 0.5901,
+      "ZEC": 1472.98
+    },
+    "mark_note": "HYPE uses contemporaneous CoinMarketCap spot because CoinGecko's fetched page was internally stale/inconsistent; other marks are the current market marks gathered in this run."
+  },
+  "other_position_checks": {
+    "UNI": "Strong price acceleration continues, but no new clean independent wallet/capital-flow confirmation justifies chasing after the large daily move; HOLD/NO ADD.",
+    "AERO": "The earlier regulatory and protocol-activity confirmation remains valid, but stock-pair-specific U.S. flow attribution and incentive adjustment remain unresolved; HOLD/NO ADD.",
+    "ZEC": "Position has appreciated above the default 7.5% non-core sizing target, but no structural failure, thesis invalidation, persistent leadership loss or liquidity deterioration triggers a mechanical trim; HOLD/NO ADD."
+  },
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://defillama.com/stablecoins/hyperliquid-l1",
+    "https://defillama.com/chain/hyperliquid-l1?dexs=false&perps=true&tvl=false",
+    "https://hl.eco/reserve-yield",
+    "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees",
+    "https://www.falconx.io/newsroom/the-drivers-behind-hyperliquids-next-phase-hype-etfs-hip-4-outcome-markets-priority-fees-and-its-usdc-agreement",
+    "https://www.gate.com/en-us/news/detail/hyperliquids-usdc-supply-hits-673b-surpasses-solana-on-sept-17-17873914",
+    "https://coinmarketcap.com/currencies/hyperliquid/"
+  ]
+}
