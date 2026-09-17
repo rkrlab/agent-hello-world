@@ -1,0 +1,87 @@
+{
+  "timestamp_utc": "2026-09-17T22:49:42Z",
+  "classification": "ZEC_DERIVATIVES_CROWDING_SHORT_SQUEEZE_RISK_TRIM_TO_CAP",
+  "ecosystem": "Zcash",
+  "asset": "ZEC",
+  "contract_address": null,
+  "signal_type": "EXISTING_POSITION_RISK_CHANGE_AND_PAPER_TRIM",
+  "summary": "The original spot-accumulation/privacy/NU7 thesis remains intact, but the marginal price move has become materially more derivatives-driven and crowded. ZEC has appreciated above the portfolio's 7.5% default non-core cap. This is not a thesis exit; it is a risk-quality trim back to the cap after an observable crowding trigger rather than a mechanical rebalance.",
+  "market_mark": {
+    "price_usd": 1485.64,
+    "source": "CoinGecko live global volume-weighted spot across 49 exchanges / 83 markets",
+    "coin_gecko_24h_volume_usd": 3243000000,
+    "coin_gecko_24h_range_usd": [1235.16, 1497.25]
+  },
+  "derivatives_evidence": {
+    "short_liquidations_24h_usd": 56350000,
+    "reported_aggregate_open_interest_usd": 2960000000,
+    "reported_open_interest_3d_change_usd": 849160000,
+    "reported_open_interest_3d_change_pct": 40.22,
+    "reported_funding_per_4h_pct": -0.027,
+    "reported_binance_accounts_short_pct": 71.4,
+    "hyperliquid_open_interest_usd": 860000000,
+    "cross_exchange_8h_funding_pct": -0.0331,
+    "hyperliquid_long_liquidation_exposure_usd": 430600000,
+    "hyperliquid_short_liquidation_exposure_usd": 428300000,
+    "largest_visible_hyperliquid_short": {
+      "notional_usd_approx": 53000000,
+      "unrealized_loss_usd_approx": 28000000,
+      "reported_average_entry_usd": 665.85,
+      "reported_liquidation_price_usd": 2631,
+      "recent_add_zec": 5000,
+      "recent_add_price_usd": 1252.5
+    }
+  },
+  "wallet_quality": {
+    "rating": "MEDIUM_HIGH_EXISTING_SPOT_EVIDENCE_UNCHANGED",
+    "fresh_confirmation_this_run": false,
+    "note": "The three previously observed transparent exchange-withdrawal paths remain supportive, but no fourth independent historically selective spot accumulator was verified in this run. Beneficial-owner independence of the prior paths remains unproven. Derivatives whales are not counted as selective spot-wallet confirmation."
+  },
+  "incentive_and_attribution": {
+    "airdrop_or_points_explanation": false,
+    "marginal_move_quality": "MIXED_SPOT_THESIS_PLUS_MATERIAL_SHORT_SQUEEZE",
+    "note": "The rally is not classified as incentive farming, but current marginal price discovery is increasingly amplified by negative funding, rising open interest, short liquidations and a highly visible underwater whale short. Social/influencer attention is treated as additional crowding risk rather than confirmation."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "note": "ZEC remains a native PoW asset; honeypot/token-contract mint/freeze/LP-control gates do not apply in the ordinary token sense. Privacy-listing/regulatory risk, ongoing issuance, opaque shielded beneficial ownership and now derivatives crowding remain the principal risks. No structural failure requiring a full exit was found."
+  },
+  "paper_action": {
+    "action": "TRIM",
+    "reason": "Crowding/derivatives quality deterioration made the appreciated position's forward asymmetry less attractive while it sat above the 7.5% default non-core cap. Trim only the excess back to 7.5%; preserve the core ZEC thesis exposure.",
+    "quantity_zec": 0.05806462111387402,
+    "mark_price_usd": 1485.64,
+    "gross_sale_usd": 86.2631237116158,
+    "transaction_cost_rate": 0.0015,
+    "transaction_cost_usd": 0.1293946855674237,
+    "position_quantity_after": 0.5081623037366105,
+    "position_mark_value_after_usd": 754.9462449232582,
+    "cash_after_usd": 2416.8445783230713,
+    "portfolio_nav_after_usd": 10065.949932310108,
+    "passive_benchmark_nav_usd": 9805.748322253858,
+    "alpha_vs_benchmark_usd": 260.2016100562505,
+    "alpha_vs_benchmark_bps": 265.3561987367457,
+    "realized_pnl_on_trim_net_usd": 16.29679051734897
+  },
+  "other_scan_notes": [
+    "No new ecosystem/candidate cleared the full regime-plus-wallet-plus-structural threshold strongly enough to justify a new starter this run.",
+    "BNB Chain received new tokenized Treasury/high-yield bond product availability, but current evidence is issuance/product availability rather than measured secondary trading or collateral utilization, so it is not promoted to a new paper trade.",
+    "NEAR's current acceleration is materially contaminated by an explicit milestone/reward campaign and is rejected as a clean discretionary-speculation signal.",
+    "UNI, HYPE and AERO remain HOLD/NO ADD; their previously identified catalysts have not yet supplied the missing fresh independent-wallet or clean capital-flow confirmation."
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://www.coingecko.com/en/coins/zcash",
+    "https://www.cryptopolitan.com/zec-pumps-1400-after-short-squeeze/",
+    "https://coinstats.app/ai/a/latest-news-for-zcash",
+    "https://liqflow.app/coin/ZEC",
+    "https://bingx.com/ur/flash-news/post/zec-breaks-as-largest-hyperliquid-short-shows-m-unrealized-loss"
+  ],
+  "mode": "PAPER_ONLY_NO_REAL_TRADE"
+}
