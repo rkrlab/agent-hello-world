@@ -1,0 +1,55 @@
+{
+  "observation": "observations/2026-09-17T0300Z-derive-v3-drv-rotation-structural-block.json",
+  "observation_timestamp_utc": "2026-09-17T03:00:41Z",
+  "outcome_window": "+1h",
+  "measured_timestamp_utc": "2026-09-17T04:00:46Z",
+  "candidate": {
+    "name": "Derive",
+    "symbol": "DRV",
+    "canonical_ethereum_contract": "0xb1d1eae60eea9525032a6dcb4c1ce336a1de71be"
+  },
+  "market_checkpoint": {
+    "price_usd": 0.2471,
+    "price_change_1h_pct": 7.7,
+    "price_change_24h_pct": 74.7,
+    "price_change_7d_pct": 55.7,
+    "price_change_30d_pct": 148.0,
+    "range_24h_usd": [0.1470, 0.2877],
+    "all_time_high_usd": 0.2877,
+    "drawdown_from_ath_pct_approx": -14.3,
+    "market_cap_usd": 246790000,
+    "fully_diluted_value_usd": 370294000,
+    "volume_24h_usd": 112442006,
+    "volume_change_vs_prior_day_pct": 2211.7,
+    "tvl_usd": 159747000,
+    "circulating_supply_drv": 999703437,
+    "max_supply_drv": 1500000000
+  },
+  "venue_quality": {
+    "upbit_volume_share_pct": 46.44,
+    "upbit_24h_volume_usd_approx": 52308517,
+    "coinbase_24h_volume_usd_approx": 9591163,
+    "coinbase_plus_2pct_depth_usd_approx": 53499,
+    "coinbase_minus_2pct_depth_usd_approx": 59174,
+    "hyperliquid_24h_volume_usd_approx": 8020220,
+    "hyperliquid_plus_2pct_depth_usd_approx": 23126,
+    "hyperliquid_minus_2pct_depth_usd_approx": 4564,
+    "interpretation": "Headline turnover strengthened materially, but nearly half of tracked spot volume remains concentrated on Upbit and executable +/-2% depth on individual venues is small relative to total rolling turnover. This supports persistence of the speculative rotation, not broad independent-wallet confirmation."
+  },
+  "framework_outcome": {
+    "price_volume_persistence": "CONFIRMED",
+    "wallet_quality": "UNVERIFIED_NO_NEW_SELECTIVE_COHORT",
+    "structural_gate": "NOT_CLEARED_UNCHANGED",
+    "paper_action": "NO_TRADE",
+    "reason": "The first-hour forward checkpoint strengthens the abnormal price/volume persistence leg, but it does not resolve the pre-existing governance/Foundation supply-admin gate or establish independent selective-wallet convergence. The opportunity score therefore cannot override the hard structural block."
+  },
+  "paper_portfolio": {
+    "trade_count": 7,
+    "cash_usd": 2330.7108492970233,
+    "state_mutated": false
+  },
+  "sources": [
+    "https://www.coingecko.com/en/coins/derive",
+    "https://github.com/rkrlab/agent-hello-world/blob/main/observations/2026-09-17T0300Z-derive-v3-drv-rotation-structural-block.json"
+  ]
+}
