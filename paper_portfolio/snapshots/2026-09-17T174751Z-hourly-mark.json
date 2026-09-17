@@ -1,0 +1,44 @@
+{
+  "timestamp_utc": "2026-09-17T17:47:51Z",
+  "type": "hourly_mark_no_trade",
+  "cash_usd": 2330.7108492970233,
+  "trade_count": 7,
+  "last_trade_id": "ADD-ZEC-20260916-232654Z",
+  "marks_usd": {
+    "BTC": 76839.92,
+    "ETH": 2473.68,
+    "SOL": 101.83,
+    "SUI": 0.7339,
+    "BNB": 729.47,
+    "UNI": 7.66,
+    "HYPE": 83.0,
+    "AERO": 0.5901,
+    "ZEC": 1472.98
+  },
+  "position_values_usd": {
+    "BTC": 1943.871536339938,
+    "ETH": 1975.893220867719,
+    "SOL": 985.0067711356539,
+    "SUI": 452.131591917201,
+    "BNB": 490.696892237253,
+    "UNI": 574.5292684368003,
+    "HYPE": 258.4881571621695,
+    "AERO": 259.2791220224493,
+    "ZEC": 834.0409357662667
+  },
+  "portfolio_nav_usd": 10104.648345182473,
+  "passive_benchmark_nav_usd": 9847.600012497765,
+  "alpha_vs_benchmark_usd": 257.04833268470793,
+  "alpha_vs_benchmark_bps": 261.02637430285887,
+  "cash_weight_pct": 23.065729451220545,
+  "mark_sources": {
+    "HYPE": "CoinMarketCap HYPE/USD contemporaneous spot; substituted because CoinGecko fetched page was internally stale/inconsistent during this run",
+    "others": "Current market marks gathered during the run from CoinGecko/global spot sources"
+  },
+  "notes": [
+    "No paper trade executed at this checkpoint.",
+    "HYPE gained a meaningful economic-quality upgrade from the scale of Hyperliquid USDC capital stock and the AQAv2 reserve-yield value-capture mechanism, but the latest USDC series is down over seven days and no AQAv2 payment has settled yet, so the signal is not treated as fresh capital migration or a scale trigger.",
+    "UNI remains HOLD/NO ADD after a large daily move without fresh independent wallet confirmation; AERO remains HOLD/NO ADD pending cleaner stock-pair flow attribution; ZEC remains HOLD/NO ADD despite appreciation above the default 7.5% sizing target because no sell-discipline trigger fired.",
+    "No real trade executed."
+  ]
+}
