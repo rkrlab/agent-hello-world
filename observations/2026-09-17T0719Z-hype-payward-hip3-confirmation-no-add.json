@@ -1,0 +1,87 @@
+{
+  "timestamp_utc": "2026-09-17T07:19:40Z",
+  "classification": "HYPE_PAYWARD_HIP3_REGULATED_US_DISTRIBUTION_CONFIRMATION_NO_ADD_PENDING_APPROVAL",
+  "ecosystem": "Hyperliquid",
+  "asset": "HYPE",
+  "contract_address": null,
+  "alert_threshold": "Material thesis improvement crossed; paper add threshold did not cross because the product remains subject to regulatory approval and has no live volume yet.",
+  "market_mark": {
+    "price_usd": 79.28,
+    "price_change_24h_pct": 3.3,
+    "token_volume_24h_usd": 935824617.83,
+    "market_cap_usd": 17639471703,
+    "source": "CoinGecko HYPE/USD global volume-weighted spot"
+  },
+  "ecosystem_regime_evidence": {
+    "payward_distribution": "Payward, parent of Kraken, announced on 2026-09-16 that it intends to deploy onchain perpetual futures for US clients starting with Hyperliquid HIP-3 markets. Bitnomial would be the HIP-3 deployer and NinjaTrader Clearing would carry client accounts. Payward reported 6.6 million funded accounts as of 2026-06-30. The product is explicitly subject to regulatory approval.",
+    "existing_secondary_activity": "CoinGecko currently reports approximately $9.72B of 24h Hyperliquid futures trading volume and approximately $14.54B of open interest. This is actual derivatives secondary trading, not RWA issuance/AUM.",
+    "rwa_classification": "The Payward catalyst is regulated derivatives distribution, not tokenized-RWA issuance or measured RWA collateral utilization, so it is not scored as an RWA usage signal."
+  },
+  "direct_hype_value_capture": {
+    "hip3_stake_requirement": "Current Hyperliquid HIP-3 documentation requires a mainnet deployer to maintain 500,000 staked HYPE. Because Payward says Bitnomial would be the HIP-3 deployer, a launch under the current specification would imply a 500,000-HYPE deployer bond. At the current $79.28 mark this is about $39.64M of HYPE notional. This is a conditional inference, not an explicit Payward purchase commitment, and the documentation says the staking requirement may decline over time.",
+    "fee_capture": "Hyperliquid documentation says HIP-3 trades preserve protocol fee collection while deployers receive a fee share; the Assistance Fund automatically converts protocol trading fees to HYPE and the documentation treats the HYPE in the Assistance Fund as permanently burned. This creates a direct token-demand/value-capture path if Payward markets actually launch and trade.",
+    "growth_mode_caveat": "HIP-3 growth mode can reduce protocol fees and related volume contributions by 90%, and Payward has not disclosed whether its proposed markets would use growth mode."
+  },
+  "wallet_quality": {
+    "rating": "MEDIUM / UNCHANGED",
+    "finding": "No fresh independently funded, historically selective HYPE accumulator cohort was verified in this run. The original September 12 repeat-wallet and treasury-accumulator evidence remains supportive but is not counted as new confirmation."
+  },
+  "incentive_discount": {
+    "finding": "Current HYPE ecosystem reward campaigns, including a seven-day Hypercall trading-rewards pilot surfaced today, are explicitly discounted and are not used as evidence for this thesis upgrade. The Payward announcement and existing venue scale are independent of those retail reward campaigns."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_MAJOR_CAVEATS",
+    "caveats": [
+      "Low circulating-float to FDV relationship and future contributor/unlock dilution remain material.",
+      "The Payward deployment is an intention subject to regulatory approval, with no launch date or realized volume yet.",
+      "The current 500,000-HYPE HIP-3 staking requirement may change before deployment.",
+      "No fresh independent selective-wallet cohort was verified this run."
+    ]
+  },
+  "paper_portfolio": {
+    "action": "HOLD_NO_ADD",
+    "reason": "The catalyst is independent and economically aligned, but confirmation discipline requires regulatory approval, a concrete launch timetable, an observable 500,000-HYPE deployment bond under then-current rules, or live non-incentivized HIP-3 volume before scaling the existing starter.",
+    "hype_quantity": 3.114315146532163,
+    "hype_average_cost_usd": 79.469025,
+    "current_cash_usd": 2330.7108492970233,
+    "trade_count": 7,
+    "approx_portfolio_nav_usd": 9881.459635282516,
+    "approx_passive_benchmark_nav_usd": 9781.581426177523,
+    "approx_alpha_usd": 99.8782091049925,
+    "approx_alpha_bps": 102.10844724729107,
+    "mark_set": {
+      "BTC": 76489.05,
+      "ETH": 2439.40,
+      "SOL": 99.73,
+      "SUI": 0.7229,
+      "BNB": 725.50,
+      "UNI": 6.74,
+      "HYPE": 79.28,
+      "AERO": 0.5534,
+      "ZEC": 1366.21
+    }
+  },
+  "other_leadership_checks": {
+    "DRV": "Price/volume persistence strengthened further, but supply/governance clearance and selective-wallet confirmation remain insufficient after the earlier alert; no paper trade.",
+    "RAY": "Raydium remains a strong Solana application-layer leader and continues to outperform, but no new independently verified selective-wallet cohort crossed the entry threshold; no paper trade.",
+    "BR": "Bedrock BR is a new extreme price/volume leader, but it is rejected for entry: a 40.63M BR unlock is scheduled for September 20, with a large portion directed to founding-team/seed allocations, BR is explicitly an incentive/governance token, and existing concentration reporting remains concerning. The +180% move is not allowed to override those structural/dilution risks."
+  },
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://www.payward.com/press-release/payward-hyperliquid-onchain-perpetual-futures",
+    "https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips/hip-3-builder-deployed-perpetuals",
+    "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees",
+    "https://www.coingecko.com/en/coins/hyperliquid",
+    "https://www.coingecko.com/en/exchanges/hyperliquid",
+    "https://www.coingecko.com/en/coins/derive",
+    "https://www.coingecko.com/en/coins/raydium",
+    "https://www.coingecko.com/en/coins/bedrock",
+    "https://www.binance.com/de/square/post/09-14-2026-layerzero-connex-and-bedrock-face-746-5-million-token-unlocks-in-september-2026-366470081436386"
+  ]
+}
