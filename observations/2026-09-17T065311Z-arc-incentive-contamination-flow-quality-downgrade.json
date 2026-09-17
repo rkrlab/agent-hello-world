@@ -1,0 +1,86 @@
+{
+  "timestamp_utc": "2026-09-17T06:53:11Z",
+  "type": "MATERIAL_REGIME_QUALITY_UPDATE_NO_PAPER_TRADE",
+  "execution_trigger": false,
+  "ecosystem": "Circle Arc mainnet / USDC-native L1",
+  "regime_status": "ARC_SPECULATIVE_ACTIVITY_CONFIRMED_BUT_INCENTIVE_CONTAMINATION_MATERIALLY_HIGHER_THAN_INITIAL_CLASSIFICATION",
+  "why_this_crossed_alert_threshold": "The prior Arc observation classified launch activity as an emerging discretionary-speculation regime while explicitly flagging unknown bot/wash quality. Fresh evidence now confirms a live Arc-specific trading-reward program that directly pays for cumulative volume and leaderboard rank and removes gas costs. That does not invalidate Arc's launch regime, but it materially lowers the evidentiary weight of raw volume, transaction and address acceleration and requires a prospective correction rather than silently retaining the original attribution.",
+  "fresh_regime_evidence": {
+    "mainnet_launch": "Circle launched Arc public mainnet on 2026-09-16 with more than 100 applications and more than 100 institutional/ecosystem builders. USDC is the native gas asset.",
+    "reported_day_one_activity": {
+      "transactions": 7760000,
+      "fees_usd_approx": 280000,
+      "uniswap_arc_daily_volume_usd_gt": 410000000,
+      "usdc_transfer_volume_usd_approx": 1000000000,
+      "onchain_usdc_stock_usd_approx": 650000000,
+      "new_addresses_gt": 700000,
+      "total_addresses_gt": 840000,
+      "source_quality": "Dune-derived figures reported by multiple current news aggregators; treated as launch-day monitoring rather than audited canonical totals."
+    }
+  },
+  "incentive_contamination": {
+    "confirmed_program": "Gate Trenches Arc Chain First Launch campaign",
+    "period_utc": "2026-09-16T09:30:00Z through 2026-09-27T08:00:00Z",
+    "reward_pool_usdt_up_to": 60000,
+    "mechanics": [
+      "zero-gas trading for Arc assets through Gate Trenches",
+      "daily check-in rewards",
+      "cumulative trading-volume milestones",
+      "top-30 trading-volume leaderboard",
+      "new-user trading-fee rebate vouchers"
+    ],
+    "framework_interpretation": "This program directly rewards the exact metrics the regime framework is measuring. Therefore raw Arc trade count, address growth and secondary volume cannot be scored as purely discretionary. The reward pool is tiny relative to the reported >$410M Uniswap Arc volume, so Gate incentives alone are not economically sufficient to explain the entire regime; the correct classification is material contamination/discount, not rejection of all Arc activity as farming."
+  },
+  "rwa_classification": {
+    "availability": "Circle states USYC, BUIDL, private-credit funds and other productive assets are present for trading, lending and collateral on Arc, with Aave and Morpho anchoring credit markets.",
+    "actual_secondary_or_collateral_usage": "NOT_YET_SEPARATELY_VERIFIED at meaningful scale. Product availability, token balances and USDC settlement activity are not counted as proof of RWA secondary turnover, borrow demand or collateral utilization.",
+    "score_effect": "No RWA-usage upgrade is granted in this run."
+  },
+  "leadership_and_candidates": {
+    "arc_native_tokens": "NO_ENTRY. ARGUS and TOLLY remain structurally rejected under the previously recorded contract/liquidity/concentration findings. No newly observed Arc-native leader passed sellability, permissions, LP-control, holder-independence and executable-liquidity gates.",
+    "UNI": "HOLD_NO_ADD. Arc is a real distribution/volume catalyst for Uniswap, but incentive contamination reduces the weight of Arc launch volume as an incremental UNI thesis leg. UNI's broader thesis remains intact because it also rests on StablePair usage, cross-chain activity and protocol value capture. Current Uniswap 24h fees remain about $3.40M and project revenue about $352K, both higher day/day in the current CoinGecko protocol snapshot.",
+    "DRV": "WATCH_NO_TRADE. The previously recorded V3-driven abnormal price/volume rotation has shown forward persistence, but no new independent selective-wallet cohort or structural-governance clearance was verified; no chase.",
+    "RAY": "WATCH_NO_TRADE. Solana tokenized-equity secondary usage remains substantive and Raydium has direct buyback linkage, but fresh selective-wallet convergence remains absent.",
+    "ZEC": "HOLD_AT_CAP. Price remains strong after the scale add, while 7d net shielded inflow has slowed materially; no trim signal and no add beyond the 7.5% non-core ceiling.",
+    "HYPE": "HOLD_NO_ADD. A $1.669M Sep-16 ETF net inflow partially repairs the prior institutional-distribution conflict but is not large enough to erase it; no fresh scale trigger."
+  },
+  "structural_gate": {
+    "arc_ecosystem": "NOT_APPLICABLE_TO_CHAIN_LEVEL_REGIME",
+    "candidate_result": "NO_NEW_TOKEN_PASSES_FULL_GATE",
+    "paper_trade_permitted": false
+  },
+  "paper_portfolio": {
+    "source_of_truth_read_before_decision": [
+      "paper_portfolio/state.json",
+      "paper_portfolio/trades.jsonl"
+    ],
+    "trade_count_before_and_after": 7,
+    "cash_usd": 2330.7108492970233,
+    "action": "NO_PAPER_TRADE",
+    "reason": "The new information is a regime-quality correction, not a new clean token-entry signal. It lowers confidence in Arc headline activity as discretionary flow and does not invalidate any existing paper holding enough to justify a trim or exit."
+  },
+  "major_uncertainties": [
+    "Reported launch-day Arc activity is Dune-derived through secondary reports and should be reconciled with canonical chain analytics as the network stabilizes.",
+    "The proportion of Uniswap Arc volume routed by reward-seeking participants versus independent discretionary users is not yet quantified.",
+    "The $60K Gate reward pool cannot plausibly pay for all reported Arc turnover by itself, but volume-ranked rewards can induce recycling/wash behavior disproportionate to their nominal budget when gas is subsidized.",
+    "No clean decomposition of unique economically independent users, bot clusters, wash loops or funding relationships is available yet.",
+    "Arc RWA product availability has not yet been converted into separately verified secondary-volume or collateral-utilization metrics."
+  ],
+  "why_signal_matters_now": "The framework explicitly rejects activity primarily explained by points, rebates, quests or trading rewards. A newly verified launch-day campaign pays for cumulative volume and rank while removing gas costs, so continuing to treat Arc's raw launch metrics as clean discretionary capital migration would overstate signal quality. Arc remains worth tracking, but confirmation should now emphasize persistence after reward programs expire, fee-bearing independent activity, unique funded-wallet retention and RWA collateral/secondary usage rather than launch-day gross counts.",
+  "sources": [
+    "https://www.circle.com/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
+    "https://www.gate.com/id/help/annlist/others/101778/trenches-first-launch-on-arc-chain-trade-with-0-gas-fees-share-a-60-000-usdt-airdrop",
+    "https://www.gate.com/id/news/detail/gate-launches-arc-integration-with-zero-gas-trading-campaign-24320018",
+    "https://www.aicoin.com/en/news-flash/3085309",
+    "https://www.kucoin.com/news/flash/arc-mainnet-records-7-76m-transactions-and-100m-usdc-transfers-on-launch-day",
+    "https://www.coingecko.com/no/coins/uniswap",
+    "https://www.insigtx.com/en/news/us-hype-spot-etf-sees-1-669-million-net-inflow-in-single-day-546817/"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  }
+}
