@@ -1,0 +1,67 @@
+{
+  "timestamp_utc": "2026-09-17T09:49:33Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 2330.7108492970233,
+  "marks_usd": {
+    "BTC": 76269.20,
+    "ETH": 2431.25,
+    "SOL": 99.76,
+    "SUI": 0.7214,
+    "BNB": 724.97,
+    "UNI": 6.75,
+    "HYPE": 79.92,
+    "AERO": 0.5532,
+    "ZEC": 1354.55
+  },
+  "mark_sources": {
+    "BTC": "CoinMarketCap BTC/USD live conversion observed during the run",
+    "ETH": "CoinMarketCap ETH/USD live conversion observed during the run",
+    "SOL": "CoinMarketCap SOL/USD live conversion observed during the run",
+    "SUI": "CoinMarketCap SUI/USD live conversion observed during the run",
+    "BNB": "CoinMarketCap BNB/USD live conversion observed during the run",
+    "UNI": "CoinMarketCap UNI/USD live conversion observed during the run",
+    "HYPE": "CoinMarketCap HYPE/USD live conversion observed during the run",
+    "AERO": "CoinMarketCap AERO/USD live conversion observed during the run",
+    "ZEC": "CoinMarketCap ZEC/USD live conversion observed during the run"
+  },
+  "position_values_usd": {
+    "BTC": 1929.4336456807607,
+    "ETH": 1942.0015496081312,
+    "SOL": 964.9835558135406,
+    "SUI": 444.43075406604277,
+    "BNB": 487.6698506658825,
+    "UNI": 506.27579137707596,
+    "HYPE": 248.89606651085046,
+    "AERO": 243.06593848977968,
+    "ZEC": 766.9826810562238
+  },
+  "portfolio_nav_usd": 9864.450682565312,
+  "passive_benchmark_nav_usd": 9768.519355834358,
+  "alpha_vs_benchmark_usd": 95.93132673095351,
+  "alpha_vs_benchmark_bps": 98.20457250121274,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD_RWA_UTILIZATION_REAL_BUT_NO_FRESH_SOL_SPECIFIC_SELECTIVE_WALLET_CONFIRMATION",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_GROWTH_NOT_CONFIRMED_BY_DEX_OR_PERP_ACCELERATION",
+    "BNB": "HOLD_NO_ADD_TOKENIZED_STOCK_ACTIVITY_REMAINS_PARTLY_INCENTIVE_CONTAMINATED",
+    "UNI": "HOLD_NO_ADD_PROTOCOL_ACTIVITY_CONSTRUCTIVE_BUT_NO_NEW_INDEPENDENT_CONFIRMATION_SINCE_PRIOR_RUN",
+    "HYPE": "HOLD_NO_ADD_PAYWARD_HIP3_CATALYST_REMAINS_PRE_LAUNCH_AND_NO_NEW_SELECTIVE_WALLET_COHORT",
+    "AERO": "HOLD_NO_ADD_BASE_ACTIVITY_CONSTRUCTIVE_BUT_REWARD_CONTAMINATION_AND_NO_FRESH_WALLET_CONFIRMATION",
+    "ZEC": "HOLD_NO_ADD_AT_7_5_PERCENT_CAP_NO_NEW_INDEPENDENT_ACCUMULATOR_OR_THESIS_BREAK"
+  },
+  "regime_notes": [
+    "No new ecosystem crossed the framework threshold since the 08:26 UTC tokenized-equity utilization alert. Broad DEX activity is not showing a clean new cross-chain migration burst, and current chain-specific gains are mixed rather than synchronized.",
+    "Lighter/LIT was investigated as a fresh momentum candidate after a roughly mid-teens 24h price gain and an Arc integration catalyst. The signal is rejected for now: the reported three accumulation wallets are described as moving in sync rather than independently; rising price alongside declining open interest is consistent with short covering; and the live Robinhood-Lighter campaign awards points/LIT based on trading volume, with fee-free trading and wallet multipliers, materially contaminating volume/user-growth evidence.",
+    "LIT protocol economics are not dismissed: Lighter has substantial perp volume and reported protocol revenue/buyback activity, and the Ethereum token contract appears verified with standard ERC20/ERC2612 surface. However, only about 25% of supply is circulating and large team/investor/ecosystem allocations remain locked, so dilution plus incentive contamination prevent a paper entry without independent selective-wallet and post-incentive persistence confirmation.",
+    "RAY remains the strongest Solana application-layer watch for tokenized-equity utilization, but no fresh independently funded selective-wallet cohort was verified this run. DRV remains a high-momentum options-market candidate, but its prior supply/governance and wallet-quality caveats remain unresolved. Neither qualifies for a prospective paper buy at current momentum levels.",
+    "Robinhood Chain continues to show strong DEX/perp activity and tokenized-equity composability, but the current Lighter reward campaign means a material part of observed incremental perps/user activity cannot be classified as clean discretionary speculation. Arc remains a real speculative launch regime but its launchpad/reward contamination and structurally rejected token leaders remain unchanged.",
+    "ZEC remains above the blended paper basis and near the position cap, but no fourth independently verified selective accumulator surfaced in this scan. HYPE's Payward/HIP-3 distribution catalyst remains meaningful but still awaits regulatory approval/live volume. UNI and AERO did not develop a material thesis or structural change.",
+    "Marked paper NAV is approximately $9,864.45 versus $9,768.52 for the frozen passive benchmark, ahead by $95.93 or about 98.2 bp. No current holding triggered a hard structural failure, thesis invalidation, trim or exit condition."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "alert_type": null,
+  "observation_record": null,
+  "notes": "Prospective hourly mark. Source-of-truth state and immutable trade ledger were read before decisions. No meaningful new threshold was crossed and no paper trade was justified; state.json and trades.jsonl are unchanged."
+}
