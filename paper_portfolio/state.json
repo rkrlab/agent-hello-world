@@ -3,8 +3,8 @@
   "initialized_at_utc": "2026-09-09T15:14:00Z",
   "base_currency": "USD",
   "starting_nav_usd": 10000.0,
-  "current_cash_usd": 2330.7108492970233,
-  "realized_pnl_usd": 0.0,
+  "current_cash_usd": 2416.8445783230713,
+  "realized_pnl_usd": 16.29679051734897,
   "positions": {
     "BTC": {
       "quantity": 0.025297677774,
@@ -71,7 +71,7 @@
       "price_source": "CoinGecko AERO/USD volume-weighted spot across 55 exchanges / 123 markets"
     },
     "ZEC": {
-      "quantity": 0.5662269248504845,
+      "quantity": 0.5081623037366105,
       "average_cost_usd": 1202.7450996664215,
       "framework_entry_at_utc": "2026-09-15T08:07:21Z",
       "gross_entry_value_usd": 245.0578997631369,
@@ -79,13 +79,18 @@
       "latest_add_at_utc": "2026-09-16T23:26:54Z",
       "latest_add_mark_price_usd": 1286.84,
       "latest_add_quantity": 0.1501701233753564,
+      "latest_trim_at_utc": "2026-09-17T22:49:42Z",
+      "latest_trim_mark_price_usd": 1485.64,
+      "latest_trim_quantity": 0.05806462111387402,
       "cumulative_gross_buys_usd": 680.0066491893234,
-      "cumulative_transaction_cost_usd": 1.0200099737839852,
-      "price_source": "CoinGecko ZEC/USD live global volume-weighted spot across 49 exchanges / 83 markets; latest add marked at $1,286.84"
+      "cumulative_gross_sales_usd": 86.2631237116158,
+      "cumulative_transaction_cost_usd": 1.1494046593514088,
+      "realized_pnl_usd": 16.29679051734897,
+      "price_source": "CoinGecko ZEC/USD live global volume-weighted spot across 49 exchanges / 83 markets; latest trim marked at $1,485.64"
     }
   },
-  "last_trade_id": "ADD-ZEC-20260916-232654Z",
-  "trade_count": 7,
+  "last_trade_id": "TRIM-ZEC-20260917-224942Z",
+  "trade_count": 8,
   "benchmark": {
     "type": "passive_hold_opening_allocation",
     "starting_nav_usd": 10000.0,
@@ -108,6 +113,7 @@
     "ZEC starter bought prospectively on 2026-09-15 after the earlier post-liquidation privacy-regime repair gained a second distinct large exchange-withdrawal accumulator while shielded-pool balances and 7d net shielded inflow remained elevated. Wallet beneficial-owner independence and historical selectivity are unproven; current token volume has cooled day/day, so sizing remains a 2.5% starter. 0.15% Tier A simulated execution cost applied.",
     "UNI confirmation add executed prospectively on 2026-09-15 after Uniswap StablePair's USDC/USDT pool became Ethereum's highest-volume pool within five days of launch, while UNI turnover, Uniswap fees and project revenue reaccelerated. No fresh independent selective-wallet cohort was verified, and StablePair LP fees are not assumed to equal direct UNI burn, so the position was increased only to ~5.1% of marked NAV rather than the 7.5% non-core cap. 0.15% Tier A simulated execution cost applied.",
     "ZEC confirmation add executed prospectively on 2026-09-16 after the NU7 coinholder vote supplied an independent product/governance confirmation and ZEC recovered from its initial post-vote rejection to near its 24h high with 24h turnover up ~39% day/day. Shielded balances remain substantial at ~28.9% of issued supply. No fresh selective-wallet cohort was verified and NU7 is not yet implemented, so the position was increased only to ~5.2% of marked NAV rather than the 7.5% cap. 0.15% Tier A simulated execution cost applied.",
-    "ZEC scale add executed prospectively on 2026-09-16 after a third distinct transparent exchange-withdrawal address accumulated and withdrew 15.3K ZEC (~$17.92M) from Binance, OKX and Kraken, while ZEC sustained a second-leg price/volume breakout. The three observed accumulator paths total about 64.53K ZEC, roughly 35.9 days of estimated 1,800 ZEC/day issuance. Public direct linkage among the addresses was not found in this scan, but beneficial-owner independence and historical selectivity remain unproven. Position was increased only to the 7.5% non-core cap at the current mark; 0.15% Tier A simulated execution cost applied."
+    "ZEC scale add executed prospectively on 2026-09-16 after a third distinct transparent exchange-withdrawal address accumulated and withdrew 15.3K ZEC (~$17.92M) from Binance, OKX and Kraken, while ZEC sustained a second-leg price/volume breakout. The three observed accumulator paths total about 64.53K ZEC, roughly 35.9 days of estimated 1,800 ZEC/day issuance. Public direct linkage among the addresses was not found in this scan, but beneficial-owner independence and historical selectivity remain unproven. Position was increased only to the 7.5% non-core cap at the current mark; 0.15% Tier A simulated execution cost applied.",
+    "ZEC trim executed prospectively on 2026-09-17 after appreciation pushed the position to ~8.36% of marked NAV while the marginal move became materially more derivatives-driven and crowded: short liquidations accelerated, aggregate open interest expanded sharply, funding remained negative and a highly visible large Hyperliquid short created additional forced-covering/volatility risk. The underlying spot-accumulation/privacy/NU7 thesis remains intact and structural gate still passes, so only the excess above the 7.5% default non-core cap was trimmed. 0.15% Tier A simulated execution cost applied."
   ]
 }
