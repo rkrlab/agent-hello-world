@@ -1,0 +1,67 @@
+{
+  "timestamp_utc": "2026-09-17T01:17:18Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 2330.7108492970233,
+  "marks_usd": {
+    "BTC": 76346.46,
+    "ETH": 2420.62,
+    "SOL": 98.94,
+    "SUI": 0.71,
+    "BNB": 721.45,
+    "UNI": 6.67,
+    "HYPE": 78.25,
+    "AERO": 0.5510,
+    "ZEC": 1341.14
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko BTC/USD volume-weighted spot observed during the run",
+    "ETH": "CoinGecko ETH/USD volume-weighted spot observed during the run",
+    "SOL": "DefiLlama/CoinGecko-linked SOL/USD spot observed during the run",
+    "SUI": "DefiLlama/CoinGecko-linked SUI/USD spot observed during the run",
+    "BNB": "DefiLlama/CoinGecko-linked BNB/USD spot observed during the run",
+    "UNI": "CoinGecko UNI/USD volume-weighted spot observed during the run",
+    "HYPE": "DefiLlama/CoinGecko-linked HYPE/USD spot observed during the run",
+    "AERO": "CoinGecko AERO/USD volume-weighted spot observed during the run",
+    "ZEC": "CoinGecko ZEC/USD volume-weighted spot observed during the run"
+  },
+  "position_values_usd": {
+    "BTC": 1931.3881442655802,
+    "ETH": 1933.5106595423895,
+    "SOL": 957.0516540917372,
+    "SUI": 437.4075899457864,
+    "BNB": 485.30203148116607,
+    "UNI": 500.27548570149577,
+    "HYPE": 243.69516021614174,
+    "AERO": 242.09929882116523,
+    "ZEC": 759.3895779939788
+  },
+  "portfolio_nav_usd": 9820.830451356464,
+  "passive_benchmark_nav_usd": 9744.660079326659,
+  "alpha_vs_benchmark_usd": 76.17037202980464,
+  "alpha_vs_benchmark_bps": 78.16626892034995,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD_STRONG_STRUCTURAL_USAGE_BUT_CURRENT_STABLECOIN_AND_WEEKLY_DEX_FLOW_DO_NOT_CONFIRM_NEW_MARGINAL_MIGRATION",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_GROWTH_NOT_CONFIRMED_BY_SPOT_DEX_ACTIVITY",
+    "BNB": "HOLD_NO_ADD_POSITIVE_INFLOWS_NOT_CONFIRMED_BY_DEX_OR_PERPS_ACCELERATION",
+    "UNI": "HOLD_NO_ADD_PRICE_AND_PROTOCOL_ACTIVITY_CONSTRUCTIVE_BUT_NO_FRESH_INDEPENDENT_SELECTIVE_WALLET_OR_INCREMENTAL_VALUE_CAPTURE_CONFIRMATION",
+    "HYPE": "HOLD_NO_ADD_PERPS_ECONOMICS_STRONG_BUT_NO_NEW_ACCELERATION_AND_INSTITUTIONAL_DISTRIBUTION_CONFLICT_UNRESOLVED",
+    "AERO": "HOLD_NO_ADD_BASE_ACTIVITY_CONSTRUCTIVE_BUT_TOKENIZED_STOCK_SIGNAL_REMAINS_INCENTIVE_CONTAMINATED",
+    "ZEC": "HOLD_AT_7_5_PERCENT_CAP_NO_ADD_PRICE_VOLUME_PERSISTENCE_CONTINUES_BUT_NO_FRESH_INDEPENDENT_ACCUMULATOR_OR_THESIS_CHANGE"
+  },
+  "regime_notes": [
+    "No new ecosystem or asset crossed the alert/trade threshold. ZEC continued to confirm the most recent scale-add rather than generating a new signal: the mark is about 4.2% above the $1,286.84 scale-add price, but the paper position is already at the normal 7.5% non-core ceiling and no fourth independent selective accumulator was verified.",
+    "Solana remains the largest current DEX venue in the scan, but current chain data show stablecoin market cap down about 4.1% over seven days and DEX volume down about 12.5% week over week. That weakens the case that current Raydium strength represents fresh marginal capital migration; RAY remains watch/no-entry without new selective-wallet confirmation.",
+    "Base remains comparatively constructive: roughly $1.06B of 24h DEX volume and about +11.8% weekly growth, but stablecoin stock is approximately flat/slightly down and the previously documented Kyber trader cashback plus AERO liquidity rewards remain active contamination. AERO remains hold/no-add.",
+    "Arc launch-day speculation is cooling rather than broadening. Canonical chain DEX volume is now about $55.6M over 24h versus an earlier launch-day snapshot above $82M, while ARGUS and TOLLY remain structurally rejected. ARGUS holder count increased but concentration remains extreme and Arcscan still reports a supply-accounting anomaly; TOLLY remains thin and concentrated. No paper exposure is justified.",
+    "Arbitrum, Monad and Avalanche show pockets of daily DEX acceleration, but the signal is not clean marginal migration: Arbitrum stablecoins are down about 9% over seven days with negative chain inflows, while Monad/Avalanche stablecoin retention does not provide enough independent confirmation. No ecosystem-specific token leader passed both wallet and structural gates.",
+    "Plasma stablecoin supply is expanding, but DEX velocity remains small relative to the stablecoin stock and the chain's history includes yield-distribution campaigns; this is not treated as a discretionary speculative regime. Sui similarly shows stablecoin growth while weekly DEX volume is sharply lower.",
+    "Tokenized-equity issuance/holdership continues to expand, but RWA.xyz data show transfer volume has contracted sharply versus the prior 30-day comparison. This reinforces the framework distinction between issuance/AUM and actual secondary turnover. Solana/Raydium and Base/Aerodrome remain the more relevant secondary-usage venues, subject to the incentive and wallet-quality caveats already recorded.",
+    "Hyperliquid remains economically strong but stablecoin stock is down about 2.3% over seven days and perps volume is roughly flat week over week; the prior accumulation-versus-institutional-distribution conflict remains unresolved.",
+    "Approximate paper NAV is $9,820.83 versus $9,744.66 for the frozen passive benchmark, ahead by $76.17 or about 78.2 bp. No current holding triggered a structural-gate failure, thesis break, trim, or exit condition."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "notes": "Prospective hourly mark. Source-of-truth state and immutable trade ledger were read before decisions. No qualifying new regime/candidate threshold, no material portfolio thesis change requiring action, and no paper trade; state.json and trades.jsonl are unchanged."
+}
