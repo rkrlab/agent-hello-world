@@ -1,0 +1,125 @@
+{
+  "observed_at_utc": "2026-09-17T13:27:45Z",
+  "classification": "US_TOKENIZED_STOCK_REGULATORY_GATE_REMOVED_AERO_THESIS_UPGRADE_NO_TRADE_PENDING_ACTUAL_CAPITAL_MIGRATION",
+  "ecosystem": "U.S. tokenized equities / Base / Aerodrome",
+  "candidate": {
+    "asset": "AERO",
+    "network": "Base",
+    "contract_address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+    "paper_position_quantity": 439.381667552024,
+    "paper_average_cost_usd": 0.5615586,
+    "observable_mark_usd_approx": 0.5523,
+    "mark_source": "CoinMarketCap AERO/USD live converter observed during this run"
+  },
+  "threshold_reason": [
+    "On 2026-09-17 the SEC announced a five-year exemption allowing platforms to facilitate trading in qualifying tokenized U.S. stocks with relief from key exchange-definition requirements, while liquidity providers receive parallel dealer-registration relief.",
+    "The exemption is a direct regulatory unlock for the AMM/liquidity-provider model that underpins the existing Base tokenized-equity thesis; it is not an airdrop, points, quest, trading rebate, LP reward, or other crypto-native demand subsidy.",
+    "The relief excludes synthetic stock-linked derivatives and requires issuer notification/consent, making real-share-backed products structurally better aligned than synthetic wrappers.",
+    "Coinbase already has real-share-backed tokenized stocks live as B20 tokens on Base, with 1:1 underlying-share backing, self-custody and DeFi composability; the current product is still offered under Regulation S and excludes U.S. persons.",
+    "Before today's policy change, Base tokenized-stock secondary volume had already reached a $100M daily record and $730.9M over 30 days, with Aerodrome handling about $557.1M / 76% of the measured flow. The regulatory catalyst therefore lands on top of a functioning secondary market rather than a pre-product narrative."
+  ],
+  "rwa_context": {
+    "issuance_aum": "Not used as the trigger. Current Base RWA Active AUM is roughly $194M in DefiLlama chain data, but asset stock is kept separate from turnover/utilization.",
+    "secondary_trading": "Previously confirmed: Base tokenized-stock DEX trading reached roughly $100M/day and $730.9M/30d, with Aerodrome at roughly 76% of measured volume.",
+    "collateral_utilization": "The immediately preceding research checkpoint separately confirmed that tokenized-equity DeFi use now includes material LP and lending/borrowing activity across chains; no new Base-specific collateral-utilization jump is claimed from today's SEC action.",
+    "classification": "REGULATORY_ADDRESSABLE_MARKET_UPGRADE_ON_TOP_OF_EXISTING_SECONDARY_USAGE; NO NEW_US_ONCHAIN_VOLUME_YET"
+  },
+  "why_flows_appear_financially_substantive": {
+    "classification": "EXISTING_SECONDARY_MARKET_USAGE_REAL_BUT_PARTLY_INCENTIVE_CONTAMINATED; NEW_REGULATORY_CATALYST_CLEAN",
+    "evidence": [
+      "The original Base regime is based on completed secondary swaps, not token issuance/AUM alone.",
+      "Aerodrome routes real exchange revenue to veAERO voters, giving AERO a direct lock-based value-capture path from venue activity.",
+      "Today's SEC exemption expands the potentially addressable U.S. participant base without paying users to trade.",
+      "The new policy specifically grants liquidity-provider relief, which is economically relevant to AMM-based execution rather than merely to centralized brokerage distribution."
+    ],
+    "caveat": "The Sep. 16 correction remains in force: some existing Base tokenized-stock liquidity/trading is materially influenced by AERO LP rewards and Coinbase/Kyber/Merkl cashback campaigns. Today's policy catalyst does not retroactively make those flows organic."
+  },
+  "leadership_rotation": {
+    "classification": "AERO_REGAINS_MARGINAL_PRIORITY_OVER_RAY_FOR_THIS_SPECIFIC_US_TOKENIZATION_CATALYST_BUT_NO_NEW_TRADE",
+    "evidence": [
+      "Aerodrome already leads measured Base tokenized-stock DEX execution at roughly 76% of the recent 30-day total.",
+      "Coinbase's current tokenized-stock stack is explicitly built on Base and designed for trading/lending/borrowing across the Base DeFi ecosystem.",
+      "RAY remains a strong Solana tokenized-equity venue but has already repriced dramatically; AERO is still near its original paper-entry mark, reducing momentum-chase risk.",
+      "UNI remains broadly exposed across chains, but Aerodrome has the cleaner direct venue-leadership mapping to Coinbase's Base-native product."
+    ]
+  },
+  "wallet_quality": {
+    "score": "MEDIUM_UNCHANGED",
+    "evidence": "No fresh independently funded, historically selective AERO accumulator cohort was verified in this run.",
+    "prior_signal": "The Sep. 13 starter incorporated Nansen-attributed reporting that smart-money AERO balances rose about 74% over 30 days; this is not recycled as a fresh confirmation.",
+    "independence_check": "Address-level funding lineage for that prior cohort remains unresolved."
+  },
+  "narrative_news": {
+    "quality": "VERY_HIGH_INDEPENDENT_REGULATORY_CATALYST",
+    "evidence": [
+      "Reuters reported the SEC's five-year tokenized-stock trading exemption on Sep. 17 at 13:02 UTC.",
+      "The exemption applies immediately according to contemporaneous reporting and is designed to permit tokenized securities trading while preserving issuer objection rights and excluding synthetic equity derivatives.",
+      "Coinbase's official tokenization materials already document a real-share-backed Base product with full-share economics and DeFi composability, making Base an existing implementation candidate rather than a hypothetical future chain."
+    ],
+    "promotion_filter": "No influencer/social promotion is used as confirmation."
+  },
+  "liquidity_executability": {
+    "result": "PASS_TIER_B",
+    "evidence": "AERO remains broadly tradable and the existing ~$250 paper position is trivial relative to market liquidity. The observed mark during this run was about $0.5523.",
+    "simulated_one_way_cost_rate_if_traded": 0.0035
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_MAJOR_CAVEATS",
+    "hard_gate_failure": false,
+    "sellability_honeypot": "No new sellability, honeypot, blacklist, pause, transfer-tax, creator-LP-removal or suspicious-transfer hard failure surfaced.",
+    "mint_emissions": "CAUTION: AERO continues scheduled weekly emissions; official Aerodrome documentation describes the current annualized emissions rate near 10.9%.",
+    "governance_privileges": "CAUTION: protocol governance/minter and multisig powers remain material structural risks.",
+    "incentive_contamination": "CAUTION: tokenized-stock pools have recently carried substantial AERO reward APY and stock-purchase cashback campaigns remain active through Sep. 21, so existing flow quality is not treated as wholly discretionary."
+  },
+  "major_uncertainties": [
+    "No U.S. onchain capital migration has yet been measured after the SEC exemption. A legal/regulatory gate opening is not itself transaction volume.",
+    "Coinbase's currently documented B20 tokenized stocks remain unavailable to U.S. persons under Regulation S; a U.S. rollout or product adaptation has not yet been announced in the sources used here.",
+    "Issuers must be notified and can object to tokenized listings, so the exemption does not guarantee broad stock coverage.",
+    "The SEC relief applies to qualifying real-share tokenization rather than synthetic stock-linked derivatives; existing products must satisfy the conditions in practice.",
+    "AERO's current tokenized-stock liquidity still contains material LP-reward contamination, and no new selective-wallet cohort is verified."
+  ],
+  "why_signal_matters_now": "This is the strongest exogenous confirmation yet for the Base tokenized-equity thesis because it attacks the regulatory bottleneck that previously kept the Coinbase Base product offshore/non-U.S. It materially increases the addressable market for the exact real-share-backed, AMM-composable architecture already operating on Base. However, the framework requires capital migration and persistence rather than buying a headline. The correct prospective test is whether Coinbase or another qualifying platform actually opens U.S. access and whether Base/Aerodrome then shows incentive-adjusted volume, liquidity, fee and wallet growth.",
+  "paper_action": {
+    "decision": "HOLD_AERO_NO_ADD",
+    "trade_executed": false,
+    "reason": "Material thesis upgrade, but no paper add yet because the new event is a regulatory permission change rather than observed discretionary U.S. capital migration. The Sep. 16 incentive-contamination downgrade also remains unresolved. Scale only after a concrete U.S. platform rollout and/or measurable post-exemption Base/Aerodrome volume/fee/wallet acceleration that survives incentive adjustment.",
+    "paper_position_weight_comment": "Existing AERO starter remains roughly 2.5% of marked NAV, leaving room to scale if the new regulatory pathway converts into actual utilization."
+  },
+  "portfolio_mark_context": {
+    "paper_nav_usd_approx": 9868.83,
+    "passive_benchmark_nav_usd_approx": 9773.06,
+    "alpha_vs_benchmark_usd_approx": 95.77,
+    "alpha_vs_benchmark_bps_approx": 97.99,
+    "cash_usd": 2330.7108492970233,
+    "trade_count": 7,
+    "mark_note": "Approximate run-time marks used for portfolio context: BTC 76523.95, ETH 2439.85, SOL 98.88, SUI 0.7197, BNB 726.14, UNI 6.84, HYPE 79.33, AERO 0.5523, ZEC 1346.29. No portfolio decision depends on sub-percent mark precision because no trade was executed."
+  },
+  "existing_positions_action": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD",
+    "SUI": "HOLD_NO_ADD",
+    "BNB": "HOLD_NO_ADD",
+    "UNI": "HOLD_NO_ADD; tokenization backdrop improves but no new UNI-specific wallet/value-capture confirmation justifies moving above the existing ~5% position.",
+    "HYPE": "HOLD_NO_ADD; Payward/HIP-3 distribution thesis remains promising but still awaits regulatory approval/live utilization.",
+    "AERO": "HOLD_NO_ADD; material regulatory thesis upgrade, but wait for actual U.S. rollout and incentive-adjusted flow confirmation.",
+    "ZEC": "HOLD_NO_ADD; already at the normal 7.5% non-core cap and no hard-gate failure or exit trigger is confirmed."
+  },
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://www.reuters.com/world/us-securities-regulator-rolls-out-five-year-exemption-tokenized-stock-trading-2026-09-17/",
+    "https://www.axios.com/2026/09/17/sec-tokenization-crypto-stocks",
+    "https://www.coinbase.com/tokenize",
+    "https://www.coinbase.com/blog/coinbase-establishes-its-tokenization-hub-in-abu-dhabi",
+    "https://defillama.com/chain/base",
+    "https://aerodrome.finance/docs",
+    "https://www.btcc.com/en-US/news/deep-article/11993"
+  ],
+  "real_trade_executed": false
+}
