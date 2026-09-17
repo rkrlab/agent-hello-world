@@ -1,0 +1,40 @@
+{
+  "timestamp_utc": "2026-09-17T15:52:36Z",
+  "type": "hourly_mark_no_trade",
+  "cash_usd": 2330.7108492970233,
+  "trade_count": 7,
+  "last_trade_id": "ADD-ZEC-20260916-232654Z",
+  "marks_usd": {
+    "BTC": 76608.33,
+    "ETH": 2451.08,
+    "SOL": 100.57,
+    "SUI": 0.732,
+    "BNB": 724.64,
+    "UNI": 7.16,
+    "HYPE": 81.70,
+    "AERO": 0.5941,
+    "ZEC": 1447.49
+  },
+  "position_values_usd": {
+    "BTC": 1938.0128471442574,
+    "ETH": 1957.8410933525956,
+    "SOL": 972.8187270265414,
+    "SUI": 450.9610645638249,
+    "BNB": 487.44786761731535,
+    "UNI": 537.0273579644243,
+    "HYPE": 254.4395474716777,
+    "AERO": 261.0366486926574,
+    "ZEC": 819.6078114518278
+  },
+  "portfolio_nav_usd": 10009.903814582145,
+  "passive_benchmark_nav_usd": 9807.081599704534,
+  "alpha_vs_benchmark_usd": 202.82221487761126,
+  "alpha_vs_benchmark_bps": 206.81199887612016,
+  "cash_weight_pct": 23.284048403159574,
+  "notes": [
+    "No paper trade executed at this checkpoint.",
+    "AERO gained simultaneous price, token-volume, DEX-volume, fee and revenue confirmation, but no add was made because incremental activity cannot yet be cleanly separated from Aerodrome emissions/incentives or attributed to new U.S. tokenized-stock capital.",
+    "ZEC marks above 7.5% of NAV because appreciation lifted the existing position after the prior scale add; no mechanical trim was applied absent thesis invalidation, structural failure, persistent leadership loss or crowding/liquidity deterioration sufficient to trigger the sell discipline.",
+    "No real trade executed."
+  ]
+}
