@@ -1,0 +1,47 @@
+{
+  "timestamp_utc": "2026-09-17T19:22:20Z",
+  "type": "hourly_mark_no_trade",
+  "cash_usd": 2330.7108492970233,
+  "trade_count": 7,
+  "last_trade_id": "ADD-ZEC-20260916-232654Z",
+  "marks_usd": {
+    "BTC": 76627.01,
+    "ETH": 2439.85,
+    "SOL": 100.91,
+    "SUI": 0.732806,
+    "BNB": 723.55,
+    "UNI": 7.34,
+    "HYPE": 81.62,
+    "AERO": 0.580018,
+    "ZEC": 1423.43
+  },
+  "position_values_usd": {
+    "BTC": 1938.4854077650757,
+    "ETH": 1948.8709432643286,
+    "SOL": 976.1075643258257,
+    "SUI": 451.45761458846755,
+    "BNB": 486.7146508811389,
+    "UNI": 550.5280457344796,
+    "HYPE": 254.19040225995514,
+    "AERO": 254.84927605018987,
+    "ZEC": 805.9843916399252
+  },
+  "portfolio_nav_usd": 9997.89914580641,
+  "passive_benchmark_nav_usd": 9801.636180824837,
+  "alpha_vs_benchmark_usd": 196.26296498157353,
+  "alpha_vs_benchmark_bps": 200.23490095003447,
+  "cash_weight_pct": 23.312006005528,
+  "mark_sources": {
+    "BTC_ETH_HYPE_UNI": "Contemporaneous CoinMarketCap/global spot quotes gathered during the run; UNI web quotes showed some venue/cache dispersion, so the conservative contemporaneous CMC mark was used and the decision does not depend on the exact quote.",
+    "SOL_SUI_BNB_AERO_ZEC": "Contemporaneous CoinGecko-derived/global spot quotes gathered during the run; ZEC source timestamp metadata was imperfect, so the mark is used only for portfolio marking and not as a standalone signal."
+  },
+  "notes": [
+    "No paper trade executed at this checkpoint.",
+    "Fresh perp-volume accelerations outside the existing watchlist were predominantly tagged as Farming or Rewards (including tradeXYZ, Variational, GMTrade and Aster), so they were discounted as incentive-driven rather than accepted as clean discretionary capital migration.",
+    "Lighter remains a watch candidate but its 24h perp volume was approximately flat/down versus the prior scan and its previously identified rewards, holder-concentration and float-overhang gates remain unresolved; no entry.",
+    "Hyperliquid 24h perp volume was materially lower while the previously identified AQAv2 payment remains unsettled; HYPE remains HOLD/NO ADD.",
+    "OpenEden expanded TBILL/HYBOND availability to BNB Chain, but this is issuance/product availability rather than verified secondary turnover, collateral utilization or BNB-specific value capture; no action.",
+    "UNI remains HOLD/NO ADD despite continued price strength because no fresh independent selective-wallet cohort or proportionate protocol-economic acceleration was verified. AERO remains HOLD/NO ADD pending cleaner U.S. tokenized-stock flow attribution. ZEC remains HOLD/NO ADD at/above the normal non-core sizing ceiling; social attention is increasingly crowded, but no hard-gate or sell-discipline trigger fired.",
+    "No real trade executed."
+  ]
+}
