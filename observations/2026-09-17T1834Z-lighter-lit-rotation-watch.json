@@ -1,0 +1,89 @@
+{
+  "observation_id": "2026-09-17T1834Z-lighter-lit-rotation-watch",
+  "timestamp_utc": "2026-09-17T18:34:31Z",
+  "classification": "LIT_PERP_RWA_ROTATION_CONFIRMED_VALUE_CAPTURE_STRONG_WALLET_INDEPENDENCE_AND_FLOAT_OVERHANG_BLOCK_ENTRY",
+  "ecosystem": "Lighter / Robinhood Chain / Arc distribution",
+  "candidate": {
+    "asset": "LIT",
+    "contract_address": "0x232ce3bd40fcd6f80f3d55a522d03f25df784ee2",
+    "decision": "WATCH_NO_TRADE",
+    "mark_usd_approx": 4.77,
+    "mark_source": "DefiLlama Lighter unlock/protocol snapshots around the observation timestamp"
+  },
+  "regime_evidence": {
+    "lighter_perp_volume_24h_usd": 1730000000,
+    "lighter_perp_volume_7d_usd": 10319000000,
+    "lighter_open_interest_usd": 564980000,
+    "lighter_active_addresses_24h": 16233,
+    "lighter_new_addresses_24h": 686,
+    "lighter_transactions_24h": 1810000,
+    "lighter_fees_24h_usd": 137830,
+    "lighter_revenue_24h_usd": 111826,
+    "lighter_holder_revenue_buybacks_24h_usd": 92742,
+    "lighter_tvl_usd": 703230000,
+    "lighter_tvl_change_30d_pct": 32.4,
+    "lighter_rwa_perp_volume_24h_usd": 257780000,
+    "lighter_rwa_perp_volume_change_24h_pct": 24.37,
+    "lighter_rwa_perp_open_interest_usd": 105850000,
+    "lighter_rwa_perp_market_count": 76,
+    "robinhood_chain_dex_volume_24h_usd": 1561000000,
+    "robinhood_chain_dex_volume_change_7d_pct": 9.26,
+    "robinhood_chain_perp_volume_24h_usd": 522980000,
+    "robinhood_chain_perp_volume_change_7d_pct": 23.38,
+    "robinhood_chain_net_inflows_24h_usd": 34570000,
+    "robinhood_chain_stablecoin_mcap_usd": 1002000000,
+    "robinhood_chain_stablecoin_change_7d_pct": -0.99,
+    "robinhood_chain_rwa_active_aum_usd": 288350000
+  },
+  "why_capital_appears_to_be_arriving": [
+    "Lighter already has material Robinhood-distributed order flow and now has an Arc integration/direct-deposit route, widening distribution.",
+    "Perpetual and RWA-perpetual utilization is large enough to represent actual secondary trading rather than an issuance-only narrative.",
+    "Protocol revenue has a direct LIT value-capture path through treasury buybacks."
+  ],
+  "incentive_discount": [
+    "Robinhood Chain transactions remain contaminated by a 90-day gas-rebate program scheduled to end on 2026-09-29, so chain-level user/transaction growth is not treated as fully discretionary.",
+    "LIT ecosystem reserves include a Robinhood community allocation and future growth/points capacity, so holder growth and staking are not treated as clean organic-demand evidence.",
+    "Current LIT price strength occurred while Binance LIT perpetual open interest declined, indicating that some of the move is short covering rather than fresh long capital."
+  ],
+  "rwa_distinction": "Lighter's approximately $257.8M of 24-hour RWA-perpetual volume is genuine derivative secondary trading and usage, but it is synthetic/perpetual notional. It is not tokenized-equity issuance/AUM, direct stock ownership, or measured collateral utilization.",
+  "leadership_and_wallet_quality": {
+    "token_price_change_24h_approx_pct": 14.6,
+    "token_turnover_24h_usd_approx": 99500000,
+    "wallet_quality": "LOW_TO_MEDIUM",
+    "wallet_evidence": "A reported accumulator withdrew roughly 208.6K additional LIT after earlier withdrawals, bringing its observed accumulation near 979K LIT; however, the reporting explicitly described multiple wallets as moving in sync. Funding/beneficial-owner independence and historical selective profitability were not established, so this does not satisfy the selective-wallet convergence requirement."
+  },
+  "structural_gate": {
+    "result": "TOKEN_CONTRACT_CHECKS_PASS_WITH_MAJOR_SUPPLY_AND_ATTRIBUTION_CAVEATS__NO_ENTRY",
+    "contract_checks": "Automated contract screening reports verified/open source, non-mintable, non-pausable, no blacklist and no honeypot flag.",
+    "top_10_holder_share_pct_approx": 65.2,
+    "holder_attribution": "Incomplete; major addresses may include protocol/staking/locked allocations but this run did not independently attribute enough of the top-holder set to clear concentration risk for a new entry.",
+    "circulating_supply_share_approx_pct": 25.0,
+    "unlock_risk": "Insider vesting begins around 2026-12-29 at roughly 3.19M LIT per week under the current schedule, a material future dilution overhang.",
+    "ecosystem_reserve_risk": "Reserve allocation can fund future growth initiatives/points/partnerships, creating ongoing incentive-contamination risk."
+  },
+  "paper_portfolio": {
+    "action": "NONE",
+    "cash_usd": 2330.7108492970233,
+    "estimated_nav_usd": 9924.59,
+    "estimated_passive_benchmark_nav_usd": 9798.19,
+    "estimated_alpha_usd": 126.40,
+    "estimated_alpha_bps": 129.0,
+    "existing_positions_decision": "HOLD existing positions; no add/trim/sell signal crossed the framework threshold in this run. ZEC remains above the original 7.5% sizing target because of appreciation, not a new purchase, and no thesis/structural exit trigger fired."
+  },
+  "entry_confirmation_required": "A new independently funded, historically selective wallet cohort; or measurable Arc-sourced deposits/stablecoin/volume plus persistence after Robinhood's gas rebate expires, while Lighter usage/revenue-funded buybacks remain elevated. A consolidation/retest would be preferable to chasing the current short-covering-assisted token move.",
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "sources": [
+    "https://defillama.com/protocol/lighter-perps",
+    "https://defillama.com/rwa/perps/venue/lighter",
+    "https://defillama.com/chain/robinhood-chain",
+    "https://defillama.com/unlocks/lighter",
+    "https://tokenomist.ai/research/lighter-lit-tokenomics-robinhood-hype-a-real-burn-and-the-december-2026-cliff-2",
+    "https://etherscan.io/token/0x232ce3bd40fcd6f80f3d55a522d03f25df784ee2"
+  ]
+}
