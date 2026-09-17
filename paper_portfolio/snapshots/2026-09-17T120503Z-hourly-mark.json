@@ -1,0 +1,67 @@
+{
+  "timestamp_utc": "2026-09-17T12:05:03Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 2330.7108492970233,
+  "marks_usd": {
+    "BTC": 76523.95,
+    "ETH": 2434.04,
+    "SOL": 100.60,
+    "SUI": 0.7197,
+    "BNB": 724.39,
+    "UNI": 6.75,
+    "HYPE": 80.29,
+    "AERO": 0.5489,
+    "ZEC": 1360.10
+  },
+  "mark_sources": {
+    "BTC": "CoinMarketCap BTC/USD live conversion observed during the run",
+    "ETH": "CoinMarketCap ETH/USD live conversion observed during the run",
+    "SOL": "CoinMarketCap SOL/USD live conversion observed during the run",
+    "SUI": "CoinMarketCap SUI/USD live conversion observed during the run",
+    "BNB": "CoinMarketCap BNB/USD live conversion observed during the run",
+    "UNI": "CoinMarketCap UNI/USD live conversion observed during the run",
+    "HYPE": "Current Hyperliquid/market spot observed during the run",
+    "AERO": "CoinMarketCap AERO/USD live conversion observed during the run",
+    "ZEC": "CoinMarketCap ZEC/USD live conversion observed during the run"
+  },
+  "position_values_usd": {
+    "BTC": 1935.8782290936872,
+    "ETH": 1944.2301087128742,
+    "SOL": 973.1089185529488,
+    "SUI": 443.38344011828525,
+    "BNB": 487.27969864112805,
+    "UNI": 506.27579137707596,
+    "HYPE": 250.04836311506736,
+    "AERO": 241.17659731930598,
+    "ZEC": 770.125240489144
+  },
+  "portfolio_nav_usd": 9882.21723671654,
+  "passive_benchmark_nav_usd": 9783.880395118924,
+  "alpha_vs_benchmark_usd": 98.33684159761651,
+  "alpha_vs_benchmark_bps": 100.50903897667718,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD_TOKENIZED_EQUITY_UTILIZATION_REMAINS_REAL_BUT_SOLANA_DEX_VOLUME_NOT_FRESHLY_ACCELERATING",
+    "SUI": "HOLD_NO_ADD_NO_NEW_CLEAN_DEX_OR_PERP_ACCELERATION",
+    "BNB": "HOLD_NO_ADD_TOKENIZED_STOCK_ACTIVITY_REMAINS_PARTLY_INCENTIVE_CONTAMINATED",
+    "UNI": "HOLD_NO_ADD_CROSS_CHAIN_ACTIVITY_CONSTRUCTIVE_BUT_NO_NEW_CLEAN_THRESHOLD_OR_SELECTIVE_WALLET_CONFIRMATION",
+    "HYPE": "HOLD_NO_ADD_PAYWARD_BITNOMIAL_REMAINS_PRE_APPROVAL_AND_CURRENT_PERP_ACTIVITY_HAS_NOT_FRESHLY_ACCELERATED",
+    "AERO": "HOLD_NO_ADD_BASE_ACTIVITY_CONSTRUCTIVE_BUT_REWARD_CONTAMINATION_AND_NO_FRESH_WALLET_CONFIRMATION",
+    "ZEC": "HOLD_NO_ADD_AT_7_5_PERCENT_CAP_PRICE_VOLUME_PERSISTENCE_REMAINS_STRONG_BUT_SHIELDED_FLOW_AND_TRANSACTION_SHARE_HAVE_COOLED"
+  },
+  "regime_notes": [
+    "No new ecosystem or asset crossed the framework threshold since the 11:50 UTC mark. The run occurred only shortly after the prior mark, and no verified capital-migration, wallet-quality, structural-gate or value-capture change justified a paper action.",
+    "ZEC remains above the latest paper add and retains strong price/volume persistence, but the newest network dashboard shows roughly +6.8K ZEC net shielded over the week and a lower shielded-transaction share versus prior checkpoints. This is a usage divergence to watch, not yet a sell/trim trigger because price/liquidity remain strong and no hard structural gate failed.",
+    "RAY remains the cleaner Solana application-layer watch candidate, but no new independently funded selective-wallet cohort was verified and Solana/Raydium activity does not show a fresh day-over-day acceleration sufficient to chase the existing rally.",
+    "DRV remains a high-volume V3 catalyst candidate, but wallet-quality and governance/supply caveats remain unresolved; no paper entry.",
+    "Arc remains a genuine launch/speculation regime but is still heavily launchpad/memecoin-driven and incentive-contaminated, and no Arc-native leader cleared structural gates.",
+    "A headline Polygon/Uniswap DEX-volume spike was rejected as a regime signal because cross-source checks did not corroborate it: DefiLlama combined-chain output showed roughly $800M+ Polygon Uniswap volume while protocol-version and independent DEX sources were only in the tens of millions. The discrepancy is treated as a data/adaptor anomaly rather than discretionary-capital migration.",
+    "Marked paper NAV is approximately $9,882.22 versus $9,783.88 for the frozen passive benchmark, ahead by $98.34 or about 100.5 bp. No current holding triggered a hard structural failure, thesis invalidation, trim or exit condition."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "alert_type": null,
+  "observation_record": null,
+  "notes": "Prospective hourly mark. Source-of-truth state and immutable trade ledger were read before decisions. No meaningful new threshold was crossed and no paper trade was justified; state.json and trades.jsonl are unchanged."
+}
