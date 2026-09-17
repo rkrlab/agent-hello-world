@@ -1,0 +1,67 @@
+{
+  "timestamp_utc": "2026-09-17T08:26:22Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 2330.7108492970233,
+  "marks_usd": {
+    "BTC": 76443.09,
+    "ETH": 2441.64,
+    "SOL": 99.94,
+    "SUI": 0.7217,
+    "BNB": 724.18,
+    "UNI": 6.84,
+    "HYPE": 79.76,
+    "AERO": 0.5526,
+    "ZEC": 1365.26
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko BTC/USD global volume-weighted spot observed during the run",
+    "ETH": "CoinGecko ETH/USD global volume-weighted spot observed during the run",
+    "SOL": "CoinGecko SOL/USD global volume-weighted spot observed during the run",
+    "SUI": "CoinGecko SUI/USD global volume-weighted spot observed during the run",
+    "BNB": "CoinGecko BNB/USD global volume-weighted spot observed during the run",
+    "UNI": "CoinGecko UNI/USD global volume-weighted spot observed during the run",
+    "HYPE": "CoinGecko HYPE/USD global volume-weighted spot observed during the run",
+    "AERO": "CoinGecko AERO/USD global volume-weighted spot observed during the run",
+    "ZEC": "CoinGecko ZEC/USD global volume-weighted spot observed during the run"
+  },
+  "position_values_usd": {
+    "BTC": 1933.8326588688817,
+    "ETH": 1950.3007356648627,
+    "SOL": 966.7247049719851,
+    "SUI": 444.61557417447057,
+    "BNB": 487.1384367011308,
+    "UNI": 513.0261352621036,
+    "HYPE": 248.39777608740533,
+    "AERO": 242.80230948924844,
+    "ZEC": 773.0469714213725
+  },
+  "portfolio_nav_usd": 9890.596151938484,
+  "passive_benchmark_nav_usd": 9782.612110381331,
+  "alpha_vs_benchmark_usd": 107.98404155715252,
+  "alpha_vs_benchmark_bps": 110.38364839444019,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD_TOKENIZED_EQUITY_UTILIZATION_REAL_BUT_NO_NEW_SOL_SPECIFIC_WALLET_FLOW_TRIGGER",
+    "SUI": "HOLD_NO_ADD_NO_CHAIN_WIDE_REGIME_CONFIRMATION",
+    "BNB": "HOLD_NO_ADD_BSTOCKS_ACTIVITY_INCENTIVE_CONTAMINATED",
+    "UNI": "HOLD_NO_ADD_CROSS_CHAIN_RWA_UTILIZATION_CONFIRMATION_NOT_SUFFICIENTLY_UNI_SPECIFIC",
+    "HYPE": "HOLD_NO_ADD_PAYWARD_HIP3_CATALYST_STILL_PENDING_REGULATORY_APPROVAL_AND_LIVE_VOLUME",
+    "AERO": "HOLD_NO_ADD_BASE_TOKENIZED_STOCK_THESIS_REMAINS_INCENTIVE_CONTAMINATED",
+    "ZEC": "HOLD_NO_ADD_AT_7_5_PERCENT_CAP_PARADIGM_DISCLOSURE_DISCOUNTED_AS_PROMOTION_NOT_NEW_SELECTIVE_WALLET_FLOW"
+  },
+  "regime_notes": [
+    "Tokenized equities now show measurable composable utilization beyond issuance/AUM: Binance Research measured DeFi Active TVL around $289.1M as of Sep 9, with 65.4% in LPs and 28.1% in lending; bStocks borrowing utilization reached about 46.2% on Sep 10. A separate current Token Terminal-derived report cites $247.8M total DeFi TVL, so mismatched methodology/timing prevents interpreting the lower absolute total as a clean decline.",
+    "Current chain attribution in the Token Terminal-derived report is about $98.2M Robinhood Chain, $87.4M Solana and $36.3M BNB Chain, roughly 89.5% of the cited total. This strengthens the framework's RWA-utilization leg while preserving the distinction between chain asset stock and actual secondary/composable use.",
+    "Flow quality remains mixed: stock-paired meme markets generated billions of dollars across Robinhood and BNB, so a meaningful share of tokenized-equity volume is crypto-native speculative composability rather than conventional equity demand. This is still discretionary speculative capital migration, but it should not be labeled TradFi adoption.",
+    "Arc day-one volume is now better attributed: roughly 82% of $410.8M DEX volume came from launchpad/memecoin activity, with Arguspad around $202.35M and more than 86% of 97,025 minted tokens. Arc remains a real speculative regime but not evidence of institutional RWA turnover; prior Gate reward contamination also remains relevant.",
+    "RAY remains the strongest marginal application-layer watch candidate for tokenized-equity utilization: $1.48, +14.6% 24h, ~$85.76M token volume (+82.2% day/day), ~$400.16M market cap and ~$1.125B TVL. Prior structural pass and fee-funded buybacks remain intact, but no fresh independent selective-wallet cohort was verified and the token is +143% over 30 days, so no chase entry.",
+    "ZEC remains hold/no-add at the 7.5% cap. A public Paradigm ownership disclosure is treated as promotion/institutional endorsement rather than a fresh transparent selective-wallet flow because size, timing and transaction path are not established.",
+    "Approximate paper NAV is $9,890.60 versus $9,782.61 for the frozen passive benchmark, ahead by $107.98 or about 110.4 bp. No current holding triggered a hard structural failure, thesis invalidation, trim or exit condition."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": true,
+  "alert_type": "TOKENIZED_EQUITY_UTILIZATION_CONFIRMED_ARC_LAUNCHPAD_ATTRIBUTION_NO_TRADE",
+  "observation_record": "observations/2026-09-17T0826Z-tokenized-equity-utilization-arc-attribution-no-trade.json",
+  "notes": "Prospective hourly mark. Source-of-truth state and immutable trade ledger were read before decisions. The alert records an RWA-utilization regime-quality upgrade and Arc flow attribution correction; state.json and trades.jsonl are unchanged because no paper trade was made."
+}
