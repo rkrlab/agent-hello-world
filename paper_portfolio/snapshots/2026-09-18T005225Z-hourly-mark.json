@@ -1,0 +1,51 @@
+{
+  "timestamp_utc": "2026-09-18T00:52:25Z",
+  "type": "hourly_mark_no_trade_no_alert",
+  "cash_usd": 2416.8445783230713,
+  "trade_count": 8,
+  "last_trade_id": "TRIM-ZEC-20260917-224942Z",
+  "marks_usd": {
+    "BTC": 76378.26,
+    "ETH": 2451.21,
+    "SOL": 101.8,
+    "SUI": 0.7309,
+    "BNB": 736.39,
+    "UNI": 7.67,
+    "HYPE": 83.82,
+    "AERO": 0.58,
+    "ZEC": 1466.44
+  },
+  "position_values_usd": {
+    "BTC": 1932.192610418793,
+    "ETH": 1957.9449330241428,
+    "SOL": 984.7165796092464,
+    "SUI": 450.283390832923,
+    "BNB": 495.3518094981161,
+    "UNI": 575.2793066462477,
+    "HYPE": 261.0418955823259,
+    "AERO": 254.8413671801739,
+    "ZEC": 745.1895286915152
+  },
+  "portfolio_nav_usd": 10073.685999806556,
+  "passive_benchmark_nav_usd": 9820.48932338322,
+  "alpha_vs_benchmark_usd": 253.1966764233348,
+  "alpha_vs_benchmark_bps": 257.8249088061805,
+  "cash_weight_pct": 23.991660831690425,
+  "mark_sources": {
+    "BTC_ETH_SOL_SUI_UNI_HYPE_ZEC": "Contemporaneous CoinMarketCap/CoinGecko-derived public spot quotes gathered during the run.",
+    "BNB_AERO": "Contemporaneous DefiLlama chain/protocol quote surfaces gathered during the run."
+  },
+  "notes": [
+    "No paper trade executed and no alert threshold crossed in this run.",
+    "The post-trim ZEC position marks at about 7.40% of NAV, back within the 7.5% default non-core ceiling. ZEC remains HOLD/NO ADD: price remains near the trim mark and no new independent selective spot accumulator or structural failure was verified.",
+    "UNI remains HOLD/NO ADD: price remains around the prior regulatory-thesis alert zone; no fresh U.S. tokenized-stock flow attribution or new independent selective-wallet cohort was verified.",
+    "HYPE remains HOLD/NO ADD: perp activity remains elevated and AQAv2/Payward catalysts remain constructive, but neither the first AQAv2 payment nor live regulated Payward/Bitnomial utilization has occurred.",
+    "AERO remains HOLD/NO ADD: current Aerodrome volume is not abnormal versus its seven-day daily average and existing activity remains incentive-contaminated; no measurable U.S. tokenized-stock inflow has appeared yet.",
+    "RAY remains watch/no-entry: Raydium 24h DEX volume is below its seven-day daily average and the independent selective-wallet gate remains missing.",
+    "LIT remains watch/no-entry: Lighter perp volume is modestly above its seven-day average, but previously identified holder concentration, limited float and wallet-independence gates remain unresolved.",
+    "DRV remains watch/no-entry: price/volume persistence continues after the V3 catalyst, but structural/governance supply clearance and independent selective-wallet confirmation remain missing.",
+    "Robinhood Chain RWA utilization remains financially substantive: active RWA AUM is about $289.5M and DeFi-active TVL about $191.1M, with a Maple syrupUSDG sleeve near full utilization. This is yield/credit deployment rather than discretionary speculative rotation; the associated SYRUP token does not clear the framework because its mint function remains live/uncapped and no fresh selective-wallet convergence was verified.",
+    "Across Solana, Base and BNB Chain, current DEX/stablecoin/bridge signals do not show a new clean discretionary-capital acceleration beyond already-recorded regimes; Robinhood Chain inflows remain positive but gas-subsidy contamination persists through late September.",
+    "No real trade executed."
+  ]
+}
