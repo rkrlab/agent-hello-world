@@ -1,0 +1,122 @@
+{
+  "observation_id": "HYPE_HYPERCORE_MANUAL_BORROWS_COLLATERAL_USAGE_CONFIRMATION_NO_ADD_REFLEXIVITY_ATTRIBUTION_RISK",
+  "observed_at_utc": "2026-09-18T11:57:37Z",
+  "ecosystem": "Hyperliquid",
+  "candidate": {
+    "asset": "HYPE",
+    "contract_address": null,
+    "reason_no_contract": "HYPE is the native Hyperliquid asset"
+  },
+  "alert_threshold": "crossed_material_existing_position_thesis_and_risk_change",
+  "regime_evidence": {
+    "new_product": "Manual borrows launched on HyperCore on 2026-09-18. Users can supply HYPE or BTC as collateral and borrow USDC or USDT; quote-asset borrowing pays utilization-based interest and supplied quote assets earn utilization-based interest.",
+    "reported_borrowed_assets_usd": 269000000,
+    "attribution_caveat": "Hyperliquid's announcement says portfolio margin and manual borrows use the same underlying HyperCore infrastructure, with $269M in assets borrowed today. Do not attribute the entire $269M specifically to new manual borrows without a manual-vs-portfolio-margin breakout.",
+    "hype_collateral_ltv": 0.65,
+    "btc_collateral_ltv": 0.50,
+    "hype_collateral_liquidation_threshold": 0.825,
+    "btc_collateral_liquidation_threshold": 0.75,
+    "hyperliquid_chain_tvl_usd": 1389000000,
+    "hyperliquid_chain_tvl_change_24h_pct": 7.23,
+    "stablecoin_mcap_usd": 6885000000,
+    "stablecoin_change_7d_pct": -0.99,
+    "spot_dex_volume_24h_usd": 382730000,
+    "spot_dex_volume_change_7d_pct": -4.53,
+    "perp_volume_24h_usd": 7182000000,
+    "perp_volume_change_7d_pct": 0.36,
+    "app_revenue_24h_usd": 2090000,
+    "app_fees_24h_usd": 4990000,
+    "rwa_active_aum_usd": 5870000,
+    "rwa_classification": "This signal is native crypto credit/collateral utilization, not RWA issuance, secondary RWA trading, or RWA collateral usage."
+  },
+  "flow_quality": {
+    "classification": "financially_substantive_but_not_fresh_broad_capital_inflow_confirmation",
+    "why": "Borrowing requires actual collateral and interest-bearing credit demand and is not explained by an airdrop, points campaign, quest, trading rebate, or yield-farm reward identified in this scan. However, chain stablecoin supply is down 0.99% over seven days and spot DEX volume is down 4.53% week over week, so the launch does not yet prove new external capital is migrating into Hyperliquid."
+  },
+  "token_value_capture": {
+    "utility_change": "positive",
+    "detail": "HYPE now has explicit native collateral utility for manual borrowing in addition to staking/trading roles.",
+    "direct_capture_from_borrow_interest": "not_demonstrated",
+    "detail_2": "HYPE collateral itself does not earn the borrow interest. Quote-asset suppliers earn interest. Existing HYPE value-capture mechanisms from trading fees/AQAv2 remain separate and should not be conflated with this borrow launch."
+  },
+  "wallet_quality": {
+    "rating": "MEDIUM_UNCHANGED",
+    "fresh_independent_selective_wallet_confirmation": false,
+    "note": "No new independently funded, historically selective HYPE accumulator cohort was verified in this scan. Existing visible large HYPE traders are not counted again as new confirmation."
+  },
+  "leadership_and_market": {
+    "hype_mark_usd": 87.95,
+    "hype_market_cap_usd": 19554000000,
+    "hype_fdv_usd": 83977000000,
+    "derivatives_open_interest_hyperliquid_hype_usd": 1770000000,
+    "long_liquidation_exposure_usd": 863600000,
+    "short_liquidation_exposure_usd": 909400000,
+    "short_liquidation_exposure_within_2pct_usd": 55600000,
+    "cross_exchange_funding_8h_pct": 0.0068,
+    "interpretation": "HYPE remains a leadership asset, but leverage/crowding is material. Adding HYPE as borrow collateral also creates a new reflexive path: HYPE price declines can reduce borrowing capacity and trigger liquidations, which can amplify market stress."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_MAJOR_CAVEATS",
+    "sellability_and_executable_liquidity": "pass",
+    "contract_honeypot_checks": "not_applicable_native_asset",
+    "major_caveats": [
+      "low circulating market-cap versus FDV",
+      "future token unlock/dilution risk",
+      "large derivatives open interest and two-sided liquidation exposure",
+      "new HYPE-collateral borrowing can create reflexive liquidation/circular-leverage risk",
+      "$269M launch figure is not cleanly attributable to manual borrowing alone",
+      "no fresh independent selective-wallet cohort"
+    ]
+  },
+  "paper_portfolio_decision": {
+    "action": "HOLD_NO_ADD",
+    "trade_executed": false,
+    "reason": "The launch materially improves HYPE utility and ecosystem composability, but it does not yet provide clean incremental-capital attribution or direct incremental HYPE value capture from borrow interest. At the same time HYPE is already extended with high derivatives OI, and collateralized borrowing introduces additional reflexive liquidation risk. Confirmation discipline favors waiting for clean usage composition and post-launch persistence rather than chasing the launch-day move.",
+    "paper_hype_quantity": 3.114315146532163,
+    "paper_hype_average_cost_usd": 79.469025,
+    "paper_cash_usd": 2416.8445783230713,
+    "paper_trade_count": 8,
+    "paper_nav_mark_usd": 10342.75882821189,
+    "passive_benchmark_nav_mark_usd": 9984.8518944889,
+    "alpha_usd": 357.9069337229903,
+    "alpha_bps": 358.44991743997355,
+    "hype_position_mark_value_usd": 273.90401713750373,
+    "hype_weight_pct": 2.648242385938074
+  },
+  "portfolio_marks": {
+    "BTC": 78005.42,
+    "ETH": 2505.78,
+    "SOL": 105.54,
+    "SUI": 0.7882,
+    "BNB": 748.48,
+    "UNI": 8.70,
+    "HYPE": 87.95,
+    "AERO": 0.6182,
+    "ZEC": 1462.13
+  },
+  "cross_ecosystem_context": {
+    "robinhood_chain": "Still strong: ~$1.433B 24h DEX volume, +3.96% weekly, +$10.81M 24h inflow, ~$287.54M RWA active AUM. This is continuation rather than a new clean threshold, and gas-subsidy contamination remains.",
+    "base": "Stablecoin supply +0.31% 7d but DEX volume -6.50% weekly; no cleaner AERO-specific incremental-flow confirmation.",
+    "arbitrum": "+$82.67M 24h inflows and +21.56% weekly DEX volume, but stablecoin supply is -12.27% 7d and ARB direct value capture / near-term unlock concerns remain.",
+    "bsc": "DEX volume remains +60% weekly, but stablecoins are roughly flat, 24h inflows are negative, and holder revenue is sharply lower week over week; no clean new candidate cleared the full framework.",
+    "sui": "Stablecoins are modestly positive, but spot DEX volume is ~-43% weekly; not a qualifying speculative regime shift."
+  },
+  "forward_checkpoints": {
+    "manual_vs_portfolio_margin_borrow_breakout": null,
+    "hype_collateral_share_of_manual_borrows": null,
+    "borrow_outstanding_persistence_24h_7d": null,
+    "liquidations_after_manual_borrow_launch": null,
+    "stablecoin_net_flow_reacceleration": null,
+    "spot_and_perp_fee_revenue_persistence": null,
+    "fresh_independent_selective_wallet_cohort": null,
+    "aqav2_first_realized_payment_expected_on_or_after_2026_10_03": null,
+    "payward_bitnomial_hip3_regulatory_approval_and_live_usage": null
+  },
+  "source_urls": [
+    "https://www.tradingview.com/news/coinmarketcal%3A22e400261094b%3A0-hyperliquid-manual-borrows-go-live-with-hype-and-btc-collateral-18-sep-2026/",
+    "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/portfolio-margin",
+    "https://defillama.com/chain/hyperliquid-l1?revenue=false&tvl=false&volume=true",
+    "https://liqflow.app/coin/HYPE"
+  ],
+  "real_trade_executed": false
+}
