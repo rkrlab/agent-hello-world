@@ -1,0 +1,68 @@
+{
+  "timestamp_utc": "2026-09-18T06:28:48Z",
+  "type": "hourly_mark_alert_no_trade",
+  "cash_usd": 2416.8445783230713,
+  "trade_count": 8,
+  "last_trade_id": "TRIM-ZEC-20260917-224942Z",
+  "marks_usd": {
+    "BTC": 77586.62,
+    "ETH": 2484.59,
+    "SOL": 105.68,
+    "SUI": 0.7751,
+    "BNB": 726.42,
+    "UNI": 8.48,
+    "HYPE": 87.64,
+    "AERO": 0.6227,
+    "ZEC": 1485.64
+  },
+  "position_values_usd": {
+    "BTC": 1962.7613123337837,
+    "ETH": 1984.6077656106393,
+    "SOL": 1022.2480170246088,
+    "SUI": 477.51355347461845,
+    "BNB": 488.64523072776853,
+    "UNI": 636.0324016114969,
+    "HYPE": 272.9385794420788,
+    "AERO": 273.60296438464536,
+    "ZEC": 754.9462449232582
+  },
+  "portfolio_nav_usd": 10290.14064785597,
+  "passive_benchmark_nav_usd": 9935.775879199493,
+  "alpha_vs_benchmark_usd": 354.3647686564764,
+  "alpha_vs_benchmark_bps": 356.65535632535517,
+  "cash_weight_pct": 23.486992656671216,
+  "position_weight_pct": {
+    "BTC": 19.07419324480021,
+    "ETH": 19.286497954954072,
+    "SOL": 9.934247276178894,
+    "SUI": 4.6404958864591626,
+    "BNB": 4.748673972979967,
+    "UNI": 6.180988417724097,
+    "HYPE": 2.652428074430136,
+    "AERO": 2.658884593979312,
+    "ZEC": 7.336597921822935
+  },
+  "mark_sources": {
+    "BTC": "Contemporaneous public USD market mark captured during run",
+    "ETH": "Contemporaneous public USD market mark captured during run",
+    "SOL": "Contemporaneous public USD market mark captured during run",
+    "SUI": "Contemporaneous public USD market mark captured during run",
+    "BNB": "Contemporaneous public USD market mark captured during run",
+    "UNI": "CoinMarketCap/current public market data during run",
+    "HYPE": "CoinGecko-derived/current public market data during run",
+    "AERO": "CoinGecko-derived/current public market data during run",
+    "ZEC": "CoinGecko-derived/current public market data during run"
+  },
+  "notes": [
+    "No paper trade executed.",
+    "Alert threshold crossed for Robinhood Chain regime-quality reacceleration and a PONS/ARB leadership split; frozen separately in observations/2026-09-18T062848Z-robinhood-flow-quality-pons-arb-leadership-no-trade.json.",
+    "PONS was not bought because selective-wallet independence remains insufficiently clean and the Robinhood Wallet gas subsidy persists through roughly Sep 29, despite a structural/executability pass and strong fee-linked buyback/burn economics.",
+    "ARB was not bought because Robinhood/AEP revenue accrues primarily to the DAO treasury rather than directly to holders and a 139.2M ARB unlock is scheduled for Sep 23.",
+    "UNI remains HOLD/NO ADD; it already provides portfolio exposure to dominant Robinhood Chain DEX routing, but no fresh independent-wallet cohort or post-subsidy capital-flow confirmation appeared.",
+    "HYPE remains HOLD/NO ADD pending realized AQAv2 settlement, Payward/Bitnomial live HIP-3 utilization, renewed clean stablecoin inflow or a new independent selective-wallet cohort.",
+    "AERO remains HOLD/NO ADD pending clean U.S. tokenized-stock flow attribution beyond incentives.",
+    "ZEC remains HOLD/NO ADD after the Sep-17 trim; its current weight is ~7.34%, back inside the 7.5% non-core ceiling.",
+    "Marks are approximate because public crypto feeds are asynchronous; no trade decision was based on sub-percent mark differences.",
+    "No real trade executed."
+  ]
+}
