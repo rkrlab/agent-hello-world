@@ -1,0 +1,57 @@
+{
+  "observed_at_utc": "2026-09-18T21:44:19Z",
+  "classification": "ZEC_ZCSH_INSTITUTIONAL_FLOW_CONFIRMATION_AFFILIATE_ADJUSTED_NO_ADD_DERIVATIVES_CROWDING",
+  "ecosystem": "Zcash / regulated U.S. spot-fund access",
+  "asset": "ZEC",
+  "contract_address": null,
+  "alert_threshold_crossed": true,
+  "paper_action": "HOLD_NO_ADD",
+  "signal": {
+    "new_evidence": [
+      "Grayscale Zcash ETF (ZCSH) has accumulated more than $233M of net inflows since its Aug. 25 launch and held about $890M of net assets as of Sept. 17.",
+      "The latest reported large session added about $46.6M, while cumulative ZCSH trading volume exceeded $11B as of Sept. 17.",
+      "This is a regulated capital-access channel distinct from the previously recorded CEX-withdrawal clusters, shielded-pool use and NU7 catalyst.",
+      "Zcash estimated solrate rose from roughly 25 GSol/s in late August to just under 32 GSol/s, with mining difficulty also at a record, adding a separate supply-side/security participation confirmation."
+    ],
+    "quality_adjustments": [
+      "Do not treat the full $233M cumulative ZCSH inflow as fully independent discretionary capital. The Sept. 8 flow exceeded $112M and earlier public disclosures attribute roughly $100M of that session to DCG International Investments via an in-kind ZEC contribution through an authorized participant; this affiliate component is discounted.",
+      "The newer ~$46.6M session is not publicly attributed to the same affiliate in the sources retrieved in this run, but ultimate beneficial-owner independence is not proven.",
+      "The announced 3-for-1 ZCSH share split is economically neutral and is not counted as value creation or as evidence of incremental ZEC demand.",
+      "Fund-flow dollars are not converted one-for-one into an assumed spot-market ZEC purchase quantity because ETF creation mechanics and timing can differ."
+    ],
+    "market_confirmation": {
+      "zec_spot_price_usd_approx": 1481.0,
+      "zec_24h_spot_volume_usd_approx": 2237000000,
+      "hyperliquid_zec_open_interest_usd": 888660065,
+      "hyperliquid_zec_funding_per_hour": "0.0013%",
+      "hyperliquid_zec_funding_annualized": "10.95%",
+      "interpretation": "Institutional/fund demand is a genuine new confirmation, but derivatives positioning remains large and funding is now positive, so the prior crowding/chase risk has not normalized enough to justify restoring the paper position to its cap after the recent trim."
+    }
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "notes": "ZEC remains a native PoW asset with no token-contract honeypot/mint/LP-control gate. Key caveats remain privacy-coin regulatory/exchange-access risk, ongoing issuance, derivative crowding and uncertainty about beneficial-owner independence across observed capital channels."
+  },
+  "paper_portfolio": {
+    "source_of_truth": "paper_portfolio/state.json and paper_portfolio/trades.jsonl",
+    "zec_quantity": 0.5081623037366105,
+    "zec_average_cost_usd": 1202.7450996664215,
+    "cash_usd": 2416.8445783230713,
+    "trade_count": 8,
+    "decision": "No paper trade. The new ZCSH flow strengthens the ZEC thesis but does not override anti-chase/crowding discipline. Position remains near the 7.5% non-core ceiling and should not be mechanically re-expanded after the Sept. 17 trim."
+  },
+  "forward_tests": [
+    "Whether ZCSH continues to receive net creations after the current price extension and after the Sept. 30 split-adjusted trading begins.",
+    "Whether future ZCSH inflows are externally sourced rather than affiliate/in-kind contributions.",
+    "Whether ZEC perp open interest and positive funding normalize while spot/fund demand persists.",
+    "Whether the fresh CEX-withdrawal wallets continue accumulating without redeposit/linkage evidence.",
+    "NU7 testnet on Oct. 6 and targeted mainnet activation on Nov. 5 remain separate implementation checkpoints."
+  ],
+  "sources": [
+    "https://www.theblock.co/news/markets/2026-09-18-grayscales-zcash-etf-plans-3-for-1-split-after-233-million-inflow-surge-415520",
+    "https://www.coindesk.com/markets/2026/09/18/ether-and-xrp-etfs-post-outflows-as-bitcoin-moves-above-usd77-000",
+    "https://coinmarketcap.com/currencies/zcash/",
+    "https://hyperinteldata.com/zh/coin/zec"
+  ],
+  "hindsight_policy": "Observation frozen prospectively. Do not credit subsequent price moves to a trade because no paper trade was executed in this run."
+}
