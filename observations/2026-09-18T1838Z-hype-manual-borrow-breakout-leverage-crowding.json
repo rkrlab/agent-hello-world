@@ -27,19 +27,22 @@
   },
   "market_confirmation": {
     "hype_price_usd_approx": 91.71,
-    "new_all_time_high_usd_approx": 91.81,
-    "price_change_24h_pct_approx": 10.54,
-    "token_volume_24h_usd_approx": 1540000000,
+    "new_all_time_high_usd_approx": 92.56,
+    "price_change_24h_pct_approx": 10.5,
+    "token_volume_24h_usd_approx": 1720000000,
     "interpretation": "The product launch has received genuine market confirmation, but a portion of the move is now leverage-sensitive and should not be treated as independent fundamental confirmation."
   },
   "derivatives_risk": {
-    "open_interest_usd_approx": 1970000000,
+    "open_interest_usd_latest_snapshot": 1957714091,
+    "open_interest_latest_snapshot_utc": "2026-09-18T17:36:00Z",
     "earlier_same_day_open_interest_usd_approx": 1770000000,
     "funding_positive": true,
-    "annualized_funding_range_pct_approx": [10.95, 21.3],
+    "latest_funding_per_hour_pct": 0.0067,
+    "latest_funding_annualized_pct": 59.10,
+    "earlier_intraday_funding_annualized_pct": 10.95,
     "modeled_long_liquidation_exposure_usd_approx": 897800000,
     "modeled_short_liquidation_exposure_usd_approx": 943600000,
-    "interpretation": "OI expanded materially into the breakout and funding flipped/held positive. This raises two-sided liquidation reflexivity, especially now that HYPE can itself support borrowing collateral."
+    "interpretation": "OI expanded materially into the breakout and the freshest observed funding snapshot accelerated to roughly 59.1% annualized. This materially worsens crowding and two-sided liquidation reflexivity, especially now that HYPE can itself support borrowing collateral."
   },
   "wallet_quality": {
     "rating": "MEDIUM_UNCHANGED",
@@ -57,7 +60,7 @@
     "caveats": [
       "low circulating value relative to FDV / future dilution",
       "upcoming unlock and emission risk",
-      "rising derivatives open interest and positive funding",
+      "rising derivatives open interest and sharply positive funding",
       "new HYPE-collateral liquidation feedback loop",
       "manual-borrow versus portfolio-margin utilization is not cleanly decomposed",
       "no fresh independent selective-wallet confirmation"
@@ -90,8 +93,7 @@
   ],
   "sources": [
     "https://defillama.com/chain/hyperliquid-l1",
-    "https://coinmarketcap.com/currencies/hyperliquid/",
-    "https://cointelegraph.com/markets/hype-ath-above-90-hyperliquid-manual-borrowing-lending",
+    "https://crypto.news/hype-price-hits-new-all-time-high-hyperliquid-loan/",
     "https://hyperinteldata.com/en/coin/hype",
     "https://liqflow.app/coin/HYPE",
     "paper_portfolio/state.json",
