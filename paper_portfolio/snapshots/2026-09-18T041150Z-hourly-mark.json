@@ -1,0 +1,51 @@
+{
+  "timestamp_utc": "2026-09-18T04:11:50Z",
+  "type": "hourly_mark_no_trade_no_alert",
+  "cash_usd": 2416.8445783230713,
+  "trade_count": 8,
+  "last_trade_id": "TRIM-ZEC-20260917-224942Z",
+  "marks_usd": {
+    "BTC": 76336.43,
+    "ETH": 2446.93,
+    "SOL": 101.21,
+    "SUI": 0.7518,
+    "BNB": 748.53,
+    "UNI": 7.91,
+    "HYPE": 86.74,
+    "AERO": 0.5854,
+    "ZEC": 1469.63
+  },
+  "position_values_usd": {
+    "BTC": 1931.1344085575067,
+    "ETH": 1954.5262115301282,
+    "SOL": 979.0094795899001,
+    "SUI": 463.15919172005954,
+    "BNB": 503.5180949817689,
+    "UNI": 593.2802236729883,
+    "HYPE": 270.13569581019976,
+    "AERO": 257.2140281849549,
+    "ZEC": 746.810566440435
+  },
+  "portfolio_nav_usd": 10115.632478811012,
+  "passive_benchmark_nav_usd": 9831.347386379362,
+  "alpha_vs_benchmark_usd": 284.2850924316499,
+  "alpha_vs_benchmark_bps": 289.1618831672115,
+  "cash_weight_pct": 23.892174645387534,
+  "mark_sources": {
+    "portfolio_marks": "Contemporaneous CoinGecko/CoinMarketCap/DefiLlama-derived public spot quotes gathered during the run."
+  },
+  "notes": [
+    "No paper trade executed and no alert threshold crossed in this run.",
+    "Broad market structure does not show a new clean spot-speculation regime: aggregate DEX volume remains softer week over week while aggregate perpetual volume is only modestly positive.",
+    "HYPE remains HOLD/NO ADD. Two consecutive positive U.S. spot-ETF sessions repair part of the prior institutional outflow, but the combined inflow is still small versus the preceding weekly outflow; Hyperliquid stablecoin supply remains down over seven days, spot DEX activity is softer, and no fresh independent selective-wallet cohort, live Payward/Bitnomial utilization, or realized AQAv2 payment has appeared.",
+    "ZEC remains HOLD/NO ADD after the prior trim. The position marks at about 7.38% of NAV, inside the 7.5% non-core ceiling; derivatives open interest and liquidation reflexivity remain elevated, while no new independent selective spot accumulator or structural failure was verified.",
+    "UNI remains HOLD/NO ADD. Price persistence is constructive, but no measurable new U.S. tokenized-stock flow attributable to Uniswap and no fresh independent selective-wallet cohort were verified.",
+    "AERO remains HOLD/NO ADD. Base/Aerodrome regulatory positioning remains constructive, but no clean U.S. tokenized-stock capital migration has appeared and incentive contamination remains material.",
+    "Arc remains a high-activity speculative launch regime, but day-two transactions are below launch-day levels and active exchange/launch incentives still contaminate raw users, turnover and transaction counts; no Arc-native candidate clears the structural and wallet-independence gates.",
+    "Robinhood Chain continues to show positive capital inflow, growing perpetual activity and substantive RWA DeFi utilization, but the wallet gas subsidy remains active and stablecoin supply is slightly down over seven days, preventing a clean discretionary-flow upgrade.",
+    "RAY remains watch/no-entry: Raydium value capture and RWA/tokenized-equity narrative fit remain constructive, but 24-hour DEX volume is below its seven-day daily average and the independent selective-wallet confirmation leg is still missing.",
+    "LIT remains watch/no-entry: Lighter fee revenue and LIT buybacks are economically substantive, but previously identified holder concentration, limited circulating float and wallet-independence issues still block the structural gate.",
+    "DRV remains watch/no-entry: post-V3 price/volume persistence continues, but governance/supply clearance and independent selective-wallet convergence remain unresolved.",
+    "No real trade executed."
+  ]
+}
