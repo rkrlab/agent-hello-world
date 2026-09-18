@@ -1,0 +1,110 @@
+{
+  "observation_id": "RAYDIUM_RWA_SECONDARY_PERSISTENCE_CONFIRMED_XPOINTS_INCENTIVE_CONTAMINATION_BLOCKS_ENTRY",
+  "observed_at_utc": "2026-09-18T17:37:06Z",
+  "ecosystem": "Solana / Raydium / xStocks",
+  "candidate": {
+    "asset": "RAY",
+    "contract_address": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+    "current_mark_usd_approx": 1.71,
+    "mark_source": "CoinMarketCap RAY/USD live converter observed during this run",
+    "price_change_24h_pct_approx": 18.8
+  },
+  "alert_threshold": "crossed_material_regime_quality_update_and_entry_blocker",
+  "regime_evidence": {
+    "xstocks_solana_cumulative_volume_usd": 6000000000,
+    "xstocks_share_of_solana_tokenized_stock_historical_volume_pct": 54,
+    "raydium_q3_tokenized_stock_secondary_volume_usd": 2300000000,
+    "raydium_q3_tokenized_stock_volume_qoq_change_pct": 40,
+    "classification": "ACTUAL_SECONDARY_TRADING_NOT_ISSUANCE_AUM",
+    "note": "The $2.3B Raydium figure is reported tokenized-stock DEX secondary trading in Q3 through Sep. 18, not tokenized-equity issuance/AUM. The cumulative xStocks figure is transaction volume, not capital stock."
+  },
+  "incentive_filter": {
+    "result": "MATERIAL_CONTAMINATION_DISCOVERED",
+    "official_evidence": "xStocks officially launched xPoints as an incentive program explicitly designed to reward trading, liquidity provision and DeFi integration. This means xStocks-related activity cannot be treated as clean discretionary capital migration without separating non-incentivized users/volume from points-motivated activity.",
+    "important_nuance": "DefiLlama reports zero protocol-level Raydium incentives over 24h/7d/30d, but that does not remove the external xStocks incentive layer. Raydium's own fees and RAY buybacks are economically real outputs even when some underlying order flow may be externally subsidized.",
+    "classification": "RWA_USAGE_REAL_BUT_CAUSAL_QUALITY_DOWNGRADED"
+  },
+  "protocol_economics": {
+    "raydium_fees_24h_usd": 1330000,
+    "raydium_revenue_24h_usd": 220358,
+    "raydium_holders_revenue_24h_usd": 134765,
+    "raydium_revenue_30d_usd": 4600000,
+    "raydium_holders_revenue_30d_usd": 3170000,
+    "raydium_dex_volume_24h_usd": 280510000,
+    "raydium_dex_volume_7d_usd": 2306000000,
+    "raydium_dex_volume_30d_usd": 7315000000,
+    "defillama_protocol_incentives_24h_usd": 0,
+    "defillama_protocol_incentives_7d_usd": 0,
+    "defillama_protocol_incentives_30d_usd": 0,
+    "ray_value_capture": "Official Raydium fee rules route a share of swap fees to open-market RAY buybacks; this direct protocol-funded demand remains valid. Bought-back RAY is held by the protocol rather than necessarily burned, so governance/disposition risk remains."
+  },
+  "leadership": {
+    "classification": "RAYDIUM_RWA_VENUE_LEADERSHIP_PERSISTS_BUT_TOKEN_ENTRY_NOT_CLEARED",
+    "evidence": "The Sep. 14 one-day Solana tokenized-equity leadership signal has now gained multi-quarter persistence evidence: Raydium Q3 tokenized-stock DEX volume is about $2.3B and up ~40% QoQ through Sep. 18, while RAY itself is again showing positive price/turnover confirmation. However, the newly verified xPoints incentive layer means the quality of that flow is lower than previously assumed."
+  },
+  "wallet_quality": {
+    "rating": "LOW_TO_MEDIUM_UNCHANGED",
+    "fresh_independent_selective_wallet_confirmation": false,
+    "note": "No newly funded, historically selective, demonstrably independent RAY accumulator cohort was verified in this scan. Generic whale labels are not counted."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "contract": "Established Solana token; prior research verified mint and freeze authorities revoked.",
+    "liquidity_executability": "PASS; RAY has broad CEX/DEX coverage and current turnover is ample for a ~2.5% paper-NAV starter.",
+    "remaining_caveats": [
+      "large protocol/treasury holdings and governance/disposition risk for accumulated buyback tokens",
+      "RAY is strongly extended over 30 days, increasing chase/mean-reversion risk",
+      "no fresh independent selective-wallet cohort",
+      "xStocks points contaminate the tokenized-stock flow-quality signal"
+    ]
+  },
+  "paper_portfolio_decision": {
+    "action": "NO_TRADE",
+    "trade_executed": false,
+    "reason": "Actual tokenized-stock secondary usage and RAY value capture are real and persistent, but xPoints explicitly rewards the same trading/liquidity behaviors used as regime evidence. With RAY already sharply repriced and no fresh selective-wallet convergence, confirmation discipline requires a clean post-incentive or incentive-adjusted usage signal before a starter.",
+    "paper_cash_usd": 2416.8445783230713,
+    "paper_trade_count": 8,
+    "approx_current_nav_usd": 10490.32,
+    "approx_passive_benchmark_nav_usd": 10095.73,
+    "approx_alpha_usd": 394.59,
+    "approx_alpha_bps": 390.85,
+    "state_and_ledger_mutated": false
+  },
+  "portfolio_marks_approx_usd": {
+    "BTC": 78070.91,
+    "ETH": 2592.02,
+    "SOL": 108.76,
+    "SUI": 0.7907,
+    "BNB": 759.85,
+    "UNI": 8.74,
+    "HYPE": 91.64,
+    "AERO": 0.6546,
+    "ZEC": 1474.33
+  },
+  "existing_positions_review": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD; Solana benefits from the RWA venue activity, but the xStocks incentive layer reduces the quality of that evidence for a tactical add.",
+    "SUI": "HOLD_NO_ADD",
+    "BNB": "HOLD_NO_ADD",
+    "UNI": "HOLD_NO_ADD; prior Robinhood tokenized-stock venue-leadership thesis remains intact but current gas-subsidy contamination and recent whale profit-taking still argue against scaling.",
+    "HYPE": "HOLD_NO_ADD; manual-borrow utility is real, but leverage/reflexivity and lack of clean fresh selective-wallet confirmation remain.",
+    "AERO": "HOLD_NO_ADD; Base tokenized-stock regulatory thesis remains positive but prior liquidity/emission incentive contamination remains unresolved.",
+    "ZEC": "HOLD_NO_ADD; privacy/NU7/withdrawal thesis remains intact and position is near the default non-core cap after the prior trim."
+  },
+  "forward_checkpoints": {
+    "xstocks_volume_after_points_incentive_normalization": null,
+    "raydium_tokenized_stock_volume_excluding_points_motivated_activity": null,
+    "raydium_fee_and_buyback_persistence_after_incentive_adjustment": null,
+    "fresh_independent_selective_ray_wallet_cohort": null,
+    "ray_price_persistence_without_chasing": null
+  },
+  "sources": [
+    "https://solanacompass.com/news/xstocks-crosses-6-billion-in-solana-tokenized-stock-volume-as-raydium-q3-tops-23b",
+    "https://xstocks.fi/news/introducing-xpoints",
+    "https://defillama.com/protocol/raydium",
+    "https://coinmarketcap.com/currencies/raydium/ray/usd/",
+    "https://docs.raydium.io/ray/ray-buybacks"
+  ],
+  "real_trade_executed": false
+}
