@@ -1,0 +1,133 @@
+{
+  "timestamp_utc": "2026-09-18T09:38:54Z",
+  "classification": "ZEC_FRESH_CEX_WITHDRAWALS_NU7_TIMELINE_THESIS_UPGRADE_NO_ADD_AT_CAP",
+  "alert": true,
+  "paper_trade": false,
+  "ecosystem": "Zcash / privacy",
+  "asset": {
+    "symbol": "ZEC",
+    "type": "native proof-of-work asset",
+    "contract_address": null,
+    "price_mark_usd": 1511.69,
+    "price_mark_source": "MarketCapitalize Binance ZEC/USDT intraday snapshot; corroborated by ZecStats $1,511.09 at 2026-09-18T05:39Z"
+  },
+  "regime_evidence": {
+    "fresh_cex_withdrawals": {
+      "total_zec": 32293,
+      "estimated_usd": 46150000,
+      "wallets": [
+        {"address": "t1UcyM", "zec": 15860, "estimated_usd": 22690000, "source": "Binance"},
+        {"address": "t1fXjw", "zec": 7081, "estimated_usd": 10290000, "source": "multiple CEXs over ~2 days"},
+        {"address": "t1YLeD", "zec": 5818, "estimated_usd": 8450000, "source": "CEX"},
+        {"address": "t1gxP4", "zec": 3534, "estimated_usd": 4720000, "source": "Binance"}
+      ],
+      "interpretation": "This is genuine CEX-to-self-custody accumulation evidence during a rising market and is not mechanically caused by an airdrop, points program, trading rebate or yield-farming loop. However, all four addresses are newly created and the public reports trace to the same Lookonchain observation; they must not be counted as four independent historically selective buyers. Common beneficial ownership or coordinated funding remains possible."
+    },
+    "privacy_capital_stock": {
+      "shielded_zec": 4919251,
+      "shielded_share_of_issued_supply_pct": 29.0,
+      "issued_supply_zec": 16938631,
+      "shielded_value_usd_approx": 7430000000,
+      "seven_day_net_shielded_flow_zec": 23567,
+      "interpretation": "The shielded stock remains exceptionally large and a separate live metric reports positive 7-day net pool-boundary inflow. This is stronger than issuance-style AUM because coins have actually crossed into shielded pools, but it still cannot reveal shielded-to-shielded transaction amounts or user counts by design."
+    },
+    "nu7_catalyst": {
+      "testnet_target": "2026-10-06",
+      "final_mainnet_decision_target": "2026-10-20",
+      "mainnet_target": "2026-11-05",
+      "block_spacing_change": "75 seconds to 25 seconds",
+      "other_changes": ["disable v4 transactions", "integrate Network Sustainability Mechanism while preserving the halving schedule"],
+      "status": "Target timeline agreed unanimously by ecosystem organizations/engineering teams; mainnet remains conditional on testnet review and the Oct 20 decision.",
+      "incentive_classification": "Organic product/network catalyst; no airdrop/points/rebate mechanism identified."
+    }
+  },
+  "wallet_quality": {
+    "rating_for_new_sep18_evidence": "LOW_TO_MEDIUM",
+    "reason": "Large and directionally meaningful withdrawals, but addresses are new, have no demonstrated historical selectivity, and independence/funding relationships are unverified. The four wallets are therefore one accumulation cluster observation, not four independent confirmations.",
+    "prior_evidence": "Earlier paper scaling relied on previously observed multi-wallet accumulation. That earlier evidence is not double-counted as fresh confirmation in this run."
+  },
+  "leadership": {
+    "read": "ZEC remains the dominant privacy-sector leadership asset in the framework. The fresh CEX withdrawals and concrete NU7 timeline reinforce the existing thesis after the Sep-17 crowding trim, but do not invalidate that trim because derivatives reflexivity remains elevated and the new wallets have not cleared independence/history tests.",
+    "price_persistence": "ZEC is around $1.51k, above the $1,485.64 Sep-17 paper trim mark and near recent highs, showing persistence rather than immediate post-trim thesis failure."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "notes": "ZEC is a native PoW coin, so ERC-style honeypot, token mint authority, LP ownership/removal and proxy-admin gates do not apply. No new sellability or protocol-privilege failure surfaced. Remaining risks are derivatives crowding/liquidation reflexivity, privacy-asset regulatory/exchange access, uncertain beneficial ownership of the new withdrawal wallets, and NU7 execution/testnet risk."
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "evidence": "ZEC remains a deeply traded large-cap asset with multi-billion-dollar daily turnover across major venues; paper-portfolio sizing is not execution-constrained."
+  },
+  "paper_portfolio_decision": {
+    "action": "HOLD_NO_ADD",
+    "reason": "The new evidence improves the thesis but the position is already approximately at the 7.5% default non-core cap after the prior crowding trim. Re-adding immediately would reverse a risk-management trim on evidence that is not yet independently selective, while derivatives crowding remains unresolved.",
+    "zec_quantity": 0.5081623037366105,
+    "zec_mark_value_usd": 768.1838729355968,
+    "zec_weight_pct": 7.434604795894459,
+    "cash_usd": 2416.8445783230713,
+    "trade_count": 8,
+    "approx_nav_usd": 10332.544822823718,
+    "approx_passive_benchmark_usd": 9952.352669221475,
+    "approx_active_minus_benchmark_usd": 380.1921536022437,
+    "approx_active_minus_benchmark_bps": 382.0123404368711,
+    "mark_sources": {
+      "BTC": 77799,
+      "ETH": 2475,
+      "SOL": 105.71,
+      "SUI": 0.7765,
+      "BNB": 752.75,
+      "UNI": 8.77,
+      "HYPE": 87.52,
+      "AERO": 0.6027,
+      "ZEC": 1511.69
+    }
+  },
+  "broader_scan": {
+    "decision": "NO_OTHER_THRESHOLD",
+    "notes": [
+      "Robinhood Chain remains the strongest broad ecosystem-flow watch but current metrics are a continuation of the 06:28 UTC alert, not a new threshold; its wallet gas subsidy still contaminates raw activity through roughly Sep 29.",
+      "Solana/Raydium remains active but chain stablecoin and DEX growth do not provide a new clean wallet-confirmed entry signal.",
+      "Base/Aerodrome price and venue activity remain constructive, but liquidity incentives still materially contaminate attribution and no clean U.S. tokenized-stock flow trigger has appeared.",
+      "Hyperliquid/HYPE remains strong, but fresh multi-wallet ETH activity appears correlated rather than independent and does not qualify as a new selective-HYPE wallet confirmation.",
+      "Lighter/LIT remains structurally blocked by the previously identified concentration/float-overhang gate."
+    ]
+  },
+  "why_signal_matters_now": "The Sep-17 ZEC trim was specifically about crowding and forward asymmetry, not thesis failure. Within hours, a new ~$46.15M CEX-withdrawal cluster and a concrete NU7 testnet/mainnet timetable appeared while price held above the trim mark. That is a meaningful thesis-strengthening event worth freezing prospectively, but the framework prevents converting it into a buy because wallet independence is unproven and the existing ZEC position is already essentially at its risk cap.",
+  "major_uncertainties": [
+    "The four new wallets may be controlled or funded by the same beneficial owner; no independence proof is available.",
+    "New wallets have no historical performance/selectivity record, so their signal quality is lower than repeat selective accumulators.",
+    "Shielded-pool stock and pool-boundary flow do not reveal shielded-to-shielded activity or unique users.",
+    "NU7's Nov 5 date remains a target until the Oct 20 testnet review/final activation decision.",
+    "Derivatives crowding and liquidation reflexivity that justified the Sep-17 trim remain relevant."
+  ],
+  "next_confirmation_triggers": [
+    "The new withdrawal wallets exhibit repeat accumulation without coordinated funding/linkage or subsequent exchange redeposits.",
+    "A separate historically selective and independently funded ZEC accumulator appears.",
+    "Positive shielded pool-boundary flows persist while derivatives leverage normalizes rather than expanding faster than spot demand.",
+    "NU7 testnet activates successfully on Oct 6 and clears the Oct 20 mainnet decision without material implementation issues."
+  ],
+  "forward_outcome_checkpoints": {
+    "+24h": null,
+    "+72h": null,
+    "+7d": null,
+    "2026-10-06_testnet": null,
+    "2026-10-20_mainnet_decision": null
+  },
+  "sources": [
+    "https://www.aicoin.com/en/news-flash/3087418",
+    "https://tw.tokenpost.com/news/blockchain/46414",
+    "https://forum.zcashcommunity.com/t/nu7-timeline/57655",
+    "https://cointelegraph.com/news/zcash-nu7-november-mainnet-activation",
+    "https://zecstats.org/shielded-percentage",
+    "https://www.zecmetrics.io/",
+    "https://marketcapitalize.com/coins/zec-zcash/",
+    "https://www.coinlore.com/coin/90",
+    "https://www.coinlore.com/coin/ethereum",
+    "https://www.coinlore.com/coin/solana",
+    "https://www.coinlore.com/coin/sui",
+    "https://www.coinlore.com/coin/binance-coin",
+    "https://www.coinlore.com/coin/uniswap",
+    "https://www.coinlore.com/coin/hyperliquid",
+    "https://www.coinlore.com/coin/aerodrome-finance"
+  ]
+}
