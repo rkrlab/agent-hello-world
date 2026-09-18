@@ -1,0 +1,100 @@
+{
+  "timestamp_utc": "2026-09-18T06:28:48Z",
+  "classification": "ROBINHOOD_FLOW_QUALITY_REACCELERATION_PONS_ARBITRUM_LEADERSHIP_SPLIT_NO_TRADE",
+  "alert": true,
+  "paper_trade": false,
+  "ecosystem": "Robinhood Chain / Arbitrum Orbit",
+  "regime_evidence": {
+    "robinhood_chain_tvl_usd": 957280000,
+    "robinhood_chain_net_inflows_24h_usd": 12150000,
+    "robinhood_chain_dex_volume_24h_usd": 1425000000,
+    "robinhood_chain_dex_volume_7d_usd": 11770000000,
+    "robinhood_chain_dex_volume_7d_change_pct": 3.75,
+    "robinhood_chain_perp_volume_24h_usd": 448490000,
+    "robinhood_chain_perp_volume_7d_usd": 3338000000,
+    "robinhood_chain_perp_volume_7d_change_pct": 23.96,
+    "robinhood_chain_stablecoin_mcap_usd": 1002000000,
+    "robinhood_chain_stablecoin_change_7d_pct": -0.99,
+    "robinhood_chain_rwa_active_aum_usd": 288810000,
+    "robinhood_chain_chain_fees_24h_usd": 307973,
+    "robinhood_chain_chain_revenue_24h_usd": 276576,
+    "interpretation": "The chain now combines positive net inflow with persistent >$1B/day DEX turnover and accelerating perps. This is a quality improvement versus the earlier high-volume/recycling regime, but not a full organic clearance because the Robinhood Wallet gas subsidy remains active through roughly Sep 29. Stablecoin market cap is slightly down over 7d, so the capital-migration signal is positive but not one-directional."
+  },
+  "rwa_distinction": {
+    "issuance_aum": "DefiLlama currently reports about $288.81M of Robinhood Chain RWA Active AUM.",
+    "secondary_usage": "A Sep-17 on-chain DEX snapshot tracked about $187.5M of daily secondary volume across NVDA, SPY, SPCX, META and GOOGL Robinhood tokens, with Uniswap V3/V4 about 81% of tracked chain volume. This is actual secondary trading, not merely issuance/AUM.",
+    "collateral_utilization": "No fresh same-timestamp collateral/borrowing utilization series was independently verified during this run, so no additional RWA collateral-utilization claim is credited here.",
+    "classification": "RWA secondary trading is financially substantive; raw chain-user/transaction counts remain incentive-discounted."
+  },
+  "incentive_adjustment": {
+    "robinhood_wallet_gas_subsidy": "Active through approximately 2026-09-29 for eligible Robinhood Wallet swaps; raw user/transaction growth is discounted until post-subsidy persistence is observable.",
+    "effect": "Positive net inflow, secondary stock-token turnover, protocol fees and durable liquidity receive more weight than transaction count or token-mint count."
+  },
+  "leadership": {
+    "PONS": {
+      "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+      "price_usd": 0.659553,
+      "change_24h_pct": 19.90,
+      "market_cap_usd": 452810563,
+      "token_turnover_24h_usd": 105626072,
+      "circulating_and_max_supply": 686541847,
+      "holders_approx": 94950,
+      "leadership_read": "PONS is reasserting mature native leadership after its prior retracement rather than merely graduating from a new pool. It remains below the Sep-5 ATH, reducing but not eliminating chase risk.",
+      "value_capture": "Protocol policy allocates a large share of Pons protocol fee revenue to open-market PONS buybacks and burns; about 29.79% of original supply had been burned by Sep 6, with subsequent reporting indicating buybacks/burns continued. This is a real mechanical link when executed, but the allocation is mutable policy rather than an immutable holder entitlement.",
+      "wallet_quality": "MEDIUM-LOW / MIXED. A Sep-7 whale reallocated from UNI into PONS and retained a multimillion-dollar PONS position, but the larger Cumberland/Wintermute accumulation is heavily discounted because those wallets are market-makers/high-frequency liquidity operators, not clean selective discretionary buyers. No fresh Sep-18 cohort of independently funded, historically selective wallets was verified.",
+      "structural_gate": "PASS WITH CAVEATS. CertiK detects no honeypot, mint, blacklist, mutable tax, proxy, balance-modification, sell restriction, or reclaimable ownership path; owner privilege is renounced and major-holder concentration is low after exchange/locked-address exclusions. Legacy Pons liquidity is documented as locked. Remaining caveats are mutable buyback policy, incentive-sensitive chain activity, and market-maker involvement.",
+      "executability": "PASS. Aggregate centralized turnover is >$100M/24h and on-chain liquidity is several million dollars; portfolio starter sizing would not be execution-constrained."
+    },
+    "ARB": {
+      "contract_ethereum": "0x912CE59144191C1204E64559FE8253a0e49E6548",
+      "price_context": "ARB is experiencing a much sharper Sep-18 price reaction, with contemporaneous sources showing roughly +22% to +30% over 24h and about $0.21-$0.22 pricing.",
+      "ecosystem_link": "Robinhood Chain is an Arbitrum Orbit/AEP chain and sends licensing economics to the Arbitrum DAO/developer guild, so the Robinhood regime is financially relevant to Arbitrum infrastructure.",
+      "value_capture_caveat": "Revenue accrues to the DAO treasury rather than directly to ARB holders; no current holder buyback/revenue-share mechanism is verified.",
+      "structural_caveat": "A 139.2M ARB unlock is scheduled for Sep 23, 2026 (~1.4% of total supply and roughly 2% of market cap in the current tokenomics estimate), with 53.8% to insiders and 35% to private investors.",
+      "decision": "NO STARTER. Price leadership is stronger than holder-economics leadership; upcoming dilution and missing direct value capture fail the prospective entry threshold."
+    }
+  },
+  "leadership_ranking": [
+    "PONS — strongest native Robinhood token/value-capture fit, but wallet-independence and subsidy persistence are not yet clean enough for current portfolio entry",
+    "UNI — already held; captures the dominant Robinhood secondary-market venue thesis, but no new add because no fresh independent-wallet confirmation or clean post-subsidy flow attribution",
+    "ARB — strongest immediate price spillover from Robinhood Chain, but weaker direct token value capture and a Sep-23 unlock overhang",
+    "new launchpad/meme tokens — rejected unless they separately clear contract, LP, concentration, wallet-independence and post-launch persistence gates"
+  ],
+  "why_signal_matters_now": "The new information is not simply another high-volume Robinhood print. Positive net inflow has appeared alongside persistent billion-dollar DEX activity, perps are accelerating, tokenized stocks are producing large real secondary turnover, and both PONS and ARB are repricing. That is enough to upgrade the ecosystem regime and refresh leadership tracking, but not enough to buy before the gas-subsidy test or fresh selective-wallet confirmation.",
+  "paper_portfolio_decision": {
+    "action": "NO_TRADE",
+    "reason": "PONS clears the structural/executability gate but does not yet clear the independent selective-wallet and post-incentive persistence threshold. ARB has weaker direct token value capture plus imminent unlock risk. Existing UNI already gives the paper portfolio exposure to Robinhood/Uniswap activity without forcing a chase.",
+    "trade_count": 8,
+    "cash_usd": 2416.8445783230713
+  },
+  "major_uncertainties": [
+    "The Robinhood Wallet gas subsidy remains active until roughly Sep 29, so part of retail swap frequency remains subsidized.",
+    "PONS buyback allocation is mutable protocol policy and not an immutable token-holder right.",
+    "The clean independence/funding relationship of large PONS holders remains incomplete; market-maker inventories are not counted as selective-wallet confirmation.",
+    "Current RWA Active AUM and secondary-stock turnover are real, but same-timestamp collateral/borrowing utilization was not freshly verified in this run.",
+    "ARB price data is moving rapidly and the upcoming Sep-23 unlock can change the leadership picture quickly."
+  ],
+  "next_confirmation_triggers": [
+    "Robinhood Chain retains meaningful DEX/stock-token volume, fees and positive net flows after the Sep-29 wallet gas subsidy ends.",
+    "A genuinely new, independently funded and historically selective PONS accumulator cohort appears, with repeat buys and no correlated funding/linkage.",
+    "PONS buybacks/burns remain elevated through a lower-volume period, confirming fee-to-token capture is durable rather than purely launch-frenzy dependent.",
+    "For ARB, Sep-23 unlock is absorbed without distribution and a concrete ARB-holder value-capture mechanism advances beyond discussion."
+  ],
+  "forward_outcome_checkpoints": {
+    "+24h": null,
+    "+72h": null,
+    "+7d": null,
+    "post_2026_09_29_subsidy": null
+  },
+  "sources": [
+    "https://defillama.com/chain/robinhood-chain",
+    "https://robinswap.trade/news/robinhood-chain-volume-dex-split/",
+    "https://coinmarketcap.com/currencies/pons/",
+    "https://skynet.certik.com/tools/token-scan/robinhood/0x39dbed3a2bd333467115de45665cc57f813c4571",
+    "https://tokenomist.ai/research/29-79-of-pons-supply-has-been-burned-future-buybacks-are-not-guaranteed",
+    "https://news.bitcoin.com/crypto-news/cumberland-pons-accumulation-robinhood-chain-launchpad/",
+    "https://www.kucoin.com/news/flash/whale-adjusts-robinhood-ecosystem-token-portfolio-unloads-uni-adds-pons-and-form",
+    "https://crypto.news/robinhood-chain-flipped-solana-revenue-gas-subsidy-expires/",
+    "https://app.tokenomics.com/tokenomics/arbitrum/unlocks"
+  ]
+}
