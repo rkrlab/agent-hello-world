@@ -1,0 +1,95 @@
+{
+  "timestamp_utc": "2026-09-18T19:34:00Z",
+  "classification": "MAPLE_SYRUPUSDG_ROBINHOOD_COLLATERAL_UTILIZATION_BREAKOUT_SYRUP_STRUCTURAL_GATE_NOT_CLEARED_NO_TRADE",
+  "ecosystem": "Robinhood Chain / Maple",
+  "asset": "SYRUP",
+  "contract_address": "0x643C4E15d7d62Ad0aBeC4a9BD4b001aA3Ef52d66",
+  "alert_threshold_crossed": true,
+  "summary": "Maple's syrupUSDG has become a materially utilized Robinhood Chain RWA/credit primitive rather than merely an issued asset: roughly $123.6M active AUM is accompanied by about $123.5M DeFi-active TVL and 99.91% utilization, up about 22% over seven days. The capital appears financially substantive and yield/credit driven, not airdrop/points driven. However, this is not clean discretionary speculative flow into SYRUP, fresh selective-wallet confirmation is absent, and the SYRUP structural gate is not cleared because the token is upgradeable with unresolved privileged-control/mint questions and meaningful concentration/treasury-distribution risk. No paper trade.",
+  "ecosystem_regime_evidence": {
+    "robinhood_chain_rwa_active_aum_usd": 292140000,
+    "robinhood_chain_rwa_change_24h_pct": 2.00,
+    "robinhood_chain_rwa_defi_active_tvl_usd": 193880000,
+    "robinhood_chain_rwa_defi_active_tvl_change_24h_pct": 5.62,
+    "robinhood_chain_rwa_utilization_pct": 66.4,
+    "maple_syrupusdg_active_aum_usd": 123610000,
+    "maple_syrupusdg_active_aum_change_7d_pct": 21.95,
+    "maple_syrupusdg_defi_active_tvl_usd": 123500000,
+    "maple_syrupusdg_defi_active_tvl_change_7d_pct": 21.97,
+    "maple_syrupusdg_utilization_pct": 99.91,
+    "largest_robinhood_rwa_defi_protocol": "Morpho Blue",
+    "largest_robinhood_rwa_defi_protocol_tvl_usd": 122590000,
+    "interpretation": "This is actual collateral/lending utilization, not merely RWA issuance/AUM. Nearly the entire tracked syrupUSDG active AUM is deployed in DeFi."
+  },
+  "why_capital_is_arriving": {
+    "classification": "FINANCIALLY_SUBSTANTIVE_CREDIT_YIELD_FLOW_NOT_CLEAN_SPECULATIVE_FLOW",
+    "drivers": [
+      "syrupUSDG collateral support for the vault behind Robinhood Earn",
+      "syrupUSDG collateral integration on Arrow",
+      "institutional-credit yield exposure distributed through Robinhood Chain",
+      "Morpho-based lending/collateral utilization"
+    ],
+    "incentive_discount": "No Maple airdrop, points, quest, trading-reward or rebate program was identified as the primary cause of the tracked syrupUSDG collateral utilization. The flow is nonetheless yield-seeking credit capital rather than evidence by itself of discretionary speculation in SYRUP."
+  },
+  "maple_protocol_economics": {
+    "tvl_usd_approx": 2754000000,
+    "active_loans_usd_approx": 1680000000,
+    "fees_24h_usd": 406091,
+    "protocol_revenue_24h_usd": 58673,
+    "holder_revenue_buybacks_24h_usd": 5867,
+    "holder_revenue_buybacks_30d_usd": 127866,
+    "current_buyback_share_of_protocol_revenue_pct": 10,
+    "august_2026_syrup_bought_back_tokens": 676294,
+    "interpretation": "SYRUP has direct but modest protocol-value capture through revenue-funded buybacks. The current MIP-021 share is 10%, so older references to 20%-25% buybacks are stale."
+  },
+  "token_market_and_wallet_quality": {
+    "price_change_24h_approx_pct": 9.0,
+    "coin_gecko_sep18_market_cap_usd_approx": 240970213,
+    "coin_gecko_sep18_volume_usd_approx": 6326139,
+    "wallet_quality": "LOW_TO_MEDIUM",
+    "fresh_independent_historically_selective_cohort_found": false,
+    "tracked_30d_whale_flow_note": "One public tracker shows 55 whale wallets with roughly $4.0M inflow versus $3.4M outflow over 30 days, only about $0.54M net accumulation; this is balanced rather than strong selective-wallet convergence and wallet independence/profitability is not established.",
+    "interpretation": "The token is participating in the broader RWA/credit narrative, but price/volume and wallet evidence do not yet demonstrate clean leadership by discretionary speculative capital."
+  },
+  "structural_gate": {
+    "result": "NOT_CLEARED_HARD_STOP",
+    "sellability_honeypot": "NO_HONEYPOT_SIGNAL_FOUND",
+    "contract": "UPGRADEABLE_PROXY",
+    "unresolved_permissions": ["ownership", "minting", "pausing", "blacklisting"],
+    "supply_regime": "NOT_FIXED; 5% annual inflation program runs through September 2026 and third-party onchain analysis reports a live mint path although no new mint occurred over its trailing 90-day window",
+    "concentration": "Raw top-holder concentration is high but includes stSYRUP, exchange and protocol addresses; beneficial-owner concentration remains insufficiently resolved for a hard pass.",
+    "treasury_distribution_risk": "Third-party onchain analysis reports approximately 4.60M SYRUP moved out of Maple-controlled wallets over the trailing 90 days while buybacks were smaller and custodied rather than burned.",
+    "reason": "The user's framework requires privileged mint/upgrade authority and concentration to be resolved before paper buying. Automated proxy analysis cannot verify those permissions cleanly, and credible onchain analysis indicates the mint path remains live. A high utilization score cannot override this gate."
+  },
+  "paper_portfolio_action": {
+    "action": "NO_TRADE",
+    "trade_executed": false,
+    "cash_usd": 2416.8445783230713,
+    "trade_count": 8,
+    "approx_nav_usd": 10566.13,
+    "approx_passive_benchmark_nav_usd": 10175.00,
+    "approx_alpha_usd": 391.13,
+    "approx_alpha_bps": 384.4,
+    "note": "Approximate marks only; no ledger or state mutation was made. Existing UNI, HYPE, AERO and ZEC framework positions remain HOLD/NO ADD this run."
+  },
+  "next_confirmation_triggers": [
+    "privileged upgrade/mint/pause/blacklist authority resolved and deemed acceptable",
+    "beneficial-owner concentration and protocol-controlled balances decomposed cleanly",
+    "fresh independently funded historically selective SYRUP accumulation",
+    "syrupUSDG utilization persists without subsidy/reward dependence",
+    "Maple revenue and SYRUP buybacks accelerate enough to create material token value capture relative to market cap",
+    "organic token liquidity/holder growth persists rather than merely following the RWA headline"
+  ],
+  "sources": [
+    "https://defillama.com/rwa/chain/robinhood-chain",
+    "https://defillama.com/protocol/maple",
+    "https://maple.finance/insights/syrupusdg",
+    "https://maple.finance/insights/maple-memo-september-2026",
+    "https://github.com/maple-labs/maple-docs/blob/master/maple-for-token-holders/mpl-token/faqs.md",
+    "https://sentinel.firepan.com/token/ethereum/0x643c4e15d7d62ad0abec4a9bd4b001aa3ef52d66",
+    "https://mrnasdog.com/research/syrup/inflation",
+    "https://www.coingecko.com/he/coins/maple-finance/historical_data",
+    "paper_portfolio/state.json",
+    "paper_portfolio/trades.jsonl"
+  ]
+}
