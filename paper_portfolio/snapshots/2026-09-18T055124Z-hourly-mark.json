@@ -1,0 +1,64 @@
+{
+  "timestamp_utc": "2026-09-18T05:51:24Z",
+  "type": "hourly_mark_no_trade_no_alert",
+  "cash_usd": 2416.8445783230713,
+  "trade_count": 8,
+  "last_trade_id": "TRIM-ZEC-20260917-224942Z",
+  "marks_usd": {
+    "BTC": 77383.47,
+    "ETH": 2450.0,
+    "SOL": 101.42,
+    "SUI": 0.754,
+    "BNB": 735.02,
+    "UNI": 7.77,
+    "HYPE": 83.47,
+    "AERO": 0.5822,
+    "ZEC": 1492.91
+  },
+  "position_values_usd": {
+    "BTC": 1957.6220890939958,
+    "ETH": 1956.97842531205,
+    "SOL": 981.0408202747523,
+    "SUI": 464.51453918186337,
+    "BNB": 494.4302435086099,
+    "UNI": 582.7796887407229,
+    "HYPE": 259.9518852810396,
+    "AERO": 255.80800684878838,
+    "ZEC": 758.6405848714232
+  },
+  "portfolio_nav_usd": 10128.610861436317,
+  "passive_benchmark_nav_usd": 9854.586117371271,
+  "alpha_vs_benchmark_usd": 274.0247440650455,
+  "alpha_vs_benchmark_bps": 278.06824234049327,
+  "cash_weight_pct": 23.86153284929197,
+  "position_weight_pct": {
+    "UNI": 5.753796810968411,
+    "HYPE": 2.566510737131591,
+    "AERO": 2.5255981333309196,
+    "ZEC": 7.490075344486501
+  },
+  "mark_sources": {
+    "BTC": "StatMuse/CoinGecko-derived hourly mark, 2026-09-18 03:00 UTC close",
+    "ETH": "ChainWatch/CoinGecko-derived mark, updated 2026-09-18 04:36 UTC",
+    "SOL": "ChainWatch/CoinGecko-derived mark, updated 2026-09-18 02:41 UTC",
+    "SUI": "OKX spot mark, updated 2026-09-18 01:40 UTC",
+    "BNB": "ChainWatch/CoinGecko-derived mark, updated 2026-09-18 03:36 UTC",
+    "UNI": "Contemporaneous Sep-18 market-screen mark from public CoinGecko-derived data",
+    "HYPE": "Bybit/CoinGecko-derived mark, updated 2026-09-18 05:41 UTC",
+    "AERO": "Public spot mark from GiaCoin/CoinGecko-derived market data during run",
+    "ZEC": "Bybit/CoinGecko-derived mark, updated 2026-09-18 04:10 UTC"
+  },
+  "notes": [
+    "No paper trade executed and no alert threshold crossed in this run.",
+    "Broad risk appetite is firmer, but the latest cross-market scan does not show a new clean ecosystem-level migration signal that satisfies capital-flow, wallet-quality and structural gates simultaneously.",
+    "ZEC remains HOLD/NO ADD after the Sep-17 trim. At this mark it is ~7.49% of NAV, essentially at but still inside the 7.5% non-core ceiling. Sep-18 Hyperliquid data shows ZEC open interest still near $916.6M, confirming that derivatives crowding remains elevated; no fresh independent selective spot accumulator or structural failure was verified.",
+    "HYPE remains HOLD/NO ADD. HYPE is still supported by HIP-3/Payward and AQAv2 value-capture theses, but no regulatory approval/live Payward volume, realized AQAv2 payment, renewed clean stablecoin inflow, or fresh independent selective-wallet cohort appeared in this scan.",
+    "UNI remains HOLD/NO ADD. UNI continues to show strong price/turnover persistence after the SEC tokenized-stock action, but no newly measurable U.S. tokenized-stock flow attributable to Uniswap or fresh independent selective-wallet convergence was verified.",
+    "AERO remains HOLD/NO ADD. Base/Aerodrome remains well positioned for tokenized-stock growth, but actual new U.S. flow has not yet appeared and incentive contamination remains material.",
+    "Robinhood Chain remains a high-activity mixed RWA/speculation regime: current tracked volume is still large and tokenized-stock secondary trading is substantive, but its wallet gas subsidy remains active through Sep 29, so raw user/transaction growth is discounted.",
+    "Arc remains speculative but not yet clean: first-day launchpad activity dominated volume, and no Arc-native token cleared both structural and independent-wallet gates.",
+    "DRIFT rose sharply on Sep 18, but the move lacks a newly verified ecosystem-capital catalyst or selective-wallet convergence; the token also has an Oct-16 unlock overhang. No entry.",
+    "COTI and AVA are rejected as clean rotation leaders for this run: COTI has a real Avalanche privacy product catalyst but no verified ecosystem-level capital migration, while AVA's move is dominated by extreme derivatives positioning/short-squeeze characteristics rather than durable discretionary spot leadership.",
+    "No real trade executed."
+  ]
+}
