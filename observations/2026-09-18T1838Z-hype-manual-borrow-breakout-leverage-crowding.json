@@ -1,0 +1,100 @@
+{
+  "timestamp_utc": "2026-09-18T18:38:00Z",
+  "classification": "HYPE_MANUAL_BORROW_BREAKOUT_CONFIRMATION_LEVERAGE_CROWDING_BLOCKS_ADD",
+  "ecosystem": "Hyperliquid",
+  "asset": "HYPE",
+  "contract_address": null,
+  "alert_threshold_crossed": true,
+  "summary": "The earlier manual-borrow utility thesis gained market and TVL confirmation as HYPE printed a new all-time high above $90 and Hyperliquid L1 TVL expanded sharply, but leverage crowding simultaneously increased and no clean new external-capital or selective-wallet confirmation appeared. HOLD / NO ADD.",
+  "ecosystem_regime_evidence": {
+    "hyperliquid_l1_tvl_usd": 1417000000,
+    "tvl_change_24h_pct": 9.35,
+    "stablecoin_supply_usd": 6886000000,
+    "stablecoin_change_7d_pct": -0.98,
+    "spot_dex_volume_24h_usd": 390660000,
+    "spot_dex_change_7d_pct": -4.53,
+    "perp_volume_24h_usd": 7182000000,
+    "perp_change_7d_pct": 0.36,
+    "rwa_active_aum_usd": 5850000,
+    "interpretation": "TVL confirmation is strong, but negative weekly stablecoin flow and declining weekly spot DEX activity mean this is not yet a clean broad external-capital migration signal. RWA remains immaterial to the thesis."
+  },
+  "product_catalyst": {
+    "manual_borrowing_live": true,
+    "collateral_assets": ["HYPE", "BTC"],
+    "borrow_assets": ["USDC", "USDT"],
+    "reported_combined_borrowed_assets_usd": 269000000,
+    "attribution_caveat": "The reported $269M figure covers the shared manual-borrow / portfolio-margin infrastructure and is not cleanly attributable to new manual-borrow demand."
+  },
+  "market_confirmation": {
+    "hype_price_usd_approx": 91.71,
+    "new_all_time_high_usd_approx": 91.81,
+    "price_change_24h_pct_approx": 10.54,
+    "token_volume_24h_usd_approx": 1540000000,
+    "interpretation": "The product launch has received genuine market confirmation, but a portion of the move is now leverage-sensitive and should not be treated as independent fundamental confirmation."
+  },
+  "derivatives_risk": {
+    "open_interest_usd_approx": 1970000000,
+    "earlier_same_day_open_interest_usd_approx": 1770000000,
+    "funding_positive": true,
+    "annualized_funding_range_pct_approx": [10.95, 21.3],
+    "modeled_long_liquidation_exposure_usd_approx": 897800000,
+    "modeled_short_liquidation_exposure_usd_approx": 943600000,
+    "interpretation": "OI expanded materially into the breakout and funding flipped/held positive. This raises two-sided liquidation reflexivity, especially now that HYPE can itself support borrowing collateral."
+  },
+  "wallet_quality": {
+    "rating": "MEDIUM_UNCHANGED",
+    "fresh_independent_selective_cohort_found": false,
+    "note": "Previously observed large accumulators remain supportive but are not recycled as new confirmation; no newly funded, historically selective independent HYPE cohort was verified in this run."
+  },
+  "value_capture": {
+    "manual_borrowing_direct_hype_holder_capture": false,
+    "existing_fee_buyback_aqav2_thesis": "unchanged",
+    "note": "Manual borrowing improves utility/composability, but it is not itself direct HYPE-holder revenue. Existing protocol fee/buyback and AQAv2 mechanisms remain the direct value-capture legs."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_MAJOR_CAVEATS",
+    "sellability_and_execution": "PASS",
+    "caveats": [
+      "low circulating value relative to FDV / future dilution",
+      "upcoming unlock and emission risk",
+      "rising derivatives open interest and positive funding",
+      "new HYPE-collateral liquidation feedback loop",
+      "manual-borrow versus portfolio-margin utilization is not cleanly decomposed",
+      "no fresh independent selective-wallet confirmation"
+    ]
+  },
+  "paper_portfolio_action": {
+    "action": "HOLD_NO_ADD",
+    "reason": "HYPE remains only about 2.7% of paper NAV, so sizing capacity exists. The no-add decision is driven by leverage crowding, absent fresh selective-wallet confirmation, and lack of clean stablecoin/spot-flow acceleration rather than by portfolio limits.",
+    "trade_executed": false,
+    "cash_usd": 2416.8445783230713,
+    "hype_quantity": 3.114315146532163,
+    "hype_average_cost_usd": 79.469025,
+    "paper_nav_usd_approx": 10545.32,
+    "passive_benchmark_nav_usd_approx": 10134.62,
+    "alpha_usd_approx": 410.70,
+    "alpha_bps_approx": 405.25
+  },
+  "next_confirmation_triggers": [
+    "clean split of manual-borrow demand versus existing portfolio-margin borrowing",
+    "HYPE share of posted collateral and borrowing utilization remaining elevated after launch novelty",
+    "renewed positive stablecoin inflows plus persistent spot/fee growth",
+    "derivatives OI/funding normalizing while price/usage persists",
+    "new genuinely independent historically selective HYPE accumulator cohort",
+    "first verifiable AQAv2 settlement on or after 2026-10-03"
+  ],
+  "risk_triggers": [
+    "disproportionate HYPE-collateral liquidations",
+    "rising OI/funding concurrent with stablecoin outflows and weak spot demand",
+    "structural/unlock deterioration"
+  ],
+  "sources": [
+    "https://defillama.com/chain/hyperliquid-l1",
+    "https://coinmarketcap.com/currencies/hyperliquid/",
+    "https://cointelegraph.com/markets/hype-ath-above-90-hyperliquid-manual-borrowing-lending",
+    "https://hyperinteldata.com/en/coin/hype",
+    "https://liqflow.app/coin/HYPE",
+    "paper_portfolio/state.json",
+    "paper_portfolio/trades.jsonl"
+  ]
+}
