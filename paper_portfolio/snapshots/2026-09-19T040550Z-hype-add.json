@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-09-19T04:05:50Z",
+  "event": "ADD-HYPE-20260919-040550Z",
+  "marks_usd": {
+    "BTC": 81127.89,
+    "ETH": 2620.52,
+    "SOL": 113.21,
+    "SUI": 0.8255,
+    "BNB": 759.60,
+    "UNI": 8.99,
+    "HYPE": 93.89,
+    "AERO": 0.6601,
+    "ZEC": 1529.93
+  },
+  "mark_notes": {
+    "HYPE": "CoinGecko live global USD volume-weighted spot observed prospectively at the decision timestamp.",
+    "other_assets": "Contemporaneous liquid-market marks used for portfolio and passive-benchmark comparison."
+  },
+  "cash_usd": 2148.6637607913553,
+  "positions": {
+    "BTC": {"quantity": 0.025297677774, "mark_value_usd": 2052.347219704517},
+    "ETH": {"quantity": 0.798766704209, "mark_value_usd": 2093.1841237137687},
+    "SOL": {"quantity": 9.673050880248, "mark_value_usd": 1095.086090152876},
+    "SUI": {"quantity": 616.067028092657, "mark_value_usd": 508.5633316904883},
+    "BNB": {"quantity": 0.672675904749, "mark_value_usd": 510.9646172473404},
+    "UNI": {"quantity": 75.003820944752, "mark_value_usd": 674.2843502933205},
+    "HYPE": {"quantity": 5.966367003050464, "mark_value_usd": 560.1821979164081},
+    "AERO": {"quantity": 439.381667552024, "mark_value_usd": 290.03583875109103},
+    "ZEC": {"quantity": 0.5081623037366105, "mark_value_usd": 777.4527533557526}
+  },
+  "portfolio_nav_usd": 10710.764283616918,
+  "passive_benchmark_nav_usd": 10260.14538250899,
+  "alpha_vs_benchmark_usd": 450.61890110792774,
+  "alpha_vs_benchmark_bps": 439.1934853828894,
+  "transaction_cost_usd": 0.40166872321275493
+}
