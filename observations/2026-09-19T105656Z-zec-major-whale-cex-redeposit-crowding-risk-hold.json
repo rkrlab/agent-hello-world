@@ -1,0 +1,74 @@
+{
+  "observed_at_utc": "2026-09-19T10:56:56Z",
+  "classification": "ZEC_MAJOR_WHALE_CEX_REDEPOSIT_DERIVATIVES_CROWDING_RISK_HOLD_NO_TRIM",
+  "ecosystem": "Zcash / privacy-asset spot and derivatives regime",
+  "asset": "ZEC",
+  "contract_address": null,
+  "alert_threshold_crossed": true,
+  "paper_action": "HOLD_NO_ADD_NO_TRIM",
+  "signal": {
+    "new_risk_evidence": [
+      "An Arkham-tracked large ZEC holder with roughly $363M of remaining/reported ZEC exposure transferred about $15M of ZEC to Coinbase late on Sept. 18 / early Sept. 19, its first reported centralized-exchange deposit in roughly 10 months.",
+      "This is a qualitatively different wallet signal from the fresh exchange-withdrawal accumulation clusters that supported the paper entry and subsequent adds: it is the first visible large-holder distribution/deposit signal after the recent price extension.",
+      "A CEX deposit is not proof of a sale. The transferred amount is only roughly 4% of the wallet's reported ZEC exposure, so it is treated as an early distribution-risk flag rather than confirmed thesis invalidation."
+    ],
+    "market_context": {
+      "zec_spot_price_usd": 1580.34,
+      "zec_24h_range_usd": [1437.73, 1590.80],
+      "zec_24h_spot_volume_usd": 1608000000,
+      "zec_spot_volume_day_over_day_pct": -24.4,
+      "recent_record_aggregate_open_interest_usd": 3470000000,
+      "current_aggregate_open_interest_usd_approx": 3200000000,
+      "current_aggregate_open_interest_24h_change_pct_approx": -6.14,
+      "hyperliquid_open_interest_usd_recent": 958900000,
+      "hyperliquid_funding_per_hour_recent": "+0.0013%",
+      "hyperliquid_funding_annualized_recent": "+11.0%",
+      "interpretation": "Price remains persistent near the 24h high and aggregate OI has eased somewhat from the record, but leverage remains exceptionally large while spot turnover is cooling. The whale exchange deposit therefore raises distribution/crowding risk without yet confirming a reversal."
+    },
+    "countervailing_evidence": [
+      "The previously frozen ZCSH institutional-flow confirmation remains supportive and is not invalidated by this single wallet transfer.",
+      "NU7 and shielded-pool adoption remain intact as separate thesis legs.",
+      "No evidence retrieved in this run shows that the deposited ZEC was actually sold, nor that the whale is broadly liquidating its remaining position."
+    ]
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "notes": "ZEC remains a native PoW asset with no token-contract honeypot/mint/LP-control failure. Privacy-coin regulatory/exchange-access risk, ongoing issuance, opaque beneficial ownership, and unusually large derivatives positioning remain the principal structural/market caveats."
+  },
+  "paper_portfolio": {
+    "source_of_truth": "paper_portfolio/state.json and paper_portfolio/trades.jsonl",
+    "zec_quantity": 0.5081623037366105,
+    "zec_average_cost_usd": 1202.7450996664215,
+    "zec_mark_price_usd": 1580.34,
+    "zec_mark_value_usd": 803.069215087115,
+    "zec_weight_pct_approx": 7.4735,
+    "cash_usd": 2030.3183658745413,
+    "trade_count": 10,
+    "portfolio_nav_usd_approx": 10745.540640197914,
+    "passive_benchmark_nav_usd_approx": 10270.081183619852,
+    "alpha_vs_benchmark_usd_approx": 475.4594565780626,
+    "alpha_vs_benchmark_bps_approx": 462.9558891281124,
+    "decision": "No paper trade. ZEC is just under the 7.5% non-core ceiling, but the wallet evidence is a deposit rather than a verified sale and aggregate OI has eased modestly from its record. Do not add. Do not trim solely on this first distribution-risk event; require confirmed follow-through such as additional whale CEX deposits/sales, renewed OI expansion, worsening funding/liquidation asymmetry, or a breach above the sizing ceiling."
+  },
+  "cross_ecosystem_scan_context": [
+    "Hyperliquid remains the strongest clean flow-persistence ecosystem from the prior HYPE add: stablecoin supply +4.37% over seven days, spot DEX volume +11.03% week/week and perp volume +26.46% week/week. No new independent confirmation in this run justified another HYPE add.",
+    "Robinhood Chain retains high absolute DEX activity and rising RWA AUM but seven-day DEX volume is down about 12.5% and the latest 24h net flow is slightly negative; the standing wallet gas subsidy remains an attribution contaminant.",
+    "Solana and Base spot DEX volume remain down materially week/week, so their tokenized-equity activity does not yet constitute a cleaner new speculative-capital rotation than the already-recorded signals.",
+    "Arbitrum shows a large positive 24h net-flow reading and improving DEX/perp activity, but seven-day stablecoin supply is down and the near-term ARB unlock/direct-value-capture caveats prevent a qualifying paper entry."
+  ],
+  "forward_tests": [
+    "Whether the t1Lyq-linked whale sends additional ZEC to Coinbase or other exchanges, and whether deposited ZEC can be linked to actual sales.",
+    "Whether other historically large/old ZEC holders begin depositing to exchanges, which would convert a single-wallet flag into a distribution cohort.",
+    "Whether aggregate ZEC open interest re-expands above the recent $3.47B record while price stalls or funding becomes more aggressively positive.",
+    "Whether ZCSH creations and fresh CEX-withdrawal accumulators continue strongly enough to absorb visible whale distribution.",
+    "Whether ZEC's marked paper weight rises above the 7.5% non-core ceiling, which would independently justify a mechanical risk trim absent a new scale authorization."
+  ],
+  "sources": [
+    "https://en.bloomingbit.io/feed/news/120653",
+    "https://www.coingecko.com/en/coins/zcash",
+    "https://trdesk.com/open-interest/zec",
+    "https://hyperacademy.io/en/markets/zec-perp",
+    "https://cryptorank.io/news/feed/92ca1-zcash-price-breaks-1500-as-short-sellers-face-heavy-losses"
+  ],
+  "hindsight_policy": "Observation frozen prospectively. No paper trade was executed. A later sale, rally, drawdown or further whale transfer must not be retroactively treated as known at this timestamp."
+}
