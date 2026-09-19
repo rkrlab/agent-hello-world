@@ -1,0 +1,162 @@
+{
+  "observation_id": "HYPE-20260919-040550Z-BROAD-FLOW-CONFIRMATION",
+  "timestamp_utc": "2026-09-19T04:05:50Z",
+  "classification": "HYPE_BROAD_FLOW_CONFIRMATION_FUNDING_NORMALIZATION_PAPER_ADD",
+  "ecosystem": "Hyperliquid",
+  "candidate": {
+    "asset": "HYPE",
+    "contract_address": null,
+    "mark_price_usd": 93.89,
+    "market_cap_usd_approx": 20886851910,
+    "fdv_usd_approx": 89661630281,
+    "token_volume_24h_usd_approx": 1828633558,
+    "token_volume_change_day_over_day_pct": 43.0,
+    "price_change_24h_pct": 8.3,
+    "price_change_7d_pct": 19.7,
+    "all_time_high_usd": 94.48
+  },
+  "signal_summary": "The Sep 18 HYPE manual-borrow breakout was previously blocked from a confirmation add by negative weekly stablecoin flow, declining weekly spot volume and sharply elevated perp funding. Those blockers have now materially improved at the same time: Hyperliquid stablecoin supply is +4.37% over seven days, spot DEX volume is +11.03% weekly, perp volume is +26.46% weekly, TVL remains higher, and HYPE funding normalized from the prior 59.1% annualized snapshot to about 11.0% while price/usage persisted at a fresh all-time high. This clears the prior explicitly recorded confirmation trigger. A 2.5% NAV PAPER add is executed prospectively, bringing HYPE only to roughly 5.23% of NAV rather than the 7.5% cap because OI remains high, the October 6 unlock is large, and no fresh independent selective-wallet cohort was verified.",
+  "ecosystem_regime_evidence": {
+    "tvl_usd": 1435000000,
+    "tvl_change_24h_pct": 4.40,
+    "stablecoin_supply_usd": 7221000000,
+    "stablecoin_change_7d_pct": 4.37,
+    "spot_dex_volume_24h_usd": 510650000,
+    "spot_dex_volume_7d_usd": 2044000000,
+    "spot_dex_weekly_change_pct": 11.03,
+    "perp_volume_24h_usd": 10607000000,
+    "perp_volume_7d_usd": 50828000000,
+    "perp_weekly_change_pct": 26.46,
+    "app_fees_24h_usd": 5110000,
+    "app_revenue_24h_usd": 2100000,
+    "active_addresses_24h": 10904,
+    "new_addresses_24h": 1280,
+    "transactions_24h": 529282,
+    "rwa_active_aum_usd": 6020000,
+    "rwa_interpretation": "RWA AUM remains immaterial to this thesis; this signal is crypto trading, stablecoin capital stock, credit/collateral utility and protocol fee activity, not RWA issuance or RWA secondary-trading growth.",
+    "relative_leadership": "Hyperliquid is the cleanest marginal improvement among the major speculative ecosystems checked in this run. Robinhood Chain still has much larger spot turnover but its seven-day DEX volume is -12.50% and 24h inflow is negative; Solana seven-day DEX volume is -22.13%, stablecoin supply -4.44% and 24h inflow -$17.01M."
+  },
+  "change_from_prior_hype_checkpoint": {
+    "prior_timestamp_utc": "2026-09-18T18:38:00Z",
+    "prior_stablecoin_change_7d_pct": -0.98,
+    "current_stablecoin_change_7d_pct": 4.37,
+    "prior_spot_dex_weekly_change_pct": -4.53,
+    "current_spot_dex_weekly_change_pct": 11.03,
+    "prior_perp_weekly_change_pct": 0.36,
+    "current_perp_weekly_change_pct": 26.46,
+    "prior_hype_funding_annualized_pct": 59.10,
+    "current_hype_funding_annualized_pct": 11.0,
+    "prior_hype_open_interest_usd": 1957714091,
+    "current_hype_open_interest_usd": 2010000000,
+    "interpretation": "The missing external-capital/spot-flow leg arrived and funding crowding improved sharply. OI did not normalize materially, so leverage risk remains a major caveat rather than a resolved issue."
+  },
+  "derivatives_quality": {
+    "snapshot_utc": "2026-09-19T01:45:00Z",
+    "hype_perp_price_usd": 93.159,
+    "funding_per_hour_pct": 0.0013,
+    "funding_annualized_pct": 11.0,
+    "open_interest_usd": 2010000000,
+    "perp_volume_24h_usd": 713900000,
+    "interpretation": "Funding fell from an extreme roughly 59.1% annualized prior snapshot to about 11.0% while price remained near record highs. This is materially healthier confirmation, but $2.01B OI still leaves meaningful two-sided liquidation reflexivity."
+  },
+  "flow_quality_and_incentive_attribution": {
+    "current_points_or_airdrop_program_found": false,
+    "points_history": "Hyperliquid's original points phase ended May 2024 and its L1 points phase ended November 2024.",
+    "routine_fee_incentives": "Referral discounts and maker rebates remain part of the standing fee schedule and are therefore not treated as zero incentive contamination.",
+    "classification": "MOSTLY_DISCRETIONARY_WITH_ROUTINE_FEE_INCENTIVES",
+    "reason": "The simultaneous stablecoin-stock increase, TVL growth, spot acceleration, perp acceleration and fee/revenue persistence is not primarily attributable to a new points, quest or airdrop campaign. Standing maker/referral economics are discounted but do not explain the abrupt change versus the prior checkpoint."
+  },
+  "wallet_quality": {
+    "rating": "MEDIUM_UNCHANGED",
+    "fresh_independent_selective_cohort_found": false,
+    "note": "No newly funded, historically selective independent HYPE spot-accumulator cohort was verified. Public whale headlines dominated by leveraged perp positions are not counted as selective spot accumulation."
+  },
+  "value_capture": {
+    "result": "DIRECT_MECHANISM_CONFIRMED",
+    "details": "Hyperliquid's standing fee architecture directs fees to community destinations including the Assistance Fund, which automatically converts trading fees to HYPE and burns the HYPE. CoinGecko reports about $2.97M of 24h Hyperliquid fees and $2.42M of project revenue at this checkpoint. Manual borrowing itself is utility rather than direct HYPE-holder interest income; the fee-funded burn is the direct capture leg."
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "reason": "HYPE has roughly $1.83B of 24h token turnover and broad venue depth. CoinGecko shows about $153K / $131K of +/-2% depth on the native HYPE/USDC venue alone, with substantially deeper CEX books. A roughly $268 paper add is trivial relative to executable liquidity; Tier A 0.15% simulated one-way cost applied."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_MAJOR_CAVEATS",
+    "hard_failures_found": [],
+    "caveats": [
+      "Market cap is about $20.9B versus roughly $89.7B FDV, leaving large dilution overhang.",
+      "Next scheduled unlock is October 6: 9.92M HYPE, about $931M at the current mark and 1% of total supply, allocated to Core Contributors.",
+      "$2.01B of HYPE perp open interest remains high despite funding normalization.",
+      "HYPE-backed manual borrowing creates a collateral-liquidation feedback channel during downside moves.",
+      "The reported $269M borrowed on launch infrastructure is not cleanly decomposed between manual borrowing and existing portfolio-margin borrowing.",
+      "No fresh independent selective-wallet cohort was verified."
+    ]
+  },
+  "why_now": "This is not an add simply because HYPE printed another all-time high. The Sep 18 no-add record named renewed stablecoin inflows plus persistent spot/fee growth and derivatives funding normalization as the specific confirmation needed. All three moved in the required direction before this trade: stablecoin growth flipped positive and strong, spot volume flipped from weekly contraction to expansion, perp activity accelerated, and funding fell from an extreme to a much more ordinary positive level. Because the wallet leg is still missing and the October 6 unlock is material, the position is increased by only one 2.5% confirmation tranche rather than to the 7.5% maximum.",
+  "paper_trade": {
+    "action": "ADD",
+    "trade_id": "ADD-HYPE-20260919-040550Z",
+    "gross_usd": 267.7791488085033,
+    "mark_price_usd": 93.89,
+    "quantity_added": 2.852051856518301,
+    "transaction_cost_rate": 0.0015,
+    "transaction_cost_usd": 0.40166872321275493,
+    "position_after_quantity": 5.966367003050464,
+    "position_average_cost_after_usd": 86.42988363030769,
+    "position_mark_value_after_usd": 560.1821979164081,
+    "position_weight_after_pct": 5.230086136553835,
+    "cash_after_usd": 2148.6637607913553,
+    "portfolio_nav_before_usd": 10711.16595234013,
+    "portfolio_nav_after_usd": 10710.764283616918,
+    "passive_benchmark_nav_usd": 10260.14538250899,
+    "alpha_vs_benchmark_usd": 450.61890110792774,
+    "alpha_vs_benchmark_bps": 439.1934853828894,
+    "real_trade": false
+  },
+  "portfolio_marks_usd": {
+    "BTC": 81127.89,
+    "ETH": 2620.52,
+    "SOL": 113.21,
+    "SUI": 0.8255,
+    "BNB": 759.60,
+    "UNI": 8.99,
+    "HYPE": 93.89,
+    "AERO": 0.6601,
+    "ZEC": 1529.93
+  },
+  "other_positions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD",
+    "SUI": "HOLD",
+    "BNB": "HOLD",
+    "UNI": "HOLD_NO_ADD",
+    "AERO": "HOLD_NO_ADD",
+    "ZEC": "HOLD_NO_ADD"
+  },
+  "major_uncertainties": [
+    "The positive stablecoin and volume changes need persistence after the manual-borrow launch novelty window.",
+    "Open interest remains extremely large even though funding normalized.",
+    "No new selective-wallet cohort independently confirms the add.",
+    "The October 6 Core Contributor unlock is a large near-term supply event.",
+    "Current social attention is elevated near an all-time high, so influencer-driven momentum is discounted rather than counted as confirmation."
+  ],
+  "sources": [
+    "https://defillama.com/chain/hyperliquid-l1",
+    "https://defillama.com/chain/robinhood-chain",
+    "https://defillama.com/chain/solana",
+    "https://www.coingecko.com/en/coins/hyperliquid",
+    "https://hyperacademy.io/en/markets/hype-perp",
+    "https://hyperliquid.gitbook.io/hyperliquid-docs/points",
+    "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees",
+    "paper_portfolio/state.json",
+    "paper_portfolio/trades.jsonl",
+    "observations/2026-09-18T1838Z-hype-manual-borrow-breakout-leverage-crowding.json"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  }
+}
