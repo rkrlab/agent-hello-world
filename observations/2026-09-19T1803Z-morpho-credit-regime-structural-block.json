@@ -1,0 +1,77 @@
+{
+  "timestamp_utc": "2026-09-19T18:03:02Z",
+  "classification": "MORPHO_CREDIT_INFRASTRUCTURE_REGIME_STRUCTURAL_GATE_NOT_CLEARED_NO_TRADE",
+  "ecosystem": "Morpho cross-chain credit infrastructure (Arc/Base/Ethereum/World)",
+  "candidate": {
+    "asset": "MORPHO",
+    "contract_address": "0x58D97B57BB95320F9A05dC918Aef65434969c2B2"
+  },
+  "regime_evidence": [
+    "Morpho went live on Circle Arc on 2026-09-16 as day-one credit infrastructure. Morpho's official post states about $2.8B of USDC deposits as of July; on Base, Coinbase products using Morpho had more than $1.4B active USDC loans and over $500M deposited in Coinbase Lend.",
+    "Zama opened 16 confidential Morpho vaults on 2026-09-15; the first confidential vault grew from zero to $40M TVL in seven weeks, with institutional/professional curators including Steakhouse, Armitage by Wintermute, Flowdesk, RockawayX and Bitwise.",
+    "World Money Earn uses Morpho for onchain lending, but World explicitly discloses Human boosted promotional rewards for verified users, limited to the first 1000 WLD and first 1000 USDC. World-derived adoption is therefore incentive-contaminated and is not treated as clean discretionary migration.",
+    "MORPHO's market repricing persisted into 2026-09-19 with CoinMarketCap showing approximately $2.66 and about $81.8M 24h turnover at the scan, after a much larger intraday acceleration earlier in the day."
+  ],
+  "rwa_usage_classification": "Credit/collateral utilization and embedded lending infrastructure, not RWA issuance/AUM. Do not count protocol deposits or vault TVL as tokenized-asset secondary trading. World Money activity is partially promotional-reward contaminated.",
+  "token_value_capture": {
+    "status": "weak",
+    "evidence": "DefiLlama currently reports $0 MORPHO holder revenue; current protocol usage therefore does not directly accrue to MORPHO holders through an enabled fee switch/buyback stream."
+  },
+  "wallet_quality": {
+    "rating": "LOW_TO_MEDIUM",
+    "evidence": "Deep Blue Alpha reports 83 tracked whale wallets with $17.9M accumulation-side flow versus $11.9M distribution-side flow over 30 days (+$6.02M net), but its aggregate mixes exchange withdrawals and DEX buys and does not establish beneficial-owner independence or historically selective profitability for the cohort. A separate Hyperliquid tracker earlier on Sep. 19 showed its graded smart-money cohort net short MORPHO, which argues against upgrading the wallet signal."
+  },
+  "attention_quality": "Fundamental product/news cluster is real, but current attention is also being amplified by momentum scanners, X/Telegram long setups and short-term trading channels; concentrated promotional momentum is discounted rather than counted as confirmation.",
+  "structural_gate": {
+    "result": "NOT_CLEARED_HARD_STOP",
+    "details": [
+      "Official morpho-token code states the token is EIP-1967 upgradeable.",
+      "DelegationToken inherits Ownable2StepUpgradeable and UUPSUpgradeable, and _authorizeUpgrade(address) is onlyOwner.",
+      "The current upgrade owner/control path was not resolved to a sufficiently constrained governance/timelock configuration in this run; under the framework's dangerous-permission gate, unresolved owner-authorized implementation upgrades block a paper entry.",
+      "Official code documentation says the new token has no role-based permission functions and initializes with a fixed 1B tokens minted to the Wrapper; no ordinary ongoing mint role was identified.",
+      "Raw onchain address concentration is high (top 10 addresses about 63.09% in a current rich-list snapshot), but that dataset explicitly includes exchanges, smart contracts and protocol reserves, so beneficial-owner concentration remains unresolved rather than presumed."
+    ]
+  },
+  "liquidity_executability": "PASS for paper size based on roughly $81.8M 24h token turnover, but structural gate overrides liquidity.",
+  "paper_decision": "NO_TRADE",
+  "paper_decision_rationale": "The protocol is emerging as credible cross-chain credit infrastructure and the token has price/volume confirmation, but World adoption is partially incentive-contaminated, direct MORPHO holder revenue is currently zero, wallet evidence is not independently selective, and owner-authorized UUPS upgrade control is unresolved. A high opportunity score cannot override the hard structural gate.",
+  "paper_portfolio_snapshot": {
+    "source_of_truth_trade_count": 10,
+    "cash_usd": 2030.3183658745413,
+    "approx_nav_usd": 10690.405724713411,
+    "approx_passive_benchmark_nav_usd": 10297.097399551625,
+    "approx_alpha_usd": 393.30832516178634,
+    "approx_alpha_bps": 381.96038155268155,
+    "marks": {
+      "BTC": 81457.13,
+      "ETH": 2647.06,
+      "SOL": 111.47,
+      "SUI": 0.8613,
+      "BNB": 762.87,
+      "UNI": 8.69,
+      "HYPE": 92.15,
+      "AERO": 0.6621,
+      "ZEC": 1492.41
+    }
+  },
+  "forward_tests": [
+    "Resolve the current MORPHO proxy owner and upgrade authority, including multisig composition/timelock/governance constraints, before structural clearance.",
+    "Require continued Arc/Base/Ethereum credit usage after launch novelty, while separating promotional World Money deposits from organic usage.",
+    "Look for direct MORPHO value-capture activation rather than assuming protocol growth accrues to the token.",
+    "Require a genuinely selective, independently funded accumulation cohort or repeat accumulation that survives funding-lineage checks.",
+    "Track holder concentration after identifying exchange, wrapper, treasury and protocol-contract addresses."
+  ],
+  "sources": [
+    "https://morpho.org/blog/morpho-is-live-on-arc-as-its-credit-infrastructure",
+    "https://www.theblock.co/news/defi/2026-09-15-zama-expands-confidential-morpho-lineup-after-first-vault-hits-40-million-launches-private-swaps-on-ethereum-414613",
+    "https://support.world.org/hc/en-us/articles/47022343436307-How-do-I-use-Earn",
+    "https://defillama.com/protocol/morpho",
+    "https://github.com/morpho-org/morpho-token",
+    "https://github.com/morpho-org/morpho-token/blob/main/src/DelegationToken.sol",
+    "https://www.coinlore.com/coin/morpho/richlist",
+    "https://deepbluealpha.io/token/MORPHO",
+    "https://liquidwhales.com/markets/MORPHO",
+    "https://coinmarketcap.com/currencies/morpho/"
+  ],
+  "hindsight_policy": "Observation, rejection rationale and forward tests frozen prospectively at scan time. No backdating and no real trade."
+}
