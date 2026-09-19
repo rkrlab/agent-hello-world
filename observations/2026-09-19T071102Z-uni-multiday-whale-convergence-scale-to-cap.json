@@ -1,0 +1,102 @@
+{
+  "observation_id": "UNI-20260919-071102Z-MULTIDAY-WHALE-CONVERGENCE",
+  "timestamp_utc": "2026-09-19T07:11:02Z",
+  "classification": "UNI_MULTIDAY_WHALE_BREADTH_PERSISTENCE_SCALE_TO_7P5_CAP",
+  "ecosystem": "Uniswap / multi-chain DEX infrastructure",
+  "candidate": {
+    "asset": "UNI",
+    "contract_address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+    "mark_price_usd": 9.16,
+    "price_change_24h_pct": 5.7,
+    "price_change_7d_pct": 47.2,
+    "token_volume_24h_usd": 1889836550.66,
+    "market_cap_usd": 5688789297
+  },
+  "signal_summary": "UNI's Sep 18 no-add decision was held back by marginal whale profit-taking after a sharp repricing and lack of a fresh broad confirmation leg. The completed Sep 18 Ethereum whale report now shows that the single seller was not representative of aggregate tracked-whale behavior: UNI ranked first for high-conviction accumulation with 385 whales and +$16.9M net flow, up from 321 whales / +$13.9M on Sep 17 and 252 whales / +$11.5M on Sep 16. Late-day accumulation also persisted. Uniswap continues to process multi-chain spot volume and route material holder revenue with trivial protocol incentives. This is enough persistence and breadth to justify a small prospective scale add only up to the 7.5% non-core cap, not a fresh 2.5% tranche.",
+  "wallet_quality": {
+    "rating": "MEDIUM_HIGH_BREADTH_WITH_INDEPENDENCE_CAVEAT",
+    "sep16_high_conviction_whales": 252,
+    "sep16_high_conviction_net_flow_usd": 11500000,
+    "sep17_high_conviction_whales": 321,
+    "sep17_high_conviction_net_flow_usd": 13900000,
+    "sep18_high_conviction_whales": 385,
+    "sep18_high_conviction_net_flow_usd": 16900000,
+    "sep18_uni_whale_volume_usd": 106900000,
+    "sep18_late_day_buyers": 27,
+    "sep18_late_day_net_flow_usd": 922200,
+    "historical_selectivity_verified_for_all_wallets": false,
+    "funding_lineage_independence_verified_for_all_wallets": false,
+    "note": "The source classifies the multi-whale signal as PENDING and does not prove that all tracked wallets are independent beneficial owners or historically selective. This is treated as strong breadth/persistence evidence, not hundreds of independent smart-money confirmations."
+  },
+  "protocol_usage_and_value_capture": {
+    "dex_volume_24h_usd": 3253000000,
+    "dex_volume_7d_usd": 20435000000,
+    "dex_volume_30d_usd": 81454000000,
+    "robinhood_chain_dex_volume_24h_usd": 1246000000,
+    "ethereum_dex_volume_24h_usd": 1078000000,
+    "base_dex_volume_24h_usd": 260670000,
+    "arbitrum_dex_volume_24h_usd": 218500000,
+    "polygon_dex_volume_24h_usd": 98000000,
+    "holders_revenue_24h_usd": 423780,
+    "holders_revenue_7d_usd": 3190000,
+    "holders_revenue_30d_usd": 15880000,
+    "protocol_incentives_24h_usd": 719.32,
+    "protocol_incentives_7d_usd": 26303.77,
+    "protocol_incentives_30d_usd": 177530.13,
+    "interpretation": "Usage is broader than Robinhood Chain alone, and protocol incentives are tiny relative to holder revenue and volume. Robinhood Wallet's temporary gas subsidy remains an external contamination variable, so Robinhood volume is discounted; Ethereum/Base/Arbitrum/Polygon execution and direct holder revenue provide independent confirmation."
+  },
+  "rwa_interpretation": "Robinhood stock-token activity is secondary trading rather than simple RWA issuance/AUM, but this trade decision is not based on RWA AUM. It is based on persistent multi-chain Uniswap execution volume, direct UNI-holder revenue, and multi-day whale breadth. Robinhood's gas subsidy remains discounted until it expires.",
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "hard_failures_found": [],
+    "caveats": [
+      "UNI governance and protocol upgradeability remain governance risks.",
+      "UNI has appreciated roughly 47% over seven days, creating near-term crowding/chase risk.",
+      "Tracked-whale breadth is strong but beneficial-owner independence and historical selectivity are not proven for every wallet.",
+      "A substantial portion of current Uniswap volume is on Robinhood Chain, where the temporary wallet gas subsidy remains an external activity contaminant."
+    ]
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "reason": "UNI has roughly $1.89B of 24h token turnover across 146 exchanges / 338 markets. A roughly $118 paper add is trivial relative to executable depth; Tier A 0.15% simulated one-way execution cost applies."
+  },
+  "why_now": "The framework prefers persistence over first-minute popularity. UNI's tracked high-conviction whale breadth expanded for three consecutive completed daily reports (252 -> 321 -> 385 wallets) while net accumulation strengthened ($11.5M -> $13.9M -> $16.9M), even after a visible individual whale took profit. Protocol execution and holder revenue persist across multiple chains. Because price is extended and wallet independence is not fully proven, the action is deliberately limited to topping the existing position from about 6.40% to exactly the 7.5% default non-core cap rather than adding another full 2.5% tranche.",
+  "paper_trade": {
+    "action": "ADD",
+    "trade_id": "ADD-UNI-20260919-071102Z",
+    "mark_price_usd": 9.16,
+    "gross_usd": 118.16814270276,
+    "quantity_added": 12.900452260126636,
+    "transaction_cost_rate": 0.0015,
+    "transaction_cost_usd": 0.17725221405414,
+    "position_after_quantity": 87.90427320487863,
+    "position_after_mark_value_usd": 805.2031425566882,
+    "position_after_weight_pct": 7.5,
+    "cash_after_usd": 2030.3183658745413,
+    "portfolio_nav_after_usd": 10736.04190075589,
+    "passive_benchmark_nav_usd": 10253.590509076103,
+    "alpha_vs_benchmark_usd": 482.4513916797878,
+    "alpha_vs_benchmark_bps": 470.5194646233819
+  },
+  "broader_scan": {
+    "hyperliquid": "Prior HYPE add conditions remain intact; no new structural failure or fresh selective-wallet cohort was verified, so no second add.",
+    "polygon": "Potential ecosystem regime watch: Polygon DEX volume is +135% week/week, perps +43.4%, 24h inflows +$17.28M and active addresses are elevated. POL is not paper-bought because the official token contract gives CAP_MANAGER_ROLE authority to set mintPerSecondCap to any uint256; this privileged unbounded mint-cap authority fails the hard structural permission gate.",
+    "arbitrum": "Arbitrum shows +$312.72M 24h inflow and +10.14% weekly DEX volume, but stablecoins are -5.46% over 7d and the Sep 23 ARB unlock plus weak direct holder value capture keep it below entry quality.",
+    "aerodrome_base": "AERO remains held, not added. Aerodrome's 7d incentives exceed 7d holder revenue, so weekly economics remain materially incentive-contaminated.",
+    "solana": "SOL price is rallying, but chain DEX volume remains down roughly 20% week/week and stablecoin stock is down 4.44%, so this is not a cleaner discretionary-capital migration signal.",
+    "bnb_chain": "BNB Chain has tokenized-equity and launchpad attention, but chain DEX volume remains sharply negative week/week. GENIUS attention is additionally contaminated by concentrated influencer promotion, so it is treated as risk rather than clean organic leadership."
+  },
+  "sources": [
+    "https://deepbluealpha.io/reports/ethereum-whale-report-2026-09-16",
+    "https://deepbluealpha.io/reports/ethereum-whale-report-2026-09-17",
+    "https://deepbluealpha.io/reports/ethereum-whale-report-2026-09-18",
+    "https://defillama.com/protocol/uniswap",
+    "https://www.coingecko.com/en/coins/uniswap",
+    "https://defillama.com/chain/polygon",
+    "https://github.com/0xPolygon/pol-token/blob/main/src/PolygonEcosystemToken.sol",
+    "https://defillama.com/protocol/aerodrome",
+    "https://defillama.com/chain/arbitrum",
+    "https://defillama.com/chain/hyperliquid-l1"
+  ],
+  "forward_checkpoints": {"1h": null, "4h": null, "24h": null, "7d": null}
+}
