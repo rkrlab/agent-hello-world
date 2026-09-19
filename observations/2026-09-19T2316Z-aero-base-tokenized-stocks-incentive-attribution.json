@@ -1,0 +1,72 @@
+{
+  "observed_at_utc": "2026-09-19T23:16:10Z",
+  "classification": "AERO_BASE_TOKENIZED_STOCK_VOLUME_PERSISTENCE_EXTERNAL_CASHBACK_AND_LP_INCENTIVE_CONTAMINATION_HOLD_NO_ADD",
+  "ecosystem": "Base / Aerodrome / Coinbase Tokenized Stocks",
+  "candidate": {
+    "asset": "AERO",
+    "contract_address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+    "paper_position_exists": true
+  },
+  "regime_evidence": {
+    "base_tokenized_stock_30d_dex_volume_usd": ">1000000000",
+    "aerodrome_tokenized_stock_volume_usd_reported": 852700000,
+    "prior_entry_checkpoint_aerodrome_tokenized_stock_volume_usd": 557100000,
+    "prior_entry_checkpoint_share_pct": 76.0,
+    "base_broad_dex_7d_change_pct": -14.53,
+    "base_stablecoin_7d_change_pct": 0.35,
+    "interpretation": "Tokenized-stock secondary trading has persisted and expanded even while broad Base spot DEX activity is contracting, reinforcing Aerodrome venue leadership. This is completed secondary trading, not RWA issuance/AUM."
+  },
+  "incentive_attribution": {
+    "status": "material contamination discovered; does not prove activity is primarily incentive-driven",
+    "direct_purchase_rewards": [
+      "1inch campaign: qualifying Coinbase tokenized-stock purchases held through each epoch receive 5% USDC cashback, with per-wallet campaign cap raised to $50 on Sep 8; campaign lasts 8 weeks from Aug 26.",
+      "KyberSwap Epoch 2 Sep 7-Sep 21: up to 4% USDC cashback, capped at $20 per address, with Merkl handling rewards."
+    ],
+    "liquidity_rewards": "Aerodrome tokenized-stock pools have explicit AERO LP rewards; observed pool APYs have at times been dominated by AERO reward APY rather than base trading-fee APY.",
+    "routing_note": "Aggregator/front-end qualifying purchases may route against Aerodrome liquidity, so external cashback can contribute to Aerodrome turnover even though DefiLlama protocol-incentive fields may not capture it.",
+    "why_not_reject_entire_regime": "Verified reward caps are small relative to >$1B of 30-day secondary turnover and require purchase/holding rather than unrestricted wash-volume rebates, while Aerodrome's venue share and absolute volume continued to grow. Incentives therefore contaminate causal attribution but are not sufficient evidence that the majority of turnover is reward-manufactured."
+  },
+  "token_value_capture": {
+    "mechanism": "Aerodrome routes trading fees from staked gauge liquidity to veAERO voters; value capture exists but requires vote-locking and coexists with continuous AERO emissions.",
+    "current_context": "Current DefiLlama Base holder-revenue tables continue to show Aerodrome as a major direct holder-revenue source, but native emissions and external tokenized-stock incentives must be netted/discounted when assessing economic quality."
+  },
+  "wallet_quality": {
+    "rating": "LOW-MEDIUM for a scale add",
+    "note": "The prior Nansen-attributed 30-day smart-money balance increase remains supportive, but no fresh independently funded, historically selective accumulator cohort was verified in this run."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_MAJOR_CAVEATS",
+    "caveats": [
+      "continuous weekly AERO emissions / dilution",
+      "governance and minter architecture",
+      "incomplete beneficial-owner independence for observed smart-money wallets",
+      "tokenized-stock LP and purchase-reward incentive contamination"
+    ]
+  },
+  "paper_decision": {
+    "action": "HOLD_NO_ADD",
+    "rationale": "The venue-leadership and secondary-volume thesis strengthened, but the newly verified external purchase-cashback and LP-reward layers reduce confidence that the observed acceleration is clean discretionary migration. With no fresh selective-wallet confirmation, scaling is blocked until activity persists after the current incentive epochs or can be measured net of rewarded flow.",
+    "paper_trade_executed": false,
+    "real_trade_executed": false
+  },
+  "source_of_truth_before_decision": {
+    "paper_portfolio_state_read": true,
+    "immutable_trade_ledger_read": true,
+    "cash_usd": 2030.3183658745413,
+    "aero_quantity": 439.381667552024,
+    "aero_average_cost_usd": 0.5615586,
+    "trade_count": 10,
+    "last_trade_id": "ADD-UNI-20260919-071102Z"
+  },
+  "forward_tests": {
+    "checkpoint_1": null,
+    "checkpoint_2": null,
+    "checkpoint_3": null,
+    "tests": [
+      "Measure Aerodrome tokenized-stock secondary turnover and venue share after the Sep 21 KyberSwap Epoch 2 boundary and, ideally, after broader multi-app cashback campaigns wind down.",
+      "Separate fee-derived base APY/holder revenue from AERO-emission and external USDC-reward components.",
+      "Require a fresh independently funded selective-wallet accumulator cohort before another AERO scale tranche.",
+      "Watch whether Base tokenized-stock turnover stays elevated despite broad Base spot DEX contraction; persistence would argue against rewards as the dominant explanation."
+    ]
+  }
+}
