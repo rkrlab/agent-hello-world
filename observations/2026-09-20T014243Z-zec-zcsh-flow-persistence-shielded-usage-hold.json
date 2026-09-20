@@ -1,0 +1,89 @@
+{
+  "observed_at_utc": "2026-09-20T01:42:43Z",
+  "classification": "ZEC_ZCSH_NET_CREATION_PERSISTENCE_SHIELDED_FLOW_CONFIRMATION_OFFSETS_SINGLE_WHALE_DEPOSIT_HOLD_NO_ADD",
+  "ecosystem": "Zcash / regulated spot access + shielded-pool usage",
+  "asset": "ZEC",
+  "contract_address": null,
+  "alert_threshold_crossed": true,
+  "paper_action": "HOLD_NO_ADD_NO_TRIM",
+  "signal": {
+    "new_confirmation": [
+      "SoSoValue data reported by CryptoSlate now puts cumulative ZCSH net inflows at $270.95M and net assets at $914.53M as of Sept. 19. The prior frozen Sept. 18 observation used >$233M cumulative net inflows, so the reported cumulative net-flow total has increased by at least ~$37.95M (~16%) since that checkpoint.",
+      "This comparison uses cumulative NET INFLOWS, not the ETF's $914.53M asset value. The asset value is substantially inflated by ZEC price appreciation and is not treated as fresh capital migration.",
+      "zecmetrics currently reports 4.92M ZEC in shielded pools, +12.1% month-to-date, with +21,112 ZEC net shielded inflow over seven days. Shielding is on-chain usage/migration, not proof of new buying, so it is treated as an independent usage confirmation rather than another capital-inflow dollar figure.",
+      "A fresh search found no evidence that the t1Lyq whale made a second CEX deposit after the previously frozen ~$15M Coinbase transfer. The prior distribution warning has therefore not broadened into a verified multi-wallet distribution cohort yet."
+    ],
+    "quality_adjustments": [
+      "The full $270.95M ZCSH cumulative net-flow total is not treated as fully independent discretionary demand. A previously disclosed ~$100M DCG International in-kind contribution remains embedded in cumulative flows and ultimate beneficial-owner independence of subsequent creations is not fully observable.",
+      "The incremental ~$37.95M versus the prior frozen observation is not publicly attributed to DCG in the sources retrieved here, but beneficial-owner independence still cannot be proven.",
+      "ZCSH trading turnover is deliberately excluded from the capital-migration score because repeated arbitrage and secondary trading can generate large turnover without new fund creations.",
+      "The 3-for-1 ZCSH share split remains economically neutral and is not counted as value creation or demand."
+    ],
+    "risk_context": [
+      "ZEC derivatives remain crowded: current reporting still cites aggregate futures open interest around the recent ~$3.5B record and >$10B futures turnover. This prevents the new fund-flow confirmation from clearing another add threshold.",
+      "The prior t1Lyq ~$15M Coinbase deposit remains a valid distribution-risk flag even though no follow-through was found in this run.",
+      "ZEC remains near record price territory and carries privacy-coin regulatory/exchange-access risk and ongoing issuance."
+    ],
+    "interpretation": "The balance of evidence has shifted modestly back toward thesis support after the Sept. 19 distribution warning: regulated net creations continued and shielded-pool usage is rising, while the flagged whale has not yet produced visible follow-through. This is meaningful persistence/absorption evidence, but not enough to add because leverage remains exceptional and the paper position is already near the non-core ceiling."
+  },
+  "cross_ecosystem_scan": [
+    "Hyperliquid remains the cleanest continuation regime: stablecoin supply ~$7.255B (+5.23% 7d), spot DEX volume +10.07% week/week, and perp volume +23.43% week/week. No new independent selective-wallet confirmation justified scaling HYPE beyond the Sept. 19 tranche.",
+    "Robinhood Chain remains large in absolute activity and RWA usage: RWA active AUM ~$299M with ~$198.5M DeFi-active (~66.4% utilization), but DEX volume is down ~12.3% week/week and the gas-subsidy caveat remains. Maple syrupUSDG remains ~99.9% utilized but SYRUP's structural gate remains unresolved.",
+    "Base remains in spot-volume contraction (~-13.6% week/week), so the AERO tokenized-stock pocket remains a relative-strength niche rather than a broad-chain speculative migration; external cashback/emission contamination still blocks an add.",
+    "Solana DEX volume remains down ~8.9% week/week despite a 24h rebound; this is not yet a clean renewed ecosystem rotation.",
+    "Arbitrum shows improving activity (+10.1% DEX and +13.7% perps week/week, plus a large 24h inflow reading) but stablecoin supply is -5.47% over seven days and ARB still lacks a clean direct-value-capture/structural setup for this framework.",
+    "Polygon is the standout raw-volume acceleration (+135% DEX and +43.4% perps week/week, ~$17.3M 24h inflow), but stablecoin supply is roughly flat and causal attribution is not yet clean. POL remains structurally ineligible under the previously frozen hard gate because privileged CAP_MANAGER_ROLE can alter mint capacity; the announced 100M POL burn does not override that gate.",
+    "BSC DEX volume is -37.7% week/week and Avalanche is -28.6%; neither is a clean new rotation leader in this scan."
+  ],
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "notes": "ZEC is a native PoW asset, so token-contract honeypot/mint/freeze/LP-control checks do not apply. Remaining structural/market caveats are privacy-coin regulatory and exchange-access risk, ongoing issuance, opaque beneficial ownership in ETF/wallet channels, and exceptional derivatives leverage."
+  },
+  "paper_portfolio": {
+    "source_of_truth": "paper_portfolio/state.json and paper_portfolio/trades.jsonl",
+    "cash_usd": 2030.3183658745413,
+    "trade_count": 10,
+    "zec_quantity": 0.5081623037366105,
+    "zec_average_cost_usd": 1202.7450996664215,
+    "zec_mark_price_usd_approx": 1534.24,
+    "zec_mark_value_usd_approx": 779.63,
+    "zec_weight_pct_approx": 7.28,
+    "portfolio_nav_usd_approx": 10714.94,
+    "passive_benchmark_nav_usd_approx": 10249.38,
+    "alpha_vs_benchmark_usd_approx": 465.56,
+    "alpha_vs_benchmark_bps_approx": 454.2,
+    "decision": "No paper trade. Hold ZEC; do not add into record leverage and prior whale-distribution risk. Do not trim because the single whale warning has not broadened and incremental regulated net creations plus shielded-pool migration provide meaningful absorption confirmation."
+  },
+  "forward_tests": [
+    "Whether ZCSH cumulative net creations continue to rise after Sept. 19 and after split-adjusted trading begins Sept. 30, with no new affiliate/in-kind attribution.",
+    "Whether t1Lyq or other old/large ZEC holders make additional CEX deposits or can be linked to actual sales.",
+    "Whether aggregate futures OI and positive funding cool materially while spot/fund demand persists; that would improve scale quality.",
+    "Whether seven-day shielded-pool net inflow persists rather than reversing after the price extension.",
+    "NU7 testnet Oct. 6 and targeted mainnet activation Nov. 5 remain separate technical checkpoints."
+  ],
+  "mark_sources": {
+    "BTC": 81034.12,
+    "ETH": 2620.45,
+    "SOL": 112.37,
+    "SUI": 0.8256,
+    "BNB": 759.20,
+    "UNI": 9.16,
+    "HYPE": 93.85,
+    "AERO": 0.66104,
+    "ZEC": 1534.24
+  },
+  "sources": [
+    "https://cryptoslate.com/zecs-100-rally-above-1500-sends-grayscales-zcash-etf-within-85-million-of-1-billion/",
+    "https://www.zecmetrics.io/",
+    "https://defillama.com/chain/hyperliquid-l1",
+    "https://defillama.com/chain/robinhood-chain",
+    "https://defillama.com/rwa/chain/robinhood-chain",
+    "https://defillama.com/chain/base",
+    "https://defillama.com/chain/solana",
+    "https://defillama.com/chain/arbitrum",
+    "https://defillama.com/chain/polygon",
+    "https://defillama.com/chain/bsc",
+    "https://defillama.com/chain/avalanche"
+  ],
+  "hindsight_policy": "Observation frozen prospectively. No paper trade was executed. Subsequent ZEC price moves, ETF flows, whale sales, shielded migration, or liquidations must not be retroactively treated as known at this timestamp."
+}
