@@ -1,0 +1,37 @@
+{
+  "timestamp_utc": "2026-09-20T16:35:32Z",
+  "classification": "ZEC_LONG_LIQUIDATION_CLUSTER_SELECTIVE_TRADER_FLIP_RISK_HOLD_NO_TRIM",
+  "ecosystem": "Zcash / Hyperliquid derivatives",
+  "asset": "ZEC",
+  "contract_address": null,
+  "paper_portfolio_action": "HOLD_NO_ADD_NO_TRIM",
+  "current_mark": {
+    "price_usd": 1445.29,
+    "source": "CoinGecko ZEC/USD live global volume-weighted spot across 49 exchanges / 83 markets",
+    "position_quantity": 0.5081623037366105,
+    "position_mark_value_usd": 734.4418959674858,
+    "approx_position_weight_pct": 6.999
+  },
+  "material_new_risk_evidence": [
+    "Four Hyperliquid whale addresses were reported holding a combined 11,909.98 ZEC of leveraged longs, approximately $17.98M at the report mark, with estimated liquidation prices from $1,374.16 to $1,411.99. The nearest liquidation level was about 2.3% below spot when reported and remains close to the current mark.",
+    "Address 0xcbab already reduced roughly $5.245M of ZEC long exposure but reportedly retained about $12.921M, showing actual de-risking rather than a purely theoretical liquidation map.",
+    "A separate Hyperliquid wallet, 0x469e9a7f624b04c24f0e64edf8d8a277e6bf58a5, flipped from a profitable ZEC long earlier in the month to a current 2,972.96-ZEC short and placed 25 additional ZEC sell orders from $1,600-$1,800 totaling about $3.45M. Binance/BlockBeats report the wallet has won its last 12 closed positions and has about $17.68M overall realized PnL, but independent trackers disagree on exact win-rate/PnL figures and at least one tags it as high-frequency, so this evidence is materially downweighted rather than treated as verified selective smart-money consensus.",
+    "The previously recorded t1Lyq legacy-holder $15M Coinbase deposit, its first CEX deposit in roughly 10 months, remains an unresolved distribution warning; no confirmed subsequent sale was found in this run."
+  ],
+  "countervailing_evidence": [
+    "The previously recorded ZCSH regulated-market net-creation trend and shielded-pool growth/use have not been invalidated in this run.",
+    "ZEC remains deeply executable on major venues; CoinGecko shows multi-million-dollar +/-2% depth at Binance and Coinbase and roughly $1.1B of 24h turnover.",
+    "No protocol-level structural failure, supply-cap change, sellability issue, or new privacy-regulatory delisting event was found."
+  ],
+  "structural_gate": "PASS_WITH_CAVEATS",
+  "decision_rationale": "Risk quality has worsened because the derivatives regime has rotated from a primarily short-squeeze setup toward identifiable long-liquidation fragility while a separate profitable trader has flipped short and a legacy spot holder recently sent ZEC to Coinbase. This crosses the alert threshold but not the paper-trim threshold yet: no liquidation level has been breached, no second legacy spot-distribution cohort is confirmed, the current paper position is below the 7.5% non-core cap, and the institutional/shielded-use legs remain intact. Do not mechanically trim on liquidation-map proximity alone.",
+  "forward_tests": [
+    "If ZEC trades through approximately $1,412 and the identified Hyperliquid longs are actually liquidated or materially force-reduced, reassess for a prospective risk trim at the then-current mark.",
+    "If t1Lyq is confirmed selling or a second independent legacy spot holder deposits meaningful ZEC to a CEX while spot volume/liquidity weakens, upgrade distribution evidence and reassess for a trim.",
+    "If aggregate derivatives leverage remains elevated while spot turnover continues to contract and price/holder persistence breaks, treat this as a stronger crowding reversal.",
+    "If ZEC holds above the liquidation cluster while ZCSH externally sourced net creations persist and derivatives OI/funding cool, downgrade the risk warning and retain the position."
+  ],
+  "paper_portfolio_trade": null,
+  "real_trade": null,
+  "notes": "No paper trade was executed and no real trade was executed. This record is frozen prospectively before any later outcome is known."
+}
