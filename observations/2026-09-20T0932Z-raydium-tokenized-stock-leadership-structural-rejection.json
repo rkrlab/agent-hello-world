@@ -1,0 +1,138 @@
+{
+  "observed_at_utc": "2026-09-20T09:32:00Z",
+  "classification": "RAY_TOKENIZED_STOCK_VENUE_LEADERSHIP_STONK_REWARD_CONTAMINATION_STRUCTURAL_REJECTION_NO_TRADE",
+  "alert": true,
+  "paper_action": "NO_TRADE",
+  "real_trade": false,
+  "ecosystem": [
+    "Solana",
+    "tokenized-equity DEX infrastructure",
+    "launchpad/speculative trading"
+  ],
+  "candidate": {
+    "asset": "RAY",
+    "contract_address": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+    "mark_price_usd": 1.66,
+    "market_cap_usd": 447118000,
+    "fdv_usd": 919965000,
+    "market_cap_to_fdv": 0.49,
+    "volume_24h_usd": 61932000,
+    "tvl_usd": 1232000000,
+    "price_change_7d_pct": 8.0,
+    "price_change_30d_pct": 130.4
+  },
+  "ecosystem_regime": {
+    "solana_stablecoin_mcap_usd": 15492000000,
+    "solana_stablecoin_change_7d_pct": -4.42,
+    "solana_dex_volume_24h_usd": 3099000000,
+    "solana_dex_volume_7d_usd": 16760000000,
+    "solana_dex_weekly_change_pct": -11.07,
+    "solana_perp_volume_7d_usd": 11520000000,
+    "solana_perp_weekly_change_pct": 17.13,
+    "solana_net_inflow_24h_usd": -3110000,
+    "interpretation": "Solana is not in a broad spot/stablecoin discretionary-inflow regime. RAY is a pocket-of-leadership thesis inside a chain whose stablecoin stock and weekly DEX volume are contracting."
+  },
+  "secondary_trading_evidence": {
+    "raydium_tokenized_stock_volume_q3_2026_through_sep18_usd": 2300000000,
+    "qoq_growth_pct": 40,
+    "xstocks_total_sol_volume_milestone_usd": 6000000000,
+    "xstocks_share_of_sol_tokenized_stock_history_pct": 54,
+    "sep15_xstocks_30d_dex_volume_usd": 1000000000,
+    "sep15_raydium_xstocks_30d_volume_usd": 805200000,
+    "sep15_raydium_xstocks_share_pct": 80.5,
+    "current_segment_share_note": "Raydium/industry reporting on Sep 19 says Raydium pools route more than 90% of the combined Solana memestock + tokenized-stock DEX segment and have processed more than $5B of trades. This combined metric is not treated as 90% of all Solana DEX activity and is not treated as pure tokenized-equity volume.",
+    "rwa_distinction": "These figures are completed secondary DEX trading volume, not tokenized-stock issuance/AUM. They therefore carry more usage information than RWA AUM alone, while still requiring incentive/wash-quality checks."
+  },
+  "incentive_filter": {
+    "result": "MIXED_MATERIAL_CONTAMINATION",
+    "stonkfun": "StonkFun has an active STONK holder airdrop with a Sep 10 snapshot and Sep 30 claim deadline. Separate reporting says StonkFun distributed more than $40M of rewards to ecosystem holders while cumulative platform trading volume exceeded $2.6B. StonkFun-related volume is therefore materially incentive/airdrop contaminated and is discounted rather than counted as clean discretionary speculation.",
+    "tokenized_stocks": "The separately measured xStocks/tokenized-equity secondary-trading leg is the cleaner evidence. No equivalently large trading-reward program was verified for the measured Raydium xStocks volume in this run.",
+    "conclusion": "The combined >90% memestock + tokenized-stock share is not sufficient on its own. The tokenized-stock-only evidence still establishes meaningful venue leadership after discounting StonkFun."
+  },
+  "value_capture": {
+    "mechanism": "Raydium documentation allocates 12% of swap fees across CLMM, CPMM and Standard AMM v4 to open-market RAY buybacks. DefiLlama additionally attributes 25% of LaunchLab protocol fees to RAY buyback-and-burn.",
+    "holder_revenue_24h_usd": 154484,
+    "holder_revenue_7d_usd": 1100000,
+    "holder_revenue_30d_usd": 3440000,
+    "protocol_revenue_24h_usd": 270447,
+    "protocol_revenue_7d_usd": 1740000,
+    "quality": "Direct token demand is real and mechanically linked to protocol fee generation, but a large part of historical bought-back RAY is parked in a protocol-controlled wallet rather than permanently burned."
+  },
+  "wallet_quality": {
+    "rating": "LOW_TO_MEDIUM",
+    "reason": "No fresh independently funded, historically selective RAY spot-accumulator cohort was verified in this run. Earlier September activity reports showed strong protocol user/transaction growth but also persistent RAY spot selling, so protocol usage is not treated as proof of selective-token accumulation."
+  },
+  "social_news_quality": {
+    "rating": "MIXED",
+    "positive": "Tokenized-stock market-share and Q3 volume evidence is supported by Token Terminal-derived reporting and a real Sep 17 SEC tokenized-stock exemption catalyst.",
+    "risk": "RAY is already +130% over 30 days and has substantial narrative attention. Current price has pulled back sharply from the recent spike, so promotional/influencer attention is not counted as confirmation."
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "reason": "CoinGecko reports about $61.9M of 24h RAY turnover across 73 exchanges / 148 markets and Raydium TVL near $1.232B. A normal 2.5% paper starter would be executable at modeled mid-cap slippage if the structural gate passed."
+  },
+  "structural_gate": {
+    "result": "FAIL_HARD_REJECTION",
+    "token_authorities": "Third-party onchain inspection reports RAY mint authority revoked and freeze authority revoked, so ordinary supply inflation/freeze abuse is not the blocker.",
+    "program_governance": "Raydium's 2026 MiCA whitepaper says program upgrades remain controlled by a 3-of-4 Squads multisig with a mandatory 24-hour timelock rather than an immutable/null upgrade authority. This is constrained but still privileged control.",
+    "concentration_and_control": [
+      "A current supply-control analysis attributes about 282.66M RAY across five project vaults to one project key. Those vaults reportedly have not moved in the recent monitoring window, but the control concentration remains material.",
+      "The same analysis attributes about 86.25M RAY to the public buyback wallet; it is not locked, is controlled by one key, and has historical outbound transfers. At the current ~269.74M circulating supply this is roughly 32% of current float, even though it is protocol-funded inventory rather than an independent whale.",
+      "Because the user framework treats unresolved/privileged supply control and concentration as a hard structural gate, the fee/value-capture score cannot override this risk."
+    ],
+    "decision": "Do not paper-buy RAY unless the buyback wallet disposition/control and project-vault governance are sufficiently constrained or otherwise resolved under the framework."
+  },
+  "leadership_assessment": {
+    "ecosystem_signal": "MEANINGFUL",
+    "token_signal": "REJECTED_BY_STRUCTURAL_GATE",
+    "reason": "Raydium has emerged as a leading Solana venue for actual tokenized-equity secondary trading and captures real fees that create RAY buyback demand. However broad Solana spot/stablecoin flows are weak, StonkFun contaminates the combined speculative-volume metric, selective-wallet confirmation is absent, and concentrated protocol control of large RAY balances fails the hard structural gate."
+  },
+  "existing_paper_position_impact": {
+    "SOL": "HOLD_NO_ADD_NO_TRIM. The Raydium pocket is positive for Solana usage, but broad Solana stablecoin and DEX trends remain weak and the oracle-migration checkpoint remains unresolved.",
+    "AERO": "HOLD_NO_ADD_NO_TRIM. Raydium is a serious tokenized-stock venue competitor, but current Base/Aerodrome and Solana/Raydium measurements use different periods and product mixes, so this run does not establish that AERO's Base venue leadership has been displaced."
+  },
+  "paper_portfolio_source_of_truth": {
+    "cash_usd": 2030.3183658745413,
+    "trade_count": 10,
+    "last_trade_id": "ADD-UNI-20260919-071102Z",
+    "state_read_before_decision": true,
+    "immutable_trade_ledger_read_before_decision": true
+  },
+  "portfolio_mark_snapshot": {
+    "marks_usd": {
+      "BTC": 80360.33,
+      "ETH": 2618.53,
+      "SOL": 108.43,
+      "SUI": 0.8216,
+      "BNB": 749.55,
+      "UNI": 8.79,
+      "HYPE": 90.65,
+      "AERO": 0.6494,
+      "ZEC": 1440.27
+    },
+    "approx_nav_usd": 10544.81,
+    "approx_passive_benchmark_nav_usd": 10183.74,
+    "approx_alpha_usd": 361.07,
+    "approx_alpha_bps": 354.6
+  },
+  "forward_tests": [
+    "Track tokenized-stock-only Raydium volume/share separately from StonkFun/memestock activity and require persistence after current launch/airdrop attention cools.",
+    "Resolve the legal/onchain control and permitted disposition of the large project vault balances and the buyback wallet before reconsidering RAY under the hard structural gate.",
+    "Verify whether the buyback wallet becomes timelocked, burned, DAO-controlled, or otherwise credibly constrained; do not infer supply retirement merely because tokens were repurchased.",
+    "Require a fresh independently funded, historically selective RAY accumulator cohort rather than protocol users, generic whales, or high-frequency traders.",
+    "Watch whether Solana stablecoin balances and weekly spot DEX volume turn positive; current tokenized-stock strength is a pocket, not a broad chain-capital migration.",
+    "Compare Raydium and Aerodrome tokenized-equity secondary volume on like-for-like windows before declaring cross-chain venue leadership rotation."
+  ],
+  "sources": [
+    "https://solanacompass.com/news/xstocks-crosses-6-billion-in-solana-tokenized-stock-volume-as-raydium-q3-tops-23b",
+    "https://solanacompass.com/news/raydium-routes-90-of-solanas-tokenized-stock-dex-volume-with-5b-processed-as-september-sets-onchain-ath",
+    "https://docs.raydium.io/raydium/protocol/protocol-fees",
+    "https://defillama.com/holders-revenue",
+    "https://defillama.com/revenue",
+    "https://assets.bitstamp.net/docs/whitepaper/RAY_2026_05_29.xhtml",
+    "https://mrnasdog.com/research/ray",
+    "https://www.coingecko.com/en/coins/raydium",
+    "https://www.reuters.com/world/us-securities-regulator-rolls-out-five-year-exemption-tokenized-stock-trading-2026-09-17/"
+  ],
+  "no_hindsight": "This record was written prospectively at the current observable RAY mark. No paper trade is backdated to the earlier Raydium/tokenized-stock move."
+}
