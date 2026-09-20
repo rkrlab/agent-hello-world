@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-09-20T12:32:59Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 2030.3183658745413,
+  "marks_usd": {
+    "BTC": 80332.0,
+    "ETH": 2635.31,
+    "SOL": 109.49,
+    "SUI": 0.8256,
+    "BNB": 759.20,
+    "UNI": 8.72,
+    "HYPE": 90.65,
+    "AERO": 0.640,
+    "ZEC": 1453.0
+  },
+  "mark_sources": {
+    "BTC": "OKX BTC/USD current page crawled 2026-09-20; best contemporaneous web mark available in run",
+    "ETH": "OKX ETH/USD Sep 20 historical/live page; best contemporaneous web mark available in run",
+    "SOL": "DefiLlama Solana chain live snapshot in run",
+    "SUI": "CoinLore SUI/USD live multi-exchange normalized snapshot, updated 2026-09-20 04:56 UTC",
+    "BNB": "CoinMarketCap BNB/USD live conversion snapshot available in run",
+    "UNI": "Coinranking UNI/USD current-day live/historical snapshot crawled 2026-09-20",
+    "HYPE": "DefiLlama Hyperliquid L1 live chain/token snapshot in run",
+    "AERO": "CoinMarketCap AERO price-analysis live mark, 2026-09-20 03:18 UTC",
+    "ZEC": "CoinLore ZEC/USD live multi-exchange normalized snapshot, updated 2026-09-20 05:02 UTC"
+  },
+  "position_values_usd": {
+    "BTC": 2032.213050940968,
+    "ETH": 2104.99788326902,
+    "SOL": 1059.1023408783535,
+    "SUI": 508.6249383932976,
+    "BNB": 510.6955468854408,
+    "UNI": 766.5252623465418,
+    "HYPE": 540.8511688265246,
+    "AERO": 281.20426723329535,
+    "ZEC": 738.3598273292951
+  },
+  "portfolio_nav_usd": 10572.89265197728,
+  "passive_benchmark_nav_usd": 10215.63376036708,
+  "alpha_vs_benchmark_usd": 357.2588916101995,
+  "alpha_vs_benchmark_bps": 349.7177952837682,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD_CHAIN_SPOT_AND_STABLECOIN_CONTRACTION",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_GROWTH_NOT_CONFIRMED_BY_SPOT_DEX",
+    "BNB": "HOLD_NO_ADD_BSC_DEX_CONTRACTION",
+    "UNI": "HOLD_NO_ADD_NEAR_DEFAULT_NONCORE_CAP_NO_NEW_CONFIRMATION",
+    "HYPE": "HOLD_NO_ADD_STRONG_CONTINUATION_BUT_NO_NEW_SELECTIVE_WALLET_CONFIRMATION_AND_UNLOCK_RISK",
+    "AERO": "HOLD_NO_ADD_TOKENIZED_STOCK_LEADERSHIP_REMAINS_INCENTIVE_CONTAMINATED",
+    "ZEC": "HOLD_NO_ADD_NO_TRIM_NO_SECOND_WHALE_DISTRIBUTION_CONFIRMATION"
+  },
+  "regime_notes": [
+    "A meaningful new non-portfolio alert crossed the framework threshold: Fetch.ai/FET and NuNet/NTX suffered a linked security incident. The FET converter path relied on a compromised single-EOA authorization and lacked an on-chain burn/lock proof on conversionIn; the same attacker cluster was linked to unauthorized NTX minted from the NuNet deployer account. FET is rejected for a new entry pending containment/postmortem and NTX fails the privileged-mint/deployer-control gate outright.",
+    "The AI theme has not uniformly unwound: the broad CoinGecko AI category remains modestly positive while Bittensor Subnets are outperforming it. TAO and several subnets retain relative leadership, but no fresh independent selective-wallet cohort was verified, so there is no TAO paper starter.",
+    "Hyperliquid remains the strongest broad continuation regime: stablecoin supply is about +5.23% over seven days, spot DEX volume about +19.39% weekly and perps about +34.51%. This strengthens the existing HYPE thesis but does not add the missing independent wallet leg, and the Oct. 6 contributor unlock remains a material caveat.",
+    "Polygon remains the largest raw weekly DEX acceleration at about +134%, but 24h net flows are negative and POL remains structurally rejected under the previously identified privileged adjustable mint-cap gate.",
+    "Arbitrum's DEX/perp growth remains contradicted by negative stablecoin growth and roughly -$97M of 24h net flows. Solana, Base, BSC, Avalanche and Sui do not show a clean enough combination of retained stablecoin capital and spot acceleration to justify a new paper position.",
+    "NEAR's large price/Intents move remains explicitly incentive-contaminated by the NEAR@3.33 milestone program, which rewards the same confidential balance/swap/TVL behaviors and conditions reward conversion on a 3-day VWAP threshold. No NEAR paper action is permitted from that flow until post-incentive persistence is demonstrated.",
+    "Marked paper NAV is approximately $10,572.89 versus $10,215.63 for the frozen passive benchmark, ahead by about $357.26 or 349.72 bps. UNI is about 7.25% of NAV, ZEC about 6.98%, HYPE about 5.12% and AERO about 2.66%. No paper trade is justified; state.json and the immutable trade ledger remain unchanged."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": true,
+  "alert_observation_path": "observations/2026-09-20T1233Z-ai-rotation-fet-ntx-security-failure-bittensor-relative-leadership.json",
+  "notes": "Prospective hourly mark. Security/leadership alert recorded; no qualifying paper trade and no portfolio-state or ledger mutation."
+}
