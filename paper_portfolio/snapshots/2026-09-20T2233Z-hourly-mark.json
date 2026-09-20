@@ -1,0 +1,69 @@
+{
+  "timestamp_utc": "2026-09-20T22:33:13Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 2030.3183658745413,
+  "marks_usd": {
+    "BTC": 80875.59,
+    "ETH": 2644.19,
+    "SOL": 109.84,
+    "SUI": 0.8963,
+    "BNB": 769.50,
+    "UNI": 8.73,
+    "HYPE": 93.13,
+    "AERO": 0.6585,
+    "ZEC": 1483.60
+  },
+  "mark_sources": {
+    "BTC": "CoinGecko BTC/USD global volume-weighted spot snapshot crawled 2026-09-20",
+    "ETH": "CoinGecko ETH/USD global volume-weighted spot snapshot crawled 2026-09-20",
+    "SOL": "CoinGecko SOL/USD global volume-weighted spot snapshot crawled 2026-09-20",
+    "SUI": "CoinGecko SUI/USD global volume-weighted spot snapshot crawled 2026-09-20",
+    "BNB": "CoinGecko BNB/USD global volume-weighted spot snapshot crawled 2026-09-20",
+    "UNI": "CoinLore UNI/USD live normalized spot snapshot, 2026-09-20 19:44 UTC; used because CoinGecko page localized the displayed UNI quote to PHP in this run",
+    "HYPE": "CoinGecko HYPE/USD global volume-weighted spot snapshot crawled 2026-09-20",
+    "AERO": "CoinGecko AERO/USD global volume-weighted spot snapshot crawled 2026-09-20",
+    "ZEC": "CoinGecko ZEC/USD global volume-weighted spot snapshot crawled 2026-09-20"
+  },
+  "position_values_usd": {
+    "BTC": 2045.9646156021365,
+    "ETH": 2112.090931602396,
+    "SOL": 1062.4879086864405,
+    "SUI": 552.1808772794484,
+    "BNB": 517.6241087043554,
+    "UNI": 767.4043050785905,
+    "HYPE": 555.6477589940897,
+    "AERO": 289.33282808300777,
+    "ZEC": 753.9095938236353
+  },
+  "portfolio_nav_usd": 10686.961293728642,
+  "passive_benchmark_nav_usd": 10290.348441874776,
+  "alpha_vs_benchmark_usd": 396.61285185386623,
+  "alpha_vs_benchmark_bps": 385.4221789418903,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD_CHAIN_SPOT_AND_STABLECOIN_CONTRACTION",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_GROWTH_NOT_CONFIRMED_BY_SPOT_VOLUME",
+    "BNB": "HOLD",
+    "UNI": "HOLD_AT_NONCORE_CAP_NO_FRESH_SCALE_ROOM",
+    "HYPE": "HOLD_NO_ADD_CONTINUATION_WITHOUT_NEW_INDEPENDENT_WALLET_CONFIRMATION",
+    "AERO": "HOLD_NO_ADD_ARC_CATALYST_REAL_BUT_USAGE_NOT_YET_AERO_SPECIFIC_AND_BASE_STOCK_FLOW_INCENTIVE_CONTAMINATED",
+    "ZEC": "HOLD_NO_ADD_NO_LIQUIDATION_TRIGGER_OR_SECOND_LEGACY_CEX_DISTRIBUTOR"
+  },
+  "regime_notes": [
+    "No ecosystem or asset crossed a fresh prospective trade threshold in this run. Broad crypto activity remains derivatives-led: aggregate DEX volume is down about 6.3% week over week while perpetual volume remains up about 17.9%, so leverage growth is not being mistaken for clean discretionary spot migration.",
+    "Hyperliquid remains the strongest broad continuation regime: stablecoin supply is about $7.25B and +5.23% over seven days, spot DEX volume is +19.39% weekly, and perpetual volume is +34.51%. This confirms the existing HYPE thesis but does not constitute a new independent confirmation after the Sep 19 add; no fresh selective-wallet cohort was verified.",
+    "Ethereum shows relative spot strength with DEX volume about +8.97% week over week and about $232M of 24h inflow while stablecoin supply is slightly lower over seven days. Uniswap remains the principal beneficiary, including Arc launch usage and StablePair/USDG velocity, but UNI is already below but near the 7.5% non-core ceiling after its Sep 19 scale decision and no new structural or selective-wallet leg justifies exceeding that ceiling.",
+    "Circle Arc is a real new capital/usage pocket but is not yet a clean token trade. Arc currently shows about $341.6M DeFi TVL, $627.7M stablecoin supply and $47.1M 24h DEX volume. Launch-day memecoin activity was highly transient and is discounted; lending balances are financially substantive. Uniswap captured most launch-period DEX activity. Aerodrome/Aero is live on Arc, but current evidence does not isolate enough Arc volume or fee capture to AERO to justify a confirmation add.",
+    "Polygon remains the raw weekly DEX-volume anomaly at roughly +134%, but stablecoin growth is only about +0.38% and 24h net flows are negative. POL remains structurally ineligible under the previously identified privileged mint-cap control gate, so volume acceleration cannot override the rejection.",
+    "Solana stablecoin supply remains about -4.41% over seven days and DEX volume about -4.84%, despite stronger perpetual activity. The tokenized-stock/Raydium pocket remains noteworthy but RAY remains structurally rejected; SOL therefore stays HOLD without an add.",
+    "Base stablecoins are modestly positive (~+0.93% over seven days) but spot DEX volume remains about -9.1% weekly while perps are +32.8%. AERO's Arc expansion is a genuine narrative/product catalyst, but the strongest Base tokenized-stock growth remains externally incentive-contaminated and no fresh independent high-quality AERO wallet cohort was verified.",
+    "ZEC recovered to about $1,483.60, above the previously mapped ~$1,412 nearest long-liquidation threshold. No evidence surfaced that the reported liquidation cluster was triggered, nor was a second comparable legacy-holder CEX distribution event found. The prior risk warning therefore remains monitored but does not cross the trim threshold.",
+    "Sui stablecoin supply is +2.10% over seven days while DEX volume is -21.94%; Arbitrum spot DEX volume is +19.91% but stablecoin supply is -1.05% and 24h net flow is about -$98M; BSC and Avalanche spot DEX activity remain in weekly contraction. None supplies the retained-capital plus organic-velocity combination required for a new trade.",
+    "RWA AUM is kept separate from usage. Ethereum (~$13.6B), Stellar (~$2.67B), Solana (~$1.58B), Avalanche (~$0.91B) and Arbitrum (~$0.90B) carry significant reported RWA AUM, but issuance/AUM by itself is not being scored as speculative flow. Arc lending balances and tokenized-equity secondary DEX volume are treated as stronger usage evidence where separately observable.",
+    "Portfolio NAV is approximately $10,686.96 versus passive benchmark $10,290.35, ahead by about $396.61 or 385.4 bps. No paper trade is justified; state.json and the immutable trade ledger remain unchanged."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "notes": "Hourly prospective mark. No qualifying threshold, material thesis break, or paper trade. State and immutable trade ledger left unchanged."
+}
