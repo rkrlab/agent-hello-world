@@ -1,0 +1,89 @@
+{
+  "timestamp_utc": "2026-09-20T12:32:59Z",
+  "framework_version": "crypto-regime-research-with-rwa-capital-signal",
+  "alert_type": "structural_security_rejection_and_relative_leadership_rotation",
+  "ecosystem": "decentralized AI / Fetch.ai / NuNet / Bittensor",
+  "classification": "AI_ROTATION_PERSISTS_FET_NTX_SECURITY_FAILURE_BITTENSOR_RELATIVE_LEADERSHIP_NO_TRADE",
+  "why_threshold_crossed_now": [
+    "A newly disclosed exploit drained about 8.7M FET (about $1.56M at incident value) from Fetch.ai's Ethereum TokenConversionManagerV3. SlowMist attributed the path to a valid single-EOA conversion-authorizer signature and reported that conversionIn lacked the on-chain burn/lock proof and amount-limit checks present on the opposite conversion path.",
+    "The same attacker cluster was linked by Blockaid/PeckShield reporting to roughly 408.5M unauthorized NTX originating from the NuNet deployer account, worth about $452K before/around the collapse; the attacker subsequently converted much of the proceeds into about 546.36 ETH.",
+    "This occurred immediately after FET had participated in a broader AI-token rotation. The security event therefore changes leadership quality inside an active narrative rather than merely affecting an isolated inactive token.",
+    "CoinGecko's current AI-category table still shows the broad AI category positive while Bittensor Subnets are outperforming it, indicating that speculative interest has not simply exited AI; it is becoming more selective after the FET/NTX security failure."
+  ],
+  "affected_assets": {
+    "FET": {
+      "name": "Artificial Superintelligence Alliance / Fetch.ai",
+      "vulnerable_converter_contract": "0xab424a430cc09864fa1277a38193111705adf3a3",
+      "attacker": "0x1572f2af7696b39c85e3221cde8efb640f86c362",
+      "incident_size": "~8.7M FET / ~$1.56M",
+      "structural_gate": "FAIL_FOR_NEW_ENTRY_PENDING_CONTAINMENT_AND_POSTMORTEM",
+      "reason": "The incident demonstrates that an ecosystem-critical conversion path could be authorized through a compromised single EOA and did not independently verify a burn/lock proof or enforce the same amount-limit guard on conversionIn. This is a dangerous permission/authentication failure under the framework even though the exploit drained converter inventory rather than proving arbitrary mint authority over all FET supply."
+    },
+    "NTX": {
+      "name": "NuNet",
+      "incident_size": "~408.5M unauthorized NTX / ~$452K at incident value",
+      "structural_gate": "FAIL_HARD",
+      "reason": "Unauthorized token creation was linked to the deployer account itself; this directly fails privileged mint/deployer-control and suspicious-transfer gates. NTX subsequently fell more than 70% and printed a new all-time low in current reporting."
+    }
+  },
+  "leadership_rotation": {
+    "status": "Bittensor/TAO retains relative AI leadership, but not a new paper-buy threshold",
+    "evidence": [
+      "CoinGecko's current category table shows Bittensor Subnets outperforming the broader AI category on the day.",
+      "TAO rose from about $218.30 on Sep 15 to about $263.70 on Sep 19 while reported daily turnover rose from about $140.8M to $267.8M.",
+      "The dedicated Bittensor subnet category remains broad rather than TAO-only: Chutes, Lium, Targon, affine and Templar are all positive in the latest category snapshot, with Templar about +20% over seven days in that snapshot."
+    ],
+    "discounts": [
+      "No fresh, independently funded cohort of historically selective TAO spot accumulators was verified in this run.",
+      "Bittensor remains materially emission-supported; the Sep 7 observation already classified TAO value capture as productive reserve/staking demand rather than a direct pro-rata cash claim.",
+      "Subnet token liquidity and holder-independence remain too thinly audited to surface a subnet token as a paper candidate merely because it is outperforming."
+    ]
+  },
+  "flow_quality": {
+    "classification": "sector-level discretionary AI rotation remains visible, but FET/NTX capital is now security-contaminated and cannot qualify",
+    "evidence": [
+      "FET had rallied with the broader AI narrative before the exploit, so the subsequent drop is a security-driven relative-leadership break rather than proof that the whole AI theme ended.",
+      "Bittensor subnet breadth remains positive while the broad AI category is only modestly positive, supporting selective migration within the theme."
+    ],
+    "rejected_explanations": [
+      "No new FET/NTX farming or points campaign is needed to explain the post-exploit divergence; the security incident itself is the dominant causal change.",
+      "Raw social mentions and influencer trade calls are not counted as confirmation."
+    ]
+  },
+  "wallet_quality": {
+    "FET": "not relevant enough to override the security failure; reported pre-exploit exchange withdrawals are explicitly discounted",
+    "TAO": "NO_UPGRADE: no fresh verified selective-wallet convergence",
+    "NTX": "FAIL: attacker/deployer-linked mint dominates all ordinary holder-flow evidence"
+  },
+  "liquidity_and_executability": {
+    "FET": "Globally liquid enough to sell, but structural/security gate blocks a new paper entry.",
+    "TAO": "Globally executable, but no new confirmation tranche is justified.",
+    "NTX": "Rejected regardless of nominal liquidity because unauthorized supply creation/deployer control fails the hard gate."
+  },
+  "portfolio_impact": {
+    "paper_positions_directly_affected": [],
+    "decision": "NO_TRADE",
+    "notes": "The paper portfolio has no FET, NTX or TAO position. Existing holdings remain subject to their prior regime tests; this AI-sector event does not justify reallocating from them without a qualifying positive candidate."
+  },
+  "forward_tests": [
+    "For FET: require an official technical postmortem, rotation/revocation of compromised authorization, proof that the vulnerable converter path is disabled or repaired, and independent confirmation that no additional privileged path can release inventory without an on-chain burn/lock proof.",
+    "For NTX: require proof that deployer/mint authority has been remediated, unauthorized supply treatment is resolved, and holder/liquidity structure is reconstructed; until then the token remains structurally rejected.",
+    "For TAO: require fresh independent selective-wallet accumulation plus continued subnet breadth and customer-funded economic activity before a paper starter is reconsidered."
+  ],
+  "sources": [
+    "https://www.kucoin.com/news/insight/FET/6aaf6df162cf370007435a3d",
+    "https://beincrypto.com/fetch-ai-nunet-2-million-exploit/",
+    "https://www.coingecko.com/en/categories/artificial-intelligence",
+    "https://www.coingecko.com/en/categories/bittensor-subnets",
+    "https://www.coinlore.com/coin/bittensor/historical-data"
+  ],
+  "prospective_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_created": false,
+  "paper_trade_created": false
+}
