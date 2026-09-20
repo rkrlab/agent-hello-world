@@ -8,14 +8,14 @@
   "paper_action": "HOLD_NO_ADD_NO_TRIM",
   "signal": {
     "new_confirmation": [
-      "SoSoValue data reported by CryptoSlate now puts cumulative ZCSH net inflows at $270.95M and net assets at $914.53M as of Sept. 19. The prior frozen Sept. 18 observation used >$233M cumulative net inflows, so the reported cumulative net-flow total has increased by at least ~$37.95M (~16%) since that checkpoint.",
+      "SoSoValue data reported by CryptoSlate now puts cumulative ZCSH net inflows at $270.95M and net assets at $914.53M as of Sept. 19. The prior frozen Sept. 18 observation used >$233M cumulative net inflows, so the newly reported cumulative total is roughly $38M above the prior rounded $233M reference (the exact increase is slightly less than $37.95M because the prior figure was stated as greater than $233M).",
       "This comparison uses cumulative NET INFLOWS, not the ETF's $914.53M asset value. The asset value is substantially inflated by ZEC price appreciation and is not treated as fresh capital migration.",
       "zecmetrics currently reports 4.92M ZEC in shielded pools, +12.1% month-to-date, with +21,112 ZEC net shielded inflow over seven days. Shielding is on-chain usage/migration, not proof of new buying, so it is treated as an independent usage confirmation rather than another capital-inflow dollar figure.",
       "A fresh search found no evidence that the t1Lyq whale made a second CEX deposit after the previously frozen ~$15M Coinbase transfer. The prior distribution warning has therefore not broadened into a verified multi-wallet distribution cohort yet."
     ],
     "quality_adjustments": [
       "The full $270.95M ZCSH cumulative net-flow total is not treated as fully independent discretionary demand. A previously disclosed ~$100M DCG International in-kind contribution remains embedded in cumulative flows and ultimate beneficial-owner independence of subsequent creations is not fully observable.",
-      "The incremental ~$37.95M versus the prior frozen observation is not publicly attributed to DCG in the sources retrieved here, but beneficial-owner independence still cannot be proven.",
+      "The increase from the prior >$233M rounded reference is not publicly attributed to DCG in the sources retrieved here, but beneficial-owner independence still cannot be proven.",
       "ZCSH trading turnover is deliberately excluded from the capital-migration score because repeated arbitrage and secondary trading can generate large turnover without new fund creations.",
       "The 3-for-1 ZCSH share split remains economically neutral and is not counted as value creation or demand."
     ],
