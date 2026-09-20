@@ -1,0 +1,113 @@
+{
+  "observed_at_utc": "2026-09-20T04:58:00Z",
+  "classification": "PYTH_SWITCHBOARD_ORACLE_LEADERSHIP_ROTATION_SOL_MIGRATION_RISK_NO_TRADE",
+  "alert": true,
+  "paper_action": "NO_TRADE",
+  "real_trade": false,
+  "ecosystem": ["Solana", "cross-chain oracle infrastructure"],
+  "candidate": {
+    "asset": "PYTH",
+    "contract_address": "HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+    "mark_price_usd": 0.05861,
+    "market_cap_usd": 461546154,
+    "fdv_usd": 586093310,
+    "volume_24h_usd": 34016956.92,
+    "price_change_7d_pct": 7.8,
+    "volume_change_24h_pct": -9.9
+  },
+  "event": {
+    "summary": "Switchboard announced a full wind-down. All implementations are deprecated immediately and remaining support ends 2026-09-25. Solana protocols reported as Switchboard integrators include Kamino, Jito, MarginFi, and Drift; Switchboard recommends migration to Pyth or RedStone.",
+    "deadline_utc_date": "2026-09-25",
+    "why_meaningful": "This is a forced oracle-provider leadership rotation, not a points/airdrop/yield-farming flow. It creates an operational migration risk for major Solana DeFi protocols and a potential market-share catalyst for Pyth/RedStone. It is not yet proof of discretionary speculative capital migrating into PYTH."
+  },
+  "solana_context": {
+    "tvl_usd": 6173000000,
+    "stablecoin_mcap_usd": 15491000000,
+    "stablecoin_change_7d_pct": -4.42,
+    "dex_volume_24h_usd": 3110000000,
+    "dex_volume_7d_usd": 16760000000,
+    "dex_weekly_change_pct": -11.07,
+    "perp_volume_7d_usd": 11520000000,
+    "perp_weekly_change_pct": 17.13,
+    "net_inflow_24h_usd": -5870000,
+    "interpretation": "Solana is not currently showing a broad spot/stablecoin discretionary-inflow regime. Gross stablecoin mint headlines should not override the observed 7d stablecoin contraction without evidence the newly minted inventory is actually deployed."
+  },
+  "affected_protocol_context": {
+    "Kamino_tvl_usd": 1456000000,
+    "Jito_tvl_usd": 1148000000,
+    "Drift_tvl_usd": 312800000,
+    "known_tvl_sum_excluding_marginfi_usd": 2916800000,
+    "caveat": "These TVL figures must not be interpreted as $2.917B of capital at risk or as exclusively dependent on Switchboard; they only show that the migration touches large protocols."
+  },
+  "pyth_fundamentals": {
+    "august_2026_gross_revenue_usd": 716800,
+    "august_2026_dao_share_usd": 433740,
+    "cumulative_gross_revenue_since_sep_2025_usd": 3219046,
+    "cumulative_dao_share_since_sep_2025_usd": 1952937,
+    "august_2026_reported_rwa_perp_pricing_share_pct": 96.27,
+    "strategic_reserve": "OP-PIP-87 established market purchases of PYTH from DAO treasury/revenue; August report records 669,661.722734 PYTH purchased and returned to DAO treasury.",
+    "ois_incentives": "Oracle Integrity Staking rewards were set to zero on 2026-04-22; staking/slashing remains active.",
+    "value_capture_quality": "Real but governance-mediated: revenues can fund strategic-reserve PYTH purchases. PYTH is not directly required as the payment token for data consumption, and the newer V2 proposal is not treated as implemented unless passed."
+  },
+  "wallet_quality": {
+    "rating": "LOW",
+    "reason": "No fresh independently funded, historically selective PYTH spot-accumulator cohort was verified in this run. Recent holder-growth/technical reports do not satisfy the selective-wallet standard."
+  },
+  "structural_gate": {
+    "result": "NOT_FULLY_CLEARED_FOR_BUY",
+    "positive": [
+      "Third-party Solana token inspection reports mint authority revoked.",
+      "Third-party Solana token inspection reports freeze authority revoked.",
+      "Supply cap is approximately 10B PYTH."
+    ],
+    "unresolved_or_caveat": [
+      "Raw top-10 address concentration is reported near 48%, but beneficial-owner composition and linked-wallet independence were not resolved in this run.",
+      "Metadata remains mutable.",
+      "A large scheduled unlock remains in May 2027; not near-term, but material to medium-term dilution.",
+      "No deployer/funding-lineage analysis sufficient to clear all concentration/linkage gates was completed this run."
+    ]
+  },
+  "leadership_assessment": {
+    "ecosystem_signal": "MEANINGFUL",
+    "token_signal": "NOT_CONFIRMED",
+    "reason": "Switchboard's exit forces real infrastructure migration and names Pyth/RedStone as replacements, while Pyth already has commercial revenue and dominant reported RWA-perp pricing coverage. But the actual destination split is not yet observed, PYTH spot volume is lower day/day, and selective-wallet confirmation is absent."
+  },
+  "existing_paper_position_impact": {
+    "asset": "SOL",
+    "action": "HOLD_NO_TRIM",
+    "reason": "Solana's Switchboard implementation was not implicated in the August Move-chain compromise, and established alternatives exist. The six-day migration window is nevertheless an ecosystem operational-risk checkpoint."
+  },
+  "paper_portfolio_source_of_truth": {
+    "cash_usd": 2030.3183658745413,
+    "trade_count": 10,
+    "last_trade_id": "ADD-UNI-20260919-071102Z",
+    "state_read_before_decision": true,
+    "immutable_trade_ledger_read_before_decision": true
+  },
+  "portfolio_mark_snapshot": {
+    "marks_usd": {
+      "BTC": 81321.93,
+      "ETH": 2618.53,
+      "SOL": 108.85,
+      "SUI": 0.8244,
+      "BNB": 763.12,
+      "UNI": 8.79,
+      "HYPE": 90.77,
+      "AERO": 0.6438,
+      "ZEC": 1449.91
+    },
+    "approx_nav_usd": 10587.21,
+    "approx_passive_benchmark_nav_usd": 10222.98,
+    "approx_alpha_usd": 364.23,
+    "approx_alpha_bps": 356.3
+  },
+  "forward_tests": [
+    "Before/at 2026-09-25, verify which of Kamino, Jito, MarginFi and Drift actually migrate to Pyth, RedStone, another oracle, or a hybrid design.",
+    "Measure whether Pyth gains fee-paying usage/revenue rather than only integrations or narrative attention.",
+    "Require renewed PYTH spot-volume/liquidity growth plus independently funded selective-wallet accumulation before any paper starter.",
+    "Resolve beneficial-owner concentration and wallet-linkage questions before clearing the structural gate for a buy.",
+    "Watch for migration incidents, stale-price/oracle failures, pauses or liquidations that would worsen the SOL ecosystem-risk case.",
+    "Do not classify gross Solana USDC/USDT treasury mints as capital inflow unless net circulating balances/deployment confirm it."
+  ],
+  "no_hindsight": "This record was written prospectively before any future protocol migration outcome or paper action."
+}
