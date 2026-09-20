@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-09-20T04:42:59Z",
+  "portfolio_id": "regime-framework-10k-2026-09-09",
+  "cash_usd": 2030.3183658745413,
+  "marks_usd": {
+    "BTC": 80406.65,
+    "ETH": 2583.87,
+    "SOL": 110.18,
+    "SUI": 0.8246,
+    "BNB": 760.84,
+    "UNI": 8.57,
+    "HYPE": 91.83,
+    "AERO": 0.653949,
+    "ZEC": 1470.94
+  },
+  "mark_sources": {
+    "BTC": "CoinMarketCap BTC/USD live spot snapshot, 2026-09-20 run",
+    "ETH": "CoinMarketCap ETH/USD live spot snapshot, 2026-09-20 run",
+    "SOL": "CoinMarketCap SOL/USD live spot snapshot, 2026-09-20 run",
+    "SUI": "CoinMarketCap SUI/USD live spot snapshot, 2026-09-20 run",
+    "BNB": "CoinMarketCap BNB/USD live spot snapshot, 2026-09-20 run",
+    "UNI": "CoinMarketCap UNI/USD live spot snapshot, 2026-09-20 run",
+    "HYPE": "CoinMarketCap HYPE/USD live spot snapshot, 2026-09-20 run",
+    "AERO": "CoinMarketCap AERO/USD live spot snapshot, 2026-09-20 run",
+    "ZEC": "CoinMarketCap ZEC/USD live spot snapshot, 2026-09-20 run"
+  },
+  "position_values_usd": {
+    "BTC": 2034.101522586797,
+    "ETH": 2063.9093240045086,
+    "SOL": 1065.7767459857248,
+    "SUI": 508.0088713652049,
+    "BNB": 511.7987353692292,
+    "UNI": 753.3396213658099,
+    "HYPE": 547.891481890124,
+    "AERO": 287.33320211397853,
+    "ZEC": 747.4762590583299
+  },
+  "portfolio_nav_usd": 10549.954129614249,
+  "passive_benchmark_nav_usd": 10183.595199311465,
+  "alpha_vs_benchmark_usd": 366.35893030278385,
+  "alpha_vs_benchmark_bps": 359.75401921666537,
+  "decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD_NO_ADD_DEX_AND_STABLECOIN_CONTRACTION",
+    "SUI": "HOLD_NO_ADD_STABLECOIN_TVL_IMPROVEMENT_NOT_CONFIRMED_BY_SPOT_DEX",
+    "BNB": "HOLD_NO_ADD_BSC_DEX_CONTRACTION",
+    "UNI": "HOLD_NO_ADD_VALUE_CAPTURE_AND_PROTOCOL_USAGE_INTACT_NO_NEW_CONFIRMATION",
+    "HYPE": "HOLD_NO_ADD_CONTINUATION_REGIME_INTACT_NO_NEW_INDEPENDENT_WALLET_CONFIRMATION",
+    "AERO": "HOLD_NO_ADD_TOKENIZED_STOCK_LEADERSHIP_REMAINS_INCENTIVE_CONTAMINATED",
+    "ZEC": "HOLD_NO_ADD_NO_TRIM_ETF_PRIVACY_THESIS_INTACT_NO_SECOND_DISTRIBUTION_CONFIRMATION"
+  },
+  "regime_notes": [
+    "No fresh ecosystem crossed the alert or paper-trade threshold since the 2026-09-20 01:42 UTC ZEC persistence checkpoint.",
+    "Hyperliquid remains the strongest continuation regime: stablecoin supply is about +4.37% over seven days, spot DEX volume +11.03% weekly and perp volume +26.46% weekly. Those are essentially the same confirmation conditions that justified the Sep 19 HYPE add, not a new threshold. HYPE funding remains far below the prior ~59% annualized crowding spike and no fresh independent selective-wallet cohort was verified.",
+    "Polygon remains a raw-volume outlier at about +135% weekly DEX volume, +43.4% weekly perps and roughly +$17.3M of 24-hour inflow, but current 24-hour DEX volume (~$160.7M) is below the trailing seven-day daily average and stablecoins are roughly flat/slightly negative. POL remains ineligible under the previously identified privileged adjustable mint-cap hard gate.",
+    "Arbitrum shows improving trading and bridge-flow metrics (+21.58% weekly DEX volume, +11.47% perps, roughly +$82.7M 24-hour inflow), but its stablecoin balance is down about 12.25% over seven days. That contradiction is too large to classify the move as retained discretionary speculative migration.",
+    "Solana, Base, BSC, Avalanche, Sui and Monad do not show a sufficiently clean combination of spot acceleration, retained stablecoin capital and unincentivized demand. Solana and Base spot DEX volumes remain in weekly contraction; BSC and Avalanche are also contracting; Sui stablecoins/TVL are firmer but spot DEX volume remains sharply down; Monad remains weak after prior reward-contamination concerns.",
+    "Aggregate RWA activity remains substantial, but no new direct-token trade emerged. Robinhood Chain still shows high Maple syrupUSDG collateral utilization near 100%, repeating the previously recorded usage signal rather than creating a new threshold. Abrupt changes in Solana RWA active-AUM figures appear methodology/tracking-sensitive while DeFi-active RWA TVL remains firmer, so they are not treated as fresh discretionary capital migration.",
+    "Existing speculative positions do not warrant a new action: UNI is below its latest add mark but protocol value capture remains intact; HYPE continuation metrics remain healthy but unchanged; AERO still has genuine tokenized-stock venue leadership with external incentive contamination; ZEC has retreated from recent highs but no second large-holder exchange-deposit cohort or other material thesis break was verified.",
+    "Marked paper NAV is approximately $10,549.95 versus $10,183.60 for the frozen passive benchmark, ahead by about $366.36 or 359.75 bps. No paper trade is justified; state.json and the immutable trade ledger remain unchanged."
+  ],
+  "paper_trade": null,
+  "alert_threshold_crossed": false,
+  "notes": "Hourly prospective mark. No qualifying threshold, material thesis break, or paper trade. State and immutable trade ledger left unchanged."
+}
