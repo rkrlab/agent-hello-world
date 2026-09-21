@@ -1,0 +1,79 @@
+{
+  "observed_at_utc": "2026-09-21T04:20:33Z",
+  "classification": "AVALANCHE_TOKENIZATION_HELICON_DEFI_ACCELERATION_WALLET_CONFIRMATION_MISSING_NO_TRADE",
+  "ecosystem": "Avalanche",
+  "candidate_asset": "AVAX",
+  "asset_type": "native L1 token",
+  "contract_address": null,
+  "alert_threshold_crossed": true,
+  "paper_action": "NO_TRADE",
+  "regime_evidence": {
+    "defi_tvl_usd": 645270000,
+    "defi_tvl_change_1d_pct": 9.43,
+    "defi_tvl_change_7d_pct": 38.48,
+    "defi_tvl_change_30d_pct": 30.29,
+    "dex_volume_24h_usd": 136300000,
+    "dex_volume_7d_usd": 612220000,
+    "dex_volume_30d_usd": 3173000000,
+    "dex_24h_vs_7d_daily_average_pct_approx": 55.9,
+    "active_addresses_24h": 182512,
+    "stablecoin_supply_usd": 1354000000,
+    "stablecoin_supply_change_7d_pct": 0.38,
+    "dominant_stable_or_rwa_balance": "BUIDL 36.44% of DefiLlama stablecoin-category supply",
+    "avax_mark_usd": 11.26,
+    "avax_change_24h_pct": 18.0,
+    "avax_change_7d_pct": 51.4,
+    "avax_24h_token_volume_usd": 1449000000
+  },
+  "rwa_and_product_catalysts": [
+    {
+      "event": "NYLIM HYB tokenized U.S. high-yield corporate bond strategy deployed on Avalanche via Centrifuge on 2026-09-17",
+      "classification": "RWA issuance/access infrastructure; not evidence by itself of secondary trading volume or collateral utilization"
+    },
+    {
+      "event": "ICE/NYSE parent has been testing/evaluating Avalanche for a possible 24/7 tokenized stocks/ETFs platform",
+      "classification": "evaluation-stage catalyst only; no chain selection or commercial deal verified"
+    },
+    {
+      "event": "Helicon mainnet activation scheduled 2026-09-22 15:00 UTC",
+      "classification": "network-level catalyst; includes continuous execution, validator auto-renewal, 90% uptime requirement, 48-hour minimum validator staking duration, dynamic C-Chain minimum gas price, and phased staking reward-curve change"
+    }
+  ],
+  "flow_quality_assessment": {
+    "positive": "TVL, DEX velocity, active addresses, AVAX turnover and price are accelerating together rather than price alone.",
+    "negative": "Stablecoin supply is only +0.38% over seven days and a large share of the category balance is BUIDL, so TVL growth cannot be treated as equivalent to fresh discretionary dollar inflow. No clean current net bridge-flow series or independent selective-wallet spot-accumulation cohort was verified.",
+    "incentive_filter": "No single airdrop/points campaign was identified as explaining the chain-wide acceleration, but protocol-level rewards may contribute to TVL and are not assumed to be discretionary speculation."
+  },
+  "wallet_quality": {
+    "grade": "LOW_TO_MEDIUM",
+    "reason": "No fresh cohort of independently funded, historically selective AVAX spot accumulators was verified. Reported same-minute Hyperliquid short wallets are not treated as independent smart-money consensus."
+  },
+  "structural_gate": {
+    "result": "PASS_FOR_APPLICABLE_NATIVE_ASSET_GATES_WITH_EMISSION_CAVEAT",
+    "reason": "AVAX is the native asset rather than a third-party token contract, so honeypot, token-contract freeze, arbitrary ERC-style mint and LP-owner removal gates are not directly applicable. No hard structural failure was found in this run. Protocol-native staking emissions and upgrade/governance risk remain caveats.",
+    "executability": "PASS; roughly $1.449B 24h AVAX turnover across 123 exchanges / 238 markets at the checkpoint."
+  },
+  "decision_rationale": "This is a meaningful Avalanche ecosystem-regime threshold but not a PAPER buy. The move is already extended (~+51% over seven days), stablecoin growth is weak relative to TVL/DEX acceleration, HYB is issuance/access rather than proven secondary usage, ICE remains evaluation-stage, and the selective-wallet confirmation leg is missing. Confirmation and persistence are preferred over chasing the first large price move.",
+  "forward_tests": [
+    "After Helicon activation, require DEX/active-address/TVL strength to persist without a sharp reversal.",
+    "Require clearer retained capital evidence: materially positive stablecoin supply or net bridge flows rather than RWA-category inventory alone.",
+    "Distinguish HYB issuance/AUM from actual Avalanche secondary transfers, redemptions, collateralization or lending utilization.",
+    "Require a fresh, independently funded, historically selective AVAX accumulation cohort before a prospective starter.",
+    "Treat any formal ICE chain selection/production deployment as a new catalyst; do not credit current evaluation as a deal."
+  ],
+  "paper_portfolio_state_read": {
+    "cash_usd": 2030.3183658745413,
+    "trade_count": 10,
+    "last_trade_id": "ADD-UNI-20260919-071102Z"
+  },
+  "sources": [
+    "https://defillama.com/chains",
+    "https://defillama.com/dexs/chains",
+    "https://defillama.com/stablecoins/chains",
+    "https://www.coingecko.com/en/coins/avalanche",
+    "https://build.avax.network/docs/primary-network/helicon-upgrade",
+    "https://centrifuge.io/blog/nylim-centrifuge",
+    "https://finance.yahoo.com/markets/crypto/articles/avax-eyes-90-price-rally-140455182.html",
+    "https://www.reuters.com/world/us/securities-regulator-rolls-out-five-year-exemption-tokenized-stock-trading-2026-09-17/"
+  ]
+}
