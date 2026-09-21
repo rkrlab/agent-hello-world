@@ -1,0 +1,86 @@
+{
+  "timestamp_utc": "2026-09-21T17:48:58Z",
+  "classification": "ETH_LARGE_HOLDER_DISTRIBUTION_COUNTERFLOW_CORE_HOLD_NO_TRIM",
+  "ecosystem": "Ethereum",
+  "asset": "ETH",
+  "contract_address": null,
+  "alert_threshold_crossed": true,
+  "paper_action": "HOLD_NO_TRIM_NO_ADD",
+  "summary": "The earlier ETH spot/staking leadership thesis developed a material counterflow: a long-term entity that accumulated 124,021 ETH around $2,028 has reportedly sold 81,228 ETH over the last two days at an average near $2,669, including a fresh 48,048 ETH / ~$130M Bitfinex transfer on Sep. 21 after a 33,180 ETH Bitfinex transfer on Sep. 19. This is one likely beneficial owner rather than multiple independent sellers, so it is a substantial distribution signal but not broad wallet convergence. Countervailing demand remains meaningful: a separate whale rotated 1,107 BTC into 34,422 ETH and staked all of it, another swing trader reportedly re-entered 7,567 ETH, the validator entry queue was about 2.48M ETH versus 13.6x less queued to exit on Sep. 20, and Ethereum DEX volume is +20.0% week/week while perps are -32.89%. However, Ethereum stablecoin supply is -0.47% over seven days and U.S. spot ETH ETFs ended the week through Sep. 18 with ~$140M net outflows despite a strong Friday inflow. This weakens but does not invalidate the leadership thesis. Core opening ETH remains HOLD; no trim because price/spot usage/staking demand still confirm and distribution is concentrated in one entity, not an independent cohort.",
+  "ecosystem_regime_evidence": {
+    "ethereum_tvl_usd": 54130000000,
+    "tvl_24h_change_pct": 2.94,
+    "stablecoin_mcap_usd": 146680000000,
+    "stablecoin_7d_change_pct": -0.47,
+    "dex_volume_24h_usd": 1534000000,
+    "dex_volume_7d_usd": 10087000000,
+    "dex_volume_7d_change_pct": 20.0,
+    "perp_volume_7d_usd": 4375000000,
+    "perp_volume_7d_change_pct": -32.89,
+    "net_inflow_24h_usd": 34500000,
+    "active_addresses_24h": 492654,
+    "new_addresses_24h": 132298,
+    "rwa_active_aum_usd": 13549000000,
+    "rwa_interpretation": "Inventory/AUM only; not counted as secondary trading or fresh speculative migration."
+  },
+  "wallet_evidence": {
+    "distribution_entity": {
+      "reported_original_position_eth": 124021,
+      "reported_original_average_cost_usd": 2028,
+      "reported_sold_last_two_days_eth": 81228,
+      "reported_average_sale_price_usd": 2669,
+      "fresh_sep21_bitfinex_transfer_eth": 48048,
+      "fresh_sep21_transfer_value_usd": 130000000,
+      "sep19_bitfinex_transfer_eth": 33180,
+      "independence_assessment": "The Sep. 19 and Sep. 21 movements are attributed to the same entity / likely common beneficial owner; do not count as two independent sellers.",
+      "quality": "material persistent distribution from a long-held position"
+    },
+    "countervailing_accumulation": {
+      "btc_to_eth_rotator_eth": 34422,
+      "btc_sold": 1107,
+      "reported_value_usd": 86500000,
+      "staking_action": "entire acquired ETH reportedly staked",
+      "second_swing_trader_reentry_eth": 7567,
+      "quality": "medium-high but only two identifiable beneficial-owner paths"
+    }
+  },
+  "institutional_and_staking_evidence": {
+    "us_spot_eth_etf_week_ending_2026_09_18_net_flow_usd": -140000000,
+    "sep18_etf_daily_inflow_usd": 143800000,
+    "validator_entry_queue_eth_as_of_2026_09_20": 2480000,
+    "entry_to_exit_queue_ratio": 13.6
+  },
+  "structural_gate": "PASS_NATIVE_ASSET",
+  "liquidity_executability": "PASS",
+  "paper_portfolio": {
+    "source_of_truth_cash_usd": 2030.3183658745413,
+    "source_of_truth_trade_count": 10,
+    "eth_quantity": 0.798766704209,
+    "eth_mark_usd": 2750.40,
+    "eth_mark_value_usd": 2196.9279432564335,
+    "eth_weight_pct": 19.8423,
+    "approx_nav_usd": 11071.94367689288,
+    "approx_passive_benchmark_nav_usd": 10662.785016793092,
+    "approx_alpha_usd": 409.1586600997889,
+    "approx_alpha_bps": 383.7259
+  },
+  "decision_rationale": "Do not trim the opening core ETH position on a single beneficial-owner distribution path while spot DEX activity, positive daily net inflow, price strength and staking demand remain strong. Do not add because retained stablecoin capital is still negative, the ETF week reversed to outflows, and the large long-term seller now offsets much of the earlier identifiable whale-accumulation evidence. A trim becomes justified only if distribution broadens to additional independent long-term holders / CEX deposits, ETF redemptions persist, staking entry demand materially cools, and price/spot usage lose confirmation. An add requires the opposite: distribution absorption, renewed consecutive ETF inflows, retained stablecoin/bridge capital turning positive, and another independent selective accumulator.",
+  "forward_tests": [
+    "Does the remaining balance of the 124,021-ETH legacy holder continue moving to Bitfinex or other exchanges?",
+    "Do additional independently funded long-term holders begin material exchange distribution?",
+    "Do U.S. spot ETH ETFs resume consecutive positive sessions after the -$140M week?",
+    "Does Ethereum stablecoin supply reverse from -0.47% 7d to sustained positive growth?",
+    "Does the ~2.48M ETH validator entry queue remain far larger than exits?",
+    "Does ETH hold the breakout while DEX activity remains spot-led rather than perp-led?"
+  ],
+  "sources": [
+    "https://blockchain.news/flashnews/eth-whale-130m-bitfinex-deposit-after-rally",
+    "https://www.odaily.news/zh-CN/newsflash/519306",
+    "https://news.bitcoin.com/crypto-news/eth-whales-106-million-price-2700/",
+    "https://defillama.com/chain/ethereum",
+    "https://www.theblock.co/news/markets/2026-09-19-bitcoin-etfs-eke-out-positive-week-with-433-million-friday-inflow-as-ether-funds-snap-four-week-inflow-streak-415871",
+    "https://www.bitget.com/amp/news/detail/12560605849678"
+  ],
+  "real_trade_executed": false,
+  "paper_trade_executed": false
+}
