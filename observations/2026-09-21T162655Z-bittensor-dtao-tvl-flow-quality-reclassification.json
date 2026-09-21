@@ -1,0 +1,102 @@
+{
+  "timestamp_utc": "2026-09-21T16:26:55Z",
+  "framework_version": "crypto-regime-research-with-rwa-capital-signal",
+  "alert_type": "capital_flow_quality_reclassification",
+  "ecosystem": "Bittensor / decentralized AI",
+  "candidate_asset": "TAO",
+  "contract_address": null,
+  "classification": "BITTENSOR_DTAO_TVL_NOT_FRESH_CAPITAL_TAO_RELATIVE_LEADERSHIP_NO_TRADE",
+  "why_threshold_crossed_now": [
+    "The cross-chain scanner surfaced Bittensor as an extreme apparent TVL-growth outlier while TAO itself accelerated to roughly $288, up about 12% in 24 hours and 24% over seven days with roughly $474M of 24-hour turnover.",
+    "The flow-quality audit shows that the dominant Bittensor TVL series is Bittensor dTAO, whose DefiLlama methodology counts the TAO-side reserve of every subnet's native dTAO AMM pool. It is therefore a reserve-stock measure, not a direct measurement of fresh USD/USDC bridge inflow or discretionary spot buying.",
+    "This distinction prevents a headline TVL acceleration from satisfying the framework's fresh-capital confirmation leg by itself."
+  ],
+  "regime_evidence": {
+    "tao_market": {
+      "price_usd": 288.26,
+      "change_24h_pct": 11.7,
+      "change_7d_pct": 24.3,
+      "volume_24h_usd": 474335000,
+      "market_cap_usd": 3265000000,
+      "fdv_usd": 6047000000
+    },
+    "dtao_tvl": {
+      "current_defillama_snapshot_usd_approx": 463220000,
+      "methodology": "TAO reserve of every subnet dTAO liquidity pool, excluding root staking and separately tracked Chutes; alpha-side reserves are not counted.",
+      "classification": "PRODUCTIVE/REFLEXIVE RESERVE STOCK, NOT PROVEN FRESH EXTERNAL CAPITAL FLOW"
+    },
+    "chutes": {
+      "tvl_usd_approx": 50530000,
+      "fees_30d_usd": 218179,
+      "revenue_30d_usd": 218179,
+      "interpretation": "There is real customer-funded compute revenue inside Bittensor, but the measured revenue is orders of magnitude smaller than aggregate dTAO pool reserves and does not convert the reserve-stock TVL into a fresh-capital-flow metric."
+    },
+    "cross_chain_access": "TAO.com launched Ethereum USDC/ETH-to-TAO/subnet cross-chain swaps on 2026-09-16, a real access catalyst, but no independent quantified net-flow series was verified in this run."
+  },
+  "wallet_quality": {
+    "status": "NO_UPGRADE",
+    "evidence": [
+      "Subnet Metrics tracked 65.00 TAO of wallet buys on Sep 17 and 109.13 TAO on Sep 18, then zero on Sep 19-20; Sep 21 was not covered at the latest update.",
+      "Subnet Metrics explicitly says its tracked-wallet buys exclude swaps and that purpose and funding are unverified.",
+      "No fresh cohort of independently funded, historically selective TAO spot accumulators was verified."
+    ],
+    "conclusion": "The wallet leg still does not satisfy the prior TAO forward test."
+  },
+  "subnet_leadership": {
+    "breadth": "128 subnets in the latest weekly panel; top five hold 32.5% of market value and top ten 48.0%.",
+    "verified_capital_policy": "13 subnets burned a verified ~481 TAO equivalent and 44,022 alpha during Sep 14-20; 16 subnets claimed buybacks but only 11 had on-chain buyback evidence in the prior 30 days.",
+    "interpretation": "Subnet economic behavior is heterogeneous; raw subnet price/TVL breadth should not be treated as equivalent to verified customer-funded buybacks or independent spot demand."
+  },
+  "incentive_and_reflexivity_filter": {
+    "classification": "MATERIAL",
+    "reason": "dTAO staking itself swaps TAO into subnet alpha through native AMM pools, so subnet staking demand, TAO price appreciation, emissions and AMM reserve growth can reinforce the reported USD TVL. The reserve stock can be economically meaningful without representing the same thing as fresh stablecoin/bridge inflow.",
+    "customer_funded_exception": "Chutes currently shows ~$218K of 30-day fees/revenue, so the ecosystem is not being dismissed as purely emissions-driven; the signal is simply not strong enough to attribute the large reserve stock to discretionary new capital."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_EMISSION_AND_SUBNET_REFLEXIVITY_CAVEATS",
+    "notes": [
+      "TAO is a native asset rather than a third-party contract token, so ERC-style honeypot, LP-owner and arbitrary contract mint/freeze gates do not apply in the same form.",
+      "CoinGecko reports ~11.34M circulating TAO against a 21M maximum supply, so continuing emissions/dilution remain relevant.",
+      "Subnet alpha tokens are not individually cleared: liquidity, holder independence, pool reflexivity and subnet-owner economics must be audited before any subnet token can be surfaced for a paper trade."
+    ]
+  },
+  "liquidity_and_executability": {
+    "TAO": "PASS: roughly $474M of rolling 24-hour turnover across 43 exchanges / 74 markets at the checkpoint.",
+    "subnet_tokens": "NOT GENERALLY CLEARED; evaluate individually."
+  },
+  "portfolio_impact": {
+    "paper_positions_directly_affected": [],
+    "decision": "NO_TRADE",
+    "paper_cash_usd": 2030.3183658745413,
+    "trade_count": 10,
+    "marked_nav_usd_approx": 11120.09,
+    "passive_benchmark_usd_approx": 10685.11,
+    "excess_usd_approx": 434.98,
+    "excess_bps_approx": 407,
+    "notes": "The paper portfolio has no TAO position. Existing positions remain HOLD; no hard structural gate broke and no existing position crossed the default non-core cap at contemporaneous marks."
+  },
+  "forward_tests": [
+    "Require a quantified net bridge/stablecoin or other external funding series showing retained capital entering Bittensor, rather than inferring inflow from dTAO reserve TVL.",
+    "Require fresh independent selective-wallet accumulation with funding-source checks; generic tracked-wallet buys without purpose/funding verification are insufficient.",
+    "Require persistence or growth in customer-funded subnet revenue and verified revenue-funded buybacks relative to emissions, not merely higher subnet prices or reserve balances.",
+    "Track TAO leadership after the current broad market squeeze subsides; do not credit squeeze-driven or pre-checkpoint price gains as a paper result.",
+    "Do not paper-buy a subnet token until its own sellability, permissions, liquidity, holder/funding linkage and owner/deployer economics clear the hard structural gates."
+  ],
+  "sources": [
+    "https://defillama.com/protocol/bittensor-dtao",
+    "https://defillama.com/protocol/chutes",
+    "https://subnetmetrics.com/issues/3",
+    "https://subnetmetrics.com/",
+    "https://www.coingecko.com/en/coins/bittensor",
+    "https://taodaily.io/tao-com-connects-ethereum-capital-to-bittensor-subnets-with-cross-chain-swaps/"
+  ],
+  "prospective_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_created": false,
+  "paper_trade_created": false
+}
