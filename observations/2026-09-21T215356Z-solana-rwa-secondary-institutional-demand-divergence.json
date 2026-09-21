@@ -1,0 +1,109 @@
+{
+  "timestamp_utc": "2026-09-21T21:53:56Z",
+  "classification": "SOL_RWA_SECONDARY_ETF_TREASURY_CONFIRMATION_RETAINED_CAPITAL_DIVERGENCE_HOLD_NO_ADD",
+  "ecosystem": "Solana",
+  "asset": "SOL",
+  "contract_address": null,
+  "asset_type": "native",
+  "alert_threshold_crossed": true,
+  "paper_action": "HOLD_NO_ADD",
+  "paper_trade_executed": false,
+  "signal": {
+    "regime_evidence": [
+      "DefiLlama shows Solana at about $6.472B DeFi TVL (+4.78% 24h), $2.916B 24h DEX volume and $18.887B over seven days (+6.89% week/week), while perps volume is $11.101B over seven days (+16.24%). Activity is improving but derivatives are accelerating faster than spot DEX volume.",
+      "Solana tokenized-equity activity has become financially substantive rather than merely issuance/AUM: current reporting based on the official Solana newsletter and Messari's tokenized-asset data says the ecosystem reached about 850,000 unique tokenized-equity holders and approximately $3.3B of RWA transaction volume over 30 days, led by xStocks, Backpack Securities and PreStocks.",
+      "Spot Solana ETFs have recorded 12 consecutive positive weeks. SoSoValue data cited by Yahoo Finance reports about $13.2M of net inflow for the week ending September 18, establishing persistence even though weekly totals vary across trackers/product coverage.",
+      "DeFi Development Corp. reported today that its SOL/SOL-equivalent treasury increased by about 101,381 units since September 14 to approximately 2,490,304, a 4.24% one-week increase. The company says the increase reflects continued purchases plus organic treasury growth, so it is not treated as 101,381 SOL of pure spot buying.",
+      "SOL is about $119.55 at this checkpoint, +8.7% over 24 hours, near the top of a $109.60-$119.61 daily range."
+    ],
+    "capital_quality": [
+      "Retained-capital confirmation is still negative: Solana stablecoin market cap is approximately $15.597B, down 2.77% over seven days, and DefiLlama reports approximately -$5.73M of 24h net inflow.",
+      "Solana's approximately $1.58B RWA Active AUM is treated as inventory/issuance and is not counted as speculative migration. The stronger signal is the reported $3.3B of 30-day tokenized-asset transaction volume and broad holder growth, which represent actual usage/secondary activity.",
+      "Bridged TVL of roughly $52.1B is a stock measure rather than current net flow and is not credited as fresh discretionary capital.",
+      "The ZetaChain governance decision to migrate ZETA 1:1 to Solana is ecosystem consolidation and a product/network catalyst, not fresh capital: total ZETA supply is preserved and a second governance proposal is still required before migration mechanics execute."
+    ],
+    "incentive_filter": [
+      "Raw Solana trade counts are heavily contaminated by memecoin/automated activity. A September 21 analysis reports 208M DEX trades for Sep. 14-20, but about 118M, or 57%, came from Pump.fun alone. That raw trade-count milestone therefore receives little weight as evidence of high-quality discretionary capital.",
+      "DefiLlama currently shows $0 of chain-level token incentives over 24h, so the chain-wide TVL/DEX metrics are not explained by a large generic incentive program, but individual applications and memecoin venues can still have highly reflexive or bot-heavy activity.",
+      "The tokenized-equity and ETF/treasury legs are not primarily airdrop/points/quest phenomena and are therefore weighted more heavily than launchpad transaction counts."
+    ],
+    "leadership_and_wallet_quality": [
+      "Solana is strengthening as an institutional/RWA usage leader while also remaining a high-throughput speculative venue. The quality improvement comes from secondary tokenized-equity usage, persistent ETF creations and a public-company accumulation channel rather than from raw memecoin trade counts.",
+      "No fresh cohort of historically selective, independently funded SOL spot wallets was verified in this scan. DFDV treasury accumulation and ETF creations are independent demand channels, but they do not substitute for selective-wallet convergence under the wallet-quality rubric.",
+      "ZETA is a satellite price/event leader around the migration narrative, but its existing L1 remains economically tiny: DefiLlama shows only about $530K TVL, $2,064 24h DEX volume, -69% weekly DEX change, $0 inflow, 244 active addresses and 882 transactions. Its rally is therefore classified as migration-event speculation rather than evidence that ZetaChain itself is attracting discretionary capital."
+    ],
+    "risk_and_catalyst_context": [
+      "September 21 is Anza's general-adoption milestone for Agave v4.3, with the Alpenglow feature gate targeted for September 28. Alpenglow/Votor targets roughly 150ms finality versus about 12.8 seconds under TowerBFT and removes vote transactions from blocks; the target date remains subject to rollout execution.",
+      "The market-wide squeeze already recorded earlier today remains a contamination risk for today's +8.7% SOL move, so price strength alone is not treated as new confirmation.",
+      "The strongest unresolved contradiction is that institutional/product adoption is accelerating while stablecoin stock and measured net flow remain negative. That prevents converting the improving fundamental regime into a paper overweight now."
+    ]
+  },
+  "structural_gate": {
+    "result": "PASS_NATIVE_ASSET",
+    "basis": "SOL is Solana's native asset, so third-party token honeypot, LP-owner, deployer and arbitrary ERC-style mint/freeze gates do not apply in the same form. Native staking issuance/inflation remains a dilution consideration. Executable liquidity is ample across major centralized and decentralized markets.",
+    "other_caveats": [
+      "No fresh independently verified selective-wallet cohort was found.",
+      "Stablecoin stock is falling and 24h measured net flow is negative despite price strength.",
+      "A large portion of raw trade count is memecoin/Pump.fun and likely bot/automation intensive.",
+      "Alpenglow activation is a forward catalyst, not yet a completed production outcome."
+    ]
+  },
+  "secondary_candidate": {
+    "asset": "ZETA",
+    "classification": "EVENT_DRIVEN_MIGRATION_SPECULATION_NO_TRADE",
+    "decision": "No paper trade. The 1:1 Solana migration authorization is not fresh capital, the current ZetaChain L1 has negligible economic activity, a second governance vote is required, and the future SPL token's final operational/permission topology is not yet available for the full structural audit."
+  },
+  "paper_portfolio": {
+    "source_of_truth_state_sha": "c2a09aa6c8f96ab272c8fbae7f24227515ea1ea5",
+    "trade_ledger_sha": "cbdf35b40d3ca9fabb14ac70cd8ce2ea08fc4671",
+    "trade_count": 10,
+    "cash_usd": 2030.3183658745413,
+    "approx_marks_usd": {
+      "BTC": 86753.90,
+      "ETH": 2767.66,
+      "SOL": 119.55,
+      "SUI": 1.02,
+      "BNB": 804.95,
+      "UNI": 8.87,
+      "HYPE": 93.71,
+      "AERO": 0.6876,
+      "ZEC": 1455.87
+    },
+    "portfolio_nav_usd_approx": 11142.73,
+    "passive_benchmark_nav_usd_approx": 10731.66,
+    "alpha_usd_approx": 411.07,
+    "alpha_bps_approx": 383.0,
+    "position_weights_pct_approx": {
+      "BTC": 19.70,
+      "ETH": 19.84,
+      "SOL": 10.38,
+      "SUI": 5.64,
+      "BNB": 4.86,
+      "UNI": 7.00,
+      "HYPE": 5.02,
+      "AERO": 2.71,
+      "ZEC": 6.64
+    },
+    "decision": "No paper trade. SOL remains a core holding and is held. A new 2.5% SOL tranche is not justified because retained stablecoin/net-flow confirmation is negative, raw trade counts are memecoin-heavy, selective-wallet convergence is missing, and the portfolio already has approximately 10.4% SOL exposure."
+  },
+  "forward_tests": [
+    "Whether Solana stablecoin market cap and net bridge/inflow metrics turn persistently positive while tokenized-equity secondary activity remains elevated.",
+    "Whether tokenized-equity volume persists after current regulatory/news catalysts and broadens into meaningful collateral, lending or other composable usage rather than remaining mostly spot settlement.",
+    "Whether SOL ETF inflows continue beyond the current 12-week streak and whether independent corporate treasury accumulation remains net positive without relying on equity issuance reflexivity.",
+    "Whether a fresh cohort of historically selective, independently funded SOL spot accumulators emerges and can be shown to be independent by funding source.",
+    "Whether Alpenglow activates cleanly beginning September 28 and produces measurable utilization/latency benefits without stability regressions.",
+    "Whether ZETA's second migration proposal passes and the eventual SPL token clears mint/freeze/admin, holder concentration, liquidity and migration-execution structural gates before it is ever considered for a paper entry."
+  ],
+  "sources": [
+    "https://defillama.com/chain/solana",
+    "https://www.coingecko.com/en/coins/solana",
+    "https://solanacompass.com/news/solana-tokenized-equity-holders-hit-850000-ath-as-33b-flows-in-30-days",
+    "https://finance.yahoo.com/markets/crypto/articles/solana-etfs-experience-12-consecutive-230449467.html",
+    "https://www.globenewswire.com/news-release/2026/09/21/3365490/0/en/dfdv-grows-sol-treasury-4-in-one-week-as-accumulation-accelerates.html",
+    "https://solanacompass.com/news/solanas-alpenglow-consensus-upgrade-hits-general-adoption-day-seven-days-from-mainnet-feature-gate",
+    "https://solanacompass.com/news/solana-dexs-log-208-million-weekly-trades-overtaking-nyse-in-trade-count-for-first-time",
+    "https://solanacompass.com/news/zetachain-proposal-68-passes-with-994-support-zeta-to-migrate-to-solana-spl",
+    "https://defillama.com/chain/zetachain"
+  ],
+  "hindsight_policy": "Observation frozen prospectively. No paper trade was executed. Subsequent SOL/ZETA price action, stablecoin/bridge flows, ETF flows, treasury purchases, RWA usage, wallet accumulation, Alpenglow activation or migration execution must not be retroactively treated as known at this timestamp."
+}
