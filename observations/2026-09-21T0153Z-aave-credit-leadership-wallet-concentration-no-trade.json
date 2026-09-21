@@ -1,0 +1,85 @@
+{
+  "observed_at_utc": "2026-09-21T01:53:38Z",
+  "classification": "AAVE_CREDIT_LEADERSHIP_MULTI_DAY_ACCUMULATION_WALLET_CONCENTRATION_BUYBACK_PAUSED_NO_TRADE",
+  "ecosystem": "Aave / Ethereum-led cross-chain credit",
+  "asset": "AAVE",
+  "contract_address": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2dDAE9",
+  "decision": "NO_TRADE",
+  "signal_summary": "Aave credit usage and V4 adoption are financially substantive and multi-day tracked-whale accumulation persists, but the apparent wallet breadth is materially weakened by concentration: Deep Blue Alpha reports one wallet responsible for 67% of AAVE tracked whale volume over 30 days. Direct token-level value capture is also presently weak because the DAO buyback program remains paused; V4 itself reports zero holder revenue. These blockers prevent a prospective paper starter despite strong protocol leadership.",
+  "regime_evidence": {
+    "aave_combined_tvl_usd": 18329000000,
+    "aave_combined_active_loans_usd": 12698000000,
+    "aave_combined_fees_30d_usd": 33960000,
+    "aave_combined_earnings_30d_usd": 4690000,
+    "aave_v4_tvl_usd": 556010000,
+    "aave_v4_tvl_growth_30d_pct": 121.8,
+    "aave_v4_active_loans_usd": 268430000,
+    "aave_v4_fees_30d_usd": 543793,
+    "aave_v4_holder_revenue_30d_usd": 0,
+    "interpretation": "Growth includes actual borrowing and fee generation, not merely supplied/AUM balances. V4 TVL excludes borrowed coins under DefiLlama methodology, while active-loan data separately confirms utilization."
+  },
+  "wallet_evidence": {
+    "sep17_high_conviction_wallets": 187,
+    "sep17_net_flow_usd": 6700000,
+    "sep18_high_conviction_wallets": 206,
+    "sep18_net_flow_usd": 8100000,
+    "sep19_high_conviction_wallets": 228,
+    "sep19_net_flow_usd": 2900000,
+    "sep20_high_conviction_wallets": 226,
+    "sep20_net_flow_usd": 6800000,
+    "sep20_notable_exchange_outflow_usd": 2600000,
+    "live_30d_distinct_tracked_whales": 88,
+    "live_30d_net_flow_usd": 51180000,
+    "largest_wallet_share_of_30d_tracked_volume_pct": 67,
+    "quality": "LOW_MEDIUM",
+    "caveat": "Daily high-conviction counts are not proof of independent beneficial owners or historically selective smart money. The token-level concentration alert and mixed CEX/DEX methodology materially reduce confidence."
+  },
+  "value_capture": {
+    "status": "WEAK_CURRENT_DIRECT_CAPTURE",
+    "buyback_program_status": "PAUSED",
+    "paused_since": "2026-04-19",
+    "reason": "rsETH bridge incident / treasury balance-sheet flexibility",
+    "v4_holder_revenue_30d_usd": 0,
+    "note": "Aave-branded revenue flows to the DAO treasury under the Aave Will Win framework, but treasury ownership/governance is not equivalent to automatic holder distribution. Acquired AAVE under the historical program was held in the ecosystem reserve rather than burned."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_GOVERNANCE_CAVEATS",
+    "sellability": "PASS",
+    "liquidity": "PASS",
+    "max_supply": 16000000,
+    "active_arbitrary_mint": "NOT_FOUND",
+    "upgrade_control": "AAVE token proxy administration is DAO/governance controlled and time-delayed rather than a unilateral EOA control; governance concentration remains a caveat.",
+    "hard_fail": false
+  },
+  "market_snapshot": {
+    "aave_price_usd": 136.80,
+    "aave_24h_range_usd": [133.35, 141.70],
+    "aave_24h_volume_usd": 249895000,
+    "aave_market_cap_usd": 2112000000,
+    "aave_fdv_usd": 2190000000
+  },
+  "paper_portfolio": {
+    "trade": null,
+    "cash_usd": 2030.3183658745413,
+    "trade_count": 10,
+    "state_source": "paper_portfolio/state.json",
+    "ledger_source": "paper_portfolio/trades.jsonl"
+  },
+  "forward_tests": [
+    "Do not paper-buy AAVE on broad whale-count statistics alone. Require a selective-wallet cohort with independently verified funding/ownership and historical performance, or another genuinely independent confirmation leg.",
+    "Verify an on-chain restart of the AAVE buyback program or another direct token-holder value-capture mechanism before treating protocol revenue as token cash flow.",
+    "Require V4 active loans and fees to continue rising after launch/market-specific incentives are discounted, not merely supplied deposits/AUM.",
+    "Reassess governance/upgrade concentration if control structure materially changes or a privileged action bypasses normal timelocks."
+  ],
+  "sources": [
+    "https://deepbluealpha.io/reports/ethereum-whale-report-2026-09-17",
+    "https://deepbluealpha.io/reports/ethereum-whale-report-2026-09-18",
+    "https://deepbluealpha.io/reports/ethereum-whale-report-2026-09-19",
+    "https://deepbluealpha.io/reports/ethereum-whale-report-2026-09-20",
+    "https://deepbluealpha.io/token/AAVE",
+    "https://defillama.com/protocol/aave-v4",
+    "https://defillama.com/protocol/aave",
+    "https://governance.aave.com/t/arfc-pause-aave-buybacks/24686",
+    "https://www.coingecko.com/en/coins/aave"
+  ]
+}
