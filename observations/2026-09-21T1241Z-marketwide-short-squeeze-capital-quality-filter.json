@@ -1,0 +1,84 @@
+{
+  "timestamp_utc": "2026-09-21T12:41:41Z",
+  "classification": "MARKETWIDE_SHORT_SQUEEZE_BTC_BREAKOUT_CAPITAL_QUALITY_FILTER_NO_TRADE",
+  "alert_threshold_crossed": true,
+  "scope": "marketwide / BTC-led risk-on move",
+  "candidate_asset": null,
+  "paper_action": "NO_TRADE",
+  "paper_trade_executed": false,
+  "real_trade_executed": false,
+  "source_of_truth": {
+    "repository": "rkrlab/agent-hello-world",
+    "state_path": "paper_portfolio/state.json",
+    "ledger_path": "paper_portfolio/trades.jsonl",
+    "state_sha_read_before_decision": "c2a09aa6c8f96ab272c8fbae7f24227515ea1ea5",
+    "ledger_sha_read_before_decision": "cbdf35b40d3ca9fabb14ac70cd8ce2ea08fc4671",
+    "cash_usd": 2030.3183658745413,
+    "trade_count": 10,
+    "last_trade_id": "ADD-UNI-20260919-071102Z"
+  },
+  "regime_evidence": {
+    "market_move": "BTC crossed $85,000 for the first time since January while ETH, SOL, SUI, BNB, HYPE and other risk assets rallied simultaneously.",
+    "forced_flow": "Reported 24h crypto liquidations exceeded $756M, with roughly $650M from shorts; this makes forced covering a material component of the move and disqualifies price acceleration alone as discretionary-capital confirmation.",
+    "btc_fund_flow": "U.S. spot BTC ETFs received about $433M on Sep. 18 and about $593M over Sep. 17-18, but the full Sep. 14-18 week was only about +$6.2M net after prior outflows. This is a genuine institutional-flow leg but not yet persistent enough to explain the entire breakout as fresh discretionary capital.",
+    "eth_fund_flow": "U.S. spot ETH ETFs were about -$140M net for the Sep. 14-18 week despite a positive Sep. 18 session, so the ETH rally is not confirmed by weekly ETF capital.",
+    "onchain_context": "Previously sampled chain data remains mixed rather than uniformly risk-on: Hyperliquid has the clearest retained-capital + trading continuation, while Solana and Ethereum retained-capital metrics are less convincing and several chains show spot/perp divergence."
+  },
+  "why_capital_is_arriving": {
+    "clean_components": [
+      "late-week BTC ETF creations",
+      "risk-asset relief as oil/yields eased",
+      "regulatory optimism around the SEC tokenized-securities exemption"
+    ],
+    "contaminating_components": [
+      "large short-liquidation cascade / forced covering",
+      "systematic momentum after BTC broke resistance",
+      "broad beta repricing rather than ecosystem-specific retained capital"
+    ],
+    "classification": "MIXED: real discretionary/institutional demand exists, but the marginal acceleration is materially short-squeeze driven. Do not promote the rally itself to an ecosystem migration signal."
+  },
+  "existing_positions": {
+    "decision": "HOLD_ALL / NO_ADD / NO_TRIM",
+    "notes": [
+      "No non-core position exceeds the 7.5% default cap at the contemporaneous marks.",
+      "HYPE made a new all-time high with strong token turnover and remains the strongest continuation ecosystem, but no fresh independent selective-wallet confirmation was verified; the Oct. 6 contributor unlock and low circulating/FDV ratio remain material caveats, so no scale add.",
+      "ETH is supported by a large BTC-to-ETH staking rotation already recorded earlier, but weekly ETH ETF outflows conflict with treating today's rally as independent institutional confirmation.",
+      "SUI's sharp price move is not matched by comparably strong retained-capital inflow, so no add based on price alone.",
+      "ZEC remains above the previously identified liquidation-risk zone and its large Garrett Jin hedge has been closed while spot remains held; no new structural failure or distribution trigger was verified."
+    ]
+  },
+  "approx_portfolio_mark": {
+    "note": "Approximate contemporaneous mark only; no ledger/state mutation because no paper trade occurred.",
+    "portfolio_nav_usd": 11078.67,
+    "passive_benchmark_nav_usd": 10614.13,
+    "alpha_usd": 464.54,
+    "alpha_bps": 437.7,
+    "cash_weight_pct": 18.33,
+    "non_core_weights_pct": {
+      "UNI": 7.05,
+      "HYPE": 5.14,
+      "AERO": 2.72,
+      "ZEC": 7.06
+    }
+  },
+  "structural_gate": {
+    "result": "NO_NEW_CANDIDATE_TO_GATE",
+    "existing_positions": "No newly discovered hard structural failure in an existing paper position."
+  },
+  "forward_tests": [
+    "Require post-squeeze persistence after liquidation pressure subsides; if prices/DEX usage retreat as forced covering ends, classify this as a transient squeeze rather than a regime shift.",
+    "For BTC/ETH institutional confirmation, require consecutive completed ETF sessions or a clearly positive weekly total rather than one late-week reversal.",
+    "For ecosystem-specific adds, require retained stablecoin/bridge capital, spot DEX/user persistence, and independent selective-wallet accumulation rather than broad beta price appreciation.",
+    "For HYPE scale-up, require a genuinely independent confirmation leg and reassess dilution/unlock risk before approaching the 7.5% non-core cap."
+  ],
+  "sources": [
+    "https://www.coingecko.com/en/coins/bitcoin",
+    "https://www.coingecko.com/en/coins/ethereum",
+    "https://www.coingecko.com/en/coins/solana",
+    "https://www.coingecko.com/en/coins/sui",
+    "https://www.coingecko.com/en/coins/hyperliquid",
+    "https://www.theblock.co/news/markets/2026-09-19-bitcoin-etfs-eke-out-positive-week-with-433-million-friday-inflow-as-ether-funds-snap-four-week-inflow-streak-415871",
+    "https://crypto-economy.com/crypto-liquidations-top-688m-btc-eth-xrp-peaks/",
+    "https://www.wsj.com/finance/currencies/bitcoin-jumps-above-85-000-to-8-month-high-050f3578"
+  ]
+}
