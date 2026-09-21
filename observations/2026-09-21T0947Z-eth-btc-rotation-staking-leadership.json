@@ -1,0 +1,71 @@
+{
+  "timestamp_utc": "2026-09-21T09:47:46Z",
+  "classification": "ETH_BTC_ROTATION_STAKING_SPOT_CONFIRMATION_CORE_HOLD_NO_ADD",
+  "ecosystem": "Ethereum",
+  "asset": "ETH",
+  "contract_address": null,
+  "signal_status": "MEANINGFUL_THRESHOLD_CROSSED",
+  "paper_action": "HOLD_NO_ADD",
+  "regime_evidence": {
+    "ethereum_defi_tvl_usd": 53116000000,
+    "stablecoin_mcap_usd": 146678000000,
+    "stablecoin_change_7d_pct": -0.47,
+    "rwa_active_aum_usd": 13562000000,
+    "dex_volume_24h_usd": 1259000000,
+    "dex_volume_7d_usd": 9819000000,
+    "dex_weekly_change_pct": 16.81,
+    "perp_volume_7d_usd": 4375000000,
+    "perp_weekly_change_pct": -32.89,
+    "net_inflows_24h_usd": 28070000,
+    "active_addresses_24h": 492654,
+    "new_addresses_24h": 132298,
+    "interpretation": "Ethereum spot/DEX activity is accelerating while onchain perpetual volume contracts sharply. This is a cleaner spot-usage mix, but stablecoin stock is slightly lower over seven days, so it is not classified as broad fresh ecosystem-capital migration. RWA AUM is tracked separately and is not counted as secondary speculative flow."
+  },
+  "leadership_rotation": {
+    "btc_to_eth_rotation": "A separate large wallet reportedly sold 1,107 BTC (~$86.76M) over five days, bought 34,422 ETH (~$86.5M), and staked all of it. This is explicit BTC-to-ETH leadership rotation, not fresh external capital.",
+    "selective_wallet": "Trader 0x4cee reportedly sent $40M USDC to Binance and withdrew 7,567 ETH (~$19.93M) on Sep 21 after an earlier July buy / Aug sale that realized about $3.66M profit.",
+    "staking_queue": "As of Sep 20 reporting, about 2.48M ETH was waiting to enter validator staking, approximately 13.6x the amount queued to exit, with a 43-45 day activation wait.",
+    "latest_completed_etf_flow": "US spot ETH ETFs recorded approximately $144M net inflow on Sep 18; BlackRock ETHA accounted for about $114M and Fidelity FETH about $26.24M.",
+    "price_confirmation": "CoinGecko marked ETH at $2,727.46, +4.9% over 24h and +7.3% over seven days at the checkpoint."
+  },
+  "incentive_filter": {
+    "assessment": "PASS_WITH_CAVEAT",
+    "detail": "No airdrop, points, quest, trading-reward or rebate program was identified as the primary driver of the observed BTC-to-ETH rotation, ETF creations, or exchange withdrawal. Native staking yield is economically substantive protocol compensation rather than a temporary promotional campaign, but it can motivate staking demand and is therefore not treated as pure discretionary speculation."
+  },
+  "wallet_quality": {
+    "grade": "MEDIUM_HIGH_BUT_NOT_SCALE_GRADE",
+    "detail": "0x4cee has one clearly documented profitable recent ETH round trip and has now re-entered. The separate BTC-to-ETH whale supplies a second large flow, but its historical selectivity and funding independence are not fully verified. ETF flow is an independent institutional channel, but one completed positive session is not enough by itself to establish persistence."
+  },
+  "structural_gate": {
+    "result": "PASS_APPLICABLE_NATIVE_ASSET_GATES",
+    "detail": "ETH is the native Ethereum asset, so third-party token honeypot, LP-owner, blacklist, arbitrary contract mint/freeze and deployer-control gates do not apply in the same way. Issuance and staking economics remain dilution/value-capture considerations rather than a hard structural failure."
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "detail": "ETH has deep global spot liquidity; CoinGecko reported approximately $17.7B 24h turnover at the checkpoint."
+  },
+  "paper_portfolio_decision": {
+    "decision": "HOLD_NO_ADD",
+    "reason": "The leadership rotation is meaningful and hard enough to game to warrant an alert, but it does not yet justify increasing a core ETH position already near 20% of marked NAV. The biggest BTC-to-ETH move is one wallet and represents rotation rather than fresh capital; only one selective wallet has a demonstrated recent ETH track record; the latest ETF inflow is a single completed session; and Ethereum stablecoin supply remains -0.47% over seven days. Require persistence before overweighting the core position.",
+    "cash_usd": 2030.3183658745413,
+    "trade_count": 10,
+    "marked_nav_usd_approx": 10988.34,
+    "passive_benchmark_nav_usd_approx": 10508.37,
+    "alpha_usd_approx": 479.98,
+    "alpha_bps_approx": 456.8
+  },
+  "forward_tests": [
+    "Confirm additional independently funded, historically selective ETH spot accumulators rather than a one-day whale cluster.",
+    "Require continued positive completed ETH ETF net flows across multiple sessions, not just Sep 18.",
+    "Watch whether the 2.48M ETH staking-entry queue remains elevated while exits stay subdued after the current price move.",
+    "Require Ethereum retained-capital metrics to improve: stablecoin supply and/or net bridge inflows should turn persistently positive rather than merely DEX volume accelerating.",
+    "Prefer continued ETH/BTC relative strength accompanied by spot/DEX activity rather than a reversal back toward leveraged perp-led price discovery."
+  ],
+  "sources": [
+    "https://defillama.com/chain/ethereum",
+    "https://www.coingecko.com/en/coins/ethereum",
+    "https://www.kucoin.com/news/flash/ethereum-spot-etfs-see-144m-net-inflow-on-sept-18-blackrock-s-etha-leads-with-114m",
+    "https://pluang.com/en/news-feed/permintaan-staking-ethereum-melampaui-keluar-queue-aktivasi-meningkat",
+    "https://www.coingabbar.com/en/ethereum-news-today-eth-price-roadmap-whales-buyback"
+  ]
+}
