@@ -1,0 +1,90 @@
+{
+  "timestamp_utc": "2026-09-21T13:41:42Z",
+  "classification": "ARC_VOLUME_INTEGRITY_FAILURE_LAUNCHPAD_DOMINATION_UNI_AERO_NO_CONFIRMATION_NO_TRADE",
+  "ecosystem": "Arc (Circle)",
+  "candidate_asset": null,
+  "paper_action": "NO_TRADE",
+  "source_of_truth_checked": {
+    "state_path": "paper_portfolio/state.json",
+    "ledger_path": "paper_portfolio/trades.jsonl",
+    "trade_count": 10,
+    "last_trade_id": "ADD-UNI-20260919-071102Z",
+    "cash_usd": 2030.3183658745413
+  },
+  "signal": {
+    "summary": "Arc's superficially strong launch-week DEX activity fails the framework's activity-quality test. Launchpad churn dominated day one, and a fresh Bitquery on-chain investigation found two newly minted look-alike tokens and two wallets generated nearly half of September 20 DEX volume through repeated buy/sell loops. Arc therefore cannot currently be counted as clean discretionary-capital migration or as confirmation for UNI/AERO.",
+    "current_chain_metrics": {
+      "tvl_usd": 342770000,
+      "stablecoin_mcap_usd": 629600000,
+      "usdc_dominance_pct": 99.17,
+      "dex_volume_24h_usd": 41240000,
+      "dex_volume_7d_usd": 367740000,
+      "app_revenue_24h_usd": 1219.68,
+      "app_fees_24h_usd": 276530.28
+    },
+    "launch_quality": {
+      "day_one_dex_volume_usd": 410800000,
+      "day_one_launchpad_volume_usd": 336260000,
+      "day_one_launchpad_share_pct": 82.0,
+      "day_one_transactions": 7760000,
+      "day_one_tokens_minted": 97025,
+      "arguspad_tokens_minted": 83751
+    },
+    "wash_trading_evidence": {
+      "sep20_total_dex_volume_usd": 81500000,
+      "two_new_tokens_volume_usd": 39900000,
+      "share_pct": 48.9,
+      "transactions_producing_counted_volume": 5,
+      "counted_volume_from_five_transactions_usd": 59800000,
+      "signing_wallets": 2,
+      "combined_wallet_usdc_balance_usd_approx": 5200,
+      "cleaned_sep20_volume_usd": 41600000,
+      "interpretation": "Repeated buy/sell loops within single transactions, with liquidity added and removed around the loops, are not treated as discretionary trading demand. Removing the identified transactions changes the apparent day-over-day direction from +8% to approximately -25%."
+    },
+    "institutional_catalyst": "Arc remains strategically important: Circle launched public mainnet September 16 with USDC gas, StableFX, Circle Payments Network, Uniswap as a preferred DEX, and tokenized assets including USYC/BUIDL/private credit/cirBTC intended for trading, lending and collateral. Those are future-capability and asset-availability catalysts, not proof of current organic secondary speculation.",
+    "rwa_distinction": "Tokenized asset availability/TVL is not counted as secondary trading or collateral utilization unless observed. Current launch-week DEX evidence is dominated by memecoin launchpads and contaminated by wash-like loops, so no RWA capital-migration claim is made.",
+    "value_capture": "Uniswap governance has only a temperature-check proposal to extend protocol-fee collection/burn infrastructure to Arc. It is not treated as active UNI value capture until approved and implemented.",
+    "wallet_quality": "FAIL for the apparent Arc speculative-volume signal: concentrated activity by two wallets plus volume-bot availability makes headline volume and trader counts highly gameable. No independent selective-wallet cohort was verified.",
+    "structural_gate": "FAIL for surfaced Arc microcap candidates until contract permissions, LP control, holder/funding concentration, creator behavior and executable liquidity are independently cleared. There is no tradable native ARC token to evaluate.",
+    "portfolio_implication": "Do not count Arc launch activity as confirmation for existing UNI or AERO positions. Their broader theses remain intact, so no trim is justified solely from this Arc-specific quality failure. Hold all positions.",
+    "forward_tests": [
+      "Recompute Arc DEX activity excluding identified looped/wash-like transactions and launchpad tokens.",
+      "Require durable stablecoin transfer/settlement, lending utilization, RWA secondary trading or collateral activity rather than issuance/TVL alone.",
+      "Require independently funded repeat wallets with diverse counterparties and no volume-bot or correlated-funding signature.",
+      "For UNI, count Arc as direct token value capture only after protocol-fee expansion is approved, implemented and produces measurable burn/holder revenue.",
+      "For any Arc microcap, clear all contract/LP/concentration/deployer/sellability gates before surfacing it."
+    ]
+  },
+  "paper_portfolio_mark": {
+    "approx_nav_usd": 11101.62,
+    "approx_passive_benchmark_nav_usd": 10624.07,
+    "approx_alpha_usd": 477.55,
+    "approx_alpha_bps": 449.5,
+    "marks": {
+      "BTC": 85000.05,
+      "ETH": 2727.68,
+      "SOL": 116.73,
+      "SUI": 1.03,
+      "BNB": 789.84,
+      "UNI": 8.97,
+      "HYPE": 95.5,
+      "AERO": 0.6847,
+      "ZEC": 1550.87
+    },
+    "non_core_weights_pct_approx": {
+      "UNI": 7.10,
+      "HYPE": 5.13,
+      "AERO": 2.71,
+      "ZEC": 7.10
+    }
+  },
+  "sources": [
+    "https://bitquery.io/investigations/arc-dex-volume-two-wallets",
+    "https://defillama.com/chain/arc",
+    "https://investor.circle.com/news/news-details/2026/Circle-Launches-Arc-Mainnet-an-Economic-Operating-System-for-the-Internet/default.aspx",
+    "https://blog.uniswap.org/pt-BR/uniswap-is-live-on-arc",
+    "https://gov.uniswap.org/t/temp-check-protocol-fee-expansion-arc/26287"
+  ],
+  "real_trade_executed": false,
+  "paper_trade_executed": false
+}
