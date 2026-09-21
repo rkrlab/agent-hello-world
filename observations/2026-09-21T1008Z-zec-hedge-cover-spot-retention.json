@@ -1,0 +1,70 @@
+{
+  "timestamp_utc": "2026-09-21T10:08:00Z",
+  "classification": "ZEC_LARGE_HEDGE_COVER_SPOT_RETENTION_RISK_IMPROVEMENT_HOLD_NO_ADD",
+  "ecosystem": "Zcash",
+  "asset": "ZEC",
+  "contract_address": null,
+  "alert_threshold_crossed": true,
+  "paper_action": "HOLD_NO_ADD_NO_TRIM",
+  "paper_trade_executed": false,
+  "evidence": {
+    "large_holder_hedge_change": {
+      "holder": "Garrett Jin / wallet attribution reported by Lookonchain and Onchain Lens",
+      "closed_short_zec": 38000,
+      "reported_realized_loss_usd": 35440000,
+      "spot_zec_retained": 202078,
+      "reported_spot_value_usd": 309250000,
+      "reported_spot_unrealized_profit_usd": 221000000,
+      "spot_origin_note": "Reportedly withdrawn from Binance about nine months earlier near $437/ZEC; this is retained inventory, not fresh spot accumulation in this run.",
+      "interpretation": "Closing the hedge while retaining the spot stack raises the holder's net directional ZEC exposure by roughly the size of the closed short. It removes one large bearish derivatives position but should not be counted as new external capital or new spot accumulation."
+    },
+    "market_execution": {
+      "reported_cover_window": "approximately 90 minutes",
+      "reported_price_move_during_cover": "$1,490 to $1,530 (~+2.7%)",
+      "current_coingecko_mark_usd": 1504.21,
+      "current_24h_range_usd": [1429.69, 1545.00],
+      "current_24h_turnover_usd": 1307000000,
+      "current_24h_change_pct": 5.2,
+      "interpretation": "The cover was large enough to move spot, so the immediate price impulse is partly mechanical and must not be treated as independent discretionary demand. Current price below the cover-window peak argues against chasing the cover itself."
+    },
+    "regulated_flow_context": {
+      "latest_available_zcsh_daily_net_inflow_usd": 46560000,
+      "latest_available_zcsh_net_assets_usd": 889430000,
+      "interpretation": "Regulated demand remains supportive, but the latest available snapshot is not treated as same-minute confirmation and ETF AUM is distinguished from net creations."
+    },
+    "structural_gate": {
+      "result": "PASS_WITH_CAVEATS",
+      "notes": "ZEC is a native PoW asset with no token-contract honeypot/mint/freeze/LP-owner gate. Ongoing caveats remain privacy-regulatory/listing risk, derivatives crowding, opaque beneficial ownership and continued issuance."
+    }
+  },
+  "decision": {
+    "why_alert_now": "A previously material bearish derivative position tied to a very large spot holder has been fully removed while the spot inventory remains held. That is a material thesis/risk change for an existing paper position.",
+    "why_no_add": "The event is mostly hedge removal, not fresh spot accumulation; the market-buy cover itself created a temporary mechanical bid; ZEC is already near the framework's 7.5% non-core cap; and derivatives crowding remains elevated. Adding after the cover would risk taking credit for a move already caused by the observable event.",
+    "why_no_trim": "The large holder retained the 202,078 ZEC spot position, structural gates still pass, regulated net-creation demand remains supportive, and current price remains well above the previously identified liquidation-risk zone.",
+    "forward_tests": [
+      "Check whether the 202,078 ZEC spot balance remains intact or begins moving toward exchanges after the hedge is gone.",
+      "Require fresh independent spot accumulation or additional externally sourced ETF net creations before considering another scale decision.",
+      "Watch whether aggregate derivatives open interest/funding normalize after the large short removal rather than simply re-leveraging at higher prices.",
+      "Treat another independent legacy-holder CEX deposit or a break of the prior long-liquidation cluster with forced selling as renewed trim evidence."
+    ]
+  },
+  "paper_portfolio_snapshot": {
+    "source_of_truth_state_sha": "c2a09aa6c8f96ab272c8fbae7f24227515ea1ea5",
+    "trade_ledger_sha": "cbdf35b40d3ca9fabb14ac70cd8ce2ea08fc4671",
+    "trade_count": 10,
+    "cash_usd": 2030.3183658745413,
+    "zec_quantity": 0.5081623037366105,
+    "zec_mark_value_usd": 764.3828189036469,
+    "zec_weight_pct": 6.932180101951382,
+    "portfolio_nav_usd": 11026.586263799985,
+    "passive_benchmark_nav_usd": 10572.874569917132,
+    "alpha_usd": 453.71169388285307,
+    "alpha_bps": 429.12803976109967
+  },
+  "sources": [
+    "https://koinbulteni.com/en/zec-whale-loses-35-million-still-holds-309-million-in-assets-287494.html",
+    "https://cryptoadventure.com/garrett-jin-closes-58-5m-zcash-short-with-35-4m-loss/",
+    "https://www.coingecko.com/en/coins/zcash",
+    "https://sosovalue.com/assets/etf/us-zec-spot"
+  ]
+}
