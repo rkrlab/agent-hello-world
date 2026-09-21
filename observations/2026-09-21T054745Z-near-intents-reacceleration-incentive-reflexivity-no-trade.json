@@ -1,0 +1,97 @@
+{
+  "observed_at_utc": "2026-09-21T05:47:45Z",
+  "classification": "NEAR_INTENTS_REACCELERATION_AIRDROP_REFLEXIVITY_STABLECOIN_DIVERGENCE_NO_TRADE",
+  "ecosystem": "NEAR / cross-chain Intents and confidential execution",
+  "candidate_asset": "NEAR",
+  "asset_type": "native L1 token",
+  "contract_address": null,
+  "alert_threshold_crossed": true,
+  "paper_action": "NO_TRADE",
+  "regime_evidence": {
+    "near_mark_usd": 4.17,
+    "near_change_24h_pct": 17.1,
+    "near_change_7d_pct": 81.2,
+    "near_24h_token_volume_usd": 1996607318.44,
+    "near_market_cap_usd": 5452597897,
+    "defi_tvl_usd": 196740000,
+    "defi_tvl_change_24h_pct": 32.26,
+    "stablecoin_supply_usd": 80050000,
+    "stablecoin_supply_change_7d_pct": -23.86,
+    "dex_volume_24h_usd": 96980000,
+    "dex_volume_7d_usd": 400370000,
+    "dex_volume_weekly_change_pct": 25.54,
+    "net_inflows_24h_usd": 3180000,
+    "active_addresses_24h": 44749,
+    "new_addresses_24h": 9142,
+    "transactions_24h": 840314,
+    "confidential_tvl_usd": 182220000,
+    "confidential_tvl_change_90d_pct": 489.6,
+    "gross_fees_30d_usd": 5250000,
+    "net_revenue_30d_usd": 1700000,
+    "cumulative_protocol_burn_and_gross_revenue_usd": 10830000
+  },
+  "rwa_and_usage_classification": {
+    "confidential_tvl": "Locked/deposited capital; not secondary trading volume and not evidence by itself of discretionary capital velocity.",
+    "intents_usage": "The product executes actual cross-chain swaps and produces fee/revenue streams, so underlying product usage is financially substantive, but the current Confidential TVL acceleration is heavily contaminated by a milestone reward program.",
+    "rwa": "No new NEAR-specific RWA issuance or secondary-collateral utilization signal was strong enough in this run to drive the classification."
+  },
+  "incentive_filter": {
+    "program": "NEAR@3.33 Drop 1",
+    "drop_size_tokens": 333333,
+    "snapshot_trigger": "$70M aggregate Confidential Intents TVL",
+    "eligibility": "Maintain a confidential balance above $100 and have active confidential swap activity; allocation reflected balance/activity/time before the snapshot.",
+    "conversion_condition": "Milestone tokens convert 1:1 to NEAR only after NEAR's 3-day VWAP is at or above $3.33.",
+    "assessment": "MATERIAL_CONTAMINATION_AND_PRICE_REFLEXIVITY. The campaign directly rewards balances and swaps and ties reward conversion to a token-price milestone, so the TVL/user/activity spike cannot be treated as clean discretionary speculative migration."
+  },
+  "token_value_capture": {
+    "assessment": "REAL_BUT_NOT_FULL_PASS_THROUGH",
+    "evidence": "NEAR Revenue reports about $5.25M gross fees and $1.70M net revenue over 30 days; captured revenue feeds buybacks that remove NEAR from circulation.",
+    "caveat": "Gross Intents activity does not all accrue to NEAR because partner payouts, solvers, front ends and other revenue-sharing mechanisms retain part of the economics."
+  },
+  "wallet_quality": {
+    "grade": "LOW_TO_MEDIUM",
+    "reason": "No fresh cohort of independently funded, historically selective NEAR spot accumulators was verified. A visible profitable Hyperliquid NEAR long belongs to a broad multi-asset leveraged wallet and is not treated as selective-wallet convergence."
+  },
+  "structural_gate": {
+    "result": "PASS_FOR_APPLICABLE_NATIVE_ASSET_MECHANICS_BUT_NEW_ENTRY_QUALITY_NOT_CLEARED",
+    "reason": "NEAR is a native L1 asset, so third-party token honeypot, LP-owner removal and ERC-style freeze/mint checks are not directly applicable. CoinGecko reports market cap approximately equal to FDV and ~1.3B circulating/total supply, reducing conventional unlock-overhang risk. Native issuance/governance risk remains, and holder/funding independence was not sufficiently resolved for a new paper entry.",
+    "executability": "PASS; about $2.0B of 24h token turnover across 87 exchanges / 152 markets at the checkpoint."
+  },
+  "leadership_assessment": "NEAR is a genuine relative-momentum and cross-chain-intents leader at this checkpoint, but the current reacceleration is not clean evidence of discretionary capital migration because retained stablecoin stock is shrinking and the most explosive confidential-liquidity leg was explicitly reward-shaped.",
+  "decision_rationale": "NO PAPER BUY. NEAR is already +81.2% over seven days; Confidential TVL and chain activity accelerated sharply, and protocol revenue/value capture are real, but stablecoin supply is -23.86% over seven days, Drop 1 directly rewarded balances/swaps and introduced a price-linked conversion condition, and independent selective-wallet confirmation is absent. The framework rejects chasing a reward-contaminated repricing without retained-capital and wallet-quality confirmation.",
+  "forward_tests": [
+    "After Drop 1 rewards become claimable/distributed and balances can unwind, require Confidential TVL and swap/route activity to remain elevated rather than collapsing with the incentive.",
+    "Require NEAR stablecoin supply and/or verified net bridge inflows to turn materially positive, showing retained external capital rather than high velocity against a shrinking settlement base.",
+    "Require a fresh cohort of independently funded, historically selective NEAR spot accumulators; do not count broad leveraged multi-asset wallets as confirmation.",
+    "Track whether fee-derived net revenue and NEAR buyback/burn value capture rise with non-incentivized Intents volume.",
+    "Do not credit any further price appreciation before a prospective paper trade timestamp."
+  ],
+  "paper_portfolio_state_read": {
+    "cash_usd": 2030.3183658745413,
+    "trade_count": 10,
+    "last_trade_id": "ADD-UNI-20260919-071102Z",
+    "approx_marked_nav_usd": 10772.74,
+    "approx_passive_benchmark_nav_usd": 10378.24,
+    "approx_outperformance_usd": 394.50,
+    "approx_outperformance_pct_of_benchmark": 3.80
+  },
+  "existing_position_decisions": {
+    "BTC": "HOLD",
+    "ETH": "HOLD",
+    "SOL": "HOLD",
+    "SUI": "HOLD_NO_ADD",
+    "BNB": "HOLD",
+    "UNI": "HOLD_NO_ADD",
+    "HYPE": "HOLD_NO_ADD",
+    "AERO": "HOLD_NO_ADD",
+    "ZEC": "HOLD_NO_ADD_NO_TRIM"
+  },
+  "sources": [
+    "https://www.coingecko.com/en/coins/near",
+    "https://defillama.com/chain/near?chainFees=true&events=false&tvl=false",
+    "https://revenue.near.org/",
+    "https://www.raptorgroup.com/news/introducing-near3-33-a-milestone-incentive-program/",
+    "https://www.prnewswire.co.uk/news-releases/nearcoms-confidential-tvl-reaches-70-million-triggering-the-near3-33-snapshot-amid-industry-wide-privacy-wave-302881902.html",
+    "https://whalemirror.com/trader/0xeadc152ac1014ace57c6b353f89adf5faffe9d55"
+  ]
+}
