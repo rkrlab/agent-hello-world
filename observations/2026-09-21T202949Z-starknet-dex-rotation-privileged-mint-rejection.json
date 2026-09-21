@@ -1,0 +1,98 @@
+{
+  "timestamp_utc": "2026-09-21T20:29:49Z",
+  "classification": "STARKNET_STRK_DEX_PRICE_ROTATION_RETAINED_CAPITAL_DIVERGENCE_PRIVILEGED_MINT_REJECTION_NO_TRADE",
+  "ecosystem": "Starknet",
+  "asset": "STRK",
+  "contract_address_ethereum": "0xca14007eff0db1f8135f4c25b34de49ab0d42766",
+  "alert_threshold_crossed": true,
+  "paper_action": "NO_TRADE_STRUCTURAL_REJECT",
+  "paper_trade_executed": false,
+  "signal": {
+    "regime_evidence": [
+      "DefiLlama's current Starknet chain view shows approximately $160.8M DeFi TVL, $147.6M stablecoin supply, $41.1M 24h DEX volume, $139.7M 7d DEX volume and a +255% weekly DEX-change print. Its dedicated DEX page refreshed at a different moment shows $32.4M 24h and +154% weekly; both independently show an abnormal weekly acceleration.",
+      "The dedicated DEX page attributes approximately $32.06M of $32.42M 24h volume to Ekubo, so nearly all measured Starknet spot DEX activity is concentrated in one venue rather than broadly distributed across applications.",
+      "CoinGecko marks STRK around $0.0446, +50.5% over seven days, with about $99.0M of 24h token turnover and about $327.7M market cap. This is real liquid price leadership rather than an illiquid microcap print.",
+      "CoinGlass shows STRK around $0.0438 at its refresh, +48.7% over seven days but -10.9% over 24h, with roughly $158.3M futures turnover, $41.0M spot turnover and $80.9M open interest. Derivatives turnover is therefore several times spot turnover and the rally is already showing a sharp giveback."
+    ],
+    "capital_quality": [
+      "Retained-capital confirmation is absent: Starknet stablecoin supply is -0.38% over seven days and DefiLlama reports -$655,699 of 24h net inflow despite the DEX and token-price surge.",
+      "Only 1,687 active addresses and 7 new addresses are reported over 24h alongside 137,402 transactions. This does not prove botting, but breadth is weak relative to activity intensity and prevents treating transaction count as organic-user confirmation.",
+      "Current bridged TVL of about $381.3M is a stock measure, not net new capital. It is not counted as discretionary migration absent net-flow attribution.",
+      "Starknet RWA active AUM is only about $12.5M in the current chain view and no material secondary RWA trading/collateral-utilization leg was found, so RWA inventory is not used to explain the move."
+    ],
+    "incentive_filter": [
+      "Ekubo currently runs liquidity-reward campaigns and its rewards page shows BTCFi Season live. These rewards are primarily for liquidity provision rather than per-trade rebates, so they do not explain all DEX turnover, but they contaminate liquidity/TVL as evidence of discretionary capital.",
+      "Airdrop/claim promotion and broad Layer-2/privacy narratives are present in current coverage. Social attention therefore is not treated as independent capital confirmation."
+    ],
+    "leadership_and_wallet_quality": [
+      "STRK is one of the strongest current Layer-2 price leaders and Starknet is a raw DEX-growth leader, but price leadership is running well ahead of retained stablecoin/net-flow and user-breadth confirmation.",
+      "No fresh cohort of historically selective, independently funded STRK spot accumulators was verified in this scan. Raw large-holder concentration is not used as evidence because public rich lists combine exchanges, contracts, custody and protocol reserves."
+    ],
+    "risk_and_catalyst_context": [
+      "Nostra Money Market suffered an approximately $3.5M oracle-manipulation exploit on September 17 and paused its market, so the ecosystem rally is occurring despite a recent lending-security failure rather than because that risk improved.",
+      "STRK supply pressure remains material: roughly 127M STRK monthly vesting cliffs continue through March 2027; an independent on-chain supply-pressure analysis also reports 37.7M STRK staking mints over the trailing 90 days and a 200M STRK project-distribution transfer on September 10. These secondary-source supply figures are treated as risk context, not as a precise sell forecast.",
+      "The move appears more consistent with broad Layer-2/privacy rotation plus leverage than a single identifiable influencer campaign. No concentrated promoter was verified strongly enough to count as an inverse signal."
+    ]
+  },
+  "structural_gate": {
+    "result": "FAIL_PRIVILEGED_MINT_AUTHORITY",
+    "basis": "The official starknet-io/starknet-token repository states that the STRK ERC-20 uses OpenZeppelin AccessControl, with DEFAULT_ADMIN_ROLE administering MINTER_ROLE and MINTER_ROLE permitted to mint. Starknet's official staking materials also state staking rewards are issued through new-token minting. Under this portfolio's hard structural rules, privileged mint authority is disqualifying unless current role topology proves minting cannot be discretionarily expanded beyond narrowly constrained protocol rules. That proof was not established in this scan, so STRK is ineligible regardless of opportunity score.",
+    "other_caveats": [
+      "Monthly insider/contributor unlocks and ongoing staking inflation add supply risk.",
+      "A recent protocol-level lending exploit increases ecosystem execution risk.",
+      "DEX activity is highly concentrated on Ekubo and retained-capital breadth is weak."
+    ]
+  },
+  "paper_portfolio": {
+    "source_of_truth_state_sha": "c2a09aa6c8f96ab272c8fbae7f24227515ea1ea5",
+    "trade_ledger_sha": "cbdf35b40d3ca9fabb14ac70cd8ce2ea08fc4671",
+    "trade_count": 10,
+    "cash_usd": 2030.3183658745413,
+    "approx_marks_usd": {
+      "BTC": 87063.96,
+      "ETH": 2797.84,
+      "SOL": 118.58,
+      "SUI": 1.03,
+      "BNB": 801.65,
+      "UNI": 8.83,
+      "HYPE": 93.60,
+      "AERO": 0.6868,
+      "ZEC": 1463.69
+    },
+    "portfolio_nav_usd_approx": 11168.69,
+    "passive_benchmark_nav_usd_approx": 10758.17,
+    "alpha_usd_approx": 410.52,
+    "alpha_bps_approx": 381.6,
+    "position_weights_pct_approx": {
+      "BTC": 19.72,
+      "ETH": 20.01,
+      "SOL": 10.27,
+      "SUI": 5.68,
+      "BNB": 4.83,
+      "UNI": 6.95,
+      "HYPE": 5.00,
+      "AERO": 2.70,
+      "ZEC": 6.66
+    },
+    "decision": "No paper trade. Existing positions remain unchanged. STRK is structurally ineligible under the privileged-mint gate, and the raw Starknet regime signal additionally lacks retained-capital/user-breadth confirmation."
+  },
+  "forward_tests": [
+    "Whether Starknet stablecoin supply and net bridge/inflow metrics turn persistently positive after the current STRK price impulse rather than remaining flat/negative.",
+    "Whether DEX acceleration broadens beyond Ekubo and is accompanied by sustained independent trader/address growth rather than high transaction intensity from a narrow cohort.",
+    "Whether derivatives turnover/open interest normalize while spot DEX activity and price persistence remain elevated.",
+    "Whether current STRK minter/admin role topology can be independently verified as narrowly constrained enough to clear the framework's privileged-mint hard gate. Until then, no paper entry is permitted.",
+    "Whether meaningful Starknet RWA activity progresses from small issuance/AUM into actual secondary trading, collateral or borrowing; current RWA inventory is not counted as speculative migration."
+  ],
+  "sources": [
+    "https://defillama.com/chain/starknet",
+    "https://defillama.com/dexs/chain/starknet",
+    "https://www.coingecko.com/en/coins/starknet",
+    "https://www.coinglass.com/currencies/STRK",
+    "https://github.com/starknet-io/starknet-token",
+    "https://www.starknet.io/staking/",
+    "https://ekubo.org/rewards",
+    "https://mrnasdog.com/research/strk/inflation",
+    "https://www.cryptotimes.io/2026/09/18/nostra-halts-starknet-money-market-after-3-5m-nstr-oracle-exploit/"
+  ],
+  "hindsight_policy": "Observation frozen prospectively. No paper trade was executed. Subsequent STRK price action, bridge/stablecoin flows, wallet accumulation, exploit recovery, mint-role changes or liquidity changes must not be retroactively treated as known at this timestamp."
+}
