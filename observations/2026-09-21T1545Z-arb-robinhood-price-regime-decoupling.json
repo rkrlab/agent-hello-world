@@ -1,0 +1,93 @@
+{
+  "timestamp_utc": "2026-09-21T15:45:04Z",
+  "type": "research_observation",
+  "classification": "ARB_ROBINHOOD_PRICE_LEADERSHIP_REGIME_DECELERATION_NO_TRADE",
+  "execution_trigger": false,
+  "alert_threshold_crossed": true,
+  "ecosystem": "Arbitrum / Robinhood Chain",
+  "asset": {
+    "symbol": "ARB",
+    "contract": "0x912CE59144191C1204E64559FE8253a0e49E6548",
+    "mark_usd": 0.2314,
+    "change_24h_pct": 13.2,
+    "change_7d_pct": 75.5,
+    "market_cap_usd": 1572000000,
+    "fdv_usd": 2316000000,
+    "turnover_24h_usd": 547410000
+  },
+  "regime_evidence": {
+    "robinhood_chain": {
+      "tvl_usd": 992160000,
+      "stablecoin_mcap_usd": 1045000000,
+      "stablecoin_change_7d_pct": 0.13,
+      "rwa_active_aum_usd": 295670000,
+      "dex_volume_24h_usd": 1046000000,
+      "dex_volume_7d_usd": 9961000000,
+      "dex_weekly_change_pct": -18.70,
+      "perp_weekly_change_pct": 21.98,
+      "net_inflow_24h_usd": 9180000,
+      "interpretation": "Still a large absolute trading venue, but the prior spot-growth regime has materially decelerated: weekly DEX growth is now negative and stablecoin growth is nearly flat. This contrasts sharply with the September 3 checkpoint, when weekly DEX volume was +96.05% and stablecoins +11.01%."
+    },
+    "arbitrum_one": {
+      "stablecoin_change_7d_pct": -2.33,
+      "rwa_active_aum_usd": 901230000,
+      "dex_volume_24h_usd": 183240000,
+      "dex_volume_7d_usd": 1485000000,
+      "dex_weekly_change_pct": 33.99,
+      "perp_weekly_change_pct": 23.88,
+      "net_inflow_24h_usd": 9220000,
+      "interpretation": "Arbitrum One spot activity has improved, but retained stablecoin capital is still contracting, so it does not independently explain ARB's +75.5% seven-day repricing."
+    },
+    "tokenized_stocks": {
+      "status": "FINANCIALLY_SUBSTANTIVE_SECONDARY_TRADING_BUT_NOT_PURE_ARB_VALUE_CAPTURE",
+      "notes": "Robinhood Chain continues to host real tokenized-stock secondary trading with deep stock-token pools. This is not merely RWA issuance/AUM. However, chain activity remains partly contaminated by a Robinhood Wallet gas subsidy through September 29, and Robinhood Chain revenue goes to the Arbitrum DAO treasury rather than automatically to ARB holders."
+    }
+  },
+  "why_capital_is_arriving": [
+    "Tokenization/RWA narrative strengthened by the SEC's September 17 five-year tokenized-securities exemption.",
+    "Standard Chartered initiated ARB coverage on September 15 with a $10 end-2030 target and framed Arbitrum as TradFi blockchain infrastructure.",
+    "Robinhood Chain generates real licensing/treasury revenue for ArbitrumDAO and hosts material tokenized-stock secondary trading.",
+    "Broad market risk-on and short-covering conditions are amplifying altcoin momentum."
+  ],
+  "incentive_discount": {
+    "status": "MATERIAL",
+    "notes": "Robinhood Wallet subsidizes gas for qualifying swaps through September 29. Memecoin/launchpad activity and prior third-party gas promotions further contaminate raw transactions and DEX volume. Post-subsidy retention is the clean test."
+  },
+  "wallet_quality": {
+    "rating": "LOW_TO_MEDIUM",
+    "notes": "No fresh cohort of historically selective, independently funded ARB spot accumulators was verified in this run. Stale or generic whale-flow reports are not counted as current confirmation."
+  },
+  "value_capture": {
+    "rating": "WEAK_DIRECT_CAPTURE",
+    "notes": "ARB remains a governance token. Robinhood Chain/AEP revenue accrues to the Arbitrum DAO treasury; there is no automatic ARB holder dividend, buyback, burn or fee distribution. This preserves the September 3 model correction and prevents treating treasury revenue as holder cash flow."
+  },
+  "supply_risk": {
+    "status": "MATERIAL",
+    "notes": "Approximately 92.6M ARB unlocks monthly through March 2027; an estimated 4.81% additional float can reach market over the next 90 days. The September 16 unlock was absorbed by price, but the recurring schedule remains an overhang."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_GOVERNANCE_AND_SUPPLY_CAVEATS",
+    "notes": "No honeypot/sellability or arbitrary mint/freeze failure surfaced. The gating issues are weak direct holder value capture, scheduled unlocks, incentive-contaminated activity and unverified wallet quality rather than a contract-level hard failure."
+  },
+  "leadership_assessment": "ARB is currently a price/narrative leader, not a clean capital-migration leader. Price has accelerated much faster than Robinhood Chain retained-capital/spot-growth quality. Treat the divergence as chase risk rather than confirmation.",
+  "portfolio_action": "HOLD_ALL_NO_ARB_TRADE",
+  "paper_portfolio": {
+    "cash_usd": 2030.3183658745413,
+    "trade_count": 10,
+    "last_trade_id": "ADD-UNI-20260919-071102Z",
+    "approx_nav_usd": 11051.04,
+    "approx_passive_benchmark_nav_usd": 10618.42,
+    "approx_alpha_usd": 432.62,
+    "approx_alpha_bps": 407.4,
+    "notes": "Marks are contemporaneous public spot marks collected during this run. No paper portfolio state or trade ledger mutation was made."
+  },
+  "forward_tests": [
+    "After the Robinhood Wallet gas subsidy ends September 29, require Robinhood Chain DEX activity and stablecoin balances to persist without subsidy support.",
+    "Require fresh selective-wallet ARB accumulation with funding independence rather than generic whale activity.",
+    "Require a concrete ARB-holder value-accrual mechanism or explicitly continue discounting DAO treasury revenue.",
+    "Track whether Arbitrum One stablecoin supply turns positive alongside its improving DEX activity.",
+    "Do not backdate any later trade to the current rally."
+  ],
+  "no_trade_instruction": true,
+  "real_trade": false
+}
