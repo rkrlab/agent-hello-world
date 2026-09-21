@@ -1,0 +1,112 @@
+{
+  "timestamp_utc": "2026-09-21T22:13:56Z",
+  "classification": "INJ_MECHANICAL_USDC_MIGRATION_DERIVATIVES_ROTATION_RWA_PILOT_NO_TRADE",
+  "ecosystem": "Injective",
+  "asset": "INJ",
+  "asset_type": "native_l1",
+  "reference_contracts": {
+    "ethereum_representation": "0xe28b3b32b6c345a34ff64674606124dd5aceca30",
+    "official_solana_representation": "1NJMqVM4PadjuzYmeB7zV7q7DV8oB3ExaQCd9x6KsLz"
+  },
+  "alert_threshold_crossed": true,
+  "paper_action": "NO_TRADE",
+  "paper_trade_executed": false,
+  "signal": {
+    "regime_evidence": [
+      "DefiLlama shows Injective stablecoin market cap at about $13.48M, +9.68% over seven days; DEX volume $17.29M over 24h and $123.5M over seven days, +47.26% week/week; perps volume $81.31M over 24h and $522.08M over seven days, +62.58% week/week.",
+      "INJ is about $7.78-$7.79 with roughly $191M 24h turnover, +22.1% over seven days. Circulating market cap and FDV are both about $777M because the tracked 100M supply is fully circulating.",
+      "The relative pattern is derivatives-led: perps are accelerating faster than spot DEX volume, while current 24h chain inflow is slightly negative at about -$14.6K."
+    ],
+    "capital_quality": [
+      "The +9.68% stablecoin growth is not clean evidence of fresh discretionary capital. Injective and ecosystem partners opened a coordinated migration from Noble USDC (USDC.n) to Injective-native USDC (USDC.inj) on September 11; dYdX is adopting USDC.inj as its sole eligible trading collateral. A material portion of stablecoin growth can therefore be mechanical denomination/settlement migration rather than new dollars entering crypto or Injective.",
+      "Current retained-capital evidence remains weak: DefiLlama reports roughly -$14.6K of 24h inflow and only $13.48M of chain stablecoins, tiny compared with INJ's roughly $777M market cap and current token turnover.",
+      "Bridged TVL (~$20.16M) is a stock measure and is not counted as fresh net migration."
+    ],
+    "incentive_filter": [
+      "Injective states that DEX market makers can pay zero gas because relayers cover it in exchange for protocol rewards. This is not a direct trader rebate, but it does subsidize market-making activity and makes raw DEX/perp volume less clean as a measure of wholly discretionary demand.",
+      "The Community BuyBack/burn mechanism is economically relevant but includes participant-return mechanics; buyback participation yield is not treated as organic customer demand. The framework therefore separates revenue-funded burn from reward-seeking participation."
+    ],
+    "rwa_distinction": [
+      "Injective has genuine historical RWA secondary usage: CoinGecko's June 18, 2026 report documented about $6.8B of cumulative RWA derivatives volume since January 2025, including equities, commodities, FX and indices. That is real trading, not simply issuance AUM.",
+      "Current chain-level RWA Active AUM is only about $597, so there is no large current RWA inventory wave to explain this week's INJ repricing.",
+      "POSCO International/LG CNS completed a real-world trade-finance proof of concept that tokenized accounts receivable and validated issuance/transfer/settlement/admin flows. It is a substantive institutional pilot, but still a pilot rather than proof of broad production secondary trading or collateral use.",
+      "The Meridian upgrade vote is a forward catalyst for regulated asset issuance/private RFQ/oracle improvements, targeted for September 24 if governance completes successfully; it is not yet completed usage."
+    ],
+    "product_and_news_catalysts": [
+      "Injective-native USDC is becoming the canonical Cosmos/dYdX settlement rail as Noble USDC is migrated out.",
+      "INJ went live on Solana through Sunrise on September 17 with Raydium and StonkFun launch partners and direct Phantom-market access.",
+      "21Shares has amended an S-1 for a proposed INJ ETF; this is potential future access, not current ETF inflow.",
+      "Meridian proposal 701 has near-unanimous support and targets a September 24 mainnet upgrade, subject to the final vote/activation."
+    ],
+    "wallet_quality": [
+      "No fresh cohort of historically selective, independently funded INJ accumulators was verified in this scan.",
+      "Older aggregate top-wallet/exchange-balance reports are not treated as current selective-wallet confirmation because they can include contracts, exchanges or linked ownership and do not establish independent funding lineages."
+    ],
+    "leadership_assessment": "Injective is an emerging price/DEX/perps velocity leader, but the quality of the apparent capital migration is materially lower than the headline metrics imply. Stablecoin growth is mechanically contaminated by the Noble-to-Injective USDC transition; perps are accelerating faster than spot; market-making activity is partly subsidized; and selective-wallet confirmation is absent."
+  },
+  "structural_gate": {
+    "result": "PASS_NATIVE_ASSET_WITH_ECONOMIC_CAVEATS",
+    "basis": "INJ is Injective's native L1 asset, so third-party honeypot, LP-owner, deployer and ERC-style freeze-key tests do not apply in the same form. CoinGecko reports about $191M of 24h INJ turnover, so executability is ample for paper sizing. The tracked market cap and FDV are approximately equal.",
+    "caveats": [
+      "Protocol issuance/emission and staking economics remain dilution variables even though CoinGecko's tracked market cap equals FDV.",
+      "No selective-wallet independence confirmation.",
+      "Current stablecoin growth is mechanically contaminated by canonical-USDC migration.",
+      "Perps acceleration is stronger than spot and occurs during a market-wide short-squeeze regime.",
+      "Forward ETF and Meridian catalysts are not treated as completed capital inflow or production RWA usage."
+    ]
+  },
+  "paper_portfolio": {
+    "source_of_truth_state_sha": "c2a09aa6c8f96ab272c8fbae7f24227515ea1ea5",
+    "trade_ledger_sha": "cbdf35b40d3ca9fabb14ac70cd8ce2ea08fc4671",
+    "trade_count": 10,
+    "cash_usd": 2030.3183658745413,
+    "approx_marks_usd": {
+      "BTC": 86560.21,
+      "ETH": 2740.67,
+      "SOL": 118.61,
+      "SUI": 1.01,
+      "BNB": 801.65,
+      "UNI": 8.75,
+      "HYPE": 93.72,
+      "AERO": 0.6876,
+      "ZEC": 1458.53
+    },
+    "portfolio_nav_usd_approx": 11089.66,
+    "passive_benchmark_nav_usd_approx": 10687.73,
+    "alpha_usd_approx": 401.94,
+    "alpha_bps_approx": 376.1,
+    "position_weights_pct_approx": {
+      "BTC": 19.75,
+      "ETH": 19.74,
+      "SOL": 10.35,
+      "SUI": 5.61,
+      "BNB": 4.86,
+      "UNI": 6.94,
+      "HYPE": 5.04,
+      "AERO": 2.72,
+      "ZEC": 6.68
+    },
+    "decision": "No paper trade. Existing positions remain HOLD. No non-core position exceeds the default 7.5% cap, and INJ fails the capital-quality/confirmation threshold despite passing the native-asset structural gate."
+  },
+  "market_context": {
+    "global_defillama": "Global DeFi stablecoin market cap is about $305.15B, only +0.01% over seven days; DEX volume is +1.00% week/week while perp volume is +20.91%. This reinforces a derivatives-heavy market-wide regime rather than broad retained-capital expansion.",
+    "short_squeeze": "Bitcoin's move above $85K coincided with more than $750M of 24h crypto liquidations, roughly $648M shorts, so price momentum across high-beta assets is discounted for forced-covering contamination."
+  },
+  "forward_tests": [
+    "After the Noble-to-USDC.inj migration matures, does Injective stablecoin supply continue growing rather than flattening or reversing?",
+    "Do net bridge/inflow metrics become persistently positive independently of the canonical-USDC migration?",
+    "Does DEX growth persist after adjusting for relayer-supported market-making, and does spot growth catch up with or exceed perps growth?",
+    "Does a fresh cohort of historically selective, independently funded INJ accumulators appear with repeat buying and no common funding source?",
+    "Does Meridian activate successfully on September 24 and lead to measurable production RWA issuance plus secondary trading/collateral utilization, rather than announcements only?",
+    "Does INJ maintain leadership after the market-wide short squeeze subsides without relying primarily on ETF speculation or influencer-driven attention?"
+  ],
+  "sources": [
+    "https://defillama.com/chain/injective",
+    "https://www.coingecko.com/en/coins/injective",
+    "https://injective.com/es/blog/injective-usdc-canonical-standard",
+    "https://injective.com/usdc",
+    "https://injective.com/ko/blog/inj-on-solana",
+    "https://www.coingecko.com/learn/injective-2026-convergence-report",
+    "https://newsroom.posco.com/en/posco-international-partners-with-lg-cns-to-complete-poc-for-blockchain-and-ai-based-global-trade-finance-technologies/"
+  ]
+}
