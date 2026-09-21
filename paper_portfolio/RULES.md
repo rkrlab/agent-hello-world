@@ -71,3 +71,30 @@ Track:
 - every paper buy/sell with timestamp, price, quantity, costs, rationale, and post-trade cash;
 - comparison with a passive benchmark that simply holds the exact opening allocation;
 - forward outcomes without editing the original trade rationale.
+
+
+## Accounting schema v2
+
+The canonical field definitions are documented in `paper_portfolio/SCHEMA.md`.
+
+Every hourly scan must refresh and persist position-level marks even when no trade occurs. A quiet/no-alert run may still update `state.json`; notification suppression does not mean the accounting state should remain stale.
+
+For every open position, `state.json` must carry:
+
+- quantity and weighted-average cost;
+- total cost basis;
+- current mark price, timestamp, and mark source;
+- marked market value;
+- unrealized P&L in USD and percent;
+- realized P&L attributable to that asset;
+- current portfolio weight;
+- latest trade ID;
+- originating/qualifying signal ID when available.
+
+Portfolio-level state must carry the latest NAV, benchmark NAV, alpha in USD and basis points, cash, realized P&L, total unrealized P&L, and the timestamp of the full portfolio mark.
+
+Every future BUY/ADD/TRIM/SELL ledger entry must include the associated `signal_id` (or explicitly `null` if no separate research record exists), pre/post-trade portfolio accounting, and the post-trade position accounting fields defined in the schema.
+
+Every TRIM or SELL must explicitly record realized P&L for that transaction and cumulative realized P&L for the asset. Weighted-average cost is the paper portfolio's accounting convention unless the rules are prospectively changed and versioned.
+
+Existing schema-v1 trade records remain immutable. Missing fields in historical records are not backfilled by rewriting the ledger; schema v2 applies prospectively.
