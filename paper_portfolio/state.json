@@ -2,44 +2,99 @@
   "portfolio_id": "regime-framework-10k-2026-09-09",
   "initialized_at_utc": "2026-09-09T15:14:00Z",
   "base_currency": "USD",
-  "starting_nav_usd": 10000.0,
+  "starting_nav_usd": 10000,
   "current_cash_usd": 2030.3183658745413,
   "realized_pnl_usd": 16.29679051734897,
   "positions": {
     "BTC": {
       "quantity": 0.025297677774,
       "average_cost_usd": 79058.64,
-      "starting_value_usd": 2000.0,
+      "starting_value_usd": 2000,
       "initial_weight": 0.2,
-      "price_source": "CoinGecko BTC/USD volume-weighted spot"
+      "price_source": "CoinGecko BTC/USD volume-weighted spot",
+      "total_cost_basis_usd": 1999.9999999706674,
+      "realized_pnl_usd": 0,
+      "current_mark_usd": null,
+      "current_mark_at_utc": null,
+      "mark_source": null,
+      "marked_value_usd": null,
+      "unrealized_pnl_usd": null,
+      "unrealized_pnl_pct": null,
+      "portfolio_weight_pct": null,
+      "signal_id": null,
+      "latest_trade_id": "INIT-20260909-1514Z"
     },
     "ETH": {
       "quantity": 0.798766704209,
       "average_cost_usd": 2503.86,
-      "starting_value_usd": 2000.0,
+      "starting_value_usd": 2000,
       "initial_weight": 0.2,
-      "price_source": "CoinGecko ETH/USD volume-weighted spot"
+      "price_source": "CoinGecko ETH/USD volume-weighted spot",
+      "total_cost_basis_usd": 2000.0000000007467,
+      "realized_pnl_usd": 0,
+      "current_mark_usd": null,
+      "current_mark_at_utc": null,
+      "mark_source": null,
+      "marked_value_usd": null,
+      "unrealized_pnl_usd": null,
+      "unrealized_pnl_pct": null,
+      "portfolio_weight_pct": null,
+      "signal_id": null,
+      "latest_trade_id": "INIT-20260909-1514Z"
     },
     "SOL": {
       "quantity": 9.673050880248,
       "average_cost_usd": 103.38,
-      "starting_value_usd": 1000.0,
+      "starting_value_usd": 1000,
       "initial_weight": 0.1,
-      "price_source": "CoinGecko SOL/USD volume-weighted spot"
+      "price_source": "CoinGecko SOL/USD volume-weighted spot",
+      "total_cost_basis_usd": 1000.0000000000383,
+      "realized_pnl_usd": 0,
+      "current_mark_usd": null,
+      "current_mark_at_utc": null,
+      "mark_source": null,
+      "marked_value_usd": null,
+      "unrealized_pnl_usd": null,
+      "unrealized_pnl_pct": null,
+      "portfolio_weight_pct": null,
+      "signal_id": null,
+      "latest_trade_id": "INIT-20260909-1514Z"
     },
     "SUI": {
       "quantity": 616.067028092657,
       "average_cost_usd": 0.8116,
-      "starting_value_usd": 500.0,
+      "starting_value_usd": 500,
       "initial_weight": 0.05,
-      "price_source": "CoinGecko SUI/USD volume-weighted spot"
+      "price_source": "CoinGecko SUI/USD volume-weighted spot",
+      "total_cost_basis_usd": 500.0000000000004,
+      "realized_pnl_usd": 0,
+      "current_mark_usd": null,
+      "current_mark_at_utc": null,
+      "mark_source": null,
+      "marked_value_usd": null,
+      "unrealized_pnl_usd": null,
+      "unrealized_pnl_pct": null,
+      "portfolio_weight_pct": null,
+      "signal_id": null,
+      "latest_trade_id": "INIT-20260909-1514Z"
     },
     "BNB": {
       "quantity": 0.672675904749,
       "average_cost_usd": 743.3,
-      "starting_value_usd": 500.0,
+      "starting_value_usd": 500,
       "initial_weight": 0.05,
-      "price_source": "CoinGecko BNB/USD volume-weighted spot"
+      "price_source": "CoinGecko BNB/USD volume-weighted spot",
+      "total_cost_basis_usd": 499.9999999999316,
+      "realized_pnl_usd": 0,
+      "current_mark_usd": null,
+      "current_mark_at_utc": null,
+      "mark_source": null,
+      "marked_value_usd": null,
+      "unrealized_pnl_usd": null,
+      "unrealized_pnl_pct": null,
+      "portfolio_weight_pct": null,
+      "signal_id": null,
+      "latest_trade_id": "INIT-20260909-1514Z"
     },
     "UNI": {
       "quantity": 87.90427320487863,
@@ -52,7 +107,18 @@
       "latest_add_quantity": 12.900452260126636,
       "cumulative_gross_buys_usd": 611.4605532929202,
       "cumulative_transaction_cost_usd": 0.91719082993914,
-      "price_source": "CoinGecko UNI/USD live global volume-weighted spot; latest add marked at $9.16"
+      "price_source": "CoinGecko UNI/USD live global volume-weighted spot; latest add marked at $9.16",
+      "total_cost_basis_usd": 612.3777441228576,
+      "realized_pnl_usd": 0,
+      "current_mark_usd": null,
+      "current_mark_at_utc": null,
+      "mark_source": null,
+      "marked_value_usd": null,
+      "unrealized_pnl_usd": null,
+      "unrealized_pnl_pct": null,
+      "portfolio_weight_pct": null,
+      "signal_id": null,
+      "latest_trade_id": "ADD-UNI-20260919-071102Z"
     },
     "HYPE": {
       "quantity": 5.966367003050464,
@@ -65,7 +131,18 @@
       "latest_add_quantity": 2.852051856518301,
       "cumulative_gross_buys_usd": 514.9000556858304,
       "cumulative_transaction_cost_usd": 0.7723500835287456,
-      "price_source": "CoinGecko HYPE/USD live global volume-weighted spot; latest add marked at $93.89"
+      "price_source": "CoinGecko HYPE/USD live global volume-weighted spot; latest add marked at $93.89",
+      "total_cost_basis_usd": 515.6724057693592,
+      "realized_pnl_usd": 0,
+      "current_mark_usd": null,
+      "current_mark_at_utc": null,
+      "mark_source": null,
+      "marked_value_usd": null,
+      "unrealized_pnl_usd": null,
+      "unrealized_pnl_pct": null,
+      "portfolio_weight_pct": null,
+      "signal_id": null,
+      "latest_trade_id": "ADD-HYPE-20260919-040550Z"
     },
     "AERO": {
       "quantity": 439.381667552024,
@@ -73,7 +150,18 @@
       "framework_entry_at_utc": "2026-09-13T10:17:08Z",
       "gross_entry_value_usd": 245.87798116211263,
       "transaction_cost_usd": 0.8605729340673942,
-      "price_source": "CoinGecko AERO/USD volume-weighted spot across 55 exchanges / 123 markets"
+      "price_source": "CoinGecko AERO/USD volume-weighted spot across 55 exchanges / 123 markets",
+      "total_cost_basis_usd": 246.73855409618002,
+      "realized_pnl_usd": 0,
+      "current_mark_usd": null,
+      "current_mark_at_utc": null,
+      "mark_source": null,
+      "marked_value_usd": null,
+      "unrealized_pnl_usd": null,
+      "unrealized_pnl_pct": null,
+      "portfolio_weight_pct": null,
+      "signal_id": null,
+      "latest_trade_id": "BUY-AERO-20260913-101708Z"
     },
     "ZEC": {
       "quantity": 0.5081623037366105,
@@ -89,17 +177,27 @@
       "latest_trim_quantity": 0.05806462111387402,
       "cumulative_gross_buys_usd": 680.0066491893234,
       "cumulative_gross_sales_usd": 86.2631237116158,
-      "cumulative_transaction_cost_usd": 1.1494046593514088,
+      "cumulative_transaction_cost_usd": 1.149404659351409,
       "realized_pnl_usd": 16.29679051734897,
-      "price_source": "CoinGecko ZEC/USD live global volume-weighted spot across 49 exchanges / 83 markets; latest trim marked at $1,485.64"
+      "price_source": "CoinGecko ZEC/USD live global volume-weighted spot across 49 exchanges / 83 markets; latest trim marked at $1,485.64",
+      "total_cost_basis_usd": 611.189720654408,
+      "current_mark_usd": null,
+      "current_mark_at_utc": null,
+      "mark_source": null,
+      "marked_value_usd": null,
+      "unrealized_pnl_usd": null,
+      "unrealized_pnl_pct": null,
+      "portfolio_weight_pct": null,
+      "signal_id": null,
+      "latest_trade_id": "TRIM-ZEC-20260917-224942Z"
     }
   },
   "last_trade_id": "ADD-UNI-20260919-071102Z",
   "trade_count": 10,
   "benchmark": {
     "type": "passive_hold_opening_allocation",
-    "starting_nav_usd": 10000.0,
-    "cash_usd": 4000.0,
+    "starting_nav_usd": 10000,
+    "cash_usd": 4000,
     "quantities": {
       "BTC": 0.025297677774,
       "ETH": 0.798766704209,
@@ -121,6 +219,18 @@
     "ZEC scale add executed prospectively on 2026-09-16 after a third distinct transparent exchange-withdrawal address accumulated and withdrew 15.3K ZEC (~$17.92M) from Binance, OKX and Kraken, while ZEC sustained a second-leg price/volume breakout. The three observed accumulator paths total about 64.53K ZEC, roughly 35.9 days of estimated 1,800 ZEC/day issuance. Public direct linkage among the addresses was not found in this scan, but beneficial-owner independence and historical selectivity remain unproven. Position was increased only to the 7.5% non-core cap at the current mark; 0.15% Tier A simulated execution cost applied.",
     "ZEC trim executed prospectively on 2026-09-17 after appreciation pushed the position to ~8.36% of marked NAV while the marginal move became materially more derivatives-driven and crowded: short liquidations accelerated, aggregate open interest expanded sharply, funding remained negative and a highly visible large Hyperliquid short created additional forced-covering/volatility risk. The underlying spot-accumulation/privacy/NU7 thesis remains intact and structural gate still passes, so only the excess above the 7.5% default non-core cap was trimmed. 0.15% Tier A simulated execution cost applied.",
     "HYPE confirmation add executed prospectively on 2026-09-19 after the Sep 18 no-add blockers materially improved: Hyperliquid stablecoin growth flipped to +4.37% over seven days, spot DEX volume flipped to +11.03% weekly, perp volume accelerated to +26.46% weekly, and HYPE perp funding normalized from ~59.1% annualized to ~11.0% while price/usage persisted near a fresh all-time high. No fresh independent selective-wallet cohort was verified, OI remains about $2.01B, HYPE-backed borrowing adds liquidation reflexivity, and a 9.92M HYPE Core Contributor unlock is scheduled for Oct. 6, so the position was increased only by one 2.5% NAV tranche to ~5.23% rather than to the 7.5% cap. 0.15% Tier A simulated execution cost applied.",
-    "UNI scale add executed prospectively on 2026-09-19 after three consecutive completed tracked-whale reports showed high-conviction breadth rising 252 -> 321 -> 385 wallets and net UNI accumulation strengthening $11.5M -> $13.9M -> $16.9M, offsetting the prior day's single-whale profit-taking concern. Uniswap also retained broad multi-chain DEX usage and direct holder revenue with protocol incentives tiny relative to revenue. Beneficial-owner independence and historical selectivity are not proven for every tracked wallet, Robinhood-chain activity remains partly gas-subsidy contaminated, and UNI was already ~47% higher over seven days, so only $118.17 gross was added to bring UNI to the 7.5% non-core cap rather than another full 2.5% tranche. 0.15% Tier A simulated execution cost applied."
-  ]
+    "UNI scale add executed prospectively on 2026-09-19 after three consecutive completed tracked-whale reports showed high-conviction breadth rising 252 -> 321 -> 385 wallets and net UNI accumulation strengthening $11.5M -> $13.9M -> $16.9M, offsetting the prior day's single-whale profit-taking concern. Uniswap also retained broad multi-chain DEX usage and direct holder revenue with protocol incentives tiny relative to revenue. Beneficial-owner independence and historical selectivity are not proven for every tracked wallet, Robinhood-chain activity remains partly gas-subsidy contaminated, and UNI was already ~47% higher over seven days, so only $118.17 gross was added to bring UNI to the 7.5% non-core cap rather than another full 2.5% tranche. 0.15% Tier A simulated execution cost applied.",
+    "Schema v2 added explicit per-position total cost basis, realized P&L, current mark, marked value, unrealized P&L, portfolio weight, signal ID, and latest trade ID fields. Null mark/P&L/weight fields are intentional until the next full hourly mark refresh."
+  ],
+  "schema_version": 2,
+  "accounting_method": "weighted_average_cost",
+  "last_recorded_portfolio_mark": {
+    "timestamp_utc": "2026-09-19T07:11:02Z",
+    "nav_usd": 10736.04190075589,
+    "benchmark_nav_usd": 10253.590509076103,
+    "alpha_vs_benchmark_usd": 482.4513916797878,
+    "alpha_vs_benchmark_bps": 470.5194646233819,
+    "per_position_marks_complete": false,
+    "note": "Schema v1 recorded full NAV in the trade ledger but did not persist every position mark in state.json. The next hourly scan must refresh all position-level marks and P&L fields."
+  }
 }
