@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "signal_id": "SIG-AAVE-20260922-024416Z",
+  "timestamp_utc": "2026-09-22T02:44:16Z",
+  "ecosystem": "Aave / Ethereum-led multichain lending",
+  "candidate_asset": "AAVE",
+  "contract_address": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2dDaE9",
+  "classification": "AAVE_V4_WALLET_ACCELERATION_VALUE_CAPTURE_PAUSED_INCENTIVE_CONTAMINATION_NO_TRADE",
+  "alert_threshold_crossed": true,
+  "paper_action": "NO_TRADE",
+  "structural_gate": "PASS_WITH_CAVEATS",
+  "regime_evidence": {
+    "aave_combined_tvl_usd": 19781000000,
+    "aave_combined_tvl_30d_change_pct": 10.2,
+    "aave_active_loans_usd": 13240000000,
+    "aave_fees_30d_usd": 35750000,
+    "aave_protocol_revenue_30d_usd": 5060000,
+    "aave_v4_tvl_usd": 570980000,
+    "aave_v4_tvl_30d_change_pct": 73,
+    "aave_v4_active_loans_usd": 277820000,
+    "aave_v4_deposits_after_round16_usd": 709000000,
+    "note": "Aave lending usage is financially substantive, but V4 deposit growth is not treated as clean discretionary capital because current governance posts explicitly reference USDC borrow rewards, USDe incentives, and Arc launch-driven cap filling."
+  },
+  "rwa_usage": {
+    "horizon_classification": "real collateralized RWA borrowing exists, but marginal GHO growth is materially incentive/rate-arbitrage contaminated",
+    "gho_debt_30d_start_usd": 23200000,
+    "gho_debt_30d_end_usd": 39000000,
+    "gho_debt_30d_change_pct": 68,
+    "quality_discount": "Aave GHO Stewards explicitly attributes the growth to profitable RWA looping at a 3.00% Horizon borrow rate, with borrowed GHO sold for other stablecoins to buy more collateral. This is actual utilization, not simple RWA AUM, but it is not clean discretionary demand."
+  },
+  "wallet_evidence": {
+    "tracked_distinct_whale_wallets": 42,
+    "tracked_dex_trades_30d": 678,
+    "tracked_volume_30d_usd": 36600000,
+    "tracked_inflows_30d_usd": 27950000,
+    "tracked_outflows_30d_usd": 8650000,
+    "tracked_net_flow_30d_usd": 19290000,
+    "buy_ratio_pct": 76,
+    "quality": "medium",
+    "caveat": "Deep Blue Alpha says these are tracked Ethereum DEX whale wallets and observational flow. Beneficial-owner/funding independence and historical selectivity are not verified. The most recent tape is mixed, including a ~$432K sell and multiple ~$100K sells alongside repeated small buys."
+  },
+  "value_capture": {
+    "status": "BLOCKER",
+    "buybacks_paused_since": "2026-04-19",
+    "reason": "AAVE buybacks were formally paused after the rsETH bridge incident to preserve DAO balance-sheet flexibility. No verified official resumption was found in this run.",
+    "token_holder_revenue_v4_30d_usd": 0
+  },
+  "leadership": {
+    "aave_price_usd_observed": 144.24,
+    "aave_7d_change_pct": 12.3,
+    "aave_30d_change_pct": 14.4,
+    "interpretation": "Price, protocol usage, and tracked whale accumulation are aligned enough to raise AAVE to the near-entry watchlist, but current token value capture is weaker than protocol fundamentals."
+  },
+  "structural_checks": {
+    "sellability": "PASS",
+    "liquidity": "PASS",
+    "max_supply": 16000000,
+    "circulating_supply": 15430000,
+    "mint_risk": "No active mint authority identified in current structural reviews; fixed maximum supply.",
+    "upgradeability_governance": "Protocol governance remains upgradeable/time-locked; no single central party can freeze individual positions, though reserve-level controls exist.",
+    "concentration": "Governance/delegate and holder concentration remain caveats; no hard sellability or honeypot failure identified."
+  },
+  "why_no_trade": [
+    "V4 growth is partly driven by explicit borrow/liquidity incentives and a new Arc deployment, so headline TVL acceleration overstates discretionary migration.",
+    "Horizon RWA borrowing is real utilization, but the fastest GHO growth was explicitly driven by profitable leveraged looping and therefore receives a large quality discount.",
+    "The cleanest direct AAVE value-capture mechanism—DAO buybacks—has been paused since 2026-04-19, and no official restart was verified.",
+    "Tracked whale DEX flow is strong but does not establish beneficial-owner independence or historically selective wallet quality; the latest tape is mixed."
+  ],
+  "forward_entry_test": [
+    "V4 deposits/loans remain elevated after current borrow/reward campaigns normalize.",
+    "An official AAVE buyback restart or another clearly measurable holder-level value-capture mechanism becomes active.",
+    "Tracked-wallet accumulation persists with stronger independence/selectivity evidence and price/holder persistence.",
+    "Horizon RWA borrowing remains healthy after rate normalization without being dominated by self-reinforcing GHO loops."
+  ],
+  "paper_portfolio": {
+    "trade_executed": false,
+    "cash_usd": 2030.3183658745413,
+    "nav_usd": 11139.998044560255,
+    "benchmark_nav_usd": 10704.804117471914,
+    "alpha_usd": 435.19392708834083,
+    "alpha_bps": 406.54076647515325
+  },
+  "sources": [
+    "https://defillama.com/protocol/aave",
+    "https://enterprise.defillama.com/protocol/aave-v4",
+    "https://governance.aave.com/t/arfc-aave-v4-activation-on-ethereum-mainnet/24293/49",
+    "https://governance.aave.com/t/arfc-aave-v4-activation-on-ethereum-mainnet/24293/51",
+    "https://governance.aave.com/t/gho-stewards-september-2026-gho-parameter-update/25644",
+    "https://deepbluealpha.io/token/AAVE",
+    "https://governance.aave.com/t/arfc-pause-aave-buybacks/24686",
+    "https://www.aave.com/security"
+  ]
+}
