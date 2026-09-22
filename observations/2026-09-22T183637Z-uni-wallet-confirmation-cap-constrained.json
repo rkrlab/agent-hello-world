@@ -1,0 +1,113 @@
+{
+  "timestamp_utc": "2026-09-22T18:36:37Z",
+  "type": "research_observation",
+  "signal_id": "2026-09-22T183637Z-uni-wallet-confirmation-cap-constrained",
+  "classification": "UNI_NEW_WALLET_ACCUMULATION_CONFIRMS_EXISTING_THESIS_BUT_CAP_CONSTRAINED_NO_ADD",
+  "execution_trigger": false,
+  "alert_threshold_crossed": true,
+  "ecosystem": "Uniswap / cross-chain DEX",
+  "asset": {
+    "symbol": "UNI",
+    "contract_ethereum": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+    "mark_usd": 8.85,
+    "mark_source": "CoinMarketCap live UNI/USD page observed during run",
+    "market_cap_usd_approx": 5492578305,
+    "turnover_24h_usd_approx": 1296841980
+  },
+  "new_wallet_evidence": {
+    "reported_total_uni": 782130,
+    "reported_total_usd_approx": 6970000,
+    "wallet_count": 3,
+    "paths": [
+      {
+        "wallet_prefix": "0xbD9C",
+        "amount_uni": 130000,
+        "source": "Galaxy Digital",
+        "interpretation": "receipt from institutional intermediary; not independently proven as fresh spot purchase"
+      },
+      {
+        "wallet_prefix": "0xf415",
+        "amount_uni": 221955,
+        "source": "Bybit + OKX",
+        "interpretation": "new-wallet exchange withdrawals; consistent with self-custody accumulation but not proof of purchase"
+      },
+      {
+        "wallet_prefix": "0x9681",
+        "amount_uni": 430174,
+        "source": "Binance + Gate",
+        "interpretation": "new-wallet exchange withdrawals over several days; consistent with accumulation but beneficial owner unknown"
+      }
+    ],
+    "quality_rating": "MEDIUM",
+    "independence_assessment": "Different venue/funding paths reduce simple single-exchange-flow concentration, but full addresses, beneficial ownership, correlated funding and historical selectivity were not independently established in this run.",
+    "source": "Coinfomania report citing Lookonchain, 2026-09-22",
+    "source_url": "https://coinfomania.com/galaxy-digital-moves-1-14m-in-uni-amid-whale-accumulation/"
+  },
+  "protocol_value_capture": {
+    "rating": "STRONG_AND_ACTIVE",
+    "notes": [
+      "Uniswap governance states protocol fees are active across Ethereum mainnet and eleven additional chains.",
+      "Fees accumulate in TokenJars and searchers claim them in exchange for burning UNI on Ethereum mainnet.",
+      "Arc launched 2026-09-16 with Uniswap v2/v3/v4/UniswapX; a Sep 18 governance proposal seeks to extend the fee/burn system to Arc.",
+      "Arc proposal is prospective and does not receive completed-value credit until governance/execution completes."
+    ],
+    "source_url": "https://gov.uniswap.org/t/temp-check-protocol-fee-expansion-arc/26287"
+  },
+  "catalysts": [
+    {
+      "name": "CME UNI futures",
+      "date": "2026-10-19",
+      "status": "announced/pending regulatory approval",
+      "treatment": "credible institutional-access catalyst, but not current onchain capital migration and not itself a buy signal"
+    }
+  ],
+  "capital_quality": {
+    "classification": "TOKEN_LEVEL_ACCUMULATION_CONFIRMATION_WITHOUT_NEW_CHAIN_MIGRATION_CLAIM",
+    "notes": [
+      "The new evidence is token-level wallet accumulation, not proof that a new ecosystem-wide pool of stablecoin capital is migrating to Uniswap.",
+      "CEX withdrawals can reflect custody migration or internal allocation rather than fresh discretionary purchases, so they receive less weight than verified onchain spot buys.",
+      "The protocol's multi-chain fee-to-burn mechanism creates direct value-capture relevance if Uniswap usage persists."
+    ]
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "notes": [
+      "No new sellability, honeypot, liquidity-removal, creator-dump, or executable-liquidity failure surfaced in this run.",
+      "Existing governance/upgradeability and long-run token-supply caveats remain; this observation does not weaken prior structural diligence."
+    ]
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "notes": "UNI remains a large-cap token with roughly $1.3B reported 24h turnover in the contemporaneous CoinMarketCap snapshot."
+  },
+  "leadership_assessment": "The three-new-wallet cohort materially improves the missing token-level accumulation leg for the existing UNI thesis, but it is not yet verified selective-smart-money convergence. Uniswap's active protocol-fee burn remains the stronger direct value-capture leg.",
+  "major_uncertainties": [
+    "The source report exposes only abbreviated wallet identifiers; full funding-lineage and beneficial-owner independence were not verified.",
+    "Historical selectivity/profitability of the three wallets is unknown.",
+    "Exchange withdrawals do not prove the tokens were purchased immediately before withdrawal.",
+    "CME futures may increase attention and derivatives activity without creating spot/onchain UNI demand."
+  ],
+  "portfolio_action": "HOLD_UNI_NO_ADD",
+  "portfolio_rationale": "At the current mark UNI is already about 7.04% of paper NAV, close to the 7.5% default non-core cap. A normal 2.5% confirmation add would materially exceed the cap, while the new wallet cohort lacks verified historical selectivity and beneficial-owner independence. The thesis improves, but forward asymmetry does not justify breaching sizing discipline.",
+  "paper_portfolio": {
+    "cash_usd": 2030.3183658745413,
+    "trade_count": 10,
+    "last_trade_id": "ADD-UNI-20260919-071102Z",
+    "nav_usd": 11044.48975021937,
+    "passive_benchmark_nav_usd": 10634.593367181033,
+    "alpha_usd": 409.8963830383376,
+    "alpha_bps": 385.4368182081145,
+    "uni_position_quantity": 87.90427320487863,
+    "uni_marked_value_usd": 777.9528178631758,
+    "uni_portfolio_weight_pct": 7.043809496475144
+  },
+  "forward_tests": [
+    "Resolve full wallet addresses and check whether the three wallets share funding sources, counterparties or beneficial control.",
+    "Measure repeat UNI accumulation after the first withdrawal rather than relying on a one-time CEX-to-self-custody move.",
+    "Identify whether historically selective wallets independently converge on UNI.",
+    "Track protocol fee/burn persistence and whether Arc fee activation completes.",
+    "Do not add above the 7.5% default non-core cap absent an explicit prospective rule change or a trim/reallocation that creates room."
+  ],
+  "no_trade_instruction": true,
+  "real_trade": false
+}
