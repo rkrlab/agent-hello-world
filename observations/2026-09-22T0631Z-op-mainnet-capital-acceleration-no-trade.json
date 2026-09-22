@@ -1,0 +1,78 @@
+{
+  "signal_id": "OPMAINNET-20260922-0631Z-CAPITAL-ACCELERATION",
+  "timestamp_utc": "2026-09-22T06:31:20Z",
+  "ecosystem": "OP Mainnet / Optimism Superchain",
+  "candidate_asset": "OP",
+  "contract_address": "0x4200000000000000000000000000000000000042",
+  "decision": "NO_TRADE",
+  "regime_classification": "OP_MAINNET_STABLECOIN_DEX_ACCELERATION_REAL_CHAIN_FLOW_BUT_INCOMPLETE_SPECULATIVE_ATTRIBUTION_AND_OP_STRUCTURAL_VALUE_CAPTURE_RISK_NO_TRADE",
+  "ecosystem_regime_evidence": {
+    "stablecoin_market_cap_usd": 549980000,
+    "stablecoin_7d_change_pct": 12.62,
+    "dex_volume_24h_usd": 35710000,
+    "dex_volume_7d_usd": 192730000,
+    "dex_volume_7d_change_pct": 33.78,
+    "global_stablecoin_7d_change_pct": 0.02,
+    "global_dex_volume_7d_change_pct": 1.00,
+    "rwa_active_aum_usd": 39780000,
+    "perps_volume_7d_usd": 0,
+    "interpretation": "Retained dollar inventory and spot DEX activity are accelerating far faster than the market baseline. RWA AUM is treated only as issuance/inventory because no fresh secondary-trading or collateral-utilization evidence was verified. Zero native perps reduces leverage contamination, but the destination of the new stablecoin supply is not yet proven to be discretionary speculation."
+  },
+  "why_capital_may_be_arriving": {
+    "catalysts": [
+      "Superchain Upgrade 20 was approved September 17 with OP Mainnet execution targeted for September 24, 2026.",
+      "Ether.fi Cash had reported more than 100,000 active cards operating on OP Mainnet by early September, creating a non-speculative payments/operational-liquidity channel.",
+      "Broad crypto risk appetite improved on September 21, adding a market-wide beta component."
+    ],
+    "incentive_discount": "Velodrome dominates OP Mainnet DEX flow and explicitly uses VELO emissions plus voter incentives to attract liquidity. Therefore Velodrome-driven liquidity and volume receive a substantial incentive discount. Uniswap activity is economically cleaner and its fee switch directs a portion of fees to UNI buyback/burn, but that supports the existing UNI thesis rather than establishing OP token value capture."
+  },
+  "leadership_rotation": {
+    "op_price_context": "OP rose from about $0.0957 on September 16 to roughly $0.12-$0.13 by September 21-22, but price leadership is not enough to override structural and value-capture concerns.",
+    "dex_leadership": "Velodrome is the dominant OP Mainnet DEX; Uniswap is the secondary venue. This means much of the chain-volume acceleration does not accrue directly to OP holders."
+  },
+  "wallet_quality": {
+    "status": "INSUFFICIENT",
+    "notes": "No fresh cohort of historically selective, independently funded OP spot accumulators was verified in this run. Generic holder counts, exchange balances, and derivative positioning were not treated as smart-money confirmation."
+  },
+  "social_news_quality": {
+    "status": "BROAD_PRODUCT_INFRASTRUCTURE_CATALYST",
+    "notes": "The visible catalyst is primarily protocol/infrastructure and payments adoption rather than a concentrated influencer campaign. No influencer-driven promotion was used as positive evidence."
+  },
+  "liquidity_executability": {
+    "status": "PASS",
+    "notes": "OP is broadly listed and liquid enough for the paper portfolio's normal sizing; liquidity is not the rejection reason."
+  },
+  "structural_gate": {
+    "status": "FAIL_FOR_NEW_PAPER_ENTRY",
+    "notes": "The canonical OP GovernanceToken is mintable through a MintManager. The current specification rate-limits minting to 2% of supply per mint and one mint per 365 days, but the MintManager is owner-controlled and upgradeable through transfer of GovernanceToken ownership to a new manager. In addition, only about 53.5% of the initial supply is currently unlocked, with large Collective/Foundation-controlled reserves and continuing ecosystem distributions. Under this portfolio's deliberately conservative privileged-mint and concentration gates, OP does not clear a new-entry structural gate even though there is no honeypot or sellability concern."
+  },
+  "token_value_capture": {
+    "status": "WEAK_OR_NON_PERSISTENT",
+    "notes": "A 12-month program allocating 50% of Superchain net revenue to OP buybacks was approved and the first three monthly buybacks were reported, but the official communication thread showed no later execution update after March-funded purchases as of late August. Repurchased OP is held by the Collective treasury rather than automatically burned. OP Mainnet activity therefore cannot be assumed to create continuous holder-level buy pressure."
+  },
+  "major_uncertainties": [
+    "Current chain-level stablecoin figures accelerated sharply relative to DefiLlama snapshots from several days earlier; persistence needs confirmation.",
+    "The source of the recent stablecoin increase has not been decomposed wallet-by-wallet into payments, treasury parking, LP capital, and discretionary speculation.",
+    "Velodrome incentives contaminate some of the apparent DEX/liquidity acceleration.",
+    "No new selective-wallet convergence was verified."
+  ],
+  "why_signal_matters_now": "OP Mainnet has become a real retained-capital outlier: stablecoin supply is up roughly 12.6% over seven days and DEX volume roughly 33.8%, versus approximately flat global stablecoin supply and only about 1% global DEX growth. The chain-level regime is therefore improving, but the OP token is not a qualifying expression of it under the framework.",
+  "paper_trade": null,
+  "existing_portfolio_implication": "No portfolio action. The existing UNI position receives modest confirmation because Uniswap is a meaningful OP Mainnet venue with holder-level buyback/burn mechanics, but UNI is already near the portfolio's 7.5% speculative cap and this signal is not independent enough to justify another add.",
+  "forward_tests": [
+    "Stablecoin supply remains elevated or continues growing for multiple observations after Upgrade 20 rather than reverting.",
+    "DEX growth persists after separating Velodrome emission/incentive effects and broadens across economically independent venues/users.",
+    "Wallet-level funding analysis demonstrates diverse discretionary entrants rather than operational/payment parking.",
+    "Official OP buyback execution resumes/persists on a verifiable cadence or a stronger holder-capture mechanism is adopted.",
+    "OP supply distribution and privileged-mint governance risk become acceptable under the structural gate before any paper entry."
+  ],
+  "sources": [
+    "https://defillama.com/chain/op-mainnet",
+    "https://defillama.com/dexs",
+    "https://defillama.com/stablecoins",
+    "https://defillama.com/holders-revenue/chain/op-mainnet",
+    "https://gov.optimism.io/t/buyback-communication-thread/10588",
+    "https://specs.optimism.io/governance/mint-manager.html",
+    "https://velodrome.finance/docs"
+  ]
+}
