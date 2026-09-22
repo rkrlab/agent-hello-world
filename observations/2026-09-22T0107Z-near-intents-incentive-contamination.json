@@ -1,0 +1,100 @@
+{
+  "timestamp_utc": "2026-09-22T01:07:06Z",
+  "signal_id": "NEAR_INTENTS_REAL_VALUE_CAPTURE_INCENTIVE_CONTAMINATION_NO_TRADE_20260922T0107Z",
+  "ecosystem": "NEAR / NEAR Intents",
+  "candidate_asset": "NEAR",
+  "contract_address": null,
+  "classification": "NEAR_INTENTS_REAL_VALUE_CAPTURE_BUT_INCENTIVE_CONTAMINATED_PRICE_LEADERSHIP_NO_TRADE",
+  "alert_threshold_crossed": true,
+  "paper_action": "NO_TRADE",
+  "summary": "NEAR has become a major price/volume leader while NEAR Intents is producing real cross-chain spot volume and open-market NEAR buyback value capture. However, NEAR L1 retained-capital metrics do not confirm the move, Confidential Intents activity is materially contaminated by the NEAR@3.33 milestone incentive, no independently funded selective-wallet cohort was verified, and price has already repriced sharply. The framework therefore records the regime change but rejects a prospective paper entry at this checkpoint.",
+  "ecosystem_evidence": {
+    "near_l1": {
+      "tvl_usd": 188560000,
+      "tvl_change_24h_pct": -0.52,
+      "stablecoin_mcap_usd": 79860000,
+      "stablecoin_change_7d_pct": -0.54,
+      "dex_volume_24h_usd": 29230000,
+      "dex_volume_7d_usd": 542900000,
+      "dex_volume_change_7d_pct": 64.19,
+      "net_inflow_24h_usd": -3370000,
+      "active_addresses_24h": 57466,
+      "new_addresses_24h": 12868,
+      "transactions_24h": 846013,
+      "rwa_active_aum_usd": 4000000,
+      "rwa_note": "KAIO RWA inventory/AUM only; no material secondary-trading or collateral-utilization leg verified in this run."
+    },
+    "near_intents": {
+      "tvl_usd": 189750000,
+      "tvl_change_30d_pct": 79.0,
+      "near_share_of_tvl_pct": 56.0,
+      "dex_volume_24h_usd": 118560000,
+      "dex_volume_7d_usd": 1163000000,
+      "dex_volume_30d_usd": 4132000000,
+      "fees_24h_usd": 180114,
+      "fees_7d_usd": 2020000,
+      "fees_30d_usd": 5890000,
+      "protocol_revenue_24h_usd": 47764,
+      "protocol_revenue_7d_usd": 446174,
+      "protocol_revenue_30d_usd": 1290000,
+      "holder_revenue_7d_usd": 446174,
+      "holder_revenue_30d_usd": 1290000,
+      "value_capture": "Since 2026-02-23 NEAR's captured Intents revenue is used to buy NEAR on the open market rather than burn it.",
+      "q3_2026_to_date_near_buyback_usd": 2220000,
+      "interpretation": "This is real completed cross-chain spot-swap activity plus direct token-holder value capture, not RWA issuance/AUM."
+    }
+  },
+  "market_leadership": {
+    "near_mark_usd": 4.28,
+    "near_change_7d_pct": 73.9,
+    "near_volume_24h_usd": 1584500051.12,
+    "near_volume_day_over_day_pct": -21.3,
+    "market_cap_usd": 5593132660,
+    "fdv_usd": 5593132732,
+    "liquidity": "PASS: broad CEX liquidity and roughly $1.58B 24h turnover; executable for paper sizing."
+  },
+  "why_capital_is_arriving": [
+    "NEAR Intents has become a large cross-chain spot-routing layer with more than $1.16B 7d and $4.13B 30d completed swap volume.",
+    "Captured Intents revenue funds open-market NEAR buybacks, giving the token unusually direct value capture from cross-chain usage.",
+    "Confidential perpetuals launched through near.com using Hyperliquid for execution, and NEAR Intents added cross-chain limit orders on 2026-09-21.",
+    "Privacy plus cross-chain execution is a strong current narrative and product catalyst."
+  ],
+  "quality_discounts": [
+    "NEAR L1 stablecoin supply is down 0.54% over seven days and measured 24h inflow is -$3.37M, so native retained capital does not confirm the token's roughly 74% weekly repricing.",
+    "The NEAR@3.33 program explicitly made Confidential Intents balance and swap activity part of reward eligibility/allocation. Its $70M Confidential TVL milestone triggered a 333,333-token reward snapshot, so confidential TVL/user activity around that threshold is incentive-contaminated rather than clean discretionary demand.",
+    "Confidential perpetuals use Hyperliquid as the execution venue. Their derivatives turnover should not be misclassified as independent NEAR-native perp liquidity; NEAR's value comes from routing/privacy/integration rather than owning the underlying order book.",
+    "No fresh cohort of historically selective, independently funded NEAR spot accumulators was verified in this run.",
+    "NEAR has already risen about 74% in seven days while 24h token turnover is down about 21% day/day, increasing chase/asymmetry risk."
+  ],
+  "wallet_quality": {
+    "rating": "INSUFFICIENT_FOR_ENTRY",
+    "detail": "No verified independent selective-wallet convergence. Generic whale/social claims were not counted."
+  },
+  "social_news_quality": {
+    "rating": "BROAD_PRODUCT_ATTENTION_WITH_EVENT_AMPLIFICATION",
+    "detail": "Attention is distributed across multiple product/news catalysts rather than one identifiable promoter, but the NEAR@3.33 incentive and visible $3.33 price milestone are reflexive event catalysts and must be discounted."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "detail": "NEAR is a liquid native asset; ERC-style honeypot, LP-removal, deployer and arbitrary token-contract freeze risks do not apply in the same form. Native inflation/validator issuance remains an economic dilution caveat, but no hard structural failure was found."
+  },
+  "decision": {
+    "paper_trade": false,
+    "reason": "Real Intents usage and direct NEAR buybacks are strong enough to record as an emerging leadership regime, but the retained-capital divergence, explicit incentive contamination, missing selective-wallet confirmation and post-rally asymmetry fail the prospective entry threshold.",
+    "upgrade_requirements": [
+      "Persistent positive NEAR L1 stablecoin and bridge/net inflows after the incentive event cools.",
+      "Sustained Intents spot volume/revenue and buybacks without dependence on near.com reward farming.",
+      "Verified independent selective-wallet accumulation or another comparably strong independent capital-quality confirmation.",
+      "Price/holder persistence after the current ~74% weekly repricing rather than immediate post-event chasing."
+    ]
+  },
+  "sources": [
+    "https://defillama.com/chain/near",
+    "https://defillama.com/protocol/near-intents",
+    "https://defillama.com/holders-revenue",
+    "https://www.coingecko.com/en/coins/near",
+    "https://www.prnewswire.co.uk/news-releases/nearcoms-confidential-tvl-reaches-70-million-triggering-the-near3-33-snapshot-amid-industry-wide-privacy-wave-302881902.html",
+    "https://intents.near.org/",
+    "https://intents.near.org/confidential"
+  ]
+}
