@@ -1,0 +1,104 @@
+{
+  "timestamp_utc": "2026-09-22T22:30:39Z",
+  "classification": "ETH_BTC_TO_ETH_ROTATION_PERSISTENCE_WITH_NEW_WALLET_BREADTH_STABLECOIN_DIVERGENCE_CORE_HOLD_NO_ADD",
+  "ecosystem": "Ethereum",
+  "asset": "ETH",
+  "contract_address": null,
+  "signal_id": "2026-09-22T223039Z-eth-rotation-persistence-wallet-breadth",
+  "signal_status": "MEANINGFUL_THRESHOLD_CROSSED",
+  "paper_action": "HOLD_NO_ADD",
+  "summary": "The Sep 21 ETH leadership thesis has strengthened prospectively after its distribution counterflow: the same BTC-to-ETH whale repeated the rotation on Sep 22 and staked the additional ETH, while a distinct ICO-era wallet executed a large CowSwap spot purchase and another reported cluster accumulated over five days. Ethereum chain activity is simultaneously spot-led (DEX +34.58% 7d, onchain perps -37.05%) with +$311.24m 24h inflow. Stablecoin supply remains -0.77% 7d, so classify this as asset/leadership rotation and spot accumulation rather than broad fresh retained-dollar migration. The Sep 21 81,228-ETH distribution by one legacy beneficial-owner path remains an offsetting risk. Existing core ETH is HOLD, not ADD, because it is already ~19.78% of NAV and ETH is +14.2% over seven days.",
+  "ecosystem_regime_evidence": {
+    "tvl_usd": 54458000000,
+    "tvl_change_24h_pct": 2.06,
+    "stablecoin_mcap_usd": 146481000000,
+    "stablecoin_change_7d_pct": -0.77,
+    "rwa_active_aum_usd": 13418000000,
+    "dex_volume_24h_usd": 1966000000,
+    "dex_volume_7d_usd": 11315000000,
+    "dex_change_7d_pct": 34.58,
+    "perp_volume_24h_usd": 441400000,
+    "perp_volume_7d_usd": 3926000000,
+    "perp_change_7d_pct": -37.05,
+    "net_inflow_24h_usd": 311240000,
+    "active_addresses_24h": 613624,
+    "new_addresses_24h": 219456,
+    "transactions_24h": 2090000,
+    "token_incentives_24h_usd": 0,
+    "interpretation": "Spot/DEX activity is accelerating while onchain perpetual activity contracts. Positive daily inflow strengthens the chain-flow case, but the negative 7d stablecoin stock prevents classifying this as broad new dollar retention."
+  },
+  "capital_migration": {
+    "classification": "BTC_AND_STABLECOIN_TO_ETH_ASSET_ROTATION_WITH_INSTITUTIONAL_WRAPPER_DEMAND",
+    "why_capital_is_arriving": [
+      "The previously tracked whale extended BTC-to-ETH rotation by another 200.71 BTC (~$17.2m) for 6,247 ETH on Sep 22 and staked it, bringing six-day totals to 1,308 BTC (~$104m) into 40,670 ETH, all staked.",
+      "An ICO-era wallet spent about $23.7m of DAI/USDS/USDC/USDT in four CowSwap orders for 8,492.8 ETH on Sep 21, indicating direct spot demand rather than derivatives exposure.",
+      "A separate reported cluster accumulated 21,520 ETH (~$55.8m) across five days beginning Sep 18; however linkage to the BTC rotator is not fully excluded.",
+      "U.S. spot ETH ETFs recorded about $270m net inflow on Sep 21, but U.S. spot BTC ETFs drew about $999m the same day, so this is broad institutional crypto demand rather than ETH-exclusive migration."
+    ],
+    "incentive_filter": "PASS_WITH_CAVEATS",
+    "incentive_detail": "No airdrop, points, quest, trading rebate or temporary liquidity-mining program explains the identified BTC-to-ETH rotation, CowSwap purchase or ETF creations. Native staking yield can motivate the whale's staking choice and is treated as economically substantive protocol compensation, not pure discretionary speculation."
+  },
+  "wallet_quality": {
+    "grade": "MEDIUM_HIGH_AND_IMPROVING",
+    "repeat_buyer_persistence": "Confirmed for the BTC-to-ETH whale: the Sep 22 transaction is a new prospective continuation beyond the Sep 21 checkpoint.",
+    "independent_breadth": "At least one distinct ICO-era spot buyer is reported. The additional 21,520-ETH cluster appears separate but beneficial-owner/funding independence is not fully verified and therefore receives partial weight only.",
+    "aggregate_exchange_signal": "Binance ETH withdrawal transactions reportedly reached a three-year-high monthly average above 90,000; useful breadth evidence but not equivalent to verified profitable selective-wallet convergence.",
+    "counterflow": "A single long-held entity reported on Sep 21 sold 81,228 ETH over two days at an average around $2,669 from an original 124,021-ETH position. No evidence in this run establishes that this distribution path has fully stopped."
+  },
+  "rwa": {
+    "active_aum_usd": 13418000000,
+    "score_credit": 0,
+    "reason": "Ethereum RWA Active AUM is issuance/inventory. No fresh chain-specific secondary RWA trading or collateral-utilization acceleration was independently verified in this run, so it receives no migration score."
+  },
+  "narrative_and_attention": {
+    "assessment": "BROAD_FUNDAMENTAL_AND_FLOW_ATTENTION_WITH_PRICE_CROWDING",
+    "detail": "ETH is +14.2% over seven days and institutional/whale coverage is broad. The alert is based on onchain and fund-flow evidence, not influencer promotion. The strong weekly price move increases chase/crowding risk."
+  },
+  "structural_gate": {
+    "result": "PASS_NATIVE_ASSET_WITH_PROTOCOL_CAVEATS",
+    "detail": "ETH is the native Ethereum asset; third-party honeypot, LP-removal, deployer dumping and arbitrary ERC-style mint/freeze gates do not apply in the same form. Protocol issuance/staking concentration and validator economics remain non-hard caveats."
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "mark_usd": 2744.04,
+    "coingecko_24h_volume_usd": 15861000000
+  },
+  "paper_portfolio_decision": {
+    "decision": "HOLD_NO_ADD",
+    "reason": "The evidence repairs and strengthens the ETH leadership thesis after the Sep 21 distribution warning, but the opening ETH position is already ~19.78% of current NAV. Stablecoin retention is still negative, a large legacy seller remains unresolved, ETF demand is broad crypto risk-on rather than ETH-exclusive, and ETH is already +14.2% over seven days. Do not chase or increase core concentration.",
+    "eth_quantity": 0.798766704209,
+    "eth_mark_usd": 2744.04,
+    "eth_value_usd": 2191.8477870176644,
+    "eth_weight_pct": 19.776789590417795,
+    "current_nav_usd": 11082.930204605369,
+    "benchmark_nav_usd": 10652.550115088252,
+    "alpha_vs_benchmark_usd": 430.3800895171171,
+    "alpha_vs_benchmark_bps": 404.0160195139824,
+    "cash_usd": 2030.3183658745413,
+    "trade_count": 10
+  },
+  "forward_tests": [
+    "Does the BTC-to-ETH rotator continue adding and staking after six days, or stop/reverse near the current price?",
+    "Can the ICO-era buyer and 21,520-ETH cluster be proven independently funded and beneficially independent from the known BTC rotator?",
+    "Does the Sep 21 legacy distribution entity move or sell the remaining balance, and do other long-term holders join it?",
+    "Do ETH ETF inflows persist across additional completed U.S. sessions while ETH/BTC relative strength holds?",
+    "Does Ethereum stablecoin supply reverse from -0.77% over seven days and remain positive across checkpoints?",
+    "Does DEX growth remain spot-led while onchain perps stay subdued, avoiding a shift back to leverage-led price discovery?"
+  ],
+  "prior_records": [
+    "observations/2026-09-21T0947Z-eth-btc-rotation-staking-leadership.json",
+    "observations/2026-09-21T1748Z-eth-distribution-counterflow.json"
+  ],
+  "sources": [
+    "https://defillama.com/chain/ethereum",
+    "https://www.coingecko.com/en/coins/ethereum",
+    "https://www.kucoin.com/news/flash/mystery-whale-sells-1-308-btc-over-6-days-converts-to-40-670-eth-for-staking",
+    "https://news.bitcoin.com/crypto-news/ethereum-ico-whale-buys-back-2794-sold-2010-march/",
+    "https://www.kucoin.com/news/flash/mysterious-entity-buys-21-520-eth-over-5-days-investing-55-8m",
+    "https://www.binance.com/en-AE/square/post/09-22-2026-ethereum-spot-etfs-record-270-million-net-inflow-on-september-21-369304571670738",
+    "https://www.kucoin.com/news/flash/bitcoin-etf-inflows-hit-999m-ether-funds-add-270m-on-sept-21",
+    "https://incrypted.com/en/whale-activity-and-a-record-207-million-wallets-ethereum-rises-amid-a-three-year-high-in-withdrawals-from-binance/"
+  ],
+  "paper_trade_executed": false,
+  "real_trade_executed": false
+}
