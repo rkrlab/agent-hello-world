@@ -1,0 +1,66 @@
+{
+  "signal_id": "2026-09-22T193040Z-zec-physically-backed-europe-etp-hold-no-add",
+  "timestamp_utc": "2026-09-22T19:30:40Z",
+  "ecosystem": "Zcash",
+  "asset": "ZEC",
+  "contract_address": null,
+  "regime_classification": "ZEC_PHYSICALLY_BACKED_EUROPE_ETP_ACCESS_UPGRADE_FLOW_UNCONFIRMED_DERIVATIVES_AND_DISTRIBUTION_CAVEATS_HOLD_NO_ADD",
+  "alert_threshold_crossed": true,
+  "paper_action": "HOLD_NO_ADD",
+  "paper_trade": null,
+  "summary": "21Shares launched a new physically backed Zcash ETP (ticker ZCASH, ISIN CH1608218801) on Euronext Amsterdam and Euronext Paris on 2026-09-22. This creates a fresh regulated European brokerage/institutional access channel whose underlying exposure is backed by held ZEC, so successful subscriptions can translate into spot custody demand. The launch is a material access upgrade for an existing paper holding, but the issuer disclosed no launch-day AUM or net subscriptions; product availability is therefore not counted as observed capital migration. ZEC remains HOLD/NO ADD because the paper position is already near the non-core cap, derivatives/crowding remain elevated, no fresh independently verified selective-wallet cohort appeared, and a large legacy whale reportedly sent about $15M of ZEC to Coinbase on Sep. 19 after a long period of inactivity.",
+  "market_mark": {
+    "price_usd": 1520.12,
+    "source": "CoinGecko global volume-weighted spot",
+    "observed_at_utc": "2026-09-22T19:30:40Z",
+    "market_cap_usd": 25768000000,
+    "volume_24h_usd": 1425000000,
+    "price_change_7d_pct": 34.1
+  },
+  "ecosystem_regime_evidence": {
+    "regulated_access": "21Shares says the ZCASH ETP is physically backed by ZEC held by established third-party custodians and is available from Sep. 22 through European brokerage platforms and financial institutions on Euronext Amsterdam and Paris.",
+    "actual_flow_status": "UNCONFIRMED. No initial AUM, creations, subscriptions, or net-flow figure was disclosed in the launch announcement. Do not equate listing/issuance with capital inflow.",
+    "usage": "A same-day secondary report citing Messari data says Zcash recorded 62,812 private transactions in the prior week, the highest weekly count in more than four years. This is supportive but treated as lower-confidence than direct chain telemetry and is not used alone to authorize a trade.",
+    "rwa_classification": "The ETP is a traditional regulated wrapper physically backed by ZEC, not an on-chain tokenized RWA market on Zcash. It therefore improves access but is not counted as Zcash RWA issuance, secondary on-chain RWA trading, or collateral utilization.",
+    "incentive_contamination": "No airdrop/points/quest/yield-farming mechanism was identified as the cause of the ETP launch. Price momentum remains partly derivatives/crowding-sensitive and therefore is not treated as clean discretionary spot migration."
+  },
+  "leadership_rotation": "ZEC remains a leading privacy-theme asset, but the framework does not award additional entry credit merely because price has already appreciated. The relevant forward question is whether the new European wrapper produces measurable creations/holdings while privacy usage and spot accumulation persist.",
+  "wallet_quality": {
+    "standing_positive_evidence": "Prior paper decisions documented three distinct exchange-withdrawal accumulation paths totaling roughly 64.5K ZEC, but beneficial-owner independence and historical selectivity remain unproven.",
+    "new_positive_selective_cohort": false,
+    "new_distribution_caveat": "Reporting citing Arkham said legacy whale address t1Lyq moved roughly $362.56M of ZEC on Sep. 18/19 and sent about $15M to Coinbase, its first reported CEX deposit in ten months. The deposit is only a fraction of the moved balance, so it is a distribution warning rather than an exit trigger.",
+    "quality_rating": "MEDIUM"
+  },
+  "social_news_quality": "The 21Shares launch is a primary-source product catalyst. Broader privacy-coin attention is now intense and includes high-profile investor/influencer commentary; that concentration is treated as crowding risk rather than independent confirmation.",
+  "liquidity_executability": "PASS. CoinGecko shows about $1.425B of 24-hour ZEC spot turnover across 49 exchanges / 83 markets at the observation.",
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "details": "ZEC is a native Proof-of-Work asset with a 21M maximum supply, so third-party honeypot, removable LP owner, and arbitrary ERC-style freeze/mint checks do not apply in the ordinary form. Regulatory/listing risk for privacy assets, ongoing issuance until the cap, and opaque shielded beneficial ownership remain important caveats."
+  },
+  "major_uncertainties": [
+    "No launch-day ZCASH ETP AUM, creations, subscriptions, or net flows were disclosed.",
+    "No fresh cohort of historically selective, independently funded spot accumulators was verified in this run.",
+    "Derivatives open interest and privacy-theme crowding remain elevated, leaving liquidation-driven price discovery risk.",
+    "The reported $15M Coinbase deposit from a large legacy whale may or may not represent intended selling.",
+    "Same-day private-transaction count is sourced secondarily rather than from direct chain telemetry."
+  ],
+  "why_signal_matters_now": "A physically backed ETP is materially different from a futures or synthetic product because net creations can require custody of underlying ZEC. It adds a new European regulated access route while the paper portfolio already owns ZEC. However, the framework requires observable subscriptions/holdings or a new independent accumulation leg before adding capital; access capacity is not the same as realized flow.",
+  "prospective_triggers": {
+    "add_or_reconfirm": [
+      "Verified ZCASH ETP AUM/net creations or custodian holdings begin rising materially after launch.",
+      "Fresh independent selective-wallet spot accumulation appears with funding-lineage checks.",
+      "Shielded/private usage persists while spot demand remains strong without derivatives becoming the dominant marginal driver."
+    ],
+    "trim_or_exit_review": [
+      "Large-holder CEX deposits broaden into sustained distribution.",
+      "Price weakens persistently while derivatives open interest remains elevated and spot demand fades.",
+      "A hard structural/listing/liquidity failure emerges."
+    ]
+  },
+  "sources": [
+    "https://www.globenewswire.com/news-release/2026/09/22/3365982/0/en/21shares-expands-product-suite-with-launches-of-ether-fi-etp-ethfi-and-zcash-etp-zcash.html",
+    "https://www.coingecko.com/en/coins/zcash",
+    "https://coinfomania.com/zcash-reports-62812-private-transactions-last-week/",
+    "https://www.binance.com/ru-KZ/square/post/09-19-2026-zcash-whale-moves-362-56-million-in-zec-sends-15-million-to-cex-368223154529661"
+  ]
+}
