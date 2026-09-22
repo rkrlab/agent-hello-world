@@ -1,0 +1,67 @@
+{
+  "timestamp_utc": "2026-09-22T12:07:20Z",
+  "signal_id": "SUI-20260922-1207Z-REGIME-MIXED",
+  "ecosystem": "Sui",
+  "asset": "SUI",
+  "contract_address": null,
+  "regime_classification": "SUI_SPOT_CHAIN_ACCELERATION_WITH_LEVERAGE_CONTAMINATION_AND_PHANTOM_MIGRATION_RISK_HOLD_NO_ADD",
+  "alert_threshold_crossed": true,
+  "paper_action": "HOLD_NO_ADD",
+  "paper_trade": false,
+  "structural_gate": "PASS_WITH_CAVEATS",
+  "evidence": {
+    "chain": {
+      "defi_tvl_usd": 536000000,
+      "tvl_change_24h_pct": 3.15,
+      "stablecoin_supply_usd": 476790000,
+      "stablecoin_change_7d_pct": 3.18,
+      "dex_volume_24h_usd": 107190000,
+      "dex_volume_7d_usd": 355610000,
+      "dex_volume_change_7d_pct": 56.72,
+      "perp_volume_24h_usd": 36010000,
+      "perp_volume_7d_usd": 189320000,
+      "perp_volume_change_7d_pct": 31.50,
+      "net_inflow_24h_usd": 881000,
+      "active_addresses_24h": 158082,
+      "new_addresses_24h": 10861,
+      "transactions_24h": 50330000,
+      "rwa_active_aum_usd": 36960000,
+      "rwa_interpretation": "Inventory/AUM only in this run; no fresh secondary-trading or collateral-utilization evidence was independently verified, so it receives no speculative-flow credit."
+    },
+    "token": {
+      "mark_usd": 1.02,
+      "change_7d_pct": 42.2,
+      "volume_24h_usd": 1519000000,
+      "market_cap_usd": 4169000000,
+      "market_cap_to_fdv": 0.41,
+      "circulating_supply_sui": 4097000000,
+      "total_supply_sui": 10000000000,
+      "next_known_unlock_date": "2026-10-03",
+      "next_known_unlock_sui": 23380000
+    },
+    "flow_quality": "Improved. Seven-day DEX acceleration exceeds perp acceleration, stablecoin stock is growing, and measured net inflow is positive, so this is not purely a derivatives squeeze. However, current SUI token momentum is materially catalyst/leverage contaminated: reporting around the September 21 move showed futures open interest rising sharply while the undisclosed Basecamp finance-product teaser drove event speculation.",
+    "wallet_quality": "No fresh cohort of historically selective, independently funded, repeat-buying SUI spot wallets was verified in this run. Wallet-quality confirmation remains missing.",
+    "catalyst": "Sui Basecamp 2026 is scheduled for October 7-8 in Singapore and officially centers on agentic finance, instant settlement, autonomous payments, private transactions, stable digital dollars and product reveals. A specific teased finance product remains undisclosed.",
+    "material_risk_change": "Phantom officially ends Sui network support on September 24, 2026. Users will no longer be able to view, send, swap, or interact with Sui assets in Phantom after that date. Assets remain onchain and can be imported into another compatible wallet, but the transition creates a near-term wallet-migration/friction headwind and can encourage native-SUI outflows or swaps during an already crowded rally.",
+    "structural_notes": "SUI is the native token, so third-party honeypot and removable-LP-owner tests do not apply in the same form. Liquidity/executability pass. Supply overhang remains material because only about 41% of total supply is circulating; the next scheduled unlock is modest relative to current float but continuing unlocks remain an economic caveat."
+  },
+  "decision": "HOLD existing core SUI; do not add. The chain-level regime has improved enough to upgrade the thesis, but selective-wallet confirmation is absent, token-level leverage/event speculation is elevated, and the September 24 Phantom support cutoff creates a material near-term migration risk. A future add requires persistence after the Phantom transition, continued positive stablecoin/net flows and spot DEX leadership, and independent selective-wallet accumulation.",
+  "portfolio_context": {
+    "sui_quantity": 616.067028092657,
+    "sui_mark_usd": 1.02,
+    "sui_marked_value_usd": 628.3883686545101,
+    "sui_weight_pct": 5.6756537694642475,
+    "current_cash_usd": 2030.3183658745413,
+    "current_nav_usd": 11071.647323438243,
+    "benchmark_nav_usd": 10640.812149147037,
+    "alpha_vs_benchmark_usd": 430.8351742912055,
+    "alpha_vs_benchmark_bps": 404.8893714618776
+  },
+  "sources": [
+    "https://defillama.com/chain/Sui",
+    "https://www.coingecko.com/en/coins/sui",
+    "https://www.sui.io/blog/the-agentic-economy-takes-sui-basecamp-2026-singapore",
+    "https://help.phantom.com/hc/en-us/articles/45229345406995-Phantom-is-ending-support-for-Sui",
+    "https://help.phantom.com/hc/en-us/articles/41372803552275-Which-networks-does-Phantom-support"
+  ]
+}
