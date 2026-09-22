@@ -1,0 +1,83 @@
+{
+  "timestamp_utc": "2026-09-22T07:35:14Z",
+  "signal_id": "S-20260922-SOL-USDC-SUPPLY-SURGE-NO-ADD",
+  "classification": "SOL_USDC_SUPPLY_SURGE_DERIVATIVES_COOLING_ISSUANCE_CONTAMINATION_HOLD_NO_ADD_TIMELINE_CORRECTION",
+  "ecosystem": "Solana",
+  "asset": "SOL",
+  "contract_address": null,
+  "asset_type": "native",
+  "alert_threshold_crossed": true,
+  "paper_action": "HOLD_NO_ADD",
+  "paper_trade_executed": false,
+  "signal": {
+    "regime_evidence": [
+      "DefiLlama currently shows Solana stablecoin market cap at $16.873B, up $798.71M or 4.97% over seven days and 8.19% over one day. USDC is $8.286B and up 17.42% over one day, making USDC the dominant source of the abrupt supply increase.",
+      "Solana DEX volume is $3.197B over 24h and $18.478B over seven days, up 6.07% week/week, while perpetual volume is $10.091B over seven days and down 5.26%. The present activity mix is therefore cleaner than a derivatives-led squeeze signal.",
+      "DefiLlama reports +$6.15M of 24h inflows, 3.11M active addresses and 116.56M transactions, but raw address/transaction counts remain heavily discounted because Solana launchpad and bot activity can inflate them.",
+      "This materially improves the retained-capital leg versus the 2026-09-21T21:53:56Z checkpoint, which recorded $15.597B of stablecoins, -2.77% over seven days and -$5.73M of measured 24h net flow."
+    ],
+    "capital_quality": [
+      "The stablecoin increase is not yet classified as fully discretionary speculative capital. A September 21 report documents a fresh 250M USDC Treasury mint on Solana, and reporting over the prior week describes repeated large USDC issuance tranches. Treasury minting can create supply before those dollars are deployed into exchanges, DEXs, lending or collateral markets.",
+      "A separate September 21 report records roughly 130M USDC moving from Coinbase to an unidentified Solana wallet, which is consistent with non-treasury deployment but does not by itself reveal end use or beneficial ownership.",
+      "Because issuance and deployment are not the same thing, this run treats the +8.19% one-day stablecoin-stock jump as a meaningful liquidity-provisioning signal but not as proof that an equivalent amount of discretionary speculative capital has already rotated into SOL or Solana risk assets.",
+      "Solana RWA Active AUM is about $1.581B. It remains an inventory/AUM metric and receives no fresh-flow credit this run; earlier evidence of tokenized-equity secondary usage remains valid context but was not independently re-triggered here."
+    ],
+    "incentive_filter": [
+      "DefiLlama reports $0 of chain-level token incentives over 24h, so the stablecoin jump is not explained by a broad chain incentive program.",
+      "Raw transaction and new-token activity remain contaminated by memecoin launchpads and automated trading. The September 10 record of 263K tokens issued in a day was driven heavily by Pump.fun, so popularity and transaction count do not substitute for capital-quality confirmation.",
+      "USDC treasury issuance is not an airdrop/points incentive, but it can still be inventory provisioning rather than discretionary speculation and is therefore discounted until downstream utilization is visible."
+    ],
+    "leadership_and_wallet_quality": [
+      "Solana has improved from institutional/RWA leader with weak retained capital to a provisional retained-liquidity leader, while spot DEX activity is growing and perps are cooling.",
+      "No fresh cohort of historically selective, independently funded SOL spot accumulators was verified in the last day. The previously identified HURDw accumulation and older dormant-whale dip buy are not treated as new confirmation for this timestamp.",
+      "The current paper portfolio already carries about 10.18% SOL exposure, so an additional 2.5% tranche would increase concentration before the stablecoin issuance can be shown to circulate organically and before wallet-quality confirmation appears."
+    ],
+    "timeline_correction": {
+      "prior_statement": "The 2026-09-21 Solana checkpoint described Alpenglow as targeted for a September 28 feature-gate activation.",
+      "current_official_evidence": "The current Solana Foundation Agave 4.2 release page says Alpenglow will activate in Agave 4.3 and that Agave 4.3 is targeted for October 2026. The Solana VAT page likewise says Alpenglow is expected in Q4 2026.",
+      "treatment": "Remove September 28 from the prospective SOL catalyst model. No paper decision receives credit for an imminent September 28 Alpenglow activation."
+    }
+  },
+  "structural_gate": {
+    "result": "PASS_NATIVE_ASSET",
+    "basis": "SOL is Solana's native asset, so third-party honeypot, removable-LP-owner, deployer and arbitrary ERC-style mint/freeze gates do not apply in the same form. Native staking issuance remains an economic dilution consideration. Executable liquidity is ample.",
+    "other_caveats": [
+      "The abrupt USDC supply increase is partly treasury-issuance contaminated and needs downstream utilization confirmation.",
+      "Selective-wallet convergence is still missing.",
+      "The previously cited September 28 Alpenglow timing is superseded by the current official October/Q4 2026 target."
+    ]
+  },
+  "paper_portfolio": {
+    "source_of_truth_state_sha": "019927c3e60e15962bc930cb44dd5f47927fb380",
+    "trade_ledger_sha": "cbdf35b40d3ca9fabb14ac70cd8ce2ea08fc4671",
+    "trade_count": 10,
+    "cash_usd": 2030.3183658745413,
+    "current_nav_usd": 11073.539877191728,
+    "benchmark_nav_usd": 10617.32105340698,
+    "alpha_vs_benchmark_usd": 456.21882378474726,
+    "alpha_vs_benchmark_bps": 429.6929719746505,
+    "sol_quantity": 9.673050880248,
+    "sol_mark_usd": 116.55,
+    "sol_marked_value_usd": 1127.3940800929045,
+    "sol_weight_pct": 10.180972774704216,
+    "decision": "Hold existing core SOL. No add, trim or sell. The retained-liquidity leg improved materially, but treasury issuance/deployment ambiguity, missing selective-wallet convergence, and existing ~10.18% SOL concentration prevent a new tranche."
+  },
+  "forward_tests": [
+    "Whether the new USDC supply leaves treasury/issuer addresses and persists in exchange, DEX, lending, payments or collateral balances rather than being burned or idling at treasury.",
+    "Whether Solana stablecoin supply and net inflows remain positive over multiple checkpoints instead of relying on a one-day issuance jump.",
+    "Whether DEX volume continues to grow while perpetual volume remains non-dominant and activity broadens beyond bot-heavy launchpad flow.",
+    "Whether a fresh cohort of historically selective, independently funded SOL spot accumulators emerges with repeat buying and independent funding sources.",
+    "Whether tokenized-equity secondary volume persists and expands into measurable collateral/lending composability.",
+    "Whether Agave 4.3/Alpenglow ships on the current official October/Q4 2026 schedule and produces measurable utilization or latency gains without stability regressions."
+  ],
+  "sources": [
+    "https://defillama.com/chain/solana",
+    "https://defillama.com/stablecoins/solana",
+    "https://www.gate.com/pt-br/news/detail/circle-mints-250-million-usdc-on-solana-network-on-sept-21-24448950",
+    "https://vn.tokenpost.com/news/blockchain/47477",
+    "https://solana.com/el/upgrades/agave-4-2-release-overview",
+    "https://solana.com/uk/upgrades/bls-pubkey-vat",
+    "https://cointelegraph.com/news/solana-record-263k-tokens-issued"
+  ],
+  "hindsight_policy": "Observation frozen prospectively. No paper trade was executed. Subsequent SOL price action, USDC deployment/burns, stablecoin balances, DEX/perp activity, wallet accumulation, RWA utilization or Agave/Alpenglow rollout must not be retroactively treated as known at this timestamp."
+}
