@@ -1,0 +1,112 @@
+{
+  "timestamp_utc": "2026-09-22T14:41:25Z",
+  "type": "research_observation",
+  "classification": "ARBITRUM_LARGE_BRIDGE_INFLOW_ACTIVITY_REACCELERATION_STABLECOIN_DIVERGENCE_PRIVILEGED_MINT_REJECTION_NO_TRADE",
+  "execution_trigger": false,
+  "alert_threshold_crossed": true,
+  "ecosystem": "Arbitrum One / Arbitrum ecosystem",
+  "asset": {
+    "symbol": "ARB",
+    "contract_arbitrum_one": "0x912CE59144191C1204E64559FE8253a0e49E6548",
+    "mark_usd_approx": 0.222719,
+    "market_cap_usd_approx": 1510000000,
+    "turnover_24h_usd_approx": 507970000,
+    "circulating_supply_arb_approx": 6790000000,
+    "max_supply_arb": 10000000000
+  },
+  "regime_evidence": {
+    "arbitrum_one": {
+      "tvl_usd": 1481000000,
+      "tvl_change_24h_pct": 2.86,
+      "stablecoin_mcap_usd": 3629000000,
+      "stablecoin_change_7d_pct": -2.15,
+      "rwa_active_aum_usd": 899380000,
+      "dex_volume_24h_usd": 264820000,
+      "dex_volume_7d_usd": 1612000000,
+      "dex_weekly_change_pct": 36.09,
+      "perp_volume_24h_usd": 4087000000,
+      "perp_volume_7d_usd": 15693000000,
+      "perp_weekly_change_pct": 32.75,
+      "net_inflow_24h_usd": 504970000,
+      "active_addresses_24h": 151228,
+      "new_addresses_24h": 23674,
+      "transactions_24h": 2260000
+    },
+    "change_vs_2026_09_21_checkpoint": {
+      "prior_stablecoin_change_7d_pct": -2.33,
+      "prior_dex_weekly_change_pct": 33.99,
+      "prior_perp_weekly_change_pct": 23.88,
+      "prior_net_inflow_24h_usd": 9220000,
+      "interpretation": "The genuinely new threshold is the jump in measured 24h chain inflow from about $9.2M to about $505M while DEX and perp growth remain elevated. However, stablecoin stock remains negative week-over-week, so the inflow cannot yet be classified as retained speculative dollar capital."
+    }
+  },
+  "capital_quality": {
+    "classification": "LARGE_NON_STABLE_OR_UNATTRIBUTED_BRIDGE_FLOW_WITH_HIGH_TRADING_VELOCITY_NOT_YET_CONFIRMED_AS_DISCRETIONARY_SPECULATION",
+    "notes": [
+      "The roughly $505M 24h inflow is economically large enough to monitor, but its asset/source composition was not independently resolved in this run.",
+      "Stablecoin supply remains -2.15% over seven days, contradicting a simple thesis that fresh dollars are taking up residence on Arbitrum One.",
+      "DEX and perp growth are both elevated; perps remain very large in absolute terms, so leveraged/churn activity receives a material discount.",
+      "Raw address and transaction growth is not treated as organic-wallet confirmation without bot/HFT decomposition."
+    ]
+  },
+  "rwa_attribution": {
+    "active_aum_usd": 899380000,
+    "score": "INVENTORY_ONLY_THIS_RUN",
+    "notes": "RWA Active AUM is not counted as migration. No fresh Arbitrum One secondary-RWA trading, borrowing, or collateral-utilization surge was verified in this checkpoint. Robinhood Chain tokenized-stock secondary activity is economically substantive but is a separate Orbit chain and does not convert Arbitrum One RWA AUM into secondary-use evidence."
+  },
+  "catalysts": [
+    "Standard Chartered initiated ARB coverage on 2026-09-15, framing Arbitrum as TradFi/tokenization infrastructure and citing Robinhood Chain revenue.",
+    "Robinhood Chain contributes 10% of net protocol revenue to the Arbitrum ecosystem under the AEP, but that accrues to the DAO/developer ecosystem rather than automatically to ARB holders.",
+    "The tokenization narrative remains active, but current Arbitrum One inflow attribution is unresolved."
+  ],
+  "incentive_and_activity_discount": {
+    "rating": "MATERIAL",
+    "notes": [
+      "Robinhood Wallet gas subsidies through late September contaminate Robinhood Chain activity used in the broader ARB narrative.",
+      "Arbitrum One trading metrics are not assumed organic merely from volume/address counts; high-frequency automated swapping is a known structural feature of the chain."
+    ]
+  },
+  "wallet_quality": {
+    "rating": "LOW_TO_MEDIUM",
+    "notes": "No fresh cohort of historically selective, independently funded ARB spot accumulators with repeat buying and checked funding independence was verified in this run."
+  },
+  "value_capture": {
+    "rating": "WEAK_DIRECT_CAPTURE",
+    "notes": "ARB is a governance token. AEP/Robinhood revenue accrues to the DAO ecosystem; there is no verified automatic dividend, buyback, burn, or holder fee distribution tied to the current activity surge."
+  },
+  "structural_gate": {
+    "result": "FAIL",
+    "reasons": [
+      "Official Arbitrum Foundation token specifications state that the Arbitrum One ARB contract can mint up to 2% of total supply once per year.",
+      "Official governance documentation states that the 9-of-12 Security Council can perform upgrades without delay; ordinary DAO proposals can also upgrade the system.",
+      "Only about 67.9% of the 10B maximum supply is currently circulating, leaving material scheduled/controlled supply overhang."
+    ],
+    "correction_note": "This prospectively corrects the 2026-09-21 ARB checkpoint, which recorded PASS_WITH_GOVERNANCE_AND_SUPPLY_CAVEATS because privileged mint/upgrade authority was not surfaced then. The older record remains immutable; under the current hard-gate framework ARB is rejected for a new paper entry."
+  },
+  "leadership_assessment": "Arbitrum One has reaccelerated in capital movement and trading velocity, but ARB remains a narrative/price expression with weak direct value capture. The new chain-flow anomaly is real enough to alert, but it does not qualify as an ARB entry because retained stablecoin confirmation is absent and the structural gate fails.",
+  "major_uncertainties": [
+    "Composition and source of the roughly $505M 24h inflow were not resolved.",
+    "How much of current DEX/perp activity is discretionary versus automated/high-frequency or leverage-driven remains uncertain.",
+    "No selective-wallet convergence was verified.",
+    "RWA AUM lacks fresh secondary/collateral-utilization confirmation on Arbitrum One."
+  ],
+  "forward_tests": [
+    "Identify the assets, origin chains, and destination protocols behind the current large inflow and determine whether it persists across multiple checkpoints.",
+    "Require Arbitrum One stablecoin balances to turn and remain positive rather than relying on one-day bridge flow.",
+    "Require spot/DEX breadth to persist after discounting automation and derivatives activity.",
+    "Track whether any holder-level ARB value-capture mechanism becomes concrete; DAO treasury revenue alone remains discounted.",
+    "Even if capital-quality confirmation improves, ARB remains paper-entry-ineligible unless the privileged mint/upgrade hard gate is prospectively changed by the portfolio rules or the authority itself is materially removed/constrained."
+  ],
+  "portfolio_action": "NO_ARB_TRADE_HOLD_EXISTING_PORTFOLIO",
+  "paper_portfolio": {
+    "cash_usd": 2030.3183658745413,
+    "trade_count": 10,
+    "last_trade_id": "ADD-UNI-20260919-071102Z",
+    "nav_usd": 11082.196635268112,
+    "passive_benchmark_nav_usd": 10638.16246301105,
+    "alpha_usd": 444.03417225706295,
+    "alpha_bps": 417.3974347552712
+  },
+  "no_trade_instruction": true,
+  "real_trade": false
+}
