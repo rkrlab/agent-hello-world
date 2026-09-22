@@ -1,0 +1,105 @@
+{
+  "timestamp_utc": "2026-09-22T21:41:08Z",
+  "type": "research_observation",
+  "execution_trigger": false,
+  "ecosystem": "Solana",
+  "status": "MEANINGFUL_REGIME_UPGRADE_NO_TRADE",
+  "regime_classification": "SOLANA_TOKENIZED_EQUITY_SECONDARY_ACCELERATION_RAY_LEADERSHIP_STRUCTURAL_REJECTION_SOL_HOLD_NO_ADD",
+  "meaningful_update": "Solana's earlier retained-stablecoin signal has gained actual RWA secondary-trading confirmation and independent institutional SOL-demand channels. Raydium is the clearest ecosystem-specific value-capture beneficiary of tokenized-equity flow, but RAY fails the portfolio's hard holder/control-concentration gate; SOL passes structurally but remains a HOLD because the paper portfolio is already ~10% SOL and a fresh cohort of historically selective, independently funded spot wallets is still unverified.",
+  "ecosystem_regime_evidence": {
+    "stablecoin_mcap_usd": 16874000000,
+    "stablecoin_change_7d_pct": 4.98,
+    "dex_volume_24h_usd": 3087000000,
+    "dex_volume_7d_usd": 19727000000,
+    "dex_volume_change_7d_pct": 13.23,
+    "perps_volume_7d_usd": 10091000000,
+    "perps_volume_change_7d_pct": -5.26,
+    "net_inflows_24h_usd": 5690000,
+    "active_addresses_24h": 3110000,
+    "transactions_24h": 116560000,
+    "rwa_active_aum_usd": 2464000000,
+    "chain_token_incentives_24h_usd": 0,
+    "interpretation": "Retained stablecoin balances remain elevated across multiple checkpoints while spot DEX growth is positive and perpetual volume is contracting. This is materially cleaner than a leverage-led squeeze. Chain-level zero token incentives reduce, but do not eliminate, venue-level incentive contamination."
+  },
+  "rwa_usage_evidence": {
+    "tokenized_equity_outstanding_usd": 593300000,
+    "tokenized_equity_secondary_volume_7d_daily_avg_usd": 141300000,
+    "daily_turnover_vs_outstanding_pct": 23.8,
+    "solana_share_tokenized_equity_category_7d_pct": 29.7,
+    "reported_tokenized_equity_holders_current": 900000,
+    "reported_holders_sep_1": 424894,
+    "reported_holders_sep_12": 801439,
+    "trailing_30d_rwa_volume_reported_usd": 3300000000,
+    "collateral_utilization_status": "No new chain-specific tokenized-equity borrowing/collateral figure independently verified this run; no collateral-utilization score awarded.",
+    "interpretation": "This is not just RWA issuance/AUM: approximately 23.8% of outstanding tokenized-equity value is turning over daily on a 7-day average. Holder growth is also substantial. Some adjacent StonkFun/Stocklana activity used rewards/incentives, so only the clearly identified tokenized-equity spot volume is treated as financially substantive and the total ecosystem activity is discounted for contamination."
+  },
+  "institutional_demand": {
+    "us_sol_spot_etf_net_inflow_sep_21_usd": 26097300,
+    "us_sol_spot_etf_cumulative_net_inflow_usd": 1443000000,
+    "us_sol_spot_etf_net_assets_usd": 1740000000,
+    "dfdv_sol_added_since_sep_14": 101381,
+    "dfdv_total_sol_and_equivalents": 2490304,
+    "interpretation": "ETF creations and a public-company treasury purchase are direct external demand channels for SOL. They are not evidence of selective on-chain wallet convergence and therefore do not substitute for the wallet-quality leg."
+  },
+  "leadership_rotation": {
+    "leader": "RAY",
+    "contract_address": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+    "ray_price_usd": 1.78,
+    "ray_market_cap_usd": 482580000,
+    "ray_volume_24h_usd": 72950000,
+    "ray_tvl_usd": 1328000000,
+    "ray_tvl_change_7d_pct": 16.15,
+    "raydium_q3_tokenized_stock_dex_volume_usd": 2300000000,
+    "raydium_q3_tokenized_stock_volume_change_qoq_pct": 40,
+    "raydium_reported_current_tokenized_stock_and_memestock_share_pct": 90,
+    "value_capture": "Raydium protocol documentation routes 12% of swap fees from CLMM/CPMM/AMM v4 pools to open-market RAY buybacks. Bought-back RAY is held rather than burned.",
+    "interpretation": "RAY is a more direct high-beta beneficiary of the identified Solana tokenized-equity trading migration than SOL because Raydium is the dominant venue and swap fees mechanically fund RAY purchases."
+  },
+  "structural_gate_ray": {
+    "result": "FAIL",
+    "sellability": "PASS; active liquid markets and observed sells.",
+    "mint_authority": "PASS; revoked according to current Solana token scanners.",
+    "freeze_authority": "PASS; revoked according to current Solana token scanners.",
+    "max_supply": "Approximately 555M fixed supply.",
+    "liquidity": "PASS for portfolio sizing; broad market liquidity and ~$72.95M 24h token turnover.",
+    "concentration": "FAIL; a project-controlled set of five vaults reportedly holds ~282.66M RAY (~50.9% of total supply), and the fee-buyback wallet reportedly holds ~86.25M RAY under one key. Bought-back tokens are not burned. Even though project vaults were reported inactive since 2024, this concentration/control overhang violates the hard gate.",
+    "incentive_supply": "Reserve-funded incentive programs distributed ~620.8K RAY over the latest 90-day period in the cited monitor; the mint itself is disabled.",
+    "decision": "No paper RAY position may be opened while this concentration/control condition remains a hard-gate failure."
+  },
+  "structural_gate_sol": {
+    "result": "PASS_WITH_CAVEATS",
+    "native_asset": true,
+    "liquidity": "Deep; CoinGecko aggregates SOL across 152 exchanges / 399 markets.",
+    "supply": "No hard maximum supply; protocol inflation remains an economic dilution consideration, but no arbitrary third-party SPL mint/freeze authority applies to native SOL.",
+    "value_capture": "Solana currently burns 50% of base transaction fees; 100% of priority fees go to validators. Increased activity therefore creates some native fee-burn/staking economics but not a full protocol buyback.",
+    "decision": "HOLD existing paper SOL. Do not add yet because selective-wallet confirmation is still missing and SOL is already ~10.23% of NAV."
+  },
+  "wallet_quality": {
+    "ray": "No fresh cohort of historically selective, independently funded RAY accumulators verified. Protocol buybacks are deterministic value-capture flow, not discretionary smart-wallet evidence.",
+    "sol": "DeFi Development Corp purchases and ETF flows are real external demand but do not establish independent on-chain selective-wallet convergence. No new qualifying cohort verified."
+  },
+  "attention_quality": {
+    "classification": "BROAD_WITH_INCENTIVE_CONTAMINATION",
+    "detail": "Tokenized-equity attention is supported by multiple independent product/regulatory and market-usage developments, including the SEC's September 17 innovation exemption. Adjacent StonkFun/Stocklana promotion and reward programs can inflate some Solana/Raydium attention and are discounted rather than treated as confirmation."
+  },
+  "paper_portfolio_action": {
+    "SOL": "HOLD_NO_ADD",
+    "RAY": "REJECTED_STRUCTURAL_NO_BUY",
+    "trade_executed": false,
+    "reason": "The identified regime is real enough to alert, but RAY fails a hard concentration/control gate and SOL has not met the previously stated missing selective-wallet confirmation condition for an add."
+  },
+  "sources": [
+    "https://defillama.com/chain/solana",
+    "https://stakecake.com/solana-onchain/tokenized-equities/",
+    "https://cryptobriefing.com/solana-900k-tokenized-equity-holders/",
+    "https://docs.raydium.io/raydium/protocol/protocol-fees",
+    "https://solanacompass.com/news/xstocks-crosses-6-billion-in-solana-tokenized-stock-volume-as-raydium-q3-tops-23b",
+    "https://coinmarketcap.com/currencies/raydium/",
+    "https://managernest.com/proof/4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+    "https://mrnasdog.com/research/ray",
+    "https://solana.com/docs/core/fees/fee-structure",
+    "https://www.sec.gov/Archives/edgar/data/1805526/000180552626000109/dfdv-exx991_92126.htm",
+    "https://cryptobriefing.com/solana-etfs-26m-inflows-bsol-leads/",
+    "https://www.reuters.com/world/us-securities-regulator-rolls-out-five-year-exemption-tokenized-stock-trading-2026-09-17/"
+  ]
+}
