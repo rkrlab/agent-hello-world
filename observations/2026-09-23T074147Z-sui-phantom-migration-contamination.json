@@ -1,0 +1,57 @@
+{
+  "timestamp_utc": "2026-09-23T07:41:47Z",
+  "type": "regime_quality_wallet_migration_alert",
+  "mode": "RESEARCH_ONLY_NO_EXECUTION",
+  "ecosystem": "Sui",
+  "candidate_asset": {
+    "asset": "SUI",
+    "contract_address": null,
+    "mark_usd": 1.03
+  },
+  "regime_status": "ACTIVITY_ACCELERATION_QUALITY_DOWNGRADED",
+  "regime_classification": "SUI_SPOT_VOLUME_ACCELERATION_WITH_PHANTOM_EXIT_MIGRATION_CONTAMINATION_HOLD_NO_ADD",
+  "ecosystem_regime": {
+    "tvl_usd": 546810000,
+    "stablecoins_usd": 476330000,
+    "stablecoin_change_7d_pct": 0.35,
+    "rwa_active_aum_usd": 37000000,
+    "dex_volume_24h_usd": 70730000,
+    "dex_volume_7d_usd": 405300000,
+    "dex_weekly_change_pct": 102.0,
+    "perps_volume_7d_usd": 194480000,
+    "perps_weekly_change_pct": 29.32,
+    "inflows_24h_usd": 1920000,
+    "active_addresses_24h": 165305,
+    "new_addresses_24h": 12928,
+    "transactions_24h": 35050000,
+    "interpretation": "Spot DEX velocity has accelerated much faster than perpetual volume and 24-hour inflow remains positive, but retained stablecoin growth has faded to only +0.35% over seven days. The headline DEX acceleration therefore does not yet establish broad discretionary-capital migration."
+  },
+  "wallet_migration_contamination": {
+    "event": "Phantom ends Sui network support on 2026-09-24.",
+    "mechanical_flow": "Phantom is waiving its fee through the transition date for cross-chain swaps from native SUI to wrapped SUI on Solana and is directing users either to migrate their wallet to a Sui-compatible wallet or swap into assets that remain supported in Phantom.",
+    "framework_treatment": "Discount recent Sui DEX, transfer, bridge and wallet-migration activity to the extent it can be explained by the forced wallet transition. The migration mechanism can create real executed volume without representing fresh discretionary speculation."
+  },
+  "rwa_treatment": "$37M of RWA Active AUM is issuance/inventory. No fresh Sui-specific secondary-trading or collateral-utilization acceleration was verified in this run, so no RWA-usage credit is awarded.",
+  "wallet_quality": "No new cohort of historically selective, independently funded wallets repeatedly accumulating SUI was verified. Broad exchange buyer ratios and raw address growth are not substitutes for that test.",
+  "structural_gate": {
+    "status": "PASS_WITH_CAVEATS",
+    "notes": "SUI is a native asset with an official 10B total-supply cap and a scheduled release curve. Honeypot, removable-LP and third-party token-admin freeze risks do not apply in the ordinary token-contract sense, but future scheduled supply release/dilution remains material."
+  },
+  "portfolio_decision": {
+    "action": "HOLD_NO_ADD",
+    "position_weight_pct": 5.581018639664263,
+    "rationale": "The existing opening SUI position is retained because price persistence, positive 24-hour inflow and spot-over-perps acceleration have not invalidated the thesis. No add is justified after a roughly 49% seven-day token move because stablecoin retention is weak, Phantom's exit can mechanically contaminate activity metrics, and selective-wallet confirmation is absent. No trim is triggered because there is no hard structural failure or confirmed persistent capital flight yet."
+  },
+  "forward_tests": [
+    "After the September 24 Phantom cutoff, Sui DEX activity should remain elevated without the migration mechanic.",
+    "Stablecoin growth should reaccelerate and remain positive rather than follow users/assets out of the ecosystem.",
+    "Net inflows should remain positive after the wallet transition window.",
+    "Independent selective-wallet repeat accumulation should emerge before any paper add."
+  ],
+  "uncertainties": [
+    "The Phantom transition cannot explain all Sui DEX activity, so the framework discounts rather than rejects the entire volume acceleration.",
+    "The exact share of recent swaps and transfers caused by Phantom migration is not observable from the public aggregate chain metrics used in this run.",
+    "Scheduled supply-release timing and size remain a dilution caveat but are not treated as a hard gate failure absent a new privileged-control or sellability problem."
+  ],
+  "execution": "NONE"
+}
