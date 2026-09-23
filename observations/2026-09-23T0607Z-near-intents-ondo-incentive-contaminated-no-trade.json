@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "signal_id": "2026-09-23T060740Z-near-intents-ondo-incentive-contaminated-no-trade",
+  "observed_at_utc": "2026-09-23T06:07:40Z",
+  "alert_threshold_crossed": true,
+  "ecosystem": "NEAR",
+  "candidate_asset": "NEAR",
+  "contract_address": null,
+  "paper_action": "NO_TRADE",
+  "regime_classification": "NEAR_INTENTS_CROSS_CHAIN_VOLUME_ONDO_DISTRIBUTION_WITH_PRICE_LINKED_INCENTIVE_CONTAMINATION_NO_TRADE",
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "notes": [
+      "NEAR is a native asset, so ERC-style honeypot, LP-removal, token-admin freeze and deployer-dump gates do not apply in the ordinary form.",
+      "Initial token supply is described by NEAR as fully unlocked; no new unlock overhang is being treated as a blocker.",
+      "Protocol-level emissions/inflation and governance/validator concentration remain economic and control caveats."
+    ]
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "spot_price_usd": 4.48,
+    "market_cap_usd": 5847000000,
+    "fdv_usd": 5847000000,
+    "spot_volume_24h_usd": 1695000000,
+    "notes": "CoinGecko shows broad CEX depth across Coinbase, Binance, Kraken, OKX, KuCoin and Gate."
+  },
+  "ecosystem_regime_evidence": {
+    "near_l1": {
+      "tvl_usd": 202060000,
+      "stablecoin_mcap_usd": 81200000,
+      "stablecoin_change_7d_pct": 1.79,
+      "dex_volume_24h_usd": 31090000,
+      "dex_volume_7d_usd": 493650000,
+      "dex_volume_change_7d_pct": 41.01,
+      "net_inflow_24h_usd": 5050000,
+      "active_addresses_24h": 60298,
+      "new_addresses_24h": 12642,
+      "transactions_24h": 871723
+    },
+    "near_intents": {
+      "official_all_time_volume_floor_usd": 29000000000,
+      "dune_reported_all_time_volume_usd": 31400000000,
+      "record_daily_volume_usd": 300000000,
+      "recent_weekly_volume_usd_range": [
+        842000000,
+        1040000000
+      ],
+      "confidential_tvl_usd": 113250000,
+      "confidential_tvl_change_90d_pct": 284.6,
+      "protocol_gross_fees_30d_usd": 5570000,
+      "protocol_net_revenue_30d_usd": 1980000
+    }
+  },
+  "why_capital_is_arriving": {
+    "organic_or_financially_substantive": [
+      "Cross-chain swap/execution demand through NEAR Intents; official site reports $29B+ all-time volume across 35 chains.",
+      "Confidential execution/privacy demand; NEAR revenue dashboard reports $113.25M confidential TVL.",
+      "Fresh Ondo integration gives eligible users access to tokenized U.S. stocks/ETFs using assets sourced from 30+ networks.",
+      "Protocol revenue has direct NEAR value capture via buybacks according to NEAR's revenue dashboard."
+    ],
+    "incentive_contamination": [
+      "Confidential TVL crossing $70M triggered Drop 1 of the NEAR@3.33 program: 333,333 milestone tokens for eligible users.",
+      "Reward conversion is explicitly conditioned on the NEAR three-day VWAP being at least $3.33, creating a reflexive price-linked incentive.",
+      "RHEA/NEAR ecosystem liquidity mining and an emissions-funded MPC infrastructure program mean some ecosystem growth cannot be treated as purely discretionary."
+    ],
+    "classification": "MIXED: real cross-chain/product demand is present, but the recent confidential-TVL and token-price impulse is materially incentive-contaminated."
+  },
+  "rwa_assessment": {
+    "ondo_integration_live": true,
+    "ondo_platform_reported_tvl_usd_gt": 1000000000,
+    "ondo_platform_reported_cumulative_volume_usd_gt": 26000000000,
+    "near_specific_rwa_issuance_or_aum_verified": false,
+    "near_specific_rwa_secondary_volume_verified": false,
+    "near_specific_rwa_collateral_or_borrowing_verified": false,
+    "credit_awarded": "NONE_YET",
+    "notes": "Ondo platform-wide TVL/volume cannot be attributed to NEAR. Treat the integration as distribution/access until NEAR-specific balances, secondary turnover and collateral utilization appear."
+  },
+  "leadership_and_wallet_quality": {
+    "near_price_change_7d_pct": 88.6,
+    "relative_performance": "Strongly outperforming broader crypto and smart-contract-platform peers.",
+    "historically_selective_independent_wallet_accumulation_verified": false,
+    "wallet_quality": "INSUFFICIENT",
+    "notes": "No fresh cohort of independently funded, historically selective NEAR spot accumulators was verified. Exchange withdrawals or raw address counts are not substituted for this test."
+  },
+  "social_attention": {
+    "classification": "HIGH_AND_CATALYST_CONCENTRATED",
+    "notes": "Attention is concentrated around the Intents volume milestone, privacy/confidential perps, the NEAR@3.33 reward condition and the Ondo launch. Treat the sudden narrative concentration as crowding risk rather than confirmation."
+  },
+  "decision": {
+    "paper_trade": false,
+    "reason": "The ecosystem/product regime crosses the research-alert threshold, but not the PAPER-buy threshold. NEAR is already +88.6% over seven days; the recent TVL/price impulse is materially contaminated by a price-linked reward program; selective-wallet confirmation is absent; and the fresh RWA catalyst has no NEAR-specific secondary/collateral utilization data yet.",
+    "next_confirmation_tests": [
+      "Intents and NEAR L1 DEX/stablecoin activity persist after the NEAR@3.33 reward effect fades.",
+      "NEAR-specific Ondo balances and actual secondary turnover become measurable, ideally with collateral/borrowing use.",
+      "Multiple independently funded, historically selective wallets begin repeat NEAR accumulation.",
+      "Protocol buybacks/revenue remain strong enough to offset issuance without relying on incentive-driven volume."
+    ]
+  },
+  "sources": [
+    "https://defillama.com/chain/near",
+    "https://intents.near.org/",
+    "https://revenue.near.org/",
+    "https://www.near.org/",
+    "https://www.coingecko.com/en/coins/near",
+    "https://www.prnewswire.co.uk/news-releases/nearcom-partners-with-ondo-to-bring-tokenized-us-stocks-and-etfs-alongside-crypto-confidentially-302885957.html",
+    "https://www.prnewswire.co.uk/news-releases/nearcoms-confidential-tvl-reaches-70-million-triggering-the-near3-33-snapshot-amid-industry-wide-privacy-wave-302881902.html",
+    "https://gov.near.org/t/hsp-007-establish-a-sustainable-mpc-node-infrastructure-financing-program-funded-via-protocol-emissions/41984",
+    "https://www.gate.com/en-us/news/detail/near-intents-surpasses-314b-in-cumulative-volume-near-token-up-78-in-a-week-17879088"
+  ]
+}
