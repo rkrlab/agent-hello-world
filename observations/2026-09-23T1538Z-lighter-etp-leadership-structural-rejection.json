@@ -1,0 +1,81 @@
+{
+  "signal_id": "2026-09-23T153836Z-lighter-etp-leadership-structural-rejection",
+  "timestamp_utc": "2026-09-23T15:38:36Z",
+  "ecosystem": "Lighter / Ethereum L2 derivatives",
+  "candidate": {
+    "asset": "LIT",
+    "contract_address": "0x232ce3bd40fcd6f80f3d55a522d03f25df784ee2",
+    "chain": "Ethereum"
+  },
+  "regime_classification": "LIGHTER_ETP_AND_BUYBACK_LEADERSHIP_WITH_POINTS_CONTAMINATION_AND_HOLDER_CONCENTRATION_STRUCTURAL_REJECTION_NO_TRADE",
+  "alert_threshold_crossed": true,
+  "paper_action": "NO_TRADE",
+  "ecosystem_regime_evidence": {
+    "lit_price_usd_observed": 5.27,
+    "lit_24h_change_pct": 10.3,
+    "lit_7d_change_pct": 25.7,
+    "lit_24h_token_volume_usd": 133483375.46,
+    "lit_market_cap_usd": 1314911375,
+    "circulating_supply_lit": 250000000,
+    "max_supply_lit": 1000000000,
+    "lighter_30d_spot_dex_volume_usd": 621420000,
+    "lighter_q3_2026_gross_protocol_revenue_usd": 10950000,
+    "lighter_q3_2026_token_holder_net_income_usd": 6680000,
+    "lighter_q3_2026_token_buybacks_usd": 6680000,
+    "interpretation": "Token price/volume leadership is accompanied by real protocol revenue and buybacks, but much of Lighter's broader derivatives activity cannot be treated as clean discretionary speculation because live points programs reward trading volume."
+  },
+  "catalyst": {
+    "event": "Bitwise launched the Bitwise Lighter Staking ETP (BLIT) on Deutsche Boerse Xetra on 2026-09-23.",
+    "product_structure": "Fully backed by LIT held in cold storage; 0.85% TER. Staking is not active at launch and begins only after sufficient AUM.",
+    "capital_quality": "Financially substantive new regulated distribution channel, but not yet evidence of large continuing spot inflows. Reported launch AUM was only about $4.74M, small versus LIT market capitalization and daily turnover."
+  },
+  "incentive_discount": {
+    "status": "MATERIAL",
+    "evidence": "Robinhood Wallet x Lighter has an active 2x points program for eligible perpetual trading, with weekly point drops and a LIT allocation for the Robinhood community. Future ecosystem supply is also reserved for points, partnerships and incentives.",
+    "implication": "Perpetual volume, user growth and wallet activity cannot be credited at face value as discretionary speculation."
+  },
+  "rwa_distinction": {
+    "credit": "NONE",
+    "reason": "Lighter offers derivatives referencing traditional assets. This is leveraged derivative exposure, not chain-specific tokenized RWA issuance, secondary spot ownership, or verified collateral utilization."
+  },
+  "wallet_quality": {
+    "rating": "INSUFFICIENT",
+    "evidence": "No fresh cohort of historically selective, independently funded wallets repeatedly accumulating LIT was verified in this run.",
+    "independence_check": "Not satisfied. Older concentrated/linked whale activity is not treated as independent selective-wallet convergence."
+  },
+  "structural_gate": {
+    "result": "FAIL",
+    "reasons": [
+      "Top 10 holders are reported to control roughly 66% of supply.",
+      "Only 25% of the 1B maximum supply is circulating, implying roughly 4x FDV-to-market-cap dilution headroom.",
+      "Team and investor allocations together represent 50% of maximum supply and are reported behind a one-year cliff from the 2025-12-30 token launch, with major unlocks beginning around 2026-12-30.",
+      "The combination of concentrated ownership, low circulating float and near-dated insider unlock overhang fails the framework's supply/holder-concentration gate even though contract-level checks report verified code, no mint function and no honeypot flag."
+    ],
+    "sellability": "PASS",
+    "contract_permissions": "PASS_WITH_CAVEATS",
+    "liquidity_executability": "PASS",
+    "supply_holder_concentration": "FAIL"
+  },
+  "leadership_assessment": "LIT is emerging as a visible challenger within the onchain-perpetuals narrative and now has a regulated European access catalyst plus direct buyback value capture. The opportunity score is not allowed to override the structural failure.",
+  "major_uncertainties": [
+    "Initial ETP seed/AUM does not establish persistent creations or independent institutional demand.",
+    "Holder concentration datasets include contracts and may classify some operational wallets differently; concentration remains high across multiple sources.",
+    "The extent to which current volume would persist without Robinhood/Lighter points incentives is unknown.",
+    "No selective-wallet independence/history confirmation was obtained."
+  ],
+  "prospective_tests": [
+    "Track BLIT net creations/AUM growth after launch rather than launch-day headline attention.",
+    "Measure Lighter spot/perpetual activity after adjusting for points and rebates; look for activity that persists after incentive changes.",
+    "Track whether holder concentration broadens materially and whether insider/unlock supply begins moving toward exchanges.",
+    "Require multiple independently funded, historically selective wallets to accumulate repeatedly before reconsidering leadership quality.",
+    "Continue measuring buybacks relative to new circulating supply and upcoming unlocks."
+  ],
+  "sources": [
+    "https://bitwiseinvestments.eu/newsroom/Press_Release_23_09_2026/",
+    "https://www.coingecko.com/en/coins/lighter",
+    "https://defillama.com/protocol/lighter",
+    "https://tokentoria.com/en/coin/lighter/",
+    "https://cryptorank.io/price/lighter/holders",
+    "https://www.datawallet.com/crypto/lighter-explained"
+  ]
+}
