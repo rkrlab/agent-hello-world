@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-09-23T14:51:39Z",
+  "ecosystem": "Ethereum / Uniswap",
+  "asset": "UNI",
+  "contract_address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+  "classification": "UNI_CME_FUTURES_ACCESS_UPGRADE_WITH_DERIVATIVES_CROWDING_HOLD_NO_ADD",
+  "alert_threshold_crossed": true,
+  "paper_action": "HOLD_NO_ADD_NO_TRIM",
+  "regime_evidence": {
+    "ethereum": {
+      "dex_volume_7d_usd": 11406000000,
+      "dex_volume_7d_change_pct": 27.84,
+      "perps_volume_7d_usd": 3344000000,
+      "perps_volume_7d_change_pct": -45.38,
+      "stablecoin_supply_usd": 146709000000,
+      "stablecoin_supply_7d_change_pct": -0.31,
+      "net_inflow_24h_usd": 179800000,
+      "rwa_active_aum_usd": 13359000000,
+      "rwa_credit": "No incremental migration score: issuance/AUM was observed, but no fresh Ethereum-specific secondary RWA turnover or collateral-utilization acceleration was verified in this run."
+    },
+    "interpretation": "Ethereum remains spot-led rather than leverage-led at the chain level, but stablecoin inventory is still slightly contracting, so broad retained-dollar migration is not fully confirmed."
+  },
+  "catalyst": {
+    "event": "CME Group announced standard and Micro Uniswap futures for October 19, 2026, pending regulatory review.",
+    "contract_sizes": {
+      "standard_uni": 10000,
+      "micro_uni": 1000
+    },
+    "classification": "Regulated derivatives access/hedging capacity, not verified spot inflow or on-chain capital migration.",
+    "source": "https://investor.cmegroup.com/news-releases/news-release-details/cme-group-expand-crypto-derivatives-suite-bitcoin-cash-and"
+  },
+  "leadership_and_crowding": {
+    "current_mark_usd": 9.43,
+    "coin_mark_source": "CoinGecko UNI/USD live spot",
+    "reported_derivatives_open_interest_usd": 971000000,
+    "oi_caveat": "Open-interest figure is third-party reporting and is used as a crowding warning, not a structural fact.",
+    "prior_wallet_evidence": "Previously observed repeat UNI accumulation remains supportive, but no new independently funded historically selective wallet cohort was verified in this run.",
+    "distribution": "Previously observed profitable-whale selling remains a counter-signal; no new broad distribution cohort was verified this run."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "notes": "No new sellability, liquidity, admin-control, deployer, holder-concentration, wash-trading, or executable-liquidity failure was identified. Governance retains protocol-level authorities described in prior records; CME futures do not change token contract safety."
+  },
+  "liquidity_executability": "PASS: UNI remains deeply traded across major venues; no paper execution was required.",
+  "paper_portfolio": {
+    "quantity": 87.90427320487863,
+    "mark_usd": 9.43,
+    "marked_value_usd": 828.9372963220055,
+    "portfolio_weight_pct": 7.546363644842578,
+    "normal_non_core_cap_pct": 7.5,
+    "decision": "No add above the normal cap. No mechanical trim solely for appreciation because direct value capture, prior wallet persistence, and chain-level spot leadership remain intact. The new derivatives access and elevated OI increase crowding/reflexivity risk enough to warrant an alert and tighter trim criteria, but not an immediate paper sale."
+  },
+  "why_it_matters_now": "UNI is already marginally above the normal non-core sizing ceiling through appreciation. Regulated futures can broaden institutional access and hedging, but they also make leverage and basis positioning easier. The next increment of upside must therefore be distinguished from derivatives-driven reflexivity.",
+  "forward_tests": [
+    "Track whether spot volume, protocol fees and UNI burn/value capture persist after the CME announcement rather than being replaced by derivatives-led price discovery.",
+    "Watch for broadening profitable-whale distribution or a material rise in leverage/open interest without matching spot/stablecoin confirmation; that would strengthen the trim case.",
+    "Do not add above the normal non-core cap without a materially stronger independent selective-wallet or retained-capital confirmation.",
+    "Treat actual CME futures volume/open interest after launch as derivatives activity, not spot capital migration, unless corresponding spot/on-chain flows independently confirm it."
+  ],
+  "sources": [
+    "https://investor.cmegroup.com/news-releases/news-release-details/cme-group-expand-crypto-derivatives-suite-bitcoin-cash-and",
+    "https://www.coingecko.com/en/coins/uniswap",
+    "https://defillama.com/chain/Ethereum"
+  ],
+  "real_trade": false
+}
