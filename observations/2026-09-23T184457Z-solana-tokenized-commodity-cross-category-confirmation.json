@@ -1,0 +1,83 @@
+{
+  "signal_id": "2026-09-23T184457Z-solana-tokenized-commodity-cross-category-confirmation",
+  "timestamp_utc": "2026-09-23T18:44:57Z",
+  "ecosystem": "Solana",
+  "regime_classification": "SOLANA_TOKENIZED_COMMODITY_CROSS_CATEGORY_RWA_SECONDARY_CONFIRMATION_RAY_STRUCTURAL_REJECTION_SOL_HOLD_NO_ADD",
+  "candidates": [
+    {
+      "asset": "SOL",
+      "contract_address": null,
+      "decision": "HOLD_NO_ADD",
+      "structural_gate": "PASS_WITH_CAVEATS"
+    },
+    {
+      "asset": "RAY",
+      "contract_address": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+      "decision": "REJECT_NO_TRADE",
+      "structural_gate": "FAIL"
+    }
+  ],
+  "ecosystem_regime_evidence": {
+    "stablecoins_mcap_usd": 16584000000,
+    "stablecoins_7d_pct": 5.96,
+    "dex_7d_usd": 20181000000,
+    "dex_7d_pct": 16.39,
+    "perps_7d_usd": 9355000000,
+    "perps_7d_pct": -13.88,
+    "net_inflows_24h_usd": -17130000,
+    "active_addresses_24h": 3440000,
+    "transactions_24h": 114770000,
+    "rwa_active_aum_usd": 2441000000,
+    "chain_token_incentives_24h_usd": 0
+  },
+  "rwa_usage_evidence": {
+    "tokenized_equities_secondary_7d_avg_daily_usd": 142300000,
+    "tokenized_equities_daily_turnover_pct_of_outstanding": 23.9,
+    "tokenized_equities_outstanding_usd": 593300000,
+    "tokenized_equity_wallets": 900000,
+    "tokenized_commodities_secondary_weekly_usd": 87000000,
+    "tokenized_commodities_all_chain_share_pct": 30,
+    "tokenized_commodities_all_chain_share_7_weeks_ago_pct": 5,
+    "raydium_share_of_tokenized_commodity_volume_pct": 70,
+    "tokenized_commodity_supply_usd_approx": 50000000,
+    "paxg_accepted_as_kamino_collateral": true,
+    "collateral_utilization_quantified": false,
+    "classification_note": "Secondary trading is counted separately from RWA issuance/AUM. Kamino PAXG collateral availability is composability evidence only because fresh borrowing/collateral utilization was not quantified."
+  },
+  "why_capital_is_arriving": "Cross-category tokenized-asset secondary trading has broadened from equities into commodities while Solana stablecoin supply and spot DEX turnover remain positive. This is more substantive than issuance/AUM alone. The signal is not fully clean because 24h net bridge flow is negative and parts of the wider Raydium/Stocklana ecosystem have incentive contamination.",
+  "incentive_adjustment": "DefiLlama reports zero chain-level token incentives, but protocol-specific launch/reward programs can still contaminate activity. The commodity/equity secondary-volume figures are therefore treated as substantive usage but not assumed to be entirely discretionary speculation.",
+  "wallet_quality": "No fresh cohort of historically selective, independently funded SOL spot wallets was verified repeatedly accumulating during this run. Wallet-quality confirmation remains missing.",
+  "leadership_rotation": "Raydium is the clearest venue-level beneficiary, reportedly routing about 70% of Solana tokenized-commodity volume and remaining a major tokenized-equity venue, but it remains structurally ineligible for a paper buy.",
+  "structural_gate_detail": {
+    "SOL": "PASS_WITH_CAVEATS: native asset with deep liquidity; protocol inflation/validator concentration remain economic caveats.",
+    "RAY": "FAIL: approximately 282.66M RAY remain across five project-controlled vaults versus roughly 269.7M circulating supply in the cited supply analysis; the buyback wallet separately holds about 86.25M RAY under one key and buybacks are held rather than burned. Mint authority/no-mint and liquidity checks are reassuring, but project-control and holder-concentration risk fails the hard gate."
+  },
+  "major_uncertainties": [
+    "No fresh independent selective-wallet SOL accumulation cohort was verified.",
+    "Solana 24h net inflow is negative despite positive stablecoin and spot-volume growth.",
+    "Fresh chain-specific collateral utilization for PAXG or other commodity RWAs was not quantified.",
+    "Protocol-specific incentives may explain some Raydium ecosystem activity even though chain-level token incentives are zero."
+  ],
+  "paper_action": "NO_TRADE; HOLD SOL; NO ADD; RAY REJECTED",
+  "prospective_tests": [
+    "Tokenized-equity and tokenized-commodity secondary turnover persists after the current catalyst wave.",
+    "Solana stablecoin supply remains positive and net bridge flow improves rather than continuing negative.",
+    "Historically selective, independently funded SOL wallets begin repeat spot accumulation.",
+    "Commodity collateral usage is demonstrated with actual borrow/collateral utilization rather than only collateral eligibility.",
+    "RAY project-control concentration materially decentralizes before reconsidering structural eligibility."
+  ],
+  "paper_position_at_signal": {
+    "asset": "SOL",
+    "quantity": 9.673050880248,
+    "mark_price_usd": 114.12,
+    "marked_value_usd": 1103.8885664539018,
+    "portfolio_weight_pct": 10.104993451846521
+  },
+  "sources": [
+    "https://defillama.com/chain/Solana",
+    "https://cryptobriefing.com/solana-tokenized-commodities-87m-weekly-volume/",
+    "https://stakecake.com/solana-onchain/tokenized-equities/",
+    "https://mrnasdog.com/research/ray",
+    "https://www.reuters.com/world/us-securities-regulator-rolls-out-five-year-exemption-tokenized-stock-trading-2026-09-17/"
+  ]
+}
