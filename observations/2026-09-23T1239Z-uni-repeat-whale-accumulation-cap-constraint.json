@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "signal_id": "2026-09-23T123916Z-uni-repeat-whale-accumulation-cap-constraint",
+  "observation_time_utc": "2026-09-23T12:39:16Z",
+  "evidence_event_time_utc": null,
+  "evidence_timing_note": "Lookonchain's feed reported the two UNI purchases only minutes before this scan. Exact transaction timestamps were not independently pinned during this run, so this signal begins at the observation timestamp and receives no backdated credit.",
+  "alert_type": "wallet_quality_persistence_upgrade",
+  "ecosystem": "Uniswap / Ethereum and multichain Uniswap",
+  "asset": {
+    "name": "Uniswap",
+    "symbol": "UNI",
+    "chain": "Ethereum",
+    "contract": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
+  },
+  "threshold_result": "PASS_MEANINGFUL_EVIDENCE_UPGRADE_NO_TRADE",
+  "regime_evidence": [
+    "UNI was about $9.76 at the run mark, roughly +8.9% over 24 hours and +54.6% over seven days, with about $2.43B of 24-hour turnover and turnover up about 124% from the prior day.",
+    "Ethereum remains spot-led: seven-day DEX volume is about $11.41B, +27.84%, while on-chain perpetual volume is about $3.34B, -45.38%; stablecoin supply is still slightly negative at about -0.31% over seven days, so this is not yet broad retained-dollar migration.",
+    "Uniswap's current protocol-fee system routes collected protocol fees through TokenJars and searcher-driven UNI burns; official Uniswap governance documentation says fees are live on Ethereum mainnet and 11 additional chains. The proposed Arc expansion is not counted until governance/execution completes."
+  ],
+  "why_flows_appear_speculative": "The newly reported UNI activity is direct spot-token acquisition/withdrawal rather than an airdrop, points, quest, yield-farming, trading-reward or rebate program. It is therefore economically substantive at the token level, but it does not by itself prove that broad discretionary capital is migrating into Ethereum or Uniswap because beneficial ownership, funding relationships and custody intent are unresolved.",
+  "leadership_state": {
+    "token_leader": "UNI",
+    "rotation_change": "No new ecosystem handoff. This is a persistence and wallet-breadth upgrade for an existing UNI leadership thesis, not a first-time regime call.",
+    "cross_ecosystem_context": "Hyperliquid remains the strongest retained-capital regime; Avalanche remains strongly spot-led but lacks selective-wallet confirmation; Solana remains spot-led despite recent net outflow; Sui remains contaminated by the Phantom Sep 24 migration event; Ethereum's DEX/perp mix is healthy but stablecoin growth remains slightly negative."
+  },
+  "wallet_quality_evidence": [
+    "A newly created wallet, 0xEFC4631A62E3ce5241B5a3363dB8B77B5E7Ce0Ee, was reported buying 269,477 UNI for about $2.84M.",
+    "Previously tracked wallet 0xf415113dA0C05Cf78521F6609bC92EFEa8d7c7c was reported buying another 138,442 UNI for about $1.23M after previously withdrawing 221,955 UNI from Bybit and OKX. This is repeat accumulation rather than a one-off appearance.",
+    "The two fresh purchases total 407,919 UNI, about $4.07M at the reported values.",
+    "Counter-signal: a separate previously profitable whale, 0xA799, reportedly sold about 788,000 UNI around $8.85 after buying near $6.26, realizing roughly $2.04M. This shows simultaneous profit-taking and prevents treating the new buying as unanimous whale convergence."
+  ],
+  "wallet_quality_assessment": "MODERATE_CONFIRMATION_UPGRADE. Repeat buying by 0xf415 materially improves persistence, and the new 0xEFC4 wallet broadens the address set. However, historical selectivity/profitability for these buyers is not established, full funding-lineage and beneficial-owner independence are unresolved, and a separate profitable whale has already distributed. The evidence is strong enough for an alert but not for another paper add.",
+  "social_attention_risk": "UNI has broad current attention around fee burns, protocol growth and upcoming regulated futures access. That attention is not scored as wallet confirmation, and sudden influencer amplification is treated as crowding/reflexivity risk rather than an additional positive signal.",
+  "narrative_fit": "The wallet accumulation aligns with a live multichain protocol-fee-to-UNI-burn mechanism, so UNI has direct token value capture from continued Uniswap fee generation. This is a tighter linkage than simply owning an L1 token because an ecosystem's application volume increased.",
+  "liquidity_executability": "PASS. UNI is a large-cap, broadly listed token with deep centralized and decentralized liquidity and multi-billion-dollar daily turnover.",
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "details": [
+      "Canonical UNI Ethereum contract is confirmed by official Uniswap documentation.",
+      "Official Uniswap documentation states there is currently no active inflation.",
+      "Governance retains authority to mint up to 2% of total supply annually; this is a standing governance/supply caveat and is not ignored.",
+      "Protocol fee burns are live and reduce circulating supply when executed.",
+      "No new sellability, honeypot, blacklist/freeze, deployer-dump, removable-liquidity or executable-liquidity failure surfaced in this run."
+    ]
+  },
+  "major_uncertainties": [
+    "0xEFC4's historical selectivity and profitability are unknown.",
+    "Funding relationships and beneficial-owner independence between the new buyers and previously tracked UNI wallets are unresolved.",
+    "Exchange withdrawal/buy activity can reflect custody or allocation rather than durable discretionary accumulation.",
+    "The 0xA799 profit-taking example shows whale distribution is not one-sided.",
+    "UNI is already up more than 50% over seven days, increasing crowding and late-entry risk.",
+    "The paper position is already above the normal 7.5% non-core maximum through appreciation, leaving no room for a normal confirmation add.",
+    "Ethereum's stablecoin stock remains slightly negative over seven days, so broad ecosystem retained-capital confirmation is incomplete."
+  ],
+  "why_signal_matters_now": "The framework specifically required repeat buying and broader independent-looking wallet participation rather than first-minute popularity. 0xf415 has now repeated its accumulation behavior and a newly created wallet appeared with a separate multi-million-dollar purchase. That crosses the alert threshold. It does not cross the add threshold because wallet independence/selectivity are not verified, a profitable seller has emerged, and the existing paper UNI weight is already above the normal non-core cap.",
+  "paper_portfolio": {
+    "action": "HOLD_NO_ADD_NO_TRIM",
+    "paper_trade": false,
+    "reason": "UNI is approximately 7.63% of current paper NAV at the run mark, already above the normal 7.5% non-core cap by appreciation. New evidence strengthens the thesis but does not justify adding above the cap; no structural failure or broad distribution reversal justifies trimming.",
+    "current_position_quantity": 87.90427320487863,
+    "current_mark_usd": 9.76,
+    "marked_value_usd": 857.9457064796154,
+    "portfolio_weight_pct": 7.629376905505127
+  },
+  "sources": [
+    "https://lookonchain.com/feeds/73776",
+    "https://t.me/s/lookonchainchannel",
+    "https://www.coingecko.com/en/coins/uniswap",
+    "https://developers.uniswap.org/docs/ecosystem/governance/uni",
+    "https://gov.uniswap.org/t/temp-check-protocol-fee-expansion-arc/26287",
+    "https://defillama.com/chain/ethereum"
+  ],
+  "forward_outcomes": {
+    "+1h": null,
+    "+6h": null,
+    "+24h": null,
+    "+3d": null,
+    "+7d": null
+  },
+  "trade_action": "HOLD_NO_ADD_NO_TRIM",
+  "paper_trade": false
+}
