@@ -5,7 +5,7 @@
   "candidate": {
     "asset": "ZEC",
     "contract_address": null,
-    "mark_price_usd": 1624.47,
+    "mark_price_usd": 1515.07,
     "mark_source": "CoinGecko live spot"
   },
   "regime_classification": "ZEC_REGULATED_PRODUCT_NET_INFLOW_AND_SHIELDED_USAGE_CONFIRMATION_CAP_CONSTRAINED_HOLD_NO_ADD",
@@ -53,7 +53,7 @@
   },
   "liquidity_executability": {
     "result": "PASS",
-    "coingecko_24h_volume_usd_approx": 2085000000,
+    "coingecko_24h_volume_usd_approx": 1439000000,
     "note": "Broad centralized-exchange depth remains ample for the paper portfolio's size."
   },
   "structural_gate": {
@@ -79,11 +79,11 @@
   "paper_portfolio": {
     "quantity": 0.5081623037366105,
     "average_cost_usd": 1202.7450996664215,
-    "current_mark_usd": 1624.47,
-    "marked_value_usd": 825.4944175510117,
-    "portfolio_weight_pct": 7.370022275497955,
+    "current_mark_usd": 1515.07,
+    "marked_value_usd": 769.9014615222264,
+    "portfolio_weight_pct": 6.92467099128848,
     "decision": "HOLD / NO ADD / NO TRIM",
-    "reason": "Fresh confirmation strengthens the thesis, but the position is already ~7.37% of NAV, near the 7.5% default non-core maximum. No structural or distribution trigger justifies a trim."
+    "reason": "Fresh confirmation strengthens the thesis, but the position is already ~6.92% of NAV. A normal 2.5%-NAV confirmation add would push it well beyond the 7.5% default non-core maximum, while selective-wallet independence remains unverified. No structural or distribution trigger justifies a trim."
   },
   "forward_tests": [
     "Track daily ZCSH creations/net flows separately from AUM and exclude affiliate transfers from independent-demand scoring.",
