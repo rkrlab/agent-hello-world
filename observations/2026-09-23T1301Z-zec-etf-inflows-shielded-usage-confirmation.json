@@ -1,0 +1,121 @@
+{
+  "signal_id": "2026-09-23T130147Z-zec-etf-inflows-shielded-usage-confirmation",
+  "timestamp_utc": "2026-09-23T13:01:47Z",
+  "ecosystem": "Zcash",
+  "candidate": {
+    "asset": "ZEC",
+    "contract_address": null,
+    "mark_price_usd": 1624.47,
+    "mark_source": "CoinGecko live spot"
+  },
+  "regime_classification": "ZEC_REGULATED_PRODUCT_NET_INFLOW_AND_SHIELDED_USAGE_CONFIRMATION_CAP_CONSTRAINED_HOLD_NO_ADD",
+  "alert_threshold_crossed": true,
+  "paper_action": "HOLD_NO_ADD_NO_TRIM",
+  "ecosystem_regime_evidence": {
+    "grayscale_zcsh": {
+      "net_inflow_sep22_2026_usd": 32810000,
+      "reported_aum_usd": 979480000,
+      "classification": "substantive regulated-product flow into a spot ZEC-holding vehicle",
+      "caveat": "AUM includes ZEC price appreciation and should not be treated as net capital inflow."
+    },
+    "grayscale_primary_source_context": {
+      "sep8_affiliated_dcg_investment_usd": 100000000,
+      "sep8_zec_contributed": 85705.32563297,
+      "non_affiliate_cumulative_inflows_first_two_weeks_usd_gt": 70000000,
+      "treatment": "Discount the affiliated DCG transaction as independent demand; retain the separately disclosed >$70M external cumulative inflows as genuine third-party demand evidence."
+    },
+    "zchain_usage": {
+      "weekly_shielded_transactions": 62379,
+      "ironwood_pool_weekly_transactions": 55549,
+      "reported_rank": "highest weekly shielded activity since 2022",
+      "classification": "actual network privacy utilization, not token issuance/AUM"
+    },
+    "europe_21shares_zcash_etp": {
+      "ticker": "ZCASH",
+      "physically_backed": true,
+      "initial_securities_outstanding": 5000,
+      "early_aum_usd_approx": 100000,
+      "treatment": "Access catalyst only; early AUM is too small to count as meaningful migration flow."
+    }
+  },
+  "why_capital_is_arriving": {
+    "assessment": "The cleanest new evidence is regulated spot-wrapper demand combined with unusually high native shielded-network use. Neither is explained by airdrops, quests, points, trading rebates, or yield-farming incentives.",
+    "rwa_distinction": "ZCSH and 21Shares ZCASH are off-chain regulated wrappers that custody ZEC. They are not tokenized RWAs issued or actively traded on the Zcash network and should not be credited as on-chain RWA activity."
+  },
+  "leadership_rotation": {
+    "status": "ZEC remains the privacy-sector leader and the new evidence confirms persistence rather than a first-wave price-only move.",
+    "crowding_caveat": "ZEC is already sharply appreciated; ETF/ETP headlines and elevated turnover can attract reflexive momentum. Confirmation is therefore weighted toward measured fund flows and shielded use rather than social attention."
+  },
+  "wallet_quality": {
+    "assessment": "No fresh cohort of historically selective, independently funded wallets was verified in this run.",
+    "standing_evidence": "Previously tracked large exchange-withdrawal accumulators remain supportive but their beneficial-owner independence and historical selectivity are unresolved. A prior legacy-whale exchange deposit remains a distribution caution.",
+    "weight": "medium; not upgraded to smart-money convergence"
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "coingecko_24h_volume_usd_approx": 2085000000,
+    "note": "Broad centralized-exchange depth remains ample for the paper portfolio's size."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "relevant_caveats": [
+      "privacy-asset regulation and exchange/listing access",
+      "ongoing PoW issuance before the 21M cap",
+      "opaque beneficial ownership due to shielded activity",
+      "crowding after a large price move"
+    ],
+    "not_applicable_in_standard_form": [
+      "ERC-style honeypot/sell tax",
+      "third-party token mint/freeze authority",
+      "removable DEX LP controlled by a deployer"
+    ]
+  },
+  "major_uncertainties": [
+    "Tuesday's $32.81M ZCSH inflow is sourced from current fund-flow reporting rather than a same-day SEC filing.",
+    "ZCSH AUM growth cannot be equated with net creations because ZEC price appreciation materially lifts AUM.",
+    "The European 21Shares product is too small at launch to establish meaningful demand.",
+    "No new independently verified selective-wallet cohort appeared this run."
+  ],
+  "paper_portfolio": {
+    "quantity": 0.5081623037366105,
+    "average_cost_usd": 1202.7450996664215,
+    "current_mark_usd": 1624.47,
+    "marked_value_usd": 825.4944175510117,
+    "portfolio_weight_pct": 7.370022275497955,
+    "decision": "HOLD / NO ADD / NO TRIM",
+    "reason": "Fresh confirmation strengthens the thesis, but the position is already ~7.37% of NAV, near the 7.5% default non-core maximum. No structural or distribution trigger justifies a trim."
+  },
+  "forward_tests": [
+    "Track daily ZCSH creations/net flows separately from AUM and exclude affiliate transfers from independent-demand scoring.",
+    "Watch whether 21Shares ZCASH AUM rises materially beyond its approximately $100K launch scale.",
+    "Require shielded transaction/activity persistence rather than a one-week spike.",
+    "Upgrade wallet quality only if independently funded historically selective accumulators appear; downgrade if broad whale exchange deposits emerge.",
+    "Trim/reject if a hard structural/liquidity gate fails or if leadership persistence reverses with distribution."
+  ],
+  "sources": [
+    {
+      "title": "FXStreet — Zcash rally/network activity/Grayscale flow",
+      "url": "https://www.fxstreet.com/cryptocurrencies/news/zcash-price-forecast-zec-rally-hits-record-high-in-a-parallel-channel-amid-network-growth-202609230436"
+    },
+    {
+      "title": "SEC — Grayscale ZCSH Sep 8 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1720265/000119312526385317/zcsh-20260908.htm"
+    },
+    {
+      "title": "SEC — Grayscale ZCSH Sep 8 press release exhibit",
+      "url": "https://www.sec.gov/Archives/edgar/data/1720265/000119312526385317/zcsh-ex99_1.htm"
+    },
+    {
+      "title": "SEC — ZCSH prospectus",
+      "url": "https://www.sec.gov/Archives/edgar/data/1720265/000119312526363603/zcsh__424b3.htm"
+    },
+    {
+      "title": "Crypto.news — 21Shares Zcash ETP launch",
+      "url": "https://crypto.news/21shares-launches-zcash-etp-after-u-s-etf-debut/"
+    },
+    {
+      "title": "CoinGecko — Zcash",
+      "url": "https://www.coingecko.com/en/coins/zcash"
+    }
+  ]
+}
