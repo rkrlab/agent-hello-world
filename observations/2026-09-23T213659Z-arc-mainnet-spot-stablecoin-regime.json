@@ -1,0 +1,103 @@
+{
+  "signal_id": "2026-09-23T213659Z-arc-mainnet-spot-stablecoin-regime",
+  "timestamp_utc": "2026-09-23T21:36:59Z",
+  "ecosystem": "Arc",
+  "regime_classification": "ARC_MAINNET_SPOT_LIQUIDITY_AND_STABLECOIN_SETTLEMENT_BOOTSTRAP_UNI_VENUE_LEADERSHIP_ARC_NOT_EXECUTABLE_NO_TRADE",
+  "candidates": [
+    {
+      "asset": "ARC",
+      "contract_address": null,
+      "decision": "REJECT_NO_TRADE_NOT_PUBLICLY_LAUNCHED",
+      "structural_gate": "FAIL_EXECUTABILITY"
+    },
+    {
+      "asset": "UNI",
+      "contract_address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+      "decision": "HOLD_NO_ADD",
+      "structural_gate": "PASS_WITH_CAVEATS"
+    },
+    {
+      "asset": "AERO",
+      "contract_address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+      "decision": "HOLD_NO_ADD",
+      "structural_gate": "PASS_WITH_CAVEATS"
+    }
+  ],
+  "ecosystem_regime_evidence": {
+    "tvl_usd": 384890000,
+    "tvl_24h_pct": 10.63,
+    "stablecoins_mcap_usd": 632880000,
+    "usdc_dominance_pct": 98.97,
+    "dex_24h_usd": 72170000,
+    "dex_7d_usd": 496610000,
+    "dex_7d_pct": 2070,
+    "perps_24h_usd": 1090000,
+    "perps_7d_usd": 14780000,
+    "net_inflows_24h_usd": 19730000,
+    "dex_fees_paid_24h_usd": 412442.94,
+    "app_fees_24h_usd": 284966.83,
+    "app_revenue_24h_usd": 16914.91,
+    "morpho_blue_tvl_usd": 211050000,
+    "morpho_blue_24h_pct": 6.49,
+    "aave_v4_tvl_usd": 145580000,
+    "aave_v4_24h_pct": 14.69,
+    "uniswap_tvl_usd": 24250000,
+    "uniswap_fees_24h_usd": 265961,
+    "aerodrome_tvl_usd": 2830000,
+    "aerodrome_24h_pct": -29.15
+  },
+  "why_capital_is_arriving": "Arc public mainnet launched on 2026-09-16 as Circle's USDC-native L1 with institutional validators, Aave V4, Morpho and Uniswap live at launch, USDC-denominated gas, Circle payment/FX infrastructure, and tokenized-asset support. One week later, the chain has accumulated substantial absolute stablecoin balances, lending TVL, spot DEX turnover and positive 24h inflows. This is no longer only a tiny-chain percentage-base-effect signal, although the +2070% weekly DEX growth still partly reflects the launch base.",
+  "incentive_adjustment": "Do not treat all first-week TVL as discretionary speculation. Circle explicitly named Bitwise, Cumberland, Dialectic, Galaxy, Gauntlet, Keyrock and Steakhouse among parties supplying liquidity or curated strategies at launch, so some lending capital is launch-seeded institutional/bootstrap liquidity. No qualifying token-reward/airdrop schedule was used as confirmation in this signal. The key positive is that Arc now has meaningful absolute spot volume, stablecoin stock and positive net inflow despite this bootstrap discount.",
+  "rwa_usage_evidence": {
+    "buidl_available": true,
+    "usyc_available": true,
+    "private_credit_available": true,
+    "officially_described_as_trade_lend_collateral_assets": true,
+    "arc_specific_secondary_volume_verified": false,
+    "arc_specific_rwa_collateral_utilization_quantified": false,
+    "classification_note": "RWA issuance/availability is not counted as realized usage. Arc receives zero incremental RWA secondary-trading/collateral score until Arc-specific turnover or borrowing against these RWAs is measured. Stablecoin settlement balances are separately measured at approximately $632.88M."
+  },
+  "wallet_quality": "No fresh cohort of historically selective, independently funded wallets was verified repeatedly accumulating UNI specifically because of Arc. ARC itself is not publicly launched/tradable, so token-holder and selective-wallet analysis is not applicable yet.",
+  "leadership_rotation": "On Arc, lending capital is currently concentrated in Morpho Blue (~$211.05M) and Aave V4 (~$145.58M). For spot trading, Uniswap is the clearest established-protocol leader with ~$24.25M Arc TVL and ~$265,961 of 24h fees. Aerodrome is not inheriting leadership automatically: Arc Aerodrome TVL is only ~$2.83M and down ~29.15% in 24h. This is a useful ecosystem-specific leadership split rather than a generic EVM-beta move.",
+  "social_news_attention": "The catalyst is product/infrastructure-led: Circle's public mainnet launch and institutional validator/integration roster. No concentrated influencer campaign is used as evidence in this signal.",
+  "structural_gate_detail": {
+    "ARC": "FAIL_EXECUTABILITY: Circle minted the full initial 10B ARC supply at genesis but explicitly says this is not a commitment to publicly launch ARC. There is no authorized public market/fill source for the network token. Any unrelated tokens using the ARC ticker must not be treated as Circle's ARC. Current permissioned validator operation and unknown future public distribution/holder concentration are additional caveats.",
+    "UNI": "PASS_WITH_CAVEATS: existing deep liquidity and protocol-level structural review remain intact; no new hard failure surfaced. Position is near the 7.5% non-core cap and lacks a new independent selective-wallet confirmation, preventing an add.",
+    "AERO": "PASS_WITH_CAVEATS: existing portfolio structural review remains intact, but Arc-specific leadership is weak and Base chain confirmation is not currently supportive, so no add."
+  },
+  "major_uncertainties": [
+    "How much of Arc's first-week stablecoin and lending stock is durable versus launch-seeded or treasury/rebalancing capital.",
+    "Whether DEX volume remains elevated after the initial mainnet novelty/base effect fades.",
+    "Arc-specific secondary trading and collateral utilization for BUIDL, USYC and private-credit RWAs are not yet quantified.",
+    "No fresh selective-wallet confirmation for UNI was verified during this run.",
+    "ARC public token distribution, unlocks, holder concentration and market liquidity do not yet exist in a form that can pass the structural/executability gate."
+  ],
+  "paper_action": "NO_TRADE; HOLD UNI; HOLD AERO; ARC REJECTED AS NON-EXECUTABLE",
+  "prospective_tests": [
+    "Arc stablecoin stock and net inflows remain positive after the launch/bootstrap phase.",
+    "Spot DEX volume remains elevated in absolute dollars while perps remain a minority of activity.",
+    "Uniswap Arc volume/fees persist and are joined by fresh independent selective-wallet UNI accumulation before considering any add.",
+    "Arc-specific BUIDL/USYC/private-credit secondary turnover or borrowing/collateral utilization becomes measurable.",
+    "Any future ARC public launch is re-screened from scratch for contract/control, distribution, unlock, holder concentration, sellability and executable liquidity before it can be considered."
+  ],
+  "paper_positions_at_signal": {
+    "UNI": {
+      "quantity": 87.90427320487863,
+      "mark_price_usd": 9.14,
+      "marked_value_usd": 803.4450574925906,
+      "portfolio_weight_pct": 7.35082320502287
+    },
+    "AERO": {
+      "quantity": 439.381667552024,
+      "mark_price_usd": 0.6691,
+      "marked_value_usd": 293.9908747293092,
+      "portfolio_weight_pct": 2.6897524979077667
+    }
+  },
+  "sources": [
+    "https://defillama.com/chain/arc",
+    "https://www.circle.com/pressroom/circle-launches-arc-mainnet-an-economic-operating-system-for-the-internet",
+    "https://investor.circle.com/news/news-details/2026/Circle-Launches-Arc-Mainnet-an-Economic-Operating-System-for-the-Internet/default.aspx",
+    "https://www.circle.com/pressroom/circle-announces-founding-validator-cohort-and-major-integrations-for-arc-ahead-of-september-16-mainnet-launch"
+  ]
+}
