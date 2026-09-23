@@ -1,0 +1,116 @@
+{
+  "timestamp_utc": "2026-09-23T00:27:34Z",
+  "type": "research_observation",
+  "signal_id": "2026-09-23T002734Z-uni-price-volume-persistence-cap-drift",
+  "classification": "UNI_PRICE_VOLUME_PERSISTENCE_POSITION_DRIFT_ABOVE_DEFAULT_CAP_HOLD_NO_TRIM",
+  "execution_trigger": false,
+  "alert_threshold_crossed": true,
+  "ecosystem": "Uniswap / cross-chain DEX",
+  "asset": {
+    "symbol": "UNI",
+    "contract_ethereum": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+    "mark_usd": 10.4,
+    "mark_source": "CoinGecko live global volume-weighted UNI/USD observed during run",
+    "price_change_24h_pct": 15.4,
+    "price_change_7d_pct": 63.6,
+    "market_cap_usd": 6373899292,
+    "turnover_24h_usd": 2113592081.09,
+    "turnover_change_24h_pct": 81.6
+  },
+  "signal_change": {
+    "prior_portfolio_mark_usd": 8.83,
+    "prior_mark_at_utc": "2026-09-22T23:40:32Z",
+    "price_change_from_prior_portfolio_mark_pct": 17.780294450736122,
+    "prior_uni_weight_pct": 6.927788050701723,
+    "current_uni_weight_pct": 8.05996045519432,
+    "interpretation": "UNI moved from below the default 7.5% non-core cap to 8.06% solely through appreciation. This is a material concentration/crowding change, but not itself a thesis failure."
+  },
+  "protocol_fundamentals": {
+    "fees_24h_usd": 4068927,
+    "fees_change_24h_pct": 37.0,
+    "project_revenue_24h_usd": 442329,
+    "project_revenue_change_24h_pct": 44.3,
+    "interpretation": "Protocol economics accelerated alongside the token move, so the breakout is not price-only. Existing fee-to-UNI-burn value-capture thesis remains active from prior observations."
+  },
+  "wallet_evidence": {
+    "status": "PRIOR_ACCUMULATION_SIGNAL_PERSISTS_NO_NEW_SELECTIVE_COHORT_VERIFIED_THIS_RUN",
+    "prior_new_wallet_uni": 782130,
+    "prior_new_wallet_usd_approx": 6970000,
+    "quality": "MEDIUM",
+    "notes": [
+      "Three newly created wallets previously received/withdrew 782,130 UNI through Galaxy Digital, Bybit/OKX and Binance/Gate.",
+      "Historical selectivity, beneficial-owner independence and repeat buying remain unresolved.",
+      "No fresh broad distribution cohort was verified in this run; the known Sep 19 600k UNI sale remains an older counterflow rather than a new trigger."
+    ]
+  },
+  "capital_quality": {
+    "classification": "TOKEN_LEADERSHIP_AND_PROTOCOL_ECONOMICS_CONFIRMATION_NOT_NEW_CHAIN_MIGRATION",
+    "notes": [
+      "The new event is UNI token price/turnover persistence and protocol fee/revenue acceleration, not a newly identified stablecoin/bridge migration into one chain.",
+      "Marketwide short-covering remains a contamination variable, but UNI's seven-day gain materially exceeds the broader crypto market.",
+      "CME futures are an already-recorded catalyst and are not counted again as a fresh independent confirmation."
+    ]
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "hard_failures_found": [],
+    "notes": [
+      "No new sellability, honeypot, liquidity-removal, privileged mint/freeze, deployer-dump or executable-liquidity failure surfaced.",
+      "Existing governance/upgradeability and supply caveats remain."
+    ]
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "notes": "CoinGecko reports about $2.11B of 24h UNI turnover across 146 exchanges / 344 markets; top CEX books show tight spreads and ample depth for the paper position."
+  },
+  "leadership_assessment": "UNI has moved from confirmation to clear token-level leadership: price, turnover and protocol economics all accelerated. The move is extended, however, and the paper position is now above the default non-core sizing cap through appreciation.",
+  "portfolio_action": "HOLD_UNI_NO_ADD_NO_TRIM_THIS_RUN",
+  "portfolio_rationale": "The 7.5% figure is a default sizing cap, not an automatic price-appreciation rebalance rule. The position crossed it without a structural or thesis failure, while fees/revenue accelerated. A mechanical trim solely because price rose would truncate the prospective leadership test. No add is permitted. A trim becomes justified if >8% concentration persists while distribution, derivatives crowding, liquidity deterioration or value-capture weakening appears.",
+  "paper_portfolio": {
+    "cash_usd": 2030.3183658745413,
+    "trade_count": 10,
+    "last_trade_id": "ADD-UNI-20260919-071102Z",
+    "nav_usd": 11342.542515100926,
+    "passive_benchmark_nav_usd": 10693.23397192449,
+    "alpha_usd": 649.3085431764357,
+    "alpha_bps": 607.2143795611515,
+    "uni_position_quantity": 87.90427320487863,
+    "uni_marked_value_usd": 914.2044413307378,
+    "uni_portfolio_weight_pct": 8.05996045519432
+  },
+  "broader_scan": {
+    "solana": "Stablecoins +4.98% 7d and DEX volume +13.23% while perps are -5.26%, but 24h inflows turned -$9.82M; prior spot-led regime remains, no new add trigger.",
+    "ethereum": "DEX volume +34.58% 7d, perps -37.05% and 24h inflows +$311.24M, but stablecoins remain -0.77% 7d; prior ETH rotation thesis persists without a new action.",
+    "sui": "Stablecoins +3.18%, DEX volume +56.72% and perps +31.50%; prior improving regime persists, but no fresh selective-wallet confirmation.",
+    "avalanche": "DEX +46.80% and stablecoins +2.92%, but perps +55.51% and incentives/Helicon attribution caveats remain; no entry.",
+    "polygon": "DEX +136% 7d but stablecoins only +0.48% and 24h inflows -$9.46M; velocity without retained-capital confirmation.",
+    "plasma": "Stablecoins +27.32% and DEX +81.24% with zero chain-level token incentives, but XPL remains structurally rejected under the standing unlock/supply gate.",
+    "arbitrum": "DEX +45.63% and +$125.77M 24h inflow, but stablecoins -2.14%; ARB remains structurally rejected.",
+    "op_mainnet": "Stablecoins +11.04% and DEX +31.81%; OP remains structurally rejected and attribution to discretionary speculation remains incomplete."
+  },
+  "major_uncertainties": [
+    "No fresh wallet-lineage evidence resolves whether the Sep 22 accumulation wallets are independent beneficial owners or historically selective.",
+    "The rapid UNI repricing may contain marketwide short-covering and event-driven CME anticipation.",
+    "Position concentration is above the default non-core cap, increasing drawdown sensitivity even though it was created by appreciation rather than a new add."
+  ],
+  "forward_tests": [
+    "No further UNI add while weight exceeds 7.5%.",
+    "Recheck whether UNI remains above 8% of NAV after the next full mark rather than reacting to a single fast repricing.",
+    "Trim prospectively if concentration persists together with fresh whale distribution, derivatives-led rather than spot-led price discovery, weakening fee/burn economics or any structural-gate deterioration.",
+    "If leadership persists with organic protocol economics and no distribution, allow appreciation drift rather than mechanically rebalancing the winner."
+  ],
+  "no_trade_instruction": true,
+  "real_trade": false,
+  "sources": [
+    "https://www.coingecko.com/en/coins/uniswap",
+    "https://defillama.com/chain/solana",
+    "https://defillama.com/chain/ethereum",
+    "https://defillama.com/chain/sui",
+    "https://defillama.com/chain/avalanche",
+    "https://defillama.com/chain/polygon",
+    "https://defillama.com/chain/plasma",
+    "https://defillama.com/chain/arbitrum",
+    "https://defillama.com/chain/op-mainnet",
+    "https://www.gate.com/es/news/detail/UNI%2Fgalaxy-digital-receives-114m-in-uni-amid-whale-accumulation-24475438"
+  ]
+}
