@@ -1,0 +1,136 @@
+{
+  "timestamp_utc": "2026-09-23T02:50:37Z",
+  "type": "research_observation",
+  "signal_id": "2026-09-23T025037Z-avalanche-spot-led-regime-quality-upgrade",
+  "classification": "AVALANCHE_SPOT_LED_REGIME_QUALITY_UPGRADE_SELECTIVE_WALLET_AND_INCENTIVE_CONFIRMATION_MISSING_NO_TRADE",
+  "execution_trigger": false,
+  "alert_threshold_crossed": true,
+  "ecosystem": "Avalanche",
+  "asset": {
+    "symbol": "AVAX",
+    "contract": null,
+    "native_asset": true,
+    "mark_usd": 11.18,
+    "mark_source": "CoinGecko live global volume-weighted AVAX/USD observed during run",
+    "price_change_24h_pct": 0.8,
+    "price_change_7d_pct": 52.6,
+    "market_cap_usd": 4952000000,
+    "fdv_usd": 5250000000,
+    "market_cap_to_fdv": 0.94,
+    "turnover_24h_usd": 671100000
+  },
+  "signal_change": {
+    "prior_regime_checkpoint": "Avalanche DEX +46.8% 7d, perps +55.5% 7d, stablecoins about +2.9% 7d; leverage contamination prevented an entry.",
+    "current_stablecoin_change_7d_pct": 3.97,
+    "current_dex_volume_7d_usd": 943480000,
+    "current_dex_volume_change_7d_pct": 70.53,
+    "current_perps_volume_7d_usd": 204460000,
+    "current_perps_volume_change_7d_pct": -3.10,
+    "current_inflows_24h_usd": 409356.2,
+    "active_addresses_24h": 180177,
+    "new_addresses_24h": 96522,
+    "transactions_24h": 596356,
+    "interpretation": "The regime quality flipped materially from leverage-led/contaminated to spot-led: spot DEX growth accelerated sharply while perpetual volume moved negative, and stablecoin retention strengthened. This crosses the ecosystem alert threshold."
+  },
+  "capital_quality": {
+    "classification": "IMPROVING_DISCRETIONARY_SPOT_ACTIVITY_WITH_LENDING_INCENTIVE_CONTAMINATION",
+    "notes": [
+      "Chain-level token incentives reported by DefiLlama are $0 over 24h, but that does not eliminate protocol-specific incentive contamination.",
+      "Aave is the largest Avalanche protocol at about $383.43M TVL and +37.24% over seven days, while Avalanche Foundation has committed up to $15M in milestone/KPI-linked incentives to bootstrap Aave V4 markets. That portion of TVL/lending growth is discounted.",
+      "Twenty-four-hour net inflow is positive but small relative to ecosystem size, so the strongest signal is retained stablecoins plus spot trading velocity rather than bridge inflow magnitude."
+    ]
+  },
+  "rwa_assessment": {
+    "active_aum_usd": 1243000000,
+    "classification": "ISSUANCE_AUM_NOT_NEW_USAGE_CONFIRMATION",
+    "notes": [
+      "Avalanche RWA Active AUM is large, but no fresh independent acceleration in secondary RWA trading or collateralized borrowing was verified during this run.",
+      "OpenTrade RWA TVL is about $173.87M and -0.99% over seven days, which does not support treating rising chain RWA inventory as a new trading/utilization signal.",
+      "The planned dedicated Aave V4 RWA hub remains a prospective utilization catalyst rather than current confirmed usage."
+    ]
+  },
+  "wallet_evidence": {
+    "status": "INSUFFICIENT_FOR_PAPER_ENTRY",
+    "quality": "LOW_TO_MEDIUM",
+    "notes": [
+      "The previously reported approximately 16,000 AVAX withdrawal from Binance remains the only recent directional whale item identified in this scan.",
+      "The wallet's historical selectivity, beneficial owner, repeat-buying behavior and independence were not verified.",
+      "Large exchange hot-wallet transfers are explicitly excluded from accumulation evidence. No new cohort of historically selective independent AVAX accumulators was verified."
+    ]
+  },
+  "catalyst": {
+    "name": "Helicon",
+    "scheduled_mainnet_activation_utc": "2026-09-22T15:00:00Z",
+    "official_status_observed": "Scheduled",
+    "notes": [
+      "Official Avalanche Builder Hub documentation says Helicon is scheduled for Mainnet September 22, 2026 at 15:00 UTC and introduces Continuous Execution, auto-renewed staking, shorter minimum staking duration, dynamic minimum gas pricing and staking-economics changes.",
+      "The same official status table still displayed Mainnet as Scheduled when checked after the activation time. Successful activation is therefore not claimed until independently confirmed."
+    ]
+  },
+  "token_value_capture": {
+    "classification": "DIRECT_NATIVE_FEE_AND_STAKING_VALUE_CAPTURE",
+    "notes": [
+      "AVAX is the native gas/staking asset.",
+      "Official Avalanche documentation states Primary Network transaction fees are burned and AVAX has a 720M maximum supply, while validator rewards are minted and can offset burns."
+    ]
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "hard_failures_found": [],
+    "notes": [
+      "AVAX is native, so third-party honeypot, removable-LP, arbitrary token-admin freeze and deployer-owned mint tests do not apply in the standard contract-token form.",
+      "CoinGecko reports market-cap/FDV about 0.94, reducing low-float dilution risk relative to many current candidates.",
+      "Ongoing validator reward issuance remains an economic dilution consideration even with the 720M hard cap."
+    ]
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "notes": "CoinGecko reports about $671.1M of 24h AVAX turnover across 124 exchanges and 239 markets; a normal paper starter would be trivially executable at modeled Tier A cost."
+  },
+  "leadership_assessment": "AVAX remains the cleanest liquid token exposure to the newly improving Avalanche chain regime, while protocol-level alternatives are either incentive-contaminated or have weaker direct linkage. The ecosystem signal is stronger than at the prior checkpoint, but the token is already up about 52.6% over seven days and selective-wallet confirmation is still missing.",
+  "portfolio_action": "NO_TRADE",
+  "portfolio_rationale": "Two prior forward tests crossed decisively: stablecoin/DEX growth persisted and spot now outruns derivatives. However, the framework also required independent selective-wallet confirmation and cleaner attribution after protocol incentives; those conditions are not met. Chasing AVAX after a roughly 53% weekly move without the missing wallet leg would violate confirmation discipline.",
+  "paper_portfolio": {
+    "cash_usd": 2030.3183658745413,
+    "trade_count": 10,
+    "last_trade_id": "ADD-UNI-20260919-071102Z",
+    "nav_usd": 11377.165102038301,
+    "passive_benchmark_nav_usd": 10697.104092004196,
+    "alpha_usd": 680.0610100341055,
+    "alpha_bps": 635.743098491893,
+    "existing_avax_position": false
+  },
+  "broader_scan": {
+    "sui": "Spot velocity strengthened further, with 7d DEX growth around +101% and perps around +23.6%, but stablecoin growth faded to roughly +0.34%; retained-capital/selective-wallet confirmation remains insufficient.",
+    "polygon": "DEX velocity remains extreme but stablecoin supply has turned negative over seven days and 24h inflows are negative; retained-capital confirmation deteriorated.",
+    "arbitrum": "Stablecoin supply remains negative and perps growth materially outruns DEX growth; ARB also remains structurally rejected under the standing privileged-mint/upgrade gate.",
+    "plasma": "Stablecoin and DEX acceleration remain strong at the chain level, but XPL remains structurally rejected under the standing supply/unlock gate.",
+    "solana": "Prior spot-led regime persists, but no new selective-wallet confirmation justifies another add to an already approximately 10% paper position.",
+    "ethereum": "Spot-led activity remains constructive, but seven-day stablecoin stock remains negative; existing core position is already near 19% of NAV."
+  },
+  "major_uncertainties": [
+    "Official Helicon documentation had not updated Mainnet status from Scheduled at the observation time.",
+    "Aave V4 growth cannot be cleanly separated from its up-to-$15M KPI-linked incentive package using the data available in this run.",
+    "No independently verified cohort of historically selective, independently funded AVAX spot accumulators has appeared.",
+    "RWA Active AUM is not evidence by itself of secondary turnover or collateral utilization."
+  ],
+  "forward_tests": [
+    "Confirm successful Helicon mainnet activation from an authoritative operational source rather than inferred timing.",
+    "Require spot DEX growth to remain ahead of derivatives for multiple checkpoints while stablecoin supply remains positive.",
+    "Resolve how much of Aave TVL/borrow growth is incentive-driven versus organic after adjusting for the $15M KPI program.",
+    "Look for repeat AVAX spot accumulation by multiple historically selective, independently funded wallets with uncorrelated funding paths.",
+    "Treat new RWA issuance separately until secondary trading or collateralized borrowing becomes measurable."
+  ],
+  "no_trade_instruction": true,
+  "real_trade": false,
+  "sources": [
+    "https://defillama.com/chain/avalanche",
+    "https://www.coingecko.com/en/coins/avalanche",
+    "https://build.avax.network/blog/helicon-upgrade",
+    "https://build.avax.network/docs/primary-network/helicon-upgrade",
+    "https://build.avax.network/docs/primary-network/avax-token",
+    "https://governance.aave.com/t/temp-check-deploy-aave-v4-on-avalanche/24981",
+    "https://governance.aave.com/t/arfc-deploy-aave-v4-on-avalanche/25165",
+    "https://coinpedia.org/price-analysis/avalanche-price-breaks-above-11-as-helicon-upgrade-and-whale-activity-fuel-avax-rally/"
+  ]
+}
