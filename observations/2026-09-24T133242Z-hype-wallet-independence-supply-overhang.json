@@ -1,0 +1,85 @@
+{
+  "signal_id": "2026-09-24T133242Z-hype-wallet-independence-supply-overhang",
+  "timestamp_utc": "2026-09-24T13:32:42Z",
+  "ecosystem": "Hyperliquid",
+  "asset": "HYPE",
+  "contract_or_identifier": "0x0d01dc56dcaaca66ad901c959b4011ec",
+  "classification": "HYPE_PARADIGM_LINKED_UNSTAKING_BINANCE_SPOT_NONCONFIRMATION_OFFSET_BY_STRATEGIC_ACCUMULATION_HOLD_NO_ADD",
+  "alert_threshold_crossed": true,
+  "paper_action": "HOLD_NO_ADD_NO_TRIM",
+  "regime_evidence": {
+    "stablecoin_mcap_usd": 7750000000,
+    "stablecoin_change_7d_pct": 13.45,
+    "dex_volume_24h_usd": 298720000,
+    "dex_volume_7d_usd": 2415000000,
+    "dex_volume_change_7d_pct": 38.28,
+    "perps_volume_24h_usd": 7426000000,
+    "perps_volume_7d_usd": 57011000000,
+    "perps_volume_change_7d_pct": 23.18,
+    "app_revenue_24h_usd": 2290000,
+    "app_fees_24h_usd": 5520000,
+    "active_addresses_24h": 13886,
+    "new_addresses_24h": 2311,
+    "assessment": "Retained stablecoin capital and both spot/perp activity remain strong. The ecosystem regime is still qualifying, although derivatives activity is large and crowding remains a risk."
+  },
+  "binance_spot_access_test": {
+    "listing_opened_utc": "2026-09-24T11:00:00Z",
+    "pairs": ["HYPE/USDT", "HYPE/USDC", "HYPE/TRY"],
+    "observed_hype_usdt_price_usd": 91.90,
+    "observed_hype_usdt_volume_usd": 8666158,
+    "observed_share_of_hype_volume_pct": 0.67,
+    "plus_2pct_depth_usd": 436129,
+    "minus_2pct_depth_usd": 567607,
+    "assessment": "The access catalyst is real, but the first post-listing window has not produced an abnormal Binance spot-demand confirmation. HYPE is below the pre-listing/day high rather than breaking out on the new venue."
+  },
+  "wallet_quality": {
+    "observed_whale_unstaking_hype": 983600,
+    "observed_whale_unstaking_value_usd_approx": 90440000,
+    "unlock_to_spot_expected_utc": "2026-10-01T12:33:00Z",
+    "paradigm_attributed_addresses": 4,
+    "paradigm_itemized_unstaking_hype": 883500,
+    "paradigm_itemized_value_usd_approx": 81150000,
+    "separate_unattributed_address_unstaking_hype": 100100,
+    "independence_adjustment": "Do not count the four Paradigm-attributed addresses as four independent distribution votes. They are a correlated cluster/common beneficial-owner candidate. Secondary reports disagree between itemized 883,500 HYPE and rounded ~1.0M HYPE for the Paradigm cluster, so the itemized sum is used here and the discrepancy is preserved.",
+    "countervailing_accumulation": "Hyperliquid Strategies was reported to have purchased 1.444M HYPE (~$135M) over the prior week at an average ~$93.70. CoinGecko treasury data independently show +11.68M HYPE activity over 30 days for Hyperliquid Strategies, though treasury datasets disagree on exact current total holdings/timing.",
+    "assessment": "Supply risk has increased, but the apparent five-whale exit headline overstates breadth. The strongest identified distribution cluster is Paradigm-linked and has not sold; tokens are still in the seven-day unstaking delay. A separate strategic buyer has accumulated more HYPE over the prior week than the Paradigm-attributed itemized unstake."
+  },
+  "market_and_structure": {
+    "mark_price_usd": 91.89,
+    "price_change_24h_pct": -2.7,
+    "price_change_7d_pct": 15.2,
+    "market_cap_usd": 20441000000,
+    "fdv_usd": 87784000000,
+    "market_cap_to_fdv": 0.23,
+    "circulating_supply_hype": 222446000,
+    "total_supply_hype": 955307000,
+    "max_supply_hype": 1000000000,
+    "trading_volume_24h_usd": 1294000000,
+    "structural_gate": "PASS_WITH_CAVEATS",
+    "liquidity_executability": "PASS",
+    "caveats": [
+      "Low circulating fraction / large FDV gap and scheduled future supply remain material dilution risks.",
+      "Paradigm-linked unstaking could become sellable on or around October 1 but is not a sale today.",
+      "Large derivatives activity and previously observed high open interest create crowding/reflexivity risk.",
+      "Binance listing expands distribution but has not yet demonstrated persistent incremental spot demand."
+    ]
+  },
+  "rwa_assessment": "No incremental RWA score this run. Hyperliquid L1 shows only ~$6.08M of RWA Active AUM and this scan did not verify a new acceleration in RWA secondary trading or collateral utilization attributable to HYPE demand.",
+  "decision": "HOLD existing paper HYPE position. Do not add because the Binance spot-access thesis has not yet confirmed demand and the October 1 potential supply overhang has increased. Do not trim because the strong retained-capital/activity regime remains intact, the Paradigm wallets are correlated rather than independent distribution votes, no sale has occurred, and a separate strategic accumulation leg remains material.",
+  "forward_tests": [
+    "Persistent Binance spot volume/share and net buying after the launch window, not just access/listing headlines.",
+    "Whether Paradigm-linked HYPE actually moves to spot/exchanges or is restaked after the seven-day delay.",
+    "Whether the fifth 100,100 HYPE unstaking address is independently funded/owned or linked to the Paradigm cluster.",
+    "Persistence of Hyperliquid stablecoin growth, spot DEX growth, app revenue and fee-funded token value capture.",
+    "Actual claimed/transferred supply around upcoming contributor unlocks rather than nominal unlock eligibility alone."
+  ],
+  "sources": [
+    "https://defillama.com/chain/hyperliquid-l1",
+    "https://www.coingecko.com/en/coins/hyperliquid",
+    "https://www.binance.com/en/square/post/370060399750479",
+    "https://www.aicoin.com/en/news-flash/3098275",
+    "https://www.gate.com/es/news/detail/paradigm-linked-addresses-unstake-8835m-hype-worth-8115m-on-september-24-24522721",
+    "https://en.bloomingbit.io/feed/news/120986",
+    "https://coinness.com/en/news/1162098"
+  ]
+}
