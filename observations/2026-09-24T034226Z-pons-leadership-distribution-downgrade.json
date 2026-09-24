@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "signal_id": "2026-09-24T034226Z-pons-leadership-distribution-downgrade",
+  "timestamp_utc": "2026-09-24T03:42:26Z",
+  "ecosystem": "Robinhood Chain / Pons",
+  "candidate_asset": "PONS",
+  "contract_address": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "classification": "PONS_LEADERSHIP_DISTRIBUTION_WITH_ROBINHOOD_SPOT_DECELERATION_NO_TRADE",
+  "alert_threshold_crossed": true,
+  "paper_action": "NO_TRADE",
+  "regime_evidence": {
+    "robinhood_chain_stablecoin_supply_usd": 1065000000,
+    "robinhood_chain_stablecoin_7d_change_pct": 3.83,
+    "robinhood_chain_dex_volume_24h_usd": 1594000000,
+    "robinhood_chain_dex_volume_7d_usd": 10151000000,
+    "robinhood_chain_dex_volume_7d_change_pct": -20.37,
+    "robinhood_chain_perps_volume_7d_usd": 4016000000,
+    "robinhood_chain_perps_volume_7d_change_pct": 22.24,
+    "robinhood_chain_net_inflow_24h_usd": 4960000,
+    "interpretation": "Retained stablecoin capital is still growing modestly, but the chain has rotated from prior spot acceleration toward declining spot volume and rising perpetual volume. This weakens the quality of the speculative regime even though the chain itself remains liquid and active."
+  },
+  "leadership_and_distribution": {
+    "sep23_exit": "A whale reported as heavily positioned in Robinhood meme/DeFi leaders sold its entire 5.338M PONS position for about $3.67M at an average near $0.6779, realizing roughly a $200K loss versus a ~$0.7154 entry.",
+    "sep20_exit": "A separate reported whale sold approximately 2.25M PONS (~$1.29M), converting the proceeds into USDG and ETH; the sale coincided with a sharp PONS price decline.",
+    "market_persistence": "CoinGecko marked PONS around $0.6294 during this run, about 35% below its Sep 5 all-time high; 24h token trading volume was down about 19.8% from the prior day.",
+    "interpretation": "Two large visible distribution events within several days, declining token turnover, and chain-level spot deceleration together constitute a meaningful leadership downgrade. This does not prove the PONS business model has failed, but it removes the prior assumption that the first Robinhood-chain flagship remains the uncontested leader."
+  },
+  "value_capture": {
+    "status": "INTACT_BUT_NOT_ENOUGH_TO_OVERRIDE_DISTRIBUTION",
+    "evidence": "DefiLlama reports Pons 30d protocol revenue of roughly $25.51M and 30d token-holder net income/buyback-and-burn of roughly $15.7M. Pons methodology states around 80% of V1 protocol revenue is used to buy back and burn PONS.",
+    "interpretation": "Direct value capture remains real, so this is a leadership/distribution downgrade rather than a value-capture break."
+  },
+  "wallet_quality": {
+    "status": "NEGATIVE_REVERSAL_NOT_VERIFIED_SMART_MONEY_CONVERGENCE",
+    "notes": "The Sep 23 seller had concentrated exposure to Robinhood meme/DeFi leaders and fully exited PONS; the Sep 20 sale supplies a second distribution datapoint. Beneficial-owner independence and long-run historical selectivity are not fully verified, so the evidence is weighted as a meaningful negative reversal but not treated as proof that all sophisticated capital is exiting."
+  },
+  "rwa_classification": {
+    "issuance_aum": "Robinhood Chain has about $286.6M of active RWA AUM.",
+    "defi_usage": "DefiLlama reports substantial DeFi-active RWA value, but this is not equivalent to verified secondary trading turnover or quantified collateral borrowing.",
+    "secondary_trading": "No fresh chain-wide RWA secondary-volume acceleration was verified in this run.",
+    "collateral_utilization": "No fresh quantified borrowing/collateral utilization acceleration was verified that would offset the speculative spot slowdown.",
+    "conclusion": "RWA inventory remains substantive but receives no incremental leadership credit in this signal."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "notes": "The canonical PONS contract is 0x39dbed3a2bd333467115de45665cc57f813c4571. Current third-party token screens describe a fixed-supply ERC-20 without an active transfer-restriction or centralized-control failure, while current holder concentration is reported near 12-13% for the top ten addresses. Liquidity is executable for ordinary paper-portfolio sizing. Supply and holder datasets differ across providers, so concentration and circulating-supply figures remain caveated. No hard contract gate failure is asserted."
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "current_price_usd_approx": 0.6294,
+    "current_market_cap_usd_approx": 431000000,
+    "current_24h_volume_usd_approx": 90600000,
+    "notes": "CoinGecko showed broad CEX/DEX venue availability and meaningful two-percent depth on major venues; the downgrade is not caused by inability to exit."
+  },
+  "incentive_quality": {
+    "status": "CHAIN_ACTIVITY_STILL_SUBSIDY_CAVEATED",
+    "notes": "Robinhood Wallet gas remains subsidized until roughly Sep 29, so transaction/user activity is still discounted. The current negative signal does not rely on raw address counts or token-launch counts."
+  },
+  "why_now": "The framework explicitly requires continuous leadership tracking rather than assuming the first flagship remains the winner. The combination of two visible large-holder exits, a roughly 35% drawdown from the Sep 5 PONS high, declining token turnover, and Robinhood Chain's seven-day spot volume falling while perpetual volume rises is sufficient to downgrade PONS leadership prospectively even though stablecoins and protocol buyback economics remain positive.",
+  "prospective_follow_up": [
+    "Does PONS recover spot volume and holder accumulation after the large-holder distribution without relying on the Robinhood Wallet gas subsidy?",
+    "Does Pons fee-funded buyback/burn absorb supply fast enough to stabilize price and holder persistence?",
+    "Do historically selective, independently funded wallets reaccumulate PONS, or does distribution broaden?",
+    "After the late-September gas subsidy ends, does Robinhood Chain return to spot-led growth or remain increasingly perp-led?",
+    "Does another Robinhood-chain asset or protocol become the new leadership token with cleaner wallet accumulation and direct value capture?"
+  ],
+  "paper_trade_intent": {
+    "action": "NONE",
+    "reason": "PONS is not an existing paper holding and current evidence is a leadership downgrade, not an entry signal. No qualifying replacement leader cleared the full structural and selective-wallet gates this run."
+  },
+  "sources": [
+    "https://defillama.com/chain/robinhood-chain",
+    "https://defillama.com/protocol/pons",
+    "https://www.coingecko.com/en/coins/pons",
+    "https://www.kucoin.com/news/flash/whale-sells-3-67m-pons-tokens-price-drops-4",
+    "https://coinmarketcap.com/top-stories/6aafe86ad28b6a241f9fdfaa/",
+    "https://robinhoodchain.blockscout.com/token/0x39dbed3a2bd333467115de45665cc57f813c4571"
+  ]
+}
