@@ -1,0 +1,67 @@
+{
+  "signal_id": "2026-09-24T104432Z-zec-fortitude-supply-etp-creation-source-reclassification",
+  "timestamp_utc": "2026-09-24T10:44:32Z",
+  "alert": true,
+  "ecosystem": "Zcash",
+  "asset": "ZEC",
+  "contract_address": null,
+  "regime_classification": "ZEC_FORTITUDE_EXPLICIT_MARKET_SUPPLY_AND_ZCSH_CREATION_SOURCE_RECLASSIFICATION_HOLD_NO_ADD",
+  "paper_action": "HOLD_NO_ADD_NO_TRIM",
+  "thesis_change": "MATERIAL_RISK_QUALITY_DOWNGRADE_NOT_INVALIDATION",
+  "ecosystem_regime_evidence": {
+    "supportive": [
+      "Zcash recorded 62,379 shielded transactions in the latest reported week, the highest weekly total since 2022.",
+      "Prior transparent exchange-withdrawal accumulation paths remain supportive, though beneficial-owner independence and historical selectivity are still unproven.",
+      "Regulated ETP access remains a real distribution/float-locking channel."
+    ],
+    "new_negative": [
+      "Fortitude Mining disclosed that approximately $31M of remaining DCG credit-facility availability is expected to be funded in ZEC and that it intends to liquidate all ZEC received through one or more market transactions.",
+      "Approximately $7M of ZEC is anticipated to be drawn and liquidated before the end of September 2026.",
+      "Current ZCSH prospectus permits both cash and in-kind creations. Therefore reported share creations/net inflows do not prove an equal amount of contemporaneous open-market ZEC buying unless cash-versus-in-kind composition is known."
+    ]
+  },
+  "flow_quality_classification": {
+    "fortitude_supply": "EXPLICIT_PROSPECTIVE_MARKET_SUPPLY; not an inference from exchange transfers.",
+    "zcsh_creations": "FINANCIALLY_SUBSTANTIVE_REGULATED_PRODUCT_DEMAND, BUT SOURCE MIX UNKNOWN; cash creations require a Liquidity Provider to obtain ZEC while in-kind creations can transfer pre-existing ZEC directly.",
+    "rwa_credit": "NOT_APPLICABLE; ZCSH is an off-chain ETP, not tokenized RWA secondary/collateral activity on Zcash."
+  },
+  "wallet_quality": "NO_FRESH_UPGRADE; previous accumulator paths remain supportive but independence/selectivity are unverified.",
+  "market": {
+    "zec_mark_usd": 1468.75,
+    "zec_24h_change_pct": -9.2,
+    "zec_7d_change_pct": 6.8,
+    "zec_24h_turnover_usd": 1452876024.86,
+    "near_term_fortitude_expected_supply_usd": 7000000,
+    "remaining_facility_expected_zec_funding_usd": 31000000,
+    "near_term_supply_as_pct_of_24h_turnover": 0.4818029811369848,
+    "remaining_facility_as_pct_of_24h_turnover": 2.1336974887495046
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "notes": "Native PoW asset; no new sellability or privileged-contract failure. The new issue is explicit supply overhang/demand-quality uncertainty, not a hard structural failure."
+  },
+  "major_uncertainties": [
+    "Actual timing and venue/OTC mix of Fortitude's future ZEC liquidations beyond the approximately $7M expected by end-September.",
+    "Cash-versus-in-kind composition of recent ZCSH creations is not disclosed in the evidence reviewed.",
+    "Whether earlier large transparent exchange withdrawals belong to independent beneficial owners and historically selective profitable wallets."
+  ],
+  "why_signal_matters_now": "The portfolio's later ZEC confirmation had treated regulated-product flows as a cleaner demand leg. The current prospectus shows creations can be either cash or in-kind, while a DCG affiliate now has a disclosed path to send ZEC to Fortitude for explicit market liquidation. The combination materially reduces confidence in net institutional spot-demand inference just as ZEC is retracing from its recent surge.",
+  "paper_decision": {
+    "action": "HOLD_NO_ADD_NO_TRIM",
+    "reason": "At the current mark ZEC is about 6.92% of PAPER NAV, below the 7.5% non-core cap. The first disclosed ~$7M prospective sale is only about 0.48% of current 24h turnover, while the original shielded-usage and prior accumulation thesis remains intact. Do not add until actual sale absorption and ETP creation sourcing are clearer; trim or exit only if disclosed selling broadens/persists, selective-wallet accumulation reverses, shielded-use persistence breaks, or a structural gate fails.",
+    "paper_trade": false,
+    "real_trade": false
+  },
+  "forward_tests": [
+    "Track whether the approximately $7M ZEC expected before September 30 is actually transferred/sold and whether price/spot depth absorbs it without leadership deterioration.",
+    "Track subsequent DCG-to-Fortitude ZEC funding and cumulative realized selling versus daily spot turnover.",
+    "Seek cash-versus-in-kind decomposition for ZCSH creations; do not treat headline net creations as one-for-one spot buying.",
+    "Require renewed independent selective-wallet accumulation or continued shielded-use persistence before any ZEC add."
+  ],
+  "sources": [
+    {"name":"Fortitude/Business Wire syndicated release","date":"2026-09-23","url":"https://www.fidelity.com/news/article/default/202609231730BIZWIRE_USPR_____20260922_BW013713"},
+    {"name":"ZCSH current SEC prospectus","date":"2026-08","url":"https://www.sec.gov/Archives/edgar/data/1720265/000119312526363603/zcsh__424b3.htm"},
+    {"name":"CoinGecko ZEC","date":"2026-09-24","url":"https://www.coingecko.com/en/coins/zcash"},
+    {"name":"Shielded-transaction report citing ZODL","date":"2026-09-23","url":"https://www.hokanews.com/2026/09/zcash-shielded-transactions-reach.html"}
+  ]
+}
