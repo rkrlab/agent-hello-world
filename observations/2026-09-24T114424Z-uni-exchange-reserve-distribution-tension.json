@@ -1,0 +1,61 @@
+{
+  "signal_id": "2026-09-24T114424Z-uni-exchange-reserve-distribution-tension",
+  "timestamp_utc": "2026-09-24T11:44:24Z",
+  "ecosystem": "Uniswap / cross-chain DEX and tokenized-stock routing",
+  "asset": "UNI",
+  "contract_address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+  "regime_classification": "UNI_RECORD_CEX_RESERVES_WITH_FRESH_WHALE_ACCUMULATION_AND_PROTOCOL_USAGE_HOLD_NO_ADD",
+  "alert_threshold_crossed": true,
+  "paper_action": "HOLD_NO_ADD_NO_TRIM",
+  "risk_evidence": {
+    "exchange_reserves": "CryptoQuant-derived reporting puts centralized-exchange UNI reserves at a record 113.9M UNI. Binance alone held >73M UNI as of 2026-09-23.",
+    "recent_exchange_inflows": "Binance reportedly received ~2.6M UNI on 2026-09-18 and ~1.89M UNI on 2026-09-22.",
+    "distribution": "Wallet 0xA799 sold 788,000 UNI at ~$8.85 after buying at ~$6.26 less than a week earlier, realizing about $2.04M.",
+    "interpretation": "This is a material increase in immediately accessible sell-side inventory after a sharp multi-week re-rating and before/alongside CME futures access. Exchange-reserve growth is treated as distribution/crowding risk, not proof that all exchange-held UNI will be sold."
+  },
+  "counterevidence": {
+    "fresh_wallet_accumulation": "Three newly created addresses accumulated 782,130 UNI (~$6.97M); two of them withdrew a combined 652,129 UNI from Binance, Gate, Bybit and OKX.",
+    "additional_buyers": "0xEFC4 bought 269,477 UNI (~$2.84M), and on 2026-09-24 wallet 0xd42B spent 1.5M USDC to buy 159,698 UNI at ~$9.39.",
+    "independence_quality": "Mixed/partly unresolved. Multiple distinct addresses are visible, but funding/beneficial-owner independence and historically selective performance are not fully established."
+  },
+  "protocol_and_market_state": {
+    "uni_mark_usd": 9.02,
+    "uni_change_24h_pct": -7.0,
+    "uni_change_7d_pct": 29.9,
+    "uni_change_30d_pct": 105.5,
+    "uni_24h_token_volume_usd": 1305307364.12,
+    "uniswap_fees_24h_usd": 3233325,
+    "uniswap_project_revenue_24h_usd": 426568,
+    "market_cap_usd": 5596587593,
+    "fdv_usd": 8006000000,
+    "tokenized_asset_usage": "Uniswap reports handling ~80% of Robinhood Stock Token volume (> $10B cumulative in the cited report), >99% of Robinhood-chain DeFi stock-token deposits, >$300M of tokenized-equity volume on Base, and >$300M of Arc swap volume. Robinhood-chain activity remains discounted where prior incentive/synthetic-volume contamination applies; Arc/Base usage is treated separately.",
+    "value_capture": "Protocol revenue and UNI-burn architecture remain active; current protocol use therefore still provides fundamental support despite reserve/crowding risk."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "sellability": "PASS",
+    "liquidity": "PASS",
+    "contract_security": "No new honeypot, transfer restriction, privileged mint/freeze, deployer or LP-removal failure surfaced in this run.",
+    "major_caveats": [
+      "Record centralized-exchange inventory increases potential sell-side liquidity.",
+      "Whale evidence is mixed: fresh withdrawals/buys coexist with a fast-profit 788k UNI sale.",
+      "Derivatives access/crowding is elevated after CME futures announcement and a large monthly price move.",
+      "Cross-chain protocol usage does not map one-for-one to UNI burn/value capture on every venue or chain."
+    ]
+  },
+  "rwa_assessment": "Real tokenized-stock secondary trading and deposits are a genuine usage leg, but issuance/AUM is not counted as equivalent to turnover or collateral utilization. Robinhood-chain activity is specifically discounted where earlier incentive or synthetic-volume contamination applies. No new quantified borrowing/collateral-utilization leg was verified in this run.",
+  "decision_rationale": "The record 113.9M UNI exchange reserve is a material risk-quality downgrade for an existing position already near the 7.5% non-core ceiling, but it is not sufficient for a trim because fresh wallet withdrawals and buys remain substantial, protocol fees/revenue remain strong, and Uniswap continues to lead multiple tokenized-asset and Arc routing markets. HOLD, no add and no trim. A trim becomes warranted if exchange inventory keeps rising while fresh-wallet accumulation fades, profitable-wallet distribution broadens, protocol revenue/value capture weakens, or price/holder persistence breaks.",
+  "sources": [
+    "https://beincrypto.com/uniswap-exchange-reserves-record-whales-buying/",
+    "https://www.coingecko.com/en/coins/uniswap",
+    "https://www.techflowpost.com/en-US/newsletter/137436",
+    "https://www.techflowpost.com/en-US/newsletter/137437"
+  ],
+  "forward_tests": [
+    "Track whether aggregate CEX UNI reserves continue making new highs or begin reversing.",
+    "Track whether the fresh-wallet cohort continues net withdrawal/accumulation and check funding relationships/beneficial-owner independence where possible.",
+    "Distinguish sustained protocol spot/stock-token usage from derivatives-driven turnover and from any incentive-contaminated Robinhood-chain activity.",
+    "Watch protocol fees/revenue and actual UNI burn/value capture relative to exchange inflows.",
+    "Consider a trim if distribution becomes persistent across multiple selective/profitable wallets or price/holder persistence breaks while CEX reserves remain elevated."
+  ]
+}
