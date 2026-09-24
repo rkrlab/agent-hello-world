@@ -1,0 +1,69 @@
+{
+  "signal_id": "2026-09-24T082610Z-hype-binance-spot-access-distribution-tension",
+  "timestamp_utc": "2026-09-24T08:26:10Z",
+  "ecosystem": "Hyperliquid",
+  "asset": "HYPE",
+  "contract_address": null,
+  "regime_classification": "HYPE_BINANCE_SPOT_ACCESS_WITH_RETAINED_CAPITAL_CONFIRMATION_DISTRIBUTION_AND_UNLOCK_CROWDING_HOLD_NO_ADD",
+  "alert_threshold_crossed": true,
+  "paper_action": "HOLD_NO_ADD_NO_TRIM",
+  "ecosystem_evidence": {
+    "stablecoin_mcap_usd": 7751000000,
+    "stablecoin_change_7d_pct": 13.46,
+    "dex_volume_7d_usd": 2415000000,
+    "dex_volume_change_7d_pct": 38.28,
+    "perps_volume_7d_usd": 57011000000,
+    "perps_volume_change_7d_pct": 23.18,
+    "active_addresses_24h": 13886,
+    "new_addresses_24h": 2311,
+    "app_revenue_24h_usd": 2290000,
+    "source": "DefiLlama Hyperliquid L1 current chain dashboard"
+  },
+  "catalyst": {
+    "event": "Binance announced HYPE spot trading against USDT, USDC and TRY for 2026-09-24 11:00 UTC, with withdrawals scheduled for 2026-09-25 and zero BNB listing fee.",
+    "interpretation": "This is a material expansion of spot distribution/access, but at the observation timestamp trading had not yet opened. It therefore earns catalyst/access credit, not realized Binance spot-flow credit."
+  },
+  "wallet_and_supply_evidence": {
+    "positive": "Previously tracked repeat HYPE accumulation/staking remains supportive, including wallet 0x6436's repeated purchases and staking. Hyperliquid's fee-funded buyback/burn mechanism remains active.",
+    "negative": "Multicoin Capital was reported to have transferred another 130,331 HYPE (~$12.15M) to Coinbase Prime, taking cumulative transfers since July 28 to about 4.23M HYPE (~$285M at transfer-time values). Coinbase Prime supports custody and execution, so transfers are a distribution-risk signal rather than proof of sale.",
+    "independence_quality": "Mixed. Repeat accumulator persistence is real, but beneficial-owner independence/selectivity is not fully proven; Multicoin transfer behavior is a credible counter-signal."
+  },
+  "market_state": {
+    "hype_mark_usd": 93.50,
+    "hype_change_7d_pct": 18.4,
+    "hype_24h_volume_usd": 1188206916.49,
+    "hype_market_cap_usd": 20788904912,
+    "hype_fdv_usd": 89279000000,
+    "hype_24h_range_usd": [91.42, 96.49],
+    "recent_ath_usd": 97.96,
+    "crowding": "High: HYPE is near its recent ATH and Hyperliquid open interest was reported at a record ~$18B."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "sellability": "PASS",
+    "liquidity": "PASS",
+    "native_asset": true,
+    "major_caveats": [
+      "Low circulating market cap versus FDV / substantial future supply",
+      "Material near-term vesting/unlock risk",
+      "Data providers disagree on exact near-term unlock date/amount, so unlock headlines require claim-versus-schedule verification",
+      "Record derivatives open interest increases crowding/liquidation risk"
+    ]
+  },
+  "rwa_assessment": "No incremental RWA credit. Hyperliquid's regime strength is trading/stablecoin driven, not newly verified RWA secondary turnover or collateral utilization.",
+  "decision_rationale": "The Binance spot listing is a meaningful new access catalyst layered on an already strong retained-capital regime, but it does not justify a PAPER add before the new venue opens. HYPE is already ~5% of NAV, price is near the ATH, derivatives OI is at a record, a major holder is transferring inventory to Coinbase Prime, and near-term unlock risk remains material. Confirmation is preferred over chasing the announcement. Reassess after Binance spot opens for actual spot-flow persistence, post-listing price/holder behavior, and whether large-holder transfers become confirmed selling or are absorbed.",
+  "sources": [
+    "CoinGecko HYPE current page observed 2026-09-24",
+    "DefiLlama Hyperliquid L1 current dashboard observed 2026-09-24",
+    "Crypto.news Binance HYPE listing report published 2026-09-24 08:06 UTC",
+    "Lookonchain/crypto.news Multicoin Capital HYPE transfer report published 2026-09-24",
+    "Tokenomics.com and Tokenomist unlock calendars; conflicting near-term schedule noted rather than resolved by assumption"
+  ],
+  "forward_tests": [
+    "Measure HYPE/USDT and HYPE/USDC spot depth/volume after Binance trading opens at 11:00 UTC; do not credit announcement volume in advance.",
+    "Track whether Binance access produces sustained net spot demand rather than a listing-pop reversal.",
+    "Track whether Multicoin/Coinbase Prime transfers turn into exchange-side selling or remain custody/prime-broker inventory.",
+    "Verify actual claimed/marketed supply at the next scheduled unlock rather than using nominal calendar supply alone.",
+    "Require continued stablecoin retention, spot growth and fee-funded value capture before considering a scale-up to the 7.5% non-core ceiling."
+  ]
+}
