@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "signal_id": "2026-09-24T012936Z-aero-tokenized-stock-incentive-dominance",
+  "timestamp_utc": "2026-09-24T01:29:36Z",
+  "ecosystem": "Base / Aerodrome",
+  "candidate_asset": "AERO",
+  "contract_address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+  "classification": "AERO_TOKENIZED_STOCK_SECONDARY_VOLUME_INCENTIVE_DOMINATED_BASE_SPOT_NOT_CONFIRMING_FULL_EXIT",
+  "alert_threshold_crossed": true,
+  "paper_action": "SELL_FULL",
+  "regime_evidence": {
+    "base_stablecoin_supply_usd": 5081000000,
+    "base_stablecoin_7d_change_pct": 0.99,
+    "base_dex_volume_24h_usd": 1092000000,
+    "base_dex_volume_7d_usd": 6498000000,
+    "base_dex_volume_7d_change_pct": -2.54,
+    "base_perps_volume_7d_usd": 1706000000,
+    "base_perps_volume_7d_change_pct": 34.15,
+    "base_rwa_active_aum_usd": 183260000,
+    "interpretation": "Base is not showing the spot-led acceleration that supported the original AERO thesis: stablecoins are only modestly higher, seven-day DEX volume is down while perps volume is sharply higher. RWA AUM is not counted as usage without secondary/collateral evidence."
+  },
+  "incentive_quality_evidence": {
+    "aerodrome_design": "Aerodrome officially distributes new AERO emissions weekly as LP rewards; as of April 2026 the stated emissions rate was approximately 10.9% annualized.",
+    "tokenized_stock_pool_update": "Recent Base/Aerodrome reporting says AERO emissions combined with trading fees pushed tokenized-stock/USDC LP yields above triple-digit APRs, including roughly $103M of early volume across four stock pools.",
+    "additional_external_reward": "A separate Revert Finance campaign began 2026-09-22 18:00 UTC and runs through 2026-10-05, offering $25,000 USDC to new Aerodrome tokenized-stock/USDC LP positions, paid based on fees earned.",
+    "framework_interpretation": "The secondary stock volume is real completed trading, but the liquidity/volume regime is materially incentive-supported. This directly weakens the original thesis that Aerodrome's tokenized-stock leadership was sufficiently financially substantive and not primarily driven by incentives."
+  },
+  "leadership": {
+    "venue": "Aerodrome remains an important Base venue for tokenized-stock trading, but venue leadership alone no longer qualifies AERO for ownership when the marginal liquidity is substantially emission/reward-supported and the chain-level spot regime is not confirming."
+  },
+  "wallet_quality": {
+    "status": "NO_FRESH_SELECTIVE_WALLET_CONFIRMATION",
+    "notes": "Prior smart-money/locking evidence remains historical and beneficial-owner/funding independence was never fully established. No new independently funded, historically selective accumulator cohort was verified in this run."
+  },
+  "rwa_classification": {
+    "issuance_aum": "Base has meaningful tokenized-asset issuance/AUM, but AUM itself receives no score.",
+    "secondary_trading": "Tokenized-stock secondary trading on Aerodrome is real and remains economically relevant.",
+    "collateral_utilization": "No new quantified collateral/borrowing usage sufficient to offset the incentive-quality downgrade was verified in this run.",
+    "conclusion": "Real secondary use exists, but the investable-token transmission is now too incentive-dependent for the original AERO starter thesis."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "notes": "No new honeypot, sellability, blacklist/pause, LP-removal, or deployer-control failure was identified. Aerodrome's scheduled AERO emissions, governance/minter architecture and dilution remain material caveats. The exit is caused by thesis/value-capture quality deterioration rather than a hard contract failure."
+  },
+  "liquidity_executability": {
+    "result": "PASS",
+    "mark_source": "CoinGecko AERO/USD live/current spot",
+    "mark_price_usd": 0.6697,
+    "transaction_cost_tier": "B",
+    "modeled_one_way_cost_pct": 0.35
+  },
+  "why_now": "The original 2026-09-13 paper buy explicitly relied on tokenized-stock secondary volume and positive economics after incentives. Fresh evidence now shows that tokenized-stock LP yields are materially AERO-emission supported, an additional USDC rewards campaign has begun, and Base's current seven-day spot volume is weakening while perps accelerate. Under the portfolio rules, a value-capture mechanism becoming incentive-dominated or a regime thesis materially invalidating is an explicit sell condition.",
+  "prospective_follow_up": [
+    "Do Base tokenized-stock volumes and liquidity persist after the Revert reward campaign ends and without unusually high AERO emission APRs?",
+    "Does Base return to spot-led growth with stronger stablecoin retention rather than perp-led acceleration?",
+    "Do Aerodrome earnings remain positive after LP emissions over a sustained window?",
+    "Does a new independently funded selective-wallet AERO accumulation cohort emerge?"
+  ],
+  "paper_trade_intent": {
+    "action": "SELL",
+    "scope": "FULL_POSITION",
+    "reason": "Thesis/value-capture quality invalidation from incentive dominance; not a structural-gate failure."
+  }
+}
