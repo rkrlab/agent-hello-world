@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "signal_id": "2026-09-24T164100Z-ondo-blackrock-intelligent-portfolios-structural-rejection",
+  "timestamp_utc": "2026-09-24T16:41:00Z",
+  "ecosystem": "Ondo / Ethereum and BNB Chain tokenized-RWA distribution",
+  "candidate_asset": "ONDO",
+  "contract_address": "0xfAbA6f8e4a5E8Ab82F62fe7C39859FA577269BE3",
+  "regime_classification": "ONDO_BLACKROCK_INTELLIGENT_PORTFOLIOS_PRODUCT_LEADERSHIP_STRUCTURAL_REJECTION",
+  "threshold_crossed": true,
+  "paper_action": "NO_TRADE",
+  "evidence": {
+    "catalyst": "Ondo launched BLKHIon, BLKDIGon and BLKGRWon, portfolio tokens based on BlackRock-developed portfolio strategies, with transferability/composability for eligible non-U.S. investors.",
+    "market_response": "At the checkpoint ONDO was approximately $0.5168, +24.6% over 24h and +39.5% over 7d, with about $887M 24h turnover versus about $2.52B market cap.",
+    "rwa_classification": "Product issuance/access and composability were confirmed. Meaningful secondary turnover in the three new portfolio tokens and actual borrowing/collateral utilization were not yet verified, so no RWA secondary/utilization confirmation credit was awarded.",
+    "wallet_quality": "Medium only. A whale-flow source reported 86 tracked ONDO whale wallets over 30d, about $63.6M accumulation-side versus $36.0M distribution, net +$27.6M; beneficial-owner independence, funding relationships and historical selectivity were not established.",
+    "token_value_capture": "No direct fee/buyback/burn linkage from the newly launched portfolio products into ONDO was established at this checkpoint."
+  },
+  "structural_gate": {
+    "result": "FAIL",
+    "reason": "Supply/control concentration. Ondo Foundation identified 0x677FD4Ed8aE623f2f625DEB2D64F2070E46cA1A1 as a Foundation-controlled locked-ONDO wallet. A contemporaneous rich-list snapshot showed that address at approximately 5.179B ONDO, 51.79% of the 10B supply, with top ten addresses around 67.55%. This fails the portfolio's hard supply/control concentration gate."
+  },
+  "uncertainties": [
+    "Actual minted AUM in BLKHIon/BLKDIGon/BLKGRWon was not yet established.",
+    "Secondary turnover and collateral/borrowing utilization were not yet established.",
+    "Whale-wallet independence and historical selectivity were not established.",
+    "Direct ONDO holder value capture from the new products was not established."
+  ],
+  "why_it_matters_now": "Ondo crossed the ecosystem/product leadership threshold, but ONDO itself was structurally ineligible. The observation preserves the distinction between an attractive RWA product ecosystem and a token that fails the hard concentration gate.",
+  "forward_tests": [
+    "Measure actual minted AUM in the three portfolio products.",
+    "Measure genuine secondary turnover and organic wallet diversity.",
+    "Measure actual collateral/borrowing utilization.",
+    "Track persistence and independence of ONDO accumulation after the catalyst spike.",
+    "Track movement and governance of Foundation-controlled ONDO supply.",
+    "Require direct fee/buyback/burn or other holder value capture before reconsidering ONDO."
+  ],
+  "forward_outcomes": {
+    "plus_1h": null,
+    "plus_6h": null,
+    "plus_24h": null,
+    "plus_3d": null,
+    "plus_7d": null
+  },
+  "persistence_note": "This record was created on 2026-09-28/29 as a retry after the original 2026-09-24 GitHub write failed. The observation timestamp and rationale preserve the information set stated at the original checkpoint; no trade is backdated and no later price performance is credited."
+}
