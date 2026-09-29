@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "signal_id": "2026-09-29T062308Z-zec-bitget-illicit-supply-price-confirmation-trim",
+  "timestamp_utc": "2026-09-29T06:23:08Z",
+  "ecosystem": "Zcash",
+  "candidate_asset": "ZEC",
+  "contract_address": null,
+  "regime_classification": "ZEC_BITGET_ILLICIT_SUPPLY_OVERHANG_PLUS_FORTITUDE_DISTRIBUTION_WITH_HIGH_VOLUME_PRICE_CONFIRMATION_PARTIAL_TRIM",
+  "threshold_crossed": true,
+  "paper_action": "TRIM_TO_5_PERCENT_NAV",
+  "ecosystem_regime": {
+    "usage": "Underlying privacy usage remains substantively strong; this is not a network-usage thesis failure.",
+    "flow_quality": "Bitget-hack ZEC movements are classified as illicit/non-discretionary and receive zero positive wallet-growth or ecosystem-flow credit. ZCSH product inflows remain financially substantive but are not treated as one-for-one spot buys because creations may be cash or in-kind.",
+    "rwa": "No RWA issuance/AUM is being substituted for secondary trading or collateral-utilization evidence."
+  },
+  "evidence": {
+    "bitget": "Bitget officially confirmed ZEC among assets stolen in its Sep 24 hot/warm-wallet incident and published attacker-controlled ZEC address t1WgMdtND8NF7NDUuYmq8MpMj1NTCXkMDVG.",
+    "traced_supply": "A dated Sep 28 reconstruction of Bitget's tracker attributed about 18,669.98 ZEC to the attacker and documented an initial 5.1 ZEC route through the shielded pool into a completed BTC swap, confirming ability and intent to dispose of at least some stolen ZEC rather than leaving the entire amount inert.",
+    "fortitude": "Fortitude/DCG previously disclosed about $31M of remaining ZEC-funded borrowing capacity that Fortitude intends to liquidate, including about $7M expected before end-September.",
+    "price_volume_confirmation": "CoinGecko run mark $1,389.01, about -11.2% over 24h, with roughly $1.33B-$1.42B 24h turnover and volume higher day/day. The move underperforms the broader crypto market over seven days.",
+    "offsetting_demand": "Reported ZCSH weekly inflows were $35.17M, fifth consecutive positive week, with $284.29M month-to-date. This offsets but does not erase the newly verified illicit supply channel and pre-existing Fortitude liquidation overhang.",
+    "derivatives": "Reported ZEC futures OI fell about 10% to $3.11B with long liquidations exceeding shorts, reducing prior crowding but confirming a risk-off unwind."
+  },
+  "structural_gate": {
+    "result": "PASS_WITH_CAVEATS",
+    "reason": "Native ZEC remains sellable with deep executable liquidity; Bitget was an exchange-security failure, not a Zcash consensus or mint/freeze failure. The action is a supply/demand-quality and leadership-risk trim, not a structural-security exit."
+  },
+  "wallet_quality": "No new independent historically selective accumulation cohort was verified. The attacker wallet is explicitly excluded from positive wallet-growth scoring.",
+  "major_uncertainties": [
+    "The exact pace at which the attacker will dispose of remaining ZEC is unknown.",
+    "The timing and cash-versus-in-kind sourcing of future ZCSH creations remain uncertain.",
+    "Fortitude's exact execution timing for the disclosed ZEC liquidation is not observable in this run.",
+    "Shielded transfers reduce beneficial-owner transparency."
+  ],
+  "why_it_matters_now": "The Sep 24 Fortitude/ZCSH-quality downgrade now has independent downside confirmation: a separate attacker-controlled ZEC supply channel is proven and price is breaking lower on rising turnover. Positive institutional flows and strong privacy usage argue against a full exit, so risk is reduced to 5% NAV rather than eliminated.",
+  "trade_intent": {
+    "action": "TRIM",
+    "target_weight_pct": 5,
+    "execution_rule": "Prospective only at current observable mark with Tier A 0.15% modeled cost."
+  },
+  "forward_tests": [
+    "Track attacker ZEC balance and any additional shielded-to-exchange/swap disposition.",
+    "Track completion of Fortitude's expected end-September ZEC sale.",
+    "Separate ZCSH cash creations from in-kind creations where data permits.",
+    "Require renewed selective-wallet accumulation and price/holder persistence before re-adding.",
+    "Escalate toward further trim/exit only if usage weakens or supply distribution persists beyond current identified channels."
+  ]
+}
