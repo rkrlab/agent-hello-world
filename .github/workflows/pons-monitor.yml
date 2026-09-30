@@ -1,4 +1,4 @@
-name: Bitcoin price monitor
+name: PONS price monitor
 
 on:
   workflow_dispatch:
@@ -14,46 +14,46 @@ on:
     branches: [main]
     paths:
       - agent.py
-      - .github/workflows/bitcoin-monitor.yml
+      - .github/workflows/pons-monitor.yml
 
 permissions:
   contents: read
   issues: write
 
 jobs:
-  check-bitcoin:
+  check-pons:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Check Bitcoin price
-        id: bitcoin
+      - name: Check PONS price
+        id: pons
         env:
-          BTC_ALERT_ABOVE_USD: ${{ vars.BTC_ALERT_ABOVE_USD || '150000' }}
+          PONS_ALERT_ABOVE_USD: ${{ vars.PONS_ALERT_ABOVE_USD || '1' }}
           FORCE_ALERT: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.force_alert) }}
         run: python3 agent.py
 
       - name: Check for an existing alert
-        if: steps.bitcoin.outputs.should_alert == 'true'
+        if: steps.pons.outputs.should_alert == 'true'
         id: existing
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          count="$(gh issue list --state open --search 'Bitcoin price alert in:title' --json number --jq 'length')"
+          count="$(gh issue list --state open --search 'PONS price alert in:title' --json number --jq 'length')"
           echo "count=$count" >> "$GITHUB_OUTPUT"
 
       - name: Create GitHub issue alert
-        if: steps.bitcoin.outputs.should_alert == 'true' && steps.existing.outputs.count == '0'
+        if: steps.pons.outputs.should_alert == 'true' && steps.existing.outputs.count == '0'
         env:
           GH_TOKEN: ${{ github.token }}
-          PRICE: ${{ steps.bitcoin.outputs.price }}
-          THRESHOLD: ${{ steps.bitcoin.outputs.threshold }}
-          FORCED: ${{ steps.bitcoin.outputs.forced }}
+          PRICE: ${{ steps.pons.outputs.price }}
+          THRESHOLD: ${{ steps.pons.outputs.threshold }}
+          FORCED: ${{ steps.pons.outputs.forced }}
         run: |
           gh issue create \
-            --title "Bitcoin price alert" \
-            --body "Bitcoin is currently **\$${PRICE} USD**.
+            --title "PONS price alert" \
+            --body "PONS is currently **\$${PRICE} USD**.
 
           Configured threshold: **\$${THRESHOLD} USD**
           Forced test alert: **${FORCED}**

@@ -6,7 +6,7 @@ on:
       signal_file:
         description: Path to a committed signal JSON
         required: true
-        default: signals/current.json
+        default: signals/example.json
         type: string
   push:
     branches: [main]

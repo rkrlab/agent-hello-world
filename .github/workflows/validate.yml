@@ -1,0 +1,46 @@
+name: Repository validation
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate Python syntax
+        run: python -m py_compile agent.py paper_executor.py position_monitor.py workflow_utils.py tests/*.py
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+
+      - name: Validate committed JSON
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          checked = 0
+          for directory in ("observations", "positions", "signals"):
+              for path in Path(directory).rglob("*.json"):
+                  with path.open("r", encoding="utf-8") as handle:
+                      json.load(handle)
+                  checked += 1
+          print(f"Validated {checked} JSON files")
+          PY
+
+      - name: Validate workflow YAML
+        run: |
+          ruby -e 'require "yaml"; Dir[".github/workflows/*.{yml,yaml}"].sort.each { |file| YAML.safe_load(File.read(file), permitted_classes: [], aliases: true) }; puts "Workflow YAML ok"'
