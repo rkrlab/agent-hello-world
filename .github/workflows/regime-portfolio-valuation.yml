@@ -1,6 +1,9 @@
 name: Regime paper portfolio valuation
 
 on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/regime-portfolio-valuation.yml"]
   schedule:
     - cron: "23 * * * *"
   workflow_dispatch:
