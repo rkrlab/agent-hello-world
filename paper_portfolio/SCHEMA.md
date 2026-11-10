@@ -135,3 +135,26 @@ Every hourly regime scan must:
 ## Signal IDs
 
 A generated trade should point to the research evidence that authorized it. Prefer the immutable observation filename or another stable research signal identifier. If the trade is generated without a separate saved observation, store `signal_id: null` explicitly rather than inventing an identifier.
+
+## Scheduled valuation
+
+The dedicated valuation workflow runs hourly at minute 23 UTC and supports a
+manual run on the default branch. It checks state against the immutable opening
+snapshot and ledger before requesting USD quotes. The execution count excludes
+the opening inventory row. The refresh changes only valuation fields in
+`state.json`. Alpha in basis points is
+`(current_nav_usd - benchmark_nav_usd) / benchmark_nav_usd * 10000`.
+Benchmark-only quotes, if needed, are stored under
+`last_recorded_portfolio_mark.benchmark_only_marks`.
+
+The workflow prefers CoinGecko and uses CoinPaprika as a whole-batch fallback.
+A batch must cover every held and benchmark asset, have positive finite prices,
+and contain provider timestamps at most five minutes old and at most two
+minutes apart. Unknown assets require an explicit provider ID mapping.
+`COINGECKO_DEMO_API_KEY` is an optional Actions secret. A failed valuation
+leaves the last good mark in place and fails the job with a diagnostic. A
+non-fast-forward push triggers a fresh checkout of the default branch and a
+new calculation. The Actions token needs permission to push to that branch.
+
+Run `python3 paper_portfolio/refresh_valuation.py` for a live preview to stdout.
+The workflow passes `--write` to replace the state file atomically.

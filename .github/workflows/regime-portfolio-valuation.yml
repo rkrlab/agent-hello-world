@@ -1,0 +1,73 @@
+name: Regime paper portfolio valuation
+
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: regime-portfolio-valuation
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out default branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Validate and persist the valuation
+        shell: bash
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          COINGECKO_DEMO_API_KEY: ${{ secrets.COINGECKO_DEMO_API_KEY }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          state=paper_portfolio/state.json
+          remote="refs/remotes/origin/${DEFAULT_BRANCH}"
+          for attempt in 1 2 3; do
+            git fetch --no-tags origin "refs/heads/${DEFAULT_BRANCH}:${remote}"
+            git reset --hard "$remote"
+            base="$(git rev-parse HEAD)"
+            python3 -B -m unittest discover -s paper_portfolio -v
+            python3 -B paper_portfolio/refresh_valuation.py --write
+
+            changed="$(git diff --name-only HEAD)"
+            if [[ -z "$changed" ]]; then
+              echo "Valuation already recorded." >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+            if [[ "$changed" != "$state" ]]; then
+              echo "::error::Expected the valuation to update only $state."
+              exit 1
+            fi
+            git add -- "$state"
+            git commit -m "Refresh regime paper portfolio valuation"
+            if git push origin "HEAD:refs/heads/${DEFAULT_BRANCH}"; then
+              jq -r '"Marked at \(.last_full_mark_at_utc) | NAV \(.current_nav_usd) USD | Passive \(.benchmark_nav_usd) USD | Alpha \(.alpha_vs_benchmark_bps) bps"' "$state" >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+
+            git fetch --no-tags origin "refs/heads/${DEFAULT_BRANCH}:${remote}"
+            if [[ "$(git rev-parse "$remote")" == "$base" ]]; then
+              echo "::error::Git push failed without a branch advance. Check repository write permissions or the push error above."
+              exit 1
+            fi
+            echo "::warning::Default branch advanced. Re-reading the ledger and recomputing before retrying."
+          done
+          echo "::error::Could not persist valuation after three branch races."
+          exit 1
+
+      - name: Record failure
+        if: failure()
+        run: |
+          echo 'Valuation job failed. Inspect the logs for quote, accounting, or push errors.' >> "$GITHUB_STEP_SUMMARY"
