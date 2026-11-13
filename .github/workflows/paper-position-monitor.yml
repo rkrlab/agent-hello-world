@@ -2,6 +2,12 @@ name: Paper position monitor
 
 on:
   workflow_dispatch:
+    inputs:
+      position_file:
+        description: Path to a committed position JSON
+        required: true
+        default: positions/pons.json
+        type: string
   schedule:
     - cron: "7 * * * *"
   push:
@@ -25,7 +31,7 @@ jobs:
       - name: Evaluate frozen paper position
         id: monitor
         env:
-          POSITION_FILE: positions/pons.json
+          POSITION_FILE: ${{ github.event_name == 'workflow_dispatch' && inputs.position_file || 'positions/pons.json' }}
         run: python3 position_monitor.py
 
       - name: Decide whether to post an update
