@@ -8,28 +8,27 @@ import json
 import math
 import os
 from datetime import datetime, timezone
-from pathlib import Path
+
+from workflow_utils import (
+    load_json_file,
+    require_float,
+    require_mapping,
+    require_string,
+    write_github_output,
+)
 
 
 def env_float(name: str, default: float) -> float:
-    return float(os.getenv(name, str(default)))
-
-
-def write_output(name: str, value: str) -> None:
-    path = os.getenv("GITHUB_OUTPUT")
-    if path:
-        with open(path, "a", encoding="utf-8") as f:
-            f.write(f"{name}={value}\n")
+    try:
+        return float(os.getenv(name, str(default)))
+    except ValueError as exc:
+        raise ValueError(f"{name} must be a number") from exc
 
 
 def load_signal() -> dict:
     signal_file = os.getenv("SIGNAL_FILE", "").strip()
     if signal_file:
-        path = Path(signal_file)
-        if not path.is_file():
-            raise SystemExit(f"Signal file does not exist: {signal_file}")
-        with path.open("r", encoding="utf-8") as f:
-            data = json.load(f)
+        data = load_json_file(signal_file, label="Signal")
         data["signal_file"] = signal_file
         return data
 
@@ -48,20 +47,62 @@ def load_signal() -> dict:
     }
 
 
-def main() -> None:
-    s = load_signal()
-    asset = str(s.get("asset", "UNKNOWN")).strip()
-    contract = str(s.get("contract", "unknown")).strip()
-    ecosystem = str(s.get("ecosystem", "unknown")).strip()
-    venue = str(s.get("venue", "unknown")).strip()
-    structural_gate = str(s.get("structural_gate", "UNVERIFIED")).strip().upper()
-    thesis = str(s.get("thesis", "research signal")).strip()
+def validate_signal(signal: dict) -> dict:
+    signal_timestamp = signal.get("signal_timestamp_utc")
+    if signal_timestamp is not None:
+        if not isinstance(signal_timestamp, str) or not signal_timestamp.strip():
+            raise ValueError("signal_timestamp_utc must be a non-empty string when provided")
+        signal_timestamp = signal_timestamp.strip()
 
-    observed_price = float(s.get("observed_price_usd", 0.0))
-    liquidity = float(s.get("liquidity_usd", 0.0))
-    requested = float(s.get("paper_allocation_usd", 100.0))
-    max_slippage_pct = float(s.get("max_slippage_pct", 1.0))
-    max_liquidity_share_pct = float(s.get("max_liquidity_share_pct", 0.10))
+    signal_file = signal.get("signal_file")
+    if signal_file is not None:
+        if not isinstance(signal_file, str) or not signal_file.strip():
+            raise ValueError("signal_file must be a non-empty string when provided")
+        signal_file = signal_file.strip()
+
+    validated = {
+        "ecosystem": require_string(signal, "ecosystem"),
+        "asset": require_string(signal, "asset"),
+        "contract": require_string(signal, "contract"),
+        "venue": require_string(signal, "venue"),
+        "observed_price_usd": require_float(signal, "observed_price_usd"),
+        "liquidity_usd": require_float(signal, "liquidity_usd"),
+        "structural_gate": require_string(signal, "structural_gate").upper(),
+        "paper_allocation_usd": require_float(signal, "paper_allocation_usd"),
+        "max_slippage_pct": require_float(signal, "max_slippage_pct"),
+        "max_liquidity_share_pct": require_float(signal, "max_liquidity_share_pct"),
+        "thesis": require_string(signal, "thesis"),
+        "research_evidence": require_mapping(signal, "research_evidence", default={}),
+        "signal_timestamp_utc": signal_timestamp,
+        "signal_file": signal_file,
+    }
+    if validated["max_slippage_pct"] < 0:
+        raise ValueError("max_slippage_pct must be zero or positive")
+    if validated["max_liquidity_share_pct"] <= 0:
+        raise ValueError("max_liquidity_share_pct must be positive")
+    if validated["observed_price_usd"] <= 0:
+        raise ValueError("observed_price_usd must be positive")
+    if validated["liquidity_usd"] <= 0:
+        raise ValueError("liquidity_usd must be positive")
+    if validated["paper_allocation_usd"] <= 0:
+        raise ValueError("paper_allocation_usd must be positive")
+    return validated
+
+
+def build_execution_record(signal: dict) -> dict:
+    s = validate_signal(signal)
+    asset = s["asset"]
+    contract = s["contract"]
+    ecosystem = s["ecosystem"]
+    venue = s["venue"]
+    structural_gate = s["structural_gate"]
+    thesis = s["thesis"]
+
+    observed_price = s["observed_price_usd"]
+    liquidity = s["liquidity_usd"]
+    requested = s["paper_allocation_usd"]
+    max_slippage_pct = s["max_slippage_pct"]
+    max_liquidity_share_pct = s["max_liquidity_share_pct"]
 
     blocking = []
     notes = []
@@ -112,7 +153,7 @@ def main() -> None:
         "executable": executable,
         "blocking_reasons": blocking,
         "notes": notes,
-        "research_evidence": s.get("research_evidence", {}),
+        "research_evidence": s["research_evidence"],
         "frozen_rules": {
             "cancel_entry_if": [
                 "structural gate is not PASS",
@@ -130,14 +171,22 @@ def main() -> None:
             "remainder": "track until thesis/regime breaks; no hindsight rule changes",
         },
     }
+    return record
 
-    print(json.dumps(record, indent=2, sort_keys=True))
-    compact = json.dumps(record, separators=(",", ":"))
-    write_output("executable", str(executable).lower())
-    write_output("asset", asset)
-    write_output("fill", f"{simulated_fill:.12g}")
-    write_output("allocation", f"{allocation:.2f}")
-    write_output("record", compact)
+
+def main() -> None:
+    try:
+        record = build_execution_record(load_signal())
+
+        print(json.dumps(record, indent=2, sort_keys=True))
+        compact = json.dumps(record, separators=(",", ":"))
+        write_github_output("executable", str(record["executable"]).lower())
+        write_github_output("asset", record["asset"])
+        write_github_output("fill", f'{record["simulated_fill_usd"]:.12g}')
+        write_github_output("allocation", f'{record["allowed_allocation_usd"]:.2f}')
+        write_github_output("record", compact)
+    except Exception as exc:
+        raise SystemExit(str(exc)) from exc
 
 
 if __name__ == "__main__":

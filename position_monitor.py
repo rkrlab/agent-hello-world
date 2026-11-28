@@ -6,36 +6,61 @@ Paper-only: never sends transactions or touches wallets.
 import json
 import os
 import urllib.parse
-import urllib.request
 from datetime import datetime, timezone
-from pathlib import Path
+
+from workflow_utils import (
+    load_json_file,
+    request_json,
+    require_float,
+    require_int,
+    require_mapping,
+    require_string,
+    write_github_output,
+)
 
 
 SEARCH_URL = "https://api.dexscreener.com/latest/dex/search/?q="
 
-
-def write_output(name: str, value: str) -> None:
-    path = os.getenv("GITHUB_OUTPUT")
-    if path:
-        with open(path, "a", encoding="utf-8") as f:
-            f.write(f"{name}={value}\n")
-
-
 def fetch_pair(contract: str, pair_address: str) -> dict:
     url = SEARCH_URL + urllib.parse.quote(contract)
-    req = urllib.request.Request(url, headers={"User-Agent": "agent-hello-world/1.0"})
-    with urllib.request.urlopen(req, timeout=20) as response:
-        payload = json.load(response)
+    payload = request_json(url)
     wanted = pair_address.lower()
     pairs = payload.get("pairs") or []
+    if not isinstance(pairs, list):
+        raise RuntimeError("DexScreener response did not include a valid pairs list")
     for pair in pairs:
         if str(pair.get("pairAddress", "")).lower() == wanted:
             return pair
     raise RuntimeError(f"Configured pair {pair_address} not found for {contract}")
 
 
+def validate_position(position: dict) -> dict:
+    validated = {
+        "issue_number": require_int(position, "issue_number"),
+        "asset": require_string(position, "asset"),
+        "contract": require_string(position, "contract"),
+        "pair_address": require_string(position, "pair_address"),
+        "entry_fill_usd": require_float(position, "entry_fill_usd"),
+        "entry_liquidity_usd": require_float(position, "entry_liquidity_usd"),
+        "scale_price_usd": require_float(position, "scale_price_usd"),
+        "stop_price_usd": require_float(position, "stop_price_usd"),
+        "take_profit_1_usd": require_float(position, "take_profit_1_usd"),
+        "take_profit_2_usd": require_float(position, "take_profit_2_usd"),
+        "structural_gate": require_string(position, "structural_gate").upper(),
+    }
+    if validated["entry_fill_usd"] <= 0:
+        raise ValueError("entry_fill_usd must be positive")
+    if validated["entry_liquidity_usd"] <= 0:
+        raise ValueError("entry_liquidity_usd must be positive")
+    return validated
+
+
 def evaluate(position: dict, pair: dict) -> dict:
-    price = float(pair["priceUsd"])
+    position = validate_position(position)
+    try:
+        price = float(pair["priceUsd"])
+    except (KeyError, TypeError, ValueError) as exc:
+        raise ValueError("pair priceUsd must be a number") from exc
     liquidity = float((pair.get("liquidity") or {}).get("usd") or 0)
     entry = float(position["entry_fill_usd"])
     ret_pct = (price / entry - 1.0) * 100.0
@@ -81,19 +106,21 @@ def evaluate(position: dict, pair: dict) -> dict:
 
 
 def main() -> None:
-    position_path = Path(os.getenv("POSITION_FILE", "positions/pons.json"))
-    with position_path.open("r", encoding="utf-8") as f:
-        position = json.load(f)
-    pair = fetch_pair(position["contract"], position["pair_address"])
-    result = evaluate(position, pair)
-    print(json.dumps(result, indent=2, sort_keys=True))
-    write_output("issue_number", str(result["issue_number"]))
-    write_output("asset", result["asset"])
-    write_output("state", result["state"])
-    write_output("price", f'{result["price_usd"]:.12g}')
-    write_output("return_pct", f'{result["return_pct"]:.4f}')
-    write_output("liquidity", f'{result["liquidity_usd"]:.2f}')
-    write_output("record", json.dumps(result, separators=(",", ":")))
+    try:
+        position_path = os.getenv("POSITION_FILE", "positions/pons.json")
+        position = validate_position(load_json_file(position_path, label="Position"))
+        pair = fetch_pair(position["contract"], position["pair_address"])
+        result = evaluate(position, pair)
+        print(json.dumps(result, indent=2, sort_keys=True))
+        write_github_output("issue_number", str(result["issue_number"]))
+        write_github_output("asset", result["asset"])
+        write_github_output("state", result["state"])
+        write_github_output("price", f'{result["price_usd"]:.12g}')
+        write_github_output("return_pct", f'{result["return_pct"]:.4f}')
+        write_github_output("liquidity", f'{result["liquidity_usd"]:.2f}')
+        write_github_output("record", json.dumps(result, separators=(",", ":")))
+    except Exception as exc:
+        raise SystemExit(str(exc)) from exc
 
 
 if __name__ == "__main__":

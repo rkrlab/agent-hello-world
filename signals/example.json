@@ -1,0 +1,21 @@
+{
+  "signal_timestamp_utc": "2026-09-02T22:34:00Z",
+  "ecosystem": "Robinhood Chain",
+  "asset": "PONS",
+  "contract": "0x39dBED3a2bd333467115dE45665cC57F813C4571",
+  "venue": "Uniswap v3 PONS/WETH 0x10CC6BD38112cAc182db90B6a71d8Bb5939526bA",
+  "observed_price_usd": 0.4054,
+  "liquidity_usd": 4700000,
+  "structural_gate": "PASS",
+  "paper_allocation_usd": 100,
+  "max_slippage_pct": 1.0,
+  "max_liquidity_share_pct": 0.1,
+  "thesis": "Example paper-trade signal for manual workflow runs.",
+  "research_evidence": {
+    "regime": "Example signal data kept for workflow testing and documentation.",
+    "leadership": "Representative leadership-candidate signal.",
+    "narrative": "Representative launchpad-aligned thesis.",
+    "structural": "Representative structural gate data.",
+    "market_snapshot": "Representative market snapshot for a committed sample signal."
+  }
+}
